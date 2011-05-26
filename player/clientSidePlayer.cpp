@@ -5,7 +5,6 @@
 //client,shape,animation combo
 #include "../shape/ogreShape.h"
 
-//move states
 #include "../move/move.h"
 #include "../rotation/rotation.h"
 
@@ -15,11 +14,9 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-ClientSidePlayer::ClientSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(name), Move(this), Rotation(this), OgreShape(name,position,mSceneMgr,mesh)
+ClientSidePlayer::ClientSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(client,name,position,mSceneMgr,mesh)
 {
-	mClient = client;
-	mIndex  = 0;
-	mServerPlayer = NULL;
+
 }
 
 ClientSidePlayer::~ClientSidePlayer()

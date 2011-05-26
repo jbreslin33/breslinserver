@@ -2,7 +2,7 @@
 
 //player,client,shape,animation combo
 #include "../client/client.h"
-#include "../player/clientSidePlayer.h"
+#include "../player/player.h"
 #include "../shape/ogreShape.h"
 #include "../animation/ogreAnimation.h"
 
@@ -16,7 +16,7 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-Rotation::Rotation(ClientSidePlayer* player)
+Rotation::Rotation(Player* player)
 {
 	mPlayer = player;
 

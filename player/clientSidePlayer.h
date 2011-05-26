@@ -2,17 +2,8 @@
 #define CLIENTSIDEPLAYER_H
 
 #include "player.h"
-#include "../move/move.h"
-#include "../rotation/rotation.h"
-#include "../shape/ogreShape.h"
 
-//Ogre headers
-#include "Ogre.h"
-using namespace Ogre;
-
-class Client;
-
-class ClientSidePlayer : public Player, public Move, public Rotation, public OgreShape
+class ClientSidePlayer : public Player
 {
 
 public:
@@ -24,11 +15,6 @@ ClientSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::Sce
 void processTick    ();
 void interpolateTick    (float renderTime);
 
-Client* mClient;
-
-int			mIndex;
-
-ClientSidePlayer* mServerPlayer;
 
 
 };

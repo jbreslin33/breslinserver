@@ -17,7 +17,7 @@ class ServerSidePlayer : public Player
 
 public:
 
-ServerSidePlayer(std::string name, Client* client, OgreShape* shape);
+ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh);
 ~ServerSidePlayer();
 
 //movement
@@ -25,16 +25,7 @@ void processTick();
 void calculateVelocity(Command *command, float frametime);
 void setKeyDirection();
 
-//associated client
-Client* mClient;
 
-//associated shape
-OgreShape* mShape;
-
-//keys
-Vector3 mKeyDirection;
-
-Vector3 mGoalDirection;
 
 };
 

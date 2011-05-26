@@ -15,13 +15,9 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-ServerSidePlayer::ServerSidePlayer(std::string name, Client* client, OgreShape* shape) : Player(name)
+ServerSidePlayer::ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(client,name,position,mSceneMgr,mesh)
 {
-	mClient = client;
-	mShape  = shape;
 
-	mKeyDirection = Vector3::ZERO;
-    mGoalDirection = Vector3::ZERO;
 }
 
 ServerSidePlayer::~ServerSidePlayer()
@@ -52,7 +48,7 @@ void ServerSidePlayer::processTick()
 		mGoalDirection.y = 0;
 		mGoalDirection.normalise();
 
-		Quaternion toGoal = mShape->mSceneNode->getOrientation().zAxis().getRotationTo(mGoalDirection,Vector3::UNIT_Y);
+		Quaternion toGoal = mSceneNode->getOrientation().zAxis().getRotationTo(mGoalDirection,Vector3::UNIT_Y);
 
 		// calculate how much the character has to turn to face goal direction
 		Real yawToGoal = toGoal.getYaw().valueDegrees();
@@ -69,25 +65,25 @@ void ServerSidePlayer::processTick()
 		else if (yawToGoal > 0)
 			yawToGoal = std::max<Real>(0, std::min<Real>(yawToGoal, yawAtSpeed)); //yawToGoal = Math::Clamp<Real>(yawToGoal, 0, yawAtSpeed);
 			
-		mShape->mSceneNode->yaw(Degree(yawToGoal));
+		mSceneNode->yaw(Degree(yawToGoal));
 
 		// move in current body direction (not the goal direction)
-		mShape->mSceneNode->translate(0, 0, clientFrametime * RUN_SPEED,
+		mSceneNode->translate(0, 0, clientFrametime * RUN_SPEED,
 			Node::TS_LOCAL);
 
 	}
 
-	mCommand.mOrigin.x = mShape->mSceneNode->getPosition().x;
-	mCommand.mOrigin.z = mShape->mSceneNode->getPosition().z;
+	mCommand.mOrigin.x = mSceneNode->getPosition().x;
+	mCommand.mOrigin.z = mSceneNode->getPosition().z;
 
 	if(mCommand.mVelocity.x != 0.0 || mCommand.mVelocity.z != 0.0)
 	{
-	   mCommand.mVelocity.x = mShape->mSceneNode->getOrientation().zAxis().x;
-	   mCommand.mVelocity.z = mShape->mSceneNode->getOrientation().zAxis().z;
+	   mCommand.mVelocity.x = mSceneNode->getOrientation().zAxis().x;
+	   mCommand.mVelocity.z = mSceneNode->getOrientation().zAxis().z;
 	}
 
-	mCommand.mRot.x = mShape->mSceneNode->getOrientation().zAxis().x;
-	mCommand.mRot.z = mShape->mSceneNode->getOrientation().zAxis().z;
+	mCommand.mRot.x = mSceneNode->getOrientation().zAxis().x;
+	mCommand.mRot.z = mSceneNode->getOrientation().zAxis().z;
 
 	int f = mClient->GetIncomingSequence() & (COMMAND_HISTORY_SIZE-1);
 	mProcessedFrame = f;

@@ -15,7 +15,7 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-Move::Move(ClientSidePlayer* player)
+Move::Move(Player* player)
 {
 	mPlayer = player;
 

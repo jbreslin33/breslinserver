@@ -8,7 +8,7 @@
 using namespace Ogre;
 
 class Command;
-class ClientSidePlayer;
+class Player;
 class RotationStateMachine;
 
 class Rotation
@@ -16,7 +16,7 @@ class Rotation
 
 public:
 
-Rotation(ClientSidePlayer* player);
+Rotation(Player* player);
 ~Rotation();
 
 //movement
@@ -24,7 +24,7 @@ void processTick    ();
 
 void interpolateTick    (float renderTime);
 
-ClientSidePlayer* mPlayer;
+Player* mPlayer;
 
 //rotation state machine
 RotationStateMachine* mRotationStateMachine;
