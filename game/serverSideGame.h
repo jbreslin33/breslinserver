@@ -37,8 +37,9 @@ public:
 
 	int		mRealTime;				// Real server up-time in ms
 	int		mServerTime;				// Server frame * 100 ms
-
 	long	mFramenum;
+	int     mTickTime;
+
 	Ogre::SceneManager* mSceneManager;
 
 public:

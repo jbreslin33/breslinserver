@@ -65,14 +65,20 @@ void ServerSidePlayer::processTick()
 		else if (yawToGoal > 0)
 			yawToGoal = std::max<Real>(0, std::min<Real>(yawToGoal, yawAtSpeed)); //yawToGoal = Math::Clamp<Real>(yawToGoal, 0, yawAtSpeed);
 			
+
+		//THIS IS THE ACTUAL ROTATE
 		mChildSceneNode->yaw(Degree(yawToGoal));
 
-		// move in current body direction (not the goal direction)
+		// move in current body direction (not the goal direction) 
+		//THIS MIGHT BE ALL THERE IS TO MOVE ON THE SERVER
 		mChildSceneNode->translate(0, 0, clientFrametime * RUN_SPEED,
 			Node::TS_LOCAL);
 
 	}
 
+
+
+	//SET COMMAND INSTANCE
 	mCommand.mOrigin.x = mChildSceneNode->getPosition().x;
 	mCommand.mOrigin.z = mChildSceneNode->getPosition().z;
 

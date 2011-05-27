@@ -25,6 +25,7 @@ ServerSideGame::ServerSideGame()
 	mRealTime	= 0;
 	mServerTime	= 0;
 	mFramenum	= 0;
+	mTickTime   = 32;
 }
 
 ServerSideGame::~ServerSideGame()
@@ -40,12 +41,6 @@ void ServerSideGame::ShutdownNetwork(void)
 
 void ServerSideGame::createPlayer(Client* client, int runningIndex)
 {
-//mClient->mClientSidePlayer = new ClientSidePlayer(mClient,"jay" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh");
-//	Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh
-	//OgreShape* shape = new OgreShape("oshape" + runningIndex,new Vector3D(),mRoot);
-	
-
-
 	client->mServerSidePlayer = new ServerSidePlayer(client,"oplayer" + runningIndex,new Vector3D(),
 	mSceneManager,"sinbad.mesh",false);
 }
@@ -57,13 +52,13 @@ void ServerSideGame::Frame(int msec)
 	// Read packets from clients
 	mServer->ReadPackets();
 
-	// Wait full 100 ms before allowing to send
+	// Wait full 32 ms before allowing to send
 	if(mRealTime < mServerTime)
 	{
 		// never let the time get too far off
-		if(mServerTime - mRealTime > 32)
+		if(mServerTime - mRealTime > mTickTime)
 		{
-			mRealTime = mServerTime - 32;
+			mRealTime = mServerTime - mTickTime;
 		}
 
 		return;
@@ -71,7 +66,7 @@ void ServerSideGame::Frame(int msec)
 
 	// Bump frame number, and calculate new mServerTime
 	mFramenum++;
-	mServerTime = mFramenum * 32;
+	mServerTime = mFramenum * mTickTime;
 
 	if(mServerTime < mRealTime)
 		mRealTime = mServerTime;
