@@ -17,7 +17,7 @@ class ServerSidePlayer : public Player
 
 public:
 
-ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh);
+ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide);
 ~ServerSidePlayer();
 
 //movement

@@ -50,13 +50,13 @@ ClientSideGame::~ClientSideGame()
 
 void ClientSideGame::AddPlayer(int local, int ind, char *name)
 {
-	mClient->mClientSidePlayer = new ClientSidePlayer(mClient,"jay" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh");
+	mClient->mClientSidePlayer = new ClientSidePlayer(mClient,"jay" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh",true);
 	mClient->mClientSidePlayer->getSceneNode()->scale(30,30,30);
 	
 	mClient->mClientSidePlayer->mIndex = ind;
 
 	//OgreShape* shape2 = new OgreShape("silentBob" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh");
-	mClient->mClientSidePlayer->mServerPlayer = new ClientSidePlayer(mClient,"silentBob" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh");
+	mClient->mClientSidePlayer->mServerPlayer = new ClientSidePlayer(mClient,"silentBob" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh",true);
   	mClient->mClientSidePlayer->mServerPlayer->getSceneNode()->scale(30,30,30);
 
 	mPlayerVector.push_back(mClient->mClientSidePlayer);

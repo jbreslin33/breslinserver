@@ -14,7 +14,7 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-ClientSidePlayer::ClientSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(client,name,position,mSceneMgr,mesh)
+ClientSidePlayer::ClientSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide) : Player(client,name,position,mSceneMgr,mesh,clientSide)
 {
 
 }

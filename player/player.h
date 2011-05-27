@@ -21,7 +21,7 @@ class Player : public Move, public Rotation, public OgreShape
 
 public:
 
-Player(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh);
+Player(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide);
 ~Player();
 
 //id

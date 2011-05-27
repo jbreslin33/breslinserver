@@ -12,18 +12,17 @@ class OgreShape : public Shape, public OgreAnimation
 {
 
 public:
-OgreShape(std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh);
-OgreShape(std::string name, Vector3D* position, Ogre::Root* root);
+OgreShape(std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide);
 ~OgreShape();
 
-SceneNode* getSceneNode() { return mSceneNode; }
+SceneNode* getSceneNode() { return mChildSceneNode; }
 
 //ogre scene stuff
 std::string         mMeshName;
 Entity*             mEntity;
 Ogre::SceneManager* mSceneManager;
-SceneNode*          mSceneNode;
-
+SceneNode*          mChildSceneNode;
+bool mClientSide;
 };
 
 #endif

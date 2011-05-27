@@ -19,6 +19,8 @@ ServerSideGame::ServerSideGame()
 	mRoot = new Ogre::Root("plugins.cfg");
 #endif
 
+	mSceneManager = mRoot->createSceneManager(Ogre::ST_GENERIC);
+
 	mServer = new Server(this,"", 30004);
 	mRealTime	= 0;
 	mServerTime	= 0;
@@ -38,8 +40,14 @@ void ServerSideGame::ShutdownNetwork(void)
 
 void ServerSideGame::createPlayer(Client* client, int runningIndex)
 {
-	OgreShape* shape = new OgreShape("oshape" + runningIndex,new Vector3D(),mRoot);
-	client->mServerSidePlayer = new ServerSidePlayer("oplayer" + runningIndex,client,shape);
+//mClient->mClientSidePlayer = new ClientSidePlayer(mClient,"jay" + ind,new Vector3D(),mSceneMgr,"sinbad.mesh");
+//	Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh
+	//OgreShape* shape = new OgreShape("oshape" + runningIndex,new Vector3D(),mRoot);
+	
+
+
+	client->mServerSidePlayer = new ServerSidePlayer(client,"oplayer" + runningIndex,new Vector3D(),
+	mSceneManager,"sinbad.mesh",false);
 }
 
 void ServerSideGame::Frame(int msec)

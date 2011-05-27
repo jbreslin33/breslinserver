@@ -3,7 +3,7 @@
 #include "../move/move.h"
 #include "../rotation/rotation.h"
 
-Player::Player(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(client,name,position,mSceneMgr,mesh), Move(this), Rotation(this), OgreShape(name,position,mSceneMgr,mesh)
+Player::Player(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide) : Move(this), Rotation(this), OgreShape(name,position,mSceneMgr,mesh,clientSide)
 {
 	mClient = client;
 	//id

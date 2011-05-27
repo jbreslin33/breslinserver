@@ -39,7 +39,7 @@ public:
 	int		mServerTime;				// Server frame * 100 ms
 
 	long	mFramenum;
-	//Network* mNetwork;
+	Ogre::SceneManager* mSceneManager;
 
 public:
 	ServerSideGame();

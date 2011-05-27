@@ -111,6 +111,22 @@ set(HDRS
 	../player/player.h
 	../player/serverSidePlayer.h
 	
+	#move
+	../move/move.h
+	
+	#player move states
+	../move/moveStateMachine.h
+	../move/moveState.h
+	../move/moveStates.h
+	
+	#rotation
+	../rotation/rotation.h
+	
+	#player rotation states
+	../rotation/rotationStateMachine.h
+	../rotation/rotationState.h
+	../rotation/rotationStates.h	
+	
 	#math
 	../math/vector3D.h
 	
@@ -154,6 +170,18 @@ set(SRCS
 	#player
 	../player/player.cpp
 	../player/serverSidePlayer.cpp
+	
+	#move
+	../move/move.cpp
+	
+	#player move states
+	../move/moveStates.cpp
+	
+	#rotation
+	../rotation/rotation.cpp
+	
+	#player rotation states
+	../rotation/rotationStates.cpp
 	
 	#math
 	../math/vector3D.cpp
@@ -201,6 +229,22 @@ set(HDRS
 	../player/player.h
 	../player/serverSidePlayer.h
 	
+	#move
+	../move/move.h
+	
+	#player move states
+	../move/moveStateMachine.h
+	../move/moveState.h
+	../move/moveStates.h
+	
+	#rotation
+	../rotation/rotation.h
+	
+	#player rotation states
+	../rotation/rotationStateMachine.h
+	../rotation/rotationState.h
+	../rotation/rotationStates.h	
+	
 	#math
 	../math/vector3D.h
 	
@@ -244,6 +288,18 @@ set(SRCS
 	#player
 	../player/player.cpp
 	../player/serverSidePlayer.cpp
+	
+	#move
+	../move/move.cpp
+	
+	#player move states
+	../move/moveStates.cpp
+	
+	#rotation
+	../rotation/rotation.cpp
+	
+	#player rotation states
+	../rotation/rotationStates.cpp
 	
 	#math
 	../math/vector3D.cpp

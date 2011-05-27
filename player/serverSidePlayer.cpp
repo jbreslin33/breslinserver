@@ -15,7 +15,7 @@
 #define KEY_LEFT				4
 #define KEY_RIGHT				8
 
-ServerSidePlayer::ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh) : Player(client,name,position,mSceneMgr,mesh)
+ServerSidePlayer::ServerSidePlayer(Client* client, std::string name, Vector3D* position, Ogre::SceneManager* mSceneMgr, std::string mesh, bool clientSide) : Player(client,name,position,mSceneMgr,mesh,clientSide)
 {
 
 }
@@ -48,7 +48,7 @@ void ServerSidePlayer::processTick()
 		mGoalDirection.y = 0;
 		mGoalDirection.normalise();
 
-		Quaternion toGoal = mSceneNode->getOrientation().zAxis().getRotationTo(mGoalDirection,Vector3::UNIT_Y);
+		Quaternion toGoal = mChildSceneNode->getOrientation().zAxis().getRotationTo(mGoalDirection,Vector3::UNIT_Y);
 
 		// calculate how much the character has to turn to face goal direction
 		Real yawToGoal = toGoal.getYaw().valueDegrees();
@@ -65,25 +65,25 @@ void ServerSidePlayer::processTick()
 		else if (yawToGoal > 0)
 			yawToGoal = std::max<Real>(0, std::min<Real>(yawToGoal, yawAtSpeed)); //yawToGoal = Math::Clamp<Real>(yawToGoal, 0, yawAtSpeed);
 			
-		mSceneNode->yaw(Degree(yawToGoal));
+		mChildSceneNode->yaw(Degree(yawToGoal));
 
 		// move in current body direction (not the goal direction)
-		mSceneNode->translate(0, 0, clientFrametime * RUN_SPEED,
+		mChildSceneNode->translate(0, 0, clientFrametime * RUN_SPEED,
 			Node::TS_LOCAL);
 
 	}
 
-	mCommand.mOrigin.x = mSceneNode->getPosition().x;
-	mCommand.mOrigin.z = mSceneNode->getPosition().z;
+	mCommand.mOrigin.x = mChildSceneNode->getPosition().x;
+	mCommand.mOrigin.z = mChildSceneNode->getPosition().z;
 
 	if(mCommand.mVelocity.x != 0.0 || mCommand.mVelocity.z != 0.0)
 	{
-	   mCommand.mVelocity.x = mSceneNode->getOrientation().zAxis().x;
-	   mCommand.mVelocity.z = mSceneNode->getOrientation().zAxis().z;
+	   mCommand.mVelocity.x = mChildSceneNode->getOrientation().zAxis().x;
+	   mCommand.mVelocity.z = mChildSceneNode->getOrientation().zAxis().z;
 	}
 
-	mCommand.mRot.x = mSceneNode->getOrientation().zAxis().x;
-	mCommand.mRot.z = mSceneNode->getOrientation().zAxis().z;
+	mCommand.mRot.x = mChildSceneNode->getOrientation().zAxis().x;
+	mCommand.mRot.z = mChildSceneNode->getOrientation().zAxis().z;
 
 	int f = mClient->GetIncomingSequence() & (COMMAND_HISTORY_SIZE-1);
 	mProcessedFrame = f;
@@ -127,23 +127,20 @@ void ServerSidePlayer::calculateVelocity(Command* command, float frametime)
 
 void ServerSidePlayer::setKeyDirection()
 {
-	if(mShape) 
-	{
-		mKeyDirection.x = 0;
-		mKeyDirection.z = 0;
-		mKeyDirection.y = 0;
+	mKeyDirection.x = 0;
+	mKeyDirection.z = 0;
+	mKeyDirection.y = 0;
 		
-		// keep track of the player's intended direction
-		if(mCommand.mKey & KEY_UP) 
-			mKeyDirection.z += -1;
+	// keep track of the player's intended direction
+	if(mCommand.mKey & KEY_UP) 
+		mKeyDirection.z += -1;
 
-		if(mCommand.mKey & KEY_LEFT) 
-			mKeyDirection.x += -1;
+	if(mCommand.mKey & KEY_LEFT) 
+		mKeyDirection.x += -1;
 		
-		if(mCommand.mKey & KEY_DOWN) 
-           mKeyDirection.z += 1;
+	if(mCommand.mKey & KEY_DOWN) 
+        mKeyDirection.z += 1;
 
-		if(mCommand.mKey & KEY_RIGHT) 
-			mKeyDirection.x += 1;
-	}
+	if(mCommand.mKey & KEY_RIGHT) 
+		mKeyDirection.x += 1;
 }
