@@ -15,7 +15,7 @@
       <all-permissions/>
   </security>
   <resources>
-    <jar href="breslan.jar"/>
+    <jar href="breslin.jar"/>
     <jar href="jME3-lwjgl-natives.jar" />
     <jar href="lwjgl.jar" />
     <jar href="jMonkeyEngine3.jar" />
