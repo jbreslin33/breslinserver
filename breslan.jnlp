@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp spec="1.0+"
       codebase="http://192.168.1.104/breslinserver/"
-      href="breslin.jnlp">
+      href="breslan.jnlp">
  
   <information>
     <title>Breslin</title>
@@ -15,7 +15,7 @@
       <all-permissions/>
   </security>
   <resources>
-    <jar href="breslin.jar"/>
+    <jar href="breslan.jar"/>
     <jar href="jME3-lwjgl-natives.jar" />
     <jar href="lwjgl.jar" />
     <jar href="jMonkeyEngine3.jar" />
