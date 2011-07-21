@@ -24,20 +24,40 @@ public class Game extends SimpleApplication {
         app.start(JmeContext.Type.Headless);
     }
     @Override
-    public void simpleInitApp() {
-        Box b = new Box(Vector3f.ZERO, 1, 1, 1);
-        Geometry geom = new Geometry("Box", b);
-        Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
-        mat.setColor("Color", ColorRGBA.Blue);
-        geom.setMaterial(mat);
-        rootNode.attachChild(geom);
-
-        //start networking...
-        try {
-        	new GameServerThread().start();
-		} catch (IOException e) {
-		    e.printStackTrace();
-        }
+    public void simpleInitApp()
+    {
+		//this is all I want server to do for now
+		startNetworking();
 
     }
+
+	void gameLoop()
+	{
+
+
+	}
+
+	void startNetworking()
+	{
+        //start networking...
+        try
+        {
+        	new GameServerThread().start();
+		}
+		catch (IOException e)
+		{
+		    e.printStackTrace();
+        }
+	}
+
+
+	void createShape()
+	{
+		Box b = new Box(Vector3f.ZERO, 1, 1, 1);
+		Geometry geom = new Geometry("Box", b);
+		Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+		mat.setColor("Color", ColorRGBA.Blue);
+		geom.setMaterial(mat);
+        rootNode.attachChild(geom);
+	}
 }
