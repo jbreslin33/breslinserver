@@ -37,6 +37,16 @@ public class GameServerThread extends Thread {
 
                 byte[] bufferToClientsByteArray = packet.getData();
 
+
+				//let sim a loop where you'll read packet
+				for (int i = 0; i < 1; i++)
+				{
+					if (bufferToClientsByteArray[i] == 'W')
+					{
+						System.out.println("Move forward");
+					}
+				}
+
                 String bufferToClientsString = new String(bufferToClientsByteArray);
 
 				// send the response to the client at "address" and "port"
