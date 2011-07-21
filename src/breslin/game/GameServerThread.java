@@ -24,29 +24,18 @@ public class GameServerThread extends Thread {
 
         while (serverOn) {
             try {
+				//biggest buffer that network can handle...
                 byte[] buf = new byte[1400];
 
                 // receive request
-
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
-
-
                 System.out.println("Waiting for client to send message...");
-
                 socket.receive(packet);
 
-                byte[] bufferToClientsByteArray = packet.getData();
+				parsePacket(packet);
 
 
-				//let sim a loop where you'll read packet
-				for (int i = 0; i < 1; i++)
-				{
-					if (bufferToClientsByteArray[i] == 'W')
-					{
-						System.out.println("Move forward");
-					}
-				}
-
+/*
                 String bufferToClientsString = new String(bufferToClientsByteArray);
 
 				// send the response to the client at "address" and "port"
@@ -59,6 +48,7 @@ public class GameServerThread extends Thread {
                 System.out.println("got request from" + address.toString());
 
                 socket.send(packet);
+*/
             } catch (IOException e) {
                 e.printStackTrace();
 				serverOn = false;
@@ -66,4 +56,43 @@ public class GameServerThread extends Thread {
         }
         socket.close();
     }
+
+void parsePacket(DatagramPacket packet)
+{
+	byte[] buf = packet.getData();
+
+	//let's first see if it's a move or administrative task...
+	if (buf[0] == 'j')
+	{
+		System.out.println("Join game");
+		byte[] buffer = new byte[1];
+		DatagramPacket p = new DatagramPacket(buffer,buffer.length,packet.getAddress(),packet.getPort());
+		try
+		{
+			socket.send(p);
+		}
+        catch (IOException e)
+        {
+        	e.printStackTrace();
+        }
+
+
+	}
+	else if (buf[0] == 'q')
+	{
+		System.out.println("Quit game");
+	}
+	else if (buf[0] == 'm')
+	{
+		System.out.println("Making a move");
+	}
+}
+
+void sendJoinGame()
+{
+
+}
+
+
+
 }
