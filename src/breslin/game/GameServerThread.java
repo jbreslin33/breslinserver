@@ -24,21 +24,27 @@ public class GameServerThread extends Thread {
 
         while (serverOn) {
             try {
-                byte[] buf = new byte[256];
+                byte[] buf = new byte[1400];
 
-                    // receive request
+                // receive request
+
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
+
 
                 System.out.println("Waiting for client to send message...");
 
                 socket.receive(packet);
 
-                byte[] bufferToClients = packet.getData();
+                byte[] bufferToClientsByteArray = packet.getData();
 
-			    // send the response to the client at "address" and "port"
+                String bufferToClientsString = new String(bufferToClientsByteArray);
+
+				// send the response to the client at "address" and "port"
                 InetAddress address = packet.getAddress();
                 int port = packet.getPort();
-                packet = new DatagramPacket(bufferToClients, bufferToClients.length, address, port);
+                packet = new DatagramPacket(bufferToClientsByteArray, bufferToClientsByteArray.length, address, port);
+
+				System.out.println("data" + bufferToClientsString);
 
                 System.out.println("got request from" + address.toString());
 
