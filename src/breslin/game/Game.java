@@ -36,7 +36,7 @@ public class Game extends SimpleApplication
 		}
 		else
 		{
-			    Game app = new Game("192.168.1.104");
+			    Game app = new Game("localhost");
         		app.start();
 		}
     }
