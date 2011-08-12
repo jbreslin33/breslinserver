@@ -28,7 +28,7 @@
   
    <application-desc
       name="Ghost In The Graveyard"
-      main-class="game.Game"
+      main-class="breslin.clientside.game.Game"
       width="300"
       height="300">
   </application-desc>
