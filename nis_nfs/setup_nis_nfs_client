@@ -16,6 +16,8 @@ echo update common-session file
 cp common-session /etc/pam.d
 echo change permissions of home
 sudo chmod 777 /home
+echo install nfs-common
+sudo apt-get install nfs-common
 echo make vshare directory
 sudo mkdir /vshare
 echo copy startup script that will mount remote share
