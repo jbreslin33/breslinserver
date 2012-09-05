@@ -18,10 +18,12 @@ echo change permissions of home
 sudo chmod 777 /home
 echo install nfs-common
 sudo apt-get install nfs-common
-echo make vshare directory
+echo make piles directory
 sudo mkdir /piles
 echo copy startup script that will mount remote share
 sudo cp mystartup.sh /etc/init.d
 echo make mystartup.sh executable
 sudo chmod +x /etc/init.d/mystartup.sh
+echo add to system
+sudo update-rc.d myscript defaults 99 02
 echo complete you can now reboot and login 
