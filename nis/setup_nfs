@@ -1,0 +1,4 @@
+sudo apt-get install nfs-common
+sudo mkdir /vshare
+sudo cp fstab /etc/fstab
+
