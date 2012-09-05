@@ -19,7 +19,7 @@ sudo chmod 777 /home
 echo install nfs-common
 sudo apt-get install nfs-common
 echo make vshare directory
-sudo mkdir /vshare
+sudo mkdir /piles
 echo copy startup script that will mount remote share
 sudo cp mystartup.sh /etc/init.d
 echo make mystartup.sh executable
