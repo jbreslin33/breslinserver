@@ -21,5 +21,7 @@ sudo apt-get install nfs-common
 echo make vshare directory
 sudo mkdir /vshare
 sudo cp fstab /etc
-
+echo remove remnants of update-rc.d attempts
+sudo rm /etc/init.d/mystartup.sh
+sudo update-rc.d -f mystartup.sh remove
 echo complete you can now reboot and login 
