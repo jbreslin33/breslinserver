@@ -1,3 +1,9 @@
+run
+
+sudo yes | ./setup
+
+or manual do the following......
+
 sudo apt-get install portmap
 
 sudo update-rc.d portmap defaults 10
