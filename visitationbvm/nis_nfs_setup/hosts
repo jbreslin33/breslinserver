@@ -7,4 +7,4 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-192.168.1.103  nisserver nisserver.abcandyou.com
+192.168.2.35  nisserver nisserver.visitationbvm.com
