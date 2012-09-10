@@ -25,4 +25,11 @@ sudo apt-get install nfs-common
 echo make vshare directory
 sudo mkdir /vshare
 sudo cp fstab /etc
+echo remove unity
+sudo apt-get remove unity
+echo make vm directory
+sudo mkdir /vm
+sudo chmod -R 777 /vm
+echo install virtualbox
+sudo apt-get install virtualbox
 echo complete you can now reboot and login 
