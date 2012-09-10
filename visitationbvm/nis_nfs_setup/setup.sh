@@ -30,6 +30,8 @@ sudo apt-get remove unity
 echo make vm directory
 sudo mkdir /vm
 sudo chmod -R 777 /vm
+echo mkdir /vm/xp
+sudo chmod -R 777 /vm/xp
 echo install virtualbox
 sudo apt-get install virtualbox
 echo complete you can now reboot and login 
