@@ -35,9 +35,10 @@ sudo mkdir /vm/xp
 sudo chmod -R 777 /vm/xp
 echo install virtualbox
 sudo apt-get install virtualbox
+echo install clusterssh
+sudo apt-get install clusterssh
 echo install vlc player
 sudo apt-get install vlc
-echo install epoptes-client
-sudo apt-get install epotes-client
-sudo epoptes-client -c
+
+
 echo complete you can now reboot and login 
