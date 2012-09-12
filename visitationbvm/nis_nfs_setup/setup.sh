@@ -42,4 +42,5 @@ sudo apt-get install vlc
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
+
 echo complete you can now reboot and login 
