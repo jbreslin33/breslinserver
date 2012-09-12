@@ -39,6 +39,8 @@ echo install clusterssh
 sudo apt-get install clusterssh
 echo install vlc player
 sudo apt-get install vlc
+echo for teacher admin of epoptes
+sudo apt-get install epoptes
 
 
 echo complete you can now reboot and login 
