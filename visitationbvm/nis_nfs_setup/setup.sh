@@ -40,6 +40,6 @@ sudo apt-get install virtualbox
 echo install vlc player
 sudo apt-get install vlc
 echo install epoptes-client
-sudo apt-get install epotes-client
+sudo apt-get install epoptes-client
 sudo epoptes-client -c
 echo complete you can now reboot and login 
