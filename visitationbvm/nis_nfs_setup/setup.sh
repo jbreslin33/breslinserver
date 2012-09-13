@@ -26,7 +26,7 @@ sudo chmod 777 /home
 echo cron jobs
 sudo cp crontab /etc
 sudo mkdir /scripts
-sudo cp mount_vshare /scripts 
+sudo cp mount_vshare.sh /scripts 
 
 
 echo install nfs-common
