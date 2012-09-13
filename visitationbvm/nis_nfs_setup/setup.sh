@@ -22,6 +22,13 @@ echo update common-session file
 cp common-session /etc/pam.d
 echo change permissions of home
 sudo chmod 777 /home
+
+echo cron jobs
+sudo cp crontab /etc
+sudo mkdir /scripts
+sudo cp mount_vshare /scripts 
+
+
 echo install nfs-common
 sudo apt-get install nfs-common
 echo make vshare directory
