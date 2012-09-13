@@ -12,6 +12,9 @@
 #nis login server
 192.168.2.35    nisserver 
 
+#nfs file server
+192.168.2.54    nfsserver 
+
 #teacher
 192.168.2.112   labteacher
 

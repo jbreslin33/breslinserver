@@ -12,3 +12,4 @@ UUID=a9d33f70-a523-4b0c-ada0-5cc8ddfb57f1 /               ext4    errors=remount
 UUID=883f2f38-1519-4c7f-92ca-8eba6b3ab9d4 none            swap    sw              0       0
 #192.168.2.54:/vshare /vshare nfs rsize=8192,wsize=8192,timeo=14,intr
 #192.168.2.54:/vshare  /vshare  nfs   soft,intr,rsize=8192,wsize=8192
+192.168.2.54:/vshare  /nfs  nfs   soft,intr,rsize=8192,wsize=8192
