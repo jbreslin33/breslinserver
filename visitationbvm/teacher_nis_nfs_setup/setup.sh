@@ -59,5 +59,6 @@ echo for teacher admin of epoptes
 sudo apt-get install epoptes
 echo add student to list epoptes group
 sudo gpasswd -a student epoptes
+sudo gpasswd -a v1201 epoptes
 
 echo complete you can now reboot and login 
