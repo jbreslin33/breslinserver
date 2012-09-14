@@ -22,8 +22,6 @@ echo change permissions of home
 sudo chmod 777 /home
 echo install nfs-common
 sudo apt-get install nfs-common
-echo make vshare directory
-sudo mkdir /vshare
 sudo cp fstab /etc
 echo remove unity
 sudo apt-get remove unity
