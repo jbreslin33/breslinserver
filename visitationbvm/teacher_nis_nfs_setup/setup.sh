@@ -61,4 +61,7 @@ echo add student to list epoptes group
 sudo gpasswd -a student epoptes
 sudo gpasswd -a v1201 epoptes
 
+echo install clusterssh
+sudo apt-get install clusterssh
+
 echo complete you can now reboot and login 
