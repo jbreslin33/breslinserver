@@ -50,7 +50,7 @@
 192.168.2.50    lab34
 192.168.2.54    lab35
 
-
+192.168.2.68    red01
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback

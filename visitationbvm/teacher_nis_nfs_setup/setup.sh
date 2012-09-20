@@ -13,7 +13,7 @@ echo install nis
 sudo apt-get install nis
 
 echo update hosts file
-cp hosts /etc
+cp ../nis_nfs_setup/hosts /etc
 
 echo update yp.conf file
 cp yp.conf /etc
