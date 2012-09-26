@@ -21,9 +21,6 @@ cp yp.conf /etc
 echo update nsswitch.conf file
 cp nsswitch.conf /etc
 
-echo update lightdm.conf file
-cp lightdm.conf /etc/lightdm
-
 echo update common-session file
 cp common-session /etc/pam.d
 echo change permissions of home
@@ -39,9 +36,6 @@ echo install nfs-common
 sudo apt-get install nfs-common
 
 sudo cp fstab /etc
-
-echo remove unity
-sudo apt-get remove unity
 
 echo make vm directory
 sudo mkdir /vm
