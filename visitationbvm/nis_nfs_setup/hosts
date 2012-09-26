@@ -76,6 +76,7 @@
 #192.168.2.190   red04
 192.168.2.217   red05
 192.168.2.209   red06
+192.168.2.155   red08
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
