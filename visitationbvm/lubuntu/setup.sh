@@ -46,6 +46,9 @@ sudo chmod -R 777 /vm/xp
 echo install virtualbox
 sudo apt-get install virtualbox
 
+echo install libreoffice
+sudo apt-get install libreoffice
+
 echo install vlc player
 sudo apt-get install vlc
 
