@@ -59,4 +59,7 @@ echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
 
+echo install apache2
+sudo apt-get install apache2
+
 echo complete you can now reboot and login 
