@@ -45,5 +45,5 @@ v1344:bid:1344:100:Vaugn Charles Seamon:/home/v1344:/bin/bash
 v1345:big:1345:100:William Torres:/home/v1345:/bin/bash
 v1346:bin:1346:100:William Perez:/home/v1346:/bin/bash
 v1347:bio:1347:100:Kianni Mercy Figuereo:/home/v1347:/bin/bash
-v1348:bio:1348:100:Justin Perez:/home/v1348:/bin/bash
-v1349:bio:1349:100:Nadir Davis:/home/v1349:/bin/bash
+v1348:big:1348:100:Justin Perez:/home/v1348:/bin/bash
+v1349:cat:1349:100:Nadir Davis:/home/v1349:/bin/bash
