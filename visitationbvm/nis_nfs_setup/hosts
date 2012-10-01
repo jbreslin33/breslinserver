@@ -77,15 +77,17 @@
 192.168.2.217   red05
 192.168.2.209   red06
 192.168.2.155   red08
-192.168.2.101   red09 #lubuntu
-192.168.2.217   red10 #lubuntu
-192.168.2.155   red11 #lubuntu
-192.168.2.209   red12 #lubuntu
+192.168.2.101   red09 #lubuntu rm32 
+192.168.2.217   red10 #lubuntu rm32
+192.168.2.155   red11 #lubuntu rm32
+192.168.2.209   red12 #lubuntu rm32
 192.168.2.138   red13 #lubuntu
 192.168.2.129   red14 #lubuntu
 192.168.2.207   red15 #lubuntu
-#192.168.2.207   red16 #lubuntu
+192.168.2.71   red16 #lubuntu
 192.168.2.38   red17 #lubuntu
+192.168.2.78   red18 #lubuntu
+#192.168.2.38   red19 #lubuntu
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
