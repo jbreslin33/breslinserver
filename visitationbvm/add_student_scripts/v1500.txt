@@ -31,4 +31,4 @@ v1530:bit:1530:100:Nathaniel Rivera:/home/v1530:/bin/bash
 v1531:bag:1531:100:Christian Rojas:/home/v1531:/bin/bash
 v1532:bam:1532:100:Christina Marie Santana:/home/v1532:/bin/bash
 v1533:ban:1533:100:Joseph Wetherill:/home/v1533:/bin/bash
-v1534:bag:1534:100:Chung Pham:/home/v1534:/bin/bash
+v1534:bag:1534:100:Chuong Pham:/home/v1534:/bin/bash
