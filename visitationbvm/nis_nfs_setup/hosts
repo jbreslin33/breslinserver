@@ -89,6 +89,7 @@
 192.168.2.78    red18 #lubuntu
 #192.168.2.38   red19 #lubuntu
 192.168.2.47    red20 #lubuntu
+192.168.2.58    red21 #lubuntu
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
