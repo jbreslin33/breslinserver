@@ -47,4 +47,3 @@ v1746:bin:1746:100:Jorden Richards:/home/v1746:/bin/bash
 v1747:bio:1747:100:William Santana:/home/v1747:/bin/bash
 v1747:bip:1747:100:Jaslin Seck:/home/v1747:/bin/bash
 v1748:bip:1748:100:Vy Nuguyen:/home/v1748:/bin/bash
-~                                                              
