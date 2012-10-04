@@ -55,6 +55,9 @@ sudo apt-get install virtualbox
 echo install vlc player
 sudo apt-get install vlc
 
+echo intstall tux games
+
+
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
