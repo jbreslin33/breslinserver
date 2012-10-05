@@ -20,7 +20,7 @@ v1319:arm:1319:100:Bao Nghi Tran:/home/v1319:/bin/bash
 v1320:art:1320:100:Han Trinh:/home/v1320:/bin/bash
 v1321:ash:1321:100:Destiny Faith Vazquez:/home/v1321:/bin/bash
 v1322:ask:1322:100:Marissa Velez:/home/v1322:/bin/bash
-v1323:ate:1323:100:Khadijah Adams:/home/v1323:/bin/bash
+v1323:big:1323:100:Jonathan Torres:/home/v1323:/bin/bash
 v1324:ave:1324:100:Ausin Barbot Santana:/home/v1324:/bin/bash
 v1325:awe:1325:100:Moises Bonifacio:/home/v1325:/bin/bash
 v1326:axe:1326:100:Alisha Bristol:/home/v1326:/bin/bash
