@@ -56,7 +56,9 @@ echo install vlc player
 sudo apt-get install vlc
 
 echo intstall tux games
-
+sudo apt-get install tuxpaint
+sudo apt-get install tuxmath
+sudo apt-get install tuxtype
 
 echo install epoptes-client
 sudo apt-get install epoptes-client
