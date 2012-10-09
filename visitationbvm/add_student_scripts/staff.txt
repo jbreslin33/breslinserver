@@ -4,3 +4,27 @@ v1202:bio:1202:50:Jim Roache:/home/v1202:/bin/bash
 v1203:bio:1203:50:Sister Terri:/home/v1203:/bin/bash
 v1204:bio:1204:50:Sister Margaret:/home/v1204:/bin/bash
 v1205:bio:1205:50:Maryanne Corcoran:/home/v1205:/bin/bash
+v1206:bio:1206:50:Sister Pat:/home/v1205:/bin/bash
+v1207:bio:1207:50:Patricia:/home/v1205:/bin/bash
+v1208:bio:1208:50::/home/v1205:/bin/bash
+v1209:bio:1209:50:Teacher:/home/v1205:/bin/bash
+v1210:bio:1210:50:Teacher:/home/v1205:/bin/bash
+v1211:bio:1211:50:Teacher:/home/v1205:/bin/bash
+v1212:bio:1212:50:Teacher:/home/v1205:/bin/bash
+v1213:bio:1213:50:Teacher:/home/v1205:/bin/bash
+v1214:bio:1214:50:Teacher:/home/v1205:/bin/bash
+v1215:bio:1215:50:Teacher:/home/v1205:/bin/bash
+v1216:bio:1216:50:Teacher:/home/v1205:/bin/bash
+v1217:bio:1217:50:Teacher:/home/v1205:/bin/bash
+v1218:bio:1218:50:Teacher:/home/v1205:/bin/bash
+v1219:bio:1219:50:Teacher:/home/v1205:/bin/bash
+v1220:bio:1220:50:Teacher:/home/v1205:/bin/bash
+v1221:bio:1221:50:Teacher:/home/v1205:/bin/bash
+v1222:bio:1222:50:Teacher:/home/v1205:/bin/bash
+v1223:bio:1223:50:Teacher:/home/v1205:/bin/bash
+v1224:bio:1224:50:Teacher:/home/v1205:/bin/bash
+v1225:bio:1225:50:Teacher:/home/v1205:/bin/bash
+v1226:bio:1226:50:Teacher:/home/v1205:/bin/bash
+v1227:bio:1205:50:Teacher:/home/v1205:/bin/bash
+v1228:bio:1205:50:Teacher:/home/v1205:/bin/bash
+v1229:bio:1205:50:Teacher:/home/v1205:/bin/bash
