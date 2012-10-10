@@ -55,3 +55,4 @@ v1253:bio:1253:50:Tom O'Brien:/home/v1253:/bin/bash
 v1254:bio:1254:50:Tricia Cox:/home/v1254:/bin/bash
 v1255:bio:1255:50:Valerie Hasan:/home/v1255:/bin/bash
 v1256:bio:1256:50:Vinh Nguyen:/home/v1256:/bin/bash
+v1257:bio:1257:50:Regina Whitfield:/home/v1257:/bin/bash
