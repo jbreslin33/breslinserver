@@ -60,6 +60,9 @@ sudo apt-get install tuxpaint
 sudo apt-get install tuxmath
 sudo apt-get install tuxtype
 
+echo install wesnoth
+sudo apt-get install wesnoth
+
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
