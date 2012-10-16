@@ -42,3 +42,4 @@ v2041:ben:2041:100:Alexis Sanchez:/home/v2041:/bin/bash
 v2042:bet:2042:100:Antonio Santiago:/home/v2042:/bin/bash
 v2043:bib:2043:100:Isis Torres:/home/v2043:/bin/bash
 v2044:bib:2044:100:Jaden Camillo:/home/v2044:/bin/bash
+v2045:bib:2045:100:Allan Ortiz:/home/v2045:/bin/bash
