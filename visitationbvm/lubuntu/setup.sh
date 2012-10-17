@@ -12,7 +12,7 @@ echo remove nis
 sudo apt-get remove nis
 
 echo update hosts file
-cp hosts /etc
+cp ../stand_alone_lubuntu/hosts /etc
 
 echo update yp.conf file
 cp yp.conf /etc
@@ -33,8 +33,6 @@ sudo chmod 777 /mnt
 
 echo install nfs-common
 sudo apt-get install nfs-common
-
-sudo cp fstab /etc
 
 echo install epoptes-client
 sudo apt-get install epoptes-client
