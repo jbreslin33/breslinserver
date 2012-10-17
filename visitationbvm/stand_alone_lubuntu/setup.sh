@@ -24,6 +24,9 @@ sudo apt-get install nfs-common
 
 sudo cp fstab /etc
 
+echo change login
+sudo cp lightdm.conf /etc/lightdm
+
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
@@ -39,5 +42,6 @@ sudo newusers ../add_student_scripts/v1800.txt
 sudo newusers ../add_student_scripts/v1900.txt
 sudo newusers ../add_student_scripts/v2000.txt
 sudo newusers ../add_student_scripts/v2100.txt
+
 
 echo complete you can now reboot and login 
