@@ -39,7 +39,7 @@ sudo apt-get install epoptes-client
 sudo epoptes-client -c
 
 echo login
-sudo cp lightdm /etc/lightdm
+sudo cp lightdm.conf /etc/lightdm
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
