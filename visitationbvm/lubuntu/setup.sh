@@ -4,16 +4,15 @@ echo install ssh
 sudo apt-get install ssh
 echo update system
 sudo apt-get dist-upgrade
-echo install portmap
-sudo apt-get install portmap
+echo remove portmap
+sudo apt-get remove portmap
 echo update defaults
-sudo update-rc.d portmap defaults 10
 
-echo install nis
-sudo apt-get install nis
+echo remove nis
+sudo apt-get remove nis
 
 echo update hosts file
-cp ../nis_nfs_setup/hosts /etc
+cp hosts /etc
 
 echo update yp.conf file
 cp yp.conf /etc
