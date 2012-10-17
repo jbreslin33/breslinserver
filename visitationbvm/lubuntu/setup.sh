@@ -55,4 +55,16 @@ echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
 
+echo add users
+sudo newusers ../add_student_scripts/staff.txt
+sudo newusers ../add_student_scripts/v1300.txt
+sudo newusers ../add_student_scripts/v1400.txt
+sudo newusers ../add_student_scripts/v1500.txt
+sudo newusers ../add_student_scripts/v1600.txt
+sudo newusers ../add_student_scripts/v1700.txt
+sudo newusers ../add_student_scripts/v1800.txt
+sudo newusers ../add_student_scripts/v1900.txt
+sudo newusers ../add_student_scripts/v2000.txt
+sudo newusers ../add_student_scripts/v2100.txt
+
 echo complete you can now reboot and login 
