@@ -26,6 +26,7 @@ sudo cp fstab /etc
 
 echo change login
 sudo cp lightdm.conf /etc/lightdm
+sudo cp users.conf /etc/lightdm
 
 echo install epoptes-client
 sudo apt-get install epoptes-client
