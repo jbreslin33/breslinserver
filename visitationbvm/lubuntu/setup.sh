@@ -36,24 +36,12 @@ sudo apt-get install nfs-common
 
 sudo cp fstab /etc
 
-echo make vm directory
-sudo mkdir /vm
-sudo chmod -R 777 /vm
-echo mkdir /vm/xp
-sudo mkdir /vm/xp
-sudo chmod -R 777 /vm/xp
-echo install virtualbox
-sudo apt-get install virtualbox
-
-echo install libreoffice
-sudo apt-get install libreoffice
-
-echo install vlc player
-sudo apt-get install vlc
-
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
+
+echo login
+sudo cp lightdm /etc/lightdm
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
