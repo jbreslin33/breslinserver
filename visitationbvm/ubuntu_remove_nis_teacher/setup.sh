@@ -23,20 +23,20 @@ echo update lightdm.conf file
 cp ../ubuntu_remove_nis/lightdm.conf /etc/lightdm
 
 echo update common-session file
-cp common-session /etc/pam.d
+cp ../ubuntu_remove_nis/common-session /etc/pam.d
 echo change permissions of home
 sudo chmod 777 /home
 
 echo cron jobs
-sudo cp crontab /etc
+sudo cp ../ubuntu_remove_nis/crontab /etc
 sudo mkdir /scripts
-sudo cp mount_nfs.sh /scripts 
+sudo cp ../ubuntu_remove_nis/mount_nfs.sh /scripts 
 sudo chmod 777 /mnt
 
 echo install nfs-common
 sudo apt-get install nfs-common
 
-sudo cp fstab /etc
+sudo cp ../ubuntu_remove_nis/fstab /etc
 
 echo remove unity
 sudo apt-get remove unity
