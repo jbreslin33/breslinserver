@@ -32,6 +32,9 @@ echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
 
+echo remove unity
+sudo apt-get remove unity
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
