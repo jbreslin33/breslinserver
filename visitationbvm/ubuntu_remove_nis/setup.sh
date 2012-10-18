@@ -41,28 +41,20 @@ sudo cp fstab /etc
 echo remove unity
 sudo apt-get remove unity
 
-echo make vm directory
-sudo mkdir /vm
-sudo chmod -R 777 /vm
-echo mkdir /vm/xp
-sudo mkdir /vm/xp
-sudo chmod -R 777 /vm/xp
-echo install virtualbox
-sudo apt-get install virtualbox
-
-echo install vlc player
-sudo apt-get install vlc
-
-echo intstall tux games
-sudo apt-get install tuxpaint
-sudo apt-get install tuxmath
-sudo apt-get install tuxtype
-
-echo install wesnoth
-sudo apt-get install wesnoth
-
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
+
+echo add users
+sudo newusers ../add_student_scripts/staff.txt
+sudo newusers ../add_student_scripts/v1300.txt
+sudo newusers ../add_student_scripts/v1400.txt
+sudo newusers ../add_student_scripts/v1500.txt
+sudo newusers ../add_student_scripts/v1600.txt
+sudo newusers ../add_student_scripts/v1700.txt
+sudo newusers ../add_student_scripts/v1800.txt
+sudo newusers ../add_student_scripts/v1900.txt
+sudo newusers ../add_student_scripts/v2000.txt
+sudo newusers ../add_student_scripts/v2100.txt
 
 echo complete you can now reboot and login 
