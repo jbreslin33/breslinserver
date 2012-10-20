@@ -15,3 +15,10 @@ sudo service apache2 reload
 sudo cp config.inc.php /etc/phppgadmin
 
 sudo cp postgresql.conf /etc/postgresql/9.1/main
+echo run these next commands manually
+echo sudo -u postgres psql postgres
+echo \password postgres
+echo sudo -u postgres createdb abcandyou 
+echo sudo su postgres
+echo psql -d abcandyou -f db_build.sql
+
