@@ -5,8 +5,6 @@ sudo cp 000-default /etc/apache2/sites-enabled
 sudo /etc/init.d/apache2 restart
 sudo chmod 777 /var/www/
 
-sudo apt-get install mercurial
-
 sudo apt-get install postgresql
 sudo apt-get install phppgadmin
 
@@ -17,5 +15,3 @@ sudo service apache2 reload
 sudo cp config.inc.php /etc/phppgadmin
 
 sudo cp postgresql.conf /etc/postgresql/9.1/main
-
-
