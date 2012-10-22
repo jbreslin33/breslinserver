@@ -20,6 +20,9 @@ sudo apt-get install nfs-common
 echo change login
 sudo cp ../ubuntu_standalone/lightdm.conf /etc/lightdm
 
+echo no sleep on lid closed
+sudo cp lidbtn /etc/acpi/events
+
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
