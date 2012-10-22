@@ -21,7 +21,7 @@ echo change login
 sudo cp ../ubuntu_standalone/lightdm.conf /etc/lightdm
 
 echo power off on lid closed
-sudo cp lidbtn.sh /etc/acpi/events
+sudo cp lidbtn /etc/acpi/events
 sudo cp pb.sh /etc/acpi
 sudo chmod 777 /etc/acpi/pb.sh
 sudo +x /etc/acpi/pb.sh
