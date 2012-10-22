@@ -8,11 +8,6 @@ sudo apt-get dist-upgrade
 echo update hosts file
 cp hosts /etc
 
-echo update common-session file
-cp common-session /etc/pam.d
-echo change permissions of home
-sudo chmod 777 /home
-
 echo cron jobs
 sudo cp crontab /etc
 sudo mkdir /scripts
@@ -22,18 +17,12 @@ sudo chmod 777 /mnt
 echo install nfs-common
 sudo apt-get install nfs-common
 
-sudo cp fstab /etc
-
 echo change login
 sudo cp lightdm.conf /etc/lightdm
-sudo cp users.conf /etc/lightdm
 
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
-
-echo remove unity
-sudo apt-get remove unity
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt

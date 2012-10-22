@@ -120,6 +120,9 @@
 192.168.2.215   r3202
 192.168.2.214   r3203
 
+#rm 35
+192.168.2.220   r3501
+
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
