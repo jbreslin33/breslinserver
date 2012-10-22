@@ -74,10 +74,10 @@
 192.168.2.217   red05
 192.168.2.209   red06
 192.168.2.155   red08
-192.168.2.101   red09 #lubuntu rm32 
-192.168.2.217   red10 #lubuntu rm32
-192.168.2.155   red11 #lubuntu rm32
-192.168.2.209   red12 #lubuntu rm32
+192.168.2.101   red09 #lubuntu  
+192.168.2.217   red10 #lubuntu 
+192.168.2.155   red11 #lubuntu 
+192.168.2.209   red12 #lubuntu 
 192.168.2.138   red13 #lubuntu
 192.168.2.129   red14 #lubuntu
 192.168.2.207   red15 #lubuntu
@@ -85,7 +85,7 @@
 192.168.2.38    red17 #lubuntu
 192.168.2.78    red18 #lubuntu
 #192.168.2.38   red19 #lubuntu
-192.168.2.47    red20 #lubuntu
+192.168.2.150   red20 #ubuntu r32
 192.168.2.58    red21 #lubuntu
 192.168.2.126   red22 #lubuntu
 192.168.2.127   red23 #lubuntu
