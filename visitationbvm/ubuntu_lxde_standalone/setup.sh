@@ -17,6 +17,9 @@ sudo chmod 777 /mnt
 echo install nfs-common
 sudo apt-get install nfs-common
 
+echo install lxde
+sudo apt-get instal lxde
+
 echo change login
 sudo cp lightdm.conf /etc/lightdm
 
