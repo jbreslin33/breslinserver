@@ -24,6 +24,11 @@ echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
 
+echo tux
+sudo apt-get install tuxmath
+sudo apt-get install tuxtype
+sudo apt-get install tuxpaint
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
