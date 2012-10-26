@@ -3,7 +3,6 @@ sudo apt-get install php5
 sudo cp ../dev_box_abcandyou/php5.conf /etc/apache2/mods-enabled
 sudo cp 000-default /etc/apache2/sites-enabled
 sudo /etc/init.d/apache2 restart
-sudo chmod 777 /var/www/
 
 sudo apt-get install postgresql
 sudo apt-get install phppgadmin
