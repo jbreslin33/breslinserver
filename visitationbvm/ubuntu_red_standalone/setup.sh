@@ -25,10 +25,17 @@ sudo cp lidbtn /etc/acpi/events
 sudo cp pb.sh /etc/acpi
 sudo chmod 755 /etc/acpi/pb.sh
 
-
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
+
+echo tux
+sudo apt-get install tuxmath
+sudo apt-get install tuxtype
+sudo apt-get install tuxpaint
+
+echo vlc
+sudo apt-get install vlc
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
