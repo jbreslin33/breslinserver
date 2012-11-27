@@ -32,6 +32,13 @@ sudo apt-get install tuxpaint
 echo vlc
 sudo apt-get install vlc
 
+echo install wine
+sudo apt-get install wine
+
+echo install virtualbox
+sudo apt-get install virtualbox 
+
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
