@@ -51,5 +51,11 @@ sudo newusers ../add_student_scripts/v1900.txt
 sudo newusers ../add_student_scripts/v2000.txt
 sudo newusers ../add_student_scripts/v2100.txt
 
+sudo mkdir /virtual-machines
+sudo cp /mnt/clones/vxp.tar.gz . 
+sudo gunzip < vxp.tar.gz | tar xvf -
+sudo mv vxp /virtual-machines
+sudo chmod -R 777 /virtual-machines
+
 
 echo complete you can now reboot and login 
