@@ -97,6 +97,13 @@
 192.168.2.35   r3502
 192.168.2.101  r3503
 
+#r37
+192.168.2.118  r3701
+192.168.2.86   r3702
+192.168.2.90   r3703
+
+
+
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
