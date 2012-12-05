@@ -1,0 +1,120 @@
+127.0.0.1	localhost
+
+#epoptes admin
+192.168.2.112   server
+
+#webserver
+192.168.2.251   vweb1 
+
+#moodle
+192.168.2.252   vmoodle 
+
+#nis login server
+#192.168.2.170    nisserver 
+
+#nfs file server
+192.168.2.54    nfsserver 
+
+#teacher
+192.168.2.112   labteacher
+
+#row1
+192.168.2.91    lab01
+192.168.2.125   lab02
+192.168.2.123   lab03
+192.168.2.108   lab04
+192.168.2.106   lab05
+192.168.2.107   lab06
+
+#row2
+192.168.2.178   lab07
+192.168.2.128   lab08
+192.168.2.148   lab09
+192.168.2.88    lab10
+192.168.2.43    lab11
+192.168.2.121   lab12
+
+#row3
+192.168.2.196   lab13
+192.168.2.116   lab14
+192.168.2.139   lab15
+192.168.2.84    lab16
+192.168.2.154   lab17
+192.168.2.140   lab18
+192.168.2.100   lab19
+192.168.2.164   lab20
+192.168.2.183   lab21
+192.168.2.182   lab22
+
+#row4
+192.168.2.191   lab23
+
+#row5
+192.168.2.180   lab24
+192.168.2.186   lab25
+192.168.2.76    lab26
+192.168.2.46    lab27
+192.168.2.48    lab28
+192.168.2.45    lab29
+
+#row5
+192.168.2.39    lab30
+192.168.2.44    lab31
+192.168.2.51    lab32
+192.168.2.49    lab33
+192.168.2.50    lab34
+192.168.2.54    lab35
+
+#row6
+192.168.2.185   lab36
+192.168.2.188   lab37
+
+#reds
+192.168.2.68    red01 #lubuntu
+192.168.2.157   red02 #lubuntu
+192.168.2.190   red03 #lubuntu
+192.168.2.156   red04 #lubuntu
+192.168.2.217   red05
+192.168.2.209   red06
+192.168.2.155   red08
+192.168.2.101   red09 #lubuntu rm32 
+192.168.2.217   red10 #lubuntu rm32
+192.168.2.155   red11 #lubuntu rm32
+192.168.2.209   red12 #lubuntu rm32
+192.168.2.138   red13 #lubuntu
+192.168.2.129   red14 #lubuntu
+192.168.2.207   red15 #lubuntu
+192.168.2.71    red16 #lubuntu
+192.168.2.38    red17 #lubuntu
+192.168.2.78    red18 #lubuntu
+#192.168.2.38   red19 #lubuntu
+192.168.2.47    red20 #lubuntu
+192.168.2.58    red21 #lubuntu
+192.168.2.126   red22 #lubuntu
+192.168.2.127   red23 #lubuntu
+192.168.2.169   red24 #lubuntu
+192.168.2.195   red25 #lubuntu
+192.168.2.36    red26 #lubuntu
+192.168.2.129   red27 #lubuntu
+192.168.2.241   red28 #lubuntu
+192.168.2.126   red29 #lubuntu
+192.168.2.156   red30 #lubuntu
+192.168.2.127   red31 #lubuntu
+192.168.2.203   red32 #lubuntu
+192.168.2.223   red33 #lubuntu
+192.168.2.105   red34 #lubuntu
+192.168.2.229   red35 #lubuntu
+192.168.2.143   red36 #lubuntu
+#192.168.2.   red37 #lubuntu
+
+
+#RM 7
+192.168.2.171   rm07c01
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+#192.168.2.170  nisserver nisserver.visitationbvm.com
