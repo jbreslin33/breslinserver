@@ -1,7 +1,7 @@
 echo making dir
 sudo mkdir /virtual-machines
 echo copying tar file to current dir
-sudo cp /mnt/clones/vxp.tar.gz . 
+sudo cp /mnt/public/virtual-machines/vxp.tar.gz . 
 echo unzipping and untarring to current dir
 sudo gunzip < vxp.tar.gz | tar xvf -
 echo moving to virtual-machines dir
