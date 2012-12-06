@@ -1,12 +1,19 @@
+echo install pv
+sudo apt-get install pv
+
 echo making dir
 sudo mkdir /virtual-machines
-echo copying tar file to current dir
-sudo cp /mnt/public/virtual-machines/vxp.tar.gz . 
+
+echo copying vxp archive to /virtual-machines 
+sudo pv /mnt/public/virtual-machines/vxp.tar.gz > /virtual-machines/vxp.tar.gz       
+
 echo unzipping and untarring to current dir
-sudo gunzip < vxp.tar.gz | tar xvf -
-echo moving to virtual-machines dir
+sudo gunzip < /virtual-machines/vxp.tar.gz | tar xvf -
+
+echo moving to /virtual-machines dir
 sudo mv vxp /virtual-machines
-echo changing permissions
+
+echo changing permissions recursively on /virtual-machines
 sudo chmod -R 777 /virtual-machines
  
 echo complete you can now reboot and login 
