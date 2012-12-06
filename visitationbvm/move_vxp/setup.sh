@@ -15,5 +15,8 @@ sudo mv vxp /virtual-machines
 
 echo changing permissions recursively on /virtual-machines
 sudo chmod -R 777 /virtual-machines
+
+echo remove /virtual-machines/vxp.tar.gz 
+sudo rm /virtual-machines/vxp.tar.gz 
  
 echo complete you can now reboot and login 
