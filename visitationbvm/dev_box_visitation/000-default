@@ -1,7 +1,7 @@
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 
-	DocumentRoot /srv
+	DocumentRoot /var/www/jbreslin33-quizgame
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
