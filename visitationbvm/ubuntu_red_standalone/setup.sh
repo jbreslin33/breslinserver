@@ -17,6 +17,9 @@ sudo chmod 777 /mnt
 echo install nfs-common
 sudo apt-get install nfs-common
 
+echo install smbfs
+sudo apt-get install smbfs
+
 echo change login
 sudo cp ../ubuntu_standalone/lightdm.conf /etc/lightdm
 
@@ -36,6 +39,13 @@ sudo apt-get install tuxpaint
 
 echo vlc
 sudo apt-get install vlc
+
+echo install wine
+sudo apt-get install wine -q
+
+echo install virtualbox
+sudo apt-get install virtualbox 
+
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
