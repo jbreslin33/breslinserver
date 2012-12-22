@@ -7,6 +7,7 @@ sudo chmod 777 /var/www/
 
 sudo apt-get install postgresql
 sudo apt-get install phppgadmin
+sudo apt-get install libpq-dev
 
 sudo cp apache2.conf /etc/apache2
 sudo cp apache.conf /etc/phppgadmin
