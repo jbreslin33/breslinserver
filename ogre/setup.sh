@@ -8,9 +8,8 @@ sudo apt-get install cmake
 mkdir ../../sandbox
 cd ../../sandbox
 hg clone https://bitbucket.org/sinbad/ogre/ -u v1-7
-cd ogre
-mkdir build
-cd build
+mkdir ogre/build
+cd ogre/build
 cmake ..
 make
 sudo make install
