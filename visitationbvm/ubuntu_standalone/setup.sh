@@ -41,6 +41,8 @@ sudo apt-get install wine -q
 echo install virtualbox
 sudo apt-get install virtualbox 
 
+echo install mixxx
+sudo apt-get install mixxx
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
