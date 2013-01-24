@@ -37,6 +37,4 @@ v1636:bat:1636:100:Andres Perez:/home/v1636:/bin/bash
 v1637:bay:1637:100:Hailey Ramirez:/home/v1637:/bin/bash
 v1638:bed:1638:100:Anthony Rivera:/home/v1638:/bin/bash
 v1639:bee:1639:100:Alexandra Rodriguez:/home/v1639:/bin/bash
-v1640:beg:1640:100:Anthony Rivera:/home/v1640:/bin/bash
-v1641:ben:1641:100:Alexandra Rodriquez:/home/v1641:/bin/bash
 v1642:bet:1642:100:Anna Truong:/home/v1642:/bin/bash
