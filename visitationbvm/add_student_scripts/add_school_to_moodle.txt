@@ -453,7 +453,7 @@ v1913,ant,Diveah,Henry,v1913@visitationbvm.com
 v1914,app,Adam,Moore,v1914@visitationbvm.com
 v1915,apt,Jose,Morales,v1915@visitationbvm.com
 v1916,arc,Rachel,Nguyen,v1916@visitationbvm.com
-v1917,arf,Dasha,Rios,v1917@visitationbvm.com
+v1917,arf,Richel,Nunez,v1917@visitationbvm.com
 v1918,ark,Dasha,Rios,v1918@visitationbvm.com
 v1919,arm,Erik,Sanchez,v1919@visitationbvm.com
 v1920,art,Jaslin,Vazquez,v1920@visitationbvm.com
