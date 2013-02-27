@@ -1,4 +1,11 @@
 username, password, firstname, lastname, email
+v1202,bio,Jim,Roache,v1201@visitationbvm.com
+v1203,bio,Sister,Terri,v1203@visitationbvm.com
+v1204,bio,Sister,Margaret,v1204@visitationbvm.com
+v1205,bio,Maryanne,Corcoran,v1205@visitationbvm.com
+v1206,bio,Anthony,Nucera,v1206@visitationbvm.com
+v1238,bio,Michelle,Stewart,v1238@visitationbvm.com
+v1251,bio,Tammie,Coleman,v1251@visitationbvm.com
 v1301,p,f,l,v1301@visitationbvm.com
 v1302,p,f,l,v1302@visitationbvm.com
 v1303,p,f,l,v1303@visitationbvm.com
