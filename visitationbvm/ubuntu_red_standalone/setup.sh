@@ -37,6 +37,9 @@ sudo apt-get install tuxmath
 sudo apt-get install tuxtype
 sudo apt-get install tuxpaint
 
+echo mixxx
+sudo apt-get install mixxx
+
 echo vlc
 sudo apt-get install vlc
 
