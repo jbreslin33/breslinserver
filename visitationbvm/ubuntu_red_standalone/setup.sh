@@ -49,6 +49,8 @@ sudo apt-get install wine -q
 echo install virtualbox
 sudo apt-get install virtualbox 
 
+echo remove empathy
+sudo apt-get remove empathy
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt

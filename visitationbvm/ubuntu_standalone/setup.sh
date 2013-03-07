@@ -44,6 +44,9 @@ sudo apt-get install virtualbox
 echo install mixxx
 sudo apt-get install mixxx
 
+echo remove empathy chat program
+sudo apt-get remove empathy
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
@@ -55,7 +58,5 @@ sudo newusers ../add_student_scripts/v1800.txt
 sudo newusers ../add_student_scripts/v1900.txt
 sudo newusers ../add_student_scripts/v2000.txt
 sudo newusers ../add_student_scripts/v2100.txt
-
- 
 
 echo complete you can now reboot and login 
