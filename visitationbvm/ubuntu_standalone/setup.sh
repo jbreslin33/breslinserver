@@ -47,6 +47,9 @@ sudo apt-get install mixxx
 echo remove empathy chat program
 sudo apt-get remove empathy
 
+echo install pinta paint program
+sudo apt-get install pinta
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
