@@ -50,6 +50,9 @@ sudo apt-get remove empathy
 echo install pinta paint program
 sudo apt-get install pinta
 
+echo install risk
+sudo apt-get install ksirk
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
