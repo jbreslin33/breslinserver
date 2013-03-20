@@ -278,6 +278,7 @@ v1846,bin,Joshua,Rojas,v1846@visitationbvm.com
 v1847,bin,Abrianna,Santiago,v1847@visitationbvm.com
 v1848,bin,Christopher,Serrano,v1848@visitationbvm.com
 v1849,bin,Terrel,Wood,v1849@visitationbvm.com
+v1850,bit,Ashanti,Lopez,v1850@visitationbvm.com
 v1901,ahh,Angelis,Bernardy,v1901@visitationbvm.com
 v1902,abs,Julio,Bristol,v1902@visitationbvm.com
 v1903,ace,Rafael,Curgua,v1903@visitationbvm.com
