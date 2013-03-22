@@ -41,7 +41,7 @@ v1332,bam,Hennessey,Hernandez,v1332@visitationbvm.com
 v1333,ban,Thai,Hoang,v1333@visitationbvm.com
 v1334,bap,Luis,Lugo,v1334@visitationbvm.com
 v1335,bar,Bryant,Mateo,v1335@visitationbvm.com
-v1336,bay,Armani,Millet,v1336@visitationbvm.com
+v1336,bat,Armani,Millet,v1336@visitationbvm.com
 v1337,bay,Thao,Nguyen,v1337@visitationbvm.com
 v1338,bed,Carolyn,Nieves,v1338@visitationbvm.com
 v1339,bee,Bridet,Pena,v1339@visitationbvm.com
