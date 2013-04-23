@@ -1,6 +1,9 @@
 hg pull /home/student/breslinserver
 hg update /home/student/breslinserver
 
+echo pychess
+sudo apt-get install pychess
+
 echo update dpkg 
 sudo dpkg --configure -a
 echo install ssh
@@ -56,8 +59,6 @@ sudo apt-get install pinta
 echo install risk
 sudo apt-get install ksirk
 
-echo pychess
-sudo apt-get install pychess
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
