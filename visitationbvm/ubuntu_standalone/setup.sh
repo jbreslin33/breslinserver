@@ -53,8 +53,8 @@ sudo apt-get install pinta
 echo install risk
 sudo apt-get install ksirk
 
-echo scorched3d
-sudo apt-get install scorched3d
+echo pychess
+sudo apt-get install pychess
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
