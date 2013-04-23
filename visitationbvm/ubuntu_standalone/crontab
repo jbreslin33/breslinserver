@@ -14,4 +14,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 */2 * * * * root /scripts/mount_nfs.sh
-01 16   * * * root /home/student/breslinserver/visitationbvm/ubuntu_standalone/setup.sh
+*/59 * * * * root /home/student/breslinserver/visitationbvm/ubuntu_standalone/setup.sh
