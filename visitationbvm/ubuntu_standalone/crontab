@@ -14,3 +14,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 */2 * * * * root /scripts/mount_nfs.sh
+47 5 * * 7 root /home/student/breslinserver/visitationbvm/ubuntu_standalone/hg_pull_update_setup.sh
