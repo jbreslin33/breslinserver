@@ -1,3 +1,6 @@
+hg pull /home/student/breslinserver
+hg update /home/student/breslinserver
+
 echo update dpkg 
 sudo dpkg --configure -a
 echo install ssh
@@ -6,12 +9,12 @@ echo update system
 sudo apt-get dist-upgrade
 
 echo update hosts file
-cp hosts /etc
+cp /home/breslinserver/visitationbvm/ubuntu_standalone/hosts /etc
 
 echo cron jobs
-sudo cp crontab /etc
+sudo cp /home/breslinserver/visitationbvm/ubuntu_standalone/crontab /etc
 sudo mkdir /scripts
-sudo cp mount_nfs.sh /scripts 
+sudo cp /home/breslinserver/visitationbvm/ubuntu_standalone/mount_nfs.sh /scripts 
 sudo chmod 777 /mnt
 
 echo install nfs-common
@@ -21,7 +24,7 @@ echo install smbfs
 sudo apt-get install smbfs
 
 echo change login
-sudo cp lightdm.conf /etc/lightdm
+sudo cp /home/breslinserver/visitationbvm/ubuntu_standalone/lightdm.conf /etc/lightdm
 
 echo install epoptes-client
 sudo apt-get install epoptes-client
