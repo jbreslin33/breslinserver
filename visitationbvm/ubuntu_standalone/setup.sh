@@ -1,9 +1,3 @@
-hg pull /home/student/breslinserver
-hg update /home/student/breslinserver
-
-echo pychess
-sudo apt-get install pychess
-
 echo update dpkg 
 sudo dpkg --configure -a
 echo install ssh
