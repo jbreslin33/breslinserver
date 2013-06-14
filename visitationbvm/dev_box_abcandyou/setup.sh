@@ -3,7 +3,7 @@ sudo apt-get install php5
 sudo cp php5.conf /etc/apache2/mods-enabled
 sudo cp 000-default /etc/apache2/sites-enabled
 sudo /etc/init.d/apache2 restart
-sudo chmod 777 /var/www/
+sudo chmod 777 /home/jbreslin/sandbox/baseapplication/src
 
 sudo apt-get install postgresql
 sudo apt-get install phppgadmin
