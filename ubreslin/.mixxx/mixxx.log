@@ -10,9 +10,9 @@ Debug: [Main]: JACK client name set
 Debug: [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug: [Main]: src/library/trackcollection.cpp DB status: true 
 Debug: [Main]: SchemaManager::upgradeToSchemaVersion already at version 13 
-Debug: [Main]: TrackDAO::initialize QThread(0x88543d0, name = "Main") "qt_sql_default_connection" 
+Debug: [Main]: TrackDAO::initialize QThread(0x86983d0, name = "Main") "qt_sql_default_connection" 
 Debug: [Main]: CrateDAO::initialize() 
-Debug: [Main]: CueDAO::initialize QThread(0x88543d0, name = "Main") "qt_sql_default_connection" 
+Debug: [Main]: CueDAO::initialize QThread(0x86983d0, name = "Main") "qt_sql_default_connection" 
 Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
 Debug: [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
@@ -36,15 +36,10 @@ Debug: [MidiScriptEngine 1]: MIDI Device in script engine is: ""
 Debug: [Main]: MidiDeviceManager: Setting up devices 
 Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
 Debug: [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Midi Through Port-0"  settings found 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
+Debug: [Main]: Could not open xml file: "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
 Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
-Debug: [Main]: loadSettings: 1 0 "SlowFade" 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
+Debug: [Main]: loadSettings: 1 0 "" 
+Debug: [Main]: slotApply crossfader: 1 "" 
 Debug: [Main]: BpmSchemes::readXML "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
 Debug: [Main]: MidiDeviceManager::getDeviceList 
 Debug: [Main]: MidiDeviceManager::getDeviceList 
@@ -69,29 +64,29 @@ Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "ho
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
-Debug: [Main]: BaseTrackCache(0x8a4e960) updateIndexWithQuery took 1036 ms 
-Debug: [Main]: PlaylistTableModel(0x936d9a0) select() took 1040 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xaee7420) select() took 608 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xaee7420) select() took 610 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xaee7420) select() took 603 ms 
-Debug: [Main]: DlgPrepare(0xaeb71d0, name = "DlgPrepare") analysisActive false 
+Debug: [Main]: BaseTrackCache(0x8890ff8) updateIndexWithQuery took 713 ms 
+Debug: [Main]: PlaylistTableModel(0x91f7f98) select() took 813 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xa6757c8) select() took 555 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xa6757c8) select() took 735 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xa6757c8) select() took 632 ms 
+Debug: [Main]: DlgPrepare(0xa645410, name = "DlgPrepare") analysisActive false 
 Debug: [Main]: MixxxLibraryFeature::activate() 
-Debug: [Main]: LibraryTableModel(0x8a4ebc0) select() took 899 ms 
+Debug: [Main]: LibraryTableModel(0x8896928) select() took 601 ms 
 Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Warning: [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
 Warning: [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
+Warning: [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
 Warning: [Main]: QGLContext::makeCurrent(): Cannot make invalid context current.
 Debug: [Main]: createWaveformViewer() 
 Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
 Debug: [Main]: WaveformViewerFactory :: Making new GL context. 
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
 Warning: [Main]: Requested control does not exist: "[Spinny1],show_spinny" . Creating it. 
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
 Debug: [Main]: Making property binder for "visible" 
 Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
@@ -102,56 +97,145 @@ Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "sho
 Warning: [Main]: Requested control does not exist: "[Spinny2],show_spinny" . Creating it. 
 Debug: [Main]: Making property binder for "visible" 
 Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
+Debug: [Main]: Displaying mixxx 
+Debug: [Main]: Running Mixxx 
+Debug: [Main]: guess the size of the window decoration 
+Debug: [Main]: Now in Rebootmixxview... 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
+Debug: [Main]: PlaylistTableModel(0xbf77558) select() took 105 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xc02a078) select() took 555 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xc02a078) select() took 732 ms 
+Debug: [Main]: PrepareLibraryTableModel(0xc02a078) select() took 635 ms 
+Debug: [Main]: DlgPrepare(0xa645410, name = "DlgPrepare") analysisActive false 
+Debug: [Main]: DlgPrepare(0xbffb268, name = "DlgPrepare") analysisActive false 
+Debug: [Main]: MixxxLibraryFeature::activate() 
+Debug: [Main]: LibraryTableModel(0x8896928) select() took 644 ms 
+Debug: [Main]: LibraryTableModel(0x8896928) select() took 661 ms 
+Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug: [Main]: createWaveformViewer() 
+Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug: [Main]: WaveformViewerFactory :: Sharing existing GL context. 
+Debug: [Main]: WaveformRenderMarkRange(0xb32db50) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0xb32e100) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb32e518) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3325e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb336778) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb33a908) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb33ff60) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb33f8e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3488f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb349280) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34d2e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34e368) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3510d0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3508c0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb352850) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb357448) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb356800) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3588c8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35cad8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35c748) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35e658) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb362958) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb363c20) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb364480) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3687b0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb369a78) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36a3e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36da78) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36e2d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3702e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3722e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb374230) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3761a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb378110) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37a080) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37bff0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37df60) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37fed0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3834c8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb383cd8) ~WaveformRenderMark() 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
+Debug: [Main]: createWaveformViewer() 
+Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug: [Main]: WaveformViewerFactory :: Sharing existing GL context. 
+Debug: [Main]: WaveformRenderMarkRange(0xb7f00d0) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0xb7f0680) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f0a98) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f4b68) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f8cf8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f9090) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f9490) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f9848) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7fb470) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7fcfe8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7feb68) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8006e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8004a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb803f00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb805bb0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb806e00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8075b8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8094d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80b420) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80d2e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80f158) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8110a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb812f88) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb814e70) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb818f70) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb819768) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81abe0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81ca90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81e8e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb820828) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8226b0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8245d0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb826518) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8283e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb82a2e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb82cac8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8302c8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb830120) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8341b0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb833e40) ~WaveformRenderMark() 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
 Debug: [Main]: Making property binder for "visible" 
 Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
 Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
 Debug: [Main]: Making property binder for "visible" 
 Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: Displaying mixxx 
-Debug: [Main]: Running Mixxx 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: New BeatGrid 
-Debug: [Main]: Successfully deserialized BeatGrid 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 6 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 2 ms 
-Debug: [Main]: PlaylistTableModel(0x8a4de20) select() took 3 ms 
-Debug: [Main]: New BeatGrid 
-Debug: [Main]: Successfully deserialized BeatGrid 
+Debug: [Main]: rebootgui DONE 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: DlgPrefVinyl::Apply 
+Debug: [Main]: in VinylGainSlotApply() with gain: 1 
+Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
+Debug: [Main]: MidiDeviceManager::getDeviceList 
+Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
 Debug: [Main]: Destroying MixxxApp 
-Debug: [Main]: save config,  0 
-Debug: [Main]: delete soundmanager,  1 
-Debug: [Main]: delete vinylcontrolmanager,  7 
-Debug: [Main]: delete view,  7 
+Debug: [Main]: save config,  1 
+Debug: [Main]: delete soundmanager,  2 
+Debug: [Main]: delete vinylcontrolmanager,  10 
+Debug: [Main]: delete view,  10 
 Debug: [Main]: ~DlgTrackInfo() 
 Debug: [Main]: ~WLibraryTableView 
 Debug: [Main]: ~DlgTrackInfo() 
@@ -165,127 +249,125 @@ Debug: [Main]: delete MidiDeviceManager
 Debug: [Main]: Deleting PortMIDI devices... 
 Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
 Debug: [Main]: MidiDevice: Deleting MidiMapping... 
-Debug: [Main]: delete playerManager 801 
-Debug: [Main]: WaveformRenderer(0x8ac4d30) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8ac5378) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8ac3318) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8ac5750) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderMarkRange(0xb4f9ec0) ~WaveformRenderMarkRange() 
-Debug: [Main]: WaveformRenderMark(0xb4fa438) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb4fb528) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb626f90) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb628d18) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb62d828) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb62d4e0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb62ffd0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb6312c8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb631fc8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8c8540) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8cb410) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8cbd50) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8ce0f8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8cf418) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8d1238) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8d2e98) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8d4da8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8d6c18) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8d8b20) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8dcdc8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8de030) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8de890) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8e2b60) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8e3dc0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8e45e0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8e6708) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8e9d48) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8ea558) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8ec578) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8ee4f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8f0480) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8f2300) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8f4240) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8f6160) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8f8100) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8fa110) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8fd600) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8fdd88) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xb8ffe50) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderer(0x8b24f78) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8b255c0) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8b23530) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8b25998) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderMarkRange(0xbd55180) ~WaveformRenderMarkRange() 
-Debug: [Main]: WaveformRenderMark(0xbd55680) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd56418) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd56e60) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd589d8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd5c448) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd5df98) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd5fae0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd5f968) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd63140) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd64cc8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd66810) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd665d0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd68140) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd69de8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd6ba00) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd6f4c8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd6f0c8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd70f48) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd749d0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd751c0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd78740) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd79990) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd7a088) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd7e2e0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd7f530) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd7fd78) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd81e00) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd86040) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd87358) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd87bb8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd89b60) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd8bac0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd8d9c8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd8f948) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd91870) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd93758) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd956a0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd97610) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xbd9aba8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderer(0x8b84348) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8b84968) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8b82900) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8b84d70) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0x8be5730) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8be5d78) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8be3cf8) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8be6150) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0x8c446f8) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8c44d78) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8c42ca0) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8c45120) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0x8ca36a0) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0x8ca3ce8) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0x8ca1c48) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0x8ca40c0) ~WaveformRenderBeat() 
-Debug: [Main]: delete m_pEngine,  809 
+Debug: [Main]: delete playerManager 630 
+Debug: [Main]: WaveformRenderer(0x8908428) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8908a70) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x89069e8) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8908e48) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderMarkRange(0xb354850) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0xb350818) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb364da0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36c498) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36ed00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3495e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb349c38) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3494f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xadc3e28) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb348d68) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb356908) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb32e6f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3325d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35d130) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb359228) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37fc20) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37dd48) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb350e50) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3543a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37a700) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb380820) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb377b18) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35e778) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb375e90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb37be88) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb355268) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb35ad68) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34fd88) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34e718) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34e3b8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb34ca20) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3702f0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb366520) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb372130) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb360f00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb383900) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb3642c8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb36e8f0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xae6b920) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xc3659f0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderer(0x8968658) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8968ca0) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8966c00) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8969078) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderMarkRange(0xb81d638) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0xb80bd70) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb833c90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb813b38) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb828db8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f9a70) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7f00d0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8340f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb832858) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8321e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb826d98) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81f1d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80d7e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb833a58) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb82e748) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80b6b8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80d240) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb826788) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb826670) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81c428) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb81d1c8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb815558) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb82aa80) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80faa8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb80f878) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb824a00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb820c78) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb809f38) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb8174d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb805b20) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb807688) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7fae50) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7fcd18) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb7fe7b0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb800408) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xb802040) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xcba1ef0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xcba1cb8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xcba3648) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0xcba7420) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderer(0x89c7a30) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x89c8050) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x89c5fd8) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x89c8458) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8a28e28) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8a29470) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8a273d0) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8a29848) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8a87dd8) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8a88458) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8a86380) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8a88800) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8ae6d80) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8ae73c8) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8ae5328) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8ae77a0) ~WaveformRenderBeat() 
+Debug: [Main]: delete m_pEngine,  638 
 Debug: [Main]: in ~EngineMaster() 
 Debug: [Main]: ~EngineMicrophone() 
-Debug: [Main]: delete library scanner 827 
+Debug: [Main]: delete library scanner 658 
 Debug: [Main]: LibraryScanner destroyed 
 Debug: [Main]: ~TrackDAO() 
-Debug: [Main]: delete library 830 
+Debug: [Main]: delete library 660 
 Debug: [Main]: ~TrackCollection() 
 Debug: [Main]: TrackDAO::saveDirtyTracks() 
-Debug: [Main]: BaseTrackCache(0x8a4e960) updateIndexWithQuery took 1 ms 
-Debug: [Main]: BaseTrackCache(0x8a4e960) updateIndexWithQuery took 1 ms 
 Debug: [Main]: Clearing played information for this session 
 Debug: [Main]: ~TrackDAO() 
-Debug: [Main]: delete RecordingManager 2634 
+Debug: [Main]: delete RecordingManager 1523 
 Debug: [Main]: Delete RecordingManager 
-Debug: [Main]: delete config,  2639 
+Debug: [Main]: delete config,  1530 
 Debug: [Main]: WARNING: The following 53 controls were leaked: 
 Debug: [Main]: "[Sampler2]" "visual_bpm" 
 Debug: [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
