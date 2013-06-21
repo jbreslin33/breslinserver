@@ -4,4 +4,6 @@ echo install ssh
 sudo apt-get install ssh
 echo update system
 sudo apt-get dist-upgrade
-sudo apt-get install mixxxx
+sudo apt-get install mixxx
+sudo mkdir /amusic
+sudo ln -s /media/external/djmusic/* /amusic/
