@@ -1,0 +1,335 @@
+Debug: [Main]: Available QtSQL drivers: ("QSQLITE") 
+Debug: [Main]: src/library/trackcollection.cpp DB status: true 
+Debug: [Main]: SchemaManager::upgradeToSchemaVersion upgrading 13 versions to version 13 
+Debug: [Main]: Loading schema "/usr/share/mixxx/schema.xml" 
+Debug: [Main]: Applying version 1 : "The base schema for the Mixxx SQLITE database." 
+Debug: [Main]: Applying version 2 : "Add a header_parsed integer column to the library to indicate when a
+      track's tags have been parsed." 
+Debug: [Main]: Applying version 3 : "Change the location column to be a an integer. Change comment to be
+      varchar(256) and album/artist/title to be varchar(64)." 
+Debug: [Main]: Applying version 4 : "Add file type column." 
+Debug: [Main]: Applying version 5 : "Add needs_verification column to library hashes table." 
+Debug: [Main]: Applying version 6 : "Added a ReplayGain Column." 
+Debug: [Main]: Applying version 7 : "Add timesplayed and rating column. Reset header state." 
+Debug: [Main]: Applying version 8 : "Added iTunes tables" 
+Debug: [Main]: Applying version 9 : "Tables for Traktor library feature" 
+Debug: [Main]: Applying version 10 : "Playlist and crate locks" 
+Debug: [Main]: Applying version 11 : "Tables for Rhythmbox library feature" 
+Debug: [Main]: Applying version 12 : "Add beats column to library table." 
+Debug: [Main]: Applying version 13 : "Add position column to Rhythmbox, iTunes, and Traktor playlist tables." 
+Debug: [Main]: TrackDAO::initialize QThread(0x86cb3d0, name = "Main") "qt_sql_default_connection" 
+Debug: [Main]: CrateDAO::initialize() 
+Debug: [Main]: CueDAO::initialize QThread(0x86cb3d0, name = "Main") "qt_sql_default_connection" 
+Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
+Debug: [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod" ) 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: CachingReader using 4980736 bytes. 
+Debug: [Main]: Constructed LibraryScanner 
+Debug: [Main]: iTunes Album Art path is: "" 
+Debug: [Main]: Rescan finished 
+Debug: [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x8b1e768, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug: [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x8b1e768, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug: [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x8b1e768, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug: [Main]: MidiDeviceManager::getDeviceList 
+Debug: [Main]: Scanning PortMIDI devices: 
+Debug: [LibraryScanner 1]: upgrade filename is  "/home/jbreslin/.mixxx/DBUPGRADED" 
+Debug: [LibraryScanner 1]: Legacy importer took 0 ms
+Debug: [LibraryScanner 1]: Recursively scanning library. 
+Debug: [Main]:  Found output device # 0 Midi Through Port-0 
+Debug: [Main]:  Found input device # 1 Midi Through Port-0 
+Debug: [Main]:     Linking to output device # 0 "Midi Through Port-0" 
+Debug: [Main]: Creating new MIDI mapping directory "/home/jbreslin/.mixxx/midi/" 
+Debug: [Main]: Creating new MIDI presets directory "/home/jbreslin/.mixxx/presets/" 
+Debug: [Main]: Starting script engine with output device "" 
+Debug: [MidiScriptEngine 1]: MIDI Device in script engine is: "" 
+Debug: [Main]: MidiDeviceManager: Setting up devices 
+Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
+Debug: [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
+Debug: [Main]: Could not open xml file: "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
+Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
+Debug: [Main]: loadSettings: 0 -12.5 "" 
+Debug: [Main]: slotApply crossfader: 1 "" 
+Debug: [Main]: BPM Scheme File ConfigKey not set or file missing... setting to "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
+Debug: [Main]: BpmSchemes::readXML "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
+Debug: [Main]: BPM Scheme: "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" does not exist. 
+Debug: [Main]: MidiDeviceManager::getDeviceList 
+Debug: [Main]: MidiDeviceManager::getDeviceList 
+Debug: [Main]: SoundManager::setupDevices() 
+Debug: [Main]: SoundDevicePortAudio::open() "0, HDA Intel: AD198x Analog (hw:0,0)" 
+Debug: [Main]: framesPerBuffer: 1024 
+Debug: [Main]: Requested sample rate:  48000 Hz, latency: 21.3333 ms 
+Debug: [Main]: Output channels: 2 | Input channels: 0 
+Debug: [Main]: Opening stream with id 0 
+Debug: [Main]: Opened PortAudio stream successfully... starting 
+Debug: [Main]: Dynamically loaded PortAudio library 
+Debug: [Main]: PortAudio: Started stream successfully 
+Debug: [Main]:    Actual sample rate:  48000 Hz, latency: 42.6667 ms 
+Debug: [Main]: Using "HDA Intel: AD198x Analog (hw:0,0)" as output sound device clock reference 
+Debug: [Main]: 1 output sound devices opened 
+Debug: [Main]: 0 input  sound devices opened 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Samplers]" , "show_samplers" ) 
+Warning: [Main]: Requested control does not exist: "[Samplers],show_samplers" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
+Debug: [Main]: BaseTrackCache(0x88721f0) updateIndexWithQuery took 1 ms 
+Debug: [Main]: PlaylistTableModel(0x8f0d728) select() took 3 ms 
+Debug: [Main]: PrepareLibraryTableModel(0x8f94aa0) select() took 1 ms 
+Debug: [Main]: PrepareLibraryTableModel(0x8f94aa0) select() took 1 ms 
+Debug: [Main]: PrepareLibraryTableModel(0x8f94aa0) select() took 1 ms 
+Debug: [Main]: DlgPrepare(0x8f5ad80, name = "DlgPrepare") analysisActive false 
+Debug: [Main]: MixxxLibraryFeature::activate() 
+Debug: [Main]: LibraryTableModel(0x886f940) select() took 1 ms 
+Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
+Warning: [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
+Warning: [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Warning: [Main]: QGLContext::makeCurrent(): Cannot make invalid context current.
+Debug: [Main]: createWaveformViewer() 
+Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug: [Main]: WaveformViewerFactory :: Making new GL context. 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
+Warning: [Main]: Requested control does not exist: "[Spinny1],show_spinny" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
+Debug: [Main]: createWaveformViewer() 
+Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug: [Main]: WaveformViewerFactory :: Sharing existing GL context. 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "show_spinny" ) 
+Warning: [Main]: Requested control does not exist: "[Spinny2],show_spinny" . Creating it. 
+Debug: [Main]: Making property binder for "visible" 
+Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
+Debug: [Main]: Displaying mixxx 
+Debug: [Main]: Running Mixxx 
+Debug: [Main]: Cancelling library scan... 
+Debug: [LibraryScanner 1]: Recursive scan interrupted. 
+Debug: [LibraryScanner 1]: TrackDAO(0x8b1e7b0) addTracks took 243 ms to add 261 tracks 
+Debug: [LibraryScanner 1]: Scan cancelled 
+Debug: [LibraryScanner 1]: Scan took: 13479 ms
+Debug: [Main]: BaseTrackCache(0x88721f0) updateIndexWithQuery took 16 ms 
+Debug: [Main]: LibraryTableModel(0x886f940) select() took 6 ms 
+Debug: [Main]: MissingTableModel(0x8873198) select() took 2 ms 
+Debug: [Main]: MixxxLibraryFeature::activate() 
+Debug: [Main]: LibraryTableModel(0x886f940) select() took 11 ms 
+Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug: [Main]: MixxxLibraryFeature::activate() 
+Debug: [Main]: LibraryTableModel(0x886f940) select() took 11 ms 
+Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug: [Main]: Destroying MixxxApp 
+Debug: [Main]: save config,  0 
+Debug: [Main]: delete soundmanager,  1 
+Debug: [Main]: delete vinylcontrolmanager,  26 
+Debug: [Main]: delete view,  27 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: ~DlgTrackInfo() 
+Debug: [Main]: ~WLibraryTableView 
+Debug: [Main]: delete SkinLoader 
+Debug: [Main]: delete MidiDeviceManager 
+Debug: [Main]: Deleting PortMIDI devices... 
+Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
+Debug: [Main]: MidiDevice: Deleting MidiMapping... 
+Debug: [Main]: delete playerManager 737 
+Debug: [Main]: WaveformRenderer(0x893da08) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x893e050) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x893bf78) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x893e428) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderMarkRange(0x92ba048) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0x92ba5f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92baa10) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92beb10) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92c2cf0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92c6e80) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92cc570) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92cb940) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92d50a8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92d5740) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92d79b8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92d9b88) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92db928) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92ddb48) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92dfc20) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92e1d80) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92e6588) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92e6188) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92ea6e0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92ed0a8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92ec398) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92ee558) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92f06a8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92f27d0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92f4840) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92f6948) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92fa350) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92fab00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92fcc18) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x92fee10) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9300f90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9303090) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x93074e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9307290) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9309280) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x930b4e8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x930d630) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9311a90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x93117f8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9313990) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderer(0x899dcd8) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x899e320) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x899c290) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8854da8) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderMarkRange(0x9783da0) ~WaveformRenderMarkRange() 
+Debug: [Main]: WaveformRenderMark(0x9784350) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9784768) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9788868) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978ca48) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978cdb0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978d1b0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978d568) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978e670) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x978ef30) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9790c78) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9794878) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x9796510) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97962a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x979a148) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x979b500) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x979bc38) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x979df90) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x979fe00) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97a1ea8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97a5658) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97a5d50) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97aa338) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97a9fa0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97ae348) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97adfd8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97b00a0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97b2168) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97b4350) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97b86d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97b8438) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97ba5d8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97bc640) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97be770) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97c2bb0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97c2918) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97c4ab0) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97c6b88) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97c8ca8) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderMark(0x97cd058) ~WaveformRenderMark() 
+Debug: [Main]: WaveformRenderer(0x89fd158) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x89fd778) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x89fb700) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x89fdb80) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8a5e620) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8a5ec68) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8a5db50) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8a5f040) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8abd6d8) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8abdd58) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8abbc58) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8abe100) ~WaveformRenderBeat() 
+Debug: [Main]: WaveformRenderer(0x8b1c730) ~WaveformRenderer() 
+Debug: [Main]: WaveformRenderBackground(0x8b1cd78) ~WaveformRenderBackground() 
+Debug: [Main]: WaveformRenderSignal(0x8b1acc0) ~WaveformRenderSignal() 
+Debug: [Main]: WaveformRenderBeat(0x8b1d150) ~WaveformRenderBeat() 
+Debug: [Main]: delete m_pEngine,  743 
+Debug: [Main]: in ~EngineMaster() 
+Debug: [Main]: ~EngineMicrophone() 
+Debug: [Main]: delete library scanner 758 
+Debug: [Main]: LibraryScanner destroyed 
+Debug: [Main]: ~TrackDAO() 
+Debug: [Main]: delete library 760 
+Debug: [Main]: ~TrackCollection() 
+Debug: [Main]: TrackDAO::saveDirtyTracks() 
+Debug: [Main]: Clearing played information for this session 
+Debug: [Main]: ~TrackDAO() 
+Debug: [Main]: delete RecordingManager 984 
+Debug: [Main]: Delete RecordingManager 
+Debug: [Main]: delete config,  992 
+Debug: [Main]: WARNING: The following 53 controls were leaked: 
+Debug: [Main]: "[Sampler2]" "visual_bpm" 
+Debug: [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Playlist]" "SelectNextPlaylist" 
+Debug: [Main]: "[Channel1]" "start_stop" 
+Debug: [Main]: "[Sampler1]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: "[Flanger]" "lfoDelay" 
+Debug: [Main]: "[Sampler1]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Playlist]" "SelectPrevPlaylist" 
+Debug: [Main]: "[Microphone]" "show_microphone" 
+Debug: [Main]: "[Channel2]" "start_stop" 
+Debug: [Main]: "[Flanger]" "lfoDepth" 
+Debug: [Main]: "[Playlist]" "SelectPrevTrack" 
+Debug: [Main]: "[Flanger]" "lfoDelay_up_small" 
+Debug: [Main]: "[Channel2]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: "[Flanger]" "lfoDepth_up_small" 
+Debug: [Main]: "[Sampler3]" "visual_bpm" 
+Debug: [Main]: "[Channel1]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: "[Samplers]" "show_samplers" 
+Debug: [Main]: "[Playlist]" "LoadSelectedIntoFirstStopped" 
+Debug: [Main]: "[VinylControl]" "gain" 
+Debug: [Main]: "[Spinny2]" "show_spinny" 
+Debug: [Main]: "[Sampler4]" "visual_bpm" 
+Debug: [Main]: "[Flanger]" "lfoPeriod_down_small" 
+Debug: [Main]: "[Flanger]" "lfoDelay_up" 
+Debug: [Main]: "[Sampler4]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Spinny1]" "show_spinny" 
+Debug: [Main]: "[Vinylcontrol]" "show_vinylcontrol" 
+Debug: [Main]: "[Sampler3]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Flanger]" "lfoDepth_up" 
+Debug: [Main]: "[Sampler3]" "start_stop" 
+Debug: [Main]: "[Flanger]" "lfoDepth_down" 
+Debug: [Main]: "[Channel1]" "visual_bpm" 
+Debug: [Main]: "[Sampler4]" "start_stop" 
+Debug: [Main]: "[Sampler4]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: "[Channel2]" "visual_bpm" 
+Debug: [Main]: "[Controls]" "ShowDurationRemaining" 
+Debug: [Main]: "[Flanger]" "lfoPeriod_up" 
+Debug: [Main]: "[Sampler1]" "start_stop" 
+Debug: [Main]: "[Channel2]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Sampler3]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: "[Flanger]" "lfoDelay_down" 
+Debug: [Main]: "[Sampler2]" "start_stop" 
+Debug: [Main]: "[VinylControl]" "mode" 
+Debug: [Main]: "[Channel1]" "vinylcontrol_wantenabled" 
+Debug: [Main]: "[Flanger]" "lfoPeriod_up_small" 
+Debug: [Main]: "[Flanger]" "lfoDelay_down_small" 
+Debug: [Main]: "[Playlist]" "SelectNextTrack" 
+Debug: [Main]: "[Flanger]" "lfoPeriod_down" 
+Debug: [Main]: "[Sampler1]" "visual_bpm" 
+Debug: [Main]: "[Flanger]" "lfoDepth_down_small" 
+Debug: [Main]: "[Playlist]" "SelectTrackKnob" 
+Debug: [Main]: "[Flanger]" "lfoPeriod" 
+Debug: [Main]: "[Sampler2]" "vinylcontrol_signal_enabled" 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up_small" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up_small" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down_small" ) 
+Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down_small" ) 
+Debug: [Main]: ~MixxxApp: All leaking controls deleted. 
+Debug: [Main]: Mixxx shutdown complete with code 0 
