@@ -154,6 +154,12 @@ sudo cp postgresql.conf /etc/postgresql/9.1/main
 
 echo
 echo --------------------------------------------
+echo UBRESLIN: ABCANDYOU 
+echo --------------------------------------------
+sudo -u postgres createdb abcandyou 
+
+echo
+echo --------------------------------------------
 echo UBRESLIN: ADDITIONAL MANUAL COMMANDS
 echo --------------------------------------------
 echo UBRESLIN: run these next commands manually
@@ -162,21 +168,21 @@ echo
 echo --------------------------------------------
 echo UBRESLIN: POSTGRESQL  
 echo --------------------------------------------
-echo UBRESLIN: sudo -u postgres psql postgres
-echo UBRESLIN: \password postgres
+echo sudo -u postgres psql postgres
+echo \password postgres
 
 echo
 echo --------------------------------------------
-echo UBRESLIN: ABCANDYOU  
+echo UBRESLIN: ABCANDYOU 
 echo --------------------------------------------
-echo UBRESLIN: sudo -u postgres createdb abcandyou 
-echo UBRESLIN: sudo su postgres
-echo UBRESLIN: psql -d abcandyou -f db_build.sql
+echo UBRESLIN: may be down from a clone directory instead i.e. jbreslin33-logger:
+echo cd /home/jbreslin/sandbox/baseapplication/src
+echo sudo -u postgres psql -d abcandyou -f src/database/db_build.sql
 
 echo
 echo --------------------------------------------
 echo UBRESLIN: ARDUINO
 echo --------------------------------------------
-echo UBRESLIN: to just run arduino development environment
+echo UBRESLIN: How to run arduino: 
 echo UBRESLIN: cd /home/USER/sandbox/Arduino/build
 echo UBRESLIN: ant run
