@@ -10,12 +10,41 @@ ls -ld /run/lock
 sudo chmod o+rwx /run/lock/
 
 echo
-echo --------------------------------------------
-echo UBRESLIN: ARDUINO 
-echo --------------------------------------------
+echo ---------------------------------------------
+echo UBRESLIN: BUILD TOOLS 
+echo ---------------------------------------------
+sudo apt-get install build-essential
+sudo apt-get install openjdk-7-jdk
+sudo apt-get install curl
 sudo apt-get install gcc-avr avr-libc
 sudo apt-get install make
 sudo apt-get install ant
+sudo apt-get install cmake
+
+echo UBRESLIN: build tools for ogre
+sudo apt-get install automake 
+sudo apt-get install libtool 
+sudo apt-get install libfreetype6-dev libfreeimage-dev libzzip-dev libxrandr-dev libxaw7-dev freeglut3-dev libgl1-mesa-dev libglu1-mesa-dev
+sudo apt-get install nvidia-cg-toolkit libois-dev libboost-thread-dev
+sudo apt-get install doxygen graphviz libcppunit-dev
+
+echo
+echo ---------------------------------------------
+echo UBRESLIN: OGRE 
+echo ---------------------------------------------
+cd /home/$1/sandbox
+hg clone https://bitbucket.org/sinbad/ogre/ -u v1-7
+mkdir ogre/build
+cd ogre/build
+cmake ..
+make
+sudo make install
+
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: ARDUINO 
+echo --------------------------------------------
 cd /home/$1/sandbox
 git clone git://github.com/arduino/Arduino.git
 cd /home/$1/sandbox/Arduino/build
@@ -34,13 +63,6 @@ echo UBRESLIN: SOURCE CONTROL
 echo ---------------------------------------------
 sudo apt-get install git
 
-echo
-echo ---------------------------------------------
-echo UBRESLIN: BUILD TOOLS 
-echo ---------------------------------------------
-sudo apt-get install build-essential
-sudo apt-get install openjdk-7-jdk
-sudo apt-get install curl
 
 echo
 echo ---------------------------------------------
