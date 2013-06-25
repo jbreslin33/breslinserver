@@ -40,6 +40,7 @@ echo UBRESLIN: BUILD TOOLS
 echo ---------------------------------------------
 sudo apt-get install build-essential
 sudo apt-get install openjdk-7-jdk
+sudo apt-get install curl
 
 echo
 echo ---------------------------------------------
@@ -68,12 +69,11 @@ fi
 
 echo
 echo ---------------------------------------------
-echo UBRESLIN: NODE FOR baseapplication 
+echo UBRESLIN: NODE AND PERMISSIONS FOR baseapplication 
 echo ---------------------------------------------
 cd /home/$1/sandbox
 DIR_BASEAPPLICATION="baseapplication"
 if [ -d "$DIR_BASEAPPLICATION" ]; then
-echo UBRESLIN: do node install for baseapplication
 cd /home/$1/sandbox/baseapplication/src
 git clone git://github.com/joyent/node.git
 cd node
@@ -82,6 +82,7 @@ sudo make
 sudo make install
 curl http://npmjs.org/install.sh
 sudo npm install -d
+sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
 fi
 
 echo
@@ -91,7 +92,6 @@ echo ---------------------------------------------
 cd /home/$1/sandbox
 DIR_JBRESLIN33_LOGGER="jbreslin33-logger"
 if [ -d "$DIR_JBRESLIN33_LOGGER" ]; then
-echo UBRESLIN: do node install for baseapplication
 cd /home/$1/sandbox/jbreslin33-logger/src
 git clone git://github.com/joyent/node.git
 cd node
@@ -100,6 +100,7 @@ sudo make
 sudo make install
 curl http://npmjs.org/install.sh
 sudo npm install -d
+sudo chmod -R 777 /home/$1/sandbox/jbreslin33-logger/src/web/insert/upload
 fi
 
 echo
@@ -131,6 +132,7 @@ sudo cp php5.conf /etc/apache2/mods-enabled
 sudo cp 000-default /etc/apache2/sites-enabled
 sudo /etc/init.d/apache2 restart
 sudo chmod 777 /home/$1/sandbox/baseapplication/src
+
 
 echo
 echo --------------------------------------------
@@ -170,6 +172,7 @@ echo UBRESLIN: POSTGRESQL
 echo --------------------------------------------
 echo sudo -u postgres psql postgres
 echo \password postgres
+echo turn off synchronous_commit in /etc/postgresql/9.1/main/postgresql.conf
 
 echo
 echo --------------------------------------------
@@ -186,3 +189,10 @@ echo --------------------------------------------
 echo UBRESLIN: How to run arduino: 
 echo UBRESLIN: cd /home/USER/sandbox/Arduino/build
 echo UBRESLIN: ant run
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: NODE
+echo --------------------------------------------
+echo comment out the exception like so in /home/jbreslin/sandbox/baseapplication/src/node/lib/path.js around line 380ish:
+echo then compile again
