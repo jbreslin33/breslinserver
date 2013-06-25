@@ -53,6 +53,7 @@ hg clone https://jbreslin33@code.google.com/p/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
 hg clone https://jbreslin33@code.google.com/p/breslintalker/
+hg clone https://jbreslin33@code.google.com/r/jbreslin33-logger/
 fi
 
 if [ "$1" = "lbreslin" ]; then
@@ -64,16 +65,34 @@ hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
 fi
 
 
+
 echo
 echo ---------------------------------------------
-echo UBRESLIN: NODE 
+echo UBRESLIN: NODE FOR baseapplication 
 echo ---------------------------------------------
 cd /home/$1/sandbox
-
 DIR_BASEAPPLICATION="baseapplication"
 if [ -d "$DIR_BASEAPPLICATION" ]; then
 echo UBRESLIN: do node install for baseapplication
 cd /home/$1/sandbox/baseapplication/src
+git clone git://github.com/joyent/node.git
+cd node
+./configure
+sudo make
+sudo make install
+curl http://npmjs.org/install.sh
+sudo npm install -d
+fi
+
+echo
+echo ---------------------------------------------
+echo UBRESLIN: NODE FOR jbreslin33-logger 
+echo ---------------------------------------------
+cd /home/$1/sandbox
+DIR_JBRESLIN33_LOGGER="jbreslin33-logger"
+if [ -d "$DIR_JBRESLIN33_LOGGER" ]; then
+echo UBRESLIN: do node install for baseapplication
+cd /home/$1/sandbox/jbreslin33-logger/src
 git clone git://github.com/joyent/node.git
 cd node
 ./configure
