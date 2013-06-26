@@ -72,7 +72,6 @@ echo projects
 cd /home/$1/sandbox
 
 if [ "$1" = "jbreslin" ]; then
-su jbreslin 
 hg clone https://jbreslin33@code.google.com/p/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
