@@ -147,6 +147,7 @@ echo
 echo --------------------------------------------
 echo UBRESLIN: APACHE 
 echo --------------------------------------------
+cd /home/$1/sandbox/breslinserver/ubreslin
 sudo apt-get install apache2
 cd /home/$1/sandbox/breslinserver/ubreslin
 sudo cp apache2.conf /etc/apache2
