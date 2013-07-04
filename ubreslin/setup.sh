@@ -194,7 +194,7 @@ echo --------------------------------------------
 echo UBRESLIN: POSTGRESQL  
 echo --------------------------------------------
 echo sudo -u postgres psql postgres
-echo \password postgres
+echo \password postgres ....don't forget to put a backslash before password, make postgres pass mibesfat
 echo turn off synchronous_commit in /etc/postgresql/9.1/main/postgresql.conf
 
 echo
