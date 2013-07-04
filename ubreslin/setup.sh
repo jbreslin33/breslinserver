@@ -76,7 +76,6 @@ hg clone https://jbreslin33@code.google.com/p/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
 hg clone https://jbreslin33@code.google.com/p/breslintalker/
-hg clone https://jbreslin33@code.google.com/r/jbreslin33-logger/
 fi
 
 if [ "$1" = "lbreslin" ]; then
@@ -105,24 +104,6 @@ sudo make install
 curl http://npmjs.org/install.sh
 sudo npm install -d
 sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
-fi
-
-echo
-echo ---------------------------------------------
-echo UBRESLIN: NODE FOR jbreslin33-logger 
-echo ---------------------------------------------
-cd /home/$1/sandbox
-DIR_JBRESLIN33_LOGGER="jbreslin33-logger"
-if [ -d "$DIR_JBRESLIN33_LOGGER" ]; then
-cd /home/$1/sandbox/jbreslin33-logger/src
-git clone git://github.com/joyent/node.git
-cd node
-./configure
-sudo make
-sudo make install
-curl http://npmjs.org/install.sh
-sudo npm install -d
-sudo chmod -R 777 /home/$1/sandbox/jbreslin33-logger/src/web/insert/upload
 fi
 
 echo
