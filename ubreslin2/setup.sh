@@ -83,3 +83,19 @@ hg clone https://lbreslin6@code.google.com/p/breslintalker/
 hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
 fi
 
+echo
+echo ---------------------------------------------
+echo UBRESLIN: NODE FOR baseapplication 
+echo ---------------------------------------------
+cd /home/$1/sandbox
+DIR_BASEAPPLICATION="baseapplication"
+if [ -d "$DIR_BASEAPPLICATION" ]; then
+cd /home/$1/sandbox/baseapplication/src
+git clone git://github.com/joyent/node.git
+cd node
+./configure
+sudo make
+sudo make install
+curl http://npmjs.org/install.sh
+sudo npm install -d
+fi
