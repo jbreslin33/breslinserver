@@ -50,6 +50,20 @@ cd /home/$1/sandbox/Arduino/build
 ant
 
 echo
+echo ---------------------------------------------
+echo UBRESLIN: OGRE
+echo ---------------------------------------------
+cd /home/$1/sandbox
+hg clone https://bitbucket.org/sinbad/ogre/ -u v1-7
+mkdir ogre/build
+cd ogre/build
+cmake ..
+make
+sudo make install
+
+
+echo
 echo --------------------------------------------
 echo UBRESLIN:  
 echo --------------------------------------------
+
