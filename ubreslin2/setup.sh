@@ -61,9 +61,25 @@ cmake ..
 make
 sudo make install
 
-
 echo
-echo --------------------------------------------
-echo UBRESLIN:  
-echo --------------------------------------------
+echo ---------------------------------------------
+echo UBRESLIN: PROJECTS
+echo ---------------------------------------------
+echo projects
+cd /home/$1/sandbox
+
+if [ "$1" = "jbreslin" ]; then
+hg clone https://jbreslin33@code.google.com/p/baseapplication/
+hg clone https://jbreslin33@code.google.com/p/breslininput/
+hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
+hg clone https://jbreslin33@code.google.com/p/breslintalker/
+fi
+
+if [ "$1" = "lbreslin" ]; then
+hg clone https://lbreslin6@code.google.com/p/baseapplication/
+hg clone https://lbreslin6@code.google.com/p/breslininput/
+hg clone https://lbreslin6@code.google.com/p/breslinnetwork/
+hg clone https://lbreslin6@code.google.com/p/breslintalker/
+hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
+fi
 
