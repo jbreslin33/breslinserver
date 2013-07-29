@@ -29,4 +29,20 @@ sudo apt-get install postgresql
 sudo apt-get install phppgadmin
 sudo apt-get install libpq-dev
 
+echo
+echo --------------------------------------------
+echo UBRESLIN: ARDUINO 
+echo --------------------------------------------
+
+dmesg tail
+sudo ls -l /dev/ttyACM0
+sudo usermod -a -G dialout $1
+sudo usermod -a -G dialout $1
+sudo ls -ld /run/lock
+sudo chmod o+rwx /run/lock/
+
+cd /home/$1/sandbox
+git clone git://github.com/arduino/Arduino.git
+cd /home/$1/sandbox/Arduino/build
+ant
 
