@@ -32,6 +32,9 @@ sudo apt-get install libpq-dev
 echo
 echo --------------------------------------------
 echo UBRESLIN: ARDUINO 
+echo UBRESLIN: How to run arduino:
+echo UBRESLIN: cd /home/USER/sandbox/Arduino/build
+echo UBRESLIN: ant run
 echo --------------------------------------------
 
 dmesg tail
@@ -46,3 +49,7 @@ git clone git://github.com/arduino/Arduino.git
 cd /home/$1/sandbox/Arduino/build
 ant
 
+echo
+echo --------------------------------------------
+echo UBRESLIN:  
+echo --------------------------------------------
