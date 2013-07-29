@@ -101,3 +101,16 @@ sudo npm install -d
 sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
 fi
 
+echo
+echo ---------------------------------------------
+echo UBRESLIN: COPY FILES 
+echo ---------------------------------------------
+
+echo sudo cp apache2.conf /etc/apache2
+echo sudo cp php5.conf /etc/apache2/mods-enabled
+echo sudo cp 000-default /etc/apache2/sites-enabled
+echo sudo cp apache.conf /etc/phppgadmin
+echo sudo cp config.inc.php /etc/phppgadmin
+echo sudo cp postgresql.conf /etc/postgresql/9.1/main
+
+
