@@ -98,4 +98,6 @@ sudo make
 sudo make install
 curl http://npmjs.org/install.sh
 sudo npm install -d
+sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
 fi
+
