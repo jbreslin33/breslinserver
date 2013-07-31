@@ -106,13 +106,14 @@ echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
 
-echo sudo cp apache2.conf /etc/apache2
-echo sudo cp php5.conf /etc/apache2/mods-enabled
 
-echo sudo cp 000-default /etc/apache2/sites-enabled
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache2.conf /etc/apache2
+echo skip next one
+echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/php5.conf /etc/apache2/mods-enabled
+
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
 
-echo sudo cp apache.conf /etc/phppgadmin
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
 echo sudo cp config.inc.php /etc/phppgadmin
 echo sudo cp postgresql.conf /etc/postgresql/9.1/main
 
