@@ -28,6 +28,7 @@ sudo apt-get install php5
 sudo apt-get install postgresql
 sudo apt-get install phppgadmin
 sudo apt-get install libpq-dev
+sudo apt-get install vlc
 
 echo
 echo --------------------------------------------
@@ -114,8 +115,8 @@ echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/php5.conf /etc/apache2/mod
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
 
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
-echo sudo cp config.inc.php /etc/phppgadmin
-echo sudo cp postgresql.conf /etc/postgresql/9.1/main
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
+sudo cp postgresql.conf /etc/postgresql/9.1/main
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
