@@ -118,8 +118,46 @@ sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-
 
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
-sudo cp postgresql.conf /etc/postgresql/9.1/main
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
+
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: ADDITIONAL MANUAL COMMANDS
+echo --------------------------------------------
+echo UBRESLIN: run these next commands manually
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: POSTGRESQL
+echo --------------------------------------------
+echo sudo -u postgres psql postgres
+echo  backslashpassword postgres dont forget to put a backslash before password, make postgres pass mibesfat
+echo turn off synchronous_commit in /etc/postgresql/9.1/main/postgresql.conf
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: ABCANDYOU
+echo --------------------------------------------
+echo UBRESLIN: may be down from a clone directory instead i.e. jbreslin33-logger
+echo cd /home/jbreslin/sandbox/baseapplication/src
+echo sudo -u postgres psql -d abcandyou -f src/database/db_build.sql
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: ARDUINO
+echo --------------------------------------------
+echo UBRESLIN: How to run arduino:
+echo UBRESLIN: cd /home/USER/sandbox/Arduino/build
+echo UBRESLIN: ant run
+
+echo
+echo --------------------------------------------
+echo UBRESLIN: NODE
+echo --------------------------------------------
+echo comment out the exception like so in /home/jbreslin/sandbox/baseapplication/src/node/lib/path.js around line 380ish:
+echo then compile again
 
