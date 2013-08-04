@@ -375,7 +375,7 @@ if (isWindows) {
     var paths = Array.prototype.slice.call(arguments, 0);
     return exports.normalize(paths.filter(function(p, index) {
       if (!IS_STRING(p)) {
-        throw new TypeError('Arguments to path.join must be strings');
+        //throw new TypeError('Arguments to path.join must be strings');
       }
       return p;
     }).join('/'));

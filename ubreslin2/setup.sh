@@ -119,6 +119,8 @@ sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/udp_wrap.cc /home/$1/sandbox/baseapplication/src/node/src
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/path.js /home/$1/sandbox/baseapplication/src/node/lib
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
@@ -157,6 +159,11 @@ echo
 echo --------------------------------------------
 echo UBRESLIN: NODE
 echo --------------------------------------------
-echo comment out the exception like so in /home/jbreslin/sandbox/baseapplication/src/node/lib/path.js around line 380ish:
 echo then compile again
+echo cd /home/jbreslin/sandbox/baseapplication/src
+echo ./compile
+echo in browser localhost/web/login/login_form.php
+echo signup
+echo viso mibesfat
+echo insert upload visitation addstudentscrips v1300.txt
 
