@@ -74,6 +74,7 @@ hg clone https://jbreslin33@code.google.com/p/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
 hg clone https://jbreslin33@code.google.com/p/breslintalker/
+hg clone https://jbreslin33@code.google.com/p/breslinclient/
 fi
 
 if [ "$1" = "lbreslin" ]; then
@@ -81,6 +82,7 @@ hg clone https://lbreslin6@code.google.com/p/baseapplication/
 hg clone https://lbreslin6@code.google.com/p/breslininput/
 hg clone https://lbreslin6@code.google.com/p/breslinnetwork/
 hg clone https://lbreslin6@code.google.com/p/breslintalker/
+hg clone https://lbreslin6@code.google.com/p/breslinclient/
 hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
 fi
 
@@ -124,6 +126,14 @@ sudo cp /home/$1/sandbox/breslinserver/ubreslin2/path.js /home/$1/sandbox/baseap
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
+
+
+echo
+echo ---------------------------------------------
+echo UBRESLIN: MOODLE 
+echo ---------------------------------------------
+cd /home/$1/sandbox
+git clone -b MOODLE_24_STABLE git://git.moodle.org/moodle.git
 
 
 echo
