@@ -190,3 +190,5 @@ echo --------------------------------------------
 echo sudo -u postgres psql postgres
 echo then a pound prompt run CREATE USER moodleuser WITH PASSWORD Iggles_13 in tics;
 echo CREATE DATABASE moodle WITH OWNER moodleuser;
+echo mkdir /home/$1/sandbox/moodledata
+echo sudo chmod 0777 /home/$1/sandbox/moodledata 
