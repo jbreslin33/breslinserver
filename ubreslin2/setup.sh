@@ -136,6 +136,8 @@ echo UBRESLIN: MOODLE
 echo ---------------------------------------------
 cd /home/$1/sandbox
 git clone -b MOODLE_24_STABLE git://git.moodle.org/moodle.git
+sudo chown -R root /home/$1/sandbox/moodle/
+sudo chmod -R 0755 /home/$1/sandbox/moodle/
 
 
 echo
@@ -179,3 +181,9 @@ echo signup
 echo viso mibesfat
 echo insert upload visitation addstudentscrips v1300.txt
 
+echo
+echo --------------------------------------------
+echo UBRESLIN: MOODLE 
+echo --------------------------------------------
+echo sudo -u postgres psql postgres
+then a pound prompt run CREATE USER moodleuser WITH PASSWORD Iggles_13 in tics;
