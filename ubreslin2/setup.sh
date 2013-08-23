@@ -187,3 +187,4 @@ echo UBRESLIN: MOODLE
 echo --------------------------------------------
 echo sudo -u postgres psql postgres
 echo then a pound prompt run CREATE USER moodleuser WITH PASSWORD Iggles_13 in tics;
+echo CREATE DATABASE moodle WITH OWNER moodleuser;
