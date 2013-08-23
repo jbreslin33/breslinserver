@@ -200,7 +200,12 @@ echo for db user use moodleuser
 echo db pass Iggles_13
 echo sudo chown -R root /home/$1/sandbox/moodle
 echo goto visflip.com
+echo you will probably get errors if so the following are the fixes
 echo sudo apt-get install php5-curl
 echo sudo /etc/init.d/apache2 restart
 echo sudo apt-get install php5-gd
+echo sudo /etc/init.d/apache2 restart
+echo  sudo apt-get install php5-xmlrpc
+echo sudo /etc/init.d/apache2 restart
+echo sudo apt-get install php5-intl
 echo sudo /etc/init.d/apache2 restart
