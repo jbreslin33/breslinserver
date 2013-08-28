@@ -6,12 +6,12 @@ echo update system
 sudo apt-get dist-upgrade
 
 echo update hosts file
-sudo cp hosts /etc
+sudo cp ../ubuntu_standalone/hosts /etc
 
 echo cron jobs
-sudo cp crontab /etc
+sudo cp ../ubuntu_standalone/crontab /etc
 sudo mkdir /scripts
-sudo cp mount_nfs.sh /scripts 
+sudo cp ../ubuntu_standalone/mount_nfs.sh /scripts 
 sudo chmod 777 /mnt
 
 echo install nfs-common
@@ -53,7 +53,6 @@ sudo apt-get install icedtea-7-plugin
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
-sudo newusers ../add_student_scripts/v1300.txt
 sudo newusers ../add_student_scripts/v1400.txt
 sudo newusers ../add_student_scripts/v1500.txt
 sudo newusers ../add_student_scripts/v1600.txt
