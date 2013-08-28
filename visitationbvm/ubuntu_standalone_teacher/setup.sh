@@ -47,7 +47,6 @@ sudo apt-get install clusterssh
 
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
-sudo newusers ../add_student_scripts/v1300.txt
 sudo newusers ../add_student_scripts/v1400.txt
 sudo newusers ../add_student_scripts/v1500.txt
 sudo newusers ../add_student_scripts/v1600.txt
