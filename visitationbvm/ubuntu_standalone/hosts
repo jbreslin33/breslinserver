@@ -1,7 +1,7 @@
 127.0.0.1	localhost
 
 #epoptes admin
-192.168.2.88   server
+192.168.2.62   server
 
 #webserver
 192.168.2.251   vweb1 
@@ -13,7 +13,7 @@
 192.168.2.54    nfsserver 
 
 #teacher
-192.168.2.88   labteacher
+192.168.2.62   labteacher
 
 #row1
 192.168.2.218    lab01
