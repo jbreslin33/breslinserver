@@ -14,4 +14,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 */2 * * * * root /scripts/mount_nfs.sh
-10 16 * * * root /scripts/add_students.sh
+3 16 * * * root /scripts/add_students.sh
