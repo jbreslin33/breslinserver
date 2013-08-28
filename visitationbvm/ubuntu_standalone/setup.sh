@@ -47,6 +47,10 @@ sudo apt-get install pinta
 echo install risk
 sudo apt-get install ksirk
 
+echo install java
+sudo apt-get install openjdk-7-jre
+sudo apt-get install icedtea-7-plugin
+
 echo add users
 sudo newusers ../add_student_scripts/staff.txt
 sudo newusers ../add_student_scripts/v1300.txt
