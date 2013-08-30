@@ -12,6 +12,7 @@ echo cron jobs
 sudo cp crontab /etc
 sudo mkdir /scripts
 sudo cp mount_nfs.sh /scripts 
+sudo cp add_students.sh /scripts 
 echo copy student add users scripts 
 sudo cp ../add_student_scripts/v1400.txt /scripts 
 sudo cp ../add_student_scripts/v1500.txt /scripts 
