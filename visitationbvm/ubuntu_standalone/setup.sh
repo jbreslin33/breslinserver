@@ -12,6 +12,17 @@ echo cron jobs
 sudo cp crontab /etc
 sudo mkdir /scripts
 sudo cp mount_nfs.sh /scripts 
+echo copy student add users scripts 
+sudo cp ../add_student_scripts/v1400.txt /scripts 
+sudo cp ../add_student_scripts/v1500.txt /scripts 
+sudo cp ../add_student_scripts/v1600.txt /scripts 
+sudo cp ../add_student_scripts/v1700.txt /scripts 
+sudo cp ../add_student_scripts/v1800.txt /scripts 
+sudo cp ../add_student_scripts/v1900.txt /scripts 
+sudo cp ../add_student_scripts/v2000.txt /scripts 
+sudo cp ../add_student_scripts/v2100.txt /scripts 
+sudo cp ../add_student_scripts/staff.txt /scripts 
+
 sudo chmod 777 /mnt
 
 echo install nfs-common
