@@ -152,6 +152,12 @@ git clone -b MOODLE_24_STABLE git://git.moodle.org/moodle.git
 sudo chown -R root /home/$1/sandbox/moodle/
 sudo chmod -R 0755 /home/$1/sandbox/moodle/
 
+echo
+echo ---------------------------------------------
+echo UBRESLIN: MIXXX 
+echo ---------------------------------------------
+sudo cp mixxxdb.sqlite /home/$1/.mixxx/ 
+sudo cp Ion_Discover_DJ_MIDI_1.midi.xml /home/$1/.mixxx/midi/
 
 echo
 echo --------------------------------------------
