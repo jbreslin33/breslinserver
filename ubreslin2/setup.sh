@@ -79,6 +79,16 @@ hg clone https://jbreslin33@code.google.com/p/breslinmathracer/
 hg clone https://jbreslin33@code.google.com/p/armygame/
 fi
 
+if [ "$1" = "v1201" ]; then
+hg clone https://jbreslin33@code.google.com/p/baseapplication/
+hg clone https://jbreslin33@code.google.com/p/breslininput/
+hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
+hg clone https://jbreslin33@code.google.com/p/breslintalker/
+hg clone https://jbreslin33@code.google.com/p/breslinclient/
+hg clone https://jbreslin33@code.google.com/p/breslinmathracer/
+hg clone https://jbreslin33@code.google.com/p/armygame/
+fi
+
 if [ "$1" = "lbreslin" ]; then
 hg clone https://lbreslin6@code.google.com/p/baseapplication/
 hg clone https://lbreslin6@code.google.com/p/breslininput/
@@ -89,6 +99,7 @@ hg clone https://lbreslin6@code.google.com/p/breslinmathracer/
 hg clone https://lbreslin6@code.google.com/p/armygame/
 hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
 fi
+
 
 echo
 echo ---------------------------------------------
