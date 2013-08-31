@@ -156,8 +156,10 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: MIXXX 
 echo ---------------------------------------------
-sudo cp mixxxdb.sqlite /home/$1/.mixxx/ 
-sudo cp Ion_Discover_DJ_MIDI_1.midi.xml /home/$1/.mixxx/midi/
+mkdir /home/$1/.mixxx
+mkdir /home/$1/.mixxx/midi
+cp /home/$1/sandbox/breslinserver/ubreslin2/.mixxx/* /home/$1/.mixxx/
+cp /home/$1/sandbox/breslinserver/ubreslin2/.mixxx/midi/* /home/$1/.mixxx/midi/
 
 echo
 echo --------------------------------------------
