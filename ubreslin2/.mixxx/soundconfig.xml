@@ -1,0 +1,6 @@
+<!DOCTYPE SoundManagerConfig>
+<SoundManagerConfig latency="5" api="ALSA" samplerate="48000">
+ <SoundDevice name="0, HDA Intel: STAC92xx Analog (hw:0,0)">
+  <output channel="0" type="Master" index="0"/>
+ </SoundDevice>
+</SoundManagerConfig>
