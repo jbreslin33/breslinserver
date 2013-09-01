@@ -182,7 +182,7 @@ echo UBRESLIN: ABCANDYOU
 echo --------------------------------------------
 echo UBRESLIN: may be down from a clone directory instead i.e. jbreslin33-logger
 echo cd /home/jbreslin/sandbox/baseapplication/src
-echo sudo -u postgres psql -d abcandyou -f src/database/db_build.sql
+echo ./src/database/build.sh
 
 echo
 echo --------------------------------------------
