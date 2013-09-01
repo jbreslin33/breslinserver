@@ -22,7 +22,6 @@ sudo apt-get install nvidia-cg-toolkit libois-dev libboost-thread-dev
 sudo apt-get install doxygen graphviz libcppunit-dev
 sudo apt-get install git
 sudo apt-get install ssh 
-sudo apt-get install mixxx 
 sudo apt-get install apache2 
 sudo apt-get install php5 
 sudo apt-get install postgresql
@@ -105,34 +104,17 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
-
-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache2.conf /etc/apache2
 echo skip next one
 echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/php5.conf /etc/apache2/mods-enabled
-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/udp_wrap.cc /home/$1/sandbox/baseapplication/src/node/src
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/path.js /home/$1/sandbox/baseapplication/src/node/lib
-
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
-
-
-echo
-echo ---------------------------------------------
-echo UBRESLIN: MIXXX 
-echo ---------------------------------------------
-sudo mkdir /amusic
-sudo chmod -R 777 /amusic
-mkdir /home/$1/.mixxx
-mkdir /home/$1/.mixxx/midi
-cp /home/$1/sandbox/breslinserver/ubreslin2/.mixxx/* /home/$1/.mixxx/
-cp /home/$1/sandbox/breslinserver/ubreslin2/.mixxx/midi/* /home/$1/.mixxx/midi/
 
 echo
 echo --------------------------------------------
