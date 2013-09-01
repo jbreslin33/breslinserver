@@ -40,6 +40,7 @@ cd ogre/build
 cmake ..
 make
 sudo make install
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/ogre/
 
 echo
 echo ---------------------------------------------
@@ -50,33 +51,55 @@ cd /home/$1/sandbox
 
 if [ "$1" = "jbreslin" ]; then
 hg clone https://jbreslin33@code.google.com/p/baseapplication/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinnetwork/
 hg clone https://jbreslin33@code.google.com/p/breslintalker/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslintalker/
 hg clone https://jbreslin33@code.google.com/p/breslinclient/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinclient/
 hg clone https://jbreslin33@code.google.com/p/breslinmathracer/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinmathracer/
 hg clone https://jbreslin33@code.google.com/p/armygame/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/armygame/
 fi
 
 if [ "$1" = "v1201" ]; then
 hg clone https://jbreslin33@code.google.com/p/baseapplication/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/baseapplication/
 hg clone https://jbreslin33@code.google.com/p/breslininput/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslininput/
 hg clone https://jbreslin33@code.google.com/p/breslinnetwork/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinnetwork/
 hg clone https://jbreslin33@code.google.com/p/breslintalker/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslintalker/
 hg clone https://jbreslin33@code.google.com/p/breslinclient/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinclient/
 hg clone https://jbreslin33@code.google.com/p/breslinmathracer/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/breslinmathracer/
 hg clone https://jbreslin33@code.google.com/p/armygame/
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/armygame/
 fi
 
 if [ "$1" = "lbreslin" ]; then
 hg clone https://lbreslin6@code.google.com/p/baseapplication/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/baseapplication/
 hg clone https://lbreslin6@code.google.com/p/breslininput/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslininput/
 hg clone https://lbreslin6@code.google.com/p/breslinnetwork/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinnetwork/
 hg clone https://lbreslin6@code.google.com/p/breslintalker/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslintalker/
 hg clone https://lbreslin6@code.google.com/p/breslinclient/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinclient/
 hg clone https://lbreslin6@code.google.com/p/breslinmathracer/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
 hg clone https://lbreslin6@code.google.com/p/armygame/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/armygame/
 hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/lukes-webpage/
 fi
 
 
@@ -96,6 +119,7 @@ sudo make install
 echo curl http://npmjs.org/install.sh
 echo sudo npm install -d
 sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
+sudo chown -R jbreslin:jbreslin /home/$1/sandbox/baseapplication/src/
 fi
 echo create db abcandyou
 sudo -u postgres createdb abcandyou
