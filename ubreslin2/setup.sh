@@ -114,8 +114,8 @@ cd node
 ./configure
 sudo make
 sudo make install
-echo XXcurl http://npmjs.org/install.sh
-echo XXsudo npm install -d
+echo curl http://npmjs.org/install.sh
+echo sudo npm install -d
 sudo chmod -R 777 /home/$1/sandbox/baseapplication/src/web/insert/upload
 fi
 echo create db abcandyou
