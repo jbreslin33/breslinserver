@@ -136,7 +136,7 @@ sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
 echo XXXXXXsudo cp /home/$1/sandbox/breslinserver/ubreslin2/udp_wrap.cc /home/$1/sandbox/baseapplication/src/node/src
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/path.js /home/$1/sandbox/baseapplication/src/node/lib
+echo XXXXXXsudo cp /home/$1/sandbox/breslinserver/ubreslin2/path.js /home/$1/sandbox/baseapplication/src/node/lib
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
