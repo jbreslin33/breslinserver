@@ -128,7 +128,7 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache2.conf /etc/apache2
+echo XXXXXXXXXsudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache2.conf /etc/apache2
 echo skip next one
 echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/php5.conf /etc/apache2/mods-enabled
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
