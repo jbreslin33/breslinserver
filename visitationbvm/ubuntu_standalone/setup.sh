@@ -76,3 +76,4 @@ sudo newusers ../add_student_scripts/v2000.txt
 sudo newusers ../add_student_scripts/v2100.txt
 
 echo complete you can now reboot and login 
+echo IMPORTANT!!  if this is lubuntu then cd into lubuntu_standalone and run setup.sh
