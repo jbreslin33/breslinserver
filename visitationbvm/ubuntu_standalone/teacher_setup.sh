@@ -6,7 +6,7 @@ sudo apt-get remove epoptes
 sudo apt-get install epoptes
 echo add student to list epoptes group
 sudo gpasswd -a student epoptes
-sudo gpasswd -a v1201 epoptes
+sudo gpasswd -a jbreslin epoptes
 
 echo install clusterssh
 sudo apt-get install clusterssh
