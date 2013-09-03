@@ -1,5 +1,5 @@
 k:k:1200:50:kindergarten:/home/v1200:/bin/bash
-v1201:mibesfat:1201:50:Jim Breslin:/home/v1201:/bin/bash
+jbreslin:mibesfat:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
 v1202:bio:1202:50:Jim Roache:/home/v1202:/bin/bash
 v1203:bio:1203:50:Sister Terri:/home/v1203:/bin/bash
 v1204:bio:1204:50:Sister Margaret:/home/v1204:/bin/bash
