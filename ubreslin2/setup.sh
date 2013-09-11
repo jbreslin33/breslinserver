@@ -156,3 +156,5 @@ echo signup
 echo viso mibesfat
 echo insert upload visitation addstudentscrips v1300.txt
 
+echo if it's a dell with lubuntu: http://wireless.kernel.org/en/users/Drivers/b43#Ubuntu.2FDebian
+echo sudo apt-get install firmware-b43-lpphy-installer 
