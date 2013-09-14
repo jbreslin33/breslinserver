@@ -1,19 +1,9 @@
-<MixxxMIDIPreset mixxxVersion="1.10.0+" schemaVersion="1">
+<MixxxMIDIPreset mixxxVersion="1.10.1+" schemaVersion="1">
     <controller id="Ion Discover DJ MIDI 1">
         <scriptfiles>
             <file functionprefix="IonDiscoverDJ" filename="Ion-Discover-DJ-scripts.js"/>
         </scriptfiles>
         <controls>
-            <control>
-                <status>0x80</status>
-                <midino>0x42</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.pflCh2Off</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
             <control>
                 <status>0x90</status>
                 <midino>0x3b</midino>
@@ -68,10 +58,10 @@
                 <status>0x90</status>
                 <midino>0x42</midino>
                 <group>[Channel2]</group>
-                <key>IonDiscoverDJ.pflCh2On</key>
+                <key>cue_default</key>
                 <description></description>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
