@@ -18,10 +18,10 @@
                 <status>0x90</status>
                 <midino>0x3b</midino>
                 <group>[Channel1]</group>
-                <key>IonDiscoverDJ.pflCh1On</key>
-                <description></description>
+                <key>cue_default</key>
+                <description>CUE</description>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
@@ -48,8 +48,8 @@
                 <status>0x90</status>
                 <midino>0x40</midino>
                 <group>[Channel1]</group>
-                <key>beatsync</key>
-                <description></description>
+                <key>pfl</key>
+                <description>SYNC</description>
                 <options>
                     <normal/>
                 </options>
@@ -59,7 +59,7 @@
                 <midino>0x4a</midino>
                 <group>[Channel1]</group>
                 <key>play</key>
-                <description></description>
+                <description>PLAY</description>
                 <options>
                     <normal/>
                 </options>
@@ -169,7 +169,7 @@
                 <midino>0x4a</midino>
                 <group>[Channel1]</group>
                 <key>play</key>
-                <description></description>
+                <description>PLAY</description>
                 <options>
                     <normal/>
                 </options>
@@ -229,7 +229,7 @@
                 <midino>0x8</midino>
                 <group>[Channel1]</group>
                 <key>volume</key>
-                <description></description>
+                <description>VOLUME</description>
                 <options>
                     <normal/>
                 </options>
@@ -239,7 +239,7 @@
                 <midino>0x9</midino>
                 <group>[Channel2]</group>
                 <key>volume</key>
-                <description></description>
+                <description>VOLUME</description>
                 <options>
                     <normal/>
                 </options>
@@ -259,7 +259,7 @@
                 <midino>0x10</midino>
                 <group>[Channel1]</group>
                 <key>filterHigh</key>
-                <description></description>
+                <description>TREBLE</description>
                 <options>
                     <normal/>
                 </options>
@@ -269,7 +269,7 @@
                 <midino>0x11</midino>
                 <group>[Channel2]</group>
                 <key>filterHigh</key>
-                <description></description>
+                <description>TREBLE</description>
                 <options>
                     <normal/>
                 </options>
@@ -278,8 +278,8 @@
                 <status>0xb0</status>
                 <midino>0x14</midino>
                 <group>[Channel1]</group>
-                <key>filterMid</key>
-                <description></description>
+                <key>filterLow</key>
+                <description>BASS</description>
                 <options>
                     <normal/>
                 </options>
@@ -288,8 +288,8 @@
                 <status>0xb0</status>
                 <midino>0x15</midino>
                 <group>[Channel2]</group>
-                <key>filterMid</key>
-                <description></description>
+                <key>filterLow</key>
+                <description>BASS</description>
                 <options>
                     <normal/>
                 </options>
@@ -305,20 +305,20 @@
                 </options>
             </control>
             <control>
-                <status>0x80</status>
-                <midino>0x33</midino>
-                <group>[Channel1]</group>
-                <key>IonDiscoverDJ.reversek</key>
+                <status>0xb0</status>
+                <midino>0x18</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.jog_wheel</key>
                 <description></description>
                 <options>
                     <script-binding/>
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x18</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.jog_wheel</key>
+                <status>0x80</status>
+                <midino>0x33</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.reversek</key>
                 <description></description>
                 <options>
                     <script-binding/>
