@@ -47,9 +47,6 @@ sudo apt-get install tuxpaint
 echo vlc
 sudo apt-get install vlc
 
-echo install mixxx
-sudo apt-get install mixxx
-
 echo remove empathy chat program
 sudo apt-get remove empathy
 
