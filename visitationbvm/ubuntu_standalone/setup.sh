@@ -74,3 +74,4 @@ sudo newusers ../add_student_scripts/v2100.txt
 
 echo complete you can now reboot and login 
 echo IMPORTANT!!  if this is lubuntu then cd into lubuntu_standalone and run setup.sh
+echo IMPORTANT AS WELL if this is a red laptop then you have to next cd to ubuntu_red_standalone and run setup
