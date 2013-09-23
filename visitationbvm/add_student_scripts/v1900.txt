@@ -43,3 +43,6 @@ v1942:bet:1942:100:Imani Velazquez:/home/v1942:/bin/bash
 v1943:bib:1943:100:Michael Zelaya:/home/v1943:/bin/bash
 v1944:big:1944:100:Ethan Garcia:/home/v1944:/bin/bash
 v1945:big:1945:100:Carlos Jovel:/home/v1945:/bin/bash
+v1946:bag:1946:100:Suzi Lin:/home/v1946:/bin/bash
+v1947:bet:1947:100:Astrid Cordero:/home/v1947:/bin/bash
+v1948:ben:1948:100:Christian Perez:/home/v1948:/bin/bash
