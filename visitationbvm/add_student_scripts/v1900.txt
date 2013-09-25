@@ -46,3 +46,6 @@ v1945:big:1945:100:Carlos Jovel:/home/v1945:/bin/bash
 v1946:bag:1946:100:Suzi Lin:/home/v1946:/bin/bash
 v1947:bet:1947:100:Astrid Cordero:/home/v1947:/bin/bash
 v1948:ben:1948:100:Christian Perez:/home/v1948:/bin/bash
+v1949:abc:1949:100:Omar Balouch:/home/v1949:/bin/bash
+v1950:bat:1950:100:Nathaniel Hamilton:/home/v1950:/bin/bash
+v1951:cat:1951:100:Ahmir Porter:/home/v1951:/bin/bash
