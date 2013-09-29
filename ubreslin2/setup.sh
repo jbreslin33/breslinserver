@@ -156,5 +156,19 @@ echo signup
 echo viso mibesfat
 echo insert upload visitation addstudentscrips v1300.txt
 
+echo
+echo --------------------------------------------
+echo UBRESLIN: COMPILE ABCANDYOU IN DEBUG
+echo --------------------------------------------
+echo from /home/jbreslin/sandbox/baseapplication/src/breslin/vclient or server
+echo run cmake -DCMAKE_BUILD_TYPE=Debug .
+echo then run make
+echo this will give you a debug version
+echo to debug from /home/jbreslin/sandbox/baseapplication/src/breslin/vclient or server
+echo run gdb Server_d
+echo then run run 2 30001
+echo for Client_d gdb Client_d
+echo then run run ip address 
+
 echo if its a dell with lubuntu: http://wireless.kernel.org/en/users/Drivers/b43#Ubuntu.2FDebian
 echo sudo apt-get install firmware-b43-lpphy-installer 
