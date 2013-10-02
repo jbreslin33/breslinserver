@@ -1,8 +1,8 @@
 username,password,firstname,lastname,email
-v1201,Iggles_13,James,Breslin,v1201@visitationbvm.com
-v1202,bio,Jim,Roache,v1202@visitationbvm.com
-v1203,bio,Sister,Terri,v1203@visitationbvm.com
-v1204,bio,Sister,Margaret,v1204@visitationbvm.com
+jbreslin,Iggles_13,James,Breslin,v1201@visitationbvm.com
+jroache,bio,Jim,Roache,v1202@visitationbvm.com
+sterri,bio,Sister,Terri,v1203@visitationbvm.com
+smargaret,bio,Sister,Margaret,v1204@visitationbvm.com
 v1205,bio,Maryanne,Corcoran,v1205@visitationbvm.com
 v1206,bio,Anthony,Nucera,v1206@visitationbvm.com
 v1207,bio,Katherine,Kutcshera,v1207@visitationbvm.com
