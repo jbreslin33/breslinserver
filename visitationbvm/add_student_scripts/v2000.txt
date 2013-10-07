@@ -43,3 +43,8 @@ v2042:bet:2042:100:Antonio Santiago:/home/v2042:/bin/bash
 v2043:bib:2043:100:Isis Torres:/home/v2043:/bin/bash
 v2044:bib:2044:100:Jaden Camillo:/home/v2044:/bin/bash
 v2045:bib:2045:100:Allan Ortiz:/home/v2045:/bin/bash
+v2046:bib:2046:100:Mariah Alicea:/home/v2046:/bin/bash
+v2047:bib:2047:100:Shawnese Kervin:/home/v2047:/bin/bash
+v2048:bib:2048:100:Bre Rivera:/home/v2048:/bin/bash
+v2049:bib:2049:100:Hugh Lin:/home/v2049:/bin/bash
+v2050:cat:2050:100:David Amigon:/home/v2050:/bin/bash
