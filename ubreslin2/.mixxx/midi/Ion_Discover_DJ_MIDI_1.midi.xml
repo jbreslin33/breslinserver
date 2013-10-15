@@ -6,60 +6,10 @@
         <controls>
             <control>
                 <status>0x90</status>
-                <midino>0x3b</midino>
-                <group>[Channel1]</group>
-                <key>cue_default</key>
-                <description>CUE</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x3c</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.reversek</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x80</status>
-                <midino>0x48</midino>
-                <group></group>
-                <key>IonDiscoverDJ.toggle_scratch_mode_off</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x40</midino>
-                <group>[Channel1]</group>
-                <key>pfl</key>
-                <description>SYNC</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x80</status>
-                <midino>0x4a</midino>
-                <group>[Channel1]</group>
-                <key>play</key>
-                <description>PLAY</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
                 <midino>0x42</midino>
                 <group>[Channel2]</group>
                 <key>cue_default</key>
-                <description></description>
+                <description>CUE</description>
                 <options>
                     <normal/>
                 </options>
@@ -75,11 +25,11 @@
                 </options>
             </control>
             <control>
-                <status>0x80</status>
-                <midino>0x4c</midino>
-                <group>[Channel2]</group>
-                <key>play</key>
-                <description></description>
+                <status>0xb0</status>
+                <midino>0x10</midino>
+                <group>[Channel1]</group>
+                <key>filterHigh</key>
+                <description>TREBLE</description>
                 <options>
                     <normal/>
                 </options>
@@ -89,16 +39,6 @@
                 <midino>0x44</midino>
                 <group>[Channel1]</group>
                 <key>IonDiscoverDJ.volCh1Up</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x80</status>
-                <midino>0x4d</midino>
-                <group>[Channel1]</group>
-                <key>IonDiscoverDJ.jog_touch</key>
                 <description></description>
                 <options>
                     <script-binding/>
@@ -115,13 +55,13 @@
                 </options>
             </control>
             <control>
-                <status>0x80</status>
-                <midino>0x4e</midino>
+                <status>0xb0</status>
+                <midino>0x11</midino>
                 <group>[Channel2]</group>
-                <key>IonDiscoverDJ.jog_touch</key>
-                <description></description>
+                <key>filterHigh</key>
+                <description>TREBLE</description>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
@@ -129,6 +69,16 @@
                 <midino>0x46</midino>
                 <group>[Channel2]</group>
                 <key>IonDiscoverDJ.volCh2Up</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x80</status>
+                <midino>0x3b</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.pflCh1Off</key>
                 <description></description>
                 <options>
                     <script-binding/>
@@ -145,6 +95,26 @@
                 </options>
             </control>
             <control>
+                <status>0x80</status>
+                <midino>0x3c</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.reversek</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x14</midino>
+                <group>[Channel1]</group>
+                <key>filterLow</key>
+                <description>BASS</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <status>0x90</status>
                 <midino>0x48</midino>
                 <group></group>
@@ -155,11 +125,31 @@
                 </options>
             </control>
             <control>
+                <status>0xb0</status>
+                <midino>0x15</midino>
+                <group>[Channel2]</group>
+                <key>filterLow</key>
+                <description>BASS</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <status>0x90</status>
                 <midino>0x4a</midino>
                 <group>[Channel1]</group>
                 <key>play</key>
                 <description>PLAY</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x17</midino>
+                <group>[Master]</group>
+                <key>volume</key>
+                <description></description>
                 <options>
                     <normal/>
                 </options>
@@ -185,10 +175,30 @@
                 </options>
             </control>
             <control>
+                <status>0xb0</status>
+                <midino>0x18</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.jog_wheel</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <status>0x90</status>
                 <midino>0x4d</midino>
                 <group>[Channel1]</group>
                 <key>IonDiscoverDJ.jog_touch</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0xb0</status>
+                <midino>0x19</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.jog_wheel</key>
                 <description></description>
                 <options>
                     <script-binding/>
@@ -205,6 +215,16 @@
                 </options>
             </control>
             <control>
+                <status>0xb0</status>
+                <midino>0x1a</midino>
+                <group>[Playlist]</group>
+                <key>SelectTrackKnob</key>
+                <description></description>
+                <options>
+                    <selectknob/>
+                </options>
+            </control>
+            <control>
                 <status>0x90</status>
                 <midino>0x4f</midino>
                 <group>[Playlist]</group>
@@ -215,11 +235,101 @@
                 </options>
             </control>
             <control>
+                <status>0x80</status>
+                <midino>0x48</midino>
+                <group></group>
+                <key>IonDiscoverDJ.toggle_scratch_mode_off</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x80</status>
+                <midino>0x4a</midino>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>PLAY</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x80</status>
+                <midino>0x4c</midino>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description></description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x80</status>
+                <midino>0x4d</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.jog_touch</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x33</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.reversek</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x80</status>
+                <midino>0x4e</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.jog_touch</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x34</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.LoadSelectedTrackCh2</key>
+                <description></description>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x3b</midino>
+                <group>[Channel1]</group>
+                <key>cue_default</key>
+                <description>CUE</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <status>0xb0</status>
                 <midino>0x8</midino>
                 <group>[Channel1]</group>
                 <key>volume</key>
                 <description>VOLUME</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x3c</midino>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description></description>
                 <options>
                     <normal/>
                 </options>
@@ -245,66 +355,6 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x10</midino>
-                <group>[Channel1]</group>
-                <key>filterHigh</key>
-                <description>TREBLE</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x11</midino>
-                <group>[Channel2]</group>
-                <key>filterHigh</key>
-                <description>TREBLE</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x14</midino>
-                <group>[Channel1]</group>
-                <key>filterLow</key>
-                <description>BASS</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x15</midino>
-                <group>[Channel2]</group>
-                <key>filterLow</key>
-                <description>BASS</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x17</midino>
-                <group>[Master]</group>
-                <key>volume</key>
-                <description></description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x18</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.jog_wheel</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
                 <status>0x80</status>
                 <midino>0x33</midino>
                 <group>[Channel1]</group>
@@ -315,63 +365,13 @@
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x19</midino>
-                <group>[Channel1]</group>
-                <key>IonDiscoverDJ.jog_wheel</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0xb0</status>
-                <midino>0x1a</midino>
-                <group>[Playlist]</group>
-                <key>SelectTrackKnob</key>
-                <description></description>
-                <options>
-                    <selectknob/>
-                </options>
-            </control>
-            <control>
-                <status>0x80</status>
-                <midino>0x3b</midino>
-                <group>[Channel1]</group>
-                <key>IonDiscoverDJ.pflCh1Off</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x80</status>
-                <midino>0x3c</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.reversek</key>
-                <description></description>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
                 <status>0x90</status>
-                <midino>0x33</midino>
+                <midino>0x40</midino>
                 <group>[Channel1]</group>
-                <key>IonDiscoverDJ.reversek</key>
-                <description></description>
+                <key>pfl</key>
+                <description>SYNC</description>
                 <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x34</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.LoadSelectedTrackCh2</key>
-                <description></description>
-                <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
         </controls>
