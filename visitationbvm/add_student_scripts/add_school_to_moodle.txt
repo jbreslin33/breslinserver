@@ -277,6 +277,12 @@ v1942,bet,Imani,Velazquez,v1942@visitationbvm.com
 v1943,bib,Michael,Zelaya,v1943@visitationbvm.com
 v1944,big,Ethan,Garcia,v1944@visitationbvm.com
 v1945,big,Carlos,Jovel,v1945@visitationbvm.com
+v1946,bag,Suzi,Lin,v1946@visitationbvm.com
+v1947,bet,Astrid,Cordero,v1947@visitationbvm.com
+v1948,ben,Christian,Perez,v1948@visitationbvm.com
+v1949,abc,Omar,Balouch,v1949@visitationbvm.com
+v1950,bat,Nathaniel,Hamilton,v1950@visitationbvm.com
+v1951,cat,Ahmir,Porter,v1951@visitationbvm.com
 v2001,ahh,Yandel,Alvarez,v2001@visitationbvm.com
 v2002,abs,Shadir,Brown,v2002@visitationbvm.com
 v2003,ace,Eliyah,Clark,v2003@visitationbvm.com
