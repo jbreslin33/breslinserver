@@ -48,3 +48,4 @@ v2047:bib:2047:100:Shawnese Kervin:/home/v2047:/bin/bash
 v2048:bib:2048:100:Bre Rivera:/home/v2048:/bin/bash
 v2049:bib:2049:100:Hugh Lin:/home/v2049:/bin/bash
 v2050:cat:2050:100:David Amigon:/home/v2050:/bin/bash
+v2051:cat:2051:100:Aryana Rosario:/home/v2051:/bin/bash

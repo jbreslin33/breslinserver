@@ -3,7 +3,7 @@ v1902:abs:1902:100:Julio Bristol:/home/v1902:/bin/bash
 v1903:ace:1903:100:Rafael Cargua Buestan:/home/v1903:/bin/bash
 v1904:add:1904:100:Alexander Caseres:/home/v1904:/bin/bash
 v1905:aft:1905:100:Luis Caseres:/home/v1905:/bin/bash
-v1906:ape:1906:100::/home/v1906:/bin/bash
+v1906:ape:1906:100:Tam Lee:/home/v1906:/bin/bash
 v1907:and:1907:100:Lesly Ceballos:/home/v1907:/bin/bash
 v1908:aim:1908:100:Bryan Delorbe:/home/v1908:/bin/bash
 v1909:aid:1909:100:Daniel DelRosario:/home/v1909:/bin/bash
@@ -49,3 +49,4 @@ v1948:ben:1948:100:Christian Perez:/home/v1948:/bin/bash
 v1949:abc:1949:100:Omar Balouch:/home/v1949:/bin/bash
 v1950:bat:1950:100:Nathaniel Hamilton:/home/v1950:/bin/bash
 v1951:cat:1951:100:Ahmir Porter:/home/v1951:/bin/bash
+v1952:cat:1952:100:Joseph Mejia:/home/v1952:/bin/bash
