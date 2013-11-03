@@ -132,7 +132,7 @@
         ServerAlias jamesanthonybreslin.com *.jamesanthonybreslin.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/
+        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/src
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None

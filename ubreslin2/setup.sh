@@ -106,6 +106,7 @@ sudo chown -R $1:$2 /home/$1/sandbox/baseapplication/src/
 fi
 echo create db abcandyou
 sudo -u postgres createdb abcandyou
+sudo -u postgres createdb jamesanthonybreslin
 
 echo
 echo ---------------------------------------------
