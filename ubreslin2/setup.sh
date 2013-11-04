@@ -173,3 +173,6 @@ echo then run run ip address
 
 echo if its a dell with lubuntu: http://wireless.kernel.org/en/users/Drivers/b43#Ubuntu.2FDebian
 echo sudo apt-get install firmware-b43-lpphy-installer 
+
+echo for adding to db 
+echo sudo chmod -R 777 web/insert/
