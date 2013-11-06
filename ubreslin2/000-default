@@ -3,7 +3,8 @@
 	ServerAlias abcandyou.com *.abcandyou.com
 	ServerAdmin webmaster@localhost
 
-	DocumentRoot /home/jbreslin/sandbox/baseapplication/src
+	#DocumentRoot /home/jbreslin/sandbox/baseapplication/src
+        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/src
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
