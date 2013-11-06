@@ -1,3 +1,8 @@
+k:k:1200:50:kindergarten:/home/v1200:/bin/bash
+jbreslin:Iggles_13:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
+v1202:bio:1202:50:Jim Roache:/home/v1202:/bin/bash
+v1203:bio:1203:50:Sister Terri:/home/v1203:/bin/bash
+v1204:bio:1204:50:Sister Margaret:/home/v1204:/bin/bash
 v1401:ahh:1401:100:Anthony Arvelo:/home/v1401:/bin/bash
 v1402:abs:1402:100:Damyer Batties:/home/v1402:/bin/bash
 v1403:ace:1403:100:Johnson Chieu:/home/v1403:/bin/bash
