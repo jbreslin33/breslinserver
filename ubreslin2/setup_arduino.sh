@@ -1,9 +1,6 @@
 echo
 echo --------------------------------------------
-echo UBRESLIN: ARDUINO
-echo UBRESLIN: How to run arduino:
-echo UBRESLIN: cd /home/USER/sandbox/Arduino/build
-echo UBRESLIN: ant run
+echo UBRESLIN: ARDUINO MANUAL SETUP
 echo --------------------------------------------
 
 dmesg tail
