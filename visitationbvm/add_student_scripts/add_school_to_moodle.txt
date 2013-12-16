@@ -282,6 +282,7 @@ v1949,abc,Omar,Balouch,v1949@visitationbvm.com
 v1950,bat,Nathaniel,Hamilton,v1950@visitationbvm.com
 v1951,cat,Ahmir,Porter,v1951@visitationbvm.com
 v1952,cat,Joseph,Mejia,v1952@visitationbvm.com
+v1953,cat,Lyanelis,Oquendo,v1953@visitationbvm.com
 v2001,ahh,Yandel,Alvarez,v2001@visitationbvm.com
 v2002,abs,Shadir,Brown,v2002@visitationbvm.com
 v2003,ace,Eliyah,Clark,v2003@visitationbvm.com
