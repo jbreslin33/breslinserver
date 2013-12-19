@@ -42,6 +42,12 @@ echo install java
 sudo apt-get install openjdk-7-jre
 sudo apt-get install icedtea-7-plugin
 
+echo libreoffice
+sudo apt-get install libreoffice
+
+echo arduino
+sudo apt-get install arduino arduino-core
+
 echo add users
 sudo newusers ../add_student_scripts/add_viso.txt
 
