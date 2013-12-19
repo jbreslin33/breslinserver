@@ -20,9 +20,6 @@ sudo apt-get install nfs-common
 echo install smbfs
 sudo apt-get install smbfs
 
-echo change login
-sudo cp lightdm.conf /etc/lightdm
-
 echo install epoptes-client
 sudo apt-get install epoptes-client
 sudo epoptes-client -c
