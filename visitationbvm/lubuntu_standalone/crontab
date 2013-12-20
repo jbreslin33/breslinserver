@@ -15,4 +15,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #
 */2 * * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/mount_nfs.sh
 15 15 * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/add_students.sh
-55 14 * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/hg_pull.sh
+02 15 * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/hg_pull.sh
