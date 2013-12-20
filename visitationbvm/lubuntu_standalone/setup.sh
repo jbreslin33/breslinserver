@@ -49,6 +49,7 @@ echo arduino
 sudo apt-get install arduino arduino-core
 
 echo add users
+sudo cp newusers /usr/sbin
 sudo newusers ../add_student_scripts/add_viso.txt
 
 echo complete you can now reboot and login 
