@@ -9,6 +9,9 @@ sudo apt-get install postgresql
 sudo apt-get install phppgadmin
 sudo apt-get install libpq-dev
 
+cd /home/jbreslin/sandbox
+hg clone https://jbreslin33@code.google.com/p/breslinserver
+
 sudo chmod -R 777 /home/jbreslin/sandbox/breslinmathracer/src/web/insert/upload
 sudo -u postgres createdb jamesanthonybreslin
 sudo cp /home/jbreslin/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
