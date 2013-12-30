@@ -17,9 +17,9 @@ sudo -u postgres createdb jamesanthonybreslin
 sudo cp /home/jbreslin/sandbox/breslinserver/ubreslin2/000-default /etc/apache2/sites-enabled
 
 echo are these still needed???
-echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
-echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
-echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
+sudo cp /home/jbreslin/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
+sudo cp /home/jbreslin/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
+sudo cp /home/jbreslin/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
