@@ -230,6 +230,8 @@ v1848,bin,Christopher,Serrano,v1848@visitationbvm.com
 v1849,bin,Terrel,Wood,v1849@visitationbvm.com
 v1850,bit,Ashanti,Lopez,v1850@visitationbvm.com
 v1851,bit,Bangalis,Cosma,v1851@visitationbvm.com
+v1852,bat,Jose,Jimenez,v1852@visitationbvm.com
+v1853,bat,Scott,Nguyen,v1853@visitationbvm.com
 v1901,ahh,Angelis,Bernardy,v1901@visitationbvm.com
 v1902,abs,Julio,Bristol,v1902@visitationbvm.com
 v1903,ace,Rafael,Curgua,v1903@visitationbvm.com

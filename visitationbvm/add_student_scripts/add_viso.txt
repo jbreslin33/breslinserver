@@ -233,6 +233,8 @@ v1848:bin:1848:100:Christopher Serrano:/home/v1848:/bin/bash
 v1849:bin:1849:100:Terrell Wood:/home/v1849:/bin/bash
 v1850:bit:1850:100:Ashanti Lopez:/home/v1850:/bin/bash
 v1851:bit:1851:100:Bangelis Cosma:/home/v1851:/bin/bash
+v1852:bat:1852:100:Jose Jimenez:/home/v1852:/bin/bash
+v1853:bat:1853:100:Scott Nguyen:/home/v1853:/bin/bash
 v1901:ahh:1901:100:Angelis Bernardy:/home/v1901:/bin/bash
 v1902:abs:1902:100:Julio Bristol:/home/v1902:/bin/bash
 v1903:ace:1903:100:Rafael Cargua Buestan:/home/v1903:/bin/bash
