@@ -1,1 +1,3 @@
-sudo newusers ../add_student_scripts/add_viso.txt
+cd /home/student/sandbox/breslinserver/
+hg pull /home/jbreslin/sandbox/breslinserver/
+hg update /home/jbreslin/sandbox/breslinserver/
