@@ -14,5 +14,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 */2 * * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/mount_nfs.sh
-15 15 * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/add_students.sh
-02 15 * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/hg_pull.sh
+30 * * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/hg_pull.sh
+35 * * * * root /home/student/sandbox/breslinserver/visitationbvm/ubuntu_standalone/add_students.sh
