@@ -467,3 +467,4 @@ v2266:cat:2266:100:Anna Van:/home/v2266:/bin/bash
 v2267:lin:2267:100:Linus Torvalds:/home/v2267:/bin/bash
 v2268:lin:2268:100:Bilbo Baggins:/home/v2268:/bin/bash
 v2269:lin:2269:100:Larry Fine:/home/v2269:/bin/bash
+v2270:lin:2270:100:Albert Einstein:/home/v2270:/bin/bash
