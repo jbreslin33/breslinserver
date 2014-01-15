@@ -48,6 +48,9 @@ sudo apt-get install libreoffice
 echo arduino
 sudo apt-get install arduino arduino-core
 
+echo chromium
+sudo apt-get install chromium-browser
+
 echo add users
 sudo cp newusers /usr/sbin
 sudo newusers ../add_student_scripts/add_viso.txt
