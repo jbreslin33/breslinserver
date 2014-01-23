@@ -565,9 +565,9 @@ v2303:ace:2303:100:Giovanna Pierre:/home/v2303:/bin/bash
 v2304:add:2304:100:Carlos Gomez:/home/v2304:/bin/bash
 v2305:aft:2305:100:Desiree Ramos:/home/v2305:/bin/bash
 v2306:ape:2306:100:Mariline Obrien:/home/v2306:/bin/bash
-v2307:and:2307:100:New Student:/home/v2307:/bin/bash
-v2308:aim:2308:100:New Student:/home/v2308:/bin/bash
-v2309:aid:2309:100:New Student:/home/v2309:/bin/bash
+v2307:and:2307:100:Trial Trial:/home/v2307:/bin/bash
+v2308:aim:2308:100:Fransisco Fransisco:/home/v2308:/bin/bash
+v2309:aid:2309:100:Iyana Iyana:/home/v2309:/bin/bash
 v2310:air:2310:100:New Student:/home/v2310:/bin/bash
 v2311:all:2311:100:New Student:/home/v2311:/bin/bash
 v2312:amp:2312:100:New Student:/home/v2312:/bin/bash
