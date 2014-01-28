@@ -465,7 +465,7 @@ v2165:bio:2165:100:Alexander Sanchez:/home/v2165:/bin/bash
 v2166:bio:2166:100:Layla Hill:/home/v2166:/bin/bash
 v2167:bio:2167:100:Samual Dowling:/home/v2167:/bin/bash
 v2168:bio:2168:100:Brandon Castillo:/home/v2168:/bin/bash
-v2169:bio:2169:100:New Student:/home/v2169:/bin/bash
+v2169:bio:2169:100:Jimmy Wong:/home/v2169:/bin/bash
 v2170:bio:2170:100:New Student:/home/v2170:/bin/bash
 v2171:bio:2171:100:New Student:/home/v2171:/bin/bash
 v2172:bio:2172:100:New Student:/home/v2172:/bin/bash
@@ -545,9 +545,9 @@ v2263:cat:2263:100:Ricardo Santos:/home/v2263:/bin/bash
 v2264:bat:2264:100:Kristian Serrano:/home/v2264:/bin/bash
 v2265:cat:2265:100:Mya Torres:/home/v2265:/bin/bash
 v2266:cat:2266:100:Anna Van:/home/v2266:/bin/bash
-v2267:cat:2267:100:New Student:/home/v2267:/bin/bash
-v2268:cat:2268:100:New Student:/home/v2268:/bin/bash
-v2269:cat:2269:100:New Student:/home/v2269:/bin/bash
+v2267:cat:2267:100:Pedro Rojas:/home/v2267:/bin/bash
+v2268:cat:2268:100:Jaden Gonzalez:/home/v2268:/bin/bash
+v2269:cat:2269:100:Justin Valesquez:/home/v2269:/bin/bash
 v2270:cat:2270:100:New Student:/home/v2270:/bin/bash
 v2271:cat:2271:100:New Student:/home/v2271:/bin/bash
 v2272:cat:2272:100:New Student:/home/v2272:/bin/bash
