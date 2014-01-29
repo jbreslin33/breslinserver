@@ -1,4 +1,8 @@
 username,password,firstname,lastname,email
+v1250,ace,Ben,York,v1250@visitationbvm.com
+jfield,ace,Jane,Field,jfield@visitationbvm.com
+jroache,ace,Jim,Roache,jroache@visitationbvm.com
+emcginnis,ace,Erin,Mcginnis,emcginnis@visitationbvm.com
 v1401,ahh,Anthony,Arvelo,v1401@visitationbvm.com
 v1402,abs,Damyer,Batties,v1402@visitationbvm.com
 v1403,ace,Johnson,Chieu,v1403@visitationbvm.com
@@ -247,7 +251,6 @@ v1865,bat,New,Student,v1865@visitationbvm.com
 v1866,bat,New,Student,v1866@visitationbvm.com
 v1867,bat,New,Student,v1867@visitationbvm.com
 v1868,bat,New,Student,v1868@visitationbvm.com
-
 v1901,ahh,Angelis,Bernardy,v1901@visitationbvm.com
 v1902,abs,Julio,Bristol,v1902@visitationbvm.com
 v1903,ace,Rafael,Curgua,v1903@visitationbvm.com
