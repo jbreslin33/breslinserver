@@ -267,7 +267,7 @@ v1851:bit:1851:100:Bangelis Cosma:/home/v1851:/bin/bash
 v1852:bat:1852:100:Jose Jimenez:/home/v1852:/bin/bash
 v1853:bat:1853:100:Scott Nguyen:/home/v1853:/bin/bash
 v1854:bat:1854:100:Alejandro Amigan:/home/v1854:/bin/bash
-v1855:bat:1855:100:New Student:/home/v1855:/bin/bash
+v1855:bat:1855:100:Jayden Rivera:/home/v1855:/bin/bash
 v1856:bat:1856:100:New Student:/home/v1856:/bin/bash
 v1857:bat:1857:100:New Student:/home/v1857:/bin/bash
 v1858:bat:1858:100:New Student:/home/v1858:/bin/bash
