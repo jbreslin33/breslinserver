@@ -389,8 +389,8 @@ v2049:bib:2049:100:Hugh Lin:/home/v2049:/bin/bash
 v2050:cat:2050:100:David Amigon:/home/v2050:/bin/bash
 v2051:cat:2051:100:Aryana Rosario:/home/v2051:/bin/bash
 v2052:cat:2052:100:Alex Oliveras:/home/v2052:/bin/bash
-v2053:cat:2053:100:New Student:/home/v2053:/bin/bash
-v2054:cat:2054:100:New Student:/home/v2054:/bin/bash
+v2053:bat:2053:100:Arianna Rosario:/home/v2053:/bin/bash
+v2054:sat:2054:100:Nora Wu:/home/v2054:/bin/bash
 v2055:cat:2055:100:New Student:/home/v2055:/bin/bash
 v2056:cat:2056:100:New Student:/home/v2056:/bin/bash
 v2057:cat:2057:100:New Student:/home/v2057:/bin/bash
