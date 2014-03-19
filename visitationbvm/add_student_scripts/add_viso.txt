@@ -391,7 +391,7 @@ v2051:cat:2051:100:Aryana Rosario:/home/v2051:/bin/bash
 v2052:cat:2052:100:Alex Oliveras:/home/v2052:/bin/bash
 v2053:bat:2053:100:Arianna Rosario:/home/v2053:/bin/bash
 v2054:sat:2054:100:Nora Wu:/home/v2054:/bin/bash
-v2055:cat:2055:100:New Student:/home/v2055:/bin/bash
+v2055:mat:2055:100:Amia Perez:/home/v2055:/bin/bash
 v2056:cat:2056:100:New Student:/home/v2056:/bin/bash
 v2057:cat:2057:100:New Student:/home/v2057:/bin/bash
 v2058:cat:2058:100:New Student:/home/v2058:/bin/bash
