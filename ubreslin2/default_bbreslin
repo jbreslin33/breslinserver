@@ -3,7 +3,7 @@
 	ServerAlias abcandyou.com *.abcandyou.com
 	ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/src
+        DocumentRoot /home/bbreslin/sandbox/breslinmathracer/src
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
@@ -46,7 +46,7 @@
 	ServerAlias roacheopen.com *.roacheopen.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslintalker/
+        DocumentRoot /home/bbreslin/sandbox/breslintalker/
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
@@ -89,7 +89,7 @@
         ServerAlias gotilecrafters.com *.gotilecrafters.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslinclient/
+        DocumentRoot /home/bbreslin/sandbox/breslinclient/
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
@@ -132,7 +132,7 @@
         ServerAlias jamesanthonybreslin.com *.jamesanthonybreslin.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/src
+        DocumentRoot /home/bbreslin/sandbox/breslinmathracer/src
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
@@ -175,7 +175,7 @@
         ServerAlias visflip.com *.visflip.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/moodle/
+        DocumentRoot /home/bbreslin/sandbox/moodle/
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
@@ -218,7 +218,7 @@
         ServerAlias lukejamesbreslin.com *.lukejamesbreslin.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/lukes-webpage/
+        DocumentRoot /home/bbreslin/sandbox/lukes-webpage/
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
