@@ -1,3 +1,8 @@
+echo sudo apt-get remove lightdm  
+echo sudo apt-get install lxde
+echo sudo apt-get install lxdm
+sudo rm .dmrc
+
 echo update dpkg 
 sudo dpkg --configure -a
 echo install ssh
