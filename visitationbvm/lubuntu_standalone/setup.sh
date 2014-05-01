@@ -16,7 +16,7 @@ sudo chmod 777 /mnt
 
 sudo apt-get -y install nfs-common
 
-sudo apt-get -y install smbfs
+sudo apt-get -y install cifs-utils
 
 sudo apt-get -y install epoptes-client
 sudo epoptes-client -c
