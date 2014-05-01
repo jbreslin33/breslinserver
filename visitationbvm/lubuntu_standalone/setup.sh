@@ -44,4 +44,3 @@ sudo newusers ../add_student_scripts/add_viso.txt
 
 sudo cp lxdm.conf /etc/lxdm
 
-sudo apt-get -y install xfce4-mixer gstreamer0.10-alsa
