@@ -27,6 +27,7 @@ sudo apt-get -y install lubuntu-desktop
 sudo apt-get -y install kubuntu-desktop 
 sudo apt-get -y install xubuntu-desktop 
 sudo apt-get -y install awesome 
+sudo apt-get -y install gnome-desktop
 
 echo sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
