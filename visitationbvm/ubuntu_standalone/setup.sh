@@ -1,61 +1,35 @@
-echo update dpkg 
 sudo dpkg --configure -a
-echo install ssh
-sudo apt-get install ssh
-echo update system
-sudo apt-get dist-upgrade
+sudo apt-get -y update 
+sudo apt-get -y install 
+sudo apt-get -y upgrade
 
-echo update hosts file
 sudo cp hosts /etc
-
-echo cron jobs
 sudo cp crontab /etc
-
-echo mounting
+sudo cp lightdm.conf /etc/lightdm
 sudo chmod 777 /mnt
 
-echo install nfs-common
-sudo apt-get install nfs-common
+sudo apt-get -y install ssh
+sudo apt-get -y install nfs-common
+sudo apt-get -y install cifs-utils
+sudo apt-get -y install tuxmath
+sudo apt-get -y install tuxtype
+sudo apt-get -y install tuxpaint
+sudo apt-get -y install vlc
+sudo apt-get -y install pinta
+sudo apt-get -y install openjdk-7-jre
+sudo apt-get -y install icedtea-7-plugin
+sudo apt-get -y install libreoffice
+sudo apt-get -y install arduino arduino-core
+sudo apt-get -y install chromium-browser
+sudo apt-get -y remove empathy
+sudo apt-get -y install epoptes-client
+sudo apt-get -y install lubuntu-desktop 
+sudo apt-get -y install kubuntu-desktop 
+sudo apt-get -y install xubuntu-desktop 
+sudo apt-get -y install awesome 
 
-echo install smbfs
-sudo apt-get install smbfs
-
-echo install epoptes-client
-sudo apt-get install epoptes-client
 sudo epoptes-client -c
-
-echo tux
-sudo apt-get install tuxmath
-sudo apt-get install tuxtype
-sudo apt-get install tuxpaint
-
-echo vlc
-sudo apt-get install vlc
-
-echo remove empathy chat program
-sudo apt-get remove empathy
-
-echo install pinta paint program
-sudo apt-get install pinta
-
-echo install java
-sudo apt-get install openjdk-7-jre
-sudo apt-get install icedtea-7-plugin
-
-echo libreoffice
-sudo apt-get install libreoffice
-
-echo arduino
-sudo apt-get install arduino arduino-core
-
-echo add users
 sudo newusers ../add_student_scripts/add_viso.txt
-
-echo change login
-sudo cp lightdm.conf /etc/lightdm
-
-echo chromium
-sudo apt-get install chromium-browser
 
 echo complete you can now reboot and login 
 echo IMPORTANT!!  if this is lubuntu then cd into lubuntu_standalone and run setup.sh
