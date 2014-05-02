@@ -11,18 +11,18 @@ sudo cp lightdm.conf /etc/lightdm
 sudo apt-get -y install ssh
 sudo apt-get -y install nfs-common
 sudo apt-get -y install cifs-utils
-sudo apt-get -y install tuxmath
-sudo apt-get -y install tuxtype
-sudo apt-get -y install tuxpaint
+echo sudo apt-get -y install tuxmath
+echo sudo apt-get -y install tuxtype
+echo sudo apt-get -y install tuxpaint
 sudo apt-get -y install vlc
-sudo apt-get -y install pinta
+echo sudo apt-get -y install pinta
 sudo apt-get -y install openjdk-7-jre
 sudo apt-get -y install icedtea-7-plugin
-sudo apt-get -y install libreoffice
-sudo apt-get -y install arduino arduino-core
+echo sudo apt-get -y install libreoffice
+echo sudo apt-get -y install arduino arduino-core
 sudo apt-get -y install chromium-browser
-sudo apt-get -y remove empathy
-sudo apt-get -y install epoptes-client
+echo sudo apt-get -y remove empathy
+echo sudo apt-get -y install epoptes-client
 sudo apt-get -y install kubuntu-desktop 
 sudo apt-get -y install xubuntu-desktop 
 sudo apt-get -y install awesome 
