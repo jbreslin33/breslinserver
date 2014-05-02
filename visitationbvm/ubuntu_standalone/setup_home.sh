@@ -23,11 +23,15 @@ sudo apt-get -y install arduino arduino-core
 sudo apt-get -y install chromium-browser
 sudo apt-get -y remove empathy
 sudo apt-get -y install epoptes-client
-sudo apt-get -y install lubuntu-desktop 
 sudo apt-get -y install kubuntu-desktop 
 sudo apt-get -y install xubuntu-desktop 
 sudo apt-get -y install awesome 
 sudo apt-get -y install gnome-desktop
+sudo apt-get -y install blackbox 
+sudo apt-get -y install fluxbox 
+sudo apt-get -y install icewm 
+sudo apt-get -y install fvwm 
+sudo apt-get -y install xfce4 
 
 echo sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
