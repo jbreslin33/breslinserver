@@ -3,7 +3,7 @@ echo ---------------------------------------------
 echo UBRESLIN: MIXXX
 echo ---------------------------------------------
 sudo dpkg --configure -a
-sudo apt-get install mixxx
+sudo apt-get -y install mixxx
 sudo mkdir /amusic
 sudo chmod -R 777 /amusic
 mkdir /home/$1/.mixxx
