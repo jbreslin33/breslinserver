@@ -7,6 +7,7 @@ sudo cp hosts /etc
 sudo cp crontab /etc
 sudo chmod 777 /mnt
 sudo cp mdm.conf /etc/mdm
+sudo cp newusers /usr/sbin
 
 sudo apt-get -y install ssh
 sudo apt-get -y install nfs-common
