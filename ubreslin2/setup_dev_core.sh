@@ -106,3 +106,6 @@ echo  backslashpassword postgres dont forget to put a backslash before password,
 
 echo for adding to db 
 echo sudo chmod -R 777 web/insert/
+
+echo from src/ dir run ./src/database/build_create_tables.sh
+echo from src/ dir run ./src/database/build_insert.sh
