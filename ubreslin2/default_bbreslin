@@ -5,22 +5,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/breslinmathracer/src
 	<Directory />
+		Require all granted		
 		Options FollowSymLinks
 		AllowOverride None
-	</Directory>
-	<Directory /var/www/>
-		Options Indexes FollowSymLinks MultiViews
-		AllowOverride None
-		Order allow,deny
-		allow from all
-	</Directory>
-
-	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-	<Directory "/usr/lib/cgi-bin">
-		AllowOverride None
-		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-		Order allow,deny
-		Allow from all
 	</Directory>
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -30,16 +17,6 @@
 	LogLevel warn
 
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
-
 </VirtualHost>
 <VirtualHost *:80>
 	ServerName www.roacheopen.com
@@ -48,22 +25,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/breslintalker/
         <Directory />
+		Require all granted		
                 Options FollowSymLinks
                 AllowOverride None
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                Order allow,deny
-                Allow from all
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -73,15 +37,6 @@
         LogLevel warn
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
 </VirtualHost>
 
 <VirtualHost *:80>
@@ -91,22 +46,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/breslinclient/
         <Directory />
+		Require all granted		
                 Options FollowSymLinks
                 AllowOverride None
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                Order allow,deny
-                Allow from all
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -116,15 +58,6 @@
         LogLevel warn
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
 </VirtualHost>
 
 <VirtualHost *:80>
@@ -134,22 +67,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/breslinmathracer/src
         <Directory />
+		Require all granted		
                 Options FollowSymLinks
                 AllowOverride None
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                Order allow,deny
-                Allow from all
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -159,15 +79,6 @@
         LogLevel warn
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
 </VirtualHost>
 
 <VirtualHost *:80>
@@ -177,22 +88,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/moodle/
         <Directory />
+		Require all granted		
                 Options FollowSymLinks
                 AllowOverride None
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                Order allow,deny
-                Allow from all
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -202,15 +100,6 @@
         LogLevel warn
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
 </VirtualHost>
 
 <VirtualHost *:80>
@@ -220,22 +109,9 @@
 
         DocumentRoot /home/bbreslin/sandbox/lukes-webpage/
         <Directory />
+		Require all granted
                 Options FollowSymLinks
                 AllowOverride None
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
-
-        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-        <Directory "/usr/lib/cgi-bin">
-                AllowOverride None
-                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-                Order allow,deny
-                Allow from all
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -245,14 +121,5 @@
         LogLevel warn
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
-    Alias /doc/ "/usr/share/doc/"
-    <Directory "/usr/share/doc/">
-        Options Indexes MultiViews FollowSymLinks
-        AllowOverride None
-        Order deny,allow
-        Deny from all
-        Allow from 127.0.0.0/255.0.0.0 ::1/128
-    </Directory>
 </VirtualHost>
 
