@@ -20,6 +20,7 @@ sudo apt-get -y install pinta
 sudo apt-get -y install chromium-browser
 sudo apt-get -y install epoptes-client
 sudo apt-get -y install minetest
+sudo apt-get -y install remmina
 
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
