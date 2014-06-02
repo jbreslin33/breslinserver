@@ -1,1 +1,1 @@
-sudo mount vfiles:/home/student/Public /mnt/public
+sudo mount vfiles:/home/student/Public /mnt
