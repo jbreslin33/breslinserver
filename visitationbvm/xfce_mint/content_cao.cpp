@@ -956,11 +956,13 @@ void GenericCAO::addToScene(scene::ISceneManager *smgr, ITextureSource *tsrc,
 		node = m_meshnode;
 	if(node && m_is_player && !m_is_local_player){
 		// Add a text node for showing the name
+/*
 		gui::IGUIEnvironment* gui = irr->getGUIEnvironment();
 		std::wstring wname = narrow_to_wide(m_name);
 		m_textnode = smgr->addTextSceneNode(gui->getBuiltInFont(),
 				wname.c_str(), video::SColor(255,255,255,255), node);
 		m_textnode->setPosition(v3f(0, BS*1.1, 0));
+*/
 	}
 
 	updateNodePos();
