@@ -41,5 +41,6 @@ tar xf master.tar.gz
 cd ..
 cmake . -DRUN_IN_PLACE=1
 make -j2
+sudo chmod -R 777 /minetest
 
 echo complete you can now reboot and login 
