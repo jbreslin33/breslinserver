@@ -30,7 +30,7 @@ sudo newusers ../add_student_scripts/add_viso.txt
 sudo mkdir /minetest
 sudo chmod -R 777 /minetest
 cd /minetest
-sudo apt-get install build-essential libirrlicht-dev cmake libbz2-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev libogg-dev libvorbis-dev libopenal-dev
+sudo apt-get -y install build-essential libirrlicht-dev cmake libbz2-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev libogg-dev libvorbis-dev libopenal-dev
 wget https://github.com/minetest/minetest/tarball/master -O master.tar.gz
 tar xf master.tar.gz
 cd minetest-minetest-9675d9e/
