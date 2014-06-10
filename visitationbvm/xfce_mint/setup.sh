@@ -50,7 +50,7 @@ wget https://github.com/minetest/minetest_game/tarball/master -O master.tar.gz
 tar xf master.tar.gz
 cd ..
 echo copy the content_cao.cpp file!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-sudo cp /home/student/sandbox/visitationbvm/xfce_mint/content_cao.cpp /minetest/minetest-minetest-9675d9e/src
+sudo cp /home/student/sandbox/breslinserver/visitationbvm/xfce_mint/content_cao.cpp /minetest/minetest-minetest-9675d9e/src/
 cmake . -DRUN_IN_PLACE=1
 make -j2
 sudo chmod -R 777 /minetest
