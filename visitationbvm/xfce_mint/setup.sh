@@ -45,7 +45,7 @@ sudo apt-get -y install libopenal-dev
 wget https://github.com/minetest/minetest/tarball/master -O master.tar.gz
 tar xf master.tar.gz
 cd minetest-minetest-9675d9e/
-cp src/content_cao.cpp /minetest/minetest-minetest-9675d9e/src/
+sudo cp src/content_cao.cpp /minetest/minetest-minetest-9675d9e/src
 cd games/
 wget https://github.com/minetest/minetest_game/tarball/master -O master.tar.gz
 tar xf master.tar.gz
