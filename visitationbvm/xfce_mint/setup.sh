@@ -45,12 +45,12 @@ sudo apt-get -y install libopenal-dev
 wget https://github.com/minetest/minetest/tarball/master -O master.tar.gz
 tar xf master.tar.gz
 cd minetest-minetest-9675d9e/
-echo copy the content_cao.cpp file!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 cd games/
 wget https://github.com/minetest/minetest_game/tarball/master -O master.tar.gz
 tar xf master.tar.gz
 cd ..
-sudo cp src/content_cao.cpp /minetest/minetest-minetest-9675d9e/src
+echo copy the content_cao.cpp file!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+sudo cp /home/student/sandbox/visitationbvm/xfce_mint/content_cao.cpp /minetest/minetest-minetest-9675d9e/src
 cmake . -DRUN_IN_PLACE=1
 make -j2
 sudo chmod -R 777 /minetest
