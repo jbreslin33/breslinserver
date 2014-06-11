@@ -18,6 +18,7 @@ sudo apt-get -y install postgresql
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install vlc
+sudo apt-get -y install mpg123
 
 echo
 echo ---------------------------------------------
