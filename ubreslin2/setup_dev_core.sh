@@ -19,6 +19,8 @@ sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install vlc
 sudo apt-get -y install mpg123
+sudo apt-get install openjdk-7-jdk
+sudo apt-get install graphviz
 
 echo
 echo ---------------------------------------------
