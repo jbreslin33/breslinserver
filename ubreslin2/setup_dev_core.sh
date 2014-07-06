@@ -21,6 +21,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install mpg123
 sudo apt-get install openjdk-7-jdk
 sudo apt-get install graphviz
+sudo apt-get install dia 
 
 echo
 echo ---------------------------------------------
