@@ -1,1 +1,1 @@
-mplayer -playlist http://www.wefunkradio.com/play/shoutcast.pls
+mpg123 -C -b 4096 -@ "http://www.wefunkradio.com/play/shoutcast.pls"
