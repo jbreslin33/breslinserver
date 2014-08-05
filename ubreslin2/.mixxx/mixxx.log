@@ -1,630 +1,372 @@
-Debug: [Main]: Mixxx 1.10.0 "(built on: Jan 27 2012 @ 10:49:38; flags: hifieq mad midiscript optimize qdebug shoutcast verbose vinylcontrol)" is starting... 
-Debug: [Main]: Qt version is: 4.8.1 
-Debug: [Main]: Configuration file is at the current version 1.10.0 
-Debug: [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : fail 
-Debug: [Main]: Found folder 'Mixxx' within default OS music directory 
-Debug: [Main]: Could not create folder 'Recordings' within 'Mixxx' 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "vinylcontrol_mode" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "vinylcontrol_mode" ) 
-Debug: [Main]: JACK client name set 
-Debug: [Main]: Available QtSQL drivers: ("QSQLITE") 
-Debug: [Main]: src/library/trackcollection.cpp DB status: true 
-Debug: [Main]: SchemaManager::upgradeToSchemaVersion already at version 13 
-Debug: [Main]: TrackDAO::initialize QThread(0xa4c73d0, name = "Main") "qt_sql_default_connection" 
-Debug: [Main]: CrateDAO::initialize() 
-Debug: [Main]: CueDAO::initialize QThread(0xa4c73d0, name = "Main") "qt_sql_default_connection" 
-Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
-Debug: [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod" ) 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: CachingReader using 4980736 bytes. 
-Debug: [Main]: Constructed LibraryScanner 
-Debug: [Main]: iTunes Album Art path is: "" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Scanning PortMIDI devices: 
-Debug: [Main]:  Found output device # 0 Midi Through Port-0 
-Debug: [Main]:  Found output device # 2 Ion Discover DJ MIDI 1 
-Debug: [Main]:  Found input device # 1 Midi Through Port-0 
-Debug: [Main]:     Linking to output device # 0 "Midi Through Port-0" 
-Debug: [Main]: Starting script engine with output device "" 
-Debug: [MidiScriptEngine 1]: MIDI Device in script engine is: "" 
-Debug: [Main]:  Found input device # 3 Ion Discover DJ MIDI 1 
-Debug: [Main]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
-Debug: [Main]: Starting script engine with output device "" 
-Debug: [MidiScriptEngine 2]: MIDI Device in script engine is: "" 
-Debug: [Main]: MidiDeviceManager: Setting up devices 
-Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Midi Through Port-0"  settings found 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [Main]: PortMIDI device "3. Ion Discover DJ MIDI 1" already closed 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Ion Discover DJ MIDI 1"  settings found 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [Main]: Opening Device: "3._Ion_Discover_DJ_MIDI_1" 
-Debug: [Main]: MidiMapping::applyPreset() 
-Debug: [MidiScriptEngine 2]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
-Debug: [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ MIDI 1" 
-Debug: [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
-Debug: [Main]: loadSettings: 1 0 "SlowFade" 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: BpmSchemes::readXML "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: SoundManager::setupDevices() 
-Debug: [Main]: SoundDevicePortAudio::open() "0, HDA Intel: STAC92xx Analog (hw:0,0)" 
-Debug: [Main]: framesPerBuffer: 1024 
-Debug: [Main]: Requested sample rate:  48000 Hz, latency: 21.3333 ms 
-Debug: [Main]: Output channels: 2 | Input channels: 0 
-Debug: [Main]: Opening stream with id 0 
-Debug: [Main]: Opened PortAudio stream successfully... starting 
-Debug: [Main]: Dynamically loaded PortAudio library 
-Debug: [Main]: PortAudio: Started stream successfully 
-Debug: [Main]:    Actual sample rate:  48000 Hz, latency: 42.6667 ms 
-Debug: [Main]: Using "HDA Intel: STAC92xx Analog (hw:0,0)" as output sound device clock reference 
-Debug: [Main]: 1 output sound devices opened 
-Debug: [Main]: 0 input  sound devices opened 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Samplers]" , "show_samplers" ) 
-Warning: [Main]: Requested control does not exist: "[Samplers],show_samplers" . Creating it. 
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "hotcue_38_position" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
-Debug: [Main]: BaseTrackCache(0xa6c6400) updateIndexWithQuery took 564 ms 
-Debug: [Main]: PlaylistTableModel(0xb02b2f8) select() took 565 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xc4503d8) select() took 323 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xc4503d8) select() took 314 ms 
-Debug: [Main]: PrepareLibraryTableModel(0xc4503d8) select() took 310 ms 
-Debug: [Main]: DlgPrepare(0xc421410, name = "DlgPrepare") analysisActive false 
-Debug: [Main]: MixxxLibraryFeature::activate() 
-Debug: [Main]: LibraryTableModel(0xa6c6660) select() took 448 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Warning: [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
-Warning: [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" . Creating it. 
-Warning: [Main]: QGLContext::makeCurrent(): Cannot make invalid context current.
-Debug: [Main]: createWaveformViewer() 
-Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
-Debug: [Main]: WaveformViewerFactory :: Making new GL context. 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
-Warning: [Main]: Requested control does not exist: "[Spinny1],show_spinny" . Creating it. 
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
-Debug: [Main]: createWaveformViewer() 
-Debug: [Main]: WaveformViewerFactory :: Creating new visual waveform 
-Debug: [Main]: WaveformViewerFactory :: Sharing existing GL context. 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "show_spinny" ) 
-Warning: [Main]: Requested control does not exist: "[Spinny2],show_spinny" . Creating it. 
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
-Debug: [Main]: Making property binder for "visible" 
-Warning: [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug: [Main]: Displaying mixxx 
-Debug: [Main]: Running Mixxx 
-Debug: [Main]: PlaylistTableModel(0xa6c58c0) select() took 1 ms 
-Debug: [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug: [Main]: New BeatGrid 
-Debug: [Main]: Successfully deserialized BeatGrid 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/usr/share/mixxx/midi/Ion Discover DJ.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Ion Discover DJ"  settings found 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/usr/share/mixxx/midi/Ion Discover DJ.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Ion Discover DJ"  settings found 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [MidiScriptEngine 2]: MidiScriptEngine shutting down... 
-Debug: [Main]: Starting script engine with output device "3. Ion Discover DJ MIDI 1" 
-Debug: [MidiScriptEngine 3]: MIDI Device in script engine is: "3. Ion Discover DJ MIDI 1" 
-Debug: [Main]: MidiMapping::applyPreset() 
-Debug: [MidiScriptEngine 3]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 3]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 3]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [MidiScriptEngine 3]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
-Debug: [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ" 
-Debug: [Main]: DlgPrefVinyl::Apply 
-Debug: [Main]: in VinylGainSlotApply() with gain: 1 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: New BeatGrid 
-Debug: [Main]: Successfully deserialized BeatGrid 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [MidiScriptEngine 3]: MidiScriptEngine shutting down... 
-Debug: [Main]: Starting script engine with output device "3. Ion Discover DJ MIDI 1" 
-Debug: [MidiScriptEngine 4]: MIDI Device in script engine is: "3. Ion Discover DJ MIDI 1" 
-Debug: [Main]: MidiMapping::applyPreset() 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [MidiScriptEngine 4]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
-Debug: [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ MIDI 1" 
-Debug: [Main]: DlgPrefVinyl::Apply 
-Debug: [Main]: in VinylGainSlotApply() with gain: 1 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/usr/share/mixxx/midi/Ion Discover DJ.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Ion Discover DJ"  settings found 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [Main]: MidiMapping::applyPreset() 
-Debug: [MidiScriptEngine 1]: "Ion Discover DJ id: "1. Midi Through Port-0" initialized." 
-Debug: [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ" 
-Debug: [Main]: DlgPrefVinyl::Apply 
-Debug: [Main]: in VinylGainSlotApply() with gain: 1 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [Main]: DlgPrefVinyl::Apply 
-Debug: [Main]: in VinylGainSlotApply() with gain: 1 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: guess the size of the window decoration 
-Debug: [Main]: MidiMapping: Loading MIDI preset from "/usr/share/mixxx/midi/Ion Discover DJ.midi.xml" 
-Debug: [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug: [Main]: "Ion Discover DJ"  settings found 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: MidiMapping: Input parsed! 
-Debug: [Main]: MidiMapping: Output parsed! 
-Debug: [MidiScriptEngine 1]: MidiScriptEngine shutting down... 
-Debug: [MidiScriptEngine 4]: MidiScriptEngine shutting down... 
-Debug: [Main]: Starting script engine with output device "3. Ion Discover DJ MIDI 1" 
-Debug: [MidiScriptEngine 5]: MIDI Device in script engine is: "3. Ion Discover DJ MIDI 1" 
-Debug: [Main]: MidiMapping::applyPreset() 
-Debug: [MidiScriptEngine 5]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug: [MidiScriptEngine 5]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug: [MidiScriptEngine 5]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug: [MidiScriptEngine 5]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
-Debug: [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ" 
-Debug: [Main]: DlgPrefVinyl::Apply 
-Debug: [Main]: in VinylGainSlotApply() with gain: 1 
-Debug: [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug: [Main]: MidiDeviceManager::getDeviceList 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: Writing MIDI preset file "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug: [Main]: MidiMapping: writing script block for "Ion-Discover-DJ-scripts.js" 
-Debug: [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug: [Main]: New BeatGrid 
-Debug: []: Couldn't get chunk  1319  in read() of [ 21621228 , 21631468 ] chunks  1319 - 1320 
-Debug: []: Couldn't get chunk  1319  in read() of [ 21610988 , 21621228 ] chunks  1319 - 1319 
-Debug: []: Couldn't get chunk  1318  in read() of [ 21600748 , 21610988 ] chunks  1318 - 1319 
-Debug: []: Couldn't get chunk  1317  in read() of [ 21590508 , 21600748 ] chunks  1317 - 1318 
-Debug: []: Couldn't get chunk  1317  in read() of [ 21584368 , 21590508 ] chunks  1317 - 1317 
-Debug: []: Couldn't get chunk  1314  in read() of [ 21543408 , 21553648 ] chunks  1314 - 1315 
-Debug: []: Couldn't get chunk  1314  in read() of [ 21533168 , 21543408 ] chunks  1314 - 1314 
-Debug: []: Couldn't get chunk  1313  in read() of [ 21522928 , 21533168 ] chunks  1313 - 1314 
-Debug: []: Couldn't get chunk  1313  in read() of [ 21512688 , 21522928 ] chunks  1313 - 1313 
-Debug: []: Couldn't get chunk  1312  in read() of [ 21502448 , 21512688 ] chunks  1312 - 1313 
-Debug: []: Couldn't get chunk  1312  in read() of [ 21496310 , 21502448 ] chunks  1312 - 1312 
-Debug: []: Couldn't get chunk  1309  in read() of [ 21455350 , 21465590 ] chunks  1309 - 1310 
-Debug: []: Couldn't get chunk  1308  in read() of [ 21445110 , 21455350 ] chunks  1308 - 1309 
-Debug: []: Couldn't get chunk  1308  in read() of [ 21434870 , 21445110 ] chunks  1308 - 1308 
-Debug: []: Couldn't get chunk  1307  in read() of [ 21424630 , 21434870 ] chunks  1307 - 1308 
-Debug: []: Couldn't get chunk  1307  in read() of [ 21414390 , 21424630 ] chunks  1307 - 1307 
-Debug: []: Couldn't get chunk  1306  in read() of [ 21410958 , 21414390 ] chunks  1306 - 1307 
-Debug: []: Couldn't get chunk  1303  in read() of [ 21359758 , 21369998 ] chunks  1303 - 1304 
-Debug: []: Couldn't get chunk  1303  in read() of [ 21349518 , 21359758 ] chunks  1303 - 1303 
-Debug: []: Couldn't get chunk  1302  in read() of [ 21339278 , 21349518 ] chunks  1302 - 1303 
-Debug: []: Couldn't get chunk  1301  in read() of [ 21329672 , 21339278 ] chunks  1301 - 1302 
-Debug: []: Couldn't get chunk  1298  in read() of [ 21278472 , 21288712 ] chunks  1298 - 1299 
-Debug: []: Couldn't get chunk  1298  in read() of [ 21268232 , 21278472 ] chunks  1298 - 1298 
-Debug: []: Couldn't get chunk  1297  in read() of [ 21257992 , 21268232 ] chunks  1297 - 1298 
-Debug: []: Couldn't get chunk  1297  in read() of [ 21251772 , 21257992 ] chunks  1297 - 1297 
-Debug: []: Couldn't get chunk  1294  in read() of [ 21210812 , 21221052 ] chunks  1294 - 1295 
-Debug: []: Couldn't get chunk  1293  in read() of [ 21200572 , 21210812 ] chunks  1293 - 1294 
-Debug: []: Couldn't get chunk  1293  in read() of [ 21190332 , 21200572 ] chunks  1293 - 1293 
-Debug: []: Couldn't get chunk  1292  in read() of [ 21180092 , 21190332 ] chunks  1292 - 1293 
-Debug: []: Couldn't get chunk  1292  in read() of [ 21177258 , 21180092 ] chunks  1292 - 1292 
-Debug: []: Couldn't get chunk  1289  in read() of [ 21126058 , 21136298 ] chunks  1289 - 1290 
-Debug: []: Couldn't get chunk  1288  in read() of [ 21115818 , 21126058 ] chunks  1288 - 1289 
-Debug: []: Couldn't get chunk  1288  in read() of [ 21105578 , 21115818 ] chunks  1288 - 1288 
-Debug: []: Couldn't get chunk  1288  in read() of [ 21105456 , 21105578 ] chunks  1288 - 1288 
-Debug: []: Couldn't get chunk  1285  in read() of [ 21064496 , 21074736 ] chunks  1285 - 1286 
-Debug: []: Couldn't get chunk  1285  in read() of [ 21054256 , 21064496 ] chunks  1285 - 1285 
-Debug: []: Couldn't get chunk  1284  in read() of [ 21044016 , 21054256 ] chunks  1284 - 1285 
-Debug: []: Couldn't get chunk  1283  in read() of [ 21036362 , 21044016 ] chunks  1283 - 1284 
-Debug: []: Couldn't get chunk  1280  in read() of [ 20985162 , 20995402 ] chunks  1280 - 1281 
-Debug: []: Couldn't get chunk  1280  in read() of [ 20974922 , 20985162 ] chunks  1280 - 1280 
-Debug: []: Couldn't get chunk  1279  in read() of [ 20969978 , 20974922 ] chunks  1279 - 1280 
-Debug: []: Couldn't get chunk  1276  in read() of [ 20918778 , 20929018 ] chunks  1276 - 1277 
-Debug: []: Couldn't get chunk  1276  in read() of [ 20908538 , 20918778 ] chunks  1276 - 1276 
-Debug: []: Couldn't get chunk  1276  in read() of [ 20906302 , 20908538 ] chunks  1276 - 1276 
-Debug: []: Couldn't get chunk  1273  in read() of [ 20865342 , 20875582 ] chunks  1273 - 1274 
-Debug: []: Couldn't get chunk  1272  in read() of [ 20855102 , 20865342 ] chunks  1272 - 1273 
-Debug: []: Couldn't get chunk  1272  in read() of [ 20844862 , 20855102 ] chunks  1272 - 1272 
-Debug: []: Couldn't get chunk  1272  in read() of [ 20843984 , 20844862 ] chunks  1272 - 1272 
-Debug: []: Couldn't get chunk  1269  in read() of [ 20803024 , 20813264 ] chunks  1269 - 1270 
-Debug: []: Couldn't get chunk  1269  in read() of [ 20792784 , 20803024 ] chunks  1269 - 1269 
-Debug: []: Couldn't get chunk  1268  in read() of [ 20782544 , 20792784 ] chunks  1268 - 1269 
-Debug: []: Couldn't get chunk  1268  in read() of [ 20781666 , 20782544 ] chunks  1268 - 1268 
-Debug: []: Couldn't get chunk  1265  in read() of [ 20740706 , 20750946 ] chunks  1265 - 1266 
-Debug: []: Couldn't get chunk  1265  in read() of [ 20730466 , 20740706 ] chunks  1265 - 1265 
-Debug: []: Couldn't get chunk  1264  in read() of [ 20720226 , 20730466 ] chunks  1264 - 1265 
-Debug: []: Couldn't get chunk  1264  in read() of [ 20720024 , 20720226 ] chunks  1264 - 1264 
-Debug: []: Couldn't get chunk  1261  in read() of [ 20668824 , 20679064 ] chunks  1261 - 1262 
-Debug: []: Couldn't get chunk  1260  in read() of [ 20659060 , 20668824 ] chunks  1260 - 1261 
-Debug: []: Couldn't get chunk  1257  in read() of [ 20607860 , 20618100 ] chunks  1257 - 1258 
-Debug: []: Couldn't get chunk  1257  in read() of [ 20598096 , 20607860 ] chunks  1257 - 1257 
-Debug: []: Couldn't get chunk  1254  in read() of [ 20557136 , 20567376 ] chunks  1254 - 1255 
-Debug: []: Couldn't get chunk  1254  in read() of [ 20546896 , 20557136 ] chunks  1254 - 1254 
-Debug: []: Couldn't get chunk  1253  in read() of [ 20537132 , 20546896 ] chunks  1253 - 1254 
-Debug: []: Couldn't get chunk  1250  in read() of [ 20496172 , 20506412 ] chunks  1250 - 1251 
-Debug: []: Couldn't get chunk  1250  in read() of [ 20485932 , 20496172 ] chunks  1250 - 1250 
-Debug: []: Couldn't get chunk  1249  in read() of [ 20476168 , 20485932 ] chunks  1249 - 1250 
-Debug: []: Couldn't get chunk  1246  in read() of [ 20424968 , 20435208 ] chunks  1246 - 1247 
-Debug: []: Couldn't get chunk  1246  in read() of [ 20415882 , 20424968 ] chunks  1246 - 1246 
-Debug: []: Couldn't get chunk  1243  in read() of [ 20374922 , 20385162 ] chunks  1243 - 1244 
-Debug: []: Couldn't get chunk  1242  in read() of [ 20364682 , 20374922 ] chunks  1242 - 1243 
-Debug: []: Couldn't get chunk  1242  in read() of [ 20356948 , 20364682 ] chunks  1242 - 1242 
-Debug: []: Couldn't get chunk  1239  in read() of [ 20315988 , 20326228 ] chunks  1239 - 1240 
-Debug: []: Couldn't get chunk  1239  in read() of [ 20305748 , 20315988 ] chunks  1239 - 1239 
-Debug: []: Couldn't get chunk  1238  in read() of [ 20298694 , 20305748 ] chunks  1238 - 1239 
-Debug: []: Couldn't get chunk  1235  in read() of [ 20247494 , 20257734 ] chunks  1235 - 1236 
-Debug: []: Couldn't get chunk  1235  in read() of [ 20241116 , 20247494 ] chunks  1235 - 1235 
-Debug: []: Couldn't get chunk  1232  in read() of [ 20200156 , 20210396 ] chunks  1232 - 1233 
-Debug: []: Couldn't get chunk  1232  in read() of [ 20189916 , 20200156 ] chunks  1232 - 1232 
-Debug: []: Couldn't get chunk  1231  in read() of [ 20184218 , 20189916 ] chunks  1231 - 1232 
-Debug: []: Couldn't get chunk  1228  in read() of [ 20133018 , 20143258 ] chunks  1228 - 1229 
-Debug: []: Couldn't get chunk  1228  in read() of [ 20127318 , 20133018 ] chunks  1228 - 1228 
-Debug: []: Couldn't get chunk  1225  in read() of [ 20086358 , 20096598 ] chunks  1225 - 1226 
-Debug: []: Couldn't get chunk  1225  in read() of [ 20076118 , 20086358 ] chunks  1225 - 1225 
-Debug: []: Couldn't get chunk  1225  in read() of [ 20070418 , 20076118 ] chunks  1225 - 1225 
-Debug: []: Couldn't get chunk  1222  in read() of [ 20029458 , 20039698 ] chunks  1222 - 1223 
-Debug: []: Couldn't get chunk  1221  in read() of [ 20019218 , 20029458 ] chunks  1221 - 1222 
-Debug: []: Couldn't get chunk  1221  in read() of [ 20012166 , 20019218 ] chunks  1221 - 1221 
-Debug: []: Couldn't get chunk  1218  in read() of [ 19971206 , 19981446 ] chunks  1218 - 1219 
-Debug: []: Couldn't get chunk  1218  in read() of [ 19960966 , 19971206 ] chunks  1218 - 1218 
-Debug: []: Couldn't get chunk  1217  in read() of [ 19952556 , 19960966 ] chunks  1217 - 1218 
-Debug: []: Couldn't get chunk  1214  in read() of [ 19901356 , 19911596 ] chunks  1214 - 1215 
-Debug: []: Couldn't get chunk  1214  in read() of [ 19892948 , 19901356 ] chunks  1214 - 1214 
-Debug: []: Couldn't get chunk  1211  in read() of [ 19851988 , 19862228 ] chunks  1211 - 1212 
-Debug: []: Couldn't get chunk  1211  in read() of [ 19841748 , 19851988 ] chunks  1211 - 1211 
-Debug: []: Couldn't get chunk  1210  in read() of [ 19831508 , 19841748 ] chunks  1210 - 1211 
-Debug: []: Couldn't get chunk  1210  in read() of [ 19831308 , 19831508 ] chunks  1210 - 1210 
-Debug: []: Couldn't get chunk  1207  in read() of [ 19790348 , 19800588 ] chunks  1207 - 1208 
-Debug: []: Couldn't get chunk  1207  in read() of [ 19780108 , 19790348 ] chunks  1207 - 1207 
-Debug: []: Couldn't get chunk  1206  in read() of [ 19769868 , 19780108 ] chunks  1206 - 1207 
-Debug: []: Couldn't get chunk  1206  in read() of [ 19766958 , 19769868 ] chunks  1206 - 1206 
-Debug: []: Couldn't get chunk  1203  in read() of [ 19725998 , 19736238 ] chunks  1203 - 1204 
-Debug: []: Couldn't get chunk  1203  in read() of [ 19715758 , 19725998 ] chunks  1203 - 1203 
-Debug: []: Couldn't get chunk  1202  in read() of [ 19705518 , 19715758 ] chunks  1202 - 1203 
-Debug: []: Couldn't get chunk  1202  in read() of [ 19700576 , 19705518 ] chunks  1202 - 1202 
-Debug: []: Couldn't get chunk  1199  in read() of [ 19659616 , 19669856 ] chunks  1199 - 1200 
-Debug: []: Couldn't get chunk  1199  in read() of [ 19649376 , 19659616 ] chunks  1199 - 1199 
-Debug: []: Couldn't get chunk  1198  in read() of [ 19639136 , 19649376 ] chunks  1198 - 1199 
-Debug: []: Couldn't get chunk  1198  in read() of [ 19632162 , 19639136 ] chunks  1198 - 1198 
-Debug: []: Couldn't get chunk  1195  in read() of [ 19591202 , 19601442 ] chunks  1195 - 1196 
-Debug: []: Couldn't get chunk  1195  in read() of [ 19580962 , 19591202 ] chunks  1195 - 1195 
-Debug: []: Couldn't get chunk  1194  in read() of [ 19570722 , 19580962 ] chunks  1194 - 1195 
-Debug: []: Couldn't get chunk  1193  in read() of [ 19562392 , 19570722 ] chunks  1193 - 1194 
-Debug: []: Couldn't get chunk  1190  in read() of [ 19511192 , 19521432 ] chunks  1190 - 1191 
-Debug: []: Couldn't get chunk  1190  in read() of [ 19500952 , 19511192 ] chunks  1190 - 1190 
-Debug: []: Couldn't get chunk  1189  in read() of [ 19490712 , 19500952 ] chunks  1189 - 1190 
-Debug: []: Couldn't get chunk  1189  in read() of [ 19490592 , 19490712 ] chunks  1189 - 1189 
-Debug: []: Couldn't get chunk  1186  in read() of [ 19439392 , 19449632 ] chunks  1186 - 1187 
-Debug: []: Couldn't get chunk  1185  in read() of [ 19429152 , 19439392 ] chunks  1185 - 1186 
-Debug: []: Couldn't get chunk  1185  in read() of [ 19418912 , 19429152 ] chunks  1185 - 1185 
-Debug: []: Couldn't get chunk  1185  in read() of [ 19416758 , 19418912 ] chunks  1185 - 1185 
-Debug: []: Couldn't get chunk  1182  in read() of [ 19375798 , 19386038 ] chunks  1182 - 1183 
-Debug: []: Couldn't get chunk  1181  in read() of [ 19365558 , 19375798 ] chunks  1181 - 1182 
-Debug: []: Couldn't get chunk  1181  in read() of [ 19355318 , 19365558 ] chunks  1181 - 1181 
-Debug: []: Couldn't get chunk  1180  in read() of [ 19345078 , 19355318 ] chunks  1180 - 1181 
-Debug: []: Couldn't get chunk  1180  in read() of [ 19341570 , 19345078 ] chunks  1180 - 1180 
-Debug: []: Couldn't get chunk  1177  in read() of [ 19290370 , 19300610 ] chunks  1177 - 1178 
-Debug: []: Couldn't get chunk  1176  in read() of [ 19280130 , 19290370 ] chunks  1176 - 1177 
-Debug: []: Couldn't get chunk  1176  in read() of [ 19269890 , 19280130 ] chunks  1176 - 1176 
-Debug: []: Couldn't get chunk  1175  in read() of [ 19266382 , 19269890 ] chunks  1175 - 1176 
-Debug: []: Couldn't get chunk  1172  in read() of [ 19215182 , 19225422 ] chunks  1172 - 1173 
-Debug: []: Couldn't get chunk  1172  in read() of [ 19204942 , 19215182 ] chunks  1172 - 1172 
-Debug: []: Couldn't get chunk  1171  in read() of [ 19194702 , 19204942 ] chunks  1171 - 1172 
-Debug: []: Couldn't get chunk  1171  in read() of [ 19191870 , 19194702 ] chunks  1171 - 1171 
-Debug: []: Couldn't get chunk  1168  in read() of [ 19150910 , 19161150 ] chunks  1168 - 1169 
-Debug: []: Couldn't get chunk  1168  in read() of [ 19140670 , 19150910 ] chunks  1168 - 1168 
-Debug: []: Couldn't get chunk  1167  in read() of [ 19130430 , 19140670 ] chunks  1167 - 1168 
-Debug: []: Couldn't get chunk  1167  in read() of [ 19120190 , 19130430 ] chunks  1167 - 1167 
-Debug: []: Couldn't get chunk  1166  in read() of [ 19118036 , 19120190 ] chunks  1166 - 1167 
-Debug: []: Couldn't get chunk  1163  in read() of [ 19066836 , 19077076 ] chunks  1163 - 1164 
-Debug: []: Couldn't get chunk  1163  in read() of [ 19056596 , 19066836 ] chunks  1163 - 1163 
-Debug: []: Couldn't get chunk  1162  in read() of [ 19046356 , 19056596 ] chunks  1162 - 1163 
-Debug: []: Couldn't get chunk  1162  in read() of [ 19046232 , 19046356 ] chunks  1162 - 1162 
-Debug: []: Couldn't get chunk  1159  in read() of [ 19005272 , 19015512 ] chunks  1159 - 1160 
-Debug: []: Couldn't get chunk  1159  in read() of [ 18995032 , 19005272 ] chunks  1159 - 1159 
-Debug: []: Couldn't get chunk  1158  in read() of [ 18984792 , 18995032 ] chunks  1158 - 1159 
-Debug: []: Couldn't get chunk  1158  in read() of [ 18975786 , 18984792 ] chunks  1158 - 1158 
-Debug: []: Couldn't get chunk  1155  in read() of [ 18934826 , 18945066 ] chunks  1155 - 1156 
-Debug: []: Couldn't get chunk  1155  in read() of [ 18924586 , 18934826 ] chunks  1155 - 1155 
-Debug: []: Couldn't get chunk  1154  in read() of [ 18914346 , 18924586 ] chunks  1154 - 1155 
-Debug: []: Couldn't get chunk  1153  in read() of [ 18906014 , 18914346 ] chunks  1153 - 1154 
-Debug: []: Couldn't get chunk  1150  in read() of [ 18854814 , 18865054 ] chunks  1150 - 1151 
-Debug: []: Couldn't get chunk  1150  in read() of [ 18844574 , 18854814 ] chunks  1150 - 1150 
-Debug: []: Couldn't get chunk  1149  in read() of [ 18837600 , 18844574 ] chunks  1149 - 1150 
-Debug: []: Couldn't get chunk  1146  in read() of [ 18786400 , 18796640 ] chunks  1146 - 1147 
-Debug: []: Couldn't get chunk  1146  in read() of [ 18776160 , 18786400 ] chunks  1146 - 1146 
-Debug: []: Couldn't get chunk  1145  in read() of [ 18770538 , 18776160 ] chunks  1145 - 1146 
-Debug: []: Couldn't get chunk  1142  in read() of [ 18719338 , 18729578 ] chunks  1142 - 1143 
-Debug: []: Couldn't get chunk  1141  in read() of [ 18709098 , 18719338 ] chunks  1141 - 1142 
-Debug: []: Couldn't get chunk  1141  in read() of [ 18705508 , 18709098 ] chunks  1141 - 1141 
-Debug: []: Couldn't get chunk  1138  in read() of [ 18654308 , 18664548 ] chunks  1138 - 1139 
-Debug: []: Couldn't get chunk  1137  in read() of [ 18644068 , 18654308 ] chunks  1137 - 1138 
-Debug: []: Couldn't get chunk  1137  in read() of [ 18642512 , 18644068 ] chunks  1137 - 1137 
-Debug: []: Couldn't get chunk  1134  in read() of [ 18591312 , 18601552 ] chunks  1134 - 1135 
-Debug: []: Couldn't get chunk  1134  in read() of [ 18581072 , 18591312 ] chunks  1134 - 1134 
-Debug: []: Couldn't get chunk  1134  in read() of [ 18580870 , 18581072 ] chunks  1134 - 1134 
-Debug: []: Couldn't get chunk  1131  in read() of [ 18539910 , 18550150 ] chunks  1131 - 1132 
-Debug: []: Couldn't get chunk  1130  in read() of [ 18529670 , 18539910 ] chunks  1130 - 1131 
-Debug: []: Couldn't get chunk  1130  in read() of [ 18521260 , 18529670 ] chunks  1130 - 1130 
-Debug: []: Couldn't get chunk  1127  in read() of [ 18480300 , 18490540 ] chunks  1127 - 1128 
-Debug: []: Couldn't get chunk  1127  in read() of [ 18470060 , 18480300 ] chunks  1127 - 1127 
-Debug: []: Couldn't get chunk  1126  in read() of [ 18464360 , 18470060 ] chunks  1126 - 1127 
-Debug: []: Couldn't get chunk  1123  in read() of [ 18413160 , 18423400 ] chunks  1123 - 1124 
-Debug: []: Couldn't get chunk  1123  in read() of [ 18410844 , 18413160 ] chunks  1123 - 1123 
-Debug: []: Couldn't get chunk  1120  in read() of [ 18361394 , 18369884 ] chunks  1120 - 1121 
-Debug: []: Couldn't get chunk  1117  in read() of [ 18316008 , 18320434 ] chunks  1117 - 1118 
-Debug: []: Couldn't get chunk  1110  in read() of [ 18200172 , 18204676 ] chunks  1110 - 1111 
-Debug: [Main]: Destroying MixxxApp 
-Debug: [Main]: save config,  0 
-Debug: [Main]: delete soundmanager,  1 
-Debug: [Main]: delete vinylcontrolmanager,  23 
-Debug: [Main]: delete view,  23 
-Debug: [Main]: ~DlgTrackInfo() 
-Debug: [Main]: ~WLibraryTableView 
-Debug: [Main]: ~DlgTrackInfo() 
-Debug: [Main]: ~WLibraryTableView 
-Debug: [Main]: ~DlgTrackInfo() 
-Debug: [Main]: ~WLibraryTableView 
-Debug: [Main]: ~DlgTrackInfo() 
-Debug: [Main]: ~WLibraryTableView 
-Debug: [Main]: delete SkinLoader 
-Debug: [Main]: delete MidiDeviceManager 
-Debug: [Main]: Deleting PortMIDI devices... 
-Debug: [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
-Debug: [Main]: MidiDevice: Deleting MidiMapping... 
-Debug: [MidiScriptEngine 5]: MidiScriptEngine shutting down... 
-Debug: [Main]: MidiDevice: Deleting MidiMapping... 
-Debug: [Main]: delete playerManager 667 
-Debug: [Main]: WaveformRenderer(0xa73e570) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa73eb98) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa73cb68) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa73ef60) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderMarkRange(0xcbf2d40) ~WaveformRenderMarkRange() 
-Debug: [Main]: WaveformRenderMark(0xcbf32b8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbf4c90) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbf5958) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbf7858) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbf93f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbfd080) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbfe0d0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcbfe7a0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc004f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc02d38) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc03e98) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc08530) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc07cc0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc09d30) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc0bb30) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc0da50) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc110a0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc118b0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc13a28) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc15728) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc176a0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc1aca0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc1b428) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc1d4f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc1f330) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc21540) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc233c0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc252c8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc272b8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc29248) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc2b120) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc2d028) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc312d0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc32500) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc32d20) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc37080) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc36cb8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc3af48) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xcc3c1e0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderer(0xa79e750) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa79ed98) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa79cd08) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa79f170) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderMarkRange(0xd092f98) ~WaveformRenderMarkRange() 
-Debug: [Main]: WaveformRenderMark(0xd093498) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd094e60) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd094c30) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0963d8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd09a218) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd09bda0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd09d8f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd09f438) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a0f80) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a2ad0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a4618) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a6600) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a5bc8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a7ca0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0a9930) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0abf48) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0ad488) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0af340) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0b33e0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0b3bd8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0b4ee8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0b6d10) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0b8c08) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0bb400) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0bc8d8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0be890) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0c0670) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0c2560) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0c4548) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0c6568) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0c8b98) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0ca0d8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0cbf90) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0cfff8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0d07f0) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0d1b60) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0d39d8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0d5890) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderMark(0xd0d8ec8) ~WaveformRenderMark() 
-Debug: [Main]: WaveformRenderer(0xa7fdb20) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa7fe140) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa7fc0c8) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa7fe548) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0xa85ef10) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa85f558) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa85d4b8) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa85f930) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0xa8bded0) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa8be550) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa8bc478) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa8be8f8) ~WaveformRenderBeat() 
-Debug: [Main]: WaveformRenderer(0xa91ce80) ~WaveformRenderer() 
-Debug: [Main]: WaveformRenderBackground(0xa91d4c8) ~WaveformRenderBackground() 
-Debug: [Main]: WaveformRenderSignal(0xa91b428) ~WaveformRenderSignal() 
-Debug: [Main]: WaveformRenderBeat(0xa91d8a0) ~WaveformRenderBeat() 
-Debug: [Main]: delete m_pEngine,  672 
-Debug: [Main]: in ~EngineMaster() 
-Debug: [Main]: ~EngineMicrophone() 
-Debug: [Main]: delete library scanner 690 
-Debug: [Main]: LibraryScanner destroyed 
-Debug: [Main]: ~TrackDAO() 
-Debug: [Main]: delete library 691 
-Debug: [Main]: ~TrackCollection() 
-Debug: [Main]: TrackDAO::saveDirtyTracks() 
-Debug: [Main]: BaseTrackCache(0xa6c6400) updateIndexWithQuery took 1 ms 
-Debug: [Main]: BaseTrackCache(0xa6c6400) updateIndexWithQuery took 1 ms 
-Debug: [Main]: BaseTrackCache(0xa6c6400) updateIndexWithQuery took 1 ms 
-Debug: [Main]: Clearing played information for this session 
-Debug: [Main]: ~TrackDAO() 
-Debug: [Main]: delete RecordingManager 2111 
-Debug: [Main]: Delete RecordingManager 
-Debug: [Main]: delete config,  2142 
-Debug: [Main]: WARNING: The following 53 controls were leaked: 
-Debug: [Main]: "[Sampler2]" "visual_bpm" 
-Debug: [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Playlist]" "SelectNextPlaylist" 
-Debug: [Main]: "[Channel1]" "start_stop" 
-Debug: [Main]: "[Sampler1]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: "[Flanger]" "lfoDelay" 
-Debug: [Main]: "[Sampler1]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Playlist]" "SelectPrevPlaylist" 
-Debug: [Main]: "[Microphone]" "show_microphone" 
-Debug: [Main]: "[Channel2]" "start_stop" 
-Debug: [Main]: "[Flanger]" "lfoDepth" 
-Debug: [Main]: "[Playlist]" "SelectPrevTrack" 
-Debug: [Main]: "[Flanger]" "lfoDelay_up_small" 
-Debug: [Main]: "[Channel2]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: "[Flanger]" "lfoDepth_up_small" 
-Debug: [Main]: "[Sampler3]" "visual_bpm" 
-Debug: [Main]: "[Channel1]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: "[Samplers]" "show_samplers" 
-Debug: [Main]: "[Playlist]" "LoadSelectedIntoFirstStopped" 
-Debug: [Main]: "[VinylControl]" "gain" 
-Debug: [Main]: "[Spinny2]" "show_spinny" 
-Debug: [Main]: "[Sampler4]" "visual_bpm" 
-Debug: [Main]: "[Flanger]" "lfoPeriod_down_small" 
-Debug: [Main]: "[Flanger]" "lfoDelay_up" 
-Debug: [Main]: "[Sampler4]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Spinny1]" "show_spinny" 
-Debug: [Main]: "[Vinylcontrol]" "show_vinylcontrol" 
-Debug: [Main]: "[Sampler3]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Flanger]" "lfoDepth_up" 
-Debug: [Main]: "[Sampler3]" "start_stop" 
-Debug: [Main]: "[Flanger]" "lfoDepth_down" 
-Debug: [Main]: "[Channel1]" "visual_bpm" 
-Debug: [Main]: "[Sampler4]" "start_stop" 
-Debug: [Main]: "[Sampler4]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: "[Channel2]" "visual_bpm" 
-Debug: [Main]: "[Controls]" "ShowDurationRemaining" 
-Debug: [Main]: "[Flanger]" "lfoPeriod_up" 
-Debug: [Main]: "[Sampler1]" "start_stop" 
-Debug: [Main]: "[Channel2]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Sampler3]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: "[Flanger]" "lfoDelay_down" 
-Debug: [Main]: "[Sampler2]" "start_stop" 
-Debug: [Main]: "[VinylControl]" "mode" 
-Debug: [Main]: "[Channel1]" "vinylcontrol_wantenabled" 
-Debug: [Main]: "[Flanger]" "lfoPeriod_up_small" 
-Debug: [Main]: "[Flanger]" "lfoDelay_down_small" 
-Debug: [Main]: "[Playlist]" "SelectNextTrack" 
-Debug: [Main]: "[Flanger]" "lfoPeriod_down" 
-Debug: [Main]: "[Sampler1]" "visual_bpm" 
-Debug: [Main]: "[Flanger]" "lfoDepth_down_small" 
-Debug: [Main]: "[Playlist]" "SelectTrackKnob" 
-Debug: [Main]: "[Flanger]" "lfoPeriod" 
-Debug: [Main]: "[Sampler2]" "vinylcontrol_signal_enabled" 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up_small" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up_small" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down_small" ) 
-Debug: [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down_small" ) 
-Debug: [Main]: ~MixxxApp: All leaking controls deleted. 
-Debug: [Main]: Mixxx shutdown complete with code 0 
+Debug [Main]: Mixxx 1.10.1 "(built on: Jun 29 2012 @ 09:41:07; flags: hifieq mad midiscript optimize qdebug shoutcast verbose vinylcontrol)" is starting... 
+Debug [Main]: Qt version is: 4.8.4 
+Debug [Main]: Configuration file is at the current version 1.10.1 
+Debug [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : fail 
+Debug [Main]: Found folder 'Mixxx' within default OS music directory 
+Debug [Main]: Could not create folder 'Recordings' within 'Mixxx' 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "vinylcontrol_mode" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "vinylcontrol_mode" ) 
+Debug [Main]: JACK client name set 
+Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
+Debug [Main]: src/library/trackcollection.cpp DB status: true 
+Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 13 
+Debug [Main]: TrackDAO::initialize QThread(0xa558298, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CrateDAO::initialize() 
+Debug [Main]: CueDAO::initialize QThread(0xa558298, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
+Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod" ) 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: CachingReader using 4980736 bytes. 
+Debug [Main]: Constructed LibraryScanner 
+Debug [Main]: iTunes Album Art path is: "" 
+Debug [Main]: MidiDeviceManager::getDeviceList 
+Debug [Main]: Scanning PortMIDI devices: 
+Debug [Main]:  Found output device # 0 Midi Through Port-0 
+Debug [Main]:  Found output device # 2 Ion Discover DJ MIDI 1 
+Debug [Main]:  Found input device # 1 Midi Through Port-0 
+Debug [Main]:     Linking to output device # 0 "Midi Through Port-0" 
+Debug [Main]: Starting script engine with output device "" 
+Debug [MidiScriptEngine 1]: MIDI Device in script engine is: "" 
+Debug [Main]:  Found input device # 3 Ion Discover DJ MIDI 1 
+Debug [Main]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
+Debug [Main]: Starting script engine with output device "" 
+Debug [MidiScriptEngine 2]: MIDI Device in script engine is: "" 
+Debug [Main]: MidiDeviceManager: Setting up devices 
+Debug [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
+Debug [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
+Debug [Main]: MidiOutputMappingTableModel::removeRows() 
+Debug [Main]: "Midi Through Port-0"  settings found 
+Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading & evaluating all MIDI script code 
+Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
+Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
+Debug [Main]: MidiMapping: Input parsed! 
+Debug [Main]: MidiMapping: Output parsed! 
+Debug [Main]: PortMIDI device "3. Ion Discover DJ MIDI 1" already closed 
+Debug [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
+Debug [Main]: MidiOutputMappingTableModel::removeRows() 
+Debug [Main]: "Ion Discover DJ MIDI 1"  settings found 
+Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading & evaluating all MIDI script code 
+Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
+Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
+Debug [Main]: MidiMapping: Input parsed! 
+Debug [Main]: MidiMapping: Output parsed! 
+Debug [Main]: Opening Device: "3._Ion_Discover_DJ_MIDI_1" 
+Debug [Main]: MidiMapping::applyPreset() 
+Debug [MidiScriptEngine 2]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
+Debug [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ MIDI 1" 
+Debug [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
+Debug [Main]: loadSettings: 1 0 "SlowFade" 
+Debug [Main]: slotApply crossfader: 1 "SlowFade" 
+Debug [Main]: BpmSchemes::readXML "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
+Debug [Main]: MidiDeviceManager::getDeviceList 
+Debug [Main]: MidiDeviceManager::getDeviceList 
+Debug [Main]: MidiDeviceManager::getDeviceList 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDevicePortAudio::open() "2, USB Audio CODEC: USB Audio (hw:2,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  48000 Hz, latency: 21.3333 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 2 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  48000 Hz, latency: 42.6667 ms 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: AD198x Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  48000 Hz, latency: 21.3333 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 0 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  48000 Hz, latency: 42.6667 ms 
+Debug [Main]: Using "HDA Intel: AD198x Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: 2 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Samplers]" , "show_samplers" ) 
+Warning [Main]: Requested control does not exist: "[Samplers],show_samplers" . Creating it. 
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "hotcue_38_position" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
+Debug [Main]: BaseTrackCache(0xa764be8) updateIndexWithQuery took 752 ms 
+Debug [Main]: PlaylistTableModel(0xae797c0) select() took 753 ms 
+Debug [Main]: PrepareLibraryTableModel(0xad5c4d8) select() took 441 ms 
+Debug [Main]: PrepareLibraryTableModel(0xad5c4d8) select() took 435 ms 
+Debug [Main]: PrepareLibraryTableModel(0xad5c4d8) select() took 433 ms 
+Debug [Main]: DlgPrepare(0xc30e368, name = "DlgPrepare") analysisActive false 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 620 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
+Warning [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
+Warning [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" . Creating it. 
+Warning [Main]: QGLContext::makeCurrent(): Cannot make invalid context current.
+Debug [Main]: createWaveformViewer() 
+Debug [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug [Main]: WaveformViewerFactory :: Making new GL context. 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
+Warning [Main]: Requested control does not exist: "[Spinny1],show_spinny" . Creating it. 
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
+Debug [Main]: createWaveformViewer() 
+Debug [Main]: WaveformViewerFactory :: Creating new visual waveform 
+Debug [Main]: WaveformViewerFactory :: Sharing existing GL context. 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "show_spinny" ) 
+Warning [Main]: Requested control does not exist: "[Spinny2],show_spinny" . Creating it. 
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0xa9d10e8, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0xa9d10e8, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0xa9d10e8, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: upgrade filename is  "/home/jbreslin/.mixxx/DBUPGRADED" 
+Debug [LibraryScanner 1]: Legacy importer took 1 ms
+Debug [LibraryScanner 1]: Recursively scanning library. 
+Debug [LibraryScanner 1]: Recursive scan finished cleanly. 
+Debug [LibraryScanner 1]: TrackDAO(0xa9d1130) addTracks took 223 ms to add 11 tracks 
+Debug [LibraryScanner 1]: Marking unchanged directories and tracks as verified 
+Debug [LibraryScanner 1]: Marking unverified tracks as deleted. 
+Debug [LibraryScanner 1]: Marking unverified directories as deleted. 
+Debug [LibraryScanner 1]: Detecting moved files. 
+Debug [LibraryScanner 1]: Scan finished cleanly 
+Debug [LibraryScanner 1]: Scan took: 14507 ms
+Debug [Main]: BaseTrackCache(0xa764be8) updateIndexWithQuery took 772 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 674 ms 
+Debug [Main]: MissingTableModel(0xa76a4d8) select() took 166 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 567 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 517 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 521 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 510 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 519 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 524 ms 
+Debug [Main]: LibraryTableModel(0xa767010) select() took 518 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Destroying MixxxApp 
+Debug [Main]: save config,  1 
+Debug [Main]: delete soundmanager,  1 
+Debug [Main]: delete vinylcontrolmanager,  31 
+Debug [Main]: delete view,  32 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~DlgAutoDJ() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: delete SkinLoader 
+Debug [Main]: delete MidiDeviceManager 
+Debug [Main]: Deleting PortMIDI devices... 
+Debug [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
+Debug [Main]: MidiDevice: Deleting MidiMapping... 
+Debug [MidiScriptEngine 2]: MidiScriptEngine shutting down... 
+Debug [Main]: MidiDevice: Deleting MidiMapping... 
+Debug [Main]: delete playerManager 579 
+Debug [Main]: WaveformRenderer(0xa7f3a40) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa7f4088) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa7f2038) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa7f4460) ~WaveformRenderBeat() 
+Debug [Main]: WaveformRenderMarkRange(0xc4241c0) ~WaveformRenderMarkRange() 
+Debug [Main]: WaveformRenderMark(0xc424720) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xc925670) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xc3b1630) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xc3b3388) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcaf9458) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcafc078) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcafded8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcaff078) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb00688) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb02208) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb15cc8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb16e50) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb18d08) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb1a118) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb1b630) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb1bfc0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb1fd98) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb21ae0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb23240) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb252a8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb27dd8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb29f00) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb2b720) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb2d758) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb2f938) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb31a28) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb33ab0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb37368) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb37be8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb39ca0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb3bd30) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb3de10) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb3fed8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb41ef0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb44028) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb46088) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb480e0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb4b9a8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcb4c130) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderer(0xa853280) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa8538c8) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa851848) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa853ca0) ~WaveformRenderBeat() 
+Debug [Main]: WaveformRenderMarkRange(0xcf83e28) ~WaveformRenderMarkRange() 
+Debug [Main]: WaveformRenderMark(0xcf8b780) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf8c4e8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf8d7e8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf8ec50) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf927e8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf94438) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf960b8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf95fa0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf97ab8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf9b5c0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf9b060) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf9d060) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf9e9a0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfa0bc0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfa47d8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfa6520) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfa82c0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfaa078) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfabe60) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfadc18) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfaef08) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfaf5d8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfb3b38) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfb4ec0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfb55f0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfb7898) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfb98c0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcf9d188) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfbdba8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfbfaf0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfc1b50) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfc3c18) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfc74d0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfc7c58) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfc9e58) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfce2c8) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfcf6e0) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfcfe68) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderMark(0xcfd2080) ~WaveformRenderMark() 
+Debug [Main]: WaveformRenderer(0xa8b1c70) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa8b2290) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa8b0218) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa8b2698) ~WaveformRenderBeat() 
+Debug [Main]: WaveformRenderer(0xa912668) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa912cb0) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa910c10) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa913088) ~WaveformRenderBeat() 
+Debug [Main]: WaveformRenderer(0xa970c30) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa9712b0) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa96f1d8) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa971658) ~WaveformRenderBeat() 
+Debug [Main]: WaveformRenderer(0xa9cf1f8) ~WaveformRenderer() 
+Debug [Main]: WaveformRenderBackground(0xa9cf840) ~WaveformRenderBackground() 
+Debug [Main]: WaveformRenderSignal(0xa9cd7a0) ~WaveformRenderSignal() 
+Debug [Main]: WaveformRenderBeat(0xa9cfc18) ~WaveformRenderBeat() 
+Debug [Main]: delete m_pEngine,  591 
+Debug [Main]: in ~EngineMaster() 
+Debug [Main]: ~EngineMicrophone() 
+Debug [Main]: delete library scanner 610 
+Debug [Main]: LibraryScanner destroyed 
+Debug [Main]: ~TrackDAO() 
+Debug [Main]: delete library 611 
+Debug [Main]: ~TrackCollection() 
+Debug [Main]: TrackDAO::saveDirtyTracks() 
+Debug [Main]: BaseTrackCache(0xa764be8) updateIndexWithQuery took 1 ms 
+Debug [Main]: Clearing played information for this session 
+Debug [Main]: ~TrackDAO() 
+Debug [Main]: delete RecordingManager 2007 
+Debug [Main]: Delete RecordingManager 
+Debug [Main]: delete config,  2013 
+Debug [Main]: WARNING: The following 54 controls were leaked: 
+Debug [Main]: "[Sampler2]" "visual_bpm" 
+Debug [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Playlist]" "SelectNextPlaylist" 
+Debug [Main]: "[Channel1]" "start_stop" 
+Debug [Main]: "[Sampler1]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoDelay" 
+Debug [Main]: "[Sampler1]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Playlist]" "SelectPrevPlaylist" 
+Debug [Main]: "[Microphone]" "show_microphone" 
+Debug [Main]: "[Channel2]" "start_stop" 
+Debug [Main]: "[Flanger]" "lfoDepth" 
+Debug [Main]: "[Playlist]" "SelectPrevTrack" 
+Debug [Main]: "[Flanger]" "lfoDelay_up_small" 
+Debug [Main]: "[Channel2]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoDepth_up_small" 
+Debug [Main]: "[Sampler3]" "visual_bpm" 
+Debug [Main]: "[Channel1]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Samplers]" "show_samplers" 
+Debug [Main]: "[Playlist]" "LoadSelectedIntoFirstStopped" 
+Debug [Main]: "[VinylControl]" "gain" 
+Debug [Main]: "[Spinny2]" "show_spinny" 
+Debug [Main]: "[Sampler4]" "visual_bpm" 
+Debug [Main]: "[Flanger]" "lfoPeriod_down_small" 
+Debug [Main]: "[Flanger]" "lfoDelay_up" 
+Debug [Main]: "[Sampler4]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Spinny1]" "show_spinny" 
+Debug [Main]: "[Vinylcontrol]" "show_vinylcontrol" 
+Debug [Main]: "[Sampler3]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Flanger]" "lfoDepth_up" 
+Debug [Main]: "[Sampler3]" "start_stop" 
+Debug [Main]: "[Flanger]" "lfoDepth_down" 
+Debug [Main]: "[Channel1]" "visual_bpm" 
+Debug [Main]: "[Sampler4]" "start_stop" 
+Debug [Main]: "[Sampler4]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Channel2]" "visual_bpm" 
+Debug [Main]: "[Controls]" "ShowDurationRemaining" 
+Debug [Main]: "[Flanger]" "lfoPeriod_up" 
+Debug [Main]: "[Sampler1]" "start_stop" 
+Debug [Main]: "[Channel2]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Sampler3]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoDelay_down" 
+Debug [Main]: "[Sampler2]" "start_stop" 
+Debug [Main]: "[VinylControl]" "mode" 
+Debug [Main]: "[Channel1]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Flanger]" "lfoPeriod_up_small" 
+Debug [Main]: "[Flanger]" "lfoDelay_down_small" 
+Debug [Main]: "[Master]" "toggle_recording" 
+Debug [Main]: "[Playlist]" "SelectNextTrack" 
+Debug [Main]: "[Flanger]" "lfoPeriod_down" 
+Debug [Main]: "[Sampler1]" "visual_bpm" 
+Debug [Main]: "[Flanger]" "lfoDepth_down_small" 
+Debug [Main]: "[Playlist]" "SelectTrackKnob" 
+Debug [Main]: "[Flanger]" "lfoPeriod" 
+Debug [Main]: "[Sampler2]" "vinylcontrol_signal_enabled" 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up_small" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up_small" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down_small" ) 
+Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down_small" ) 
+Debug [Main]: ~MixxxApp: All leaking controls deleted. 
+Debug [Main]: Mixxx shutdown complete with code 0 
