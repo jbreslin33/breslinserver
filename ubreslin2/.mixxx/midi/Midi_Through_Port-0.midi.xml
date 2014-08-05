@@ -1,4 +1,4 @@
-<MixxxMIDIPreset mixxxVersion="1.10.0+" schemaVersion="1">
+<MixxxMIDIPreset mixxxVersion="1.10.1+" schemaVersion="1">
     <controller id="Midi Through Port-0">
         <scriptfiles>
             <file functionprefix="IonDiscoverDJ" filename="Ion-Discover-DJ-scripts.js"/>
@@ -305,20 +305,20 @@
                 </options>
             </control>
             <control>
-                <status>0x80</status>
-                <midino>0x33</midino>
-                <group>[Channel1]</group>
-                <key>IonDiscoverDJ.reversek</key>
+                <status>0xb0</status>
+                <midino>0x18</midino>
+                <group>[Channel2]</group>
+                <key>IonDiscoverDJ.jog_wheel</key>
                 <description></description>
                 <options>
                     <script-binding/>
                 </options>
             </control>
             <control>
-                <status>0xb0</status>
-                <midino>0x18</midino>
-                <group>[Channel2]</group>
-                <key>IonDiscoverDJ.jog_wheel</key>
+                <status>0x80</status>
+                <midino>0x33</midino>
+                <group>[Channel1]</group>
+                <key>IonDiscoverDJ.reversek</key>
                 <description></description>
                 <options>
                     <script-binding/>
