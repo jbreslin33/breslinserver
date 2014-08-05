@@ -23,6 +23,9 @@ sudo apt-get install openjdk-7-jdk
 sudo apt-get install graphviz
 sudo apt-get install dia 
 
+echo for djing
+sudo apt-get install soundconverter
+
 echo
 echo ---------------------------------------------
 echo UBRESLIN: PROJECTS
