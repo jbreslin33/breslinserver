@@ -150,7 +150,7 @@
         ServerAlias lukejamesbreslin.com *.lukejamesbreslin.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/lukes-webpage/
+        DocumentRoot /mercurial/repositories/
         <Directory />
 		Require all granted
                 Options FollowSymLinks
