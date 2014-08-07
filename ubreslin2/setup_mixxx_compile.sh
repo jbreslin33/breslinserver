@@ -10,7 +10,8 @@ sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 
 cd /home/$1/sandbox/
 git clone -b 1.11 https://github.com/mixxxdj/mixxx.git
-
+cd /home/$1/sandbox/mixxx/mixxx
+scons
 
 sudo mkdir /amusic
 sudo chmod -R 777 /amusic
