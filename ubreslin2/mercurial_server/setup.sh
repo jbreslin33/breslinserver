@@ -17,7 +17,7 @@ echo sudo chown -R www-data:www-data /mercurial
 
 echo for passwords
 cd /mercurial/
-
+sudo htpasswd -mc hgusers jbreslin
 
 
 
