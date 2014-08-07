@@ -165,4 +165,5 @@
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+Include /etc/apache2/mercurial/mercurial.conf
 
