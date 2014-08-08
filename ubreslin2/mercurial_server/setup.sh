@@ -24,5 +24,11 @@ echo for push
 cd /mercururial/repositories/first_repo
 sudo chmod -R 777 .hg
 
+echo manual client commands
+echo for easy clone and pulls from client
+echo hg clone http://jbreslin:Iggles_13@lukejamesbreslin.com/first_repo
+echo hg pull http://jbreslin:Iggles_13@lukejamesbreslin.com/first_repo
+echo hg update
+
 
 
