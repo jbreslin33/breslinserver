@@ -20,4 +20,9 @@ cd /mercurial/
 sudo htpasswd -mc hgusers jbreslin
 
 
+echo for push
+cd /mercururial/repositories/first_repo
+sudo chmod -R 777 .hg
+
+
 
