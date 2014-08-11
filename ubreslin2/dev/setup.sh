@@ -23,6 +23,7 @@ sudo apt-get -y install openjdk-7-jdk
 sudo apt-get -y install graphviz
 sudo apt-get -y install dia 
 sudo apt-get -y install chromium-browser
+sudo apt-get -y install mplayer
 
 echo for djing
 sudo apt-get install soundconverter
