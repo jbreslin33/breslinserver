@@ -47,7 +47,7 @@ hg clone https://jbreslin33@code.google.com/p/breslinmathracer/
 sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
 hg clone https://jbreslin33@code.google.com/p/armygame/
 sudo chown -R $1:$2 /home/$1/sandbox/armygame/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/default_jbreslin /etc/apache2/sites-available/000-default.conf
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
 fi
 
 if [ "$1" = "lbreslin" ]; then
@@ -65,7 +65,7 @@ hg clone https://lbreslin6@code.google.com/p/armygame/
 sudo chown -R lbreslin:lbreslin /home/$1/sandbox/armygame/
 hg clone https://lbreslin6@code.google.com/p/lukes-webpage/
 sudo chown -R lbreslin:lbreslin /home/$1/sandbox/lukes-webpage/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/default_lbreslin /etc/apache2/sites-available/000-default.conf
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
 fi
 
 if [ "$1" = "bbreslin" ]; then
@@ -83,7 +83,7 @@ hg clone https://bbreslin99@code.google.com/p/armygame/
 sudo chown -R bbreslin:bbreslin /home/$1/sandbox/armygame/
 hg clone https://bbreslin99@code.google.com/p/lukes-webpage/
 sudo chown -R bbreslin:bbreslin /home/$1/sandbox/lukes-webpage/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/default_bbreslin /etc/apache2/sites-available/000-default.conf
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_bbreslin /etc/apache2/sites-available/000-default.conf
 fi
 
 echo create db jamesanthony
@@ -93,9 +93,9 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/apache.conf /etc/phppgadmin
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/config.inc.php /etc/phppgadmin
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/postgresql.conf /etc/postgresql/9.1/main
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.1/main
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
