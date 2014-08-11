@@ -1,3 +1,4 @@
+
 sudo cp hgrc /etc/mercurial/
 sudo mkdir /mercurial
 sudo mkdir /mercurial/repositories
@@ -29,6 +30,8 @@ echo for easy clone and pulls from client
 echo hg clone http://jbreslin:Iggles_13@lukejamesbreslin.com/first_repo
 echo hg pull http://jbreslin:Iggles_13@lukejamesbreslin.com/first_repo
 echo hg update
+
+echo you are going to need to add the contents of file virtualhost.txt at bottom of default or 000-default whatever apache is calling it. 
 
 
 
