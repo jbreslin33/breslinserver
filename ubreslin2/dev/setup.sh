@@ -19,9 +19,10 @@ sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install vlc
 sudo apt-get -y install mpg123
-sudo apt-get install openjdk-7-jdk
-sudo apt-get install graphviz
-sudo apt-get install dia 
+sudo apt-get -y install openjdk-7-jdk
+sudo apt-get -y install graphviz
+sudo apt-get -y install dia 
+sudo apt-get -y install chromium-browser
 
 echo for djing
 sudo apt-get install soundconverter
