@@ -1,0 +1,84 @@
+127.0.0.1	localhost
+127.0.0.1       jamesanthonybreslin.com
+
+#epoptes admin
+192.168.2.62   server
+
+#webserver
+192.168.2.251   vweb1 
+
+#moodle
+192.168.2.252   vmoodle 
+
+#nfs file server
+192.168.2.54    nfsserver 
+
+#teacher
+192.168.2.62   labteacher
+
+#vfiles linux mnt file server
+192.168.2.109    vfiles
+
+#row1
+192.168.2.174   lab01
+192.168.2.113   lab02
+192.168.2.101   lab03
+192.168.3.111   lab04
+192.168.2.155   lab05
+192.168.2.232   lab06
+
+#row2
+192.168.2.95    lab07
+192.168.2.161   lab08
+192.168.2.39    lab09
+192.168.2.93    lab10
+192.168.3.105   lab11
+192.168.2.121   lab12
+
+#row3
+192.168.2.107   lab13
+192.168.2.117   lab14
+192.168.2.235   lab15
+192.168.2.238   lab16
+192.168.3.113   lab17
+192.168.2.140   lab18
+192.168.2.88    lab19
+192.168.3.114   lab20
+192.168.2.108   lab21
+192.168.2.96    lab22
+
+#row4
+#192.168.2.191   lab23
+
+#row5
+192.168.3.116   lab24
+192.168.2.102   lab25
+192.168.2.103   lab26
+192.168.2.111   lab27
+192.168.2.247   lab28
+192.168.2.68    lab29
+
+#row5
+192.168.2.110    lab30
+192.168.2.240    lab31
+192.168.2.106    lab32
+192.168.3.58     lab33
+192.168.3.105    lab34
+192.168.3.106    lab35
+
+#row6
+192.168.2.217   lab36
+192.168.2.208   lab37
+192.168.3.87    lab38
+
+#r04
+192.168.2.139   r0402
+192.168.2.212   r0403
+192.168.3.108   r0404
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
