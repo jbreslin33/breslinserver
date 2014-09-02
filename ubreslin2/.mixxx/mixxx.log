@@ -1,73 +1,45 @@
-Debug [Main]: Mixxx 1.10.1 "(built on: Jun 29 2012 @ 09:41:07; flags: hifieq mad midiscript optimize qdebug shoutcast verbose vinylcontrol)" is starting... 
+Debug [Main]: Mixxx 1.11.0 "(bzr r3864; built on: Oct 23 2013 @ 20:16:50; flags: bulk hid hifieq mad optimize=9 qdebug shoutcast vamp verbose vinylcontrol)" is starting... 
 Debug [Main]: Qt version is: 4.8.4 
-Debug [Main]: Configuration file is at the current version 1.10.1 
+Debug [Main]: Configuration file is at the current version 1.11.0 
 Debug [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : fail 
-Debug [Main]: Found folder 'Mixxx' within default OS music directory 
-Debug [Main]: Could not create folder 'Recordings' within 'Mixxx' 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "vinylcontrol_mode" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "vinylcontrol_mode" ) 
+Debug [Main]: ConfigObject: Could not read "" 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "vinylcontrol_mode" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "vinylcontrol_mode" ) 
 Debug [Main]: JACK client name set 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod" ) 
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
-Debug [Main]: src/library/trackcollection.cpp DB status: true 
-Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 13 
-Debug [Main]: TrackDAO::initialize QThread(0x8a1b298, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
+Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 17 
+Debug [Main]: TrackDAO::initialize QThread(0x93ce348, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x8a1b298, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
+Debug [Main]: CueDAO::initialize QThread(0x93ce348, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: Appending Quick Link:  "amusic" --- "/amusic/" 
+Debug [Main]: Appending Quick Link:  "breslin" --- "/amusic/genres/urban/breslin/" 
+Debug [Main]: Appending Quick Link:  "2014-08-04" --- "/amusic/djcity/hotbox/2014-08-04/" 
+Debug [Main]: Appending Quick Link:  "2014-07-14" --- "/amusic/djcity/fistpump/2014-07-14/" 
+Debug [Main]: Appending Quick Link:  "2014-07-14" --- "/amusic/djcity/electro/2014-07-14/" 
+Debug [Main]: Creating session history playlist name: "2014-08-31" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod" ) 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: CachingReader using 4980736 bytes. 
-Debug [Main]: Constructed LibraryScanner 
-Debug [Main]: iTunes Album Art path is: "" 
-Debug [Main]: MidiDeviceManager::getDeviceList 
-Debug [Main]: Scanning PortMIDI devices: 
-Debug [Main]:  Found output device # 0 Midi Through Port-0 
-Debug [Main]:  Found output device # 2 Ion Discover DJ MIDI 1 
-Debug [Main]:  Found input device # 1 Midi Through Port-0 
-Debug [Main]:     Linking to output device # 0 "Midi Through Port-0" 
-Debug [Main]: Starting script engine with output device "" 
-Debug [MidiScriptEngine 1]: MIDI Device in script engine is: "" 
-Debug [Main]:  Found input device # 3 Ion Discover DJ MIDI 1 
-Debug [Main]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
-Debug [Main]: Starting script engine with output device "" 
-Debug [MidiScriptEngine 2]: MIDI Device in script engine is: "" 
-Debug [Main]: MidiDeviceManager: Setting up devices 
-Debug [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
-Debug [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Midi_Through_Port-0.midi.xml" 
-Debug [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug [Main]: "Midi Through Port-0"  settings found 
-Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug [MidiScriptEngine 1]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug [Main]: MidiMapping: Input parsed! 
-Debug [Main]: MidiMapping: Output parsed! 
-Debug [Main]: PortMIDI device "3. Ion Discover DJ MIDI 1" already closed 
-Debug [Main]: MidiMapping: Loading MIDI preset from "/home/jbreslin/.mixxx/midi/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug [Main]: MidiOutputMappingTableModel::removeRows() 
-Debug [Main]: "Ion Discover DJ MIDI 1"  settings found 
-Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading & evaluating all MIDI script code 
-Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/midi-mappings-scripts.js" 
-Debug [MidiScriptEngine 2]: MidiScriptEngine: Loading "/usr/share/mixxx/midi/Ion-Discover-DJ-scripts.js" 
-Debug [Main]: MidiMapping: Input parsed! 
-Debug [Main]: MidiMapping: Output parsed! 
-Debug [Main]: Opening Device: "3._Ion_Discover_DJ_MIDI_1" 
-Debug [Main]: MidiMapping::applyPreset() 
-Debug [MidiScriptEngine 2]: "Ion Discover DJ id: "3. Ion Discover DJ MIDI 1" initialized." 
-Debug [Main]: MidiMapping: Processing MIDI Output Bindings for "Ion Discover DJ MIDI 1" 
-Debug [Main]: Promo dir: "/usr/share/mixxx//promo/1.8.0/index.html" 
-Debug [Main]: loadSettings: 1 0 "SlowFade" 
-Debug [Main]: slotApply crossfader: 1 "SlowFade" 
-Debug [Main]: BpmSchemes::readXML "/home/jbreslin/.mixxx/mixxxbpmscheme.xml" 
-Debug [Main]: MidiDeviceManager::getDeviceList 
-Debug [Main]: MidiDeviceManager::getDeviceList 
-Debug [Main]: MidiDeviceManager::getDeviceList 
+Debug [Main]: AnalyserWaveform::AnalyserWaveform() 
+Debug [Main]: Setting VAMP_PATH to:  "/usr/lib/mixxx/plugins/vamp:/home/jbreslin/.mixxx/plugins/vamp/:/usr/bin/lin32_build/vamp-plugins:/usr/bin/lin64_build/vamp-plugins" 
+Debug [Main]: Creating ControllerManager 
+Debug [Main]: Extension ".bulk.xml" total 1 presets 
+Debug [Main]: Extension ".hid.xml" total 7 presets 
+Debug [Main]: Extension ".midi.xml" total 79 presets 
+Debug [Main]: Setting VAMP_PATH to:  "/usr/lib/mixxx/plugins/vamp:/home/jbreslin/.mixxx/plugins/vamp/:/usr/bin/lin32_build/vamp-plugins:/usr/bin/lin64_build/vamp-plugins:/usr/lib/mixxx/plugins/vamp:/home/jbreslin/.mixxx/plugins/vamp/:/usr/bin/lin32_build/vamp-plugins:/usr/bin/lin64_build/vamp-plugins" 
+Debug [Main]: VampPluginLoader::listPlugins() returned 3 plugins 
+Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)" 
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Queen Mary Tempo and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Queen Mary Tempo and Beat Tracker" 
+Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Queen Mary Tempo and Beat Tracker" 
+Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: AD198x Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
@@ -90,98 +62,1113 @@ Debug [Main]:    Actual sample rate:  48000 Hz, latency: 42.6667 ms
 Debug [Main]: Using "HDA Intel: AD198x Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Samplers]" , "show_samplers" ) 
-Warning [Main]: Requested control does not exist: "[Samplers],show_samplers" . Creating it. 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x9c0fe10) true 
+Debug [Main]: Created root GL Context valid: 0x9c10040 true 
+Debug [Main]: Root GL Context format: 
+Debug [Main]: Double Buffering: true 
+Debug [Main]: Swap interval: 0 
+Debug [Main]: Depth buffer: true 
+Debug [Main]: Direct rendering: true 
+Debug [Main]: Has overlay: false 
+Debug [Main]: RGBA: true 
+Debug [Main]: Sample buffers: false 
+Debug [Main]: Stencil buffers: true 
+Debug [Main]: Stereo: false 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
+Warning [Main]: Requested control does not exist: "[Spinny1],show_spinny" Creating it. 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "show_spinny" ) 
+Warning [Main]: Requested control does not exist: "[Spinny2],show_spinny" Creating it. 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Samplers]" , "show_samplers" ) 
+Warning [Main]: Requested control does not exist: "[Samplers],show_samplers" Creating it. 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
+Warning [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" Creating it. 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
+Warning [Main]: Requested control does not exist: "[Microphone],show_microphone" Creating it. 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[PreviewDeck]" , "show_previewdeck" ) 
+Warning [Main]: Requested control does not exist: "[PreviewDeck],show_previewdeck" Creating it. 
+Debug [Main]: Ignoring request to reduce the number of preview decks to 0 
+Debug [Main]: Invalid node name in skin: "manifest" 
+Debug [Main]: Invalid node name in skin: "Schemes" 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "" ) 
 Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "hotcue_38_position" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "hotcue_38_position" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "hotcue_38_position" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "hotcue_38_position" ) 
-Debug [Main]: BaseTrackCache(0x8c27bc8) updateIndexWithQuery took 763 ms 
-Debug [Main]: PlaylistTableModel(0x933c7a8) select() took 766 ms 
-Debug [Main]: PrepareLibraryTableModel(0x921f4b0) select() took 453 ms 
-Debug [Main]: PrepareLibraryTableModel(0x921f4b0) select() took 447 ms 
-Debug [Main]: PrepareLibraryTableModel(0x921f4b0) select() took 445 ms 
-Debug [Main]: DlgPrepare(0xa7d3a20, name = "DlgPrepare") analysisActive false 
+Debug [Main]: Making property binder for "visible" 
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "" ) 
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0 
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "" ) 
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 1 
+Debug [Main]: Making property binder for "visible" 
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
+Debug [Main]: Making property binder for "visible" 
+Debug [Main]: Making property binder for "visible" 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Sampler1]" , "" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Sampler2]" , "" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Sampler3]" , "" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Sampler4]" , "" ) 
+Debug [Main]: Recordings folder set to "/amusic/Mixxx/Recordings" 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 811 ms 
+Debug [Main]: PrepareLibraryTableModel(0xa924f10) select() took 1300 ms 
+Debug [Main]: PrepareLibraryTableModel(0xa924f10) select() took 484 ms 
+Debug [Main]: DlgPrepare(0xa8f7600, name = "DlgPrepare") analysisActive false 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 636 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 664 ms 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Microphone]" , "show_microphone" ) 
-Warning [Main]: Requested control does not exist: "[Microphone],show_microphone" . Creating it. 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Vinylcontrol]" , "show_vinylcontrol" ) 
-Warning [Main]: Requested control does not exist: "[Vinylcontrol],show_vinylcontrol" . Creating it. 
-Warning [Main]: QGLContext::makeCurrent(): Cannot make invalid context current.
-Debug [Main]: createWaveformViewer() 
-Debug [Main]: WaveformViewerFactory :: Creating new visual waveform 
-Debug [Main]: WaveformViewerFactory :: Making new GL context. 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Spinny1]" , "show_spinny" ) 
-Warning [Main]: Requested control does not exist: "[Spinny1],show_spinny" . Creating it. 
-Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel1]" , "hotcue_38_position" ) 
-Debug [Main]: createWaveformViewer() 
-Debug [Main]: WaveformViewerFactory :: Creating new visual waveform 
-Debug [Main]: WaveformViewerFactory :: Sharing existing GL context. 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Spinny2]" , "show_spinny" ) 
-Warning [Main]: Requested control does not exist: "[Spinny2],show_spinny" . Creating it. 
-Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Channel2]" , "hotcue_38_position" ) 
-Debug [Main]: Making property binder for "visible" 
-Warning [Main]: Object::connect: No such slot QGroupBox::setProperty(const char*, const QVariant&) in src/skin/propertybinder.cpp:13
+Debug [Controller]: ControllerManager: Setting up devices 
+Debug [Main]: Constructed LibraryScanner 
+Debug [Main]: iTunes Album Art path is: "" 
 Debug [Main]: Displaying mixxx 
+Debug [Controller]: Scanning PortMIDI devices: 
+Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
+Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
+Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Scanning USB Bulk devices: 
+Debug [Controller]: Scanning HID devices: 
+Debug [Controller]: Found 0x0 0x0 "r256" S/N 0x0 "Interface 3" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
+Debug [Controller]: "Ion" settings found 
+Debug [Main]: resize QSize(1014, 763) 
+Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
+Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
+Debug [Controller]: Opening controller: "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Controller in script engine is: "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Applying controller preset... 
+Debug [Controller]: ControllerEngine: Loading & evaluating all script code 
+Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
+Warning [Controller]: ControllerEngine: No "" object in script 
+Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
+Debug [Controller]: Controller polling started. 
 Debug [Main]: Running Mixxx 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "billboard")   QVariant(QString, "/amusic/billboard/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "latest")   QVariant(QString, "/amusic/billboard/latest/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2012-04-14")   QVariant(QString, "/amusic/billboard/latest/2012-04-14/") 
+Debug [Main]: ControllerManager::getControllerList 
+Warning [Main]: WaveformRenderBackground::generatePixmap - no background file 
+Warning [Main]: WaveformRenderBackground::generatePixmap - no background file 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 610 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 564 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 566 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 1 
+Debug [AnalyserQueue 1]: Prioritizing "Candy Girl" "/amusic/djs/jim/Urban/Urban_7/New Edition - Candy Girl.MP3" 
+Debug [AnalyserQueue 1]: Analyzing "Candy Girl" "/amusic/djs/jim/Urban/Urban_7/New Edition - Candy Girl.MP3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 19590 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 2 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 19590 done 10.997 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 205794 allSignalSize 205794 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 939 "1693428 (793549 compressed)" bytes for track 19590 in 366 ms 
+Debug [Main]: Saved waveform analysis for trackId 19590 analysisId 939 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.22884 audioVisualRatio 5359.2 
+Debug [Main]: AnalysisDAO saved analysis 940 "31477 (15727 compressed)" bytes for track 19590 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 19590 analysisId 940 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2014_05_31")   QVariant(QString, "/amusic/billboard/latest/2014_05_31/") 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 673 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 564 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "candy girl" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 2 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 558 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 512 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 520 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 634 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 691 ms 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x8e940d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x8e940d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x8e940d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: upgrade filename is  "/home/jbreslin/.mixxx/DBUPGRADED" 
-Debug [LibraryScanner 1]: Legacy importer took 0 ms
-Debug [LibraryScanner 1]: Recursively scanning library. 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 744 ms 
-Debug [LibraryScanner 1]: old hash was 163033043 and new hash is 13325779 
-Debug [LibraryScanner 1]: Recursive scan finished cleanly. 
-Debug [LibraryScanner 1]: TrackDAO(0x8e94118) addTracks took 279 ms to add 24 tracks 
-Debug [LibraryScanner 1]: Marking unchanged directories and tracks as verified 
-Debug [LibraryScanner 1]: Marking unverified tracks as deleted. 
-Debug [LibraryScanner 1]: Marking unverified directories as deleted. 
-Debug [LibraryScanner 1]: Detecting moved files. 
-Debug [LibraryScanner 1]: Scan finished cleanly 
-Debug [LibraryScanner 1]: Scan took: 11301 ms
-Debug [Main]: BaseTrackCache(0x8c27bc8) updateIndexWithQuery took 785 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 706 ms 
-Debug [Main]: MissingTableModel(0x8c2d4b8) select() took 169 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 707 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 707 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 722 ms 
-Debug [Main]: LibraryTableModel(0x8c29ff0) select() took 704 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 6 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 3 
+Debug [AnalyserQueue 1]: Prioritizing "I Can´t Help Myself (Sugar Pie, Honey Bunch)" "/amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd2/02 - The Four Tops - I Can´t Help Myself (Sugar Pie, Honey Bunch).mp3" 
+Debug [AnalyserQueue 1]: Analyzing "I Can´t Help Myself (Sugar Pie, Honey Bunch)" "/amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd2/02 - The Four Tops - I Can´t Help Myself (Sugar Pie, Honey Bunch).mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1281693 bytes for track 12819 in 59 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 148056 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 11.4379 audioVisualRatio 3855.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat sub-version has not changed since previous analysis so not analyzing. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 4 
+Debug [AnalyserQueue 1]: Prioritizing "Gonna Make You Sweat (Everybody Dance Now)" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/003-C_-_C_Music_Factory-Gonna_Make_You_Sweat_Everybody_Dance_Now.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Gonna Make You Sweat (Everybody Dance Now)" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/003-C_-_C_Music_Factory-Gonna_Make_You_Sweat_Everybody_Dance_Now.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 2725 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 2725 done 10.875 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 217384 allSignalSize 217384 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 941 "1753630 (759504 compressed)" bytes for track 2725 in 363 ms 
+Debug [Main]: Saved waveform analysis for trackId 2725 analysisId 941 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.79014 audioVisualRatio 5661 
+Debug [Main]: AnalysisDAO saved analysis 942 "30850 (14656 compressed)" bytes for track 2725 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 2725 analysisId 942 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 5 
+Debug [AnalyserQueue 1]: Prioritizing "Poison" "/amusic/billboard/year/1990_Billboard_Top_Usa_Singles/004-Bell_Biv_Devoe-Poison.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Poison" "/amusic/billboard/year/1990_Billboard_Top_Usa_Singles/004-Bell_Biv_Devoe-Poison.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1893507 bytes for track 4535 in 33 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 232314 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 7.2895 audioVisualRatio 6049.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Come Baby Come" "/amusic/genres/urban/breslin/K7 - Come Baby Come.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Come Baby Come" "/amusic/genres/urban/breslin/K7 - Come Baby Come.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1821214 bytes for track 17849 in 33 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 206692 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.19307 audioVisualRatio 5382.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "I Like to Move It" "/amusic/genres/urban/breslin/I Like to Move It Mad Stuntman Monster Booty.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "I Like to Move It" "/amusic/genres/urban/breslin/I Like to Move It Mad Stuntman Monster Booty.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17831 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 17831 done 10.255 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 204320 allSignalSize 204320 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 943 "1807591 (895929 compressed)" bytes for track 17831 in 414 ms 
+Debug [Main]: Saved waveform analysis for trackId 17831 analysisId 943 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.28823 audioVisualRatio 5320.8 
+Debug [Main]: AnalysisDAO saved analysis 944 "33976 (17792 compressed)" bytes for track 17831 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 17831 analysisId 944 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Bust a Move" "/amusic/genres/urban/breslin/Young MC - Bust a Move.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Bust a Move" "/amusic/genres/urban/breslin/Young MC - Bust a Move.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17937 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 17937 done 11.537 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 233142 allSignalSize 233142 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 945 "1920946 (847164 compressed)" bytes for track 17937 in 395 ms 
+Debug [Main]: Saved waveform analysis for trackId 17937 analysisId 945 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.26356 audioVisualRatio 6071.4 
+Debug [Main]: AnalysisDAO saved analysis 946 "31402 (15234 compressed)" bytes for track 17937 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 17937 analysisId 946 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 557 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "candy girl" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 555 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 559 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Prioritizing "Funky Cold Medina" "/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/065-Tone_Loc-Funky_Cold_Medina.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Funky Cold Medina" "/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/065-Tone_Loc-Funky_Cold_Medina.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 6216 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 6216 done 10.508 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 218558 allSignalSize 218558 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 947 "1760742 (688920 compressed)" bytes for track 6216 in 349 ms 
+Debug [Main]: Saved waveform analysis for trackId 6216 analysisId 947 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.74826 audioVisualRatio 5691.6 
+Debug [Main]: AnalysisDAO saved analysis 948 "30827 (13696 compressed)" bytes for track 6216 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 6216 analysisId 948 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Hip Hop Hooray" "/amusic/billboard/year/1993_Billboard_Top_Usa_Singles/045-Naughty_By_Nature-Hip_Hop_Hooray.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Hip Hop Hooray" "/amusic/billboard/year/1993_Billboard_Top_Usa_Singles/045-Naughty_By_Nature-Hip_Hop_Hooray.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 3818 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Analyzing "Hip Hop Hooray" "/amusic/billboard/year/1993_Billboard_Top_Usa_Singles/045-Naughty_By_Nature-Hip_Hop_Hooray.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 3818 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 3818 done 11.28 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 233604 allSignalSize 233604 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 949 "1882020 (757708 compressed)" bytes for track 3818 in 393 ms 
+Debug [Main]: Saved waveform analysis for trackId 3818 analysisId 949 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.24924 audioVisualRatio 6083.4 
+Debug [Main]: AnalysisDAO saved analysis 950 "30822 (12867 compressed)" bytes for track 3818 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 3818 analysisId 950 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 19660 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 19660 done 13.09 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 264154 allSignalSize 264154 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 951 "2197867 (1017801 compressed)" bytes for track 19660 in 475 ms 
+Debug [Main]: Saved waveform analysis for trackId 19660 analysisId 951 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.41082 audioVisualRatio 6879 
+Debug [Main]: AnalysisDAO saved analysis 952 "31800 (15514 compressed)" bytes for track 19660 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 19660 analysisId 952 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Bust a Move" "/amusic/genres/urban/breslin/Young MC - Bust a Move.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Bust a Move" "/amusic/genres/urban/breslin/Young MC - Bust a Move.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 12 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 11 ms 
+Debug [Main]: WLibrarySidebar::dragEnterEvent ("text/uri-list") 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Humpty Dance" "/amusic/genres/urban/breslin/Digital Underground - Humpty Dance.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Humpty Dance" "/amusic/genres/urban/breslin/Digital Underground - Humpty Dance.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17806 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 1 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 17806 done 12.332 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 249224 allSignalSize 249224 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 953 "2088846 (937046 compressed)" bytes for track 17806 in 458 ms 
+Debug [Main]: Saved waveform analysis for trackId 17806 analysisId 953 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.79486 audioVisualRatio 6490.2 
+Debug [Main]: AnalysisDAO saved analysis 954 "32171 (14678 compressed)" bytes for track 17806 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 17806 analysisId 954 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WLibrarySidebar::dragEnterEvent ("text/uri-list") 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Come Baby Come" "/amusic/genres/urban/breslin/K7 - Come Baby Come.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Come Baby Come" "/amusic/genres/urban/breslin/K7 - Come Baby Come.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1821214 bytes for track 17849 in 39 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 206692 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.19307 audioVisualRatio 5382.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2229667 bytes for track 19660 in 42 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 264154 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.41082 audioVisualRatio 6879 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "DOO DOO BROWN" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "DOO DOO BROWN" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2493649 bytes for track 18997 in 47 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 297794 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 5.68665 audioVisualRatio 7755 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 12 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [AnalyserQueue 1]: Prioritizing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Rapper's Delight" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/Street Jams 1 Hip-Hop from the Top, Vol. 1/The Sugarhill Gang - Rapper's Delight.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rapper's Delight" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/Street Jams 1 Hip-Hop from the Top, Vol. 1/The Sugarhill Gang - Rapper's Delight.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 19250 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 19250 done 42.135 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 763824 allSignalSize 763824 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 955 "6464091 (3188712 compressed)" bytes for track 19250 in 1471 ms 
+Debug [Main]: Saved waveform analysis for trackId 19250 analysisId 955 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 2.21706 audioVisualRatio 19891.2 
+Debug [Main]: AnalysisDAO saved analysis 956 "32212 (15709 compressed)" bytes for track 19250 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 19250 analysisId 956 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 6 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 5 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 1 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Prioritizing "Insane In The Brain" "/amusic/billboard/year/1993_Billboard_Top_Usa_Singles/065-Cypress_Hill-Insane_In_The_Brain.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Insane In The Brain" "/amusic/billboard/year/1993_Billboard_Top_Usa_Singles/065-Cypress_Hill-Insane_In_The_Brain.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 3832 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 3832 done 9.245 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 184528 allSignalSize 184528 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 957 "1485636 (628576 compressed)" bytes for track 3832 in 304 ms 
+Debug [Main]: Saved waveform analysis for trackId 3832 analysisId 957 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.17718 audioVisualRatio 4805.4 
+Debug [Main]: AnalysisDAO saved analysis 958 "30809 (14513 compressed)" bytes for track 3832 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 3832 analysisId 958 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [AnalyserQueue 1]: Prioritizing "Rapper's Delight" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/Street Jams 1 Hip-Hop from the Top, Vol. 1/The Sugarhill Gang - Rapper's Delight.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rapper's Delight" "/amusic/ethnic/polka/RAP,R&B,HIP-HOP/Street Jams 1 Hip-Hop from the Top, Vol. 1/The Sugarhill Gang - Rapper's Delight.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Save A Horse (Ride A Cowboy)" "/amusic/genres/dance/Club Classics/Country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Save A Horse (Ride A Cowboy)" "/amusic/genres/dance/Club Classics/Country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 11818 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 6778 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Boys 'Round Here" "/amusic/billboard/latest/2013-09-08/036.Blake Shelton-Boys Round Here - Boys 'Round Here.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Boys 'Round Here" "/amusic/billboard/latest/2013-09-08/036.Blake Shelton-Boys Round Here - Boys 'Round Here.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 6778 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [AnalyserQueue 1]: Waveform generation for track 6778 done 13.192 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [AnalyserQueue 1]: Analyzing "Save A Horse (Ride A Cowboy)" "/amusic/genres/dance/Club Classics/Country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3" 
+Debug [Main]: Writing waveform from byte array: dataSize 255630 allSignalSize 255630 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 11818 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: AnalysisDAO saved analysis 959 "2045147 (870994 compressed)" bytes for track 6778 in 450 ms 
+Debug [Main]: Saved waveform analysis for trackId 6778 analysisId 959 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.62461 audioVisualRatio 6657 
+Debug [Main]: AnalysisDAO saved analysis 960 "30822 (14152 compressed)" bytes for track 6778 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 6778 analysisId 960 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 6496303 bytes for track 19250 in 125 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 763824 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 2.21706 audioVisualRatio 19891.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Analyzing "Save A Horse (Ride A Cowboy)" "/amusic/genres/dance/Club Classics/Country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 11818 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 5 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 11818 done 9.273 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 176556 allSignalSize 176556 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 961 "1669867 (805058 compressed)" bytes for track 11818 in 411 ms 
+Debug [Main]: Saved waveform analysis for trackId 11818 analysisId 961 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.59154 audioVisualRatio 4597.8 
+Debug [Main]: AnalysisDAO saved analysis 962 "36108 (18344 compressed)" bytes for track 11818 in 7 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 11818 analysisId 962 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 7 
+Debug [AnalyserQueue 1]: Prioritizing "Push It" "/amusic/genres/urban/breslin/Salt n Pepa - Push IT.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Push It" "/amusic/genres/urban/breslin/Salt n Pepa - Push IT.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17909 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 17909 done 10.627 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 227176 allSignalSize 227176 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 963 "1944064 (969185 compressed)" bytes for track 17909 in 439 ms 
+Debug [Main]: Saved waveform analysis for trackId 17909 analysisId 963 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.45436 audioVisualRatio 5916 
+Debug [Main]: AnalysisDAO saved analysis 964 "32873 (17540 compressed)" bytes for track 17909 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 17909 analysisId 964 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Rock The Boat" "/amusic/genres/disco/Rock The Boat.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rock The Boat" "/amusic/genres/disco/Rock The Boat.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 12521 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 12521 done 10.493 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 179068 allSignalSize 179068 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 965 "1478028 (675136 compressed)" bytes for track 12521 in 318 ms 
+Debug [Main]: Saved waveform analysis for trackId 12521 analysisId 965 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.45703 audioVisualRatio 4663.2 
+Debug [Main]: AnalysisDAO saved analysis 966 "31613 (15403 compressed)" bytes for track 12521 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 12521 analysisId 966 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "All Night Long (All Night)" "/amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd4/18 - Lionel Richie - All Night Long (All Night).mp3" 
+Debug [AnalyserQueue 1]: Analyzing "All Night Long (All Night)" "/amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd4/18 - Lionel Richie - All Night Long (All Night).mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1874089 bytes for track 12879 in 87 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 225424 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.51226 audioVisualRatio 5870.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 5 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Rhythm Of The Night" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/032-Debarge-Rhythm_Of_The_Night.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rhythm Of The Night" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/032-Debarge-Rhythm_Of_The_Night.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1646765 bytes for track 2650 in 88 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 200956 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.42697 audioVisualRatio 5233.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 549 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "funky cold" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 559 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 571 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Prioritizing "Conga" "/amusic/billboard/year/1986_Billboard_Top_Usa_Singles/040-Miami_Sound_Machine-Conga.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Conga" "/amusic/billboard/year/1986_Billboard_Top_Usa_Singles/040-Miami_Sound_Machine-Conga.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 437 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 437 done 10.882 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 225562 allSignalSize 225562 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 967 "1813850 (788237 compressed)" bytes for track 437 in 384 ms 
+Debug [Main]: Saved waveform analysis for trackId 437 analysisId 967 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.50766 audioVisualRatio 5874 
+Debug [Main]: AnalysisDAO saved analysis 968 "30822 (14448 compressed)" bytes for track 437 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 437 analysisId 968 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 2 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Already focused on playlist  42 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Rhythm Of The Night" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/032-Debarge-Rhythm_Of_The_Night.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rhythm Of The Night" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/032-Debarge-Rhythm_Of_The_Night.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1646765 bytes for track 2650 in 34 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 200956 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.42697 audioVisualRatio 5233.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Perfect Gentlemen" "/amusic/genres/urban/breslin/Wyclef Jean - Perfect Gentlemen.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Perfect Gentlemen" "/amusic/genres/urban/breslin/Wyclef Jean - Perfect Gentlemen.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1943472 bytes for track 17935 in 104 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 220516 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.67945 audioVisualRatio 5742.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Hips Don't Lie" "/amusic/djs/jim/Urban/Urban_7/Shakira ft Wyclef Jean- Hips Don't Lie.MP3" 
+Debug [AnalyserQueue 1]: Analyzing "Hips Don't Lie" "/amusic/djs/jim/Urban/Urban_7/Shakira ft Wyclef Jean- Hips Don't Lie.MP3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1753565 bytes for track 19594 in 94 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 193722 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.74167 audioVisualRatio 5044.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat sub-version has not changed since previous analysis so not analyzing. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "You Can Call Me Al" "/amusic/fun/Paul Simon - You Can Call Me Al.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "You Can Call Me Al" "/amusic/fun/Paul Simon - You Can Call Me Al.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 20561 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 2 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 20561 done 13.419 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 247152 allSignalSize 247152 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 969 "1988998 (837137 compressed)" bytes for track 20561 in 425 ms 
+Debug [Main]: Saved waveform analysis for trackId 20561 analysisId 969 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.85187 audioVisualRatio 6436.2 
+Debug [Main]: AnalysisDAO saved analysis 970 "30830 (13477 compressed)" bytes for track 20561 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 20561 analysisId 970 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Perfect Gentlemen" "/amusic/genres/urban/breslin/Wyclef Jean - Perfect Gentlemen.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Perfect Gentlemen" "/amusic/genres/urban/breslin/Wyclef Jean - Perfect Gentlemen.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1943472 bytes for track 17935 in 36 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 220516 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.67945 audioVisualRatio 5742.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 556 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "conga" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 584 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 569 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 7 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Prioritizing "Wagon Wheel" "/amusic/billboard/latest/2013-09-08/049.Darius Rucker - Wagon Wheel.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Wagon Wheel" "/amusic/billboard/latest/2013-09-08/049.Darius Rucker - Wagon Wheel.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 6791 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 3 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 6791 done 12.882 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 263256 allSignalSize 263256 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 971 "2113496 (903262 compressed)" bytes for track 6791 in 460 ms 
+Debug [Main]: Saved waveform analysis for trackId 6791 analysisId 971 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.4327 audioVisualRatio 6855.6 
+Debug [Main]: AnalysisDAO saved analysis 972 "30822 (13763 compressed)" bytes for track 6791 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 6791 analysisId 972 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 7 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 561 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "wagon w" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 675 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 585 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 715 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 695 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 585 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 580 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Only the Good Die Young" "/amusic/genres/rock/ROCK/Billy Joel/Greatest Hits, Vols. 1 & 2 (1973-1985) Disc 1/10 Only the Good Die Young.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Only the Good Die Young" "/amusic/genres/rock/ROCK/Billy Joel/Greatest Hits, Vols. 1 & 2 (1973-1985) Disc 1/10 Only the Good Die Young.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 15887 in 1 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 15887 done 10.885 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 205680 allSignalSize 205680 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 973 "1660119 (733698 compressed)" bytes for track 15887 in 359 ms 
+Debug [Main]: Saved waveform analysis for trackId 15887 analysisId 973 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.23345 audioVisualRatio 5356.2 
+Debug [Main]: AnalysisDAO saved analysis 974 "30878 (14624 compressed)" bytes for track 15887 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 15887 analysisId 974 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 7 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 571 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "only the goo" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 557 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 568 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Thunder Road" "/amusic/genres/rock/ROCK/Bruce Springsteen/Greatest Hits [Columbia]/Bruce Springsteen - Thunder Road.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Thunder Road" "/amusic/genres/rock/ROCK/Bruce Springsteen/Greatest Hits [Columbia]/Bruce Springsteen - Thunder Road.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 13982 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 13982 done 13.361 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 254662 allSignalSize 254662 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 975 "2157950 (967728 compressed)" bytes for track 13982 in 505 ms 
+Debug [Main]: Saved waveform analysis for trackId 13982 analysisId 975 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.64978 audioVisualRatio 6631.8 
+Debug [Main]: AnalysisDAO saved analysis 976 "32766 (15415 compressed)" bytes for track 13982 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 13982 analysisId 976 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "American Girl" "/amusic/billboard/decades/80/Tom Petty - American Girl.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "American Girl" "/amusic/billboard/decades/80/Tom Petty - American Girl.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1634253 bytes for track 8663 in 78 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 185174 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.1452 audioVisualRatio 4822.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 5 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: New BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Girls Just Want to Have Fun" "/amusic/billboard/decades/80/Cyndi Lauper - Girls Just Want to Have Fun.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Girls Just Want to Have Fun" "/amusic/billboard/decades/80/Cyndi Lauper - Girls Just Want to Have Fun.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 8616 in 0 ms 
+Debug [AnalyserQueue 1]: First beat is 0 for grid so analyzing track to find first beat. 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Waveform generation for track 8616 done 10.852 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 209942 allSignalSize 209942 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 977 "1707578 (749746 compressed)" bytes for track 8616 in 364 ms 
+Debug [Main]: Saved waveform analysis for trackId 8616 analysisId 977 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.06629 audioVisualRatio 5467.2 
+Debug [Main]: AnalysisDAO saved analysis 978 "30999 (14532 compressed)" bytes for track 8616 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 8616 analysisId 978 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 558 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "bruce spri" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 645 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 571 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 550 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Pink Triangle" "/amusic/genres/rock/ROCK/Weezer/Pinkerton [1996]/08 Pink Triangle.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Pink Triangle" "/amusic/genres/rock/ROCK/Weezer/Pinkerton [1996]/08 Pink Triangle.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1961875 bytes for track 15401 in 93 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 210426 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.04774 audioVisualRatio 5479.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat sub-version has not changed since previous analysis so not analyzing. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 570 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 566 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 546 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 558 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 558 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 567 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 576 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 571 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 571 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 729 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 591 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 704 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 608 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 550 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 557 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 558 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 578 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 568 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 554 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 560 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Thunder Road" "/amusic/genres/rock/ROCK/Bruce Springsteen/Greatest Hits [Columbia]/Bruce Springsteen - Thunder Road.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Thunder Road" "/amusic/genres/rock/ROCK/Bruce Springsteen/Greatest Hits [Columbia]/Bruce Springsteen - Thunder Road.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2190716 bytes for track 13982 in 36 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 254662 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.64978 audioVisualRatio 6631.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 6 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 579 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 567 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 559 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Good Vibrations" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/020-Marky_Mark_-_The_Funky_Bunch-Good_Vibrations.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Good Vibrations" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/020-Marky_Mark_-_The_Funky_Bunch-Good_Vibrations.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 2739 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 158 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 2739 done 11.396 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: New BeatGrid 
+Debug [Main]: Writing waveform from byte array: dataSize 239318 allSignalSize 239318 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 979 "1928317 (864841 compressed)" bytes for track 2739 in 427 ms 
+Debug [Main]: Saved waveform analysis for trackId 2739 analysisId 979 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.07615 audioVisualRatio 6232.2 
+Debug [Main]: AnalysisDAO saved analysis 980 "30822 (13712 compressed)" bytes for track 2739 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 2739 analysisId 980 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 3 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "OWNLEE EUE" "/amusic/genres/urban/breslin/Kwane - OWNLEE EUE.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "OWNLEE EUE" "/amusic/genres/urban/breslin/Kwane - OWNLEE EUE.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2032213 bytes for track 17855 in 39 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 242912 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 6.97145 audioVisualRatio 6325.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 4 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 12 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 552 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "marky m" ) 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 561 ms 
+Debug [Main]: LibraryTableModel(0x99fca38) select() took 561 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Without Me" "/amusic/genres/rock/ROCK/net/Without Me - Eminem.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Without Me" "/amusic/genres/rock/ROCK/net/Without Me - Eminem.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2328706 bytes for track 15502 in 111 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 261090 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.48606 audioVisualRatio 6799.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 5 ms 
+Debug [Main]: PlaylistTableModel(0x9a12fc8) select() took 2 ms 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [AnalyserQueue 1]: Prioritizing "Boys 'Round Here" "/amusic/billboard/latest/2013-09-08/036.Blake Shelton-Boys Round Here - Boys 'Round Here.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Boys 'Round Here" "/amusic/billboard/latest/2013-09-08/036.Blake Shelton-Boys Round Here - Boys 'Round Here.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2075969 bytes for track 6778 in 35 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 255630 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.62461 audioVisualRatio 6657 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 4 ms 
+Debug [Main]: New BeatGrid 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: m_sTracks.count() = 6 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Play It Again" "/amusic/billboard/latest/2014_04_26/14 Play It Again - Luke Bryan .mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Play It Again" "/amusic/billboard/latest/2014_04_26/14 Play It Again - Luke Bryan .mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1942673 bytes for track 21328 in 37 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 200126 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.46189 audioVisualRatio 5211.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat sub-version has not changed since previous analysis so not analyzing. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x9a1a908) select() took 5 ms 
 Debug [Main]: Destroying MixxxApp 
-Debug [Main]: save config,  0 
-Debug [Main]: delete soundmanager,  1 
-Debug [Main]: delete vinylcontrolmanager,  37 
-Debug [Main]: delete view,  38 
+Debug [Main]: save config  0 
+Debug [Main]: delete soundmanager  1 
+Debug [Main]: delete view  33 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
 Debug [Main]: ~DlgTrackInfo() 
@@ -191,194 +1178,136 @@ Debug [Main]: ~DlgTrackInfo()
 Debug [Main]: ~WLibraryTableView 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete SkinLoader 
-Debug [Main]: delete MidiDeviceManager 
-Debug [Main]: Deleting PortMIDI devices... 
-Debug [Main]: PortMIDI device "1. Midi Through Port-0" already closed 
-Debug [Main]: MidiDevice: Deleting MidiMapping... 
-Debug [MidiScriptEngine 2]: MidiScriptEngine shutting down... 
-Debug [Main]: MidiDevice: Deleting MidiMapping... 
-Debug [Main]: delete playerManager 1037 
-Debug [Main]: WaveformRenderer(0x8cb6a28) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8cb7070) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8cb5010) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8cb7448) ~WaveformRenderBeat() 
-Debug [Main]: WaveformRenderMarkRange(0xafd9900) ~WaveformRenderMarkRange() 
-Debug [Main]: WaveformRenderMark(0xa87bc00) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xa87ddc8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xa882e98) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xa8849f8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xacc69f0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xacc9640) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaccc8c0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaccbba0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaccdc08) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaccfba8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xacd1758) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafdda30) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafdf988) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafe0348) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafe2228) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafe2ba8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafe5fe8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafe7ff0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafea870) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafebc68) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafedef0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaff0bd8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaff2078) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaff4278) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaff8780) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaff84c0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaffbd58) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xafdc680) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xaffe6f0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb0008a0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb002870) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb004918) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb0069c0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb008bf8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb00ab58) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb00cc30) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb00ec90) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb010c80) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb014558) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderer(0x8d16270) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8d168b8) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8d14838) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8d16c90) ~WaveformRenderBeat() 
-Debug [Main]: WaveformRenderMarkRange(0xb44aa00) ~WaveformRenderMarkRange() 
-Debug [Main]: WaveformRenderMark(0xb452328) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb453090) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb454390) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4557f8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb459390) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb45afe0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb45cc60) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb45cae8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4604f8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb460318) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb461be8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb463be0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb465558) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb467778) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb46a8e0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb46b330) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb46da80) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb46f128) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb471118) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb475458) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4752b0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb479450) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4792a8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb47d418) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb47d270) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4814b8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4813b8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb463d08) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb485180) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4870b8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb48a880) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb48b2d0) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb48da50) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb48f0f8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4910e8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb4953f8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb495250) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb498820) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderMark(0xb498fa8) ~WaveformRenderMark() 
-Debug [Main]: WaveformRenderer(0x8d74c60) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8d75280) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8d73208) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8d75688) ~WaveformRenderBeat() 
-Debug [Main]: WaveformRenderer(0x8dd5658) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8dd5ca0) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8dd3c00) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8dd6078) ~WaveformRenderBeat() 
-Debug [Main]: WaveformRenderer(0x8e33c20) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8e342a0) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8e321c8) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8e34648) ~WaveformRenderBeat() 
-Debug [Main]: WaveformRenderer(0x8e921e0) ~WaveformRenderer() 
-Debug [Main]: WaveformRenderBackground(0x8e92828) ~WaveformRenderBackground() 
-Debug [Main]: WaveformRenderSignal(0x8e90788) ~WaveformRenderSignal() 
-Debug [Main]: WaveformRenderBeat(0x8e92c00) ~WaveformRenderBeat() 
-Debug [Main]: delete m_pEngine,  1045 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: delete SkinLoader  868 
+Debug [Main]: shutdown & delete ControllerManager  869 
+Debug [Controller]: Controller polling stopped. 
+Debug [Controller]: Deleting PortMIDI devices... 
+Debug [Controller]: ControllerEngine shutting down... 
+Warning [Controller]: ControllerEngine: No "" object in script 
+Debug [Controller]: Deleting USB Bulk devices... 
+Debug [Controller]: Deleting HID devices... 
+Debug [Main]: delete vinylcontrolmanager  880 
+Debug [Main]: delete playerManager  880 
+Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
+Debug [Main]: delete m_pEngine  883 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
-Debug [Main]: delete library scanner 1099 
+Debug [Main]: delete library scanner  917 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete library 1101 
+Debug [Main]: delete library  919 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: TrackDAO::saveDirtyTracks() 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 2 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x99fa848) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete RecordingManager 2636 
+Debug [Main]: delete RecordingManager  2712 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete config,  2642 
-Debug [Main]: WARNING: The following 54 controls were leaked: 
-Debug [Main]: "[Sampler2]" "visual_bpm" 
-Debug [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Playlist]" "SelectNextPlaylist" 
-Debug [Main]: "[Channel1]" "start_stop" 
+Debug [Main]: delete config  2717 
+Debug [Main]: WARNING: The following 78 controls were leaked: 
+Debug [Main]: "[Flanger]" "lfoDepth_down_small" 
+Debug [Main]: "[PreviewDeck1]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoPeriod_minus_toggle" 
+Debug [Main]: "[PreviewDeck]" "show_previewdeck" 
+Debug [Main]: "[Vinylcontrol]" "show_vinylcontrol" 
+Debug [Main]: "[Sampler2]" "scratch_position" 
+Debug [Main]: "[Sampler2]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoDelay_down" 
+Debug [Main]: "[Flanger]" "lfoDelay_down_small" 
+Debug [Main]: "[Sampler1]" "scratch_position" 
 Debug [Main]: "[Sampler1]" "vinylcontrol_signal_enabled" 
 Debug [Main]: "[Flanger]" "lfoDelay" 
-Debug [Main]: "[Sampler1]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Playlist]" "SelectPrevPlaylist" 
-Debug [Main]: "[Microphone]" "show_microphone" 
-Debug [Main]: "[Channel2]" "start_stop" 
-Debug [Main]: "[Flanger]" "lfoDepth" 
-Debug [Main]: "[Playlist]" "SelectPrevTrack" 
-Debug [Main]: "[Flanger]" "lfoDelay_up_small" 
-Debug [Main]: "[Channel2]" "vinylcontrol_signal_enabled" 
-Debug [Main]: "[Flanger]" "lfoDepth_up_small" 
-Debug [Main]: "[Sampler3]" "visual_bpm" 
-Debug [Main]: "[Channel1]" "vinylcontrol_signal_enabled" 
-Debug [Main]: "[Samplers]" "show_samplers" 
-Debug [Main]: "[Playlist]" "LoadSelectedIntoFirstStopped" 
-Debug [Main]: "[VinylControl]" "gain" 
-Debug [Main]: "[Spinny2]" "show_spinny" 
-Debug [Main]: "[Sampler4]" "visual_bpm" 
-Debug [Main]: "[Flanger]" "lfoPeriod_down_small" 
-Debug [Main]: "[Flanger]" "lfoDelay_up" 
-Debug [Main]: "[Sampler4]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Spinny1]" "show_spinny" 
-Debug [Main]: "[Vinylcontrol]" "show_vinylcontrol" 
-Debug [Main]: "[Sampler3]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Flanger]" "lfoDepth_up" 
-Debug [Main]: "[Sampler3]" "start_stop" 
-Debug [Main]: "[Flanger]" "lfoDepth_down" 
-Debug [Main]: "[Channel1]" "visual_bpm" 
-Debug [Main]: "[Sampler4]" "start_stop" 
-Debug [Main]: "[Sampler4]" "vinylcontrol_signal_enabled" 
-Debug [Main]: "[Channel2]" "visual_bpm" 
-Debug [Main]: "[Controls]" "ShowDurationRemaining" 
+Debug [Main]: "[Flanger]" "lfoDelay_toggle" 
+Debug [Main]: "[PreviewDeck1]" "vinylcontrol_scratching" 
+Debug [Main]: "[Flanger]" "lfoDepth_toggle" 
+Debug [Main]: "[Flanger]" "lfoDelay_set_zero" 
+Debug [Main]: "[Flanger]" "lfoDepth_set_default" 
+Debug [Main]: "[Channel2]" "scratch_position" 
+Debug [Main]: "[Flanger]" "lfoDelay_set_one" 
+Debug [Main]: "[Flanger]" "lfoDelay_set_default" 
 Debug [Main]: "[Flanger]" "lfoPeriod_up" 
-Debug [Main]: "[Sampler1]" "start_stop" 
-Debug [Main]: "[Channel2]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Sampler3]" "vinylcontrol_signal_enabled" 
-Debug [Main]: "[Flanger]" "lfoDelay_down" 
-Debug [Main]: "[Sampler2]" "start_stop" 
-Debug [Main]: "[VinylControl]" "mode" 
-Debug [Main]: "[Channel1]" "vinylcontrol_wantenabled" 
-Debug [Main]: "[Flanger]" "lfoPeriod_up_small" 
-Debug [Main]: "[Flanger]" "lfoDelay_down_small" 
-Debug [Main]: "[Master]" "toggle_recording" 
-Debug [Main]: "[Playlist]" "SelectNextTrack" 
-Debug [Main]: "[Flanger]" "lfoPeriod_down" 
-Debug [Main]: "[Sampler1]" "visual_bpm" 
-Debug [Main]: "[Flanger]" "lfoDepth_down_small" 
+Debug [Main]: "[Playlist]" "ToggleSelectedSidebarItem" 
+Debug [Main]: "[Channel1]" "scratch_position" 
 Debug [Main]: "[Playlist]" "SelectTrackKnob" 
+Debug [Main]: "[VinylControl]" "gain" 
+Debug [Main]: "[Flanger]" "lfoPeriod_set_one" 
+Debug [Main]: "[Playlist]" "SelectPrevTrack" 
+Debug [Main]: "[Flanger]" "lfoDepth_up_small" 
+Debug [Main]: "[Spinny2]" "show_spinny" 
+Debug [Main]: "[Playlist]" "LoadSelectedIntoFirstStopped" 
+Debug [Main]: "[Spinny1]" "show_spinny" 
+Debug [Main]: "[Channel2]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoPeriod_down_small" 
+Debug [Main]: "[Flanger]" "lfoPeriod_set_zero" 
+Debug [Main]: "[Channel1]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Controls]" "ShowDurationRemaining" 
+Debug [Main]: "[Flanger]" "lfoDepth_set_minus_one" 
+Debug [Main]: "[Flanger]" "lfoPeriod_set_minus_one" 
+Debug [Main]: "[Recording]" "toggle_recording" 
+Debug [Main]: "[Channel1]" "vinylcontrol_scratching" 
+Debug [Main]: "[Channel2]" "vinylcontrol_scratching" 
+Debug [Main]: "[Flanger]" "lfoPeriod_down" 
+Debug [Main]: "[PreviewDeck1]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Flanger]" "lfoDelay_up" 
+Debug [Main]: "[Flanger]" "lfoPeriod_toggle" 
+Debug [Main]: "[Sampler4]" "scratch_position" 
+Debug [Main]: "[Playlist]" "SelectNextTrack" 
 Debug [Main]: "[Flanger]" "lfoPeriod" 
-Debug [Main]: "[Sampler2]" "vinylcontrol_signal_enabled" 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up_small" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up_small" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_down_small" ) 
-Debug [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down_small" ) 
+Debug [Main]: "[Sampler3]" "scratch_position" 
+Debug [Main]: "[Flanger]" "lfoDepth_set_zero" 
+Debug [Main]: "[Flanger]" "lfoDepth_minus_toggle" 
+Debug [Main]: "[Sampler2]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Samplers]" "show_samplers" 
+Debug [Main]: "[Shoutcast]" "status" 
+Debug [Main]: "[Sampler1]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Flanger]" "lfoDepth" 
+Debug [Main]: "[Flanger]" "lfoDepth_set_one" 
+Debug [Main]: "[Sampler1]" "vinylcontrol_scratching" 
+Debug [Main]: "[Flanger]" "lfoDepth_up" 
+Debug [Main]: "[Flanger]" "lfoPeriod_up_small" 
+Debug [Main]: "[Sampler2]" "vinylcontrol_scratching" 
+Debug [Main]: "[Channel2]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Playlist]" "SelectPrevPlaylist" 
+Debug [Main]: "[Sampler3]" "vinylcontrol_scratching" 
+Debug [Main]: "[Playlist]" "SelectNextPlaylist" 
+Debug [Main]: "[Channel1]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Microphone]" "show_microphone" 
+Debug [Main]: "[PreviewDeck1]" "scratch_position" 
+Debug [Main]: "[Sampler4]" "vinylcontrol_scratching" 
+Debug [Main]: "[Flanger]" "lfoDelay_set_minus_one" 
+Debug [Main]: "[Sampler4]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Sampler4]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Sampler3]" "vinylcontrol_signal_enabled" 
+Debug [Main]: "[Flanger]" "lfoDepth_down" 
+Debug [Main]: "[Sampler3]" "vinylcontrol_wantenabled" 
+Debug [Main]: "[Flanger]" "lfoDelay_minus_toggle" 
+Debug [Main]: "[Flanger]" "lfoPeriod_set_default" 
+Debug [Main]: "[Flanger]" "lfoDelay_up_small" 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_toggle" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_set_zero" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_set_one" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_set_default" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_set_one" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_up" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod_up_small" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_set_minus_one" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDepth_down" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_minus_toggle" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoPeriod_set_default" ) 
+Warning [Main]: ControlObject::getControl returning NULL for ( "[Flanger]" , "lfoDelay_up_small" ) 
 Debug [Main]: ~MixxxApp: All leaking controls deleted. 
 Debug [Main]: Mixxx shutdown complete with code 0 
