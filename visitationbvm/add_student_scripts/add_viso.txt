@@ -270,9 +270,9 @@ v1854:bat:1854:100:Alejandro Amigan:/home/v1854:/bin/bash
 v1855:bat:1855:100:Jayden Rivera:/home/v1855:/bin/bash
 v1856:bat:1856:100:Angelis Peralta:/home/v1856:/bin/bash
 v1857:bat:1857:100:Alix Velez:/home/v1857:/bin/bash
-v1858:bat:1858:100:New Student:/home/v1858:/bin/bash
-v1859:bat:1859:100:New Student:/home/v1859:/bin/bash
-v1860:bat:1860:100:New Student:/home/v1860:/bin/bash
+v1858:bat:1858:100:Kayla Barret:/home/v1858:/bin/bash
+v1859:bat:1859:100:Samir Davis:/home/v1859:/bin/bash
+v1860:bat:1860:100:Anthony Vu:/home/v1860:/bin/bash
 v1861:bat:1861:100:New Student:/home/v1861:/bin/bash
 v1862:bat:1862:100:New Student:/home/v1862:/bin/bash
 v1901:ahh:1901:100:Angelis Bernardy:/home/v1901:/bin/bash
