@@ -328,7 +328,7 @@ v1950:bat:1950:100:Nathaniel Hamilton:/home/v1950:/bin/bash
 v1951:cat:1951:100:Ahmir Porter:/home/v1951:/bin/bash
 v1952:cat:1952:100:Joseph Mejia:/home/v1952:/bin/bash
 v1953:cat:1953:100:Lyanelis Oquendo:/home/v1953:/bin/bash
-v1954:cat:1954:100:New Student:/home/v1954:/bin/bash
+v1954:cat:1954:100:Ariana Perez:/home/v1954:/bin/bash
 v1955:cat:1955:100:New Student:/home/v1955:/bin/bash
 v1956:cat:1956:100:New Student:/home/v1956:/bin/bash
 v1957:cat:1957:100:New Student:/home/v1957:/bin/bash
