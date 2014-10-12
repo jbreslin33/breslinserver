@@ -3,7 +3,7 @@
  <SoundDevice name="0, HDA Intel: AD198x Analog (hw:0,0)">
   <output channel="0" type="Master" index="0"/>
  </SoundDevice>
- <SoundDevice name="2, USB Audio CODEC: USB Audio (hw:2,0)">
+ <SoundDevice name="2, USB Audio CODEC: USB Audio (hw:1,0)">
   <output channel="0" type="Headphones" index="0"/>
  </SoundDevice>
 </SoundManagerConfig>
