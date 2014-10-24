@@ -5,6 +5,8 @@ echo ---------------------------------------------
 
 sudo apt-get update
 sudo apt-get install 
+sudo apt-get upgrade 
+sudo apt-get install build-essential  
 
 sudo apt-get build-dep mixxx 
 sudo apt-get install git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libopus-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler libvamp-hostsdk3 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev
