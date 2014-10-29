@@ -22,6 +22,7 @@ sudo apt-get -y install epoptes-client
 sudo apt-get -y remove minetest
 sudo apt-get -y install remmina
 sudo apt-get -y install rdesktop
+sudo apt-get -y install wine 
 
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
