@@ -2,12 +2,27 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: INSTALL PROGRAMS
 echo ---------------------------------------------
+
+sudo apt-get install php5-curl
+sudo apt-get install php5-gd
+sudo apt-get install php5-xmlrpc 
+sudo /etc/init.d/apache2 restart 
+
 cd /home/$1/sandbox
 
 echo git clone -b MOODLE_27_STABLE git://git.moodle.org/moodle.git
-sudo apt-get install mysql-server
-sudo apt-get install mysql-client
-sudo apt-get install mysql-workbench
+echo sudo chmod -R 777 moodledata/
+sudo -u postgres createdb moodle
+echo goto visflip.com in browser
+echo Database user: postgres
+echo Database password: mibesfat 
+echo copy what weppage says to /home/jbreslin/sandbox/moodle/config.php
+echo admin username: jbreslin
+echo admin password: Iggles_13
+
+echo sudo apt-get install mysql-server
+echo sudo apt-get install mysql-client
+echosudo apt-get install mysql-workbench
 
 echo
 echo ---------------------------------------------
