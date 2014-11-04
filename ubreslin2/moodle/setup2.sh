@@ -1,30 +1,11 @@
 echo
 echo ---------------------------------------------
-echo UBRESLIN: INSTALL PROGRAMS
+echo UBRESLIN: MOODLE
 echo ---------------------------------------------
 cd /home/$1/sandbox
-
-echo git clone -b MOODLE_27_STABLE git://git.moodle.org/moodle.git
-sudo apt-get install mysql-server
-sudo apt-get install mysql-client
-sudo apt-get install mysql-workbench
-
-echo
-echo ---------------------------------------------
-echo UBRESLIN: MANUAL COMMANDS 
-echo ---------------------------------------------
-
-echo mysql --user=root --password=mibesfat
-echo CREATE DATABASE moodle DEFAULT CHARACTER SET UTF8 COLLATE utf8_unicode_ci;
-echo GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON moodle.* TO moodleuser@localhost IDENTIFIED BY 'mibesfat';
-echo sudo chmod -R 777 moodledata/
-
-
-
-
-
-echo sudo chown -R root /home/$1/sandbox/moodle/
-echo sudo chmod -R 0755 /home/$1/sandbox/moodle/
+git clone -b MOODLE_24_STABLE git://git.moodle.org/moodle.git
+sudo chown -R root /home/$1/sandbox/moodle/
+sudo chmod -R 0755 /home/$1/sandbox/moodle/
 
 echo
 echo --------------------------------------------
