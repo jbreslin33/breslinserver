@@ -34,6 +34,8 @@ echo UBRESLIN: PROJECTS
 echo ---------------------------------------------
 echo projects
 cd /home/$1/sandbox
+mkdir /home/$1/originals
+sudo cp /etc/apache2/sites-available/000-default.conf /home/$1/originals
 
 if [ "$1" = "jbreslin" ]; then
 hg clone https://jbreslin33@code.google.com/p/breslininput/
@@ -94,9 +96,15 @@ echo
 echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
+sudo cp /etc/phppgadmin/apache.conf /home/$1/originals
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
+
+sudo cp /etc/phppgadmin/config.inc.php /home/$1/originals
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
+
+sudo cp /etc/postgresql/9.1/main/postgresql.conf /home/$1/originals
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.1/main
+
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
