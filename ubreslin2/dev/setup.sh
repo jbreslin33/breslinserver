@@ -25,6 +25,11 @@ sudo apt-get -y install dia
 sudo apt-get -y install chromium-browser
 sudo apt-get -y install mplayer
 
+echo remote
+sudo apt-get -y install remmina 
+sudo apt-get -y install remmina-plugin-vnc 
+
+
 echo for djing
 sudo apt-get install soundconverter
 
