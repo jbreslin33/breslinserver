@@ -1,3 +1,3 @@
-sudo -u postgres psql -d jamesanthonybreslin -f src/database/drop_db.sql
-sudo -u postgres dropdb jamesanthonybreslin
-sudo -u postgres pg_restore -C -d postgres src/database/jamesanthonybreslin.dump
+sudo -u postgres psql -d moodle -f drop_db.sql
+sudo -u postgres dropdb moodle
+sudo -u postgres pg_restore -C -d postgres moodle.dump
