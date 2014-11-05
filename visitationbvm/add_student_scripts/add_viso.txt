@@ -379,7 +379,7 @@ v2126:axe:2126:100:Edgardo Rivera:/home/v2126:/bin/bash
 v2127:aye:2127:100:Chastity Rivera:/home/v2127:/bin/bash
 v2128:ays:2128:100:Nicholas Torres:/home/v2128:/bin/bash
 v2129:baa:2129:100:Jayzn Vargas:/home/v2129:/bin/bash
-v2130:bit:2130:100:Kirian Vargas Calcano:/home/v2130:/bin/bash
+v2130:bit:2130:100:Kirian Calcano:/home/v2130:/bin/bash
 v2131:bag:2131:100:Lianna Adames:/home/v2131:/bin/bash
 v2132:bam:2132:100:Guadalupe Avalos:/home/v2132:/bin/bash
 v2133:ban:2133:100:Jesus Avalos:/home/v2133:/bin/bash
