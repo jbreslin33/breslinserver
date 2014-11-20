@@ -156,7 +156,7 @@ v1750:bit:1750:100:Floridei Jovel:/home/v1750:/bin/bash
 v1751:bin:1751:100:Calvin Nguyen:/home/v1751:/bin/bash
 v1752:bin:1752:100:Alexander Nguyen:/home/v1752:/bin/bash
 v1753:bat:1753:100:Hanna Oliveras:/home/v1753:/bin/bash
-v1754:bin:1754:100:New Student:/home/v1754:/bin/bash
+v1754:bin:1754:100:Aasimah Young:/home/v1754:/bin/bash
 v1755:bin:1755:100:New Student:/home/v1755:/bin/bash
 v1756:bin:1756:100:New Student:/home/v1756:/bin/bash
 v1757:bin:1757:100:New Student:/home/v1757:/bin/bash
