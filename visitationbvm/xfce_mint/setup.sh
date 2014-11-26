@@ -9,6 +9,8 @@ sudo chmod 777 /mnt
 sudo cp mdm.conf /etc/mdm
 sudo cp newusers /usr/sbin
 
+sudo apt-get -y install build-essential 
+sudo apt-get -y install cmake
 sudo apt-get -y install ssh
 sudo apt-get -y install nfs-common
 sudo apt-get -y install cifs-utils
@@ -26,34 +28,5 @@ sudo apt-get -y install wine
 
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
-
-#compile minetest
-sudo mkdir /minetest
-sudo chmod -R 777 /minetest
-cd /minetest
-sudo apt-get -y install build-essential 
-sudo apt-get -y install libirrlicht-dev
-sudo apt-get -y install cmake
-sudo apt-get -y install libbz2-dev
-sudo apt-get -y install libpng12-dev
-sudo apt-get -y install libjpeg8-dev
-sudo apt-get -y install libxxf86vm-dev
-sudo apt-get -y install libgl1-mesa-dev
-sudo apt-get -y install libsqlite3-dev
-sudo apt-get -y install libogg-devsudo
-sudo apt-get -y install libvorbis-dev
-sudo apt-get -y install libopenal-dev
-wget https://github.com/minetest/minetest/tarball/master -O master.tar.gz
-tar xf master.tar.gz
-cd minet*
-cd games/
-wget https://github.com/minetest/minetest_game/tarball/master -O master.tar.gz
-tar xf master.tar.gz
-cd ..
-echo copy the content_cao.cpp file!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-sudo cp /home/student/sandbox/breslinserver/visitationbvm/xfce_mint/content_cao.cpp /minetest/minet*/src/
-cmake . -DRUN_IN_PLACE=1
-make -j2
-sudo chmod -R 777 /minetest
 
 echo complete you can now reboot and login 
