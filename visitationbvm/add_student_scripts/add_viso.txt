@@ -423,7 +423,7 @@ v2170:bio:2170:100:Kyla Broken:/home/v2170:/bin/bash
 v2171:bio:2171:100:Brandon Hansberry:/home/v2171:/bin/bash
 v2172:bio:2172:100:Prince Senorin:/home/v2172:/bin/bash
 v2173:bio:2173:100:Joseph Mantigua:/home/v2173:/bin/bash
-v2174:bio:2174:100:New Student:/home/v2174:/bin/bash
+v2174:bio:2174:100:Lelani Tran:/home/v2174:/bin/bash
 v2175:bio:2175:100:New Student:/home/v2175:/bin/bash
 v2176:bio:2176:100:Tayla Ha:/home/v2176:/bin/bash
 v2177:bio:2177:100:Trinity Wood:/home/v2177:/bin/bash
