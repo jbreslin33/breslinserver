@@ -286,9 +286,9 @@ v1955:cat:1955:100:Jamil Otero:/home/v1955:/bin/bash
 v1956:cat:1956:100:Milani Rojas:/home/v1956:/bin/bash
 v1957:cat:1957:100:Lelu Velez:/home/v1957:/bin/bash
 v1958:cat:1958:100:Keelan Perez:/home/v1958:/bin/bash
-v1959:cat:1959:100:New Student:/home/v1959:/bin/bash
-v1960:cat:1960:100:New Student:/home/v1960:/bin/bash
-v1961:cat:1961:100:New Student:/home/v1961:/bin/bash
+v1959:cat:1959:100:Kenny Pfiefer:/home/v1959:/bin/bash
+v1960:cat:1960:100:Cameron Giscombe:/home/v1960:/bin/bash
+v1961:cat:1961:100:Arieanaa Perez:/home/v1961:/bin/bash
 v1962:cat:1962:100:New Student:/home/v1962:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
