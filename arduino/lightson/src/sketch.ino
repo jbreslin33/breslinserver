@@ -16,7 +16,7 @@ void setup()
 void initialize()
 {
     //mServo.write(90); //90 is default safe   120 turns off 45 turns on 
-    turnOff();
+    turnOn();
 }
  void turnOff()
  {
