@@ -20,7 +20,7 @@ void initialize()
 }
  void turnOff()
  {
-   while (mServo.read() < 136)
+   while (mServo.read() < 133)
    {
      //delay(15);
      mServo.write(mPosition); 
