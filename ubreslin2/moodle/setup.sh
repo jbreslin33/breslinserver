@@ -1,4 +1,5 @@
 sudo apt-get install php5-curl
+sudo apt-get install php5-gd
 sudo /etc/init.d/apache2 restart 
 cd /home/jbreslin/sandbox
 git clone --depth=1 -b MOODLE_28_STABLE --single-branch git://git.moodle.org/moodle.git 
