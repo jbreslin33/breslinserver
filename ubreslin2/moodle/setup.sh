@@ -1,7 +1,7 @@
 sudo apt-get install php5-curl
 sudo /etc/init.d/apache2 restart 
 cd /home/jbreslin/sandbox
-echo git clone --depth=1 -b MOODLE_28_STABLE --single-branch git://git.moodle.org/moodle.git 
+git clone --depth=1 -b MOODLE_28_STABLE --single-branch git://git.moodle.org/moodle.git 
 sudo chown -R root /home/jbreslin/sandbox/moodle
 sudo chmod -R 0755 /home/jbreslin/sandbox/moodle
 sudo find /home/jbreslin/sandbox/moodle -type f -exec chmod 0644 {} \;
@@ -12,4 +12,4 @@ chmod 0777 /home/jbreslin/sandbox/moodledata
 sudo chown www-data /home/jbreslin/sandbox/moodle
 cd /home/jbreslin/sandbox/moodle
 cd /home/jbreslin/sandbox/moodle/admin/cli/
-echo sudo -u www-data /usr/bin/php install.php
+sudo -u www-data /usr/bin/php install.php
