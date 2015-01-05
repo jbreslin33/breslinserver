@@ -17,21 +17,21 @@ sudo apt-get -y install php5
 sudo apt-get -y install postgresql
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
-sudo apt-get -y install vlc
-sudo apt-get -y install mpg123
-sudo apt-get -y install openjdk-7-jdk
-sudo apt-get -y install graphviz
-sudo apt-get -y install dia 
-sudo apt-get -y install chromium-browser
-sudo apt-get -y install mplayer
+echo sudo apt-get -y install vlc
+echo sudo apt-get -y install mpg123
+echo sudo apt-get -y install openjdk-7-jdk
+echo sudo apt-get -y install graphviz
+echo sudo apt-get -y install dia 
+echo sudo apt-get -y install chromium-browser
+echo sudo apt-get -y install mplayer
 
 echo remote
-sudo apt-get -y install remmina 
-sudo apt-get -y install remmina-plugin-vnc 
+echo sudo apt-get -y install remmina 
+echo sudo apt-get -y install remmina-plugin-vnc 
 
 
 echo for djing
-sudo apt-get install soundconverter
+echo sudo apt-get install soundconverter
 
 echo
 echo ---------------------------------------------
