@@ -4,4 +4,4 @@ echo sudo chown -R root /home/jbreslin/sandbox/moodle
 echo sudo chmod -R 0755 /home/jbreslin/sandbox/moodle
 echo sudo find /home/jbreslin/sandbox/moodle -type f -exec chmod 0644 {} \;
 echo chmod -R "www-data allow read,delete,write,append,file_inherit,directory_inherit" /home/jbreslin/sandbox/moodle
-sudo -u postgres psql -f setup.sql
+echo sudo -u postgres psql -f setup.sql
