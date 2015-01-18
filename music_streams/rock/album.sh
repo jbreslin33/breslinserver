@@ -1,1 +1,1 @@
-mplayer -playlist album.pls
+mplayer -playlist ~/sandbox/breslinserver/music_streams/rock/album.pls
