@@ -1,12 +1,13 @@
+
 int pinI1=8;//define I1 interface
 int pinI2=11;//define I2 interface 
 int speedpinA=9;//enable motor A
 int pinI3=12;//define I3 interface 
 int pinI4=13;//define I4 interface 
 int speedpinB=10;//enable motor B
-int spead =127;//define the spead of motor
-int speedA = 110;
-int speedB = 100;
+int spead =127;//d
+int speedA = 70; //back left wheel
+int speedB = 100; //back right wheel
 void setup()
 {
   pinMode(pinI1,OUTPUT);
