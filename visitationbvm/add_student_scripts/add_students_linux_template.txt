@@ -1,0 +1,114 @@
+v2301:ahh:2301:100:New Student:/home/v2301:/bin/bash
+v2302:abc:2302:100:New Student:/home/v2302:/bin/bash
+v2303:ace:2303:100:New Student:/home/v2303:/bin/bash
+v2304:add:2304:100:New Student:/home/v2304:/bin/bash
+v2305:aft:2305:100:New Student:/home/v2305:/bin/bash
+v2306:ape:2306:100:New Student:/home/v2306:/bin/bash
+v2307:and:2307:100:New Student:/home/v2307:/bin/bash
+v2308:aim:2308:100:New Student:/home/v2308:/bin/bash
+v2309:aid:2309:100:New Student:/home/v2309:/bin/bash
+v2310:air:2310:100:New Student:/home/v2310:/bin/bash
+v2311:all:2311:100:New Student:/home/v2311:/bin/bash
+v2312:amp:2312:100:New Student:/home/v2312:/bin/bash
+v2313:ant:2313:100:New Student:/home/v2313:/bin/bash
+v2314:app:2314:100:New Student:/home/v2314:/bin/bash
+v2315:apt:2315:100:New Student:/home/v2315:/bin/bash
+v2316:arc:2316:100:New Student:/home/v2316:/bin/bash
+v2317:arf:2317:100:New Student:/home/v2317:/bin/bash
+v2318:ark:2318:100:New Student:/home/v2318:/bin/bash
+v2319:arm:2319:100:New Student:/home/v2319:/bin/bash
+v2320:art:2320:100:New Student:/home/v2320:/bin/bash
+v2321:ash:2321:100:New Student:/home/v2321:/bin/bash
+v2322:ask:2322:100:New Student:/home/v2322:/bin/bash
+v2323:big:2323:100:New Student:/home/v2323:/bin/bash
+v2324:ave:2324:100:New Student:/home/v2324:/bin/bash
+v2325:awe:2325:100:New Student:/home/v2325:/bin/bash
+v2326:axe:2326:100:New Student:/home/v2326:/bin/bash
+v2327:aye:2327:100:New Student:/home/v2327:/bin/bash
+v2328:ays:2328:100:New Student:/home/v2328:/bin/bash
+v2329:baa:2329:100:New Student:/home/v2329:/bin/bash
+v2330:bit:2330:100:New Student:/home/v2330:/bin/bash
+v2331:bag:2331:100:New Student:/home/v2331:/bin/bash
+v2332:bam:2332:100:New Student:/home/v2332:/bin/bash
+v2333:ban:2333:100:New Student:/home/v2333:/bin/bash
+v2334:bap:2334:100:New Student:/home/v2334:/bin/bash
+v2335:bar:2335:100:New Student:/home/v2335:/bin/bash
+v2336:bat:2336:100:New Student:/home/v2336:/bin/bash
+v2337:bay:2337:100:New Student:/home/v2337:/bin/bash
+v2338:bed:2338:100:New Student:/home/v2338:/bin/bash
+v2339:bee:2339:100:New Student:/home/v2339:/bin/bash
+v2340:beg:2340:100:New Student:/home/v2340:/bin/bash
+v2341:ben:2341:100:New Student:/home/v2341:/bin/bash
+v2342:bet:2342:100:New Student:/home/v2342:/bin/bash
+v2343:bib:2343:100:New Student:/home/v2343:/bin/bash
+v2344:bid:2344:100:New Student:/home/v2344:/bin/bash
+v2345:big:2345:100:New Student:/home/v2345:/bin/bash
+v2346:bin:2346:100:New Student:/home/v2346:/bin/bash
+v2347:bio:2347:100:New Student:/home/v2347:/bin/bash
+v2348:big:2348:100:New Student:/home/v2348:/bin/bash
+v2349:cat:2349:100:New Student:/home/v2349:/bin/bash
+v2350:bat:2350:100:New Student:/home/v2350:/bin/bash
+v2351:hat:2351:100:New Student:/home/v2351:/bin/bash
+v2352:sat:2352:100:New Student:/home/v2352:/bin/bash
+v2353:bat:2353:100:New Student:/home/v2353:/bin/bash
+v2354:cat:2354:100:New Student:/home/v2354:/bin/bash
+v2355:cat:2355:100:New Student:/home/v2355:/bin/bash
+v2356:cat:2356:100:New Student:/home/v2356:/bin/bash
+v2357:sat:2357:100:New Student:/home/v2357:/bin/bash
+v2358:cat:2358:100:New Student:/home/v2358:/bin/bash
+v2359:bat:2359:100:New Student:/home/v2359:/bin/bash
+v2360:cat:2360:100:New Student:/home/v2360:/bin/bash
+v2361:bat:2361:100:New Student:/home/v2361:/bin/bash
+v2362:cat:2362:100:New Student:/home/v2362:/bin/bash
+v2363:cat:2363:100:New Student:/home/v2363:/bin/bash
+v2364:bat:2364:100:New Student:/home/v2364:/bin/bash
+v2365:cat:2365:100:New Student:/home/v2365:/bin/bash
+v2366:cat:2366:100:New Student:/home/v2366:/bin/bash
+v2367:cat:2367:100:New Student:/home/v2367:/bin/bash
+v2368:cat:2368:100:New Student:/home/v2368:/bin/bash
+v2369:cat:2369:100:New Student:/home/v2369:/bin/bash
+v2370:cat:2370:100:New Student:/home/v2370:/bin/bash
+v2371:cat:2371:100:New Student:/home/v2371:/bin/bash
+v2372:cat:2372:100:New Student:/home/v2372:/bin/bash
+v2373:cat:2373:100:New Student:/home/v2373:/bin/bash
+v2374:cat:2374:100:New Student:/home/v2374:/bin/bash
+v2375:cat:2375:100:New Student:/home/v2375:/bin/bash
+v2376:cat:2376:100:New Student:/home/v2376:/bin/bash
+v2377:cat:2377:100:New Student:/home/v2377:/bin/bash
+v2378:cat:2378:100:New Student:/home/v2378:/bin/bash
+v2379:cat:2379:100:New Student:/home/v2379:/bin/bash
+v2380:cat:2380:100:New Student:/home/v2380:/bin/bash
+v2381:cat:2381:100:New Student:/home/v2381:/bin/bash
+v2382:cat:2382:100:New Student:/home/v2382:/bin/bash
+v2383:cat:2383:100:New Student:/home/v2383:/bin/bash
+v2384:cat:2384:100:New Student:/home/v2384:/bin/bash
+v2385:cat:2385:100:New Student:/home/v2385:/bin/bash
+v2386:cat:2386:100:New Student:/home/v2386:/bin/bash
+v2387:cat:2387:100:New Student:/home/v2387:/bin/bash
+v2388:cat:2388:100:New Student:/home/v2388:/bin/bash
+v2389:cat:2389:100:New Student:/home/v2389:/bin/bash
+v2390:cat:2390:100:New Student:/home/v2390:/bin/bash
+v2391:cat:2391:100:New Student:/home/v2391:/bin/bash
+v2392:cat:2392:100:New Student:/home/v2392:/bin/bash
+v2393:cat:2393:100:New Student:/home/v2393:/bin/bash
+v2394:cat:2394:100:New Student:/home/v2394:/bin/bash
+v2395:cat:2395:100:New Student:/home/v2395:/bin/bash
+v2396:cat:2396:100:New Student:/home/v2396:/bin/bash
+v2397:cat:2397:100:New Student:/home/v2397:/bin/bash
+v2398:cat:2398:100:New Student:/home/v2398:/bin/bash
+v2399:cat:2399:100:New Student:/home/v2399:/bin/bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
