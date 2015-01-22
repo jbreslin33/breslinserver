@@ -504,7 +504,7 @@ v2268:cat:2268:100:Jaden Gonzalez:/home/v2268:/bin/bash
 v2269:cat:2269:100:Justin Valesquez:/home/v2269:/bin/bash
 v2270:cat:2270:100:Genesis Zapata:/home/v2270:/bin/bash
 v2271:cat:2271:100:Valerie Santiago:/home/v2271:/bin/bash
-v2272:cat:2272:100:New Student:/home/v2272:/bin/bash
+v2272:cat:2272:100:Amiya Mella:/home/v2272:/bin/bash
 v2273:cat:2273:100:New Student:/home/v2273:/bin/bash
 v2274:cat:2274:100:New Student:/home/v2274:/bin/bash
 v2275:cat:2275:100:New Student:/home/v2275:/bin/bash
