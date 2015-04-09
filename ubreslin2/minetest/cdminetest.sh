@@ -1,1 +1,1 @@
-cd /home/jbreslin/sandbox/breslinserver/ubreslin2/minetest/minetest
+cd /home/student/sandbox/breslinserver/ubreslin2/minetest/minetest
