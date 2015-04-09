@@ -30,4 +30,6 @@ sudo apt-get -y install wine
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
 
+./setup_minetest.sh
+
 echo complete you can now reboot and login 
