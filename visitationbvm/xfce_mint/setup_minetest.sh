@@ -7,5 +7,14 @@ else
 git clone https://github.com/minetest/minetest.git
 . cdminetest.sh 
 fi
-cmake . -DENABLE_GETTEXT=1 -DENABLE_FREETYPE=1 -DENABLE_LEVELDB=1 -DENABLE_REDIS=1
+
+if [ "$1" = "server" ]; then
+cmake . -DENABLE_GETTEXT=1 -DENABLE_FREETYPE=1 -DENABLE_LEVELDB=1 -DENABLE_REDIS=1 -DBUILD_SERVER=0
+else
+cmake . -DENABLE_GETTEXT=1 -DENABLE_FREETYPE=1 -DENABLE_LEVELDB=1 -DENABLE_REDIS=1 -DBUILD_CLIENT=0
+fi
 make -j$(grep -c processor /proc/cpuinfo)
+
+
+echo to run server...
+echo ./minetest --server --worldname minetest_game
