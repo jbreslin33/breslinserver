@@ -34,7 +34,6 @@ pfarrell:Password1:1235:50:Pat Farrell:/home/v1235:/bin/bash
 pcaucci:Password1:1236:50:Patricia Cuacci:/home/v1236:/bin/bash
 rbuchter:Password1:1237:50:Renita Buchter:/home/v1237:/bin/bash
 rsiegle:Password1:1238:50:Rose Siegle:/home/v1238:/bin/bash
-scorcoran:Password1:1239:50:Sean Corcoran:/home/v1239:/bin/bash
 sfalls:Password1:1240:50:Sheila Falss:/home/v1240:/bin/bash
 ssternthal:Password1:1241:50:Sherry Sternthal:/home/v1241:/bin/bash
 sbernard:Password1:1242:50:Sister Bernard:/home/v1242:/bin/bash
