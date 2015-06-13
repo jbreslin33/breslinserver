@@ -1,0 +1,1 @@
+setup for new computers dev and production
