@@ -1,1 +1,1 @@
-mplayer -playlist ~/sandbox/breslinserver/music_streams/classical/radioparadise.pls
+mplayer -playlist ~/sandbox/breslinserver/music_streams/mix/radioparadise.pls
