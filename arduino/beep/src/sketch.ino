@@ -72,7 +72,7 @@ void stop()//
 
 void loop()
 {
- //forward(); 
+ forward(); 
    delay(1000);
 /*
    stop();
