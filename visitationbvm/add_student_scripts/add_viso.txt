@@ -388,6 +388,7 @@ v2057:cat:2057:100:Joshua Lantigua:/home/v2057:/bin/bash
 v2058:cat:2058:100:Leyna Ha:/home/v2058:/bin/bash
 v2059:cat:2059:100:Amy Perez:/home/v2059:/bin/bash
 v2060:cat:2060:100:Jenna Young:/home/v2060:/bin/bash
+v2061:bat:2061:100:Jack Nguyen:/home/v2061:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
