@@ -337,7 +337,7 @@ v2006:ape:2006:100:Patrick Daly:/home/v2006:/bin/bash
 v2007:and:2007:100:Leanny Delacruz:/home/v2007:/bin/bash
 v2008:aim:2008:100:Elijah Desamour:/home/v2008:/bin/bash
 v2009:aid:2009:100:Allessandra Lilo:/home/v2009:/bin/bash
-v2010:air:2010:100:Lamir Moore:/home/v2010:/bin/bash
+v2010:air:2010:100:Iamir Moore:/home/v2010:/bin/bash
 v2011:all:2011:100:Brianna Navarro:/home/v2011:/bin/bash
 v2012:amp:2012:100:Gabriella Mystil:/home/v2012:/bin/bash
 v2013:ant:2013:100:Devin Nguyen:/home/v2013:/bin/bash
@@ -387,8 +387,11 @@ v2056:cat:2056:100:Daisy Harvey:/home/v2056:/bin/bash
 v2057:cat:2057:100:Joshua Lantigua:/home/v2057:/bin/bash
 v2058:cat:2058:100:Leyna Ha:/home/v2058:/bin/bash
 v2059:cat:2059:100:Amy Perez:/home/v2059:/bin/bash
-v2060:cat:2060:100:Jenna Young:/home/v2060:/bin/bash
+v2060:cat:2060:100:Jannah Young:/home/v2060:/bin/bash
 v2061:bat:2061:100:Jack Nguyen:/home/v2061:/bin/bash
+v2062:bat:2062:100:Malysia Huntley:/home/v2062:/bin/bash
+v2063:bat:2063:100:Jayden Rodriguez:/home/v2063:/bin/bash
+v2064:bat:2064:100:Josiah Williams:/home/v2064:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
