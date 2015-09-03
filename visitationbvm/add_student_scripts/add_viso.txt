@@ -132,7 +132,7 @@ v1645:bit:1645:100:Bryan Doan:/home/v1645:/bin/bash
 v1646:bit:1646:100:Sandra Nguyen:/home/v1646:/bin/bash
 v1647:bit:1647:100:Albert Pontear:/home/v1647:/bin/bash
 v1648:bit:1648:100:Nhu Nguyen:/home/v1648:/bin/bash
-v1649:bit:1649:100:New Student:/home/v1649:/bin/bash
+v1649:bit:1649:100:Nykia Jackson:/home/v1649:/bin/bash
 v1650:bit:1650:100:New Student:/home/v1650:/bin/bash
 v1651:bit:1651:100:New Student:/home/v1651:/bin/bash
 v1652:bit:1652:100:New Student:/home/v1652:/bin/bash
