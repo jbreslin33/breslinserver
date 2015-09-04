@@ -14,7 +14,7 @@ bbechler:Password1:1215:50:Betty Bechler:/home/v1215:/bin/bash
 cuholik:Password1:1216:50:Christine Uholik:/home/v1216:/bin/bash
 cmilek:Password1:1217:50:Corrine Milek:/home/v1217:/bin/bash
 degner:Password1:1218:50:Dolores Egner:/home/v1218:/bin/bash
-dhepworth:Password1:1219:50:Dot Hepworth:/home/v1219:/bin/bash
+dhepworth:Password1:1219:50:Dot HieuHepworth:/home/v1219:/bin/bash
 edelise:Password1:1220:50:Elizabeth DeLise:/home/v1220:/bin/bash
 elampart:Password1:1221:50:Elizabeth Lampart:/home/v1221:/bin/bash
 jfield:Password1:1222:50:Jane Field:/home/v1222:/bin/bash
@@ -341,7 +341,7 @@ v2010:air:2010:100:Iamir Moore:/home/v2010:/bin/bash
 v2011:all:2011:100:Brianna Navarro:/home/v2011:/bin/bash
 v2012:amp:2012:100:Gabriella Mystil:/home/v2012:/bin/bash
 v2013:ant:2013:100:Devin Nguyen:/home/v2013:/bin/bash
-v2014:app:2014:100:He Nguyen:/home/v2014:/bin/bash
+v2014:app:2014:100:Hieu Nguyen:/home/v2014:/bin/bash
 v2015:apt:2015:100:Frank Do:/home/v2015:/bin/bash
 v2016:arc:2016:100:Jordan Pipkin:/home/v2016:/bin/bash
 v2017:arf:2017:100:Unique Rodriquez:/home/v2017:/bin/bash
@@ -376,7 +376,7 @@ v2045:bib:2045:100:Allan Ortiz:/home/v2045:/bin/bash
 v2046:bib:2046:100:Mariah Alicea:/home/v2046:/bin/bash
 v2047:bib:2047:100:Shawnese Kervin:/home/v2047:/bin/bash
 v2048:bib:2048:100:Bre Rivera:/home/v2048:/bin/bash
-v2049:bib:2049:100:Hugh Lin:/home/v2049:/bin/bash
+v2049:bib:2049:100:He Nguyen:/home/v2049:/bin/bash
 v2050:cat:2050:100:David Amigon:/home/v2050:/bin/bash
 v2051:cat:2051:100:Aryana Rosario:/home/v2051:/bin/bash
 v2052:cat:2052:100:Alex Oliveras:/home/v2052:/bin/bash
