@@ -330,6 +330,9 @@ v1961:cat:1961:100:Arieanaa Perez:/home/v1961:/bin/bash
 v1962:cat:1962:100:Jack Peipher:/home/v1962:/bin/bash
 v1963:cat:1963:100:Sharon Quiroz:/home/v1963:/bin/bash
 v1964:cat:1964:100:Kayleis Melendez:/home/v1964:/bin/bash
+v1965:cat:1965:100:Yargeli Morel:/home/v1965:/bin/bash
+v1966:cat:1966:100:Lieinix Castaneda:/home/v1966:/bin/bash
+v1967:cat:1967:100:Jovon Williams:/home/v1967:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
 v2003:ace:2003:100:Eliyah Clark:/home/v2003:/bin/bash
