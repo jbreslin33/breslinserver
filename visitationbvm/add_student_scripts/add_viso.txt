@@ -328,6 +328,8 @@ v1959:cat:1959:100:Kenny Peipher:/home/v1959:/bin/bash
 v1960:cat:1960:100:Cameron Giscombe:/home/v1960:/bin/bash
 v1961:cat:1961:100:Arieanaa Perez:/home/v1961:/bin/bash
 v1962:cat:1962:100:Jack Peipher:/home/v1962:/bin/bash
+v1963:cat:1963:100:Sharon Quiroz:/home/v1963:/bin/bash
+v1964:cat:1964:100:Kayleis Melendez:/home/v1964:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
 v2003:ace:2003:100:Eliyah Clark:/home/v2003:/bin/bash
