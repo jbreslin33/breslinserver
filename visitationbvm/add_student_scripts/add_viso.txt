@@ -265,7 +265,7 @@ v1858:bat:1858:100:Kayla Barret:/home/v1858:/bin/bash
 v1859:bat:1859:100:Samir Davis:/home/v1859:/bin/bash
 v1860:bat:1860:100:Anthony Vu:/home/v1860:/bin/bash
 v1861:bat:1861:100:Catherine Amonte:/home/v1861:/bin/bash
-v1862:bat:1862:100:New Student:/home/v1862:/bin/bash
+v1862:bat:1862:100:Jeniyah Torres:/home/v1862:/bin/bash
 v1901:ahh:1901:100:Angelis Bernardy:/home/v1901:/bin/bash
 v1902:abs:1902:100:Julio Bristol:/home/v1902:/bin/bash
 v1903:ace:1903:100:Rafael Buestan:/home/v1903:/bin/bash
