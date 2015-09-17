@@ -26,8 +26,8 @@ void forward()
      digitalWrite(pinI4,HIGH);//turn DC Motor B move clockwise
      digitalWrite(pinI3,LOW);
      
-     digitalWrite(pinI2,LOW);//turn DC Motor A move anticlockwise
-     digitalWrite(pinI1,HIGH);
+     digitalWrite(pinI2,HIGH);//turn DC Motor A move anticlockwise
+     digitalWrite(pinI1,LOW);
 }
 void backward()//
 {
