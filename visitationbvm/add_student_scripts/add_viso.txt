@@ -1,7 +1,7 @@
 k:k:1200:50:kinder garten:/home/v1200:/bin/bash
 jroache:Password1:1202:50:Jim Roache:/home/v1202:/bin/bash
 mduffy:Password1:1204:50:Sister Margaret:/home/v1204:/bin/bash
-tcox:Password1:1206:50:Trisha Cox:/home/v1206:/bin/bash
+tcox:Password1:1206:50:Tricia Cox:/home/v1206:/bin/bash
 thayburn:Password1:1207:50:Sister Terri:/home/v1207:/bin/bash
 mcorcoran:Password1:1208:50:Maryann Corcoran:/home/v1208:/bin/bash
 scorcoran:Password1:1209:50:Sean Corcoran:/home/v1209:/bin/bash
@@ -41,6 +41,7 @@ sdonahue:Password1:1243:50:Susan Donahue:/home/v1243:/bin/bash
 tmccluskey:Password1:1244:50:Tom McCluskey:/home/v1244:/bin/bash
 tobrien:Password1:1245:50:Tom OBrien:/home/v1245:/bin/bash
 vhasan:Password1:1246:50:Valerie Hasan:/home/v1246:/bin/bash
+cmurphy:Password1:1247:50:Carolyn Murphy:/home/v1247:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
