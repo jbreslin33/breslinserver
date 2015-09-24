@@ -1,88 +1,95 @@
+//right
+int rightWheelReverse=8;
+int rightWheelDrive=11; 
+int rightWheelSpeedPin=9;
+int rightWheelSpeed = 250; 
 
-int pinI1=8;//define I1 interface
-int pinI2=11;//define I2 interface 
-int speedpinA=9;//enable motor A
-int pinI3=12;//define I3 interface 
-int pinI4=13;//define I4 interface 
-int speedpinB=10;//enable motor B
-int speed =127;//d
-int speedA = 250; //back left wheel
-int speedB = 250; //back right wheel
+//left
+int leftWheelReverse=12; 
+int leftWheelDrive=13;
+int leftWheelSpeedPin=10;
+int leftWheelSpeed = 250; 
+
+int speed =127;
 int counter = 0;
+
 void setup()
 {
-  pinMode(pinI1,OUTPUT);
-  pinMode(pinI2,OUTPUT);
-  pinMode(speedpinA,OUTPUT);
-  pinMode(pinI3,OUTPUT);
-  pinMode(pinI4,OUTPUT);
-  pinMode(speedpinB,OUTPUT);
+  pinMode(rightWheelReverse,OUTPUT);
+  pinMode(rightWheelDrive,OUTPUT);
+  pinMode(rightWheelSpeedPin,OUTPUT);
+  pinMode(leftWheelReverse,OUTPUT);
+  pinMode(leftWheelDrive,OUTPUT);
+  pinMode(leftWheelSpeedPin,OUTPUT);
 }
  
 void forward()
 {
-     	analogWrite(speedpinA,speedA);//input a simulation value to set the speed
-     	analogWrite(speedpinB,speedB);
+     	analogWrite(rightWheelSpeedPin,rightWheelSpeed);//input a simulation value to set the speed
+     	analogWrite(leftWheelSpeedPin,leftWheelSpeed);
      
-     	digitalWrite(pinI4,HIGH);//turn DC Motor B move clockwise
-     	digitalWrite(pinI3,LOW);
+    	//left wheel 
+	digitalWrite(leftWheelDrive,HIGH);
+     	digitalWrite(leftWheelReverse,LOW);
      
-     	digitalWrite(pinI2,HIGH);//turn DC Motor A move anticlockwise
-	digitalWrite(pinI1,LOW);
+	//right wheel	
+     	digitalWrite(rightWheelDrive,HIGH);
+	digitalWrite(rightWheelReverse,LOW);
 }
 
 void backward()
 {
-     analogWrite(speedpinA,speedA);//input a simulation value to set the speed
-     analogWrite(speedpinB,speedB);
+     	analogWrite(rightWheelSpeedPin,rightWheelSpeed);//input a simulation value to set the speed
+     	analogWrite(leftWheelSpeedPin,leftWheelSpeed);
+    
+	//right wheel 
+     	digitalWrite(leftWheelDrive,LOW);
+     	digitalWrite(leftWheelReverse,HIGH);
      
-     digitalWrite(pinI4,LOW);//turn DC Motor B move anticlockwise
-     digitalWrite(pinI3,HIGH);
-     
-     digitalWrite(pinI2,LOW);//turn DC Motor A move clockwise
-     digitalWrite(pinI1,HIGH);
+     	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move clockwise
+     	digitalWrite(rightWheelReverse,HIGH);
 }
 
 
 
 
 
-void left()//
+void left()
 {
-     analogWrite(speedpinA,speed);//input a simulation value to set the speed
-     analogWrite(speedpinB,speed);
-     digitalWrite(pinI4,HIGH);//turn DC Motor B move clockwise
-     digitalWrite(pinI3,LOW);
-     digitalWrite(pinI2,HIGH);//turn DC Motor A move clockwise
-     digitalWrite(pinI1,LOW);
+     analogWrite(rightWheelSpeedPin,speed);//input a simulation value to set the speed
+     analogWrite(leftWheelSpeedPin,speed);
+     digitalWrite(leftWheelDrive,HIGH);//turn DC Motor B move clockwise
+     digitalWrite(leftWheelReverse,LOW);
+     digitalWrite(rightWheelDrive,HIGH);//turn DC Motor A move clockwise
+     digitalWrite(rightWheelReverse,LOW);
 }
-void right()//
+void right()
 {
-     analogWrite(speedpinA,speed);//input a simulation value to set the speed
-     analogWrite(speedpinB,speed);
-     digitalWrite(pinI4,LOW);//turn DC Motor B move anticlockwise
-     digitalWrite(pinI3,HIGH);
-     digitalWrite(pinI2,LOW);//turn DC Motor A move clockwise
-     digitalWrite(pinI1,HIGH);
+     analogWrite(rightWheelSpeedPin,speed);//input a simulation value to set the speed
+     analogWrite(leftWheelSpeedPin,speed);
+     digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move anticlockwise
+     digitalWrite(leftWheelReverse,HIGH);
+     digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move clockwise
+     digitalWrite(rightWheelReverse,HIGH);
 }
 /*
 void stop()
 {
-     digitalWrite(speedpinA,LOW);// Unenble the pin, to stop the motor. this should be done to avid damaging the motor. 
-     digitalWrite(speedpinB,LOW);
+     digitalWrite(rightWheelSpeedPin,LOW);// Unenble the pin, to stop the motor. this should be done to avid damaging the motor. 
+     digitalWrite(leftWheelSpeedPin,LOW);
      delay(1000);
 }
 */
 void stop()
 {
-     	analogWrite(speedpinA,0);//input a simulation value to set the speed
-     	analogWrite(speedpinB,0);
+     	analogWrite(rightWheelSpeedPin,0);//input a simulation value to set the speed
+     	analogWrite(leftWheelSpeedPin,0);
      
-     	digitalWrite(pinI4,LOW);//turn DC Motor B move clockwise
-     	digitalWrite(pinI3,LOW);
+     	digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move clockwise
+     	digitalWrite(leftWheelReverse,LOW);
      
-     	digitalWrite(pinI2,LOW);//turn DC Motor A move anticlockwise
-	digitalWrite(pinI1,LOW);
+     	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move anticlockwise
+	digitalWrite(rightWheelReverse,LOW);
 	counter++;
 }
 
@@ -97,6 +104,11 @@ void loop()
 	{
  		backward(); 
    		delay(1000);
+	}
+	else if (counter >= 20 && counter < 30)
+	{
+		left();
+		delay(1000);
 	}
 	else if (counter > 90) 
 	{
