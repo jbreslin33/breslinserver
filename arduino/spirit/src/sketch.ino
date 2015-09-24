@@ -29,12 +29,9 @@ void forward()
      
      	digitalWrite(pinI2,HIGH);//turn DC Motor A move anticlockwise
 	digitalWrite(pinI1,LOW);
-	if (counter < 100)
-	{
-		counter++;
-	}
 }
-void backward()//
+
+void backward()
 {
      analogWrite(speedpinA,speedA);//input a simulation value to set the speed
      analogWrite(speedpinB,speedB);
@@ -91,16 +88,26 @@ void stop()
 
 void loop()
 {
-if (counter < 10)
-{
- 	forward(); 
-   	delay(1000);
-}
-else
-{
-	stop();
-   	delay(1000);
-}
+	if (counter < 10)
+	{
+ 		forward(); 
+   		delay(1000);
+	}
+	else if (counter >= 10 && counter < 20)
+	{
+ 		backward(); 
+   		delay(1000);
+	}
+	else if (counter > 90) 
+	{
+		stop();
+   		delay(1000);
+	}
+
+	if (counter < 100)
+	{
+		counter++;
+	}
 
 //stop();
 }
