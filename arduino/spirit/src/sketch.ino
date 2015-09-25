@@ -9,11 +9,13 @@ int leftWheelDrive=13;
 int leftWheelSpeed=10;
 
 //speed
-int speed =250;
+int speed = 250;
+int mTurnSpeed = 125;
 
 //counters
 int counter = 0;
 int mDelay = 100;
+
 
 void setup()
 {
@@ -61,8 +63,9 @@ void reverse()
 void leftDrive()
 {
 	//speed
-    	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
+	speed = 125;
+    	analogWrite(rightWheelSpeed,mTurnSpeed);
+     	analogWrite(leftWheelSpeed,mTurnSpeed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
@@ -75,8 +78,8 @@ void leftDrive()
 void leftReverse()
 {
 	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
+     	analogWrite(rightWheelSpeed,mTurnSpeed);
+     	analogWrite(leftWheelSpeed,mTurnSpeed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
@@ -90,8 +93,8 @@ void leftReverse()
 void rightDrive()
 {
 	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
+     	analogWrite(rightWheelSpeed,mTurnSpeed);
+     	analogWrite(leftWheelSpeed,mTurnSpeed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,HIGH);
@@ -105,8 +108,8 @@ void rightDrive()
 void rightReverse()
 {
 	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
+     	analogWrite(rightWheelSpeed,mTurnSpeed);
+     	analogWrite(leftWheelSpeed,mTurnSpeed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
