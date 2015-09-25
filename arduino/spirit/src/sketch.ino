@@ -1,32 +1,38 @@
 //right
 int rightWheelReverse=8;
 int rightWheelDrive=11; 
-int rightWheelSpeedPin=9;
-int rightWheelSpeed = 250; 
+int rightWheelSpeed=9;
 
 //left
 int leftWheelReverse=12; 
 int leftWheelDrive=13;
-int leftWheelSpeedPin=10;
-int leftWheelSpeed = 250; 
+int leftWheelSpeed=10;
 
-int speed =127;
+//speed
+int speed =250;
+
+//counters
 int counter = 0;
+int mDelay = 100;
 
 void setup()
 {
-  pinMode(rightWheelReverse,OUTPUT);
-  pinMode(rightWheelDrive,OUTPUT);
-  pinMode(rightWheelSpeedPin,OUTPUT);
-  pinMode(leftWheelReverse,OUTPUT);
-  pinMode(leftWheelDrive,OUTPUT);
-  pinMode(leftWheelSpeedPin,OUTPUT);
+	//right
+	pinMode(rightWheelReverse,OUTPUT);
+  	pinMode(rightWheelDrive,OUTPUT);
+  	pinMode(rightWheelSpeed,OUTPUT);
+
+	//left
+  	pinMode(leftWheelReverse,OUTPUT);
+  	pinMode(leftWheelDrive,OUTPUT);
+  	pinMode(leftWheelSpeed,OUTPUT);
 }
  
-void forward()
+void drive()
 {
-     	analogWrite(rightWheelSpeedPin,rightWheelSpeed);//input a simulation value to set the speed
-     	analogWrite(leftWheelSpeedPin,leftWheelSpeed);
+	//speed
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
      
     	//left wheel 
 	digitalWrite(leftWheelDrive,HIGH);
@@ -37,89 +43,137 @@ void forward()
 	digitalWrite(rightWheelReverse,LOW);
 }
 
-void backward()
+void reverse()
 {
-     	analogWrite(rightWheelSpeedPin,rightWheelSpeed);//input a simulation value to set the speed
-     	analogWrite(leftWheelSpeedPin,leftWheelSpeed);
+	//speed
+     	analogWrite(rightWheelSpeed,speed);//input a simulation value to set the speed
+     	analogWrite(leftWheelSpeed,speed);
     
-	//right wheel 
+	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
      	digitalWrite(leftWheelReverse,HIGH);
-     
-     	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move clockwise
+
+        //right wheel 
+     	digitalWrite(rightWheelDrive,LOW);
      	digitalWrite(rightWheelReverse,HIGH);
 }
 
-
-
-
-
-void left()
+void leftDrive()
 {
-     analogWrite(rightWheelSpeedPin,speed);//input a simulation value to set the speed
-     analogWrite(leftWheelSpeedPin,speed);
-     digitalWrite(leftWheelDrive,HIGH);//turn DC Motor B move clockwise
-     digitalWrite(leftWheelReverse,LOW);
-     digitalWrite(rightWheelDrive,HIGH);//turn DC Motor A move clockwise
-     digitalWrite(rightWheelReverse,LOW);
+	//speed
+    	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
+
+     	//left wheel
+     	digitalWrite(leftWheelDrive,LOW);
+     	digitalWrite(leftWheelReverse,LOW);
+
+     	//right wheel
+     	digitalWrite(rightWheelDrive,HIGH);
+     	digitalWrite(rightWheelReverse,LOW);
 }
-void right()
+void leftReverse()
 {
-     analogWrite(rightWheelSpeedPin,speed);//input a simulation value to set the speed
-     analogWrite(leftWheelSpeedPin,speed);
-     digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move anticlockwise
-     digitalWrite(leftWheelReverse,HIGH);
-     digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move clockwise
-     digitalWrite(rightWheelReverse,HIGH);
+	//speed
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
+
+     	//left wheel
+     	digitalWrite(leftWheelDrive,LOW);
+     	digitalWrite(leftWheelReverse,LOW);
+
+     	//right wheel
+     	digitalWrite(rightWheelDrive,LOW);
+     	digitalWrite(rightWheelReverse,HIGH);
 }
-/*
-void stop()
+
+void rightDrive()
 {
-     digitalWrite(rightWheelSpeedPin,LOW);// Unenble the pin, to stop the motor. this should be done to avid damaging the motor. 
-     digitalWrite(leftWheelSpeedPin,LOW);
-     delay(1000);
+	//speed
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
+
+     	//left wheel
+     	digitalWrite(leftWheelDrive,HIGH);
+     	digitalWrite(leftWheelReverse,LOW);
+
+     	//right wheel
+     	digitalWrite(rightWheelDrive,LOW);
+     	digitalWrite(rightWheelReverse,LOW);
 }
-*/
-void stop()
+
+void rightReverse()
 {
-     	analogWrite(rightWheelSpeedPin,0);//input a simulation value to set the speed
-     	analogWrite(leftWheelSpeedPin,0);
+	//speed
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
+
+     	//left wheel
+     	digitalWrite(leftWheelDrive,LOW);
+     	digitalWrite(leftWheelReverse,HIGH);
      
+	//right wheel
+	digitalWrite(rightWheelDrive,LOW);
+     	digitalWrite(rightWheelReverse,LOW);
+}
+
+void stop()
+{
+	//speed
+     	analogWrite(rightWheelSpeed,0);
+     	analogWrite(leftWheelSpeed,0);
+    
+	//left 
      	digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move clockwise
      	digitalWrite(leftWheelReverse,LOW);
-     
+    
+	//right	 
      	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move anticlockwise
 	digitalWrite(rightWheelReverse,LOW);
-	counter++;
 }
 
 void loop()
 {
-	if (counter < 10)
+	if (counter < 120)
 	{
- 		forward(); 
-   		delay(1000);
+ 		stop(); 
+   		delay(mDelay);
 	}
-	else if (counter >= 10 && counter < 20)
+	if (counter >= 120 && counter < 130)
 	{
- 		backward(); 
-   		delay(1000);
+ 		drive(); 
+   		delay(mDelay);
 	}
-	else if (counter >= 20 && counter < 30)
+	else if (counter >= 130 && counter < 140)
 	{
-		left();
-		delay(1000);
+ 		reverse(); 
+   		delay(mDelay);
 	}
-	else if (counter > 90) 
+	else if (counter >= 140 && counter < 143)
+	{
+		leftDrive();
+		delay(mDelay);
+	}
+        else if (counter >= 143 && counter < 146)
+        {
+                leftReverse();
+		delay(mDelay);
+	}
+        else if (counter >= 146 && counter < 149)
+        {
+                rightDrive();
+		delay(mDelay);
+	}
+        else if (counter >= 149 && counter < 152)
+        {
+                rightReverse();
+		delay(mDelay);
+	}
+        else if (counter > 151)
 	{
 		stop();
-   		delay(1000);
+   		delay(mDelay);
+		counter = 0;
 	}
-
-	if (counter < 100)
-	{
-		counter++;
-	}
-
-//stop();
+	counter++;
 }
