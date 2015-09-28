@@ -10,8 +10,6 @@ int leftWheelSpeed=10;
 
 //counters
 int counter = 0;
-int mDelay = 100;
-
 
 void setup()
 {
@@ -25,7 +23,6 @@ void setup()
   	pinMode(leftWheelDrive,OUTPUT);
   	pinMode(leftWheelSpeed,OUTPUT);
 }
-
 void wheel(int left, int right,int delayTime)
 {
 	//speed
@@ -50,7 +47,6 @@ void wheel(int left, int right,int delayTime)
 		digitalWrite(leftWheelDrive,HIGH);
      		digitalWrite(leftWheelReverse,LOW);
 	}
-	
 	if (right < 0)
 	{
 		int speed = right * -1; 
@@ -75,15 +71,6 @@ void wheel(int left, int right,int delayTime)
 	
 	delay(delayTime);
 }
-
-
-	
-	delay(delayTime);
-}
-
-
-
-
 void loop()
 {
 	if (counter < 120)
