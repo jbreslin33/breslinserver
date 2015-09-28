@@ -76,124 +76,13 @@ void wheel(int left, int right,int delayTime)
 	delay(delayTime);
 }
 
-void drive(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
-     
-    	//left wheel 
-	digitalWrite(leftWheelDrive,HIGH);
-     	digitalWrite(leftWheelReverse,LOW);
-     
-	//right wheel	
-     	digitalWrite(rightWheelDrive,HIGH);
-	digitalWrite(rightWheelReverse,LOW);
 
-	delay(delayTime);
-}
-
-void reverse(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);//input a simulation value to set the speed
-     	analogWrite(leftWheelSpeed,speed);
-    
-	//left wheel
-     	digitalWrite(leftWheelDrive,LOW);
-     	digitalWrite(leftWheelReverse,HIGH);
-
-        //right wheel 
-     	digitalWrite(rightWheelDrive,LOW);
-     	digitalWrite(rightWheelReverse,HIGH);
 	
 	delay(delayTime);
 }
 
-void leftDrive(int delayTime, int speed)
-{
-	//speed
-	speed = 125;
-    	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
 
-     	//left wheel
-     	digitalWrite(leftWheelDrive,LOW);
-     	digitalWrite(leftWheelReverse,LOW);
 
-     	//right wheel
-     	digitalWrite(rightWheelDrive,HIGH);
-     	digitalWrite(rightWheelReverse,LOW);
-
-	delay(delayTime);
-}
-void leftReverse(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
-
-     	//left wheel
-     	digitalWrite(leftWheelDrive,LOW);
-     	digitalWrite(leftWheelReverse,LOW);
-
-     	//right wheel
-     	digitalWrite(rightWheelDrive,LOW);
-     	digitalWrite(rightWheelReverse,HIGH);
-	
-	delay(delayTime);
-}
-
-void rightDrive(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
-
-     	//left wheel
-     	digitalWrite(leftWheelDrive,HIGH);
-     	digitalWrite(leftWheelReverse,LOW);
-
-     	//right wheel
-     	digitalWrite(rightWheelDrive,LOW);
-     	digitalWrite(rightWheelReverse,LOW);
-	
-	delay(delayTime);
-}
-
-void rightReverse(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
-
-     	//left wheel
-     	digitalWrite(leftWheelDrive,LOW);
-     	digitalWrite(leftWheelReverse,HIGH);
-     
-	//right wheel
-	digitalWrite(rightWheelDrive,LOW);
-     	digitalWrite(rightWheelReverse,LOW);
-	
-	delay(delayTime);
-}
-
-void stop(int delayTime, int speed)
-{
-	//speed
-     	analogWrite(rightWheelSpeed,speed);
-     	analogWrite(leftWheelSpeed,speed);
-    
-	//left 
-     	digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move clockwise
-     	digitalWrite(leftWheelReverse,LOW);
-    
-	//right	 
-     	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move anticlockwise
-	digitalWrite(rightWheelReverse,LOW);
-
-	delay(delayTime);
-}
 
 void loop()
 {
