@@ -208,27 +208,33 @@ void loop()
 	}
 	else if (counter >= 130 && counter < 140)
 	{
- 		reverse(100,250); 
+ 	       //reverse(100,250); 
+		wheel(-250,-250,100);
 	}
 	else if (counter >= 140 && counter < 145)
 	{
-		leftDrive(100,125);
+	       //leftDrive(100,125);
+		wheel(0,125,100);
 	}
         else if (counter >= 145 && counter < 150)
         {
-                leftReverse(100,125);
+               //leftReverse(100,125);
+		wheel(0,-125,100);		
 	}
         else if (counter >= 155 && counter < 160)
         {
-                rightDrive(100,125);
+               // rightDrive(100,125);
+		wheel(125,0,100);		
 	}
         else if (counter >= 165 && counter < 170)
         {
-                rightReverse(100,125);
+               //rightReverse(100,125);
+		wheel(-125,0,100);	
 	}
         else if (counter > 170)
 	{
 		stop(100,0);
+	        wheel(0,0,100);	
 		counter = 0;
 	}
 	counter++;
