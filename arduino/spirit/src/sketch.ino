@@ -8,10 +8,6 @@ int leftWheelReverse=12;
 int leftWheelDrive=13;
 int leftWheelSpeed=10;
 
-//speed
-int speed = 250;
-int mTurnSpeed = 125;
-
 //counters
 int counter = 0;
 int mDelay = 100;
@@ -30,7 +26,7 @@ void setup()
   	pinMode(leftWheelSpeed,OUTPUT);
 }
  
-void drive()
+void drive(int delayTime, int speed)
 {
 	//speed
      	analogWrite(rightWheelSpeed,speed);
@@ -43,9 +39,11 @@ void drive()
 	//right wheel	
      	digitalWrite(rightWheelDrive,HIGH);
 	digitalWrite(rightWheelReverse,LOW);
+
+	delay(delayTime);
 }
 
-void reverse()
+void reverse(int delayTime, int speed)
 {
 	//speed
      	analogWrite(rightWheelSpeed,speed);//input a simulation value to set the speed
@@ -58,14 +56,16 @@ void reverse()
         //right wheel 
      	digitalWrite(rightWheelDrive,LOW);
      	digitalWrite(rightWheelReverse,HIGH);
+	
+	delay(delayTime);
 }
 
-void leftDrive()
+void leftDrive(int delayTime, int speed)
 {
 	//speed
 	speed = 125;
-    	analogWrite(rightWheelSpeed,mTurnSpeed);
-     	analogWrite(leftWheelSpeed,mTurnSpeed);
+    	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
@@ -74,12 +74,14 @@ void leftDrive()
      	//right wheel
      	digitalWrite(rightWheelDrive,HIGH);
      	digitalWrite(rightWheelReverse,LOW);
+
+	delay(delayTime);
 }
-void leftReverse()
+void leftReverse(int delayTime, int speed)
 {
 	//speed
-     	analogWrite(rightWheelSpeed,mTurnSpeed);
-     	analogWrite(leftWheelSpeed,mTurnSpeed);
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
@@ -88,13 +90,15 @@ void leftReverse()
      	//right wheel
      	digitalWrite(rightWheelDrive,LOW);
      	digitalWrite(rightWheelReverse,HIGH);
+	
+	delay(delayTime);
 }
 
-void rightDrive()
+void rightDrive(int delayTime, int speed)
 {
 	//speed
-     	analogWrite(rightWheelSpeed,mTurnSpeed);
-     	analogWrite(leftWheelSpeed,mTurnSpeed);
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,HIGH);
@@ -103,13 +107,15 @@ void rightDrive()
      	//right wheel
      	digitalWrite(rightWheelDrive,LOW);
      	digitalWrite(rightWheelReverse,LOW);
+	
+	delay(delayTime);
 }
 
-void rightReverse()
+void rightReverse(int delayTime, int speed)
 {
 	//speed
-     	analogWrite(rightWheelSpeed,mTurnSpeed);
-     	analogWrite(leftWheelSpeed,mTurnSpeed);
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
 
      	//left wheel
      	digitalWrite(leftWheelDrive,LOW);
@@ -118,13 +124,15 @@ void rightReverse()
 	//right wheel
 	digitalWrite(rightWheelDrive,LOW);
      	digitalWrite(rightWheelReverse,LOW);
+	
+	delay(delayTime);
 }
 
-void stop()
+void stop(int delayTime, int speed)
 {
 	//speed
-     	analogWrite(rightWheelSpeed,0);
-     	analogWrite(leftWheelSpeed,0);
+     	analogWrite(rightWheelSpeed,speed);
+     	analogWrite(leftWheelSpeed,speed);
     
 	//left 
      	digitalWrite(leftWheelDrive,LOW);//turn DC Motor B move clockwise
@@ -133,49 +141,43 @@ void stop()
 	//right	 
      	digitalWrite(rightWheelDrive,LOW);//turn DC Motor A move anticlockwise
 	digitalWrite(rightWheelReverse,LOW);
+
+	delay(delayTime);
 }
 
 void loop()
 {
 	if (counter < 120)
 	{
- 		stop(); 
-   		delay(mDelay);
+ 		stop(100,0); 
 	}
 	if (counter >= 120 && counter < 130)
 	{
- 		drive(); 
-   		delay(mDelay);
+ 		drive(100,250); 
 	}
 	else if (counter >= 130 && counter < 140)
 	{
- 		reverse(); 
-   		delay(mDelay);
+ 		reverse(100,250); 
 	}
-	else if (counter >= 140 && counter < 143)
+	else if (counter >= 140 && counter < 145)
 	{
-		leftDrive();
-		delay(mDelay);
+		leftDrive(100,125);
 	}
-        else if (counter >= 143 && counter < 146)
+        else if (counter >= 145 && counter < 150)
         {
-                leftReverse();
-		delay(mDelay);
+                leftReverse(100,125);
 	}
-        else if (counter >= 146 && counter < 149)
+        else if (counter >= 155 && counter < 160)
         {
-                rightDrive();
-		delay(mDelay);
+                rightDrive(100,125);
 	}
-        else if (counter >= 149 && counter < 152)
+        else if (counter >= 165 && counter < 170)
         {
-                rightReverse();
-		delay(mDelay);
+                rightReverse(100,125);
 	}
-        else if (counter > 151)
+        else if (counter > 170)
 	{
-		stop();
-   		delay(mDelay);
+		stop(100,0);
 		counter = 0;
 	}
 	counter++;
