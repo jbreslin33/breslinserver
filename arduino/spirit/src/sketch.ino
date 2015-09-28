@@ -25,7 +25,57 @@ void setup()
   	pinMode(leftWheelDrive,OUTPUT);
   	pinMode(leftWheelSpeed,OUTPUT);
 }
- 
+
+void wheel(int left, int right,int delayTime)
+{
+	//speed
+	if (left < 0)
+	{
+		int speed = left * -1; 
+     		analogWrite(leftWheelSpeed,speed);
+		digitalWrite(leftWheelDrive,LOW);
+     		digitalWrite(leftWheelReverse,HIGH);
+	}
+	if (left == 0)
+	{
+		int speed = 0; 
+     		analogWrite(leftWheelSpeed,speed);
+		digitalWrite(leftWheelDrive,LOW);
+     		digitalWrite(leftWheelReverse,LOW);
+	}
+	if (left > 0)
+	{
+		int speed = left; 
+     		analogWrite(leftWheelSpeed,speed);
+		digitalWrite(leftWheelDrive,HIGH);
+     		digitalWrite(leftWheelReverse,LOW);
+	}
+	
+	if (right < 0)
+	{
+		int speed = right * -1; 
+     		analogWrite(rightWheelSpeed,speed);
+		digitalWrite(rightWheelDrive,LOW);
+     		digitalWrite(rightWheelReverse,HIGH);
+	}
+	if (right == 0)
+	{
+		int speed = 0; 
+     		analogWrite(rightWheelSpeed,speed);
+		digitalWrite(rightWheelDrive,LOW);
+     		digitalWrite(rightWheelReverse,LOW);
+	}
+	if (right > 0)
+	{
+		int speed = right; 
+     		analogWrite(rightWheelSpeed,speed);
+		digitalWrite(rightWheelDrive,HIGH);
+     		digitalWrite(rightWheelReverse,LOW);
+	}
+	
+	delay(delayTime);
+}
+
 void drive(int delayTime, int speed)
 {
 	//speed
@@ -153,7 +203,8 @@ void loop()
 	}
 	if (counter >= 120 && counter < 130)
 	{
- 		drive(100,250); 
+ 		//drive(100,250); 
+		wheel(250,250,100);
 	}
 	else if (counter >= 130 && counter < 140)
 	{
