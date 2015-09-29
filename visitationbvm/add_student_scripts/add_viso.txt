@@ -563,7 +563,7 @@ v2276:cat:2276:100:Alexander Cardenas:/home/v2276:/bin/bash
 v2277:cat:2277:100:Camani Burk:/home/v2277:/bin/bash
 v2278:cat:2278:100:Elijah Rios:/home/v2278:/bin/bash
 v2279:cat:2279:100:Danna Vele:/home/v2279:/bin/bash
-v2280:cat:2280:100:New Student:/home/v2280:/bin/bash
+v2280:cat:2280:100:Brian Batansas:/home/v2280:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
