@@ -336,6 +336,7 @@ v1965:cat:1965:100:Yargeli Morel:/home/v1965:/bin/bash
 v1966:cat:1966:100:Lieinix Castaneda:/home/v1966:/bin/bash
 v1967:cat:1967:100:Jovon Williams:/home/v1967:/bin/bash
 v1968:cat:1968:100:Kimora Reeves:/home/v1968:/bin/bash
+v1969:cat:1969:100:Iymirr Alexander:/home/v1969:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
 v2003:ace:2003:100:Eliyah Clark:/home/v2003:/bin/bash
