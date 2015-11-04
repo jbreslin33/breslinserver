@@ -42,6 +42,7 @@ tmccluskey:Password1:1244:50:Tom McCluskey:/home/v1244:/bin/bash
 tobrien:Password1:1245:50:Tom OBrien:/home/v1245:/bin/bash
 vhasan:Password1:1246:50:Valerie Hasan:/home/v1246:/bin/bash
 cmurphy:Password1:1247:50:Carolyn Murphy:/home/v1247:/bin/bash
+ecoleman:Password1:1248:50:Edward Coleman:/home/v1248:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
