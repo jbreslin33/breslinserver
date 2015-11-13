@@ -14,7 +14,7 @@
 192.168.2.95   labteacher
 
 #vfiles linux mnt file server
-192.168.2.109    vfiles
+192.168.2.157    vfiles
 
 #row1
 192.168.2.104 lab01
