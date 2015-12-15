@@ -40,17 +40,17 @@ sudo apt-get -y install tuxpaint
 sudo apt-get -y install vlc
 sudo apt-get -y install pinta
 sudo apt-get -y install chromium-browser
+sudo apt-get -y install opera
 sudo apt-get -y install epoptes-client
 sudo apt-get -y remove minetest
 sudo apt-get -y install minetest
 sudo apt-get -y install triplea 
+sudo apt-get -y install chessx
 sudo apt-get -y install remmina
 sudo apt-get -y install rdesktop
 sudo apt-get -y install wine 
 
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
-
-echo ./setup_minetest.sh
 
 echo complete you can now reboot and login 
