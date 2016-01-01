@@ -84,7 +84,7 @@
 #EXTINF
 /amusic/djs/jim/Urban/Urban_1/Ciara - 1,2 Step.mp3
 #EXTINF
-/amusic/ethnic/polka/RAP,R&B,HIP-HOP/OLD SCHOOL RAP 1/Sugar Hill Gang - APACHE.mp3
+/amusic/genres/urban/RAP,R&B,HIP-HOP/OLD SCHOOL RAP 1/Sugar Hill Gang - APACHE.mp3
 #EXTINF
 /amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd2/02 - The Four Tops - I Can´t Help Myself (Sugar Pie, Honey Bunch).mp3
 #EXTINF
@@ -104,9 +104,7 @@
 #EXTINF
 /amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/017-rihanna-dont_stop_the_music.mp3
 #EXTINF
-/amusic/genres/dance/Club Classics/Country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3
-#EXTINF
-/amusic/genres/rock/ROCK/Bob Seger/Greatest Hits/Bob Seger - Old Time Rock & Roll.mp3
+/amusic/genres/country/BIG and RICH/Horse Of A Different Color/09 Save A Horse (Ride A Cowboy).mp3
 #EXTINF
 /amusic/fun/2-25 You Can't Hurry Love.mp3
 #EXTINF
@@ -124,8 +122,6 @@
 #EXTINF
 /amusic/versatile/random/Pointer, Bonnie - Heaven Must Have Sent You.mp3
 #EXTINF
-/amusic/genres/rock/ROCK/Michael Jackson/Thriller/P.Y.T. (Pretty Young Thing).mp3
-#EXTINF
 /amusic/billboard/year/2000_Billboard_Top_Usa_Singles/13-Destinys_Child-Jumpin_Jumpin.mp3
 #EXTINF
 /amusic/billboard/latest/2014-08-04/15 Enrique Iglesias - Bailando (feat. Descemer Bueno & Gente de Zona).mp3
@@ -137,3 +133,5 @@
 /amusic/billboard/year/2001_Billboard_Top_Usa_Singles/03-Janet_Jackson-All_For_You.mp3
 #EXTINF
 /amusic/billboard/year/1984_BillBoard_Top_USA_Singles/078-Michael_Jackson-Thriller.mp3
+#EXTINF
+/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/082-Amber-This_Is_Your_Night.mp3
