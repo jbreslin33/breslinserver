@@ -3,8 +3,8 @@
 
 #epoptes admin
 192.168.2.95   server
-192.168.2.95   mathcore.org
-192.168.2.95   abcandyou.com
+#192.168.2.95   mathcore.org
+#192.168.2.95   abcandyou.com
 
 #webserver
 192.168.2.251   vweb1 
