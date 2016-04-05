@@ -405,6 +405,7 @@ v2062:bat:2062:100:Malysia Huntley:/home/v2062:/bin/bash
 v2063:bat:2063:100:Jayden Rodriguez:/home/v2063:/bin/bash
 v2064:bat:2064:100:Josiah Williams:/home/v2064:/bin/bash
 v2065:cat:2065:100:Yargeli Morel:/home/v2065:/bin/bash
+v2066:cat:2066:100:Natalie Moran:/home/v2066:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
