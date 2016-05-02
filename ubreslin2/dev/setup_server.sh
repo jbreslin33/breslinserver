@@ -24,6 +24,7 @@ echo sudo apt-get -y install graphviz
 echo sudo apt-get -y install dia 
 echo sudo apt-get -y install chromium-browser
 echo sudo apt-get -y install mplayer
+sudo apt-get -y install php-mbstring
 
 echo remote
 echo sudo apt-get -y install remmina 
