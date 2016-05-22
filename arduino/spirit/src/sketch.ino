@@ -75,7 +75,7 @@ void loop()
 {
 	if (counter < 120)
 	{
- 		stop(100,0); 
+ 		//stop(100,0); 
 	}
 	if (counter >= 120 && counter < 130)
 	{
@@ -109,7 +109,7 @@ void loop()
 	}
         else if (counter > 170)
 	{
-		stop(100,0);
+		//stop(100,0);
 	        wheel(0,0,100);	
 		counter = 0;
 	}
