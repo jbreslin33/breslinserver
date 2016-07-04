@@ -1,9 +1,9 @@
-Debug [Main]: Mixxx "2.0.0" "(git 1.12 r5772; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=0 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
+Debug [Main]: Mixxx "2.0.0-release" "(git 1.12 r5796; built on: Jun  4 2016 @ 03:16:21; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=1 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
 Debug [Main]: Library versions: 
 Debug [Main]: Qt: 4.8.7 
 Debug [Main]: libshout: 2.3.1 
 Debug [Main]: RubberBand: 1.8.1 
-Debug [Main]: SoundTouch: 1.9.2 
+Debug [Main]: SoundTouch: 1.8.0 
 Debug [Main]: TagLib: 1.9.1 
 Debug [Main]: ChromaPrint: 1.2.0 
 Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.5 
@@ -11,7 +11,7 @@ Debug [Main]: FLAC: 1.3.1
 Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/jbreslin" 
 Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.local/share/data//Mixxx" 
 Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin" 
-Debug [Main]: Configuration file is at the current version 2.0.0 
+Warning [Main]: Configuration file is at version "2.0.0" instead of the current 2.0.0-release 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x3032110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1947110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x3032110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x3032110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x3032110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x1947110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1947110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1947110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Default quick links: ("/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/", "/home/jbreslin/Music/", "/home/jbreslin/Downloads/", "/home/jbreslin/Desktop/", "/home/jbreslin/Documents/") 
 Debug [Main]: Appending Quick Link:  "fun" --- "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/" 
 Debug [Main]: Appending Quick Link:  "Music" --- "/home/jbreslin/Music/" 
@@ -99,8 +99,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2b293f90) true 
-Debug [Main]: Created root GL Context valid: 0x2b298860 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x68846c0) true 
+Debug [Main]: Created root GL Context valid: 0x687e5e0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -160,10 +160,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x5660e60) updateIndexWithQuery took 323 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2ceefd20) select() took 465 ms 9 
-Debug [Main]: AnalysisLibraryTableModel(0x2ceefd20) select() took 138 ms 9 
-Debug [Main]: DlgAnalysis(0x2cadac60, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 566 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2b705290) select() took 822 ms 11 
+Debug [Main]: AnalysisLibraryTableModel(0x2b705290) select() took 242 ms 11 
+Debug [Main]: DlgAnalysis(0x2b2eadb0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -188,114 +188,1163 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2f0e4c20, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2d900990, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x565dcd0) select() took 331 ms 19359 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 773 ms 19361 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
-Debug [Main]: Starting LibraryScanner thread. 
-Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
-Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
-Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDevicePortAudio::open() "1, HDA Intel MID: HDMI 0 (hw:0,3)" 
 Debug [Controller]: Scanning HID devices: 
+Debug [Main]: Starting LibraryScanner thread. 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD71B7X Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x39a942d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [Main]: Opening stream with id 1 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x39a942d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x39a942d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x39a942d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: Opening stream with id 0 
+Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r769" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Controller polling stopped. 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2afd88b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2afd88b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2afd88b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2afd88b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: ALC269VB Analog (hw:0,0)" 
+Debug [Main]: Using "HDA Intel: 92HD71B7X Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: 2 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 694 ms 11802 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 481 ms 77 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 462 ms 48 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 461 ms 15 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 455 ms 0 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 474 ms 15 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 761 ms 19361 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 776 ms 19361 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 750 ms 19361 
+Debug [Main]: LibraryTableModel(0x3fc31d0) select() took 730 ms 19361 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "billboard")   QVariant(QString, "/amusic/billboard/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "latest")   QVariant(QString, "/amusic/billboard/latest/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [AnalyserQueue 1]: Prioritizing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22634 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/007. Mike Posner - I Took A Pill In Ibiza.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22635 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "I Took A Pill In Ibiza" "/amusic/billboard/latest/2016-06-01/007. Mike Posner - I Took A Pill In Ibiza.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "I Took A Pill In Ibiza" "/amusic/billboard/latest/2016-06-01/007. Mike Posner - I Took A Pill In Ibiza.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22635 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 22635 done 11.626 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 11 : "B♭" 6.78298e+06 
+Debug [AnalyserQueue 1]: 13 : "Cm" 229376 
+Debug [AnalyserQueue 1]: 20 : "Gm" 1.48864e+06 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22634 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/006. Lukas Graham - 7 Years.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22630 in 0 ms 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "7 Years" "/amusic/billboard/latest/2016-06-01/006. Lukas Graham - 7 Years.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "7 Years" "/amusic/billboard/latest/2016-06-01/006. Lukas Graham - 7 Years.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22630 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 22630 done 5.053 s 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22634 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22636 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22636 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/004. Fifth Harmony feat. Ty Dolla $ign - Work From Home.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22631 in 1 ms 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Work From Home" "/amusic/billboard/latest/2016-06-01/004. Fifth Harmony feat. Ty Dolla $ign - Work From Home.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Work From Home" "/amusic/billboard/latest/2016-06-01/004. Fifth Harmony feat. Ty Dolla $ign - Work From Home.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22631 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 22631 done 4.608 s 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22634 in 3 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Writing waveform from byte array: dataSize 193514 allSignalSize 193514 visualSampleRate 441 audioVisualRatio 100 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: AnalysisDAO saved analysis 2311 "1591785 (196157 compressed)" bytes for track 22634 in 151 ms 
+Debug [Main]: Saved waveform analysis for trackId 22634 analysisId 2311 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.75104 audioVisualRatio 5039.4 
+Debug [Main]: AnalysisDAO saved analysis 2312 "31650 (4912 compressed)" bytes for track 22634 in 1 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22634 analysisId 2312 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22637 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22637 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: Writing waveform from byte array: dataSize 170020 allSignalSize 170020 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2313 "1581464 (466205 compressed)" bytes for track 22635 in 429 ms 
+Debug [Main]: Saved waveform analysis for trackId 22635 analysisId 2313 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.96025 audioVisualRatio 4427.6 
+Debug [Main]: AnalysisDAO saved analysis 2314 "35396 (11438 compressed)" bytes for track 22635 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22635 analysisId 2314 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/002. Desiigner - Panda.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22638 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Panda" "/amusic/billboard/latest/2016-06-01/002. Desiigner - Panda.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Panda" "/amusic/billboard/latest/2016-06-01/002. Desiigner - Panda.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22638 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Writing waveform from byte array: dataSize 210426 allSignalSize 210426 visualSampleRate 441 audioVisualRatio 100 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: AnalysisDAO saved analysis 2315 "1859081 (876312 compressed)" bytes for track 22630 in 654 ms 
+Debug [Main]: Saved waveform analysis for trackId 22630 analysisId 2315 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.04774 audioVisualRatio 5479.8 
+Debug [Main]: AnalysisDAO saved analysis 2316 "33803 (17483 compressed)" bytes for track 22630 in 7 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22630 analysisId 2316 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 2 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 22638 done 14.636 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 291968 
+Debug [AnalyserQueue 1]: 3 : "D" 360448 
+Debug [AnalyserQueue 1]: 4 : "E♭" 425984 
+Debug [AnalyserQueue 1]: 5 : "E" 32768 
+Debug [AnalyserQueue 1]: 6 : "F" 294912 
+Debug [AnalyserQueue 1]: 11 : "B♭" 589824 
+Debug [AnalyserQueue 1]: 12 : "B" 3.50618e+06 
+Debug [AnalyserQueue 1]: 13 : "Cm" 851968 
+Debug [AnalyserQueue 1]: 16 : "D♯m/E♭m" 3.70278e+06 
+Debug [AnalyserQueue 1]: 17 : "Em" 196608 
+Debug [AnalyserQueue 1]: 23 : "B♭m" 196608 
+Debug [AnalyserQueue 1]: 24 : "Bm" 425984 
+Debug [AnalyserQueue 1]: Analyzing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22636 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22639 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22639 in 2 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 22639 done 10.95 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 3.11296e+06 
+Debug [AnalyserQueue 1]: 3 : "D" 65536 
+Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 65536 
+Debug [AnalyserQueue 1]: 9 : "A♭" 1.47456e+06 
+Debug [AnalyserQueue 1]: 16 : "D♯m/E♭m" 131072 
+Debug [AnalyserQueue 1]: 23 : "B♭m" 2.82496e+06 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1623435 bytes for track 22634 in 8 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/012. Zayn - Pillowtalk.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22640 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Pillowtalk" "/amusic/billboard/latest/2016-06-01/012. Zayn - Pillowtalk.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Pillowtalk" "/amusic/billboard/latest/2016-06-01/012. Zayn - Pillowtalk.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22640 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Writing waveform from byte array: dataSize 189412 allSignalSize 189412 visualSampleRate 441 audioVisualRatio 100 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: AnalysisDAO saved analysis 2317 "1647837 (776200 compressed)" bytes for track 22631 in 574 ms 
+Debug [Main]: Saved waveform analysis for trackId 22631 analysisId 2317 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.94052 audioVisualRatio 4932.6 
+Debug [Main]: AnalysisDAO saved analysis 2318 "33390 (16423 compressed)" bytes for track 22631 in 7 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22631 analysisId 2318 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 22640 done 11.985 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 425984 
+Debug [AnalyserQueue 1]: 5 : "E" 229376 
+Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 2.16269e+06 
+Debug [AnalyserQueue 1]: 12 : "B" 4.23539e+06 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 1.34349e+06 
+Debug [AnalyserQueue 1]: 17 : "Em" 98304 
+Debug [AnalyserQueue 1]: 19 : "F♯m" 491520 
+Debug [AnalyserQueue 1]: Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22637 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: BrowseTableModel::setData( QVariant(QString, "Dnce") ) 
+Debug [Main]: Successfully updated metadata of track  "/media/jbreslin/063E6E7A3E6E62A3/amusic/billboard/latest/2016-06-01/014. Dnce - Cake By The Ocean.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/014. Dnce - Cake By The Ocean.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22641 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "Cake By The Ocean" "/amusic/billboard/latest/2016-06-01/014. Dnce - Cake By The Ocean.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Cake By The Ocean" "/amusic/billboard/latest/2016-06-01/014. Dnce - Cake By The Ocean.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22641 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 22641 done 17.574 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 5 : "E" 327680 
+Debug [AnalyserQueue 1]: 6 : "F" 327680 
+Debug [AnalyserQueue 1]: 8 : "G" 688128 
+Debug [AnalyserQueue 1]: 10 : "A" 557056 
+Debug [AnalyserQueue 1]: 11 : "B♭" 491520 
+Debug [AnalyserQueue 1]: 12 : "B" 32768 
+Debug [AnalyserQueue 1]: 13 : "Cm" 589824 
+Debug [AnalyserQueue 1]: 15 : "Dm" 65536 
+Debug [AnalyserQueue 1]: 17 : "Em" 4.5993e+06 
+Debug [AnalyserQueue 1]: 18 : "Fm" 98304 
+Debug [AnalyserQueue 1]: 22 : "Am" 3.57171e+06 
+Debug [AnalyserQueue 1]: Analyzing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22636 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [AnalyserQueue 1]: Waveform generation for track 22636 done 11.014 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 1.31072e+06 
+Debug [AnalyserQueue 1]: 9 : "A♭" 557056 
+Debug [AnalyserQueue 1]: 12 : "B" 4.40307e+06 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 917504 
+Debug [AnalyserQueue 1]: 16 : "D♯m/E♭m" 360448 
+Debug [AnalyserQueue 1]: 21 : "G♯m" 1.6384e+06 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [Main]: Writing waveform from byte array: dataSize 183746 allSignalSize 183746 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1623435 bytes for track 22634 in 38 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: AnalysisDAO saved analysis 2319 "1673128 (801586 compressed)" bytes for track 22636 in 963 ms 
+Debug [Main]: Saved waveform analysis for trackId 22636 analysisId 2319 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.2163 audioVisualRatio 4785 
+Debug [Main]: AnalysisDAO saved analysis 2320 "34994 (17854 compressed)" bytes for track 22636 in 6 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22636 analysisId 2320 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 22634 done 18.367 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 196608 
+Debug [AnalyserQueue 1]: 10 : "A" 294912 
+Debug [AnalyserQueue 1]: 12 : "B" 4.45645e+06 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 4.66214e+06 
+Debug [AnalyserQueue 1]: 19 : "F♯m" 65536 
+Debug [AnalyserQueue 1]: Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22637 in 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 193514 allSignalSize 193514 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: AnalysisDAO saved analysis 2321 "1747252 (820068 compressed)" bytes for track 22634 in 1259 ms 
+Debug [Main]: Saved waveform analysis for trackId 22634 analysisId 2321 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.75104 audioVisualRatio 5039.4 
+Debug [Main]: AnalysisDAO saved analysis 2322 "34552 (17332 compressed)" bytes for track 22634 in 20 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22634 analysisId 2322 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Waveform generation for track 22637 done 15.508 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 7.66042e+06 
+Debug [AnalyserQueue 1]: 6 : "F" 688128 
+Debug [AnalyserQueue 1]: 8 : "G" 131072 
+Debug [AnalyserQueue 1]: 11 : "B♭" 1.21242e+06 
+Debug [AnalyserQueue 1]: 15 : "Dm" 720896 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 2 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Writing waveform from byte array: dataSize 208260 allSignalSize 208260 visualSampleRate 441 audioVisualRatio 100 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: AnalysisDAO saved analysis 2323 "1913352 (933342 compressed)" bytes for track 22637 in 345 ms 
+Debug [Main]: Saved waveform analysis for trackId 22637 analysisId 2323 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.13143 audioVisualRatio 5423.4 
+Debug [Main]: AnalysisDAO saved analysis 2324 "34661 (17882 compressed)" bytes for track 22637 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22637 analysisId 2324 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 217522 allSignalSize 217522 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2325 "1811508 (797710 compressed)" bytes for track 22638 in 267 ms 
+Debug [Main]: Saved waveform analysis for trackId 22638 analysisId 2325 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.78519 audioVisualRatio 5664.6 
+Debug [Main]: AnalysisDAO saved analysis 2326 "31790 (15425 compressed)" bytes for track 22638 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22638 analysisId 2326 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 153494 allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2327 "1346158 (643342 compressed)" bytes for track 22639 in 230 ms 
+Debug [Main]: Saved waveform analysis for trackId 22639 analysisId 2327 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2 
+Debug [Main]: AnalysisDAO saved analysis 2328 "34043 (16811 compressed)" bytes for track 22639 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22639 analysisId 2328 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "new")   QVariant(QString, "/amusic/new/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "new")   QVariant(QString, "/amusic/new/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "new")   QVariant(QString, "/amusic/new/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "florida")   QVariant(QString, "/amusic/new/florida/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  7 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "ftp_idj")   QVariant(QString, "/amusic/new/ftp_idj/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "florida")   QVariant(QString, "/amusic/new/florida/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  7 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "new")   QVariant(QString, "/amusic/new/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "florida")   QVariant(QString, "/amusic/new/florida/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  7 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 179736 allSignalSize 179736 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2329 "1703311 (822461 compressed)" bytes for track 22640 in 321 ms 
+Debug [Main]: Saved waveform analysis for trackId 22640 analysisId 2329 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.42187 audioVisualRatio 4680.6 
+Debug [Main]: AnalysisDAO saved analysis 2330 "36143 (18303 compressed)" bytes for track 22640 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22640 analysisId 2330 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 226992 allSignalSize 226992 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2331 "1936178 (904543 compressed)" bytes for track 22641 in 311 ms 
+Debug [Main]: Saved waveform analysis for trackId 22641 analysisId 2331 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.46041 audioVisualRatio 5911.2 
+Debug [Main]: AnalysisDAO saved analysis 2332 "32967 (16150 compressed)" bytes for track 22641 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22641 analysisId 2332 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "My House" "/amusic/new/florida/02 Florida - My House.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "My House" "/amusic/new/florida/02 Florida - My House.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1552801 bytes for track 22623 in 114 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 169598 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,9963,/amusic/new/florida/02 Florida - My House.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 9.98506 audioVisualRatio 4416.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Wobble" "/amusic/new/florida/04 Florida - Wobble.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Wobble" "/amusic/new/florida/04 Florida - Wobble.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x32dfc860, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,9963,/amusic/new/florida/04 Florida - Wobble.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22626 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,9963,/amusic/new/florida/04 Florida - Wobble.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Waveform generation for track 22626 done 4.575 s 
+Debug [AnalyserQueue 1]: Prioritizing "Wobble" "/amusic/new/florida/04 Florida - Wobble.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Wobble" "/amusic/new/florida/04 Florida - Wobble.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Prioritizing "My House" "/amusic/new/florida/02 Florida - My House.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "My House" "/amusic/new/florida/02 Florida - My House.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,9963,/amusic/new/florida/02 Florida - My House.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "billboard")   QVariant(QString, "/amusic/billboard/") 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "billboard")   QVariant(QString, "/amusic/billboard/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "latest")   QVariant(QString, "/amusic/billboard/latest/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/081 - The Kinks - Lola.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/2-21 Ain't Too Proud To Beg.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/393 - Queen - Fat Bottomed Girls.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Elvis Presley - Suspicious Minds.mp3" 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "fun")   QVariant(QString, "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/") 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/John Denver - Thank God I'm a Country Boy.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Maxine Nightingale - Right Back Where We Started From.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Steve Miller Band - Stuck In The Middle With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/Tom Jones - It's Not Unusual.mp3" 
+Debug [BrowseThread]: Append last  5 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Music")   QVariant(QString, "/home/jbreslin/Music/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Music")   QVariant(QString, "/home/jbreslin/Music/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Music")   QVariant(QString, "/home/jbreslin/Music/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Music")   QVariant(QString, "/home/jbreslin/Music/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Music")   QVariant(QString, "/home/jbreslin/Music/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Downloads")   QVariant(QString, "/home/jbreslin/Downloads/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Downloads")   QVariant(QString, "/home/jbreslin/Downloads/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Downloads")   QVariant(QString, "/home/jbreslin/Downloads/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  3 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Downloads")   QVariant(QString, "/home/jbreslin/Downloads/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Desktop")   QVariant(QString, "/home/jbreslin/Desktop/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Documents")   QVariant(QString, "/home/jbreslin/Documents/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Documents")   QVariant(QString, "/home/jbreslin/Documents/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Documents")   QVariant(QString, "/home/jbreslin/Documents/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Documents")   QVariant(QString, "/home/jbreslin/Documents/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Documents")   QVariant(QString, "/home/jbreslin/Documents/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: Already focused on playlist  37 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 19 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Writing waveform from byte array: dataSize 164368 allSignalSize 164368 visualSampleRate 441 audioVisualRatio 100 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: AnalysisDAO saved analysis 2333 "1448373 (701483 compressed)" bytes for track 22626 in 278 ms 
+Debug [Main]: Saved waveform analysis for trackId 22626 analysisId 2333 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.3028 audioVisualRatio 4280.4 
+Debug [Main]: AnalysisDAO saved analysis 2334 "33706 (16837 compressed)" bytes for track 22626 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22626 analysisId 2334 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: WLibrarySidebar::dragEnterEvent ("text/uri-list", "text/plain") 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 69 ms 14 
+Debug [Main]: Already focused on playlist  37 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 14 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2af97a90)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2af97a90)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/014. Dnce - Cake By The Ocean.mp3)" QSize(300, 300) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Removable Devices")   QVariant(QString, "/media/") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 1 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 2 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 4 ms 3 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 4 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 2 ms 5 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 6 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 7 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [AnalyserQueue 1]: Prioritizing "Needed Me" "/amusic/billboard/latest/2016-06-01/009. Rihanna - Needed Me.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Needed Me" "/amusic/billboard/latest/2016-06-01/009. Rihanna - Needed Me.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22645 in 0 ms 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3051adb0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/009. Rihanna - Needed Me.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [AnalyserQueue 1]: Waveform generation for track 22645 done 7.528 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 8 : "G" 262144 
+Debug [AnalyserQueue 1]: 11 : "B♭" 2.98189e+06 
+Debug [AnalyserQueue 1]: 13 : "Cm" 3.60256e+06 
+Debug [AnalyserQueue 1]: 20 : "Gm" 1.60563e+06 
+Debug [AnalyserQueue 1]: Prioritizing "Needed Me" "/amusic/billboard/latest/2016-06-01/009. Rihanna - Needed Me.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Needed Me" "/amusic/billboard/latest/2016-06-01/009. Rihanna - Needed Me.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: guess the size of the window decoration 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD71B7X Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Searching for controller preset "Ion_Discover_DJ_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Controller in script engine is: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Applying controller preset... 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: SoundDevicePortAudio::open() "1, HDA Intel: 92HD71B7X Digital (hw:0,1)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel MID: ALC269VB Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 1 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Using "HDA Intel: 92HD71B7X Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 3 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: Displaying mixxx 
-Debug [Main]: Running Mixxx 
-Debug [Main]: ControllerManager::getControllerList 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a504040) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a503fd0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a503f60) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a503ef0) 
-Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
-Debug [Controller]: Controller polling started. 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3a5bd5b0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x39e73c80) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3999da40) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x39990340) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x39e72550) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x39ba1ff0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b045c40) 
-Debug [Main]: PlaylistTableModel(0x571fb70) select() took 4 ms 103 
+Debug [AnalyserQueue 1]: Prioritizing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 4 analyses, 3405239 bytes for track 22634 in 104 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 193514 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.75104 audioVisualRatio 5039.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [AnalyserQueue 1]: Prioritizing "This Is What You Came For" "/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "This Is What You Came For" "/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22646 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [AnalyserQueue 1]: Waveform generation for track 22646 done 16.169 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 7.11309e+06 
+Debug [AnalyserQueue 1]: 6 : "F" 1.57286e+06 
+Debug [AnalyserQueue 1]: 8 : "G" 360448 
+Debug [AnalyserQueue 1]: 15 : "Dm" 491520 
+Debug [AnalyserQueue 1]: 22 : "Am" 262144 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD71B7X Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 0 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "1, HDA Intel: 92HD71B7X Digital (hw:0,1)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 1 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Using "HDA Intel: 92HD71B7X Digital (hw:0,1)" as output sound device clock reference 
+Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [AnalyserQueue 1]: Prioritizing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Work" "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Already focused on playlist  37 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 2 ms 7 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/amusic/fun/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/081 - The Kinks - Lola.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/2-21 Ain't Too Proud To Beg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/393 - Queen - Fat Bottomed Girls.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Elvis Presley - Suspicious Minds.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/John Denver - Thank God I'm a Country Boy.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Maxine Nightingale - Right Back Where We Started From.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Steve Miller Band - Stuck In The Middle With You.mp3" 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 169046 allSignalSize 169046 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2335 "1489587 (665109 compressed)" bytes for track 22645 in 227 ms 
+Debug [Main]: Saved waveform analysis for trackId 22645 analysisId 2335 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.0177 audioVisualRatio 4402.2 
+Debug [Main]: AnalysisDAO saved analysis 2336 "34006 (16761 compressed)" bytes for track 22645 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22645 analysisId 2336 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x5660e60) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Work From Home" "/amusic/billboard/latest/2016-06-01/004. Fifth Harmony feat. Ty Dolla $ign - Work From Home.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Work From Home" "/amusic/billboard/latest/2016-06-01/004. Fifth Harmony feat. Ty Dolla $ign - Work From Home.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1681227 bytes for track 22631 in 254 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 189412 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.94052 audioVisualRatio 4932.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: Prioritizing "I Took A Pill In Ibiza" "/amusic/billboard/latest/2016-06-01/007. Mike Posner - I Took A Pill In Ibiza.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "I Took A Pill In Ibiza" "/amusic/billboard/latest/2016-06-01/007. Mike Posner - I Took A Pill In Ibiza.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1616860 bytes for track 22635 in 98 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 170020 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.96025 audioVisualRatio 4427.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1380201 bytes for track 22639 in 93 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 196002 allSignalSize 196002 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2337 "1866521 (883539 compressed)" bytes for track 22646 in 433 ms 
+Debug [Main]: Saved waveform analysis for trackId 22646 analysisId 2337 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.63994 audioVisualRatio 5104.2 
+Debug [Main]: AnalysisDAO saved analysis 2338 "36423 (18207 compressed)" bytes for track 22646 in 5 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22646 analysisId 2338 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Don't Let Me Down" "/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1708122 bytes for track 22636 in 85 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 183746 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.2163 audioVisualRatio 4785 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found file art  "CoverArt(QSize(200, 200) , "CoverInfo(FILE,GUESSED,Folder.jpg,18543,)" )" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Tom Jones - It's Not Unusual.mp3" 
-Debug [BrowseThread]: Append last  5 
-Debug [Main]: BaseTrackCache(0x5660e60) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: Prioritizing "Dangerous Woman" "/amusic/billboard/latest/2016-06-01/008. Ariana Grande - Dangerous Woman.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Dangerous Woman" "/amusic/billboard/latest/2016-06-01/008. Ariana Grande - Dangerous Woman.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22642 in 1 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
+Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1739454 bytes for track 22640 in 108 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 179736 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 9.42187 audioVisualRatio 4680.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Analyzing "Dangerous Woman" "/amusic/billboard/latest/2016-06-01/008. Ariana Grande - Dangerous Woman.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22642 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x571fb70) select() took 3 ms 104 
-Debug [Main]: BaseTrackCache(0x5660e60) updateIndexWithQuery took 0 ms 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 2 ms 8 
+Debug [AnalyserQueue 1]: Waveform generation for track 22642 done 11.019 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 4.67392e+06 
+Debug [AnalyserQueue 1]: 2 : "D♭" 98304 
+Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 98304 
+Debug [AnalyserQueue 1]: 8 : "G" 4.25984e+06 
+Debug [AnalyserQueue 1]: 10 : "A" 98304 
+Debug [AnalyserQueue 1]: 15 : "Dm" 196608 
+Debug [AnalyserQueue 1]: 17 : "Em" 196608 
+Debug [AnalyserQueue 1]: 22 : "Am" 786432 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [AnalyserQueue 1]: Prioritizing "My House" "/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "My House" "/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22643 in 1 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 9 
+Debug [AnalyserQueue 1]: Waveform generation for track 22643 done 10.653 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 196608 
+Debug [AnalyserQueue 1]: 4 : "E♭" 1.57286e+06 
+Debug [AnalyserQueue 1]: 11 : "B♭" 4.84147e+06 
+Debug [AnalyserQueue 1]: 13 : "Cm" 491520 
+Debug [AnalyserQueue 1]: 20 : "Gm" 1.37626e+06 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: Prioritizing "Pillowtalk" "/amusic/billboard/latest/2016-06-01/012. Zayn - Pillowtalk.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Pillowtalk" "/amusic/billboard/latest/2016-06-01/012. Zayn - Pillowtalk.mp3" 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [AnalyserQueue 1]: Prioritizing "This Is What You Came For" "/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "This Is What You Came For" "/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1902944 bytes for track 22646 in 50 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 196002 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.63994 audioVisualRatio 5104.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 10 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [AnalyserQueue 1]: Prioritizing "Just Like Fire" "/amusic/billboard/latest/2016-06-01/016. P!nk - Just Like Fire.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Just Like Fire" "/amusic/billboard/latest/2016-06-01/016. P!nk - Just Like Fire.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22647 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(500, 500) , "CoverInfo(METADATA,GUESSED,,55453,)" )" 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1380201 bytes for track 22639 in 35 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Analyzing "Just Like Fire" "/amusic/billboard/latest/2016-06-01/016. P!nk - Just Like Fire.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22647 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [AnalyserQueue 1]: Waveform generation for track 22647 done 9.387 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 2.42483e+06 
+Debug [AnalyserQueue 1]: 3 : "D" 360448 
+Debug [AnalyserQueue 1]: 5 : "E" 327680 
+Debug [AnalyserQueue 1]: 8 : "G" 4.91994e+06 
+Debug [AnalyserQueue 1]: 17 : "Em" 1.47456e+06 
+Debug [Main]: Already focused on playlist  37 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 2 ms 10 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  134 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  134 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  134 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  134 
+Debug [Main]: PlaylistTableModel(0x4085110) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  4 
-Debug [Main]: delete soundmanager  5 
-Debug [Main]: delete view  22 
+Debug [Main]: save config  5 
+Debug [Main]: delete soundmanager  6 
+Debug [Main]: delete view  26 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -315,39 +1364,58 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  736 
+Debug [Main]: delete ControllerManager  1740 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  746 
-Debug [Main]: delete library scanner  747 
+Debug [Main]: delete vinylcontrolmanager  1838 
+Debug [Main]: delete library scanner  1840 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  748 
+Debug [Main]: delete library  1925 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  132 
 Debug [Main]: ~TrackCollection() 
+Debug [Main]: Writing waveform from byte array: dataSize 190150 allSignalSize 190150 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2339 "1696947 (824947 compressed)" bytes for track 22647 in 293 ms 
+Debug [Main]: Saved waveform analysis for trackId 22647 analysisId 2339 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.90585 audioVisualRatio 4951.8 
+Debug [Main]: AnalysisDAO saved analysis 2340 "34229 (17871 compressed)" bytes for track 22647 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22647 analysisId 2340 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x5660e60) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 208168 allSignalSize 208168 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2341 "1892776 (897991 compressed)" bytes for track 22642 in 341 ms 
+Debug [Main]: Saved waveform analysis for trackId 22642 analysisId 2341 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.13503 audioVisualRatio 5421 
+Debug [Main]: AnalysisDAO saved analysis 2342 "34490 (17713 compressed)" bytes for track 22642 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22642 analysisId 2342 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 1 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 169576 allSignalSize 169576 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2343 "1560477 (749635 compressed)" bytes for track 22643 in 265 ms 
+Debug [Main]: Saved waveform analysis for trackId 22643 analysisId 2343 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.98641 audioVisualRatio 4416 
+Debug [Main]: AnalysisDAO saved analysis 2344 "35449 (17831 compressed)" bytes for track 22643 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22643 analysisId 2344 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3fc6360) updateIndexWithQuery took 0 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1030 
+Debug [Main]: delete playerManager  4201 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1031 
+Debug [Main]: delete RecordingManager  4203 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1031 
+Debug [Main]: delete ShoutcastManager  4231 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1032 
+Debug [Main]: delete m_pEngine  4330 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -357,15 +1425,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1064 
-Debug [Main]: deleting effects manager,  1073 
+Debug [Main]: deleting preferences,  4630 
+Debug [Main]: deleting effects manager,  4728 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3cfad70) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2663940) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x3312d40) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3cf5bd0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x1d9eef0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x265f690) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1100 
+Debug [Main]: delete config  5032 
 Debug [Main]: Mixxx shutdown complete with code 0 

@@ -1,9 +1,9 @@
-Debug [Main]: Mixxx "2.0.0-release" "(git 1.12 r5796; built on: Jun  4 2016 @ 03:16:21; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=1 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
+Debug [Main]: Mixxx "2.0.0" "(git 1.12 r5772; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=0 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
 Debug [Main]: Library versions: 
 Debug [Main]: Qt: 4.8.7 
 Debug [Main]: libshout: 2.3.1 
 Debug [Main]: RubberBand: 1.8.1 
-Debug [Main]: SoundTouch: 1.8.0 
+Debug [Main]: SoundTouch: 1.9.2 
 Debug [Main]: TagLib: 1.9.1 
 Debug [Main]: ChromaPrint: 1.2.0 
 Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.5 
@@ -11,7 +11,7 @@ Debug [Main]: FLAC: 1.3.1
 Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/jbreslin" 
 Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.local/share/data//Mixxx" 
 Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin" 
-Warning [Main]: Configuration file is at version "2.0.0" instead of the current 2.0.0-release 
+Debug [Main]: Configuration file is at the current version 2.0.0 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
@@ -32,17 +32,14 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x1335110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x25dd110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x1335110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x1335110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x1335110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: Default quick links: ("/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/", "/home/jbreslin/Music/", "/home/jbreslin/Downloads/", "/home/jbreslin/Desktop/", "/home/jbreslin/Documents/") 
-Debug [Main]: Appending Quick Link:  "fun" --- "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/" 
-Debug [Main]: Appending Quick Link:  "Music" --- "/home/jbreslin/Music/" 
-Debug [Main]: Appending Quick Link:  "Downloads" --- "/home/jbreslin/Downloads/" 
-Debug [Main]: Appending Quick Link:  "Desktop" --- "/home/jbreslin/Desktop/" 
-Debug [Main]: Appending Quick Link:  "Documents" --- "/home/jbreslin/Documents/" 
+Debug [Main]: CueDAO::initialize QThread(0x25dd110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x25dd110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x25dd110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
+Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
+Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
 Debug [Main]: Checking for access to user's library directories: 
@@ -99,8 +96,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x6252fe0) true 
-Debug [Main]: Created root GL Context valid: 0x611cff0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a82ae70) true 
+Debug [Main]: Created root GL Context valid: 0x2a82f6b0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -160,10 +157,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x39b09b0) updateIndexWithQuery took 1070 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2b0e00e0) select() took 1558 ms 10 
-Debug [Main]: AnalysisLibraryTableModel(0x2b0e00e0) select() took 609 ms 10 
-Debug [Main]: DlgAnalysis(0x2acc5c00, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x4bf35a0) updateIndexWithQuery took 327 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2c4869a0) select() took 468 ms 31 
+Debug [Main]: AnalysisLibraryTableModel(0x2c4869a0) select() took 139 ms 31 
+Debug [Main]: DlgAnalysis(0x2c0716c0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -188,41 +185,270 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2b24c990, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2c5dda00, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x39ad820) select() took 744 ms 19360 
+Debug [Main]: LibraryTableModel(0x4bf0410) select() took 402 ms 19381 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
-Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Controller]: Scanning HID devices: 
 Debug [Main]: Starting LibraryScanner thread. 
+Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
+Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
+Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD71B7X Analog (hw:0,0)" 
+Warning [Main]: No output devices opened, no clock reference device set 
+Debug [Controller]: Scanning HID devices: 
+Debug [Main]: 1 output sound devices opened 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2bccad20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: 0 input  sound devices opened 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2bccad20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2bccad20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2bccad20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
+Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
+Debug [Controller]: Searching for controller preset "Ion_Discover_DJ_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
+Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
+Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
+Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
+Debug [Controller]: Opening controller: "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Controller in script engine is: "Ion Discover DJ MIDI 1" 
+Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
+Debug [Controller]: Applying controller preset... 
+Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
+Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
+Debug [Controller]: Controller polling started. 
+Debug [Main]: ControllerManager::getControllerList 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x396b7970) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x396b8220) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x392fe3d0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3959b660) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39deb130) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x398ce2c0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x398ce330) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x398ce3a0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x398ce410) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x398ce480) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x38fdaea0) 
+Debug [Main]: guess the size of the window decoration 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: ALC269VB Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r769" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "2, USB Audio CODEC: - (hw:1,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 2 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Using "HDA Intel MID: ALC269VB Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "Ion Discover DJ MIDI 1" to "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Ion-Discover-DJ-scripts.js" 
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3998bbe0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x2bd69ff0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x398ee130) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x38d47380) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39deb190) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x11bb1540) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1187b8c0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x114bd000) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x114bd1e0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1187b970) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x39de7950) 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 3 ms 131 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 2 ms 15 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/109. Iggy Pop - Lust For Life.mp3)" QSize(200, 200) 
+Debug [AnalyserQueue 1]: Prioritizing "Lust For Life" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/109. Iggy Pop - Lust For Life.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Lust For Life" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/109. Iggy Pop - Lust For Life.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x312850d0, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/109. Iggy Pop - Lust For Life.mp3)" QSize(200, 200) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/257" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/258" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 3097 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 3097 done 2.983 s 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,49412,/amusic/genres/modern_rock/kelly/Foster the People - Pumped Up Kicks.mp3)" QSize(300, 238) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/The Killers - Read My Mind.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2010 Dance/Daft Punk - One More Time.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(FILE,GUESSED,Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg,49462,/amusic/djs/jim/New Music/OMC - How Bizarre.mp3)" QSize(170, 170) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/03 Train - Hey, Soul Sister.mp3)" QSize(200, 200) 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 14 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [AnalyserQueue 1]: Prioritizing "You Get What You Give" "/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33b65ae0, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [AnalyserQueue 1]: Analyzing "You Get What You Give" "/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2351" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2352" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22653 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 22653 done 2.516 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4bf35a0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 2 ms 16 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/The Killers - Read My Mind.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 16 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x4cb2290) select() took 1 ms 15 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bcd98c0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/jim/Bob Sinclair - World Hold On.mp3)" QSize(0, 0) 
+Debug [Main]: Destroying MixxxMainWindow 
+Debug [Main]: save config  4 
+Debug [Main]: delete soundmanager  5 
+Debug [Main]: delete view  47 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~DlgAutoDJ() 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: delete ControllerManager  731 
 Debug [Controller]: Controller polling stopped. 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2aa1d8b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2aa1d8b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2aa1d8b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2aa1d8b0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Warning [Main]: Error opening stream: Device unavailable 
-Debug [Main]: guess the size of the window decoration 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Deleting PortMIDI devices... 
+Debug [Controller]: ControllerEngine shutting down... 
+Debug [Controller]: Deleting USB Bulk devices... 
+Debug [Controller]: Deleting HID devices... 
+Debug [Main]: delete vinylcontrolmanager  734 
+Debug [Main]: delete library scanner  735 
+Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
+Debug [Main]: Closing database "LIBRARY_SCANNER" 
+Debug [Main]: LibraryScanner destroyed 
+Debug [Main]: ~TrackDAO() 
+Debug [Main]: ~CoverArtCache() 
+Debug [Main]: delete library  736 
+Debug [Main]: Wait to finish browser background thread 
+Debug [Main]: Browser background thread terminated! 
+Debug [Main]: ~TrackCollection() 
+Debug [Main]: Writing waveform from byte array: dataSize 277634 allSignalSize 277634 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2357 "2389586 (1108321 compressed)" bytes for track 3097 in 279 ms 
+Debug [Main]: Saved waveform analysis for trackId 3097 analysisId 2357 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.09959 audioVisualRatio 7230 
+Debug [Main]: AnalysisDAO saved analysis 2358 "33367 (15315 compressed)" bytes for track 3097 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 3097 analysisId 2358 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4bf35a0) updateIndexWithQuery took 2 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 266436 allSignalSize 266436 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2359 "2400933 (1121423 compressed)" bytes for track 22653 in 289 ms 
+Debug [Main]: Saved waveform analysis for trackId 22653 analysisId 2359 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.35593 audioVisualRatio 6938.4 
+Debug [Main]: AnalysisDAO saved analysis 2360 "34451 (16459 compressed)" bytes for track 22653 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22653 analysisId 2360 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4bf35a0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Clearing played information for this session 
+Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: ~TrackDAO() 
+Debug [Main]: delete playerManager  1772 
+Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
+Debug [Main]: delete RecordingManager  1773 
+Debug [Main]: Delete RecordingManager 
+Debug [Main]: delete ShoutcastManager  1773 
+Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
+Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
+Debug [Main]: delete m_pEngine  1774 
+Debug [Main]: in ~EngineMaster() 
+Debug [Main]: ~EngineMicrophone() 
+Debug [Main]: ~EngineMicrophone() 
+Debug [Main]: ~EngineMicrophone() 
+Debug [Main]: ~EngineMicrophone() 
+Debug [Main]: ~EngineAux() 
+Debug [Main]: ~EngineAux() 
+Debug [Main]: ~EngineAux() 
+Debug [Main]: ~EngineAux() 
+Debug [Main]: deleting preferences,  1803 
+Debug [Main]: deleting effects manager,  1814 
+Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
+Debug [Main]: WARNING: The following 6 controls were leaked: 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x328b540) 
+Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x289bac0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3287c10) 
+Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
+Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
+Debug [Main]: delete config  1839 
+Debug [Main]: Mixxx shutdown complete with code 0 

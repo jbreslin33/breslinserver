@@ -32,17 +32,12 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x261c110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1f4d110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x261c110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x261c110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x261c110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: Default quick links: ("/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/", "/home/jbreslin/Music/", "/home/jbreslin/Downloads/", "/home/jbreslin/Desktop/", "/home/jbreslin/Documents/") 
-Debug [Main]: Appending Quick Link:  "fun" --- "/media/jbreslin/063E6E7A3E6E62A3/amusic/fun/" 
-Debug [Main]: Appending Quick Link:  "Music" --- "/home/jbreslin/Music/" 
-Debug [Main]: Appending Quick Link:  "Downloads" --- "/home/jbreslin/Downloads/" 
-Debug [Main]: Appending Quick Link:  "Desktop" --- "/home/jbreslin/Desktop/" 
-Debug [Main]: Appending Quick Link:  "Documents" --- "/home/jbreslin/Documents/" 
+Debug [Main]: CueDAO::initialize QThread(0x1f4d110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1f4d110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1f4d110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
 Debug [Main]: Checking for access to user's library directories: 
@@ -99,8 +94,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a72f870) true 
-Debug [Main]: Created root GL Context valid: 0x782b3d0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a065640) true 
+Debug [Main]: Created root GL Context valid: 0x2a069c20 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -160,10 +155,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 665 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2c3cd1c0) select() took 2064 ms 10 
-Debug [Main]: AnalysisLibraryTableModel(0x2c3cd1c0) select() took 239 ms 10 
-Debug [Main]: DlgAnalysis(0x2bfb2f90, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 748 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2bd0d8b0) select() took 5194 ms 25 
+Debug [Main]: AnalysisLibraryTableModel(0x2bd0d8b0) select() took 266 ms 25 
+Debug [Main]: DlgAnalysis(0x2b8f35d0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -188,16 +183,60 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2c536b00, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2dd9f500, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 623 ms 19360 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 917 ms 19375 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
+Debug [Main]: Starting LibraryScanner thread. 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2dde8fd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2dde8fd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2dde8fd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2dde8fd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD71B7X Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 0 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
-Debug [Main]: Starting LibraryScanner thread. 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "1, HDA Intel: 92HD71B7X Digital (hw:0,1)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 1 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: Using "HDA Intel: 92HD71B7X Digital (hw:0,1)" as output sound device clock reference 
+Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
+Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r769" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Controller polling stopped. 
+Debug [Main]: guess the size of the window decoration 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
@@ -205,20 +244,405 @@ Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
 Warning [Main]: No output devices opened, no clock reference device set 
 Debug [Main]: 1 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r769" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Controller polling stopped. 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x38e20900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x38e20900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x38e20900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x38e20900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Debug [Main]: guess the size of the window decoration 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 2049 ms 315 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 574 ms 7 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3)" QSize(300, 300) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 11 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  1 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  4 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [BrowseThread]: Append last  0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  1 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  4 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: Already focused on playlist  37 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3)" QSize(300, 300) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/011. Calvin Harris feat. Rihanna - This Is What You Came For.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3)" QSize(300, 300) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/005. The Chainsmokers feat. Daya - Don't Let Me Down.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/idjpool/Sia - Cheap Thrills (DJ Intro - DJ Outro) (Clean) (8B).mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/idjpool/Phantogram - You Don't Get Me High Anymore (Radio Edit).mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 13 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/idjpool/ZHU - GenerationWhy (Original Radio Mix).mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 12 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1049 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "this is what" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1031 ms 65 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1032 ms 126 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1041 ms 14 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 476 ms 2 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 465 ms 0 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [BrowseThread]: Append last  5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 13 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  1 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  5 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  1 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Append last  5 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "versatile")   QVariant(QString, "/amusic/versatile/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "versatile")   QVariant(QString, "/amusic/versatile/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "versatile")   QVariant(QString, "/amusic/versatile/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "versatile")   QVariant(QString, "/amusic/versatile/") 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 522 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "rozes" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 519 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "rozes" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 941 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 810 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 513 ms 1 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 477 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 484 ms 14 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 484 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 482 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 836 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 871 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1456 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1131 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 2752 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1637 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1461 ms 19380 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1982_Billboard_Top_Usa_Singles/39-Paul_Davis-65_Love_Affair.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 14 ms 65 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/Rihanna - S&M.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 65 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1284 ms 19380 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 816 ms 1 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 892 ms 1 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 723 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 882 ms 20 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 111 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 6 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 20 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 0 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 8218 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "jane says" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 563 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "jane says" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 532 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "jane says" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 465 ms 101 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 470 ms 4 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/210. The Verve - Bitter Sweet Symphony.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg,49462,/amusic/djs/jim/New Music/091 Sophie Ellis-Bextor - Bittersweet.mp3)" QSize(170, 170) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/210. The Verve - Bitter Sweet Symphony.mp3)" QSize(200, 200) 
+Debug [Main]: Already focused on playlist  35 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "bitter" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  35 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  35 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/21-The_Verve_Pipe-The_Freshmen.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1999_Billboard_Top_Usa_Singles/78-Len-Steal_My_Sunshine.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1999_Billboard_Top_Usa_Singles/78-Len-Steal_My_Sunshine.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/109. Iggy Pop - Lust For Life.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/210. The Verve - Bitter Sweet Symphony.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/kelly/Fatboy Slim - Praise You.MP3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/kelly/Harvey Danger - Flagpole Sitta.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2004_Billboard_Top_Usa_Singles/76-Jet-Are_You_Gonna_Be_My_Girl.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/kelly/01 Seven Nation Army.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,49412,/amusic/genres/modern_rock/kelly/Foster the People - Pumped Up Kicks.mp3)" QSize(300, 238) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 5 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 13 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 13 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,44492,/amusic/genres/modern_rock/jim/07 Comfort Eagle.mp3)" QSize(200, 197) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 12 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 12 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/The Killers - Read My Mind.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/kelly/Franz Ferdinand - Take Me Out.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2004_Billboard_Top_Usa_Singles/76-Jet-Are_You_Gonna_Be_My_Girl.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,The Strokes -  Last Night.mp3.jpg,31101,/amusic/genres/modern_rock/kelly/The Strokes -  Last Night.mp3)" QSize(170, 170) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55762,/amusic/sports/generic/Ultimate Sports Jams/06 SONG 2.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,56381,/amusic/genres/urban/RAP,R&B,HIP-HOP/Beastie Boys/Ill Communication/Beastie Boys - Sabotage.mp3)" QSize(200, 194) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 12 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 10 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 473 ms 4 
+Debug [Main]: WSearchLineEdit::restoreSearch( "bitter" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 472 ms 875 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 471 ms 14 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 457 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 463 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 470 ms 0 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 889 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 723 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1083 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 833 ms 19380 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 484 ms 5 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/90's Dance Hits/049 - OMC - How Bizarre (1997).mp3)" QSize(0, 0) 
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
@@ -238,17 +662,208 @@ Debug [Main]: 0 input  sound devices opened
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Main]: Displaying mixxx 
-Debug [Main]: Running Mixxx 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 4 ms 104 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Shine" "/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Shine" "/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/697" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/698" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 12442 in 756 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1948013 bytes for track 22637 in 132 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 208260 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.13143 audioVisualRatio 5423.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/90's Dance Hits/049 - OMC - How Bizarre (1997).mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7231 in 0 ms 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "How Bizarre (1997)" "/amusic/billboard/decades/90's Dance Hits/049 - OMC - How Bizarre (1997).mp3" 
+Debug [AnalyserQueue 1]: Analyzing "How Bizarre (1997)" "/amusic/billboard/decades/90's Dance Hits/049 - OMC - How Bizarre (1997).mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7231 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 7231 done 5.765 s 
+Debug [AnalyserQueue 1]: Analyzing "Shine" "/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/697" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/698" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 12442 in 4 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [AnalyserQueue 1]: Waveform generation for track 12442 done 6.967 s 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 2.58867e+06 
+Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 3.34234e+06 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 6.60403e+06 
+Debug [AnalyserQueue 1]: 19 : "F♯m" 950272 
+Debug [Main]: Writing waveform from byte array: dataSize 269708 allSignalSize 269708 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2345 "2169368 (957757 compressed)" bytes for track 12442 in 373 ms 
+Debug [Main]: Saved waveform analysis for trackId 12442 analysisId 2345 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.27883 audioVisualRatio 7023.6 
+Debug [Main]: AnalysisDAO saved analysis 2346 "30825 (14325 compressed)" bytes for track 12442 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 12442 analysisId 2346 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 10 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 8 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 11 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 8 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg,49462,/amusic/djs/jim/New Music/OMC - How Bizarre.mp3)" QSize(170, 170) 
+Debug [AnalyserQueue 1]: Prioritizing "How Bizzare" "/amusic/djs/jim/New Music/OMC - How Bizarre.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "How Bizzare" "/amusic/djs/jim/New Music/OMC - How Bizarre.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg,49462,/amusic/djs/jim/New Music/OMC - How Bizarre.mp3)" QSize(170, 170) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/401" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/402" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 16213 in 9 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 16213 done 6.162 s 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 1 : "C" 7.29779e+06 
+Debug [AnalyserQueue 1]: 2 : "D♭" 65536 
+Debug [AnalyserQueue 1]: 6 : "F" 753664 
+Debug [AnalyserQueue 1]: 13 : "Cm" 589824 
+Debug [AnalyserQueue 1]: 15 : "Dm" 1.17965e+06 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/M.I.A. - Paper Planes.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/03 Train - Hey, Soul Sister.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2010 Dance/mgmt_kids.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2010 Dance/Daft Punk - One More Time.mp3)" QSize(0, 0) 
+Debug [Main]: Writing waveform from byte array: dataSize 199340 allSignalSize 199340 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 2347 "1823008 (868408 compressed)" bytes for track 7231 in 333 ms 
+Debug [Main]: Saved waveform analysis for trackId 7231 analysisId 2347 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.49527 audioVisualRatio 5650.2 
+Debug [Main]: AnalysisDAO saved analysis 2348 "34989 (17395 compressed)" bytes for track 7231 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 7231 analysisId 2348 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 2 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 490 ms 5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "omc" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2353 ms 15 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "genres")   QVariant(QString, "/amusic/genres/") 
+Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "modern_rock")   QVariant(QString, "/amusic/genres/modern_rock/") 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "Hits of Modern Rock")   QVariant(QString, "/amusic/genres/modern_rock/Hits of Modern Rock/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "jim")   QVariant(QString, "/amusic/genres/modern_rock/jim/") 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [BrowseThread]: Abort populateModel() 
+Debug [BrowseThread]: Append last  3 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
 Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/05. Paradise By The Dashboard Light.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "05. Paradise By The Dashboard Light" "/amusic/fun/05. Paradise By The Dashboard Light.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "05. Paradise By The Dashboard Light" "/amusic/fun/05. Paradise By The Dashboard Light.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x311e28d0, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/05. Paradise By The Dashboard Light.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22632 in 0 ms 
+Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(294, 300) , "CoverInfo(METADATA,GUESSED,,37935,)" )" 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: Prioritizing "World Hold On" "/amusic/genres/modern_rock/jim/Bob Sinclair - World Hold On.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "World Hold On" "/amusic/genres/modern_rock/jim/Bob Sinclair - World Hold On.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/jim/Bob Sinclair - World Hold On.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 2925 in 5 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 2925 done 4.534 s 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 32 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [AnalyserQueue 1]: Prioritizing "Comfort Eagle" "/amusic/genres/modern_rock/jim/07 Comfort Eagle.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Comfort Eagle" "/amusic/genres/modern_rock/jim/07 Comfort Eagle.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,44492,/amusic/genres/modern_rock/jim/07 Comfort Eagle.mp3)" QSize(200, 197) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/379" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/380" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 2924 in 27 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,37935,/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3)" QSize(294, 300) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22653 in 0 ms 
+Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
+Debug [AnalyserQueue 1]: Prioritizing "You Get What You Give" "/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "You Get What You Give" "/amusic/genres/modern_rock/jim/Maybe You've Been Brainwashed Too - 02 - You Get What You Give.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22653 in 0 ms 
 Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
 Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
 Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
@@ -256,237 +871,495 @@ Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768
 Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
 Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 22632 done 30.766 s 
+Debug [AnalyserQueue 1]: Waveform generation for track 22653 done 23.894 s 
 Debug [AnalyserQueue 1]: Beat Calculation complete 
 Debug [AnalyserQueue 1]: Key Detection complete 
 Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 3.1913e+06 
-Debug [AnalyserQueue 1]: 3 : "D" 8.81459e+06 
-Debug [AnalyserQueue 1]: 5 : "E" 425984 
-Debug [AnalyserQueue 1]: 8 : "G" 3.04742e+06 
-Debug [AnalyserQueue 1]: 10 : "A" 2.19546e+06 
-Debug [AnalyserQueue 1]: 11 : "B♭" 524288 
-Debug [AnalyserQueue 1]: 15 : "Dm" 1.6384e+06 
-Debug [AnalyserQueue 1]: 17 : "Em" 163840 
-Debug [AnalyserQueue 1]: 22 : "Am" 2.12992e+06 
-Debug [AnalyserQueue 1]: 24 : "Bm" 360448 
+Debug [AnalyserQueue 1]: 1 : "C" 294912 
+Debug [AnalyserQueue 1]: 3 : "D" 5.07904e+06 
+Debug [AnalyserQueue 1]: 4 : "E♭" 262144 
+Debug [AnalyserQueue 1]: 8 : "G" 983040 
+Debug [AnalyserQueue 1]: 10 : "A" 2.27891e+06 
+Debug [AnalyserQueue 1]: 11 : "B♭" 360448 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 262144 
+Debug [AnalyserQueue 1]: 15 : "Dm" 1.90054e+06 
+Debug [AnalyserQueue 1]: 17 : "Em" 32768 
+Debug [AnalyserQueue 1]: 22 : "Am" 1.86778e+06 
+Debug [AnalyserQueue 1]: Analyzing "Comfort Eagle" "/amusic/genres/modern_rock/jim/07 Comfort Eagle.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/379" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/380" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 2924 in 2 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 2924 done 3.37 s 
+Debug [Main]: Already focused on playlist  140 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 17 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 17 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/modern_rock/jim/Bob Sinclair - World Hold On.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/21-The_Verve_Pipe-The_Freshmen.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 14 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 16 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/31-Collective_Soul-Shine.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 15 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 592 ms 19360 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 541 ms 5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "omc" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 467 ms 5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "omc" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 1290 ms 19381 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 778 ms 19381 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 884 ms 19381 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 546 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 6 ms 131 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 626 ms 19360 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 10 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 65 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 20 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 68 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 6 ms 186 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,36709,/amusic/billboard/year/2013/071 - 22 - Taylor Swift.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/4-04 A.B.C..mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 173378 allSignalSize 173378 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2349 "1663594 (792044 compressed)" bytes for track 2925 in 304 ms 
+Debug [Main]: Saved waveform analysis for trackId 2925 analysisId 2349 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.76744 audioVisualRatio 4515 
+Debug [Main]: AnalysisDAO saved analysis 2350 "36844 (18686 compressed)" bytes for track 2925 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 2925 analysisId 2350 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,35787,/amusic/billboard/latest/2014-08-04/28 Meghan Trainor - All About That Bass.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 266436 allSignalSize 266436 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2351 "2400933 (1121423 compressed)" bytes for track 22653 in 452 ms 
+Debug [Main]: Saved waveform analysis for trackId 22653 analysisId 2351 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.35593 audioVisualRatio 6938.4 
+Debug [Main]: AnalysisDAO saved analysis 2352 "34451 (16459 compressed)" bytes for track 22653 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22653 analysisId 2352 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,3554,/amusic/genres/disco/09 - Boogie Shoes.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 197730 allSignalSize 197730 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2353 "1718366 (806604 compressed)" bytes for track 16213 in 302 ms 
+Debug [Main]: Saved waveform analysis for trackId 16213 analysisId 2353 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.56444 audioVisualRatio 5149.2 
+Debug [Main]: AnalysisDAO saved analysis 2354 "33533 (16290 compressed)" bytes for track 16213 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 16213 analysisId 2354 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,29610,/amusic/billboard/latest/2013-05-19/070 Robin Thicke ft T.I. & Pharrell - Blurred Lines.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,49009,/amusic/billboard/latest/2014-08-04/29 Iggy Azalea - Black Widow (Feat.Rita Ora).mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,4960,/amusic/billboard/year/2011/Bass Down Low (feat. Dev).mp3)" QSize(300, 300) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 104 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 23 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,33409,/amusic/billboard/latest/2015-02-06/25 Mr.Probs - Waves.mp3)" QSize(300, 286) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,12864,/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "Heroes (we could be) [Feat. Tove Lo]" "/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Heroes (we could be) [Feat. Tove Lo]" "/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/903" length 0 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x311e28d0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,12864,/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/904" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 19060 in 7 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/031-Ready_For_The_World-Oh_Sheila.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Oh Sheila" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/031-Ready_For_The_World-Oh_Sheila.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Oh Sheila" "/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/031-Ready_For_The_World-Oh_Sheila.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/977" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/978" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 11671 in 0 ms 
 Debug [AnalyserQueue 1]: Beat calculation will not start 
 Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
 Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
 Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1985_BillBoard_Top_USA_Singles/031-Ready_For_The_World-Oh_Sheila.mp3)" QSize(0, 0) 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 19060 done 5.328 s 
+Debug [AnalyserQueue 1]: Waveform generation for track 11671 done 4.976 s 
 Debug [AnalyserQueue 1]: Key Detection complete 
 Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 6 : "F" 9.26093e+06 
+Debug [AnalyserQueue 1]: 2 : "D♭" 360448 
+Debug [AnalyserQueue 1]: 8 : "G" 327680 
+Debug [AnalyserQueue 1]: 9 : "A♭" 4.45645e+06 
+Debug [AnalyserQueue 1]: 10 : "A" 524288 
+Debug [AnalyserQueue 1]: 14 : "C♯m" 622592 
+Debug [AnalyserQueue 1]: 19 : "F♯m" 32768 
+Debug [AnalyserQueue 1]: 20 : "Gm" 917504 
+Debug [AnalyserQueue 1]: 21 : "G♯m" 1.49722e+06 
+Debug [AnalyserQueue 1]: 22 : "Am" 163840 
+Debug [AnalyserQueue 1]: 23 : "B♭m" 360448 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 499 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "Search..." ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 463 ms 2 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38427,/amusic/billboard/latest/2013-05-19/017 Daft Punk - Get Lucky (feat. Pharrell Williams).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "Get Lucky (feat. Pharrell Williams) [Radio Edit]" "/amusic/billboard/latest/2013-05-19/017 Daft Punk - Get Lucky (feat. Pharrell Williams).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Get Lucky (feat. Pharrell Williams) [Radio Edit]" "/amusic/billboard/latest/2013-05-19/017 Daft Punk - Get Lucky (feat. Pharrell Williams).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x311e28d0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,38427,/amusic/billboard/latest/2013-05-19/017 Daft Punk - Get Lucky (feat. Pharrell Williams).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7875 in 0 ms 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1984_BillBoard_Top_USA_Singles/01-Prince-When_Doves_Cry.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 7875 done 5.547 s 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 465 ms 103 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 466 ms 5 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1990_Billboard_Top_Usa_Singles/004-Bell_Biv_Devoe-Poison.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-09 Raspberry Beret.mp3)" QSize(200, 198) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 9 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 9 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 0 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 2 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 2 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 492 ms 5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "raspb" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-09 Raspberry Beret.mp3)" QSize(200, 198) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 467 ms 1460 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 489 ms 140 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'SPRING LOVE' by Stevie B.mp3)" QSize(0, 0) 
-Debug [Main]: Writing waveform from byte array: dataSize 449834 allSignalSize 449834 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 2301 "4006191 (1968880 compressed)" bytes for track 22632 in 723 ms 
-Debug [Main]: Saved waveform analysis for trackId 22632 analysisId 2301 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 3.7646 audioVisualRatio 11714.4 
-Debug [Main]: AnalysisDAO saved analysis 2302 "34261 (17360 compressed)" bytes for track 22632 in 4 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22632 analysisId 2302 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55762,/amusic/genres/dance/Club Classics/Prince/1999/Prince - 1999.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'SPRING LOVE' by Stevie B.mp3)" QSize(0, 0) 
-Debug [Main]: DlgTrackInfo::slotPixmapFound DlgTrackInfo(0x2bcc09f0, name = "DlgTrackInfo")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'SPRING LOVE' by Stevie B.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'SPRING LOVE' by Stevie B.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 8 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 8 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 3 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 472 ms 1 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/club/MIXED CLUB/Whitney Houston - MY LOVE IS YOUR LOVE - 4-29.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1984_BillBoard_Top_USA_Singles/021-Prince-Lets_Go_Crazy.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 3 ms 7 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 3 ms 7 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,33409,/amusic/billboard/latest/2015-02-06/25 Mr.Probs - Waves.mp3)" QSize(300, 286) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2013-09-08/049.Darius Rucker - Wagon Wheel.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 3 ms 6 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 6 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2013-09-08/007.Bruno Mars - Treasure.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 4 ms 5 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 5 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,12864,/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3)" QSize(300, 300) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 5 ms 190 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  51 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 5 ms 190 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,33409,/amusic/billboard/latest/2015-02-06/25 Mr.Probs - Waves.mp3)" QSize(300, 286) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,12864,/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3)" QSize(300, 300) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 0 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  133 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,33409,/amusic/billboard/latest/2015-02-06/25 Mr.Probs - Waves.mp3)" QSize(300, 286) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: WLibrarySidebar::dragEnterEvent ("text/uri-list", "text/plain") 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 2 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,33409,/amusic/billboard/latest/2015-02-06/25 Mr.Probs - Waves.mp3)" QSize(300, 286) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,12864,/amusic/billboard/latest/2015-02-06/35 Alesso - Heroes (We Could Be) (Feat.Tove Lo).mp3)" QSize(300, 300) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2bc5fe00)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz)" "/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz)" "/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x311e28d0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1591" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1592" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2416674 bytes for track 19546 in 112 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 258142 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.56016 audioVisualRatio 6722.4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 4 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 4 
+Debug [AnalyserQueue 1]: Prioritizing "Let's Go Crazy" "/amusic/billboard/year/1984_BillBoard_Top_USA_Singles/021-Prince-Lets_Go_Crazy.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Let's Go Crazy" "/amusic/billboard/year/1984_BillBoard_Top_USA_Singles/021-Prince-Lets_Go_Crazy.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30b29d10, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1984_BillBoard_Top_USA_Singles/021-Prince-Lets_Go_Crazy.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/939" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/940" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2003387 bytes for track 11525 in 130 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 246138 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.88009 audioVisualRatio 6409.8 
 Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
 Debug [AnalyserQueue 1]: Beat calculation will not start 
 Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyserQueue 1]: Key calculation will not start. 
 Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 2 ms 23 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 1 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 475 ms 18 
+Debug [Main]: LibraryTableModel(0x45caa50) select() took 479 ms 5 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55762,/amusic/genres/dance/Club Classics/Prince/1999/Prince - Little Red Corvette.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 5 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 65 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 4 ms 68 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 18 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 0 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 6 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 6 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 0 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 0 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  134 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 643 ms 19360 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 509 ms 42 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 498 ms 42 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 492 ms 0 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 501 ms 0 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 711 ms 19360 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 1198 ms 19360 
-Debug [Main]: LibraryTableModel(0x4c95fd0) select() took 572 ms 0 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1983_BillBoard_Top_USA_Singles/074-Elton_John-Im_Still_Standing.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/Rockin' Eighties Sounds of the Eighties - Rockin' Eighties/David Bowie - Modern Love.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Modern Love" "/amusic/billboard/decades/80's/Rockin' Eighties Sounds of the Eighties - Rockin' Eighties/David Bowie - Modern Love.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Modern Love" "/amusic/billboard/decades/80's/Rockin' Eighties Sounds of the Eighties - Rockin' Eighties/David Bowie - Modern Love.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3340a530, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/Rockin' Eighties Sounds of the Eighties - Rockin' Eighties/David Bowie - Modern Love.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1587" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1588" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1795637 bytes for track 6641 in 516 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 211370 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.01177 audioVisualRatio 5504.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 36 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 10 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 8 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/08 SOME KIND OF WONDERFUL.mp3)" QSize(200, 200) 
+Debug [Main]: Writing waveform from byte array: dataSize 185266 allSignalSize 185266 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 2355 "1491440 (667373 compressed)" bytes for track 11671 in 231 ms 
+Debug [Main]: Saved waveform analysis for trackId 11671 analysisId 2355 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.14065 audioVisualRatio 4824.6 
+Debug [Main]: AnalysisDAO saved analysis 2356 "30822 (15047 compressed)" bytes for track 11671 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 11671 analysisId 2356 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 6 ms 190 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 3 ms 49 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/California Love Tupac Unknown Album (1-26-2006 8-04-19 AM).mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [CachingReaderWorker 2]: SSMP3: file has differing samplerate in some headers: "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 44100 vs 11025 
+Debug [CachingReaderWorker 2]: SSMP3: file has differing samplerate in some headers: "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 44100 vs 11025 
+Debug [AnalyserQueue 1]: Prioritizing "Hypnotize" "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Hypnotize" "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3340a530, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: SSMP3: file has differing samplerate in some headers: "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 44100 vs 11025 
+Debug [AnalyserQueue 1]: SSMP3: file has differing samplerate in some headers: "/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/025-Notorious_B.I.G.-Hypnotize.mp3" 44100 vs 11025 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/35" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/36" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1665366 bytes for track 12706 in 104 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 203206 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.33365 audioVisualRatio 5291.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1994_Billboard_Top_Usa_Singles/065-69_Boyz-Tootsee_Roll.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/205. Grandmaster Flash - The Message.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b5a04e0)  "CoverInfo(METADATA,GUESSED,,40488,/amusic/billboard/latest/2015-09-12/61. N.W.A. - Straight Outta Compton.mp3)" QSize(298, 300) 
+Debug [AnalyserQueue 1]: Prioritizing "Straight Outta Compton" "/amusic/billboard/latest/2015-09-12/61. N.W.A. - Straight Outta Compton.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Straight Outta Compton" "/amusic/billboard/latest/2015-09-12/61. N.W.A. - Straight Outta Compton.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3340a530, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,40488,/amusic/billboard/latest/2015-09-12/61. N.W.A. - Straight Outta Compton.mp3)" QSize(298, 300) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1515" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1516" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2002076 bytes for track 19531 in 111 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 228696 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 7.4048 audioVisualRatio 5955.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Already focused on playlist  135 
-Debug [Main]: PlaylistTableModel(0x4d57e00) select() took 1 ms 0 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 2 ms 5 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x468c990) select() took 1 ms 8 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  10 
-Debug [Main]: delete soundmanager  11 
-Debug [Main]: delete view  35 
+Debug [Main]: save config  43 
+Debug [Main]: delete soundmanager  77 
+Debug [Main]: delete view  321 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -506,52 +1379,36 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  1555 
+Debug [Main]: delete ControllerManager  5810 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  1557 
-Debug [Main]: delete library scanner  1559 
+Debug [Main]: delete vinylcontrolmanager  5982 
+Debug [Main]: delete library scanner  6076 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  1562 
+Debug [Main]: delete library  6179 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: Writing waveform from byte array: dataSize 185220 allSignalSize 185220 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 2303 "1661794 (795061 compressed)" bytes for track 19060 in 483 ms 
-Debug [Main]: Saved waveform analysis for trackId 19060 analysisId 2303 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.14293 audioVisualRatio 4823.4 
-Debug [Main]: AnalysisDAO saved analysis 2304 "34349 (17088 compressed)" bytes for track 19060 in 44 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 19060 analysisId 2304 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 1 ms 
-Debug [Main]: Writing waveform from byte array: dataSize 219158 allSignalSize 219158 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 2305 "1894022 (910368 compressed)" bytes for track 7875 in 467 ms 
-Debug [Main]: Saved waveform analysis for trackId 7875 analysisId 2305 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.72708 audioVisualRatio 5707.2 
-Debug [Main]: AnalysisDAO saved analysis 2306 "33261 (16718 compressed)" bytes for track 7875 in 7 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 7875 analysisId 2306 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4c99160) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x45cdbe0) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  3849 
+Debug [Main]: delete playerManager  8439 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  3859 
+Debug [Main]: delete RecordingManager  9155 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  3861 
+Debug [Main]: delete ShoutcastManager  9228 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  3925 
+Debug [Main]: delete m_pEngine  9366 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -561,15 +1418,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  4044 
-Debug [Main]: deleting effects manager,  4078 
+Debug [Main]: deleting preferences,  17958 
+Debug [Main]: deleting effects manager,  18331 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3339fd0) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2c6c3f0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2a74160) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3334650) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x23a65b0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2c66a10) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  4370 
+Debug [Main]: delete config  20704 
 Debug [Main]: Mixxx shutdown complete with code 0 
