@@ -1,9 +1,9 @@
-Debug [Main]: Mixxx "2.0.0" "(git 1.12 r5772; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=0 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
+Debug [Main]: Mixxx "2.0.0-release" "(git 1.12 r5796; built on: Jun  4 2016 @ 03:16:21; flags: asan=0 asmlib=0 autodjcrates=1 buildtime=1 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 shoutcast=1 test=False vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
 Debug [Main]: Library versions: 
 Debug [Main]: Qt: 4.8.7 
 Debug [Main]: libshout: 2.3.1 
 Debug [Main]: RubberBand: 1.8.1 
-Debug [Main]: SoundTouch: 1.9.2 
+Debug [Main]: SoundTouch: 1.8.0 
 Debug [Main]: TagLib: 1.9.1 
 Debug [Main]: ChromaPrint: 1.2.0 
 Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.5 
@@ -11,7 +11,7 @@ Debug [Main]: FLAC: 1.3.1
 Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/jbreslin" 
 Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.local/share/data//Mixxx" 
 Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin" 
-Debug [Main]: Configuration file is at the current version 2.0.0 
+Warning [Main]: Configuration file is at version "2.0.0" instead of the current 2.0.0-release 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x1e48110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x2df8110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x1e48110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x1e48110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x1e48110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x2df8110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x2df8110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x2df8110, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -96,8 +96,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a096d90) true 
-Debug [Main]: Created root GL Context valid: 0x2a09b310 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2b0130e0) true 
+Debug [Main]: Created root GL Context valid: 0x2b017830 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -157,10 +157,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 337 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2bcf26f0) select() took 484 ms 31 
-Debug [Main]: AnalysisLibraryTableModel(0x2bcf26f0) select() took 140 ms 31 
-Debug [Main]: DlgAnalysis(0x2b8dd320, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x53ec580) updateIndexWithQuery took 1354 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2cc6bd00) select() took 2438 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2cc6bd00) select() took 498 ms 0 
+Debug [Main]: DlgAnalysis(0x2c856cb0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -185,30 +185,49 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2c0e1260, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2ed03e70, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x445ae30) select() took 439 ms 19381 
+Debug [Main]: LibraryTableModel(0x53e93f0) select() took 1774 ms 19389 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
-Debug [Main]: Starting LibraryScanner thread. 
 Debug [Controller]: Scanning PortMIDI devices: 
+Debug [Main]: Starting LibraryScanner thread. 
 Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: ALC269VB Analog (hw:0,0)" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c4b31c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c4b31c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c4b31c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c4b31c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD81B1C5 Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b53ff60, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b53ff60, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b53ff60, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b53ff60, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Using "HDA Intel: 92HD81B1C5 Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: 2 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
 Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
 Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
 Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
+Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r769" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
@@ -227,148 +246,258 @@ Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/contro
 Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
 Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
 Debug [Controller]: Controller polling started. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "2, USB Audio CODEC: - (hw:1,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 2 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel MID: ALC269VB Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 3 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: Displaying mixxx 
-Debug [Main]: Running Mixxx 
 Debug [Main]: ControllerManager::getControllerList 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3930b300) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3930b290) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3930b220) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3930b1b0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39599570) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x38c66d50) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x38c62070) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x38c787e0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x38c5ca70) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3899c250) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x39e4bdb0) 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "genres")   QVariant(QString, "/amusic/genres/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "motown")   QVariant(QString, "/amusic/genres/motown/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "breslin_motown")   QVariant(QString, "/amusic/genres/motown/breslin_motown/") 
-Debug [BrowseThread]: Append last  2 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 0 ms 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt found metadata art  "CoverArt(QSize(300, 300) , "CoverInfo(METADATA,GUESSED,,35372,)" )" 
-Debug [AnalyserQueue 1]: Prioritizing "I Got A Feeling" "/amusic/genres/motown/breslin_motown/14 - I Got A Feeling.flac" 
-Debug [AnalyserQueue 1]: Analyzing "I Got A Feeling" "/amusic/genres/motown/breslin_motown/14 - I Got A Feeling.flac" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30af0ad0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,35372,/amusic/genres/motown/breslin_motown/14 - I Got A Feeling.flac)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22654 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 1 ms 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Thread (pooled)]: CoverArtUtils::guessCoverArt didn't find art  "CoverArt(QSize(0, 0) , "CoverInfo(NONE,GUESSED,,0,)" )" 
-Debug [AnalyserQueue 1]: Waveform generation for track 22654 done 4.868 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 344272 
-Debug [AnalyserQueue 1]: 6 : "F" 3.21126e+06 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 65536 
-Debug [AnalyserQueue 1]: 18 : "Fm" 524288 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 360448 
-Debug [AnalyserQueue 1]: 22 : "Am" 3.24403e+06 
-Debug [AnalyserQueue 1]: Prioritizing "The four tops - I got a feeling-b7PXwPzWxvM" "/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x333d0560, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "The four tops - I got a feeling-b7PXwPzWxvM" "/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22655 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 22655 done 5.405 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 2 : "D♭" 3.14573e+06 
-Debug [AnalyserQueue 1]: 6 : "F" 131072 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 294912 
-Debug [AnalyserQueue 1]: 13 : "Cm" 884736 
-Debug [AnalyserQueue 1]: 15 : "Dm" 32768 
-Debug [AnalyserQueue 1]: 22 : "Am" 262144 
-Debug [AnalyserQueue 1]: 23 : "B♭m" 3.38982e+06 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "house")   QVariant(QString, "/amusic/genres/house/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append last  1 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "20th Century Masters - The Millennium Collection The Best of Smokey Robinson & The Mir")   QVariant(QString, "/amusic/genres/motown/20th Century Masters - The Millennium Collection The Best of Smokey Robinson & The Mir/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "breslin_motown")   QVariant(QString, "/amusic/genres/motown/breslin_motown/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append last  1 
-Debug [AnalyserQueue 1]: Prioritizing "The four tops - I got a feeling-b7PXwPzWxvM" "/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "The four tops - I got a feeling-b7PXwPzWxvM" "/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30af0ad0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/motown/breslin_motown/The four tops - I got a feeling-b7PXwPzWxvM.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 1 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 1 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append last  2 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "idjpool")   QVariant(QString, "/amusic/idjpool/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append last  5 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "2016-06-01")   QVariant(QString, "/amusic/billboard/latest/2016-06-01/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/010. Rihanna feat. Drake - Work.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/021. Drake - Controlla.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/032. Kevin Gates - 2 Phones.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/043. DJ Snake feat. Bipolar Sunshine - Middle.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/054. Flume feat. Kai - Never Be Like You.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/064. Drake feat. Partynextdoor - With You.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/075. Beyonce - Formation.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/080. Alan Walker - Faded.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/090. Dan + Shay - From The Ground Up.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/billboard/latest/2016-06-01/100. Alisan Porter - Down That Road.mp3" 
-Debug [BrowseThread]: Append last  0 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a1be7f0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a1be780) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a1be710) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a1be6a0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39c608b0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3af6e8d0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3af6e6c0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3af6ed20) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3af6ef90) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3af6f200) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3af6f470) 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x445ae30) select() took 470 ms 19383 
+Debug [Main]: LibraryTableModel(0x53e93f0) select() took 2006 ms 19389 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: LibraryTableModel(0x53e93f0) select() took 1930 ms 1134 
+Debug [Main]: LibraryTableModel(0x53e93f0) select() took 1500 ms 108 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 23 ms 131 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 4 ms 87 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54baf50) select() took 4 ms 95 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Nelly - Hot In Herre.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg" "/amusic/djs/jim/New Music/Back Street Boys - Everybody (Backstreet's Back).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Bye Bye Bye [2000] -NSYNC Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Maya & wyclef jean - pras, mya, odb, wycleaf jean - ghetto superstar.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/country/The Best Country Album In The World...ever [UK] 2/02 THE DEVIL WENT DOWN TO GEORGIA.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/country/The Best Country Album In The World...ever [UK] 2/02 THE DEVIL WENT DOWN TO GEORGIA.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Lynard Skynard - Sweet Home Alabama.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It's Tricky Run-D.M.C Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It's Tricky Run-D.M.C Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It's Tricky Run-D.M.C Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It's Tricky Run-D.M.C Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Bryan Adams - Summer Of '69.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Maya & wyclef jean - pras, mya, odb, wycleaf jean - ghetto superstar.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Flo Rida ft. T-Pain - Get Lower.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg" "/amusic/djs/jim/New Music/Back Street Boys - Everybody (Backstreet's Back).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Bye Bye Bye [2000] -NSYNC Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Usher - Yeah.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg" "/amusic/djs/jim/New Music/Back Street Boys - Everybody (Backstreet's Back).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Nelly - Hot In Herre.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Nelly - Hot In Herre.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Usher - Yeah.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg" "/amusic/djs/jim/New Music/Back Street Boys - Everybody (Backstreet's Back).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Flo Rida ft. T-Pain - Get Lower.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Maya & wyclef jean - pras, mya, odb, wycleaf jean - ghetto superstar.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Bryan Adams - Summer Of '69.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/country/The Best Country Album In The World...ever [UK] 2/02 THE DEVIL WENT DOWN TO GEORGIA.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Lynard Skynard - Sweet Home Alabama.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Otis Redding - Shout (Animal House).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Wham - Wake Me Up Before You Go-Go.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Maya & wyclef jean - pras, mya, odb, wycleaf jean - ghetto superstar.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/70's - The Four Seasons - December '63, Oh What a Night.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Scissor Sisters - I Don't Feel Like Dancing.mp3.jpg" "/amusic/djs/jim/New Music/Back Street Boys - Everybody (Backstreet's Back).mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Bye Bye Bye [2000] -NSYNC Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/16 #1 Hits From The Late 60's/I Can't Get Next To You.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/various/Boogie Nights/Best Of My Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Whitney Houston - I Want To Dance With Somebody.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/2-25 You Can't Hurry Love.mp3" 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/Bobby/stevie b - spring love.mp3" 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 27 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 87 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 66 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 50 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 50 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 18 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x53ec580) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 28 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 28 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 28 
+Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Wasn't Me [2000] Shaggy Now, Vol. 6.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(METADATA,GUESSED,,38656,/amusic/billboard/latest/2015-09-12/94. Macklemore & Ryan Lewis - Downtown (Feat.Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz).mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 5 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 27 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 27 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(METADATA,GUESSED,,13166,/amusic/billboard/latest/2015-09-12/23. @iHeartMemphis - Hit The Quan.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 26 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(METADATA,GUESSED,,59983,/amusic/genres/urban/RAP,R&B,HIP-HOP/Jagged Edge/Artist - Let's Get Married by Jagged Edge.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 4 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 25 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 25 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/08-Fat_Joe_Featuring_Ashanti-Whats_Luv.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 5 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 2 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 3 ms 24 
+Debug [Main]: PlaylistTableModel(0x54ab860) select() took 1 ms 24 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c4c1df0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3)" QSize(0, 0) 
+Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3" ", unlocked reader lock 
+Debug [Main]: Failed to load track "/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3" "The file '/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3' could not be found." 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  6 
-Debug [Main]: delete soundmanager  6 
-Debug [Main]: delete view  42 
+Debug [Main]: save config  5 
+Debug [Main]: delete soundmanager  27 
+Debug [Main]: delete view  49 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -388,51 +517,37 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  798 
+Debug [Main]: delete ControllerManager  1171 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  802 
-Debug [Main]: delete library scanner  803 
+Debug [Main]: delete vinylcontrolmanager  1203 
+Debug [Main]: delete library scanner  1205 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  804 
+Debug [Main]: delete library  1208 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  149 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: Writing waveform from byte array: dataSize 154998 allSignalSize 154998 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 2361 "1290592 (610920 compressed)" bytes for track 22654 in 141 ms 
-Debug [Main]: Saved waveform analysis for trackId 22654 analysisId 2361 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.9256 audioVisualRatio 4036.38 
-Debug [Main]: AnalysisDAO saved analysis 2362 "32031 (16111 compressed)" bytes for track 22654 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22654 analysisId 2362 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 1 ms 
-Debug [Main]: Writing waveform from byte array: dataSize 162824 allSignalSize 162824 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 2363 "1520616 (436779 compressed)" bytes for track 22655 in 126 ms 
-Debug [Main]: Saved waveform analysis for trackId 22655 analysisId 2363 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.4005 audioVisualRatio 4240.2 
-Debug [Main]: AnalysisDAO saved analysis 2364 "35754 (11324 compressed)" bytes for track 22655 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22655 analysisId 2364 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x445dfc0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1532 
+Debug [Main]: delete playerManager  1462 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1533 
+Debug [Main]: delete RecordingManager  1464 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1533 
+Debug [Main]: delete ShoutcastManager  1465 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1534 
+Debug [Main]: delete m_pEngine  1481 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -442,15 +557,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1561 
-Debug [Main]: deleting effects manager,  1568 
+Debug [Main]: deleting preferences,  1526 
+Debug [Main]: deleting effects manager,  1538 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2af7530) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3a80990) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2124570) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2af2150) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x31ab7d0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3002d90) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1594 
+Debug [Main]: delete config  1612 
 Debug [Main]: Mixxx shutdown complete with code 0 
