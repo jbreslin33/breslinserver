@@ -151,7 +151,7 @@
         ServerAlias visflip.com *.visflip.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/moodle/
+        DocumentRoot /home/jbreslin/sandbox/visflip/
         <Directory />
 		Require all granted		
                 Options FollowSymLinks
