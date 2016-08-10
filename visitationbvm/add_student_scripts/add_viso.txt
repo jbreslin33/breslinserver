@@ -46,6 +46,7 @@ ecoleman:Password1:1248:50:Edward Coleman:/home/v1248:/bin/bash
 ebandura:Password1:1249:50:Elizabeth Bandura:/home/v1249:/bin/bash
 hlinville:Password1:1250:50:Hollie Linville:/home/v1250:/bin/bash
 jdittbrenner:Password1:1251:50:Jill Dittbrenner:/home/v1251:/bin/bash
+kbritt:Password1:1252:50:Kathleen Britt:/home/v1252:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
