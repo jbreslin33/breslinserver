@@ -1,0 +1,63 @@
+
+NOSE © 2005-2006 Anton E. Snopek [wboy@hexaddicts.com]
+http://www.hexaddicts.com
+
+
+NOSE 1.2b - [060617]
+====================
+
+- Support for NHL 94 ROMs applied with my new "30 Team ROM Hack" IPS patch.
+
+- INI file changes allowing the dynamic indentification of offsets within
+  ROMs previously applied with the "Free Bytes" hacks supported by NOSE.
+
+- Calculation and correction of the Sega Genesis checksum located at 0x018E
+  when the ROM is saved within NOSE.
+
+- Various minor bug fixes, and some other stuff I can't remember anymore as
+  it was so long ago.
+
+
+
+NOSE 1.1b - [060126]
+====================
+
+- Overall Rating column for Goalies and Players.
+
+- Accurate Genesis Hex BGR 512 color palette representation within Color Browser.
+
+- Support for the NHLPA '93 REV 00 ROM binary.
+
+- Load time improvements on Player/Goalie Edit windows
+
+- Pressing 0..9, A..F on the Player/Goalie attributes now auto tabs to the
+  next attribute simulating editing within a hex editor.
+
+- Previous/Next item & Next item on Apply support added to all relevant Edit
+  Windows.
+
+- All uncommitted values (typically in Edit Windows) now show in inverted in
+  color instead of showing the font in bold.
+
+- Cursor/Highlight behavior changed when editing text items.
+
+- The Backslash Key operates same as Backspace in Quick Edit Mode, as some OEM
+  keyboards with slightly modified layouts place the [\] before the [BkSpc].
+
+- The Minus/(shift)Underscore [-] and Equals/(shift)Plus [=] keys now also 
+  alter the values of combo boxes like Numpad Minus [-] and Numpad Plus [+].
+
+- Edit window's position restore bugs fixed.
+
+- Minor INI file changes.
+
+- Various minor bugs fixes and cosmetic touch-ups.
+
+- Build [Number] format change.
+
+
+
+NOSE 1.0b [0001]
+================
+
+- Original release.

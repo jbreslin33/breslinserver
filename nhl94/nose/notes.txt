@@ -1,0 +1,338 @@
+
+NOSE © 2005-2006 Anton E. Snopek [wboy@hexaddicts.com]
+http://www.hexaddicts.com
+
+Last updated January 26, 2006 - wboy.
+
+____________________________________________
+NOSE - NHL Old Skool Editor – Author's Notes
+********************************************
+
+This document is by no means a complete user manual for NOSE.  It is simply a
+collection of notes and tips to help you get started with using NOSE.  I have
+tried to make NOSE as user friendly as possible, so by reading the information
+below you should hopefully minimise your learning curve and see how to get the
+most out of the features within NOSE.  Please take the time to read through it
+thoroughly!
+
+____________________________
+NOSE IS STILL BETA SOFTWARE!
+****************************
+Please remember that NOSE is still beta software.  If you alter or remove any
+of the supporting files, you may introduce errors that I have not yet safe
+guarded against.  You've been warned!
+
+
+______________
+SUPPORTED ROMS
+**************
+NOSE is guaranteed to support the following GoodGen V3.00 verified ROM files:
+
+ - EA Hockey (E) [!].bin
+ - NHL Hockey (U) [!].bin
+ - NHLPA Hockey '93 (UE) (REV00).bin
+ - NHLPA Hockey '93 (UE) (REV01) [!].bin
+ - NHL 94 (UE) [!].bin
+ - NHL 95 (UE) [!].bin
+ - NHL 95 Elitserien (E) [c][!].bin
+ - NHL 96 (UE) [!].bin
+ - NHL 96 Elitserien (E).bin
+ - NHL 97 (UE) [!].bin
+ - NHL 98 (U) [c][!].bin
+
+Attempting to load any manually hex edited ROM may result in many unexpected
+errors if the data within does not conform to the expected structure assumed
+by both the actual game and NOSE.
+
+Cowering's GoodTools are available from http://www.allgoodthings.us
+Registration is required to download the GoodGen V3.00 from within the forums.
+
+
+________________
+USING FREE BYTES
+****************
+Free bytes are created when you shorten names or delete players from the loaded
+ROM's team rosters. NOSE manages any free bytes created and stores them
+in-between the altered team's line configuration and goalie properties data.
+
+Managed correctly, which NOSE does seamless for you, there are no bugs
+introduced to the actual game when storing these unused free bytes in that
+specific location of the team's data.  Best of all, NOSE allows you to transfer
+these free bytes to other teams allowing you to further modify or increase their
+rosters.
+
+While NOSE does support the ability to allow you to semi-manually manage the
+shifting of free bytes between teams, it can be a little tedious and limiting
+when switching your focus to another team realising the previous team still
+has all the free bytes you now require!
+
+To ease the burden of managing this, I STRONGLY RECOMMEND you enable the
+"Auto Manage Free Bytes" option found on the "Teams" list window toolbar. All of
+the ROM's available free bytes will then automatically move to the team in focus
+as you go about updating the rosters, allowing you to enjoy editing freedom.
+
+
+___________
+APPLY HACKS
+***********
+NOSE currently supports two ROM hacks, both of which increase the amount free
+bytes that are made available to the team rosters. This is achieve by moving the
+game's Intro Text data, that typically resides after the Playoff Draw data,
+to end of the ROM structure. If even more free bytes are required, the Playoff
+Draw Data itself, that typically resides after the Team Roster data can also be
+moved to the end of the ROM.
+
+Please note NHL95 does not support moving the Intro Text data, as the original
+ROM already stored the data at the end of the ROM!  Its does however support
+the Playoff Draw move which will give you an addition 512 free bytes for your
+team rosters.
+
+The ELITSERIEN series ROMS do not support either ROM hack.
+
+The "Apply Hacks" options can be found under the "ROM" file menu structure.
+
+________
+HEX/TEXT
+********
+To see more meaningful data when viewing the Goalie or Player list windows,
+switch to "Text" mode by pressing [F3].  You can switch back to "Hex" mode by
+pressing [F2].
+
+
+______________
+OVERALL RATING
+**************
+NHL94/5/6/7/8 is based on the Trade Player rating. EA Hockey (91) & NHL 92 
+are based on NHLPA 93's Overall Rating Formula.  Place the mouse cursor over
+the Edit window's Overall Rating field to show the summary used to calculate
+the rating.
+
+Please note, the in-game overall ratings for NHL94/5 will vary -4 to +3 of the
+trade rating.  NHL96/7/8 will vary a maximum of -5 to +5 of the trade rating.
+NHL93's should always be exact as the in-game overall rating.
+
+NHL94/5/6/7/8 trade ratings greater than 100 will be displayed as/limited to 99
+in-game while NOSE will display the complete overall rating total. e.g. 107.
+
+
+____________________
+PLAYOFF DRAW EDITING
+********************
+While NOSE does provide the facility to edit the Playoff Draws, please use it
+with great precaution.  Playoff Draw data that is not configured correctly can
+cause the game to hang when cycling through teams in Playoff Mode.  It's support
+has be included to allow the further research of the restrictions imposed by the
+actual game and learn how to conform to what it expects.
+
+
+_____________
+MENU DEFAULTS
+*************
+Menu Defaults are currently only supported in NHL91 through NHL95.  Please
+note that not some menu combinations will not load as expected in-game.  For
+example, NHL95 will ignore the "Play Mode" you've selected and alway start on
+"Regular Game".
+
+
+_______________
+QUICK EDIT KEYS
+***************
+By enabling the Quick Edit Key mode, you can modify the position, jersey and
+attribute data of both Goalies and Players from their respective list windows
+without the need to load an individual's properties edit window.
+
+By using the fourteen keys [`],[1],[2]..[9],[0],[-],[=] & [BkSpc] at the
+top of your keyboard, you can alter the associated attribute column as
+follows:
+
+Press the desired key to adjust the associated column value by +1 (Hex), or
+hold [Shift] and press the desired key to adjust the associated column value
+by -1 (Hex).
+
+To easily identify an attribute column Quick Edit Key, simple place your mouse
+cursor over the column titles and refer to the tooltip text.  The Quick Edit Key
+will only be shown in the tooltip if "Quick Edit Mode" is ENABLED!
+
+The adjust the Jersey Number, use [Numpad +] to raise the value 1, and
+[Numpad -] to lower the value by 1.
+
+For NHL96 through NHL98 which support storing a player's preferred line
+position, use the following Quick Edit Keys to assign the Position value:
+
+[Numpad 4] = LW  :  [Numpad 5] = C  :  [Numpad 6] = RW
+[Numpad 1] = LD  :  [Numpad 2] = G  :  [Numpad 3] = RD
+
+As the Goalie and Player list windows both support multi-select, please note
+that any Quick Edit Key used will affect all highlighted sections on the active
+window.
+
+
+_____________
+SHORTCUT KEYS
+*************
+The majority of the assigned shortcut keys can be seen by browsing through the
+NOSE's file menu bar when you have loaded any ROM, and by placing your mouse
+cursor over the toolbar buttons and viewing the associated tooltip text.
+
+In addition, you are also able to use [Ctrl]+[I] to invert the active list
+window selection(s) if the list window supports multi-select.
+
+
+All combo boxes within NOSE also support the following shortcut keys:
+
+[Numpad +] or [=+] = Set next available list item value
+[Numpad -] or [-_] = Set previous available list item value
+[Esc] = Set original value (only effective when the current values shows bold)
+[Enter] = Next field/tab stop
+[BkSpc] = Previous field/tab sto
+
+[0]..[9],[A]..[F] will automatic tab to the next attribute when editing players
+or goalies, effectively speeding up entry to match a hex editor when you known
+the attribute values you are assigning.
+
+The [Left Arrow] and [Right Arrow] keys can be used to change focus between the
+Teams, Goalies, Players and Lines list windows, effectively allowing for 
+mouse-less navigation between them.
+
+
+__________________
+ROSTER LIMITATIONS
+******************
+Due to limitations in the actual game engines, NOSE will only permit a maximum
+roster of 26 per team for NHL91 through NHL95, and a maximum of 27 per team for
+NHL96 through NHL98.
+
+NHL96 through NHL98 also only support a maximum of three goalies per team
+(included in the total roster maximum of 27).  NOSE does not currently impose
+this limitation, so make sure you manage it properly yourself for the game may
+not work as expected!
+
+
+____________
+COPY & PASTE
+************
+NOSE contains advanced copy & paste features to easily allow you to transfer
+Goalie, Player, Line & Playoff Draw data between the same ROM, or a different
+ROM opened in another application instance of NOSE.
+
+It also attempts to best accommodate for slight differences in ROMS between
+years to minimise the amount of correction required on your part when using this
+feature.  Among other things, this removes the headaches created by EA choosing
+to use odd hex values for right-handed players one year (NHL94), then even
+values the next (NHL95).
+
+
+______________
+OTHER INSTANCE
+**************
+Other Instance [F9] acts and advanced version of the Microsoft Windows ALT-TAB
+"switch window" shortcut key.  Its advantage over the ALT-TAB is that it will
+always attempt to switch to the second application instance of NOSE even if it
+is not effectively the next window ALT-TAB would switch to.
+
+This feature has been developed to allow the simply use the keyboard and not 
+the mouse when comparing two ROMS, or copying & pasting between them.
+
+
+__________________
+NEW YORK, NEW YORK
+******************
+Both NHL94 & NHL95 redirect where the ROM normally reads the team name value
+from when selected on the game start menu.  This is done to allow the ROM to show
+the complete "New York Islanders" or "New York Rangers" name, as the name stored
+within the team roster region of the ROM, simply reads "New York" for both teams.
+
+When you use NOSE to edit either of the New York teams in either ROM year, the
+following rules determine if the game will continue to use the redirected
+"complete" team name, or the edited team name you have applied to the ROM:
+
+ - If the new team name matches the equivalent starting length of the redirected
+   name, then the redirected name will be used.  If it is different, then the
+   redirected name will be ignored and the team name will be used.  For example:
+    
+   ROM Team Name   ROM Redirected Name   NOSE will instruct the ROM to use:
+   -------------   -------------------   ----------------------------------
+   New             New York Islanders    Redirected Name
+   New York R      New York Rangers      Redirected Name
+   New York R      New York Islanders    Team Name
+   wboy's NOSE     New York Rangers      Team Name
+   N               New York Islanders    Redirected Name
+
+
+____________
+SAVE CHANGES
+************
+There is no advanced tracking if the loaded ROM has been changed or just saved.
+You will always be asked if you would like to save the loaded ROM if choose to
+close it, open another, or exit from NOSE.
+
+
+___________
+COLOR PANEL
+***********
+The "Color Browser" allows you to view the entire range of 512 colors available
+to you in the Genesis's Hex BGR palette.
+
+The Genesis color palette uses the even hex values to 02468ACE to allow eight
+levels of shade per color channel (8 blue x 8 green x 8 red = 512 colors). If
+the odd hex values 13579BDF are used, each respective color channel will round
+down the value to the previous odd value. e.g. Hex 29F displays the same as
+Hex 28E.   Any "Color Selected" within NOSE with odd Hex BGR values will be
+highlighted in red.
+
+The RGB values shown for the selected Hex BGR color equal the RGB color value 
+represented in the outputted bitmap file created by the Gen's screen shot
+facility (shortcut key [Shift+BkSpc]).
+
+
+____________
+COLOR SNIPER
+************
+The Color Sniper is a floating window that resides "always on top".  It allows
+you to snipe colors from any of your loaded desktop applications.  Further usage
+instructions are shown when you click the "?" toolbar icon with the Color Sniper
+window.
+
+
+________________________
+CHANGING COLORS PALETTES
+************************
+To use the paintbrush, move the mouse cursor over a palette square and click
+the left mouse button.
+
+To preview the color change before committing to the new color, hold the left
+button down.  If you like the new color, simply release the left button.
+If you don't drag the mouse cursor off the palette square and release
+the left button.  The original color will be returned.
+
+To use the eyedropper, move the cursor over a palette square and click the right
+mouse button.  This color will now become the new selected color.
+
+
+________________
+INTERNAL BATTERY
+****************
+The NHL 95/6/7/8 cartridges all contained an internal battery to save the
+progress of your custom lines, trades and seasons.  The Gens emulator simulates
+this internal battery by creating .SRM files (typically found in the Gens folder)
+that have the same name as the ROM file name (e.g. "NHL 95 (UE) [!].SRM" will
+exist for "NHL 95 (UE) [!].bin").
+
+When you have made major edits to one of these ROMS in NOSE (e.g. change lines or
+amount of players within a team), it is important you delete any .SRM file that 
+exists as unexpected results/behavior may occur in-game if you fail to do so.
+
+
+__________________________
+OFFICIAL DISCUSSION FORUMS
+**************************
+The official discussion forums for NOSE can be found at the following URL:
+
+http://www.nhl94.com/forum/index.php?showforum=18
+
+You will be required to register an account before being permitted to post
+within this or any other forum on the NHL94.com site.  Special thanks goes to
+the site admin Evan for hosting this forum.
+
+________________
+End of Document.
