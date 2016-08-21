@@ -34,9 +34,9 @@ SteeringForwardState& operator=(const SteeringForwardState&);
 public:
 
 static SteeringForwardState* Instance();
-virtual void Enter(Steering* steering) {}
-virtual void Execute(Steering* steering) {}
-virtual void Exit(Steering* steering) {}
+virtual void Enter(Steering* steering);
+virtual void Execute(Steering* steering);
+virtual void Exit(Steering* steering);
 };
 
 #endif
