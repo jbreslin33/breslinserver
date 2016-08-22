@@ -1,11 +1,14 @@
 #ifndef STEERING_H
 #define STEERING_H
 
-#include "Base.h"
-#include "State.h"
+#include "SteeringStates.h"
 #include "StateMachine.h"
 
+//class SteeringForwardState*;
+//class SteeringGlobalState*;
+
 //class State;
+template <class State> 
 
 class Steering : public Base
 {
@@ -16,7 +19,8 @@ public:
 Steering(int id):Base(id)
 {
 	mStateMachine = new StateMachine<Steering>(this);
-	
+    	//mStateMachine->setCurrentState(SteeringForwardState::Instance());
+    	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
 }
 
 ~Steering() { delete mStateMachine; }
@@ -24,6 +28,7 @@ Steering(int id):Base(id)
 void update();
 
 StateMachine<Steering>* getStateMachine()const { return mStateMachine; } 
+
 
 
 };

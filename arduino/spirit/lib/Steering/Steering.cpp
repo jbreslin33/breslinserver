@@ -2,10 +2,9 @@
 
 void Steering::update()
 {
-//int m;
+ 	//Serial.print("steering update");
 
- Serial.print("steering update");
-
+	mStateMachine->update();
 }
 
 

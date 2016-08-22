@@ -1,5 +1,5 @@
-#ifndef ENTITY_H
-#define ENTITY_H
+#ifndef BASE_H
+#define BASE_H
 //------------------------------------------------------------------------
 //
 //  Name:   BaseGameEntity.h

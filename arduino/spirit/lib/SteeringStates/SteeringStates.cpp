@@ -1,5 +1,4 @@
 #include "SteeringStates.h"
-#include "Steering.h"
 
 SteeringGlobalState* SteeringGlobalState::Instance()
 {
@@ -8,13 +7,19 @@ SteeringGlobalState* SteeringGlobalState::Instance()
   return &instance;
 }
 
-void SteeringGlobalState::Execute(Steering* steering)
+void SteeringGlobalState::enter(Steering* steering)
 {
-  //if (RandFloat() < 0.1)
-  //{
-    //wife->GetFSM()->ChangeState(VisitBathroom::Instance());
-  //}
 }
+void SteeringGlobalState::execute(Steering* steering)
+{
+}
+void SteeringGlobalState::exit(Steering* steering)
+{
+}
+
+/*
+FORWARD
+*/
 
 SteeringForwardState* SteeringForwardState::Instance()
 {
@@ -23,13 +28,33 @@ SteeringForwardState* SteeringForwardState::Instance()
   return &instance;
 }
 
-void SteeringForwardState::Enter(Steering* steering)
+void SteeringForwardState::enter(Steering* steering)
 {
 }
-void SteeringForwardState::Execute(Steering* steering)
+void SteeringForwardState::execute(Steering* steering)
 {
 }
-void SteeringForwardState::Exit(Steering* steering)
+void SteeringForwardState::exit(Steering* steering)
+{
+}
+
+/*
+REVERSE
+*/
+SteeringReverseState* SteeringReverseState::Instance()
+{
+  static SteeringReverseState instance;
+
+  return &instance;
+}
+
+void SteeringReverseState::enter(Steering* steering)
+{
+}
+void SteeringReverseState::execute(Steering* steering)
+{
+}
+void SteeringReverseState::exit(Steering* steering)
 {
 }
 
