@@ -5,10 +5,6 @@
 #include "BaseEntity.h"
 #include "SteeringStates.h"
 #include "StateMachine.h"
-//#include "Arduino.h"
-
-
-//class State;
 
 class Steering : public BaseEntity
 {
@@ -16,17 +12,24 @@ private:
   	StateMachine<Steering>* mStateMachine;
 
 public:
-Steering(int id):BaseEntity(id)
+Steering()
 {
 	mStateMachine = new StateMachine<Steering>(this);
-	//mStateMachine->setGlobalState(SteeringGlobalState::Instance());
-	//mStateMachine->setCurrentState(SteeringGlobalState::Instance());
+	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
+	mStateMachine->setCurrentState(SteeringGlobalState::Instance());
 }
 
-~Steering() { delete mStateMachine; }
+~Steering()
+{ 
+	delete mStateMachine; 
+}
 void update();
 
-StateMachine<Steering>* getFSM()const { return mStateMachine; }
+StateMachine<Steering>* getStateMachine()const
+{
+	return mStateMachine; 
+}
+
 };
 #endif
 
