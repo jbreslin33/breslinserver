@@ -4,6 +4,7 @@
 /*
 GLOBAL
 */
+
 SteeringGlobalState* SteeringGlobalState::Instance()
 {
 	static SteeringGlobalState instance;
@@ -17,18 +18,17 @@ void SteeringGlobalState::enter(Steering* steering)
 void SteeringGlobalState::execute(Steering* steering)
 {
 
-
-
-
-        analogWrite(steering->leftWheelSpeed,steering->left_speed);
-        digitalWrite(steering->leftWheelDrive,HIGH);
-        digitalWrite(steering->leftWheelReverse,LOW);
-        
-	analogWrite(steering->rightWheelSpeed,steering->left_speed);
-        digitalWrite(steering->rightWheelDrive,HIGH);
-        digitalWrite(steering->rightWheelReverse,LOW);
+	//left
+        analogWrite(steering->mLeftWheelSpeedPin,steering->mLeftWheelSpeed);
+        digitalWrite(steering->mLeftWheelDrivePin,HIGH);
+        digitalWrite(steering->mLeftWheelReversePin,LOW);
        
-	delay(100);
+	//right 
+	analogWrite(steering->mRightWheelSpeedPin,steering->mRightWheelSpeed);
+        digitalWrite(steering->mRightWheelDrivePin,HIGH);
+        digitalWrite(steering->mRightWheelReversePin,LOW);
+       
+	delay(steering->mDelayTime);
 }
 void SteeringGlobalState::exit(Steering* steering)
 {

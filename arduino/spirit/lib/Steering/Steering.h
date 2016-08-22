@@ -14,38 +14,31 @@ private:
 
 public:
         //right
-        int rightWheelReverse=8;
-        int rightWheelDrive=11;
-        int rightWheelSpeed=9;
+        int mRightWheelReversePin=8;
+        int mRightWheelDrivePin=11;
+        int mRightWheelSpeedPin=9;
 
         //left
-        int leftWheelReverse=12;
-        int leftWheelDrive=13;
-        int leftWheelSpeed=10;
+        int mLeftWheelReversePin=12;
+        int mLeftWheelDrivePin=13;
+        int mLeftWheelSpeedPin=10;
 
-        int left_speed = 250;
-        int right_speed = 250;
-        int delayTime = 100;
-
-
+	//actual variables that control speed and delay
+        int mLeftWheelSpeed = 250;
+        int mRightWheelSpeed = 250;
+        int mDelayTime = 100;
 
 Steering()
 {
         //right
-        pinMode(rightWheelReverse,OUTPUT);
-        pinMode(rightWheelDrive,OUTPUT);
-        pinMode(rightWheelSpeed,OUTPUT);
+        pinMode(mRightWheelReversePin,OUTPUT);
+        pinMode(mRightWheelDrivePin,OUTPUT);
+        pinMode(mRightWheelSpeedPin,OUTPUT);
 
         //left
-        pinMode(leftWheelReverse,OUTPUT);
-        pinMode(leftWheelDrive,OUTPUT);
-        pinMode(leftWheelSpeed,OUTPUT);
-
-	analogWrite(leftWheelSpeed,left_speed);
-	digitalWrite(leftWheelDrive,LOW);
-     	digitalWrite(leftWheelReverse,LOW);
-
-
+        pinMode(mLeftWheelReversePin,OUTPUT);
+        pinMode(mLeftWheelDrivePin,OUTPUT);
+        pinMode(mLeftWheelSpeedPin,OUTPUT);
 
 	mStateMachine = new StateMachine<Steering>(this);
 	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
