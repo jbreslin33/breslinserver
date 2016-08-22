@@ -19,8 +19,8 @@ public:
 Steering(int id):BaseEntity(id)
 {
 	mStateMachine = new StateMachine<Steering>(this);
-	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
-	mStateMachine->setCurrentState(SteeringGlobalState::Instance());
+	//mStateMachine->setGlobalState(SteeringGlobalState::Instance());
+	//mStateMachine->setCurrentState(SteeringGlobalState::Instance());
 }
 
 ~Steering() { delete mStateMachine; }
