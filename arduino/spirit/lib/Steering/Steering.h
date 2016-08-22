@@ -3,13 +3,14 @@
 
 #include "SteeringStateMachine.h"
 #include "SteeringStates.h"
+
 class Steering
 {
 public:
   	SteeringStateMachine* mStateMachine;
 	SteeringGlobalState*  mSteeringGlobalState;
 
-Steering(int id)
+Steering()
 {
 	mStateMachine = new SteeringStateMachine(this);
 	mSteeringGlobalState = new SteeringGlobalState();
@@ -20,13 +21,13 @@ Steering(int id)
 
 ~Steering()
 { 
-	delete mStateMachine; 
-	delete mSteeringGlobalState; 
+//	delete mStateMachine; 
+//	delete mSteeringGlobalState; 
 }
 
 void update();
 
-SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
+//SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
 
 
 

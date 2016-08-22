@@ -1,7 +1,6 @@
 #ifndef STEERING_STATES_H
 #define STEERING_STATES_H
 
-#include "Steering.h"
 #include "SteeringState.h"
 
 class Steering;

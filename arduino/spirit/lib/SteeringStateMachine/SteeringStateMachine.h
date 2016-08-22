@@ -3,8 +3,10 @@
 #ifndef SteeringStateMachine_h
 #define SteeringStateMachine_h
 
-#include "SteeringState.h"
 #include <assert.h>
+#include "SteeringState.h"
+class Steering;
+//class SteeringState;
 
 class SteeringStateMachine
 {
