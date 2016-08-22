@@ -42,7 +42,7 @@ Steering()
 
 	mStateMachine = new StateMachine<Steering>(this);
 	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
-	mStateMachine->setCurrentState(SteeringDriveState::Instance());
+	mStateMachine->setCurrentState(SteeringReverseState::Instance());
 }
 
 ~Steering()
