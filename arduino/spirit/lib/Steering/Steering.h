@@ -1,36 +1,34 @@
 #ifndef STEERING_H
 #define STEERING_H
 
-#include "SteeringStateMachine.h"
+#include "State.h"
+#include "BaseEntity.h"
 #include "SteeringStates.h"
+#include "StateMachine.h"
+//#include "Arduino.h"
 
-class Steering
+
+//class State;
+
+class Steering : public BaseEntity
 {
+private:
+  	StateMachine<Steering>* mStateMachine;
+
 public:
-  	SteeringStateMachine* mStateMachine;
-	SteeringGlobalState*  mSteeringGlobalState;
-
-Steering()
+Steering(int id):BaseEntity(id)
 {
-	mStateMachine = new SteeringStateMachine(this);
-	mSteeringGlobalState = new SteeringGlobalState();
-
-    	mStateMachine->setCurrentState(mSteeringGlobalState);
-    	mStateMachine->setGlobalState(mSteeringGlobalState);
+	mStateMachine = new StateMachine<Steering>(this);
+	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
+	mStateMachine->setCurrentState(SteeringGlobalState::Instance());
 }
 
-~Steering()
-{ 
-	delete mStateMachine; 
-	delete mSteeringGlobalState; 
-}
-
+~Steering() { delete mStateMachine; }
 void update();
 
-SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
-
-
-
+StateMachine<Steering>* getFSM()const { return mStateMachine; }
 };
-
 #endif
+
+
+
