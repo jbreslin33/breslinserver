@@ -1,33 +1,32 @@
 #ifndef STEERING_H
 #define STEERING_H
 
+#include "SteeringStateMachine.h"
 #include "SteeringStates.h"
-#include "StateMachine.h"
-
-//class SteeringForwardState*;
-//class SteeringGlobalState*;
-
-//class State;
-template <class State> 
-
-class Steering : public Base
+class Steering
 {
-private:
-  StateMachine<Steering>*  mStateMachine;
-
 public:
-Steering(int id):Base(id)
+  	SteeringStateMachine* mStateMachine;
+	SteeringGlobalState*  mSteeringGlobalState;
+
+Steering(int id)
 {
-	mStateMachine = new StateMachine<Steering>(this);
-    	//mStateMachine->setCurrentState(SteeringForwardState::Instance());
-    	mStateMachine->setGlobalState(SteeringGlobalState::Instance());
+	mStateMachine = new SteeringStateMachine(this);
+	mSteeringGlobalState = new SteeringGlobalState();
+
+    	mStateMachine->setCurrentState(mSteeringGlobalState);
+    	mStateMachine->setGlobalState(mSteeringGlobalState);
 }
 
-~Steering() { delete mStateMachine; }
+~Steering()
+{ 
+	delete mStateMachine; 
+	delete mSteeringGlobalState; 
+}
 
 void update();
 
-StateMachine<Steering>* getStateMachine()const { return mStateMachine; } 
+SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
 
 
 

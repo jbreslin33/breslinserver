@@ -1,38 +1,38 @@
 /*
 */
-#ifndef StateMachine_h
-#define StateMachine_h
+#ifndef SteeringStateMachine_h
+#define SteeringStateMachine_h
 
-#include "State.h"
+#include "SteeringState.h"
+#include <assert.h>
 
-template <class entity_type>
-class StateMachine
+class SteeringStateMachine
 {
 private:
  
   //a pointer to the agent that owns this instance
-  entity_type*          mOwner;
+  Steering*          mOwner;
  
-  State<entity_type>*   mCurrentState;
+  SteeringState*   mCurrentState;
  
   //a record of the last state the agent was in
-  State<entity_type>*   mPreviousState;
+  SteeringState*   mPreviousState;
  
   //this state logic is called every time the FSM is updated
-  State<entity_type>*   mGlobalState;
+  SteeringState*   mGlobalState;
  
 public:
  
-  StateMachine(entity_type* owner):mOwner(owner),
+  SteeringStateMachine(Steering* owner):mOwner(owner),
                                    mCurrentState(0),
                                    mPreviousState(0),
                                    mGlobalState(0)
   {}
  
   //use these methods to initialize the FSM
-  void setCurrentState(State<entity_type>* s){mCurrentState = s;}
-  void setGlobalState(State<entity_type>* s) {mGlobalState = s;}
-  void setPreviousState(State<entity_type>* s){mPreviousState = s;}
+  void setCurrentState(SteeringState* s){mCurrentState = s;}
+  void setGlobalState(SteeringState* s) {mGlobalState = s;}
+  void setPreviousState(SteeringState* s){mPreviousState = s;}
  
   //call this to update the FSM
   void  update()const
@@ -45,10 +45,10 @@ public:
   }
  
   //change to a new state
-  void  ChangeState(State<entity_type>* mNewState)
+  void  changeState(SteeringState* mNewState)
   {
-    assert(mNewState &&
-           "<StateMachine::changeState>: trying to change to a null state");
+    //assert(mNewState &&
+     //      "<StateMachine::changeState>: trying to change to a null state");
  
     //keep a record of the previous state
     mPreviousState = mCurrentState;
@@ -70,12 +70,12 @@ public:
   }
  
   //accessors
-  State<entity_type>*  getCurrentState()  const{return mCurrentState;}
-  State<entity_type>*  getGlobalState()   const{return mGlobalState;}
-  State<entity_type>*  getPreviousState() const{return mPreviousState;}
+  SteeringState*  getCurrentState()  const{return mCurrentState;}
+  SteeringState*  getGlobalState()   const{return mGlobalState;}
+  SteeringState*  getPreviousState() const{return mPreviousState;}
  
   //returns true if the current state’s type is equal to the type of the
   //class passed as a parameter.
-  bool  isInState(const State<entity_type>& st)const;
+  bool  isInState(const SteeringState& st)const;
 };
 #endif
