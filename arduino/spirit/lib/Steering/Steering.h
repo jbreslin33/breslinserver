@@ -21,13 +21,13 @@ Steering()
 
 ~Steering()
 { 
-//	delete mStateMachine; 
-//	delete mSteeringGlobalState; 
+	delete mStateMachine; 
+	delete mSteeringGlobalState; 
 }
 
 void update();
 
-//SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
+SteeringStateMachine* getStateMachine()const { return mStateMachine; } 
 
 
 
