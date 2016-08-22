@@ -38,7 +38,7 @@ public:
   virtual ~Base(){}
 
   //all entities must implement an update function
-  virtual void  Update()=0;
+  virtual void  update()=0;
 
   int           ID()const{return m_ID;}  
 };

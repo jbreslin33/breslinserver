@@ -9,8 +9,10 @@
 
 class Steering : public Base
 {
+private:
   StateMachine<Steering>*  mStateMachine;
 
+public:
 Steering(int id):Base(id)
 {
 	mStateMachine = new StateMachine<Steering>(this);
