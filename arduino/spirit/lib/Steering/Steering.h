@@ -14,13 +14,13 @@ private:
 
 public:
         //right
-        int mRightWheelReversePin=8;
-        int mRightWheelDrivePin=11;
+        int mRightWheelReversePin=11;
+        int mRightWheelDrivePin=8;
         int mRightWheelSpeedPin=9;
 
         //left
-        int mLeftWheelReversePin=12;
-        int mLeftWheelDrivePin=13;
+        int mLeftWheelReversePin=13;
+        int mLeftWheelDrivePin=12;
         int mLeftWheelSpeedPin=10;
 
 	//actual variables that control speed and delay
