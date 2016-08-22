@@ -51,6 +51,7 @@ void SteeringDriveState::enter(Steering* steering)
 }
 void SteeringDriveState::execute(Steering* steering)
 {
+	Serial.print("DRIVE");
 
         //left
         analogWrite(steering->mLeftWheelSpeedPin,steering->mLeftWheelSpeed);
@@ -83,6 +84,7 @@ void SteeringReverseState::enter(Steering* steering)
 }
 void SteeringReverseState::execute(Steering* steering)
 {
+	Serial.print("DRIVE");
 
         //left
         analogWrite(steering->mLeftWheelSpeedPin,steering->mLeftWheelSpeed);
