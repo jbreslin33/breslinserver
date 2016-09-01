@@ -47,6 +47,13 @@ ebandura:Password1:1249:50:Elizabeth Bandura:/home/v1249:/bin/bash
 hlinville:Password1:1250:50:Hollie Linville:/home/v1250:/bin/bash
 jdittbrenner:Password1:1251:50:Jill Dittbrenner:/home/v1251:/bin/bash
 kbritt:Password1:1252:50:Kathleen Britt:/home/v1252:/bin/bash
+afraser:Password1:1253:50:Amanda Fraser:/home/v1253:/bin/bash
+bglackin:Password1:1254:50:Brendan Glackin:/home/v1254:/bin/bash
+development:Password1:1255:50:Kathleen Britt:/home/v1255:/bin/bash
+emcginnis:Password1:1256:50:Erin McGinnis:/home/v1256:/bin/bash
+bhowe:Password1:1257:50:Sister Bernard:/home/v1257:/bin/bash
+hayburn:Password1:1258:50:Sister Terri:/home/v1258:/bin/bash
+thenry:Password1:1259:50:Trista Henry:/home/v1259:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
