@@ -63,6 +63,7 @@ mdominick:Password1:1265:50:Matthew Dominick:/home/v1265:/bin/bash
 lvanpelt:Password1:1266:50:Elizabeth Vanpelt:/home/v1266:/bin/bash
 pkaiser:Password1:1267:50:Phyllis Kaiser:/home/v1267:/bin/bash
 clongwith:Password1:1268:50:Chris Longwith:/home/v1268:/bin/bash
+mrielly:Password1:1269:50:Margaret Rielley:/home/v1269:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
