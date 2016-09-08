@@ -58,12 +58,11 @@ aball:Password1:1260:50:Alyssa Ball:/home/v1260:/bin/bash
 schristman:Password1:1261:50:Stephanie Christman:/home/v1261:/bin/bash
 bflores:Password1:1262:50:Barbie Flores:/home/v1262:/bin/bash
 mriley:Password1:1263:50:Michelle Riley:/home/v1263:/bin/bash
-mreilly:Password1:1264:50:Margaret Rielley:/home/v1264:/bin/bash
+mreilly:Password1:1264:50:Margaret Reilley:/home/v1264:/bin/bash
 mdominick:Password1:1265:50:Matthew Dominick:/home/v1265:/bin/bash
 lvanpelt:Password1:1266:50:Elizabeth Vanpelt:/home/v1266:/bin/bash
 pkaiser:Password1:1267:50:Phyllis Kaiser:/home/v1267:/bin/bash
 clongwith:Password1:1268:50:Chris Longwith:/home/v1268:/bin/bash
-mrielly:Password1:1269:50:Margaret Rielley:/home/v1269:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
