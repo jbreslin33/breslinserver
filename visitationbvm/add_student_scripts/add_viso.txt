@@ -222,7 +222,7 @@ v1756:bin:1756:100:Sasha Ferrell:/home/v1756:/bin/bash
 v1757:bin:1757:100:Jason Voros:/home/v1757:/bin/bash
 v1758:bin:1758:100:Rui Lin:/home/v1758:/bin/bash
 v1759:bin:1759:100:William Santana:/home/v1759:/bin/bash
-v1760:bin:1760:100:New Student:/home/v1760:/bin/bash
+v1760:bin:1760:100:Que Crespo:/home/v1760:/bin/bash
 v1761:bin:1761:100:New Student:/home/v1761:/bin/bash
 v1762:bin:1762:100:New Student:/home/v1762:/bin/bash
 v1763:bin:1763:100:New Student:/home/v1763:/bin/bash
@@ -289,6 +289,8 @@ v1860:bat:1860:100:Anthony Vu:/home/v1860:/bin/bash
 v1861:bat:1861:100:Catherine Amonte:/home/v1861:/bin/bash
 v1862:bat:1862:100:Jeniyah Torres:/home/v1862:/bin/bash
 v1863:bat:1863:100:Donald Revilo:/home/v1863:/bin/bash
+v1864:cat:1864:100:Haely Flores:/home/v1864:/bin/bash
+v1865:ace:1865:100:Nayeliz Colon:/home/v1865:/bin/bash
 v1901:ahh:1901:100:Angelis Bernardy:/home/v1901:/bin/bash
 v1902:abs:1902:100:Julio Bristol:/home/v1902:/bin/bash
 v1903:ace:1903:100:Rafael Buestan:/home/v1903:/bin/bash
@@ -357,6 +359,9 @@ v1966:cat:1966:100:Lieinix Castaneda:/home/v1966:/bin/bash
 v1967:cat:1967:100:Jovon Williams:/home/v1967:/bin/bash
 v1968:cat:1968:100:Kimora Reeves:/home/v1968:/bin/bash
 v1969:cat:1969:100:Iymirr Alexander:/home/v1969:/bin/bash
+v1970:cat:1970:100:Sky Aree:/home/v1970:/bin/bash
+v1971:bat:1971:100:Sky Aree:/home/v1971:/bin/bash
+v1972:bib:1972:100:Jason Vargas:/home/v1972:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
 v2003:ace:2003:100:Eliyah Clark:/home/v2003:/bin/bash
@@ -424,6 +429,10 @@ v2064:bat:2064:100:Josiah Williams:/home/v2064:/bin/bash
 v2065:cat:2065:100:Yargeli Morel:/home/v2065:/bin/bash
 v2066:cat:2066:100:Natalie Moran:/home/v2066:/bin/bash
 v2067:bat:2067:100:Hieu Pham:/home/v2067:/bin/bash
+v2068:bat:2068:100:Selena Colon:/home/v2068:/bin/bash
+v2069:cat:2069:100:Jon Crespo:/home/v2069:/bin/bash
+v2070:cat:2070:100:Brian Hernandez:/home/v2070:/bin/bash
+v2071:cat:2071:100:Layanie Tapia:/home/v2071:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
@@ -512,6 +521,7 @@ v2185:cat:2185:100:Janiah Lopez:/home/v2185:/bin/bash
 v2186:cat:2186:100:Veda Cummins:/home/v2186:/bin/bash
 v2187:cat:2187:100:Sabir Reeves:/home/v2187:/bin/bash
 v2188:bat:2188:100:Miranda Reeves:/home/v2188:/bin/bash
+v2189:cat:2189:100:Carissa Benitez:/home/v2189:/bin/bash
 v2201:ahh:2201:100:Christopher Barton:/home/v2201:/bin/bash
 v2202:abc:2202:100:Zuyanah Berdicia:/home/v2202:/bin/bash
 v2203:ace:2203:100:Albert Bobe:/home/v2203:/bin/bash
@@ -597,6 +607,7 @@ v2282:cat:2282:100:Josiah Garcia:/home/v2282:/bin/bash
 v2283:cat:2283:100:Yandelito Guiteirrez:/home/v2283:/bin/bash
 v2284:cat:2284:100:Chris Fuentez:/home/v2284:/bin/bash
 v2285:cat:2285:100:Anthony Davila:/home/v2285:/bin/bash
+v2286:bat:2286:100:Leanni Hernandez:/home/v2286:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
@@ -645,12 +656,12 @@ v2345:big:2345:100:Giannie Rivera:/home/v2345:/bin/bash
 v2346:bin:2346:100:Gianni Severino:/home/v2346:/bin/bash
 v2347:bio:2347:100:Christian Toney:/home/v2347:/bin/bash
 v2348:big:2348:100:Nicole Wu:/home/v2348:/bin/bash
-v2349:cat:2349:100:New Student:/home/v2349:/bin/bash
-v2350:bat:2350:100:New Student:/home/v2350:/bin/bash
-v2351:hat:2351:100:New Student:/home/v2351:/bin/bash
-v2352:sat:2352:100:New Student:/home/v2352:/bin/bash
-v2353:bat:2353:100:New Student:/home/v2353:/bin/bash
-v2354:cat:2354:100:New Student:/home/v2354:/bin/bash
+v2349:cat:2349:100:Brandon Barreiro:/home/v2349:/bin/bash
+v2350:bat:2350:100:John Deangeli:/home/v2350:/bin/bash
+v2351:hat:2351:100:Deanna Lozada:/home/v2351:/bin/bash
+v2352:sat:2352:100:Justin McKie:/home/v2352:/bin/bash
+v2353:bat:2353:100:Talia Scipio:/home/v2353:/bin/bash
+v2354:cat:2354:100:Jace Sloan:/home/v2354:/bin/bash
 v2355:cat:2355:100:New Student:/home/v2355:/bin/bash
 v2356:cat:2356:100:New Student:/home/v2356:/bin/bash
 v2357:sat:2357:100:New Student:/home/v2357:/bin/bash
