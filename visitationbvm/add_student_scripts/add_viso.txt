@@ -433,6 +433,7 @@ v2068:bat:2068:100:Selena Colon:/home/v2068:/bin/bash
 v2069:cat:2069:100:Jon Crespo:/home/v2069:/bin/bash
 v2070:cat:2070:100:Brian Hernandez:/home/v2070:/bin/bash
 v2071:cat:2071:100:Layanie Tapia:/home/v2071:/bin/bash
+v2072:cat:2072:100:Isaiah Wallace:/home/v2072:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
