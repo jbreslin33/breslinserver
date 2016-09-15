@@ -613,6 +613,7 @@ v2284:cat:2284:100:Chris Fuentez:/home/v2284:/bin/bash
 v2285:cat:2285:100:Anthony Davila:/home/v2285:/bin/bash
 v2286:bat:2286:100:Leanni Hernandez:/home/v2286:/bin/bash
 v2287:bat:2287:100:Alejandro Nicasio:/home/v2287:/bin/bash
+v2288:bat:2288:100:Deante Banks:/home/v2288:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
