@@ -24,7 +24,7 @@ kfarrell:Password1:1225:50:Katherine Farrell:/home/v1225:/bin/bash
 kkutschera:Password1:1226:50:Katherine Kutschera:/home/v1226:/bin/bash
 ldisalvo:Password1:1227:50:Lacy DiSalvo:/home/v1227:/bin/bash
 lterreforte:Password1:1228:50:Lourdes Terreforte:/home/v1228:/bin/bash
-motero:Password1:1229:50:Margarito Otero:/home/v1229:/bin/bash
+motero:Password1:1229:50:Margarita Otero:/home/v1229:/bin/bash
 marroyo:Password1:1230:50:Maria Arroyo:/home/v1230:/bin/bash
 mdessen:Password1:1231:50:Meryl Dessen:/home/v1231:/bin/bash
 mmcnulty:Password1:1232:50:Michael McNulty:/home/v1232:/bin/bash
