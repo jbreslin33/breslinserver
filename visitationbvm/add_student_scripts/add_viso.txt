@@ -14,7 +14,7 @@ bbechler:Password1:1215:50:Betty Bechler:/home/v1215:/bin/bash
 cuholik:Password1:1216:50:Christine Uholik:/home/v1216:/bin/bash
 cmilek:Password1:1217:50:Corrine Milek:/home/v1217:/bin/bash
 degner:Password1:1218:50:Dolores Egner:/home/v1218:/bin/bash
-dhepworth:Password1:1219:50:Dot HieuHepworth:/home/v1219:/bin/bash
+dhepworth:Password1:1219:50:Dot Hepworth:/home/v1219:/bin/bash
 edelise:Password1:1220:50:Elizabeth DeLise:/home/v1220:/bin/bash
 elampart:Password1:1221:50:Elizabeth Lampart:/home/v1221:/bin/bash
 jfield:Password1:1222:50:Jane Field:/home/v1222:/bin/bash
