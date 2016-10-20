@@ -667,7 +667,7 @@ v2346:bin:2346:100:Gianni Severino:/home/v2346:/bin/bash
 v2347:bio:2347:100:Christian Toney:/home/v2347:/bin/bash
 v2348:big:2348:100:Nicole Wu:/home/v2348:/bin/bash
 v2349:cat:2349:100:Brandon Barreiro:/home/v2349:/bin/bash
-v2350:bat:2350:100:John Deangeli:/home/v2350:/bin/bash
+v2350:bat:2350:100:Deangeli John:/home/v2350:/bin/bash
 v2351:hat:2351:100:Deanna Lozada:/home/v2351:/bin/bash
 v2352:sat:2352:100:Justin McKie:/home/v2352:/bin/bash
 v2353:bat:2353:100:Talia Scipio:/home/v2353:/bin/bash
