@@ -41,6 +41,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install pinta
 sudo apt-get -y install chromium-browser
 sudo apt-get -y install opera
+sudo apt-get -y remove epoptes-client
 sudo apt-get -y install epoptes-client
 sudo apt-get -y remove minetest
 sudo apt-get -y install minetest
