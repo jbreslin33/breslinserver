@@ -692,7 +692,7 @@ v2371:cat:2371:100:Jeison Mella:/home/v2371:/bin/bash
 v2372:cat:2372:100:Nelson Cruz:/home/v2372:/bin/bash
 v2373:cat:2373:100:Jhadiel Guzman:/home/v2373:/bin/bash
 v2374:cat:2374:100:Anaysha Vazquez:/home/v2374:/bin/bash
-v2375:cat:2375:100:New Student:/home/v2375:/bin/bash
+v2375:cat:2375:100:Jayla Nguyen:/home/v2375:/bin/bash
 v2376:cat:2376:100:New Student:/home/v2376:/bin/bash
 v2377:cat:2377:100:New Student:/home/v2377:/bin/bash
 v2378:cat:2378:100:New Student:/home/v2378:/bin/bash
