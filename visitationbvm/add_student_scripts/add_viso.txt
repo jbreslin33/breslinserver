@@ -19,7 +19,6 @@ edelise:Password1:1220:50:Elizabeth DeLise:/home/v1220:/bin/bash
 elampart:Password1:1221:50:Elizabeth Lampart:/home/v1221:/bin/bash
 jfield:Password1:1222:50:Jane Field:/home/v1222:/bin/bash
 jdubois:Password1:1223:50:Jesse Dubois:/home/v1223:/bin/bash
-jolenick:Password1:1224:50:John Olenick:/home/v1224:/bin/bash
 kfarrell:Password1:1225:50:Katherine Farrell:/home/v1225:/bin/bash
 kkutschera:Password1:1226:50:Katherine Kutschera:/home/v1226:/bin/bash
 ldisalvo:Password1:1227:50:Lacy DiSalvo:/home/v1227:/bin/bash
@@ -63,6 +62,7 @@ mdominick:Password1:1265:50:Matthew Dominick:/home/v1265:/bin/bash
 lvanpelt:Password1:1266:50:Elizabeth Vanpelt:/home/v1266:/bin/bash
 pkaiser:Password1:1267:50:Phyllis Kaiser:/home/v1267:/bin/bash
 clongwith:Password1:1268:50:Chris Longwith:/home/v1268:/bin/bash
+jsoto:Password1:1269:50:Joy Soto:/home/v1269:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
