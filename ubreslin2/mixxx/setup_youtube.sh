@@ -1,6 +1,11 @@
 sudo apt-get install youtube-dl
+
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
 sudo apt-get install ffmpeg
+
 sudo apt-get install lame
+sudo pip install --upgrade youtube_dl
 
 #download youtube video
 #youtube-dl url-of-youtube-vid
