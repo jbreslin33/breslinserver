@@ -26,13 +26,13 @@ sudo apt-get -y remove epoptes-client
 sudo apt-get -y install epoptes-client
 
 echo install games
-sudo apt-get -y install tuxmath
-sudo apt-get -y install tuxtype
-sudo apt-get -y install tuxpaint
+#sudo apt-get -y install tuxmath
+#sudo apt-get -y install tuxtype
+#sudo apt-get -y install tuxpaint
 sudo apt-get -y remove minetest
 sudo apt-get -y install minetest
-sudo apt-get -y install triplea 
-sudo apt-get -y install chessx
+#sudo apt-get -y install triplea 
+#sudo apt-get -y install chessx
 
 sudo epoptes-client -c
 sudo newusers ../add_student_scripts/add_viso.txt
