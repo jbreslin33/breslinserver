@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2cde150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1a29150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2cde150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2cde150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2cde150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x1a29150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1a29150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1a29150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -106,8 +106,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2afde4e0) true 
-Debug [Main]: Created root GL Context valid: 0x2afe2c00 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x45e75b0) true 
+Debug [Main]: Created root GL Context valid: 0x29d9b560 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -167,10 +167,9 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x52bac00) updateIndexWithQuery took 307 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2ccf6aa0) select() took 458 ms 1157 
-Debug [Main]: AnalysisLibraryTableModel(0x2ccf6aa0) select() took 213 ms 1157 
-Debug [Main]: DlgAnalysis(0x2c8df440, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: AnalysisLibraryTableModel(0x2bab3f40) select() took 27 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2bab3f40) select() took 27 ms 0 
+Debug [Main]: DlgAnalysis(0x2b69ec30, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -195,372 +194,895 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2efee860, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2bda9e60, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x52b7a70) select() took 368 ms 20592 
+Debug [Main]: LibraryTableModel(0x3ff1c90) select() took 28 ms 0 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
-Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
-Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
-Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
 Debug [Main]: SoundManager::setupDevices() 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c536cb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c536cb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c536cb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c536cb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b2f8bb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b2f8bb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b2f8bb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b2f8bb0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r4370" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
+Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Searching for controller preset "Ion_Discover_DJ_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Controller in script engine is: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Applying controller preset... 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
+Debug [Controller]: Controller polling stopped. 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "3, USB Audio CODEC: - (hw:2,0)" 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 3 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
-Debug [Controller]: Controller polling started. 
-Debug [Main]: ControllerManager::getControllerList 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a9c8d30) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a9c8cc0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a9c8c50) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a9c8be0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3af3c280) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2cecdd70) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2cece090) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x39de9e40) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2cece2f0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x39e00c50) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b60b770) 
-Debug [LibraryScanner 1]: LibraryScanner::slotStartScan 
-Debug [LibraryScanner 1]: upgrade filename is  "/home/jbreslin/.mixxx/DBUPGRADED" 
-Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
-Debug [LibraryScanner 1]: Legacy importer took 0 ms
-Debug [LibraryScanner 1]: Recursively scanning library. 
-Debug [LibraryScanner 1]: LibraryScanner::slotFinishHashedScan 
-Debug [LibraryScanner 1]: LibraryScanner::slotFinishUnhashedScan 
-Debug [LibraryScanner 1]: Recursive scanning finished cleanly. 
-Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
-Debug [LibraryScanner 1]: Marking tracks in changed directories as verified 
-Debug [LibraryScanner 1]: Marking unchanged directories and tracks as verified 
-Debug [LibraryScanner 1]: Checking remaining unverified tracks. 
-Debug [LibraryScanner 1]: Marking unverified tracks as deleted. 
-Debug [LibraryScanner 1]: Marking unverified directories as deleted. 
-Debug [LibraryScanner 1]: Detecting moved files. 
-Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
-Debug [LibraryScanner 1]: Detecting cover art for unscanned files. 
-Debug [LibraryScanner 1]: Scan finished cleanly 
-Debug [LibraryScanner 1]: Scan took: 15184089092 ns. 2 unchanged directories. 10 changed/added directories. 1093 tracks verified from changed/added directories. 0 new tracks.
-Debug [Main]: LibraryTableModel(0x52b7a70) select() took 402 ms 20423 
-Debug [Main]: MissingTableModel(0x2c768610) select() took 40 ms 2558 
-Debug [Main]: HiddenTableModel(0x2c6cf610) select() took 15 ms 1 
-Debug [Main]: AnalysisLibraryTableModel(0x2ccf6aa0) select() took 141 ms 988 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 301 ms 
+Debug [Main]: PlaylistTableModel(0x40b1da0) select() took 305 ms 348 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ace of Base - Happy Nation (Official)-5C9qBENqZMg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Andreea Banica feat. Dony - Samba (Official Video)-uv8nGq-XMQM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Alphaville - Sounds Like A Melody-mO3IEDRsP2Q.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Avicii - Wake Me Up (Official Video)-IcrbM1l_BoI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Billy Joel - Uptown Girl-hCuMWrfXG4E.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Britney Spears - I Wanna Go-T-sxSd1uwoU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Calvin Harris - Blame ft. John Newman-6ACl8s_tBzE.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Claydee - Deep Inside - Official Video Clip-QSRlSST8wbI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/David Guetta - Play Hard ft. Ne-Yo, Akon (Official Video)-5dbEhBKGOtY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/DJ KAS feat. ATHENA MANOUKIAN- Party Like A Freak OFFICIAL VIDEO CLIP-jSB9HBQJ71w.mp3" 
-Debug [BrowseThread]: Append last  1 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: Prioritizing "Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8" "/amusic/youtube/playlists/worldwide/Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8" "/amusic/youtube/playlists/worldwide/Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23688 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 7224.23 EntrytoDac: 24149 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23691 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs" "/amusic/youtube/playlists/worldwide/Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs" "/amusic/youtube/playlists/worldwide/Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23691 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23704 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [AnalyserQueue 1]: Prioritizing "David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg" "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg" "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23704 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Already focused on playlist  257 
+Debug [Main]: PlaylistTableModel(0x40b1da0) select() took 5 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  257 
+Debug [Main]: PlaylistTableModel(0x40b1da0) select() took 3 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 348 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 348 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Auto DJ enabled 
+Debug [AnalyserQueue 1]: Prioritizing "Dr Alban - Loverboy (Official HD)-x1SbS1KTekw" "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Dr Alban - Loverboy (Official HD)-x1SbS1KTekw" "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23615 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 8165.36 EntrytoDac: 23650 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 6 ms 347 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" fromTrackDuration = 205 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.0097561 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" fromTrackDuration = 205 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.0097561 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3)" QSize(0, 0) 
 Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23616 in 1 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 8165.64 EntrytoDac: 24126 
+Debug [AnalyserQueue 1]: Waveform generation for track 23615 done 1.35 s 
 Debug [AnalyserQueue 1]: Prioritizing "ftvsDNmqTGE" "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" 
 Debug [AnalyserQueue 1]: Analyzing "ftvsDNmqTGE" "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" 
 Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23616 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/DJ Antoine ft. The Beat Shakers - Ma Chérie (DJ Antoine vs Mad Mark 2k12 Edit) (Official Video HD)-FGAyjfwK-wI.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23713 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [AnalyserQueue 1]: Prioritizing "DJ Antoine ft. The Beat Shakers - Ma Chérie (DJ Antoine vs Mad Mark 2k12 Edit) (Official Video HD)-FGAyjfwK-wI" "/amusic/youtube/playlists/worldwide/DJ Antoine ft. The Beat Shakers - Ma Chérie (DJ Antoine vs Mad Mark 2k12 Edit) (Official Video HD)-FGAyjfwK-wI.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "DJ Antoine ft. The Beat Shakers - Ma Chérie (DJ Antoine vs Mad Mark 2k12 Edit) (Official Video HD)-FGAyjfwK-wI" "/amusic/youtube/playlists/worldwide/DJ Antoine ft. The Beat Shakers - Ma Chérie (DJ Antoine vs Mad Mark 2k12 Edit) (Official Video HD)-FGAyjfwK-wI.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23713 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23616 done 1.453 s 
+Debug [Main]: Already focused on playlist  257 
+Debug [Main]: PlaylistTableModel(0x40b1da0) select() took 5 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b307790)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" fromTrackDuration = 182 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" toTrackDuration =  205 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010989 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" fromTrackDuration = 182 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3" toTrackDuration =  205 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010989 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 346 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1653401 bytes for track 23654 in 20 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 187592 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.02727 audioVisualRatio 4885.2 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" fromTrackDuration = 182 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" toTrackDuration =  218 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010989 
+Debug [AnalyserQueue 1]: Prioritizing "5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I" "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I" "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1752013 bytes for track 23617 in 22 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 192892 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.77926 audioVisualRatio 5023.2 
 Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
 Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [AnalyserQueue 1]: Analyzing "Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8" "/amusic/youtube/playlists/worldwide/Capital Cities - Safe And Sound (Official Video)-47dtFZ8CFo8.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23688 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23707 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/David Guetta - Turn Me On ft. Nicki Minaj (Official Video)-YVw7eJ0vGfM.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "David Guetta - Turn Me On ft. Nicki Minaj (Official Video)-YVw7eJ0vGfM" "/amusic/youtube/playlists/worldwide/David Guetta - Turn Me On ft. Nicki Minaj (Official Video)-YVw7eJ0vGfM.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "David Guetta - Turn Me On ft. Nicki Minaj (Official Video)-YVw7eJ0vGfM" "/amusic/youtube/playlists/worldwide/David Guetta - Turn Me On ft. Nicki Minaj (Official Video)-YVw7eJ0vGfM.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23707 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23653 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)-oC-GflRB0y4.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)-oC-GflRB0y4" "/amusic/youtube/playlists/worldwide/David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)-oC-GflRB0y4.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)-oC-GflRB0y4" "/amusic/youtube/playlists/worldwide/David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)-oC-GflRB0y4.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23653 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_power_1")   QVariant(QString, "/amusic/youtube/playlists/girl_power_1/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Britney Spears - Work B_ch-pt8VYOfr8To.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Ellie Goulding - Lights-0NKUpo_xKyQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Hilary Duff - Chasing the Sun-Fj6MjDFD1Kw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Katy Perry - Roar (Official)-CevxZvSJLk8.mp3" 
-Debug [AnalyserQueue 1]: Waveform generation for track 23653 done 3.666 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 2 : "D♭" 2.3593e+06 
-Debug [AnalyserQueue 1]: 3 : "D" 32768 
-Debug [AnalyserQueue 1]: 6 : "F" 262144 
-Debug [AnalyserQueue 1]: 9 : "A♭" 1.76947e+06 
-Debug [AnalyserQueue 1]: 13 : "Cm" 1.24518e+06 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 294912 
-Debug [AnalyserQueue 1]: 18 : "Fm" 1.5657e+06 
-Debug [AnalyserQueue 1]: Analyzing "Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs" "/amusic/youtube/playlists/worldwide/Cascada - Summer Of Love (Official Music Video) [HD]-6ptlaW6xFXs.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23691 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Lil Mama - Lip Gloss-S5ck6TJQ5Ow.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Lykke Li - I Follow Rivers (The Magician Remix)-oS6wfWu0JvA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Missy Elliott - Get Ur Freak On [OFFICIAL VIDEO]-FPoKiGQzbSQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/RITA ORA - I Will Never Let You Down-50GQjUZ4P3M.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Sky Ferreira - You're Not The One (Official Video)-IFCZP1Nz3Ds.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_dance_2017")   QVariant(QString, "/amusic/youtube/playlists/red_dance_2017/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append last  7 
-Debug [AnalyserQueue 1]: Waveform generation for track 23691 done 4.875 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 2 : "D♭" 2.49037e+06 
-Debug [AnalyserQueue 1]: 9 : "A♭" 6.75021e+06 
-Debug [AnalyserQueue 1]: 12 : "B" 32768 
-Debug [AnalyserQueue 1]: 18 : "Fm" 98304 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 32768 
-Debug [AnalyserQueue 1]: 23 : "B♭m" 464768 
-Debug [AnalyserQueue 1]: Analyzing "David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg" "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [Main]: Writing waveform from byte array: dataSize 197384 allSignalSize 197384 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23704 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: AnalysisDAO saved analysis 4141 "1620434 (723717 compressed)" bytes for track 23691 in 226 ms 
-Debug [Main]: Saved waveform analysis for trackId 23691 analysisId 4141 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.57943 audioVisualRatio 5140.2 
-Debug [Main]: AnalysisDAO saved analysis 4142 "31396 (14189 compressed)" bytes for track 23691 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23691 analysisId 4142 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" fromTrackDuration = 218 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00917431 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" fromTrackDuration = 218 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00917431 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x52bac00) updateIndexWithQuery took 0 ms 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23056 in 1 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_power_1/HAIM - If I Could Change Your Mind-Ljg6g7BAdQo.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "HAIM - If I Could Change Your Mind-Ljg6g7BAdQo" "/amusic/youtube/playlists/girl_power_1/HAIM - If I Could Change Your Mind-Ljg6g7BAdQo.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "HAIM - If I Could Change Your Mind-Ljg6g7BAdQo" "/amusic/youtube/playlists/girl_power_1/HAIM - If I Could Change Your Mind-Ljg6g7BAdQo.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23056 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23046 in 1 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Fancy (Explicit) ft. Charli XCX-O-zpOMYRi0w.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Iggy Azalea - Fancy (Explicit) ft. Charli XCX-O-zpOMYRi0w" "/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Fancy (Explicit) ft. Charli XCX-O-zpOMYRi0w.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Iggy Azalea - Fancy (Explicit) ft. Charli XCX-O-zpOMYRi0w" "/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Fancy (Explicit) ft. Charli XCX-O-zpOMYRi0w.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23046 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31e06700, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Work (Explicit)-_zR6ROjoOX0.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23047 in 0 ms 
-Debug [AnalyserQueue 1]: Interrupting analysis to give preference to a loaded track. 
-Debug [AnalyserQueue 1]: Prioritizing "Iggy Azalea - Work (Explicit)- zR6ROjoOX0" "/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Work (Explicit)-_zR6ROjoOX0.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Iggy Azalea - Work (Explicit)- zR6ROjoOX0" "/amusic/youtube/playlists/girl_power_1/Iggy Azalea - Work (Explicit)-_zR6ROjoOX0.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23047 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "shake_ya_ass")   QVariant(QString, "/amusic/youtube/playlists/shake_ya_ass/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Bone Thugs-n-Harmony - Thuggish Ruggish Bone-C0PB4o9GH2A.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Ciara - Oh ft. Ludacris-Hr4wz4-27PY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Fiona Apple - Criminal-FFOzayDpWoI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Ice Cube Go to Church .ft Snoop Dogg lyrics-llJLigihMyw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Kalin And Myles - Trampoline-vN61-4Iu598.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Nick Jonas - Chains-U8UX2bbCHJw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Rob Zombie - Living Dead Girl-BvsMPOfblfg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Terrible Lie - Nine Inch Nails-horLLxUj3nM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Twisted Sister - I Wanna Rock (Official Video)-SRwrg0db_zY.mp3" 
-Debug [BrowseThread]: Append last  2 
-Debug [AnalyserQueue 1]: Waveform generation for track 23047 done 4.965 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 327680 
-Debug [AnalyserQueue 1]: 3 : "D" 917504 
-Debug [AnalyserQueue 1]: 8 : "G" 5.37165e+06 
-Debug [AnalyserQueue 1]: 9 : "A♭" 294912 
-Debug [AnalyserQueue 1]: 12 : "B" 262144 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 32768 
-Debug [AnalyserQueue 1]: 15 : "Dm" 98304 
-Debug [AnalyserQueue 1]: 20 : "Gm" 2.19546e+06 
-Debug [AnalyserQueue 1]: 24 : "Bm" 524288 
-Debug [AnalyserQueue 1]: Analyzing "ftvsDNmqTGE" "/amusic/youtube/playlists/worldwide/01 Antique Die for you English version-ftvsDNmqTGE.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23616 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 345 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" fromTrackDuration = 218 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" toTrackDuration =  250 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00917431 
+Debug [AnalyserQueue 1]: Prioritizing "50 Cent - Candy Shop ft. Olivia-SRcnnId15BA" "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "50 Cent - Candy Shop ft. Olivia-SRcnnId15BA" "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23618 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 23618 done 1.63 s 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 5 ms 345 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" fromTrackDuration = 218 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" toTrackDuration =  250 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00917431 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" fromTrackDuration = 250 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" toTrackDuration =  218 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.008 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" fromTrackDuration = 250 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/5 Seconds of Summer - She Looks So Perfect-X2BYmmTI04I.mp3" toTrackDuration =  218 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.008 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 344 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" fromTrackDuration = 250 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" toTrackDuration =  249 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.008 
+Debug [AnalyserQueue 1]: Prioritizing "50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss" "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss" "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23619 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23619 done 1.62 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" fromTrackDuration = 250 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" toTrackDuration =  249 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.008 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" fromTrackDuration = 249 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" toTrackDuration =  250 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00803213 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" fromTrackDuration = 249 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - Candy Shop ft. Olivia-SRcnnId15BA.mp3" toTrackDuration =  250 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00803213 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 343 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 220978 allSignalSize 220978 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4535 "1782158 (743128 compressed)" bytes for track 23618 in 203 ms 
+Debug [Main]: Saved waveform analysis for trackId 23618 analysisId 4535 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.66343 audioVisualRatio 5754.6 
+Debug [Main]: AnalysisDAO saved analysis 4536 "30823 (13844 compressed)" bytes for track 23618 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23618 analysisId 4536 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" fromTrackDuration = 249 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" toTrackDuration =  300 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00803213 
+Debug [AnalyserQueue 1]: Prioritizing "50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8" "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8" "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23620 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" fromTrackDuration = 249 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" toTrackDuration =  300 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00803213 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" fromTrackDuration = 300 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" toTrackDuration =  249 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00666667 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" fromTrackDuration = 300 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - In Da Club (Int'l Version)-5qm8PH4xAss.mp3" toTrackDuration =  249 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00666667 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 6 ms 342 
+Debug [AnalyserQueue 1]: Waveform generation for track 23620 done 2.148 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 160682 allSignalSize 160682 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4537 "1464945 (675890 compressed)" bytes for track 23616 in 190 ms 
+Debug [Main]: Saved waveform analysis for trackId 23616 analysisId 4537 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 10.5391 audioVisualRatio 4184.4 
+Debug [Main]: AnalysisDAO saved analysis 4538 "34616 (16584 compressed)" bytes for track 23616 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23616 analysisId 4538 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" fromTrackDuration = 300 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" toTrackDuration =  208 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00666667 
+Debug [AnalyserQueue 1]: Prioritizing "80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY" "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY" "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1542036 bytes for track 23621 in 10 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 183906 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.20822 audioVisualRatio 4789.2 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" fromTrackDuration = 300 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" toTrackDuration =  208 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00666667 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" fromTrackDuration = 208 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" toTrackDuration =  300 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00961538 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" fromTrackDuration = 208 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit-UDApZhXTpH8.mp3" toTrackDuration =  300 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00961538 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 341 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" fromTrackDuration = 208 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00961538 
+Debug [AnalyserQueue 1]: Prioritizing "a-ha - Take On Me (Official Video)-djV11Xbc914" "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "a-ha - Take On Me (Official Video)-djV11Xbc914" "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23622 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23622 done 1.499 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" toTrackDuration =  208 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00881057 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/80's - Alphaville - Sounds Like A Melody-1tqDo3OVBjY.mp3" toTrackDuration =  208 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00881057 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 8 ms 340 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 181234 allSignalSize 181234 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4539 "1620569 (800003 compressed)" bytes for track 23615 in 226 ms 
+Debug [Main]: Saved waveform analysis for trackId 23615 analysisId 4539 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.34401 audioVisualRatio 4719.6 
+Debug [Main]: AnalysisDAO saved analysis 4540 "34060 (17516 compressed)" bytes for track 23615 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23615 analysisId 4540 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" toTrackDuration =  231 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00881057 
+Debug [AnalyserQueue 1]: Prioritizing "Abba - Dancing Queen-xFrGuyw1V8s" "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Abba - Dancing Queen-xFrGuyw1V8s" "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23623 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23623 done 1.671 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" fromTrackDuration = 231 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00865801 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" fromTrackDuration = 231 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/a-ha - Take On Me (Official Video)-djV11Xbc914.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00865801 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 339 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 220448 allSignalSize 220448 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4541 "1768314 (656081 compressed)" bytes for track 23619 in 182 ms 
+Debug [Main]: Saved waveform analysis for trackId 23619 analysisId 4541 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.68186 audioVisualRatio 5740.8 
+Debug [Main]: AnalysisDAO saved analysis 4542 "30822 (12781 compressed)" bytes for track 23619 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23619 analysisId 4542 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" fromTrackDuration = 231 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00865801 
+Debug [AnalyserQueue 1]: Prioritizing "Abba - Mamma Mia-unfzfe8f9NI" "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Abba - Mamma Mia-unfzfe8f9NI" "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1518262 bytes for track 23624 in 15 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 185910 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.10894 audioVisualRatio 4841.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" toTrackDuration =  231 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00952381 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Dancing Queen-xFrGuyw1V8s.mp3" toTrackDuration =  231 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00952381 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 338 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 265146 allSignalSize 265146 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4543 "2148302 (837088 compressed)" bytes for track 23620 in 220 ms 
+Debug [Main]: Saved waveform analysis for trackId 23620 analysisId 4543 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.38686 audioVisualRatio 6904.8 
+Debug [Main]: AnalysisDAO saved analysis 4544 "30851 (13662 compressed)" bytes for track 23620 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23620 analysisId 4544 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" toTrackDuration =  222 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00952381 
+Debug [AnalyserQueue 1]: Prioritizing "Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc" "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc" "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1758832 bytes for track 23625 in 20 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 196140 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.63385 audioVisualRatio 5107.8 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" fromTrackDuration = 222 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00900901 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" fromTrackDuration = 222 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00900901 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 6 ms 337 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" fromTrackDuration = 222 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" toTrackDuration =  178 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00900901 
+Debug [AnalyserQueue 1]: Prioritizing "Angel City - Do You Know-WS6HxCtyANM" "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Angel City - Do You Know-WS6HxCtyANM" "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23626 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23626 done 1.181 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" fromTrackDuration = 178 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" toTrackDuration =  222 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.011236 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" fromTrackDuration = 178 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" toTrackDuration =  222 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.011236 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 336 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 200402 allSignalSize 200402 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4545 "1612340 (699443 compressed)" bytes for track 23622 in 195 ms 
+Debug [Main]: Saved waveform analysis for trackId 23622 analysisId 4545 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.45022 audioVisualRatio 5218.8 
+Debug [Main]: AnalysisDAO saved analysis 4546 "30828 (13737 compressed)" bytes for track 23622 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23622 analysisId 4546 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" fromTrackDuration = 178 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.011236 
+Debug [AnalyserQueue 1]: Prioritizing "Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc" "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc" "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23627 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23627 done 1.526 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" toTrackDuration =  178 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00881057 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Angel City - Do You Know-WS6HxCtyANM.mp3" toTrackDuration =  178 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00881057 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 3 ms 335 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 204112 allSignalSize 204112 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4547 "1633032 (655211 compressed)" bytes for track 23623 in 184 ms 
+Debug [Main]: Saved waveform analysis for trackId 23623 analysisId 4547 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.29665 audioVisualRatio 5315.4 
+Debug [Main]: AnalysisDAO saved analysis 4548 "30806 (12697 compressed)" bytes for track 23623 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23623 analysisId 4548 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" fromTrackDuration = 227 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" toTrackDuration =  209 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00881057 
+Debug [AnalyserQueue 1]: Prioritizing "Antique - Follow Me-mt1gSq809IU" "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Antique - Follow Me-mt1gSq809IU" "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23628 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23628 done 1.403 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" fromTrackDuration = 209 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00956938 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" fromTrackDuration = 209 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Anise K feat. Snoop Dogg & Bella Blue - Walking On Air (Official Video)-Ff-iVf-uiLc.mp3" toTrackDuration =  227 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00956938 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 334 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [CachingReaderWorker 1]: Skipping read request for  1224 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" fromTrackDuration = 209 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" toTrackDuration =  201 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00956938 
+Debug [AnalyserQueue 1]: Prioritizing "Aqua - Barbie Girl-ZyhrYis509A" "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Aqua - Barbie Girl-ZyhrYis509A" "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23629 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Engine]: WARNING: READER THREAD RECEIVED INVALID CHUNK READ 
+Debug [AnalyserQueue 1]: Waveform generation for track 23629 done 1.367 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" fromTrackDuration = 209 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" toTrackDuration =  201 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00956938 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" fromTrackDuration = 201 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" toTrackDuration =  209 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00995025 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" fromTrackDuration = 201 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Antique - Follow Me-mt1gSq809IU.mp3" toTrackDuration =  209 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00995025 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 333 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" fromTrackDuration = 201 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" toTrackDuration =  262 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00995025 
+Debug [AnalyserQueue 1]: Prioritizing "TsiQq9hOZU8" "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "TsiQq9hOZU8" "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23630 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" fromTrackDuration = 201 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" toTrackDuration =  262 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00995025 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" fromTrackDuration = 262 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" toTrackDuration =  201 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00763359 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" fromTrackDuration = 262 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aqua - Barbie Girl-ZyhrYis509A.mp3" toTrackDuration =  201 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00763359 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 332 
+Debug [AnalyserQueue 1]: Waveform generation for track 23630 done 1.656 s 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 157110 allSignalSize 157110 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4549 "1256980 (522100 compressed)" bytes for track 23626 in 146 ms 
+Debug [Main]: Saved waveform analysis for trackId 23626 analysisId 4549 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.7787 audioVisualRatio 4091.4 
+Debug [Main]: AnalysisDAO saved analysis 4550 "30822 (13034 compressed)" bytes for track 23626 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23626 analysisId 4550 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" fromTrackDuration = 262 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" toTrackDuration =  224 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00763359 
+Debug [AnalyserQueue 1]: Prioritizing "Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU" "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU" "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23631 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 23631 done 2.467 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" fromTrackDuration = 224 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" toTrackDuration =  262 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00892857 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" fromTrackDuration = 224 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Arabic belly dance music Mezdeke-TsiQq9hOZU8.mp3" toTrackDuration =  262 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00892857 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 5 ms 331 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 200542 allSignalSize 200542 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4551 "1892976 (919603 compressed)" bytes for track 23627 in 259 ms 
+Debug [Main]: Saved waveform analysis for trackId 23627 analysisId 4551 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.44439 audioVisualRatio 5222.4 
+Debug [Main]: AnalysisDAO saved analysis 4552 "35833 (18276 compressed)" bytes for track 23627 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23627 analysisId 4552 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" fromTrackDuration = 224 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" toTrackDuration =  220 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00892857 
+Debug [AnalyserQueue 1]: Prioritizing "ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU" "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU" "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23632 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23632 done 1.641 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" fromTrackDuration = 220 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" toTrackDuration =  224 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00909091 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" fromTrackDuration = 220 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Armin van Buuren feat. Jennifer Rene - Fine Without You (Official Music Video)-m6Gt2D5mbrU.mp3" toTrackDuration =  224 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00909091 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 330 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 185196 allSignalSize 185196 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4553 "1703778 (824858 compressed)" bytes for track 23628 in 211 ms 
+Debug [Main]: Saved waveform analysis for trackId 23628 analysisId 4553 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.14407 audioVisualRatio 4822.8 
+Debug [Main]: AnalysisDAO saved analysis 4554 "35072 (17914 compressed)" bytes for track 23628 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23628 analysisId 4554 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" fromTrackDuration = 220 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" toTrackDuration =  189 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00909091 
+Debug [AnalyserQueue 1]: Prioritizing "Aventura - Obsesion-KaVnA88oNTg" "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Aventura - Obsesion-KaVnA88oNTg" "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23633 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23633 done 1.232 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" fromTrackDuration = 189 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" toTrackDuration =  220 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010582 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" fromTrackDuration = 189 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/ATB - Could You Believe (Official Video HD)-9rH1kT8EIOU.mp3" toTrackDuration =  220 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010582 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 329 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 178146 allSignalSize 178146 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4555 "1428246 (603902 compressed)" bytes for track 23629 in 163 ms 
+Debug [Main]: Saved waveform analysis for trackId 23629 analysisId 4555 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.50595 audioVisualRatio 4639.2 
+Debug [Main]: AnalysisDAO saved analysis 4556 "30822 (13856 compressed)" bytes for track 23629 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23629 analysisId 4556 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" fromTrackDuration = 189 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" toTrackDuration =  307 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010582 
+Debug [AnalyserQueue 1]: Prioritizing "Aventura - Por Un Segundo-GHLVjriwzFg" "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Aventura - Por Un Segundo-GHLVjriwzFg" "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23634 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23634 done 2.328 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" fromTrackDuration = 307 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" toTrackDuration =  189 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00651466 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" fromTrackDuration = 307 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Obsesion-KaVnA88oNTg.mp3" toTrackDuration =  189 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00651466 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 15 ms 328 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 231530 allSignalSize 231530 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4557 "1975193 (796371 compressed)" bytes for track 23630 in 301 ms 
+Debug [Main]: Saved waveform analysis for trackId 23630 analysisId 4557 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.31416 audioVisualRatio 6029.4 
+Debug [Main]: AnalysisDAO saved analysis 4558 "32843 (12428 compressed)" bytes for track 23630 in 4 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23630 analysisId 4558 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" fromTrackDuration = 307 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00651466 
+Debug [AnalyserQueue 1]: Prioritizing "Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw" "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw" "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23635 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 23635 done 2.054 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" fromTrackDuration = 307 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00651466 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" toTrackDuration =  307 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010101 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Aventura - Por Un Segundo-GHLVjriwzFg.mp3" toTrackDuration =  307 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010101 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 6 ms 327 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 197868 allSignalSize 197868 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4559 "1707450 (765920 compressed)" bytes for track 23631 in 202 ms 
+Debug [Main]: Saved waveform analysis for trackId 23631 analysisId 4559 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.55845 audioVisualRatio 5152.8 
+Debug [Main]: AnalysisDAO saved analysis 4560 "33174 (15826 compressed)" bytes for track 23631 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23631 analysisId 4560 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010101 
+Debug [AnalyserQueue 1]: Prioritizing "Ace of Base - The Sign (Official)-DNPjeIamsck" "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Ace of Base - The Sign (Official)-DNPjeIamsck" "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23636 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23636 done 1.361 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010101 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Avicii - Fade Into Darkness (Official Music Video) [HD]-KQYzF84xocw.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010101 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 326 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 194366 allSignalSize 194366 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4561 "1797705 (862971 compressed)" bytes for track 23632 in 243 ms 
+Debug [Main]: Saved waveform analysis for trackId 23632 analysisId 4561 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.71266 audioVisualRatio 5061.6 
+Debug [Main]: AnalysisDAO saved analysis 4562 "34766 (17741 compressed)" bytes for track 23632 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23632 analysisId 4562 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" fromTrackDuration = 198 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.010101 
+Debug [AnalyserQueue 1]: Prioritizing "Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0" "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0" "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1717437 bytes for track 23637 in 20 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 185680 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.12024 audioVisualRatio 4835.4 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00952381 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ace of Base - The Sign (Official)-DNPjeIamsck.mp3" toTrackDuration =  198 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00952381 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 325 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 166834 allSignalSize 166834 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4563 "1359375 (605160 compressed)" bytes for track 23633 in 148 ms 
+Debug [Main]: Saved waveform analysis for trackId 23633 analysisId 4563 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 10.1505 audioVisualRatio 4344.6 
+Debug [Main]: AnalysisDAO saved analysis 4564 "31083 (15150 compressed)" bytes for track 23633 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23633 analysisId 4564 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" fromTrackDuration = 210 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" toTrackDuration =  184 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00952381 
+Debug [AnalyserQueue 1]: Prioritizing "Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4" "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4" "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23638 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23638 done 1.636 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" fromTrackDuration = 184 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.0108696 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" fromTrackDuration = 184 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Adrian Sina - Hold On (Official Music Video) [HD]-n6qTSLBtbx0.mp3" toTrackDuration =  210 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.0108696 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 324 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 271596 allSignalSize 271596 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4565 "2185633 (881985 compressed)" bytes for track 23634 in 239 ms 
+Debug [Main]: Saved waveform analysis for trackId 23634 analysisId 4565 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.23515 audioVisualRatio 7072.8 
+Debug [Main]: AnalysisDAO saved analysis 4566 "30826 (13448 compressed)" bytes for track 23634 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23634 analysisId 4566 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" fromTrackDuration = 184 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" toTrackDuration =  241 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.0108696 
+Debug [AnalyserQueue 1]: Prioritizing "Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw" "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw" "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23639 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 23639 done 1.679 s 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" fromTrackDuration = 241 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" toTrackDuration =  184 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00829876 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" fromTrackDuration = 241 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Afrojack ft Eva Simons - 'Take Over Control' (Official Video)-TUoOcDGMgT4.mp3" toTrackDuration =  184 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00829876 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 5 ms 323 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 174898 allSignalSize 174898 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4567 "1399403 (572691 compressed)" bytes for track 23635 in 157 ms 
+Debug [Main]: Saved waveform analysis for trackId 23635 analysisId 4567 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.68252 audioVisualRatio 4554.6 
+Debug [Main]: AnalysisDAO saved analysis 4568 "30806 (12676 compressed)" bytes for track 23635 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23635 analysisId 4568 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" fromTrackDuration = 241 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" toTrackDuration =  234 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.00829876 
+Debug [AnalyserQueue 1]: Prioritizing "Alcazar - Crying At The Discoteque-7CiOWcUVGJM" "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x317028c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Alcazar - Crying At The Discoteque-7CiOWcUVGJM" "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1754858 bytes for track 23640 in 18 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 206578 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.19764 audioVisualRatio 5379.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" toTrackDuration =  241 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Ahmed Chawki feat. Pitbull - Habibi I Love You-TyZEwpDPCCw.mp3" toTrackDuration =  241 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3ff68c0) select() took 4 ms 322 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 174714 allSignalSize 174714 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4569 "1426710 (607787 compressed)" bytes for track 23636 in 149 ms 
+Debug [Main]: Saved waveform analysis for trackId 23636 analysisId 4569 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.69273 audioVisualRatio 4549.8 
+Debug [Main]: AnalysisDAO saved analysis 4570 "31025 (14285 compressed)" bytes for track 23636 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23636 analysisId 4570 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [AnalyserQueue 1]: Prioritizing "Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA" "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA" "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1320423 bytes for track 23641 in 12 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 161188 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 10.506 audioVisualRatio 4197.6 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" fromTrackDuration = 182 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" toTrackDuration =  234 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010989 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" fromTrackDuration = 182 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" toTrackDuration =  234 
+Debug [Main]: m_fadeDuration "[Channel1]" = 0.010989 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b307790)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Alexandra Stan - Mr Saxobeat (Official Video)-lAhHNCfA7NI.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alcazar - Crying At The Discoteque-7CiOWcUVGJM.mp3" fromTrackDuration = 234 
+Debug [Main]: "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" toTrackDuration =  182 
+Debug [Main]: m_fadeDuration "[Channel2]" = 0.00854701 
+Debug [AnalyserQueue 1]: Prioritizing "Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA" "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA" "/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2ecb9220, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Alex Gaudino Feat. Christal Waters - Destination Calabria-APtj3EvhfWA.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Auto DJ disabled 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  4 
-Debug [Main]: delete soundmanager  4 
-Debug [Main]: delete view  18 
+Debug [Main]: save config  2 
+Debug [Main]: delete soundmanager  3 
+Debug [Main]: delete view  14 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -571,62 +1093,54 @@ Debug [Main]: ~DlgAutoDJ()
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  192 
+Debug [Main]: delete ControllerManager  201 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  208 
-Debug [Main]: delete library scanner  209 
+Debug [Main]: delete vinylcontrolmanager  202 
+Debug [Main]: delete library scanner  203 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  210 
+Debug [Main]: delete library  203 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  251 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: Writing waveform from byte array: dataSize 150590 allSignalSize 150590 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4143 "1330850 (637420 compressed)" bytes for track 23653 in 183 ms 
-Debug [Main]: Saved waveform analysis for trackId 23653 analysisId 4143 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 11.2454 audioVisualRatio 3921.6 
-Debug [Main]: AnalysisDAO saved analysis 4144 "33747 (16650 compressed)" bytes for track 23653 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23653 analysisId 4144 
+Debug [Main]: Writing waveform from byte array: dataSize 162434 allSignalSize 162434 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4571 "1299805 (528263 compressed)" bytes for track 23638 in 135 ms 
+Debug [Main]: Saved waveform analysis for trackId 23638 analysisId 4571 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.4255 audioVisualRatio 4230 
+Debug [Main]: AnalysisDAO saved analysis 4572 "30822 (12300 compressed)" bytes for track 23638 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23638 analysisId 4572 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x52bac00) updateIndexWithQuery took 0 ms 
-Debug [Main]: Writing waveform from byte array: dataSize 200496 allSignalSize 200496 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4145 "1775435 (856324 compressed)" bytes for track 23047 in 222 ms 
-Debug [Main]: Saved waveform analysis for trackId 23047 analysisId 4145 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.44633 audioVisualRatio 5221.2 
-Debug [Main]: AnalysisDAO saved analysis 4146 "33793 (16577 compressed)" bytes for track 23047 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23047 analysisId 4146 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 212960 allSignalSize 212960 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 4573 "1840032 (882307 compressed)" bytes for track 23639 in 227 ms 
+Debug [Main]: Saved waveform analysis for trackId 23639 analysisId 4573 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.95196 audioVisualRatio 5545.8 
+Debug [Main]: AnalysisDAO saved analysis 4574 "33562 (16164 compressed)" bytes for track 23639 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23639 analysisId 4574 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x52bac00) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3ff4e20) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  768 
+Debug [Main]: delete playerManager  781 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1036 
+Debug [Main]: delete RecordingManager  782 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1036 
+Debug [Main]: delete ShoutcastManager  783 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1036 
+Debug [Main]: delete m_pEngine  783 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -636,15 +1150,16 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1062 
-Debug [Main]: deleting effects manager,  1067 
+Debug [Main]: deleting preferences,  805 
+Debug [Main]: deleting effects manager,  810 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
-Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x39772d0) 
+Debug [Main]: WARNING: The following 7 controls were leaked: 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x26af6f0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x309fb30) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2efeca0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x1dea530) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x26ab3b0) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
+Debug [Main]: "[Controls]" "touch_shift" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1086 
+Debug [Main]: delete config  830 
 Debug [Main]: Mixxx shutdown complete with code 0 

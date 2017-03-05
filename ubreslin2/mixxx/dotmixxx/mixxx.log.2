@@ -32,14 +32,23 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x186d150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x144d150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x186d150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x186d150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x186d150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x144d150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x144d150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x144d150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
+Debug [Main]: Appending Quick Link:  "electronic" --- "/amusic/youtube/playlists/electronic/" 
+Debug [Main]: Appending Quick Link:  "girl_motivational" --- "/amusic/youtube/playlists/girl_motivational/" 
+Debug [Main]: Appending Quick Link:  "girl_power_1" --- "/amusic/youtube/playlists/girl_power_1/" 
+Debug [Main]: Appending Quick Link:  "red_dance_2017" --- "/amusic/youtube/playlists/red_dance_2017/" 
+Debug [Main]: Appending Quick Link:  "red_hiphop" --- "/amusic/youtube/playlists/red_hiphop/" 
+Debug [Main]: Appending Quick Link:  "shake_ya_ass" --- "/amusic/youtube/playlists/shake_ya_ass/" 
+Debug [Main]: Appending Quick Link:  "top_2017_02" --- "/amusic/youtube/playlists/top_2017_02/" 
+Debug [Main]: Appending Quick Link:  "wedding_dance" --- "/amusic/youtube/playlists/wedding_dance/" 
+Debug [Main]: Appending Quick Link:  "worldwide" --- "/amusic/youtube/playlists/worldwide/" 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
 Debug [Main]: Checking for access to user's library directories: 
@@ -97,8 +106,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x29b43fd0) true 
-Debug [Main]: Created root GL Context valid: 0x29b48690 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2979ea00) true 
+Debug [Main]: Created root GL Context valid: 0x297a2fa0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -158,10 +167,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 296 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2b85c340) select() took 443 ms 1157 
-Debug [Main]: AnalysisLibraryTableModel(0x2b85c340) select() took 141 ms 1157 
-Debug [Main]: DlgAnalysis(0x2b446fc0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x39fc5c0) updateIndexWithQuery took 306 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2b4b9320) select() took 455 ms 94 
+Debug [Main]: AnalysisLibraryTableModel(0x2b4b9320) select() took 145 ms 94 
+Debug [Main]: DlgAnalysis(0x2b0a4040, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -186,879 +195,1515 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2db53780, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2b746830, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 368 ms 20592 
+Debug [Main]: LibraryTableModel(0x39f9430) select() took 390 ms 20670 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
-Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
-Debug [Controller]:  Found output device # 2 Ion Discover DJ MIDI 1 
-Debug [Controller]:  Found input device # 3 Ion Discover DJ MIDI 1 
-Debug [Controller]:     Linking to output device # 2 "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Controller]: Scanning HID devices: 
+Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b0a3650, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b0a3650, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b0a3650, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b0a3650, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x38529cd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x38529cd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x38529cd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x38529cd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "3, USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 3 
+Debug [Controller]: Scanning USB Bulk devices: 
+Debug [Controller]: Scanning HID devices: 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
+Debug [Controller]: Controller polling stopped. 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
-Debug [Controller]: Searching for controller preset "Ion_Discover_DJ_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Ion_Discover_DJ_MIDI_1.midi.xml" 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Controller in script engine is: "Ion Discover DJ MIDI 1" 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Applying controller preset... 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Main]: ControllerManager::getControllerList 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Ion-Discover-DJ-scripts.js" 
-Debug [Controller]: "Ion Discover DJ id: "Ion Discover DJ MIDI 1" initialized." 
-Debug [Controller]: Controller polling started. 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3952af30) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3952aec0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3952ae50) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3952ade0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39a9d520) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x388044d0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x38870d90) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x38348f20) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x387cd140) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x387da560) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3a16dce0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1982_Billboard_Top_Usa_Singles/39-Paul_Davis-65_Love_Affair.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(METADATA,GUESSED,,52199,/amusic/genres/urban/RAP,R&B,HIP-HOP/(rmx) watchout HIP - HOP R& B REMIXES/Jay Z.,Bee - '03'bonnie + clyde.mp3)" QSize(200, 193) 
-Debug [AnalyserQueue 1]: Prioritizing ""03"bonnie + clyde" "/amusic/genres/urban/RAP,R&B,HIP-HOP/(rmx) watchout HIP - HOP R& B REMIXES/Jay Z.,Bee - '03'bonnie + clyde.mp3" 
-Debug [AnalyserQueue 1]: Analyzing ""03"bonnie + clyde" "/amusic/genres/urban/RAP,R&B,HIP-HOP/(rmx) watchout HIP - HOP R& B REMIXES/Jay Z.,Bee - '03'bonnie + clyde.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,52199,/amusic/genres/urban/RAP,R&B,HIP-HOP/(rmx) watchout HIP - HOP R& B REMIXES/Jay Z.,Bee - '03'bonnie + clyde.mp3)" QSize(200, 193) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1163" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1164" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2625" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2626" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17457 in 1 ms 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 1065.8 EntrytoDac: 24263 
-Debug [AnalyserQueue 1]: Waveform generation for track 17457 done 1.258 s 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x3edd3e0) select() took 2 ms 8 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 0 
+Debug [Main]: PlaylistTableModel(0x3ab94e0) select() took 4 ms 348 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "99 Problems (Produced By Rick Rubin)" "/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "99 Problems (Produced By Rick Rubin)" "/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x333adc40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1019" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1020" length 0 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 1147.5 EntrytoDac: 23673 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1960233 bytes for track 5118 in 22 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 207016 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.1803 audioVisualRatio 5391 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ad0cb80)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3)" QSize(0, 0) 
+Debug [Main]: Already focused on playlist  257 
+Debug [Main]: PlaylistTableModel(0x3ab94e0) select() took 5 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  257 
+Debug [Main]: PlaylistTableModel(0x3ab94e0) select() took 5 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ad0cb80)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dr Alban - Loverboy (Official HD)-x1SbS1KTekw.mp3)" QSize(0, 0) 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 348 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 348 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 347 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw" "/amusic/genres/urban/breslin/Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw" "/amusic/genres/urban/breslin/Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/Panjabi MC feat. Jay-Z - Beware-wke0-lj2wzw.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2371" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2372" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2543" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2544" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22659 in 1 ms 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Waveform generation for track 22659 done 1.197 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 346 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1999_Billboard_Top_Usa_Singles/039-Jay_Z_Featuring_Amil-Can_I_Get_A....mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 345 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Big Pimpin'" "/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Big Pimpin'" "/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2000_Billboard_Top_Usa_Singles/60-Jay-Z-Big_Pimpin.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/91" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/92" length 0 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 1194.07 EntrytoDac: 23514 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2048334 bytes for track 13025 in 13 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 251122 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.74353 audioVisualRatio 6539.6 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Setting visibility for "[Library]" "show_coverart" true 
-Debug [Main]: Setting visibility for "[Library]" "show_coverart" false 
-Debug [Main]: Setting visibility for "[EffectRack1]" "show" true 
-Debug [Main]: Setting visibility for "[EffectRack1]" "show" false 
-Debug [Main]: Setting visibility for "[Microphone]" "show_microphone" true 
-Debug [Main]: Setting visibility for "[Microphone]" "show_microphone" false 
-Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
-Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" false 
-Debug [Main]: Setting visibility for "[Master]" "maximize_library" true 
-Debug [Main]: Setting visibility for "[Master]" "maximize_library" false 
-Debug [Main]: PlaylistTableModel(0x3edd3e0) select() took 1 ms 7 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x3edd3e0) select() took 4 ms 200 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x3edd3e0) select() took 2 ms 39 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "playlists")   QVariant(QString, "/amusic/youtube/playlists/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_motivational")   QVariant(QString, "/amusic/youtube/playlists/girl_motivational/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Beyoncé - Run the World (Girls)-VBmMU_iwe6U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Blondie- Call me-y6QBaZHltJw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Kelly Clarkson - Because Of You-Ra-Om7UMSJc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Nancy Sinatra - These Boots Are Made for Walkin'-SbyAZQ45uww.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc.mp3" 
-Debug [BrowseThread]: Append last  7 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 167848 allSignalSize 167848 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4113 "1343367 (498508 compressed)" bytes for track 17457 in 147 ms 
-Debug [Main]: Saved waveform analysis for trackId 17457 analysisId 4113 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.0892 audioVisualRatio 4371 
-Debug [Main]: AnalysisDAO saved analysis 4114 "30822 (12265 compressed)" bytes for track 17457 in 2 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 17457 analysisId 4114 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Born This Way- Lady Gaga LYRICS-0BsLd4Y060Q" "/amusic/youtube/playlists/girl_motivational/Born This Way- Lady Gaga LYRICS-0BsLd4Y060Q.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x333adc40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Born This Way- Lady Gaga LYRICS-0BsLd4Y060Q.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Born This Way- Lady Gaga LYRICS-0BsLd4Y060Q" "/amusic/youtube/playlists/girl_motivational/Born This Way- Lady Gaga LYRICS-0BsLd4Y060Q.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22960 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 22960 done 6.048 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 327680 
-Debug [AnalyserQueue 1]: 3 : "D" 327680 
-Debug [AnalyserQueue 1]: 5 : "E" 98304 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 65536 
-Debug [AnalyserQueue 1]: 8 : "G" 918912 
-Debug [AnalyserQueue 1]: 10 : "A" 491520 
-Debug [AnalyserQueue 1]: 13 : "Cm" 2.71974e+06 
-Debug [AnalyserQueue 1]: 15 : "Dm" 1.6384e+06 
-Debug [AnalyserQueue 1]: 17 : "Em" 131072 
-Debug [AnalyserQueue 1]: 18 : "Fm" 98304 
-Debug [AnalyserQueue 1]: 20 : "Gm" 32768 
-Debug [AnalyserQueue 1]: 24 : "Bm" 4.78413e+06 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: Prioritizing "Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0" "/amusic/youtube/playlists/girl_motivational/Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0" "/amusic/youtube/playlists/girl_motivational/Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22979 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [AnalyserQueue 1]: Waveform generation for track 22979 done 5.806 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 2 : "D♭" 4.52198e+06 
-Debug [AnalyserQueue 1]: 4 : "E♭" 557056 
-Debug [AnalyserQueue 1]: 6 : "F" 128000 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 524288 
-Debug [AnalyserQueue 1]: 9 : "A♭" 294912 
-Debug [AnalyserQueue 1]: 11 : "B♭" 819200 
-Debug [AnalyserQueue 1]: 13 : "Cm" 753664 
-Debug [AnalyserQueue 1]: 23 : "B♭m" 2.32653e+06 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4111" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4112" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22974 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [AnalyserQueue 1]: Waveform generation for track 22974 done 4.767 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 131072 
-Debug [AnalyserQueue 1]: 2 : "D♭" 5.76717e+06 
-Debug [AnalyserQueue 1]: 3 : "D" 262144 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 753664 
-Debug [AnalyserQueue 1]: 11 : "B♭" 163840 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 862848 
-Debug [AnalyserQueue 1]: Prioritizing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x333adc40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc" "/amusic/youtube/playlists/girl_motivational/Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc" "/amusic/youtube/playlists/girl_motivational/Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23003 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23003 done 6.712 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 3 : "D" 1.5401e+06 
-Debug [AnalyserQueue 1]: 5 : "E" 589824 
-Debug [AnalyserQueue 1]: 8 : "G" 524288 
-Debug [AnalyserQueue 1]: 10 : "A" 2.12992e+06 
-Debug [AnalyserQueue 1]: 12 : "B" 131072 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 32768 
-Debug [AnalyserQueue 1]: 17 : "Em" 65536 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 6.96691e+06 
-Debug [AnalyserQueue 1]: 22 : "Am" 1.11411e+06 
-Debug [AnalyserQueue 1]: 24 : "Bm" 458752 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 344 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Writing waveform from byte array: dataSize 161328 allSignalSize 161328 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4115 "1290714 (479880 compressed)" bytes for track 22659 in 141 ms 
-Debug [Main]: Saved waveform analysis for trackId 22659 analysisId 4115 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.497 audioVisualRatio 4201.2 
-Debug [Main]: AnalysisDAO saved analysis 4116 "30822 (12500 compressed)" bytes for track 22659 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22659 analysisId 4116 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg" "/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg" "/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4109" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4110" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23007 in 0 ms 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 343 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23007 done 2.342 s 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 342 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 341 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 340 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 339 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 338 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 337 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 336 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 335 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 334 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 333 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 332 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 331 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 330 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 329 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 328 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 327 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 326 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 325 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 324 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 323 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 322 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 321 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 320 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 319 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 318 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 317 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 316 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 315 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 314 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 313 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 312 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 311 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 310 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 309 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 308 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 307 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 306 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 305 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 304 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 303 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 302 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 301 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 300 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 299 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 298 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 297 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 296 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 295 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 294 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 293 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 292 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 291 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 290 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 289 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 288 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 287 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 286 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 285 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 284 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 283 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 282 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 281 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 280 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 279 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 278 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 277 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 276 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 275 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 274 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 273 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 272 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 271 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 270 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 269 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 268 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 267 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 266 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 265 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 264 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 263 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 262 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 261 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 260 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 259 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 258 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 257 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 256 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 255 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 254 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 253 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 252 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 251 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 250 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 249 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 248 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 247 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 246 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 245 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 244 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 243 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 242 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 241 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 240 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 239 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 238 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 237 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 236 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 235 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 234 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 233 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 232 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 231 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 230 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 229 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 228 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 227 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 226 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 225 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 224 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 223 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 222 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 221 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 220 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 219 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 218 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 217 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 216 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 215 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 214 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 213 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 212 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 211 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 6 ms 210 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 209 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 208 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 207 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 206 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 205 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 204 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 203 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 202 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 201 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 200 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 199 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 198 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 197 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 196 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 195 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 194 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 193 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 192 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 191 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 190 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 189 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 188 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 187 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 186 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 185 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 184 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 183 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 182 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 181 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 180 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 179 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 178 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 177 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 176 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 175 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 174 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 173 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 172 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 171 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 170 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 169 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 168 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 167 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 166 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 165 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 164 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 163 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 162 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 161 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 160 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 159 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 158 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 157 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 156 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 155 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 154 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 153 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 152 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 151 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 150 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 149 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 148 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 147 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 146 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 145 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 144 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 143 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 142 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 141 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 140 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 139 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 138 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 137 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 136 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 5 ms 135 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 134 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 133 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 132 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 131 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 130 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 129 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 128 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 127 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 126 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 125 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 124 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 123 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 122 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 121 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 120 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 119 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 118 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 117 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 116 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 115 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 114 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 113 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 112 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 111 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 110 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 109 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 108 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 107 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 106 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 105 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 104 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 103 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 102 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 101 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 100 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 99 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 98 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 97 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 96 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 95 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 94 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 93 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 92 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 91 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 90 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 89 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 88 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 87 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 86 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 85 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 84 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 83 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 82 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 81 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 80 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 79 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 78 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 77 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 76 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 75 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 74 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 73 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 72 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 71 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 70 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 4 ms 69 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 68 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 67 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 66 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 65 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 64 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 63 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 62 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 61 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 60 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 59 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 58 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 57 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 56 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 55 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 54 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 53 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 52 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 51 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 50 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 49 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 48 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 47 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 46 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 45 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 44 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 43 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 42 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 41 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 40 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 39 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 38 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 37 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 36 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 35 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 34 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 33 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 32 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 31 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 30 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 29 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 28 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 27 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 26 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 25 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 24 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 23 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 22 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 21 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 20 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 19 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 18 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 17 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 16 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 15 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 14 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 13 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 12 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 11 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 10 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 3 ms 9 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 8 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 7 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 6 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 5 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 4 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 3 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 1 ms 2 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 1 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x3a31f10) select() took 2 ms 0 
+Debug [Main]: src/library/dao/trackdao.cpp 1250 FAILED QUERY [ "SELECT track_locations.location,artist,title,album,album_artist,year,genre,composer,grouping,tracknumber,filetype,rating,comment,url,duration,bitrate,samplerate,cuepoint,replaygain,channels,timesplayed,played,datetime_added,header_parsed,bpm,beats_version,beats_sub_version,beats,bpm_lock,key,keys_version,keys_sub_version,keys,coverart_source,coverart_type,coverart_location,coverart_hash FROM Library INNER JOIN track_locations ON library.location = track_locations.id WHERE library.id = -1" ] QSqlError(-1, "", "") "getTrack(-1)" 
+Debug [Main]: Queue is empty now 
+Debug [Main]: Auto DJ disabled 
+Debug [Main]: PlaylistTableModel(0x3ab94e0) select() took 4 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 232682 allSignalSize 232682 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4117 "2099889 (995137 compressed)" bytes for track 22960 in 271 ms 
-Debug [Main]: Saved waveform analysis for trackId 22960 analysisId 4117 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.27795 audioVisualRatio 6059.4 
-Debug [Main]: AnalysisDAO saved analysis 4118 "34353 (16791 compressed)" bytes for track 22960 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22960 analysisId 4118 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 1 ms 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 198514 allSignalSize 198514 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4119 "1614764 (702614 compressed)" bytes for track 22979 in 182 ms 
-Debug [Main]: Saved waveform analysis for trackId 22979 analysisId 4119 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.53064 audioVisualRatio 5169.6 
-Debug [Main]: AnalysisDAO saved analysis 4120 "30947 (13710 compressed)" bytes for track 22979 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22979 analysisId 4120 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Christina Aguilera - Fighter-PstrAfoMKlc" "/amusic/youtube/playlists/girl_motivational/Christina Aguilera - Fighter-PstrAfoMKlc.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Christina Aguilera - Fighter-PstrAfoMKlc" "/amusic/youtube/playlists/girl_motivational/Christina Aguilera - Fighter-PstrAfoMKlc.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Christina Aguilera - Fighter-PstrAfoMKlc.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22964 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 22964 done 5.24 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 4.096e+06 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 262144 
-Debug [AnalyserQueue 1]: 8 : "G" 819200 
-Debug [AnalyserQueue 1]: 17 : "Em" 4.6839e+06 
-Debug [AnalyserQueue 1]: 22 : "Am" 950272 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "fun")   QVariant(QString, "/amusic/fun/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/081 - The Kinks - Lola.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/2-21 Ain't Too Proud To Beg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/393 - Queen - Fat Bottomed Girls.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Elvis Presley - Suspicious Minds.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Jonny Cash - Folson Prison Blues.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Maxine Nightingale - Right Back Where We Started From.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Paul Simon - Me and Julio Down By the Schoolyard.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Steve Miller Band - Stuck In The Middle With You.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/fun/Tom Jones - It's Not Unusual.mp3" 
-Debug [BrowseThread]: Append last  5 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "playlists")   QVariant(QString, "/amusic/youtube/playlists/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "electronic")   QVariant(QString, "/amusic/youtube/playlists/electronic/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "electronic")   QVariant(QString, "/amusic/youtube/playlists/electronic/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Alex Newell & DJ Cassidy (with Nile Rodgers) 'Kill The Lights' [Official Video]-Q1P612HLe9o.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Baauer - CandyMan-JjV0GgFTcF0.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna-kOkQ4T5WO9E.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "electronic")   QVariant(QString, "/amusic/youtube/playlists/electronic/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Crystal Fighters - Good Girls (Airia Remix)-35eKUwVHX9I.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Clean Bandit -  Tears ft. Louisa Johnson [Official Video]-dc-nyGo0aC8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/DJ Snake, Lil Jon - Turn Down for What-HMUDVMiITOU.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_motivational")   QVariant(QString, "/amusic/youtube/playlists/girl_motivational/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_motivational")   QVariant(QString, "/amusic/youtube/playlists/girl_motivational/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Beyoncé - Run the World (Girls)-VBmMU_iwe6U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Blondie- Call me-y6QBaZHltJw.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "girl_motivational")   QVariant(QString, "/amusic/youtube/playlists/girl_motivational/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Kelly Clarkson - Because Of You-Ra-Om7UMSJc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Nancy Sinatra - These Boots Are Made for Walkin'-SbyAZQ45uww.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Sucker Punch (OST) - 03 - White Rabbit - Emiliana Torrini-sMBXcX9mmRc.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_power_1")   QVariant(QString, "/amusic/youtube/playlists/girl_power_1/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_power_1")   QVariant(QString, "/amusic/youtube/playlists/girl_power_1/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append last  7 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "girl_power_1")   QVariant(QString, "/amusic/youtube/playlists/girl_power_1/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_dance_2017")   QVariant(QString, "/amusic/youtube/playlists/red_dance_2017/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_dance_2017")   QVariant(QString, "/amusic/youtube/playlists/red_dance_2017/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Avicii vs. Conrad Sewell - Taste The Feeling-F82W3tKtr8c.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "red_dance_2017")   QVariant(QString, "/amusic/youtube/playlists/red_dance_2017/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Clean Bandit -  Tears ft. Louisa Johnson [Official Video]-dc-nyGo0aC8.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_hiphop")   QVariant(QString, "/amusic/youtube/playlists/red_hiphop/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_hiphop")   QVariant(QString, "/amusic/youtube/playlists/red_hiphop/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "red_hiphop")   QVariant(QString, "/amusic/youtube/playlists/red_hiphop/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_hiphop/DJ Luke Nasty - Might Be (Official Video)-ZpIyhTgFPjA.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "shake_ya_ass")   QVariant(QString, "/amusic/youtube/playlists/shake_ya_ass/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "shake_ya_ass")   QVariant(QString, "/amusic/youtube/playlists/shake_ya_ass/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Bone Thugs-n-Harmony - Thuggish Ruggish Bone-C0PB4o9GH2A.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "shake_ya_ass")   QVariant(QString, "/amusic/youtube/playlists/shake_ya_ass/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/shake_ya_ass/Ciara - Oh ft. Ludacris-Hr4wz4-27PY.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "top_2017_02")   QVariant(QString, "/amusic/youtube/playlists/top_2017_02/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "top_2017_02")   QVariant(QString, "/amusic/youtube/playlists/top_2017_02/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/top_2017_02/Bebe Rexha - I Got You [Official Music Video]-uEJuoEs1UxY.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "top_2017_02")   QVariant(QString, "/amusic/youtube/playlists/top_2017_02/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/top_2017_02/Childish Gambino - Redbone (Official Audio)-Kp7eSUU9oy8.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "wedding_dance")   QVariant(QString, "/amusic/youtube/playlists/wedding_dance/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "wedding_dance")   QVariant(QString, "/amusic/youtube/playlists/wedding_dance/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/wedding_dance/Beyoncé - 7_11-k4YRWT_Aldo.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "wedding_dance")   QVariant(QString, "/amusic/youtube/playlists/wedding_dance/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/wedding_dance/Cupid - Cupid Shuffle (Music Video)-h24_zoqu4_Q.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/wedding_dance/Iggy Azalea ft. Charli XCX - Fancy (Clean Version)-qq2VK-ydWxw.mp3" 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Abort populateModel() 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Andreea Banica 'Love in Brasil' [HD]-nqHubzaLZJc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Avicii - Levels-_ovdm2yX4MA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Billy Joel - The River of Dreams-hSq4B_zHqPM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Britney Spears - ...Baby One More Time-C-u5WLJ9Yk4.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Calvin Harris - Blame (Audio) ft. John Newman-HJb0VYVtaNc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Claydee & Ermal Mamaqi - Senorita-wZyJfrQgY-U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/DJ Antoine vs Timati feat. Kalenna - Welcome to St. Tropez (DJ Antoine vs Mad Mark Remix) [Lyrics]-Kh2FRFhS7QY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Enrique Iglesias - Bailando (Español) ft. Descemer Bueno, Gente De Zona-NUsoVlDFqZg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Freddie Mercury - Living On My Own-o-urnGgFs4k.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Halt dein MAUL-hH4TnqaUXjk.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ida Corr vs.  Fedde Le Grand - Let Me Think About It-6yikNhPh9n8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jennifer Lopez - Ain't It Funny (Alt Version)-GSLSwwkLRW0.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jermaine Stewart - We Don't Have To Take Our Clothes Off-HWZisnZ-RGE.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Kid Cudi vs. Crookers - Day 'n' Night-WSWrepLjTKc.mp3" 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "Quick Links")   QVariant(QString, "::mixxx_quick_lnk_node::") 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Lucas & Steve vs Matt & Kendo - You And I Know (Official Music Video)-MShHAFXn7UA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Michel Teló - Ai Se Eu Te Pego -  Video Oficial (Assim você me mata)-hcm55lU9knw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/NICKO - Last Summer - Nikos Ganos (OFFICIAL VIDEO HD)-hdDK96Ije88.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Horny United - Crazy Paris (original)-ADsXwxWpEYc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Salt-N-Pepa - Push It-vCadcBR95oU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Stevie Wonder - Part Time Lover-Ll6LLGePYwM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Vassy - Mad-DlbAfw7NLSc.mp3" 
-Debug [BrowseThread]: Append last  4 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "red_dance_2017")   QVariant(QString, "/amusic/youtube/playlists/red_dance_2017/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Avicii vs. Conrad Sewell - Taste The Feeling-F82W3tKtr8c.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Clean Bandit -  Tears ft. Louisa Johnson [Official Video]-dc-nyGo0aC8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Kygo - Raging ft. Kodaline-ZhzN7-Q00KU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Dawin - Dessert ft. Silentó-NZp_axebSfQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Flume - Say It feat. Tove Lo [Official Music Video]-htNmT31AW9U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Kygo - Firestone ft. Conrad Sewell-9Sc-ir2UwGU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Martin Garrix & Bebe Rexha - In The Name Of Love (Official Video)-RnBT9uUYb1w.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Rihanna - We Found Love ft. Calvin Harris-tg00YEETFzg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Skrillex & Rick Ross - Purple Lamborghini [Official Video]-ZkqyIoYAXV8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/red_dance_2017/Tinie Tempah - Girls Like ft. Zara Larsson (Official Video)-OEiva3cMv6k.mp3" 
-Debug [BrowseThread]: Append last  8 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 158816 allSignalSize 158816 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4121 "1421974 (644882 compressed)" bytes for track 22974 in 177 ms 
-Debug [Main]: Saved waveform analysis for trackId 22974 analysisId 4121 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.663 audioVisualRatio 4135.8 
-Debug [Main]: AnalysisDAO saved analysis 4122 "34316 (16521 compressed)" bytes for track 22974 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22974 analysisId 4122 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Calvin Harris & Disciples - How Deep Is Your Love-EgqUJOudrcM" "/amusic/youtube/playlists/red_dance_2017/Calvin Harris & Disciples - How Deep Is Your Love-EgqUJOudrcM.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Calvin Harris & Disciples - How Deep Is Your Love-EgqUJOudrcM" "/amusic/youtube/playlists/red_dance_2017/Calvin Harris & Disciples - How Deep Is Your Love-EgqUJOudrcM.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/red_dance_2017/Calvin Harris & Disciples - How Deep Is Your Love-EgqUJOudrcM.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23124 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23124 done 5.831 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 1.14688e+06 
-Debug [AnalyserQueue 1]: 2 : "D♭" 589824 
-Debug [AnalyserQueue 1]: 3 : "D" 950272 
-Debug [AnalyserQueue 1]: 6 : "F" 65536 
-Debug [AnalyserQueue 1]: 8 : "G" 589824 
-Debug [AnalyserQueue 1]: 9 : "A♭" 32768 
-Debug [AnalyserQueue 1]: 10 : "A" 884736 
-Debug [AnalyserQueue 1]: 13 : "Cm" 32768 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 262144 
-Debug [AnalyserQueue 1]: 17 : "Em" 6.52083e+06 
-Debug [AnalyserQueue 1]: 21 : "G♯m" 32768 
-Debug [AnalyserQueue 1]: 22 : "Am" 385152 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 271066 allSignalSize 271066 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4123 "2345742 (1096687 compressed)" bytes for track 23003 in 302 ms 
-Debug [Main]: Saved waveform analysis for trackId 23003 analysisId 4123 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.24734 audioVisualRatio 7059 
-Debug [Main]: AnalysisDAO saved analysis 4124 "33389 (16190 compressed)" bytes for track 23003 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23003 analysisId 4124 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Calvin Harris - Summer-ebXbLfLACGM" "/amusic/youtube/playlists/red_dance_2017/Calvin Harris - Summer-ebXbLfLACGM.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Calvin Harris - Summer-ebXbLfLACGM" "/amusic/youtube/playlists/red_dance_2017/Calvin Harris - Summer-ebXbLfLACGM.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/red_dance_2017/Calvin Harris - Summer-ebXbLfLACGM.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23126 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23126 done 4.969 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 3.53894e+06 
-Debug [AnalyserQueue 1]: 2 : "D♭" 65536 
-Debug [AnalyserQueue 1]: 3 : "D" 131072 
-Debug [AnalyserQueue 1]: 4 : "E♭" 425984 
-Debug [AnalyserQueue 1]: 8 : "G" 5.96147e+06 
-Debug [AnalyserQueue 1]: 13 : "Cm" 163840 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 32768 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 275306 allSignalSize 275306 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4125 "2539787 (1198879 compressed)" bytes for track 23007 in 319 ms 
-Debug [Main]: Saved waveform analysis for trackId 23007 analysisId 4125 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 6.15114 audioVisualRatio 7169.4 
-Debug [Main]: AnalysisDAO saved analysis 4126 "34727 (17620 compressed)" bytes for track 23007 in 2 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23007 analysisId 4126 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Chase & Status - All Goes Wrong ft. Tom Grennan-hkDGGsuVKVo" "/amusic/youtube/playlists/red_dance_2017/Chase & Status - All Goes Wrong ft. Tom Grennan-hkDGGsuVKVo.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Chase & Status - All Goes Wrong ft. Tom Grennan-hkDGGsuVKVo" "/amusic/youtube/playlists/red_dance_2017/Chase & Status - All Goes Wrong ft. Tom Grennan-hkDGGsuVKVo.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/red_dance_2017/Chase & Status - All Goes Wrong ft. Tom Grennan-hkDGGsuVKVo.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23129 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23129 done 6.378 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 3 : "D" 524288 
-Debug [AnalyserQueue 1]: 4 : "E♭" 32768 
-Debug [AnalyserQueue 1]: 5 : "E" 262144 
-Debug [AnalyserQueue 1]: 10 : "A" 6.3017e+06 
-Debug [AnalyserQueue 1]: 11 : "B♭" 65536 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 2.12992e+06 
-Debug [AnalyserQueue 1]: 21 : "G♯m" 65536 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: Prioritizing "David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg" "/amusic/youtube/playlists/red_dance_2017/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg" "/amusic/youtube/playlists/red_dance_2017/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2bafefe0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/red_dance_2017/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23141 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23141 done 5.268 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 4 : "E♭" 5.24288e+06 
-Debug [AnalyserQueue 1]: 11 : "B♭" 1.17965e+06 
-Debug [AnalyserQueue 1]: 12 : "B" 32768 
-Debug [AnalyserQueue 1]: 13 : "Cm" 4.22707e+06 
-Debug [AnalyserQueue 1]: 15 : "Dm" 137216 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_power_1")   QVariant(QString, "/amusic/youtube/playlists/girl_power_1/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Britney Spears - Work B_ch-pt8VYOfr8To.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Ellie Goulding - Lights-0NKUpo_xKyQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Hilary Duff - Chasing the Sun-Fj6MjDFD1Kw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Katy Perry - Roar (Official)-CevxZvSJLk8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Lil Mama - Lip Gloss-S5ck6TJQ5Ow.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Lykke Li - I Follow Rivers (The Magician Remix)-oS6wfWu0JvA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Missy Elliott - Get Ur Freak On [OFFICIAL VIDEO]-FPoKiGQzbSQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/RITA ORA - I Will Never Let You Down-50GQjUZ4P3M.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_power_1/Sky Ferreira - You're Not The One (Official Video)-IFCZP1Nz3Ds.mp3" 
-Debug [BrowseThread]: Append last  7 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Andreea Banica 'Love in Brasil' [HD]-nqHubzaLZJc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Avicii - Levels-_ovdm2yX4MA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Billy Joel - The River of Dreams-hSq4B_zHqPM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Britney Spears - ...Baby One More Time-C-u5WLJ9Yk4.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Calvin Harris - Blame (Audio) ft. John Newman-HJb0VYVtaNc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Claydee & Ermal Mamaqi - Senorita-wZyJfrQgY-U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/DJ Antoine vs Timati feat. Kalenna - Welcome to St. Tropez (DJ Antoine vs Mad Mark Remix) [Lyrics]-Kh2FRFhS7QY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Enrique Iglesias - Bailando (Español) ft. Descemer Bueno, Gente De Zona-NUsoVlDFqZg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Freddie Mercury - Living On My Own-o-urnGgFs4k.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Halt dein MAUL-hH4TnqaUXjk.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ida Corr vs.  Fedde Le Grand - Let Me Think About It-6yikNhPh9n8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jennifer Lopez - Ain't It Funny (Alt Version)-GSLSwwkLRW0.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jermaine Stewart - We Don't Have To Take Our Clothes Off-HWZisnZ-RGE.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Kid Cudi vs. Crookers - Day 'n' Night-WSWrepLjTKc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Lucas & Steve vs Matt & Kendo - You And I Know (Official Music Video)-MShHAFXn7UA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Michel Teló - Ai Se Eu Te Pego -  Video Oficial (Assim você me mata)-hcm55lU9knw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/NICKO - Last Summer - Nikos Ganos (OFFICIAL VIDEO HD)-hdDK96Ije88.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Horny United - Crazy Paris (original)-ADsXwxWpEYc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Salt-N-Pepa - Push It-vCadcBR95oU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Stevie Wonder - Part Time Lover-Ll6LLGePYwM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Vassy - Mad-DlbAfw7NLSc.mp3" 
-Debug [BrowseThread]: Append last  4 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 216232 allSignalSize 216232 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4127 "1879259 (902951 compressed)" bytes for track 22964 in 241 ms 
-Debug [Main]: Saved waveform analysis for trackId 22964 analysisId 4127 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.83165 audioVisualRatio 5631 
-Debug [Main]: AnalysisDAO saved analysis 4128 "33454 (16917 compressed)" bytes for track 22964 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22964 analysisId 4128 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [CachingReaderWorker 1]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Warning [CachingReaderWorker 1]: Failed to open SoundSource 
-Warning [CachingReaderWorker 1]: Failed to open file: "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" "The file '/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3' could not be loaded." 
-Debug [CachingReaderWorker 1]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Warning [CachingReaderWorker 1]: Failed to open SoundSource 
-Warning [CachingReaderWorker 1]: Failed to open file: "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" "The file '/amusic/youtube/playlists/worldwide/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3' could not be loaded." 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 407 ms 20592 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 391 ms 10430 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 330 ms 232 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 297 ms 0 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 299 ms 232 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 296 ms 43 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 300 ms 8 
-Debug [Main]: LibraryTableModel(0x3e528d0) select() took 311 ms 8 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b0b2210)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/wedding_dance/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes" "/amusic/youtube/playlists/wedding_dance/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes" "/amusic/youtube/playlists/wedding_dance/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3094fbe0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/wedding_dance/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO)-QK8mJJJvaes.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23565 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23565 done 4.88 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 2 : "D♭" 327680 
-Debug [AnalyserQueue 1]: 5 : "E" 425984 
-Debug [AnalyserQueue 1]: 7 : "F♯/G♭" 688128 
-Debug [AnalyserQueue 1]: 9 : "A♭" 1.80442e+06 
-Debug [AnalyserQueue 1]: 10 : "A" 589824 
-Debug [AnalyserQueue 1]: 12 : "B" 1.93331e+06 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 753664 
-Debug [AnalyserQueue 1]: 16 : "D♯m/E♭m" 196608 
-Debug [AnalyserQueue 1]: 18 : "Fm" 557056 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 1.08134e+06 
-Debug [AnalyserQueue 1]: 21 : "G♯m" 1.90054e+06 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "worldwide")   QVariant(QString, "/amusic/youtube/playlists/worldwide/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "thr" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Abba - Mamma Mia-unfzfe8f9NI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Andreea Banica 'Love in Brasil' [HD]-nqHubzaLZJc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ace of Base - Beautiful Life (Official)-v9hdMSr6Duc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Avicii - Levels-_ovdm2yX4MA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Billy Joel - The River of Dreams-hSq4B_zHqPM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Britney Spears - ...Baby One More Time-C-u5WLJ9Yk4.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Calvin Harris - Blame (Audio) ft. John Newman-HJb0VYVtaNc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Claydee & Ermal Mamaqi - Senorita-wZyJfrQgY-U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/David Guetta - Lovers On The Sun (Official Video) ft Sam Martin-BPiW0tkWfeg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/DJ Antoine vs Timati feat. Kalenna - Welcome to St. Tropez (DJ Antoine vs Mad Mark Remix) [Lyrics]-Kh2FRFhS7QY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Enrique Iglesias - Bailando (Español) ft. Descemer Bueno, Gente De Zona-NUsoVlDFqZg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Freddie Mercury - Living On My Own-o-urnGgFs4k.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Halt dein MAUL-hH4TnqaUXjk.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Ida Corr vs.  Fedde Le Grand - Let Me Think About It-6yikNhPh9n8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jennifer Lopez - Ain't It Funny (Alt Version)-GSLSwwkLRW0.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Jermaine Stewart - We Don't Have To Take Our Clothes Off-HWZisnZ-RGE.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Kid Cudi vs. Crookers - Day 'n' Night-WSWrepLjTKc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Lucas & Steve vs Matt & Kendo - You And I Know (Official Music Video)-MShHAFXn7UA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Michel Teló - Ai Se Eu Te Pego -  Video Oficial (Assim você me mata)-hcm55lU9knw.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/NICKO - Last Summer - Nikos Ganos (OFFICIAL VIDEO HD)-hdDK96Ije88.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Horny United - Crazy Paris (original)-ADsXwxWpEYc.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Salt-N-Pepa - Push It-vCadcBR95oU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Stevie Wonder - Part Time Lover-Ll6LLGePYwM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/worldwide/Vassy - Mad-DlbAfw7NLSc.mp3" 
-Debug [BrowseThread]: Append last  4 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 229872 allSignalSize 229872 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4129 "1983504 (868228 compressed)" bytes for track 23124 in 219 ms 
-Debug [Main]: Saved waveform analysis for trackId 23124 analysisId 4129 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.36694 audioVisualRatio 5986.2 
-Debug [Main]: AnalysisDAO saved analysis 4130 "33023 (15454 compressed)" bytes for track 23124 in 2 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23124 analysisId 4130 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 1 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x333adc40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE" "/amusic/youtube/playlists/worldwide/Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE" "/amusic/youtube/playlists/worldwide/Dillon Francis, DJ Snake - Get Low-12CeaxLiMgE.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23654 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [AnalyserQueue 1]: Waveform generation for track 23654 done 4.738 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 65536 
-Debug [AnalyserQueue 1]: 6 : "F" 859904 
-Debug [AnalyserQueue 1]: 8 : "G" 32768 
-Debug [AnalyserQueue 1]: 10 : "A" 2.19546e+06 
-Debug [AnalyserQueue 1]: 11 : "B♭" 557056 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 32768 
-Debug [AnalyserQueue 1]: 15 : "Dm" 2.78528e+06 
-Debug [AnalyserQueue 1]: 17 : "Em" 950272 
-Debug [AnalyserQueue 1]: 20 : "Gm" 32768 
-Debug [AnalyserQueue 1]: 22 : "Am" 1.5401e+06 
-Debug [AnalyserQueue 1]: 23 : "B♭m" 327680 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 216392 allSignalSize 216392 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4131 "2038928 (952144 compressed)" bytes for track 23141 in 274 ms 
-Debug [Main]: Saved waveform analysis for trackId 23141 analysisId 4131 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.82581 audioVisualRatio 5635.2 
-Debug [Main]: AnalysisDAO saved analysis 4132 "36046 (17918 compressed)" bytes for track 23141 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23141 analysisId 4132 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 1 ms 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" "The file '/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3' could not be loaded." 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3)" QSize(0, 0) 
-Debug [Main]: DlgTrackInfo::slotPixmapFound DlgTrackInfo(0x2b14fad0, name = "DlgTrackInfo")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3" "The file '/amusic/youtube/playlists/worldwide/Pitbull - Give Me Everything ft. Ne-Yo, Afrojack, Nayer-EPo5wWmKEaI.mp3' could not be loaded." 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 206394 allSignalSize 206394 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4133 "1898176 (905495 compressed)" bytes for track 23126 in 258 ms 
-Debug [Main]: Saved waveform analysis for trackId 23126 analysisId 4133 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.20496 audioVisualRatio 5374.8 
-Debug [Main]: AnalysisDAO saved analysis 4134 "34503 (17251 compressed)" bytes for track 23126 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23126 analysisId 4134 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Ricky Martin - Livin' La Vida Loca-p47fEXGabaY.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Ricky Martin - Livin' La Vida Loca-p47fEXGabaY.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Ricky Martin - Livin' La Vida Loca-p47fEXGabaY.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Ricky Martin - Livin' La Vida Loca-p47fEXGabaY.mp3" "The file '/amusic/youtube/playlists/worldwide/Ricky Martin - Livin' La Vida Loca-p47fEXGabaY.mp3' could not be loaded." 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 187638 allSignalSize 187638 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4135 "1719950 (791773 compressed)" bytes for track 23129 in 215 ms 
-Debug [Main]: Saved waveform analysis for trackId 23129 analysisId 4135 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.02505 audioVisualRatio 4886.4 
-Debug [Main]: AnalysisDAO saved analysis 4136 "34717 (16574 compressed)" bytes for track 23129 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23129 analysisId 4136 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Pitbull - Rain Over Me ft. Marc Anthony-SmM0653YvXU.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Pitbull - Rain Over Me ft. Marc Anthony-SmM0653YvXU.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Pitbull - Rain Over Me ft. Marc Anthony-SmM0653YvXU.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Pitbull - Rain Over Me ft. Marc Anthony-SmM0653YvXU.mp3" "The file '/amusic/youtube/playlists/worldwide/Pitbull - Rain Over Me ft. Marc Anthony-SmM0653YvXU.mp3' could not be loaded." 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 205172 allSignalSize 205172 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4137 "1790746 (863121 compressed)" bytes for track 23565 in 212 ms 
-Debug [Main]: Saved waveform analysis for trackId 23565 analysisId 4137 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.25379 audioVisualRatio 5343 
-Debug [Main]: AnalysisDAO saved analysis 4138 "33599 (16692 compressed)" bytes for track 23565 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23565 analysisId 4138 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3" "The file '/amusic/youtube/playlists/worldwide/Technotronic - Pump Up The Jam-9EcjWd-O4jI.mp3' could not be loaded." 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: Writing waveform from byte array: dataSize 187592 allSignalSize 187592 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4139 "1620052 (769115 compressed)" bytes for track 23654 in 200 ms 
-Debug [Main]: Saved waveform analysis for trackId 23654 analysisId 4139 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.02727 audioVisualRatio 4885.2 
-Debug [Main]: AnalysisDAO saved analysis 4140 "33349 (16077 compressed)" bytes for track 23654 in 3 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23654 analysisId 4140 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3e22220) updateIndexWithQuery took 0 ms 
-Debug [CachingReaderWorker 3]: SSMP3: This is not a working MP3 file: "/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3" 
-Warning [CachingReaderWorker 3]: Failed to open SoundSource 
-Warning [CachingReaderWorker 3]: Failed to open file: "/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3" 
-Debug [CachingReaderWorker 3]: "[Channel3]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3" ", file invalid, unlocked reader lock 
-Debug [Main]: Failed to load track "/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3" "The file '/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3' could not be loaded." 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3)" QSize(0, 0) 
-Debug [Main]: DlgTrackInfo::slotPixmapFound DlgTrackInfo(0x2b14fad0, name = "DlgTrackInfo")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Spice Girls - Wannabe-gJLIiF15wjQ.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ad0cb80)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Inukshuk - Happy Accidents (Live Performance) [NCS Release]-WhI9Vc3eKD8.mp3)" QSize(0, 0) 
+Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/electronic/Inukshuk - Happy Accidents (Live Performance) [NCS Release]-WhI9Vc3eKD8.mp3" ", unlocked reader lock 
+Debug [Main]: Failed to load track "/amusic/youtube/playlists/electronic/Inukshuk - Happy Accidents (Live Performance) [NCS Release]-WhI9Vc3eKD8.mp3" "The file '/amusic/youtube/playlists/electronic/Inukshuk - Happy Accidents (Live Performance) [NCS Release]-WhI9Vc3eKD8.mp3' could not be found." 
+Debug [Main]: guess the size of the window decoration 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ad0cb80)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/3LAU feat. Yeah Boy - Is It Love (Official Lyric Video)--GSJUNMDw7w.mp3)" QSize(0, 0) 
+Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/electronic/3LAU feat. Yeah Boy - Is It Love (Official Lyric Video)--GSJUNMDw7w.mp3" ", unlocked reader lock 
+Debug [Main]: Failed to load track "/amusic/youtube/playlists/electronic/3LAU feat. Yeah Boy - Is It Love (Official Lyric Video)--GSJUNMDw7w.mp3" "The file '/amusic/youtube/playlists/electronic/3LAU feat. Yeah Boy - Is It Love (Official Lyric Video)--GSJUNMDw7w.mp3' could not be found." 
+Debug [LibraryScanner 1]: LibraryScanner::slotStartScan 
+Debug [LibraryScanner 1]: upgrade filename is  "/home/jbreslin/.mixxx/DBUPGRADED" 
+Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
+Debug [LibraryScanner 1]: Legacy importer took 0 ms
+Debug [LibraryScanner 1]: Recursively scanning library. 
+Debug [LibraryScanner 1]: LibraryScanner::slotFinishHashedScan 
+Debug [LibraryScanner 1]: LibraryScanner::slotFinishUnhashedScan 
+Debug [LibraryScanner 1]: Recursive scanning finished cleanly. 
+Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
+Debug [LibraryScanner 1]: Marking tracks in changed directories as verified 
+Debug [LibraryScanner 1]: Marking unchanged directories and tracks as verified 
+Debug [LibraryScanner 1]: Checking remaining unverified tracks. 
+Debug [LibraryScanner 1]: Marking unverified tracks as deleted. 
+Debug [LibraryScanner 1]: Marking unverified directories as deleted. 
+Debug [LibraryScanner 1]: Detecting moved files. 
+Debug [LibraryScanner 1]: Committing transaction on "LIBRARY_SCANNER" result: true 
+Debug [LibraryScanner 1]: Detecting cover art for unscanned files. 
+Debug [LibraryScanner 1]: Scan finished cleanly 
+Debug [LibraryScanner 1]: Scan took: 776076518 ns. 2 unchanged directories. 1 changed/added directories. 0 tracks verified from changed/added directories. 0 new tracks.
+Debug [Main]: LibraryTableModel(0x39f9430) select() took 41 ms 0 
+Debug [Main]: MissingTableModel(0x2af2b3b0) select() took 173 ms 23075 
+Debug [Main]: HiddenTableModel(0x2ae92980) select() took 19 ms 1 
+Debug [Main]: AnalysisLibraryTableModel(0x2b4b9320) select() took 29 ms 0 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ad0cb80)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Alan Walker - Alone-1-xGerv5FOk.mp3)" QSize(0, 0) 
+Debug [CachingReaderWorker 1]: "[Channel1]" CachingReaderWorker::loadTrack() load failed for" "/amusic/youtube/playlists/electronic/Alan Walker - Alone-1-xGerv5FOk.mp3" ", unlocked reader lock 
+Debug [Main]: Failed to load track "/amusic/youtube/playlists/electronic/Alan Walker - Alone-1-xGerv5FOk.mp3" "The file '/amusic/youtube/playlists/electronic/Alan Walker - Alone-1-xGerv5FOk.mp3' could not be found." 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  4 
-Debug [Main]: delete soundmanager  4 
-Debug [Main]: delete view  11 
+Debug [Main]: save config  2 
+Debug [Main]: delete soundmanager  3 
+Debug [Main]: delete view  5 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -1072,42 +1717,36 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  175 
+Debug [Main]: delete ControllerManager  197 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  191 
-Debug [Main]: delete library scanner  192 
+Debug [Main]: delete vinylcontrolmanager  198 
+Debug [Main]: delete library scanner  199 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  192 
+Debug [Main]: delete library  200 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  268 
 Debug [Main]: ~TrackCollection() 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  258 
+Debug [Main]: delete playerManager  273 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  259 
+Debug [Main]: delete RecordingManager  274 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  259 
+Debug [Main]: delete ShoutcastManager  274 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  260 
+Debug [Main]: delete m_pEngine  275 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -1117,16 +1756,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  286 
-Debug [Main]: deleting effects manager,  294 
+Debug [Main]: deleting preferences,  296 
+Debug [Main]: deleting effects manager,  302 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
-Debug [Main]: WARNING: The following 7 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x24ddbd0) 
+Debug [Main]: WARNING: The following 6 controls were leaked: 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x20b76a0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x1bf9070) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x1a9bb90) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x17e42b0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x16ec450) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
-Debug [Main]: "[Controls]" "touch_shift" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  313 
+Debug [Main]: delete config  323 
 Debug [Main]: Mixxx shutdown complete with code 0 

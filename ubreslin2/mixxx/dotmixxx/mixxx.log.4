@@ -32,14 +32,23 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2299110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1bf0150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2299110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2299110, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2299110, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x1bf0150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1bf0150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1bf0150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
+Debug [Main]: Appending Quick Link:  "electronic" --- "/amusic/youtube/playlists/electronic/" 
+Debug [Main]: Appending Quick Link:  "girl_motivational" --- "/amusic/youtube/playlists/girl_motivational/" 
+Debug [Main]: Appending Quick Link:  "girl_power_1" --- "/amusic/youtube/playlists/girl_power_1/" 
+Debug [Main]: Appending Quick Link:  "red_dance_2017" --- "/amusic/youtube/playlists/red_dance_2017/" 
+Debug [Main]: Appending Quick Link:  "red_hiphop" --- "/amusic/youtube/playlists/red_hiphop/" 
+Debug [Main]: Appending Quick Link:  "shake_ya_ass" --- "/amusic/youtube/playlists/shake_ya_ass/" 
+Debug [Main]: Appending Quick Link:  "top_2017_02" --- "/amusic/youtube/playlists/top_2017_02/" 
+Debug [Main]: Appending Quick Link:  "wedding_dance" --- "/amusic/youtube/playlists/wedding_dance/" 
+Debug [Main]: Appending Quick Link:  "worldwide" --- "/amusic/youtube/playlists/worldwide/" 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
 Debug [Main]: Checking for access to user's library directories: 
@@ -97,8 +106,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a526c00) true 
-Debug [Main]: Created root GL Context valid: 0x2a52b390 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x29f41710) true 
+Debug [Main]: Created root GL Context valid: 0x29f45e40 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -158,10 +167,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x4861ef0) updateIndexWithQuery took 1077 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2c17fb20) select() took 1611 ms 1157 
-Debug [Main]: AnalysisLibraryTableModel(0x2c17fb20) select() took 521 ms 1157 
-Debug [Main]: DlgAnalysis(0x2bd68570, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x419dea0) updateIndexWithQuery took 299 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2bc5c0e0) select() took 437 ms 94 
+Debug [Main]: AnalysisLibraryTableModel(0x2bc5c0e0) select() took 136 ms 94 
+Debug [Main]: DlgAnalysis(0x2b847040, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -186,158 +195,52 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2e476730, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2beea290, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x485ed60) select() took 1565 ms 20592 
+Debug [Main]: LibraryTableModel(0x419ad10) select() took 442 ms 20670 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
+Debug [Main]: Starting LibraryScanner thread. 
 Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Controller]: Scanning HID devices: 
-Debug [Main]: Starting LibraryScanner thread. 
 Debug [Main]: SoundManager::setupDevices() 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b4a0e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b4a0e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel: 92HD81B1C5 Analog (hw:0,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
-Debug [Controller]: Found "" "" "r832" S/N "" "Interface 0" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b4a0e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Warning [Main]: No output devices opened, no clock reference device set 
+Debug [Main]: 1 output sound devices opened 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b4a0e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Controller]: Scanning HID devices: 
+Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Controller polling stopped. 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b9c6d30, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b9c6d30, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b9c6d30, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b9c6d30, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel: 92HD81B1C5 Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 2 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: LibraryTableModel(0x485ed60) select() took 1019 ms 243 
-Debug [Main]: LibraryTableModel(0x485ed60) select() took 967 ms 3 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "/")   QVariant(QString, "/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "amusic")   QVariant(QString, "/amusic/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "youtube")   QVariant(QString, "/amusic/youtube/") 
-Debug [Main]: BrowseFeature::onLazyChildExpandation  QVariant(QString, "playlists")   QVariant(QString, "/amusic/youtube/playlists/") 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "electronic")   QVariant(QString, "/amusic/youtube/playlists/electronic/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Alesso - I Wanna Know ft. Nico & Vinz-TnSfwONWlk8.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Ayokay - Kings of Summer (Feat. Quinn XCII)-qDMSGuYnmBM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Alok, Bruno Martini feat. Zeeba - Hear Me Now (Official Music Video)-JVpTp8IHdEg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Cash Cash - How To Love ft Sofia Reyes (Official Video)-peByeoQhjMM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Danny Phantom Theme Song Trap Remix-YNnbErlNn5M.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/DJ Snake, Lil Jon - Turn Down for What-HMUDVMiITOU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Empire Of The Sun - High And Low-ntlpTad3PLM.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Galantis & Hook N Sling - Love On Me (Official Video)-8gz9NsNH96Q.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Heuse - Stones (feat. Chris Linton & Emma Sameth) [NCS Release]-XY28M0dIx6o.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Kedam - Shy Girl-uScZ8WZMjhs.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Louis The Child - Love Is Alive (feat. Elohim)-X5VX4K85p4Y.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Marshmello - Alone [Monstercat Official Music Video]-YnwsMEabmSo.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Matoma & Becky Hill - False Alarm [Official Music Video]--DFApjlqANs.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/MØ - Final Song (Official Video)-WUcXQ--yGWQ.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/PSY - DADDY(feat. CL of 2NE1) M_V-FrG4TEcSuRg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Sam Feldt x Lucas & Steve feat. Wulf - Summer On You (Official Music Video)-Ey1_nkmS54g.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Skrillex and Diplo - 'Where Are Ü Now' with Justin Bieber (Official Video)-nntGTK2Fhb0.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Tedy - Lost & Found-ADKrmdO6zwY.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Snakehips & MØ - Don't Leave (Official Video)-CQGcfudKBBs.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/The Chainsmokers - Roses (Official Video) ft. ROZES-G5Mv2iV0wkU.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Tom Staar & Daddy's Groove - Railgun-Ly6SulEFvvk.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/What So Not - Lone (Slow Hours Remix)-mfLydx7DmDg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/electronic/Zara Larsson - I Would Like (Lyric Video)-9bzMaiczpXU.mp3" 
-Debug [BrowseThread]: Append last  6 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x485ed60) select() took 967 ms 3 
-Debug [Main]: WSearchLineEdit::restoreSearch( "hot nigg" ) 
-Debug [Main]: LibraryTableModel(0x485ed60) select() took 961 ms 3 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b9d5910)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3)" QSize(0, 0) 
-Debug [Main]: DlgTrackInfo::slotPixmapFound DlgTrackInfo(0x2ba73260, name = "DlgTrackInfo")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArtLabel::setCoverArt  "CoverInfo(NONE,UNKNOWN,,0,)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Adrian Lux - All Aloud-esI20BDULq4" "/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Adrian Lux - All Aloud-esI20BDULq4" "/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x310f1c60, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/electronic/Adrian Lux - All Aloud-esI20BDULq4.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22715 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: LibraryTableModel(0x419ad10) select() took 361 ms 25 
+Debug [Main]: LibraryTableModel(0x419ad10) select() took 394 ms 1 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b4afa00)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/worldwide/Shakira - Rabiosa (English Version) ft. Pitbull-a5irTX82olg.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x419dea0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BrowseFeature::activateChild  QVariant(QString, "girl_motivational")   QVariant(QString, "/amusic/youtube/playlists/girl_motivational/") 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Beyoncé - Run the World (Girls)-VBmMU_iwe6U.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Jessie J - Do It Like A Dude (Explicit)-pOf3kYtwASo.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/LORDE - Everybody Wants To Rule The World-DaVA6sgOpws.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/Rihanna - S&M Remix (Audio) ft. Britney Spears-Jcczg4ad0wA.mp3" 
-Debug [BrowseThread]: Append  10  from  "/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3" 
-Debug [BrowseThread]: Append last  7 
-Debug [AnalyserQueue 1]: Waveform generation for track 22715 done 21.666 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 6 : "F" 327680 
-Debug [AnalyserQueue 1]: 8 : "G" 6.3328e+06 
-Debug [AnalyserQueue 1]: 9 : "A♭" 131072 
-Debug [AnalyserQueue 1]: 15 : "Dm" 294912 
-Debug [AnalyserQueue 1]: 17 : "Em" 1.14688e+06 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: Prioritizing "The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg" "/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg" "/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x339d47d0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/The Ting Tings - That's Not My Name Lyrics!-E879PGlGwPg.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23007 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22974 in 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x310f1c60, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [AnalyserQueue 1]: Waveform generation for track 23007 done 40.796 s 
-Debug [AnalyserQueue 1]: Beat Calculation complete 
-Debug [AnalyserQueue 1]: Key Detection complete 
-Debug [AnalyserQueue 1]: Key Histogram 
-Debug [AnalyserQueue 1]: 1 : "C" 65536 
-Debug [AnalyserQueue 1]: 3 : "D" 2.68698e+06 
-Debug [AnalyserQueue 1]: 5 : "E" 7.24173e+06 
-Debug [AnalyserQueue 1]: 9 : "A♭" 65536 
-Debug [AnalyserQueue 1]: 10 : "A" 2.42483e+06 
-Debug [AnalyserQueue 1]: 14 : "C♯m" 753664 
-Debug [AnalyserQueue 1]: 17 : "Em" 68224 
-Debug [AnalyserQueue 1]: 19 : "F♯m" 458752 
-Debug [AnalyserQueue 1]: Prioritizing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY" "/amusic/youtube/playlists/girl_motivational/Icona Pop - I Love It (feat. Charli XCX) [OFFICIAL VIDEO]-UxxajLWwzqY.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22974 in 0 ms 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
-Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
-Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
-Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
-Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  21 
-Debug [Main]: delete soundmanager  24 
-Debug [Main]: delete view  47 
+Debug [Main]: save config  3 
+Debug [Main]: delete soundmanager  4 
+Debug [Main]: delete view  4 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -357,58 +260,36 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  1856 
+Debug [Main]: delete ControllerManager  225 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  1867 
-Debug [Main]: delete library scanner  1871 
+Debug [Main]: delete vinylcontrolmanager  226 
+Debug [Main]: delete library scanner  227 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  1874 
+Debug [Main]: delete library  227 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  268 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: Writing waveform from byte array: dataSize 164668 allSignalSize 164668 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4107 "1467543 (716228 compressed)" bytes for track 22715 in 1007 ms 
-Debug [Main]: Saved waveform analysis for trackId 22715 analysisId 4107 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.284 audioVisualRatio 4288.2 
-Debug [Main]: AnalysisDAO saved analysis 4108 "34134 (17331 compressed)" bytes for track 22715 in 20 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22715 analysisId 4108 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4861ef0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Writing waveform from byte array: dataSize 275306 allSignalSize 275306 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4109 "2539787 (1198879 compressed)" bytes for track 23007 in 1764 ms 
-Debug [Main]: Saved waveform analysis for trackId 23007 analysisId 4109 
-Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 6.15114 audioVisualRatio 7169.4 
-Debug [Main]: AnalysisDAO saved analysis 4110 "34727 (17620 compressed)" bytes for track 23007 in 21 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 23007 analysisId 4110 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4861ef0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Writing waveform from byte array: dataSize 158816 allSignalSize 158816 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 4111 "1421974 (644882 compressed)" bytes for track 22974 in 701 ms 
-Debug [Main]: Saved waveform analysis for trackId 22974 analysisId 4111 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.663 audioVisualRatio 4135.8 
-Debug [Main]: AnalysisDAO saved analysis 4112 "34316 (16521 compressed)" bytes for track 22974 in 7 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 22974 analysisId 4112 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x4861ef0) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  6535 
+Debug [Main]: delete playerManager  313 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  6542 
+Debug [Main]: delete RecordingManager  314 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  6543 
+Debug [Main]: delete ShoutcastManager  314 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  6544 
+Debug [Main]: delete m_pEngine  314 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -418,15 +299,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  6642 
-Debug [Main]: deleting effects manager,  6664 
+Debug [Main]: deleting preferences,  341 
+Debug [Main]: deleting effects manager,  347 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2ef7340) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2853d20) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x26235e0) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2ea1850) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x1e9b0e0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x1e03fa0) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  6755 
+Debug [Main]: delete config  372 
 Debug [Main]: Mixxx shutdown complete with code 0 
