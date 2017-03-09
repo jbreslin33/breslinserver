@@ -44,8 +44,8 @@ echo ---------------------------------------------
 echo UBRESLIN: COPY FILES 
 echo ---------------------------------------------
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.5/main
+echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
+echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.5/main
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
