@@ -21,7 +21,7 @@ sudo apt-get -y install php-mbstring
 if [ "$1" = "jbreslin" ]; then
 git clone https://github.com/jbreslin33/breslinmathracer.git
 echo sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
-echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
 echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
 echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
 echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.5/main
