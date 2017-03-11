@@ -16,6 +16,8 @@ sudo apt-get -y install postgresql
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install php-mbstring
+sudo apt-get -y install php5 
+sudo apt-get -y install libapache2-mod-php5
 
 
 if [ "$1" = "jbreslin" ]; then
