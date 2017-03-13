@@ -48,7 +48,7 @@ mkdir /home/$1/originals
 sudo cp /etc/apache2/sites-available/000-default.conf /home/$1/originals
 
 if [ "$1" = "jbreslin" ]; then
-git clone https://github.com/jbreslin33/breslinmathracer.git
+echo git clone https://github.com/jbreslin33/breslinmathracer.git
 sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
 fi
