@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = JanMarcoGomez
+pitch = 5.1
+position = (363.32,215,-187.54)
+version = 1
+yaw = -70.19
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:bookshelf
+Item default:brick
+Item default:fence_wood
+Item stairs:stair_junglewood
+Item default:jungleleaves
+Item default:dirt
+Item default:wood
+Item doors:door_wood
+Item flowers:dandelion_white
+Item default:grass_1
+Item flowers:viola
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

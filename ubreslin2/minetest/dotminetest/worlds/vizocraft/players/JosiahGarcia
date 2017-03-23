@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = JosiahGarcia
+pitch = 22.09
+position = (-181.57,-15,433.6)
+version = 1
+yaw = 145.8
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:pick_steel
+Item default:nyancat
+Item default:cobble
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

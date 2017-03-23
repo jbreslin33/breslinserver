@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = BrianRamos
+pitch = -27.1
+position = (154.96,94.95,-8.93)
+version = 1
+yaw = -189
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:cobble
+Item default:dirt
+Item default:pick_diamond
+Item default:stonebrick
+Item default:coal_lump
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

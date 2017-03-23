@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = JaavonBrown
+pitch = 6.49
+position = (-185.94,-15,412.27)
+version = 1
+yaw = 357.41
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:diamondblock
+Item default:pick_diamond
+Item doors:door_steel
+Item default:chest
+Item default:torch
+Item default:dirt
+Item default:cobble
+Item default:furnace
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory
