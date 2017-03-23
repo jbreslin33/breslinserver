@@ -1,10 +1,10 @@
 breath = 65535
 hp = 20
 name = student
-pitch = 8.29
-position = (-38.03,242.8,77.85)
+pitch = 10.08
+position = (1090.11,217.75,246.42)
 version = 1
-yaw = -210.4
+yaw = -217.59
 PlayerArgsEnd
 List main 32
 Width 0

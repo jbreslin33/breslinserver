@@ -38427,3 +38427,20 @@ DEBUG STACK FOR THREAD b632c740:
 14:44:54: ACTION[ServerThread]: LeanniHernandez leaves game. List of players: student EdgardoRivera GiaminhNguyen JustinVelazquez 
 14:45:24: ACTION[ServerThread]: JustinVelazquez times out. List of players: student EdgardoRivera GiaminhNguyen 
 14:45:35: ACTION[ServerThread]: GiaminhNguyen times out. List of players: student EdgardoRivera 
+
+
+-------------
+  Separator  
+-------------
+
+15:23:07: ACTION[main]:         .__               __                   __   
+15:23:07: ACTION[main]:   _____ |__| ____   _____/  |_  ____   _______/  |_ 
+15:23:07: ACTION[main]:  /     \|  |/    \_/ __ \   __\/ __ \ /  ___/\   __\
+15:23:07: ACTION[main]: |  Y Y  \  |   |  \  ___/|  | \  ___/ \___ \  |  |  
+15:23:07: ACTION[main]: |__|_|  /__|___|  /\___  >__|  \___  >____  > |__|  
+15:23:07: ACTION[main]:       \/        \/     \/          \/     \/        
+15:23:07: ACTION[main]: World at [/home/jbreslin/.minetest/worlds/vizocraft]
+15:23:07: ACTION[main]: Server for gameid="minetest" listening on port 30000.
+15:23:07: ACTION[ServerThread]: announcing to servers.minetest.net
+15:23:07: ACTION[ServerThread]: student [127.0.0.1] joins game. List of players: student 
+Font size: 8 15
