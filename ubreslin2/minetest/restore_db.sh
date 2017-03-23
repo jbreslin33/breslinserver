@@ -4,5 +4,5 @@ echo UBRESLIN: RESTORE MINETEST DB
 echo ---------------------------------------------
 
 echo restore db with rsync
-rsync -r dotmixxx/ /home/jbreslin/.mixxx/
+rsync -r dotminetest/ /home/jbreslin/.mixxx/
 
