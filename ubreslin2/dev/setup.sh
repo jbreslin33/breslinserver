@@ -53,11 +53,11 @@ sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
 fi
 
-if [ "$1" = "lbreslin" ]; then
-git clone https://github.com/jbreslin33/breslinmathracer.git
-sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
-fi
+echo if [ "$1" = "lbreslin" ]; then
+echo git clone https://github.com/jbreslin33/breslinmathracer.git
+echo sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
+echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
+echo fi
 
 if [ "$1" = "bbreslin" ]; then
 git clone https://github.com/jbreslin33/breslinmathracer.git
