@@ -7,6 +7,7 @@ sudo apt-get install epoptes
 echo add student to list epoptes group
 sudo gpasswd -a student epoptes
 sudo gpasswd -a jbreslin epoptes
+sudo apt-get install rdesktop
 
 echo install clusterssh
 sudo apt-get install clusterssh

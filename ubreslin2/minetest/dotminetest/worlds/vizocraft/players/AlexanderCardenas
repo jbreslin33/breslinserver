@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = AlexanderCardenas
+pitch = -85.5
+position = (-572,155,-89.08)
+version = 1
+yaw = 36.98
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:dirt
+Item default:leaves
+Item default:cobble
+Item default:tree
+Item default:goldblock
+Item default:sapling
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

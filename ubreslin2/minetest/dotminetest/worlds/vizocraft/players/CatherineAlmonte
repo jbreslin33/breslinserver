@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = CatherineAlmonte
+pitch = -35.69
+position = (221.52,85,457.36)
+version = 1
+yaw = -108.2
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:dirt
+Item default:cobble
+Item default:stonebrick
+Item default:grass_1
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

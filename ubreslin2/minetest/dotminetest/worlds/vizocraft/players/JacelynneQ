@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = JacelynneQ
+pitch = -89.5
+position = (209.22,165,202)
+version = 1
+yaw = 193.8
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:grass_1
+Item default:dirt
+Item default:cobble
+Item flowers:dandelion_yellow
+Item default:coal_lump
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

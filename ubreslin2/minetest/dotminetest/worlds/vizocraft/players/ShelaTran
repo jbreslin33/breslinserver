@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = ShelaTran
+pitch = 11.1
+position = (915.31,195,-298.64)
+version = 1
+yaw = 160.79
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:brick
+Item default:glass
+Item doors:door_wood
+Item default:nyancat_rainbow
+Item default:dirt
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory

@@ -1,0 +1,64 @@
+breath = 65535
+hp = 20
+name = ZuyanahBerdecia
+pitch = 12.69
+position = (-356.93,165,-97.97)
+version = 1
+yaw = -311.19
+PlayerArgsEnd
+List main 32
+Width 0
+Item default:pick_diamond
+Item flowers:dandelion_white
+Item flowers:geranium
+Item flowers:tulip
+Item default:torch
+Item flowers:dandelion_yellow
+Item rat
+Item default:brick 3
+Empty
+Empty
+Empty
+Empty
+Item default:goldblock
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craft 9
+Width 3
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+Empty
+EndInventoryList
+List craftpreview 1
+Width 0
+Empty
+EndInventoryList
+List craftresult 1
+Width 0
+Empty
+EndInventoryList
+EndInventory
