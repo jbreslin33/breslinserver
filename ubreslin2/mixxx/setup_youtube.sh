@@ -20,3 +20,5 @@ sudo pip install --upgrade youtube_dl
 #convert wav to mp3
 #lame song.wav song.mp3
 
+#dowload youtube playlist
+youtube-dl -i --extract-audio --audio-format mp3 https://www.youtube.com/playlist?list=PLWSWrBqgaJFMe8kA1WLHI9XrggJrZHGX1 
