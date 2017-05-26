@@ -22,3 +22,6 @@ sudo pip install --upgrade youtube_dl
 
 #dowload youtube playlist
 #youtube-dl -i --extract-audio --audio-format mp3 https://www.youtube.com/playlist?list=PLWSWrBqgaJFMe8kA1WLHI9XrggJrZHGX1 
+
+#preserver playlist order 
+#youtube-dl -i --extract-audio --audio-format mp3 -o "%(playlist_index)s-%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLWSWrBqgaJFMe8kA1WLHI9XrggJrZHGX1 
