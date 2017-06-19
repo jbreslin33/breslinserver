@@ -13,13 +13,24 @@ sudo apt-get -y install libtool
 sudo apt-get -y install git
 sudo apt-get -y install ssh 
 sudo apt-get -y install apache2 
-sudo apt-get -y install php5 
+
+echo install php!!!!!
+sudo apt-get -y install python-software-properties software-properties-common
+sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+sudo apt-get -y update
+sudo apt-get -y install php
+
 sudo apt-get -y install postgresql
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install vlc
 sudo apt-get -y install mpg123
-sudo apt-get -y install openjdk-7-jdk
+
+echo install java!!!!!
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get -y update
+sudo apt-get -y install oracle-java8-installer
+
 sudo apt-get -y install graphviz
 sudo apt-get -y install dia 
 sudo apt-get -y install chromium-browser
@@ -31,7 +42,7 @@ sudo apt-get -y install remmina
 sudo apt-get -y install remmina-plugin-vnc 
 
 echo for djing
-sudo apt-get install soundconverter
+sudo apt-get -y install soundconverter
 
 echo virtualbox
 sudo apt-get -y install linux-headers-generic build-essential dkms
@@ -53,11 +64,11 @@ sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
 fi
 
-echo if [ "$1" = "lbreslin" ]; then
-echo git clone https://github.com/jbreslin33/breslinmathracer.git
-echo sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
-echo sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
-echo fi
+if [ "$1" = "lbreslin" ]; then
+git clone https://github.com/jbreslin33/breslinmathracer.git
+sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
+fi
 
 if [ "$1" = "bbreslin" ]; then
 git clone https://github.com/jbreslin33/breslinmathracer.git
@@ -78,8 +89,8 @@ sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
 sudo cp /etc/phppgadmin/config.inc.php /home/$1/originals
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
 
-sudo cp /etc/postgresql/9.1/main/postgresql.conf /home/$1/originals
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.1/main
+sudo cp /etc/postgresql/9.5/main/postgresql.conf /home/$1/originals
+sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.5/main
 
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
