@@ -16,7 +16,7 @@ sudo apt-get -y install apache2
 
 echo install php!!!!!
 sudo apt-get -y install python-software-properties software-properties-common
-sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+sudo LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 sudo apt-get -y update
 sudo apt-get -y install php
 
@@ -27,7 +27,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install mpg123
 
 echo install java!!!!!
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get -y update
 sudo apt-get -y install oracle-java8-installer
 
