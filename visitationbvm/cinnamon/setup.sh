@@ -68,8 +68,6 @@ sudo epoptes-client -c
 
 fi
 
-
-
 sudo newusers ../add_student_scripts/add_viso.txt
 
 echo complete you can now reboot and login 
