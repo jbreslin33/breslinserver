@@ -31,9 +31,6 @@ fi
 #sudo apt-get update 
 #sudo apt-get install google-chrome-stable
 
-
-
-
 echo install build tools for student coding
 sudo apt-get -y install build-essential 
 sudo apt-get -y install ssh
@@ -55,6 +52,6 @@ sudo apt-get -y install minetest
 #sudo apt-get -y install chessx
 
 sudo epoptes-client -c
-#sudo newusers ../add_student_scripts/add_viso.txt
+sudo newusers ../add_student_scripts/add_viso.txt
 
 echo complete you can now reboot and login 
