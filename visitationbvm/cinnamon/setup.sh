@@ -18,6 +18,7 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 
 echo slack
+sudo apt-get install libcurl3
 sudo dpkg --install slack-desktop-2.6.3-amd64.deb
 
 else
