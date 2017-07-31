@@ -38,9 +38,6 @@ sudo apt-get -y install ssh
 echo install browsers
 sudo apt-get -y install chromium-browser
 
-echo epop
-sudo apt-get -y remove epoptes-client
-sudo apt-get -y install epoptes-client
 
 echo install games
 #sudo apt-get -y install tuxmath
@@ -51,7 +48,11 @@ sudo apt-get -y install minetest
 #sudo apt-get -y install triplea 
 #sudo apt-get -y install chessx
 
-sudo epoptes-client -c
+echo epop
+#sudo apt-get -y remove epoptes-client
+#sudo apt-get -y install epoptes-client
+#sudo epoptes-client -c
+
 sudo newusers ../add_student_scripts/add_viso.txt
 
 echo complete you can now reboot and login 
