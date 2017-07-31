@@ -50,6 +50,6 @@ sudo apt-get -y install minetest
 #sudo apt-get -y install chessx
 
 sudo epoptes-client -c
-sudo newusers ../add_student_scripts/add_viso.txt
+#sudo newusers ../add_student_scripts/add_viso.txt
 
 echo complete you can now reboot and login 
