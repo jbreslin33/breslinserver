@@ -53,7 +53,7 @@ echo admin specific setup
 sudo apt-get -y remove epoptes
 sudo apt-get -y install epoptes
 sudo gpasswd -a student epoptes
-#sudo gpasswd -a jbreslin epoptes
+sudo gpasswd -a jbreslin epoptes
 sudo apt-get -y install rdesktop
 
 echo install clusterssh
