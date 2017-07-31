@@ -8,11 +8,26 @@ echo viso specific files
 sudo cp hosts /etc
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
+if [ `getconf LONG_BIT` = "64" ]
+then
+    echo "I'm 64-bit"
+echo chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+else
+    echo "I'm 32-bit"
+fi
+
 #echo chrome
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 #sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 #sudo apt-get update 
 #sudo apt-get install google-chrome-stable
+
+
+
 
 echo install build tools for student coding
 sudo apt-get -y install build-essential 
