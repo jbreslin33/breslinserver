@@ -43,16 +43,6 @@ mdominick:Password1:1265:50:Matthew Dominick:/home/v1265:/bin/bash
 pkaiser:Password1:1267:50:Phyllis Kaiser:/home/v1267:/bin/bash
 clongwith:Password1:1268:50:Chris Longwith:/home/v1268:/bin/bash
 jbreslin:Iggles_13:1269:50:Jim Breslin:/home/v1269:/bin/bash
-aortega:Password1:1270:50:Andreia Ortega:/home/v1270:/bin/bash
-emorlock:Password1:1271:50:Elizabeth Morlock:/home/v1271:/bin/bash
-nmzuychka:Password1:1272:50:Nicole Mzuychka:/home/v1272:/bin/bash
-jmcgrenra:Password1:1273:50:Jacqueline McGrenra:/home/v1273:/bin/bash
-rmauro:Password1:1274:50:Rebecca Mauro:/home/v1274:/bin/bash
-mborrero:Password1:1275:50:Martha Borrero:/home/v1275:/bin/bash
-apost:Password1:1276:50:Amanda Post:/home/v1276:/bin/bash
-msantana:Password1:1277:50:Manuel Santana:/home/v1277:/bin/bash
-dkokat:Password1:1278:50:Denise Kokat:/home/v1278:/bin/bash
-alugo:Password1:1279:50:Ana Lugo:/home/v1279:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
