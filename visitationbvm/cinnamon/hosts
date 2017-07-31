@@ -2,21 +2,7 @@
 127.0.0.1       jamesanthonybreslin.com
 
 #epoptes admin
-192.168.2.150   server
-#192.168.2.101   mathcore.org
-#192.168.2.101   abcandyou.com
-
-#webserver
-192.168.2.251   vweb1 
-
-#nfs file server
-192.168.2.54    nfsserver 
-
-#teacher
-192.168.2.150  labreslin
-
-#vfiles linux mnt file server
-192.168.2.157    vfiles
+192.168.2.133    server
 
 #row1
 192.168.2.104 lab01
