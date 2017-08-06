@@ -37,6 +37,25 @@ sudo apt-get -y install chromium-browser
 sudo apt-get -y install mplayer
 sudo apt-get -y install php-mbstring
 
+if [ `getconf LONG_BIT` = "64" ]
+then
+    echo "I'm 64-bit"
+echo chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+
+echo slack
+sudo apt-get install libcurl3
+sudo dpkg --install slack-desktop-2.6.3-amd64.deb
+
+else
+    echo "I'm 32-bit"
+fi
+
+
+
 echo remote
 sudo apt-get -y install remmina 
 sudo apt-get -y install remmina-plugin-vnc 
