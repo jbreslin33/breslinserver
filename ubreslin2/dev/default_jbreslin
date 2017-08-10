@@ -188,5 +188,25 @@
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 
+<VirtualHost *:4004>
+        ServerName www.breslingames.com
+        ServerAlias breslingames.com *.breslingames.com
+        ServerAdmin webmaster@localhost
+
+        DocumentRoot /home/jbreslin/sandbox/breslinsoccer
+        <Directory />
+                Require all granted
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
 
 

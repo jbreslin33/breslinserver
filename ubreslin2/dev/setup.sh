@@ -48,7 +48,7 @@ sudo apt-get install google-chrome-stable
 
 echo slack
 sudo apt-get install libcurl3
-sudo dpkg --install slack-desktop-2.6.3-amd64.deb
+sudo dpkg --install ../../visitationbvm/cinnamon/slack-desktop-2.6.3-amd64.deb
 
 else
     echo "I'm 32-bit"
