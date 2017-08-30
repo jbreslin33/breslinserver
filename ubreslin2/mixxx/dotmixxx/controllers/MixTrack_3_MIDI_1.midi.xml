@@ -457,6 +457,16 @@
             </control>
             <control>
                 <group>[Channel1]</group>
+                <key>volume</key>
+                <description>MIDI Learned from 432 messages.</description>
+                <status>0xB1</status>
+                <midino>0x05</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
                 <key>filterHigh</key>
                 <status>0xB0</status>
                 <midino>0x10</midino>
