@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x3114150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x31f7150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x3114150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x3114150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x3114150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x31f7150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x31f7150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x31f7150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -113,8 +113,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x841ded0) true 
-Debug [Main]: Created root GL Context valid: 0x830c790 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x8486a70) true 
+Debug [Main]: Created root GL Context valid: 0x2b52d970 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -174,10 +174,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x5788100) updateIndexWithQuery took 289 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2d21d9f0) select() took 445 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2d21d9f0) select() took 145 ms 0 
-Debug [Main]: DlgAnalysis(0x2ce03540, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x586a920) updateIndexWithQuery took 291 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2d2fcd10) select() took 446 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2d2fcd10) select() took 151 ms 0 
+Debug [Main]: DlgAnalysis(0x2cee2890, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -202,9 +202,9 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2d4cb580, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2d5aebf0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x5789b50) select() took 376 ms 22570 
+Debug [Main]: LibraryTableModel(0x586c5e0) select() took 383 ms 22570 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
@@ -216,14 +216,14 @@ Debug [Controller]: Scanning USB Bulk devices:
 Debug [Main]: SoundManager::setupDevices() 
 Debug [Controller]: Scanning HID devices: 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x3a811e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: framesPerBuffer: 1024 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x3a811e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x3a811e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2cb6bc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2cb6bc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2cb6bc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2cb6bc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x3a811e20, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r277" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
@@ -245,6 +245,20 @@ Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/contro
 Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-Pro-scripts.js" 
 Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-Pro-scripts.js" 
+Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]: 2 output sound devices opened 
+Debug [Main]: 0 input  sound devices opened 
+Debug [Main]: Displaying mixxx 
+Debug [Main]: Running Mixxx 
 Debug [Controller]: Connection: "[Channel1]" "hotcue_1_enabled" 
 Debug [Controller]: Connection: "[Channel1]" "hotcue_2_enabled" 
 Debug [Controller]: Connection: "[Channel1]" "hotcue_3_enabled" 
@@ -267,108 +281,72 @@ Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Ch
 Warning [Controller]: "MIDI output message 0x90 0x64 has invalid MixxxControl [Channel2], flanger" 
 Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Channel1]" , "flanger" ) 
 Warning [Controller]: "MIDI output message 0x90 0x63 has invalid MixxxControl [Channel1], flanger" 
-Warning [Controller]: WARNING: errorDialog not called in the main thread. Not showing error dialog. 
 Debug [Controller]: Controller polling started. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 2 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: Displaying mixxx 
-Debug [Main]: Running Mixxx 
 Debug [Main]: ControllerManager::getControllerList 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b51d3c0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b51d350) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3b51d2e0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b51d270) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b48a0d0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a72d210) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3ad2dea0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a72f000) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a750ae0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3af10bc0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c09a820) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b600590) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b600520) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3b6004b0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b600440) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b56d2b0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2cd09560) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2cd73530) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2cda2050) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2cc51ac0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2cdedec0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c17cf40) 
 Debug [Main]: guess the size of the window decoration 
-Debug [Main]: JACK client name set 
-Debug [Main]: ControllerManager::importScript importing script "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" to "/home/jbreslin/.mixxx/controllers" 
-Debug [Main]: ControllerManager::importScript "Numark-Mixtrack-3-scripts.js" had identical checksum to a file of the same name. Skipping import. 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2b4a6840) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x23f07110) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x23ee5ab0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x23e56c20) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b48a130) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x8486780) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2410a9b0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3b487220) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2443f950) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x8486df0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c09a7f0) 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 2 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: writing script block for "Numark-Mixtrack-Pro-scripts.js" 
-Debug [Controller]: writing script block for "Numark-Mixtrack-3-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b4456c0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x8493620) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x848f860) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x848a5d0) 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x23f652b0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x10dc1d20) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x10dc1eb0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x23f08bf0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1117e380) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1117e510) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b4856c0) 
+Debug [Main]: Searching for controller preset "/usr/share/mixxx/controllers/Numark Mixtrack Pro.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
+Debug [Main]: Loading controller preset from "/usr/share/mixxx/controllers/Numark Mixtrack Pro.midi.xml" 
+Debug [Main]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
+Debug [Main]: MidiPresetFileHandler: Output mapping parsing complete. 
+Debug [Main]: ControllerManager::importScript importing script "/usr/share/mixxx/controllers/Numark-Mixtrack-Pro-scripts.js" to "/home/jbreslin/.mixxx/controllers" 
+Debug [Main]: ControllerManager::importScript "Numark-Mixtrack-Pro-scripts.js" had identical checksum to a file of the same name. Skipping import. 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b3965d0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b4587c0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3adc7610) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x2d4f4cb0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b56d310) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x259e5b20) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x259e5a10) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x25da3eb0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x25da4200) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x25da4460) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c17cf10) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x25ff2f30) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x26021090) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2608c140) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x25fd2290) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2589e230) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x241d74b0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x257f37f0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x258a1fc0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x258acb50) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x258d68a0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b56b390) 
 Debug [Main]: DlgPrefVinyl::Apply 
 Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
 Debug [Controller]: writing script block for "Numark-Mixtrack-Pro-scripts.js" 
-Debug [Controller]: writing script block for "Numark-Mixtrack-3-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2b4a2210) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b368e80) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2b413fe0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b4227c0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x23adb510) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x21dce0a0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x8491cd0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x21dce200) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1056dd00) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1149a510) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x23fb07d0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b604420) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b476160) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3c57c600) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b3cda30) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3ca0eef0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3c17ad50) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x23cdf980) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x298c6040) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2950a540) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x298c5cc0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x258dad00) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  6 
-Debug [Main]: delete soundmanager  7 
-Debug [Main]: delete view  22 
+Debug [Main]: save config  5 
+Debug [Main]: delete soundmanager  6 
+Debug [Main]: delete view  19 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -388,7 +366,7 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  704 
+Debug [Main]: delete ControllerManager  733 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
@@ -401,14 +379,14 @@ Warning [Controller]: Could not Disconnect connection "NumarkMixTrackPro.onReloo
 Debug [Controller]: Connection: "[Channel1]" "loop_enabled" 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  730 
-Debug [Main]: delete library scanner  731 
+Debug [Main]: delete vinylcontrolmanager  760 
+Debug [Main]: delete library scanner  761 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  732 
+Debug [Main]: delete library  762 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
@@ -418,14 +396,14 @@ Debug [Main]: Clearing played information for this session
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  962 
+Debug [Main]: delete playerManager  985 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  964 
+Debug [Main]: delete RecordingManager  987 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  964 
+Debug [Main]: delete ShoutcastManager  987 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  965 
+Debug [Main]: delete m_pEngine  987 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -435,15 +413,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  993 
-Debug [Main]: deleting effects manager,  1004 
+Debug [Main]: deleting preferences,  1012 
+Debug [Main]: deleting effects manager,  1026 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3e38560) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3f1b5d0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x35642c0) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3e341c0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x36473c0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3f171b0) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1030 
+Debug [Main]: delete config  1054 
 Debug [Main]: Mixxx shutdown complete with code 0 
