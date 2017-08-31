@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2da4150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x2b9b150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2da4150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2da4150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2da4150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x2b9b150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x2b9b150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x2b9b150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -113,8 +113,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x59839b0) true 
-Debug [Main]: Created root GL Context valid: 0x80c74c0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x7ea3070) true 
+Debug [Main]: Created root GL Context valid: 0x7ebaaa0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -174,10 +174,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x5417c20) updateIndexWithQuery took 305 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2ceada40) select() took 471 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2ceada40) select() took 149 ms 0 
-Debug [Main]: DlgAnalysis(0x2ca944a0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x52116b0) updateIndexWithQuery took 296 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2cca4fa0) select() took 448 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2cca4fa0) select() took 149 ms 0 
+Debug [Main]: DlgAnalysis(0x2c88aae0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -202,9 +202,9 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2d15b6e0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2cf52f70, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x54198e0) select() took 386 ms 22570 
+Debug [Main]: LibraryTableModel(0x5210e60) select() took 392 ms 22570 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
@@ -212,18 +212,21 @@ Debug [Main]: Starting LibraryScanner thread.
 Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
 Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
-Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Main]: SoundManager::setupDevices() 
+Debug [Controller]: Scanning USB Bulk devices: 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Controller]: Scanning HID devices: 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c70dbd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c70dbd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c70dbd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c70dbd0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c505010, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c505010, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c505010, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c505010, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r277" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
@@ -255,9 +258,6 @@ Debug [Main]: Opened PortAudio stream successfully... starting
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
@@ -267,95 +267,339 @@ Debug [Main]: ControllerManager::getControllerList
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b1aefc0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b1aef50) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3b1aeee0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b1aee70) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b11b220) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2caf85f0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2cac52e0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2cef4c30) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2ceef4f0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2cf5ab70) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3bd2acd0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3afa4bd0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3afa4b60) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3afa4af0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3afa4a80) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3af11480) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2c6e0a40) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2c717700) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2af45380) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2c746260) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2c7920d0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3bb210b0) 
 Debug [Main]: guess the size of the window decoration 
 Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x25c794f0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x257e4840) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2583f5f0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x258d5540) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b11b280) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x163d1ae0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3b119310) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3b117320) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3b117500) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3b1176e0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3bd2aca0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x24d06cf0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x247aa6c0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x247dc520) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x248e5e20) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3af114e0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x253dccc0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2501e380) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3af0cbe0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3af0d330) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3af0d240) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3bb21080) 
 Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
 Debug [Main]: Opcode: 144 
-Debug [Main]: Channel: 2 
-Debug [Main]: Control: 1 
+Debug [Main]: Channel: 0 
+Debug [Main]: Control: 16 
 Debug [Main]: Overall Value: 0 count 1 
 Debug [Main]: Overall Value: 127 count 1 
-Debug [Main]: "Control 1" Value: 0 count 1 
-Debug [Main]: "Control 1" Value: 127 count 1 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x92 Control: 0x01 Options: 0x00" 
-Debug [Controller]: Set mapping for "0x92 0x01" to "[Channel2]" "play" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b0c8320) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x25c8a5e0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x252dbc40) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x2526a3e0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x25db1570) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x25dfca10) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x25dfc6d0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x25dfdd90) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x25dfc1f0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x25e30010) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b1199d0) 
+Debug [Main]: "Control 16" Value: 0 count 1 
+Debug [Main]: "Control 16" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x90 Control: 0x10 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x90 0x10" to "[Channel1]" "LoadSelectedTrack" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 4 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 0 
+Debug [Main]: Control: 17 
+Debug [Main]: Overall Value: 0 count 2 
+Debug [Main]: Overall Value: 127 count 2 
+Debug [Main]: "Control 17" Value: 0 count 2 
+Debug [Main]: "Control 17" Value: 127 count 2 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x90 Control: 0x11 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x90 0x11" to "[Channel2]" "LoadSelectedTrack" 
+Debug [Controller]: Set mapping for "0x90 0x11" to "[Channel2]" "LoadSelectedTrack" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3adce860) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x2559b370) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2288b620) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a6919a0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x24e3f070) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a8dc320) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a8dc180) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a8db620) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x24d5a960) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x24ca8e20) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3af0de90) 
 Debug [Main]: DlgPrefVinyl::Apply 
 Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
 Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3aff2750) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3aff4120) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3aff1090) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3c6c5410) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x20e812c0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x25059290) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0xeb64180) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x23c73d20) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x23c73eb0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x23c74040) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x203a65e0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2ae81730) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3c24e000) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3c2508c0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3c256160) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2ae3daa0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x219eead0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3bb202b0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x28c80d40) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x28c80ed0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x28c81060) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x24a16d80) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c750ef0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c750ef0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x34cf76c0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "'03 Bonnie And Clyde" "/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "'03 Bonnie And Clyde" "/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/723" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/724" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2707" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2708" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4589" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4590" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1494722 bytes for track 13365 in 16 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 179736 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 9.42187 audioVisualRatio 4680.6 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [AnalyserQueue 1]: Prioritizing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3201faf0, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1684693 bytes for track 1452 in 17 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 187154 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.04838 audioVisualRatio 4873.8 
 Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
 Debug [AnalyserQueue 1]: Beat calculation will not start 
 Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyserQueue 1]: Key calculation will not start. 
 Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "'65 Love Affair" "/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x34aecea0, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "'65 Love Affair" "/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1702106 bytes for track 6702 in 18 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 206554 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.19855 audioVisualRatio 5379 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x26ec6b80) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x29effbe0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x29f639a0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x2a0862e0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3c5d9650) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x271eb690) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3c5d8e60) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x271eb8c0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x271eba00) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1f270090) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2f81e80) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3c51cc30) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x274683e0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2ae41ca0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x277964a0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x26fec740) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x26f75700) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x26d94af0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2a0b82f0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x26f2bd60) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x26f73340) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x31e66a0) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2493fa40) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x249a8630) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2470da60) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x22af6b60) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2ae3df50) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x29d91550) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x22b0be80) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1670a980) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1670ab10) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1670aca0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x26e25260) 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x179edb90) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x18f5b790) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x18f42760) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x19023110) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x17b13840) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x17cf2d10) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2ae6cda0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x246ab440) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1840ed50) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1840eee0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2935d230) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 229 messages. 
+Debug [Main]: Opcode: 176 
+Debug [Main]: Channel: 0 
+Debug [Main]: Control: 23 
+Debug [Main]: Overall Value: 1 count 107 
+Debug [Main]: Overall Value: 127 count 122 
+Debug [Main]: "Control 23" Value: 1 count 107 
+Debug [Main]: "Control 23" Value: 127 count 122 
+Debug [Controller]: Set mapping for "0xB0 0x17" to "[Playlist]" "SelectTrackKnob" 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB0 Control: 0x17 Options: 0x200" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x16464520) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1c7d1950) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1c7f26c0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1c81bcc0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x17b13e10) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x17b6ed70) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x17b6f730) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x17b6e890) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x17b6d6b0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x17b5df70) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2c876b30) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x24e522e0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3c337690) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3ae4d830) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3ae4f6d0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3af0cb40) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x216f5ac0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x216f5ae0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2aecd490) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1180e330) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1180e510) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x17b6e3a0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,40568,/amusic/genres/silly/Songs in the Key of Springfield/The Simpsons - 'Round Springfield [Medely]-[A.] Bleeding Gums Blues [B.]A Four-Headed.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/14.Pitbull - Hey Baby (featuring T-Pain).mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,40568,/amusic/genres/silly/Songs in the Key of Springfield/The Simpsons - 'Round Springfield [Medely]-[A.] Bleeding Gums Blues [B.]A Four-Headed.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/332. Immortal Technique - Bin Ladin ft. Mos Def & Eminem.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(FILE,GUESSED,Stevie B - 'I CAME TO ROCK YOUR BODY' by Stevie B.mp3.jpg,48410,/amusic/genres/dance/Stevie B/IN MY EYES/Stevie B - 'I CAME TO ROCK YOUR BODY' by Stevie B.mp3)" QSize(170, 170) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'LOVE AND EMOTION' by Stevie B.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1947_Billboard_Top_Usa_Singles/25-The_King_Cole_Trio-_I_Love_You__For_Sentimental.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(FILE,GUESSED,Folder.jpg,10924,/amusic/genres/country/Johnny Cash/16 Biggest Hits/16 (Ghost) Riders in the Sky.mp3)" QSize(200, 198) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(FILE,GUESSED,Folder.jpg,31120,/amusic/genres/motown/Mowtown Compilation/3-02 (I Know) I'm Losing You.mp3)" QSize(200, 197) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1970_Billboard_Top_Usa_Singles/074-Ronnie_Dyson-If_You_Let_Me_Make_Love_To_You_Then_Why_Cant_I_Touch_You.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1983_BillBoard_Top_USA_Singles/033-Human_League-Keep_Feelin_Fascination.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/14-Elvis_Presley-Let_Me_Be_Your_Teddy_Bear.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1982_Billboard_Top_Usa_Singles/88-Van_Halen-Oh_Pretty_Woman.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1983_BillBoard_Top_USA_Singles/084-Stray_Cats-Shes_Sexy_-_17.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,5630,/amusic/genres/oldies/Happy Days Jukebox/Various - Track 01.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1966_Billboard_Top_Usa_Singles/003-Righteous_Brothers-Youre_My_Soul_And_Inspirati.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,5630,/amusic/genres/oldies/Happy Days Jukebox/Various - Track 01.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Frat Rock Bonus Disc/(Sittin' On The) Dock Of The Bay.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1982_Billboard_Top_Usa_Singles/88-Van_Halen-Oh_Pretty_Woman.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1983_BillBoard_Top_USA_Singles/084-Stray_Cats-Shes_Sexy_-_17.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1982_Billboard_Top_Usa_Singles/88-Van_Halen-Oh_Pretty_Woman.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/motown/Motown- Hitsville USA Singles 1972-1992/The Very Best Of Motown/Soul - cd2/19 - Martha Reeves & The Vandellas - (Love Is Like A) Heat Wave.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,34092,/amusic/genres/disco/Disco_bob/The Disco Years, Vol. 1 Turn the Beat Around/KC & the Sunshine Band - (Shake, Shake, Shake) Shake Your Booty.mp3)" QSize(200, 194) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1976_Billboard_Top_Usa_Singles/026-Kc_-_The_Sunshine_Band-Shake,_Shake,_Shake_Shake_Your_Booty.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1979_Billboard_Top_Usa_Singles/58-Andy_Gibb-Our_Love_Dont_Throw_It_All_Away.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/djs/jim/Club Anthems Vol 1/Low Cool/(They Long to Be) Close to You - Gwen Guthrie.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1976_Billboard_Top_Usa_Singles/026-Kc_-_The_Sunshine_Band-Shake,_Shake,_Shake_Shake_Your_Booty.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1961_Billboard_Top_Usa_Singles/071-Elvis_Presley-Maries_The_Name_His_Latest.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/14-Elvis_Presley-Let_Me_Be_Your_Teddy_Bear.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1981_Billboard_Top_Usa_Singles/004-John_Lennon-Just_Like_Starting_Over.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,51823,/amusic/versatile/The Best of Tom Jones [Polygram]/Tom Jones - (It Looks Like) I'll Never Fall in Love Again.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1972_Billboard_Top_Usa_Singles/031-Fifth_Dimension-Last_Night_I_Didnt_Get_To_Sleep_At_All.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/30 Years of R&B - Volume 2/(Mama) He Treats Your Daughter Mean.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1976_Billboard_Top_Usa_Singles/026-Kc_-_The_Sunshine_Band-Shake,_Shake,_Shake_Shake_Your_Booty.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1962_Billboard_Top_Usa_Singles/063-Gene_Pitney-The_Man_Who_Shot_Liberty_Val.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/New Wave Hits of the '80s - Vol. 08/(We Don't Need This) Fascist Groove Thang.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1964_Billboard_Top_Usa_Singles/085-Nancy_Wilson-You_Dont_Know_How_Glad_I_Am.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1956_Billboard_Top_Usa_Singles/36-Platters-Youve_Got_The_Magic_Touch.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,10578,/amusic/billboard/latest/2013-07-09/095 Mariah Carey Feat. Miguel - # Beautiful.mp3)" QSize(225, 225) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/dance_wave/dance_wave_2017_04_13/❤Lost Frequencies - What Is Love 2016 (Regi & Lester Williams Remix)-CM-7KMqYk_g.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2014/97 0 To 100 _ The Catch Up.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-05-26/002-Charlie Puth - Attention [Official Video].mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2009/004 - Sean Kingston - Fire Burning On The Dancefloor.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2009/002 - akcent -that's my name (radio edit ).mp3)" QSize(0, 0) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,23722,/amusic/billboard/now_thats_music/now_thats_music_85/disc2/Now That's What I Call Music! 85 - 26 - Will.I.Am - #Thatpower (Feat. Justin Bieber).mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(FILE,GUESSED,Folder.jpg,5479,/amusic/genres/urban/RAP,R&B,HIP-HOP/Will Smith/Lost and Found/16 [Switch Untitled Hidden Track].mp3)" QSize(200, 197) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1966_Billboard_Top_Usa_Singles/003-Righteous_Brothers-Youre_My_Soul_And_Inspirati.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1966_Billboard_Top_Usa_Singles/003-Righteous_Brothers-Youre_My_Soul_And_Inspirati.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1967_Billboard_Top_Usa_Singles/053-Jackie_Wilson-Your_Love_Keeps_Lifting_Me_H.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c5483b0)  "CoverInfo(METADATA,GUESSED,,10578,/amusic/billboard/latest/2013-09-14/095 Mariah Carey Feat. Miguel - # Beautiful.mp3)" QSize(225, 225) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  5 
-Debug [Main]: delete soundmanager  6 
-Debug [Main]: delete view  22 
+Debug [Main]: save config  4 
+Debug [Main]: delete soundmanager  5 
+Debug [Main]: delete view  9 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -375,37 +619,37 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  727 
+Debug [Main]: delete ControllerManager  782 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  734 
-Debug [Main]: delete library scanner  735 
+Debug [Main]: delete vinylcontrolmanager  807 
+Debug [Main]: delete library scanner  808 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  736 
+Debug [Main]: delete library  809 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: ~TrackCollection() 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x5417c20) updateIndexWithQuery took 0 ms 
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  329 
+Debug [Main]: ~TrackCollection() 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1075 
+Debug [Main]: delete playerManager  1029 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1076 
+Debug [Main]: delete RecordingManager  1030 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1076 
+Debug [Main]: delete ShoutcastManager  1030 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1076 
+Debug [Main]: delete m_pEngine  1030 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -415,15 +659,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1102 
-Debug [Main]: deleting effects manager,  1114 
+Debug [Main]: deleting preferences,  1053 
+Debug [Main]: deleting effects manager,  1062 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3ac8b40) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x38bf840) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x31f4810) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3ac47e0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2feb520) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x38bb420) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1140 
+Debug [Main]: delete config  1087 
 Debug [Main]: Mixxx shutdown complete with code 0 

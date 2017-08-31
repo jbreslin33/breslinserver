@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x31ad150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1411150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x31ad150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x31ad150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x31ad150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x1411150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1411150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1411150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -113,8 +113,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x84c15a0) true 
-Debug [Main]: Created root GL Context valid: 0x84c9c30 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x668a690) true 
+Debug [Main]: Created root GL Context valid: 0x29747180 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -174,10 +174,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x5822ab0) updateIndexWithQuery took 293 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2d2b6330) select() took 444 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2d2b6330) select() took 148 ms 0 
-Debug [Main]: DlgAnalysis(0x2ce9cd70, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x3a84380) updateIndexWithQuery took 292 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2b5169c0) select() took 444 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2b5169c0) select() took 149 ms 0 
+Debug [Main]: DlgAnalysis(0x2b0fc540, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -202,28 +202,31 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2d563fd0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2b7c8e40, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x5822260) select() took 379 ms 22570 
+Debug [Main]: LibraryTableModel(0x3ab87d0) select() took 376 ms 22570 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
 Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
 Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
+Debug [Main]: SoundManager::setupDevices() 
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Controller]: Scanning HID devices: 
-Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
+Debug [Controller]: Scanning HID devices: 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x3a98e1c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x3a98e1c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x3a98e1c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x3a98e1c0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2ad7aaf0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2ad7aaf0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2ad7aaf0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2ad7aaf0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r277" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
@@ -255,9 +258,6 @@ Debug [Main]: Opened PortAudio stream successfully... starting
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
@@ -267,323 +267,463 @@ Debug [Main]: ControllerManager::getControllerList
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b5b6540) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b5b64d0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3b5b6460) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b5b63f0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b522700) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2cdf42b0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2ce5d4d0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2ce76020) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2ce29fa0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x595baf0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c132360) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3981af40) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3981aed0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3981ae60) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3981adf0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x397874e0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2ad12630) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x38513180) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2ae00080) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2ad3c3f0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2ad74bf0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3a397ad0) 
 Debug [Main]: guess the size of the window decoration 
 Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2608a3c0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x259b0d00) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x25b2dd90) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x25b5fbf0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3b522760) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x23f08e80) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3b5207f0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x23f09010) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3b51e910) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3b51e870) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3c132330) 
-Debug [Main]: LearningUtils guessing MIDI mapping from 432 messages. 
-Debug [Main]: Opcode: 176 
-Debug [Main]: Channel: 1 
-Debug [Main]: Control: 5 
-Debug [Main]: Overall Value: 0 count 2 
-Debug [Main]: Overall Value: 1 count 3 
-Debug [Main]: Overall Value: 2 count 4 
-Debug [Main]: Overall Value: 3 count 4 
-Debug [Main]: Overall Value: 4 count 4 
-Debug [Main]: Overall Value: 5 count 4 
-Debug [Main]: Overall Value: 6 count 4 
-Debug [Main]: Overall Value: 7 count 4 
-Debug [Main]: Overall Value: 8 count 4 
-Debug [Main]: Overall Value: 9 count 4 
-Debug [Main]: Overall Value: 10 count 4 
-Debug [Main]: Overall Value: 11 count 3 
-Debug [Main]: Overall Value: 12 count 4 
-Debug [Main]: Overall Value: 13 count 4 
-Debug [Main]: Overall Value: 14 count 4 
-Debug [Main]: Overall Value: 15 count 4 
-Debug [Main]: Overall Value: 16 count 4 
-Debug [Main]: Overall Value: 17 count 4 
-Debug [Main]: Overall Value: 18 count 4 
-Debug [Main]: Overall Value: 19 count 4 
-Debug [Main]: Overall Value: 20 count 4 
-Debug [Main]: Overall Value: 21 count 4 
-Debug [Main]: Overall Value: 22 count 4 
-Debug [Main]: Overall Value: 23 count 3 
-Debug [Main]: Overall Value: 24 count 4 
-Debug [Main]: Overall Value: 25 count 4 
-Debug [Main]: Overall Value: 26 count 4 
-Debug [Main]: Overall Value: 27 count 4 
-Debug [Main]: Overall Value: 28 count 4 
-Debug [Main]: Overall Value: 29 count 4 
-Debug [Main]: Overall Value: 30 count 4 
-Debug [Main]: Overall Value: 31 count 3 
-Debug [Main]: Overall Value: 32 count 4 
-Debug [Main]: Overall Value: 33 count 4 
-Debug [Main]: Overall Value: 34 count 4 
-Debug [Main]: Overall Value: 35 count 4 
-Debug [Main]: Overall Value: 36 count 4 
-Debug [Main]: Overall Value: 37 count 3 
-Debug [Main]: Overall Value: 38 count 4 
-Debug [Main]: Overall Value: 39 count 4 
-Debug [Main]: Overall Value: 40 count 4 
-Debug [Main]: Overall Value: 41 count 4 
-Debug [Main]: Overall Value: 42 count 3 
-Debug [Main]: Overall Value: 43 count 4 
-Debug [Main]: Overall Value: 44 count 4 
-Debug [Main]: Overall Value: 45 count 4 
-Debug [Main]: Overall Value: 46 count 4 
-Debug [Main]: Overall Value: 47 count 3 
-Debug [Main]: Overall Value: 48 count 4 
-Debug [Main]: Overall Value: 49 count 4 
-Debug [Main]: Overall Value: 50 count 4 
-Debug [Main]: Overall Value: 51 count 3 
-Debug [Main]: Overall Value: 52 count 4 
-Debug [Main]: Overall Value: 53 count 4 
-Debug [Main]: Overall Value: 54 count 4 
-Debug [Main]: Overall Value: 55 count 3 
-Debug [Main]: Overall Value: 56 count 4 
-Debug [Main]: Overall Value: 57 count 4 
-Debug [Main]: Overall Value: 58 count 3 
-Debug [Main]: Overall Value: 59 count 4 
-Debug [Main]: Overall Value: 60 count 4 
-Debug [Main]: Overall Value: 61 count 4 
-Debug [Main]: Overall Value: 62 count 4 
-Debug [Main]: Overall Value: 63 count 3 
-Debug [Main]: Overall Value: 64 count 4 
-Debug [Main]: Overall Value: 65 count 3 
-Debug [Main]: Overall Value: 66 count 4 
-Debug [Main]: Overall Value: 67 count 4 
-Debug [Main]: Overall Value: 68 count 4 
-Debug [Main]: Overall Value: 69 count 3 
-Debug [Main]: Overall Value: 70 count 4 
-Debug [Main]: Overall Value: 71 count 4 
-Debug [Main]: Overall Value: 72 count 4 
-Debug [Main]: Overall Value: 73 count 4 
-Debug [Main]: Overall Value: 74 count 2 
-Debug [Main]: Overall Value: 75 count 3 
-Debug [Main]: Overall Value: 76 count 3 
-Debug [Main]: Overall Value: 77 count 2 
-Debug [Main]: Overall Value: 78 count 3 
-Debug [Main]: Overall Value: 79 count 3 
-Debug [Main]: Overall Value: 80 count 3 
-Debug [Main]: Overall Value: 81 count 2 
-Debug [Main]: Overall Value: 82 count 3 
-Debug [Main]: Overall Value: 83 count 3 
-Debug [Main]: Overall Value: 84 count 3 
-Debug [Main]: Overall Value: 85 count 3 
-Debug [Main]: Overall Value: 86 count 2 
-Debug [Main]: Overall Value: 87 count 3 
-Debug [Main]: Overall Value: 88 count 3 
-Debug [Main]: Overall Value: 89 count 3 
-Debug [Main]: Overall Value: 90 count 3 
-Debug [Main]: Overall Value: 91 count 2 
-Debug [Main]: Overall Value: 92 count 3 
-Debug [Main]: Overall Value: 93 count 3 
-Debug [Main]: Overall Value: 94 count 3 
-Debug [Main]: Overall Value: 95 count 2 
-Debug [Main]: Overall Value: 96 count 3 
-Debug [Main]: Overall Value: 97 count 3 
-Debug [Main]: Overall Value: 98 count 3 
-Debug [Main]: Overall Value: 99 count 3 
-Debug [Main]: Overall Value: 100 count 2 
-Debug [Main]: Overall Value: 101 count 3 
-Debug [Main]: Overall Value: 102 count 3 
-Debug [Main]: Overall Value: 103 count 3 
-Debug [Main]: Overall Value: 104 count 3 
-Debug [Main]: Overall Value: 105 count 2 
-Debug [Main]: Overall Value: 106 count 3 
-Debug [Main]: Overall Value: 107 count 3 
-Debug [Main]: Overall Value: 108 count 3 
-Debug [Main]: Overall Value: 109 count 3 
-Debug [Main]: Overall Value: 110 count 3 
-Debug [Main]: Overall Value: 111 count 2 
-Debug [Main]: Overall Value: 112 count 3 
-Debug [Main]: Overall Value: 113 count 3 
-Debug [Main]: Overall Value: 114 count 3 
-Debug [Main]: Overall Value: 115 count 3 
-Debug [Main]: Overall Value: 116 count 3 
-Debug [Main]: Overall Value: 117 count 3 
-Debug [Main]: Overall Value: 118 count 2 
-Debug [Main]: Overall Value: 119 count 3 
-Debug [Main]: Overall Value: 120 count 3 
-Debug [Main]: Overall Value: 121 count 3 
-Debug [Main]: Overall Value: 122 count 3 
-Debug [Main]: Overall Value: 123 count 3 
-Debug [Main]: Overall Value: 124 count 3 
-Debug [Main]: Overall Value: 125 count 3 
-Debug [Main]: Overall Value: 126 count 3 
-Debug [Main]: Overall Value: 127 count 2 
-Debug [Main]: "Control 5" Value: 0 count 2 
-Debug [Main]: "Control 5" Value: 1 count 3 
-Debug [Main]: "Control 5" Value: 2 count 4 
-Debug [Main]: "Control 5" Value: 3 count 4 
-Debug [Main]: "Control 5" Value: 4 count 4 
-Debug [Main]: "Control 5" Value: 5 count 4 
-Debug [Main]: "Control 5" Value: 6 count 4 
-Debug [Main]: "Control 5" Value: 7 count 4 
-Debug [Main]: "Control 5" Value: 8 count 4 
-Debug [Main]: "Control 5" Value: 9 count 4 
-Debug [Main]: "Control 5" Value: 10 count 4 
-Debug [Main]: "Control 5" Value: 11 count 3 
-Debug [Main]: "Control 5" Value: 12 count 4 
-Debug [Main]: "Control 5" Value: 13 count 4 
-Debug [Main]: "Control 5" Value: 14 count 4 
-Debug [Main]: "Control 5" Value: 15 count 4 
-Debug [Main]: "Control 5" Value: 16 count 4 
-Debug [Main]: "Control 5" Value: 17 count 4 
-Debug [Main]: "Control 5" Value: 18 count 4 
-Debug [Main]: "Control 5" Value: 19 count 4 
-Debug [Main]: "Control 5" Value: 20 count 4 
-Debug [Main]: "Control 5" Value: 21 count 4 
-Debug [Main]: "Control 5" Value: 22 count 4 
-Debug [Main]: "Control 5" Value: 23 count 3 
-Debug [Main]: "Control 5" Value: 24 count 4 
-Debug [Main]: "Control 5" Value: 25 count 4 
-Debug [Main]: "Control 5" Value: 26 count 4 
-Debug [Main]: "Control 5" Value: 27 count 4 
-Debug [Main]: "Control 5" Value: 28 count 4 
-Debug [Main]: "Control 5" Value: 29 count 4 
-Debug [Main]: "Control 5" Value: 30 count 4 
-Debug [Main]: "Control 5" Value: 31 count 3 
-Debug [Main]: "Control 5" Value: 32 count 4 
-Debug [Main]: "Control 5" Value: 33 count 4 
-Debug [Main]: "Control 5" Value: 34 count 4 
-Debug [Main]: "Control 5" Value: 35 count 4 
-Debug [Main]: "Control 5" Value: 36 count 4 
-Debug [Main]: "Control 5" Value: 37 count 3 
-Debug [Main]: "Control 5" Value: 38 count 4 
-Debug [Main]: "Control 5" Value: 39 count 4 
-Debug [Main]: "Control 5" Value: 40 count 4 
-Debug [Main]: "Control 5" Value: 41 count 4 
-Debug [Main]: "Control 5" Value: 42 count 3 
-Debug [Main]: "Control 5" Value: 43 count 4 
-Debug [Main]: "Control 5" Value: 44 count 4 
-Debug [Main]: "Control 5" Value: 45 count 4 
-Debug [Main]: "Control 5" Value: 46 count 4 
-Debug [Main]: "Control 5" Value: 47 count 3 
-Debug [Main]: "Control 5" Value: 48 count 4 
-Debug [Main]: "Control 5" Value: 49 count 4 
-Debug [Main]: "Control 5" Value: 50 count 4 
-Debug [Main]: "Control 5" Value: 51 count 3 
-Debug [Main]: "Control 5" Value: 52 count 4 
-Debug [Main]: "Control 5" Value: 53 count 4 
-Debug [Main]: "Control 5" Value: 54 count 4 
-Debug [Main]: "Control 5" Value: 55 count 3 
-Debug [Main]: "Control 5" Value: 56 count 4 
-Debug [Main]: "Control 5" Value: 57 count 4 
-Debug [Main]: "Control 5" Value: 58 count 3 
-Debug [Main]: "Control 5" Value: 59 count 4 
-Debug [Main]: "Control 5" Value: 60 count 4 
-Debug [Main]: "Control 5" Value: 61 count 4 
-Debug [Main]: "Control 5" Value: 62 count 4 
-Debug [Main]: "Control 5" Value: 63 count 3 
-Debug [Main]: "Control 5" Value: 64 count 4 
-Debug [Main]: "Control 5" Value: 65 count 3 
-Debug [Main]: "Control 5" Value: 66 count 4 
-Debug [Main]: "Control 5" Value: 67 count 4 
-Debug [Main]: "Control 5" Value: 68 count 4 
-Debug [Main]: "Control 5" Value: 69 count 3 
-Debug [Main]: "Control 5" Value: 70 count 4 
-Debug [Main]: "Control 5" Value: 71 count 4 
-Debug [Main]: "Control 5" Value: 72 count 4 
-Debug [Main]: "Control 5" Value: 73 count 4 
-Debug [Main]: "Control 5" Value: 74 count 2 
-Debug [Main]: "Control 5" Value: 75 count 3 
-Debug [Main]: "Control 5" Value: 76 count 3 
-Debug [Main]: "Control 5" Value: 77 count 2 
-Debug [Main]: "Control 5" Value: 78 count 3 
-Debug [Main]: "Control 5" Value: 79 count 3 
-Debug [Main]: "Control 5" Value: 80 count 3 
-Debug [Main]: "Control 5" Value: 81 count 2 
-Debug [Main]: "Control 5" Value: 82 count 3 
-Debug [Main]: "Control 5" Value: 83 count 3 
-Debug [Main]: "Control 5" Value: 84 count 3 
-Debug [Main]: "Control 5" Value: 85 count 3 
-Debug [Main]: "Control 5" Value: 86 count 2 
-Debug [Main]: "Control 5" Value: 87 count 3 
-Debug [Main]: "Control 5" Value: 88 count 3 
-Debug [Main]: "Control 5" Value: 89 count 3 
-Debug [Main]: "Control 5" Value: 90 count 3 
-Debug [Main]: "Control 5" Value: 91 count 2 
-Debug [Main]: "Control 5" Value: 92 count 3 
-Debug [Main]: "Control 5" Value: 93 count 3 
-Debug [Main]: "Control 5" Value: 94 count 3 
-Debug [Main]: "Control 5" Value: 95 count 2 
-Debug [Main]: "Control 5" Value: 96 count 3 
-Debug [Main]: "Control 5" Value: 97 count 3 
-Debug [Main]: "Control 5" Value: 98 count 3 
-Debug [Main]: "Control 5" Value: 99 count 3 
-Debug [Main]: "Control 5" Value: 100 count 2 
-Debug [Main]: "Control 5" Value: 101 count 3 
-Debug [Main]: "Control 5" Value: 102 count 3 
-Debug [Main]: "Control 5" Value: 103 count 3 
-Debug [Main]: "Control 5" Value: 104 count 3 
-Debug [Main]: "Control 5" Value: 105 count 2 
-Debug [Main]: "Control 5" Value: 106 count 3 
-Debug [Main]: "Control 5" Value: 107 count 3 
-Debug [Main]: "Control 5" Value: 108 count 3 
-Debug [Main]: "Control 5" Value: 109 count 3 
-Debug [Main]: "Control 5" Value: 110 count 3 
-Debug [Main]: "Control 5" Value: 111 count 2 
-Debug [Main]: "Control 5" Value: 112 count 3 
-Debug [Main]: "Control 5" Value: 113 count 3 
-Debug [Main]: "Control 5" Value: 114 count 3 
-Debug [Main]: "Control 5" Value: 115 count 3 
-Debug [Main]: "Control 5" Value: 116 count 3 
-Debug [Main]: "Control 5" Value: 117 count 3 
-Debug [Main]: "Control 5" Value: 118 count 2 
-Debug [Main]: "Control 5" Value: 119 count 3 
-Debug [Main]: "Control 5" Value: 120 count 3 
-Debug [Main]: "Control 5" Value: 121 count 3 
-Debug [Main]: "Control 5" Value: 122 count 3 
-Debug [Main]: "Control 5" Value: 123 count 3 
-Debug [Main]: "Control 5" Value: 124 count 3 
-Debug [Main]: "Control 5" Value: 125 count 3 
-Debug [Main]: "Control 5" Value: 126 count 3 
-Debug [Main]: "Control 5" Value: 127 count 2 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x05 Options: 0x00" 
-Debug [Controller]: Set mapping for "0xB1 0x05" to "[Channel1]" "volume" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3b387b70) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b389850) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x33e4da0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3c5cc430) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x261c23c0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3aee4fc0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x260debd0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x260de3b0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x25d18270) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x25baa980) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b520eb0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x23625370) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x22f31050) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x230dfc20) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x23111a80) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x39787540) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2393ae00) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x397855d0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2393b000) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x39783390) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x39783570) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3a397aa0) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 0 
+Debug [Main]: Control: 18 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 18" Value: 0 count 1 
+Debug [Main]: "Control 18" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x90 Control: 0x12 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x90 0x12" to "[Playlist]" "LoadSelectedIntoFirstStopped" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2af23210) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3aeadeb0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a894da0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x38c9d930) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2375b5a0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x237530a0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x237523a0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x23562e10) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x237ff0c0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x234d2410) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x39783ef0) 
 Debug [Main]: DlgPrefVinyl::Apply 
 Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
 Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3cbe9270) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3b4914e0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3b4a3ca0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3b5b2f70) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2b4a7050) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x16781a70) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x25f39aa0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x16781ca0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2b4de690) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x16abf700) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x25e183c0) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x25378c00) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x395ec540) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x395b3100) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x395ecee0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x22cc40a0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x11d7f890) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x23626bb0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0xf8e88e0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0xf8e8a70) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0xfc263b0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2327f360) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2adbdec0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "'65 Love Affair" "/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "'65 Love Affair" "/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3088e230, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Early 80's Take Two Sounds Of The Eighties/Paul Davis - '65 Love Affair.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1702106 bytes for track 6702 in 19 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 206554 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.19855 audioVisualRatio 5379 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2adbdec0)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Dr. Demento 25th Anniversary - disk 2/'Cause I'm A Blonde .mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2adbdec0)  "CoverInfo(METADATA,GUESSED,,40568,/amusic/genres/silly/Songs in the Key of Springfield/The Simpsons - 'Round Springfield [Medely]-[A.] Bleeding Gums Blues [B.]A Four-Headed.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2adbdec0)  "CoverInfo(FILE,GUESSED,'Round Here.mp3.jpg,902,/amusic/genres/ROCK/Counting Crows/August and Everything After/'Round Here.mp3)" QSize(170, 170) 
+Debug [AnalyserQueue 1]: Prioritizing "'Round Here" "/amusic/genres/ROCK/Counting Crows/August and Everything After/'Round Here.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "'Round Here" "/amusic/genres/ROCK/Counting Crows/August and Everything After/'Round Here.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33371340, name = "SpinnySingleton2")  "CoverInfo(FILE,GUESSED,'Round Here.mp3.jpg,902,/amusic/genres/ROCK/Counting Crows/August and Everything After/'Round Here.mp3)" QSize(170, 170) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 18133 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 18133 done 2.126 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1b584010) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1c98dac0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1c955d20) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1cb87740) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x22cc4100) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1b8a9360) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1b8a94a0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1b8a9630) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x16ef7250) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x16ef73e0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2537aba0) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 19" Value: 0 count 1 
+Debug [Main]: "Control 19" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_in" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 4 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 2 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 2 
+Debug [Main]: Overall Value: 127 count 2 
+Debug [Main]: "Control 19" Value: 0 count 2 
+Debug [Main]: "Control 19" Value: 127 count 2 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x92 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x92 0x13" to "[Channel2]" "loop_in" 
+Debug [Controller]: Set mapping for "0x92 0x13" to "[Channel2]" "loop_in" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 6 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 20 
+Debug [Main]: Overall Value: 0 count 3 
+Debug [Main]: Overall Value: 127 count 3 
+Debug [Main]: "Control 20" Value: 0 count 3 
+Debug [Main]: "Control 20" Value: 127 count 3 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x14 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "loop_out" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "loop_out" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "loop_out" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 8 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 2 
+Debug [Main]: Control: 20 
+Debug [Main]: Overall Value: 0 count 4 
+Debug [Main]: Overall Value: 127 count 4 
+Debug [Main]: "Control 20" Value: 0 count 4 
+Debug [Main]: "Control 20" Value: 127 count 4 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x92 Control: 0x14 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x92 0x14" to "[Channel2]" "loop_out" 
+Debug [Controller]: Set mapping for "0x92 0x14" to "[Channel2]" "loop_out" 
+Debug [Controller]: Set mapping for "0x92 0x14" to "[Channel2]" "loop_out" 
+Debug [Controller]: Set mapping for "0x92 0x14" to "[Channel2]" "loop_out" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1bae3a60) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1774edc0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1cae8400) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1b21fc30) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1b6aa320) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1b5fe6b0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1b5e3b90) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1b5fd670) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1b5fe370) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1b5fc7d0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x29741110) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1beadc70) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x395e1790) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x26489540) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1b878520) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x24e9540) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x22654a10) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x229923f0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x22992580) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x22992710) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x229928a0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1b310780) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2451ee0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x27e5c10) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x262b390) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x262aae0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x17e87bb0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1bc67900) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1bc67b00) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1170f4f0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1170f6d0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x11aca120) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2537ae10) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2adbdec0)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x26575d00) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1e436a60) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1e4c72a0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1e35a290) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1e7adde0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1d266630) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1d2667c0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1d2668f0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x22192250) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1cea8300) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x21f81790) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 19" Value: 0 count 1 
+Debug [Main]: "Control 19" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_in" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2612d2c0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x237593f0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x236d2a00) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x38f50f50) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1e7ade40) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x26368850) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1e3debc0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1e7adef0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1cd81880) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1cd81540) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x28c4160) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x678a230) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x101cf470) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x10305e30) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1716ac30) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x38f54830) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x247e5cc0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1e124000) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x247e6050) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0xfc26630) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x24b23e00) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1e699ee0) 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1eda4c60) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1ecb3f60) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1ec502a0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1ec37370) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1f2892e0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1787c470) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x291f5f00) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1643cad0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1643ccb0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1f468760) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1d333190) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 20 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 20" Value: 0 count 1 
+Debug [Main]: "Control 20" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x14 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "reloop_exit" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1ba9fcb0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x262a9a0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x39191110) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x262ba70) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1f2899a0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1eb6bfb0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1f289a50) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1f0a1570) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1f272460) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1f271de0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2b574800) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x22b85e60) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x296f8ff0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1d748ce0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x236f7060) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x265bed20) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x20e7ec20) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x20ac5180) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x20e7efb0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x27db9e40) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x27dba020) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1f0337f0) 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0xf064e60) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x2124d6b0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x21143ca0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0xf07c670) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1b77ebb0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x28b33940) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x24f68570) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x28b33a80) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0xf3b24b0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x28e713e0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x18107050) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 19" Value: 0 count 1 
+Debug [Main]: "Control 19" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_in" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 4 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 20 
+Debug [Main]: Overall Value: 0 count 2 
+Debug [Main]: Overall Value: 127 count 2 
+Debug [Main]: "Control 20" Value: 0 count 2 
+Debug [Main]: "Control 20" Value: 127 count 2 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x14 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "loop_out" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "loop_out" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1b3a1a40) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x395e47b0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1e7c0e30) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1f4663f0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1b77ec10) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0xf250200) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0xf2503a0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x21429cb0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1158c330) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x21445e50) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x23441cf0) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1e310240) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1ef15190) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1f2df2d0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1ef0fb80) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1035bf90) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1453f820) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1f288f20) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x24a64260) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2556d400) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2556d5e0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1777e5e0) 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x15463730) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x128ae350) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x126f5cd0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x15472920) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x15588f20) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x15b267f0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x20882450) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x15b26b10) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x15768460) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x15768640) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x16cffab0) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 2 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 20 
+Debug [Main]: Overall Value: 0 count 1 
+Debug [Main]: Overall Value: 127 count 1 
+Debug [Main]: "Control 20" Value: 0 count 1 
+Debug [Main]: "Control 20" Value: 127 count 1 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x14 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x14" to "[Channel1]" "reloop_exit" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 4 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 2 
+Debug [Main]: Overall Value: 127 count 2 
+Debug [Main]: "Control 19" Value: 0 count 2 
+Debug [Main]: "Control 19" Value: 127 count 2 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_in" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_in" 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: LearningUtils guessing MIDI mapping from 6 messages. 
+Debug [Main]: Opcode: 144 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 19 
+Debug [Main]: Overall Value: 0 count 3 
+Debug [Main]: Overall Value: 127 count 3 
+Debug [Main]: "Control 19" Value: 0 count 3 
+Debug [Main]: "Control 19" Value: 127 count 3 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0x91 Control: 0x13 Options: 0x00" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_out" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_out" 
+Debug [Controller]: Set mapping for "0x91 0x13" to "[Channel1]" "loop_out" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x16e1eef0) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3aefc110) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x15d758a0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x15a701f0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x155893f0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x125699e0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x155894a0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x155a86d0) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x155a7eb0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x155a2a30) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x27bd0800) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1e739630) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x154d61b0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x10462fa0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x395e1020) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x28c109e0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3da6ebd0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3d6a96d0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3da6ef30) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3dda9f80) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3da6ee90) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x154037e0) 
+Debug [Main]: DlgPrefVinyl::Apply 
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
+Debug [Controller]: ControllerManager::getControllerList 
+Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
+Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1f1d3b10) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x2045e350) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x20f20f90) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x27f2c9f0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3d8cb670) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3d1bf3f0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3d4e10f0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x267dc530) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x267dc710) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x26b970a0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x2b6d72f0) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  5 
-Debug [Main]: delete soundmanager  5 
-Debug [Main]: delete view  15 
+Debug [Main]: save config  98 
+Debug [Main]: delete soundmanager  102 
+Debug [Main]: delete view  124 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -603,37 +743,45 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  788 
+Debug [Main]: delete ControllerManager  1364 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  813 
-Debug [Main]: delete library scanner  815 
+Debug [Main]: delete vinylcontrolmanager  1383 
+Debug [Main]: delete library scanner  1384 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  815 
+Debug [Main]: delete library  1384 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  328 
 Debug [Main]: ~TrackCollection() 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3a84380) updateIndexWithQuery took 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 293024 allSignalSize 293024 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 5741 "2454887 (1094686 compressed)" bytes for track 18133 in 263 ms 
+Debug [Main]: Saved waveform analysis for trackId 18133 analysisId 5741 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 5.77921 audioVisualRatio 7630.8 
+Debug [Main]: AnalysisDAO saved analysis 5742 "32232 (15670 compressed)" bytes for track 18133 in 13 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 18133 analysisId 5742 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x3a84380) updateIndexWithQuery took 0 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1034 
+Debug [Main]: delete playerManager  4093 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1035 
+Debug [Main]: delete RecordingManager  4094 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1035 
+Debug [Main]: delete ShoutcastManager  4094 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1035 
+Debug [Main]: delete m_pEngine  4140 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -643,15 +791,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1058 
-Debug [Main]: deleting effects manager,  1068 
+Debug [Main]: deleting preferences,  4170 
+Debug [Main]: deleting effects manager,  4184 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3ed0af0) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2135040) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x35fc910) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3ecc6d0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x1860c30) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2130c20) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1092 
+Debug [Main]: delete config  4212 
 Debug [Main]: Mixxx shutdown complete with code 0 
