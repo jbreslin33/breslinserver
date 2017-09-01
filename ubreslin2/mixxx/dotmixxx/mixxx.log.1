@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x14d3150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x2828150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x14d3150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x14d3150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x14d3150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x2828150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x2828150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x2828150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -113,8 +113,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x674cc70) true 
-Debug [Main]: Created root GL Context valid: 0x29804700 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x7ac1d70) true 
+Debug [Main]: Created root GL Context valid: 0x2ab7eee0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -174,10 +174,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x3b468a0) updateIndexWithQuery took 292 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2b5dd880) select() took 451 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2b5dd880) select() took 151 ms 0 
-Debug [Main]: DlgAnalysis(0x2b1c33e0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 293 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2c932f60) select() took 448 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2c932f60) select() took 160 ms 0 
+Debug [Main]: DlgAnalysis(0x2c518ab0, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -202,28 +202,31 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2b88c150, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2cbe0bd0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x3b7ad00) select() took 383 ms 22570 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 393 ms 22570 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
 Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
 Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
-Debug [Main]: SoundManager::setupDevices() 
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
+Debug [Main]: SoundManager::setupDevices() 
 Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Controller]: Scanning HID devices: 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2ae3e8d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2ae3e8d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2ae3e8d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2ae3e8d0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x39e67900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x39e67900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x39e67900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x39e67900, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r277" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
@@ -243,479 +246,146 @@ Debug [Controller]: Loading resources from  "/usr/share/mixxx/"
 Debug [Controller]: Applying controller preset... 
 Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-MixTrack-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-MixTrack-scripts.js" 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Channel2]" , "flanger" ) 
-Warning [Controller]: "MIDI output message 0x90 0x64 has invalid MixxxControl [Channel2], flanger" 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Channel1]" , "flanger" ) 
-Warning [Controller]: "MIDI output message 0x90 0x63 has invalid MixxxControl [Channel1], flanger" 
-Warning [Controller]: WARNING: errorDialog not called in the main thread. Not showing error dialog. 
-Debug [Controller]: Controller polling started. 
+Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
 Debug [Main]: ControllerManager::getControllerList 
+Debug [Controller]: "********* Initialisation process engaged *****************" 
+Debug [Controller]: "              Mapping initialization" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "               Initialize variables" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "                  Initialize LEDs" 
+Debug [Controller]: "" 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x398e2c60) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x398e2bf0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x398e2b80) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x398e2b10) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3984f5e0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2ae329c0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x38bdc290) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3928bef0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x39550270) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x38be4410) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3a460040) 
-Debug [Main]: guess the size of the window decoration 
-Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x2372fca0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x231887e0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x231a1710) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x22ff0f70) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3984f640) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1f70ba20) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1f70bc20) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3984b1a0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3984b380) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3984b560) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3a460010) 
-Debug [Main]: LearningUtils guessing MIDI mapping from 1182 messages. 
-Debug [Main]: Opcode: 176 
-Debug [Main]: Channel: 1 
-Debug [Main]: Control: 56 
-Debug [Main]: Control: 24 
-Debug [Main]: Overall Value: 0 count 18 
-Debug [Main]: Overall Value: 1 count 10 
-Debug [Main]: Overall Value: 2 count 13 
-Debug [Main]: Overall Value: 3 count 17 
-Debug [Main]: Overall Value: 4 count 10 
-Debug [Main]: Overall Value: 5 count 13 
-Debug [Main]: Overall Value: 6 count 12 
-Debug [Main]: Overall Value: 7 count 13 
-Debug [Main]: Overall Value: 8 count 13 
-Debug [Main]: Overall Value: 9 count 9 
-Debug [Main]: Overall Value: 10 count 15 
-Debug [Main]: Overall Value: 11 count 14 
-Debug [Main]: Overall Value: 12 count 9 
-Debug [Main]: Overall Value: 13 count 13 
-Debug [Main]: Overall Value: 14 count 13 
-Debug [Main]: Overall Value: 15 count 16 
-Debug [Main]: Overall Value: 16 count 11 
-Debug [Main]: Overall Value: 17 count 15 
-Debug [Main]: Overall Value: 18 count 10 
-Debug [Main]: Overall Value: 19 count 14 
-Debug [Main]: Overall Value: 20 count 12 
-Debug [Main]: Overall Value: 21 count 10 
-Debug [Main]: Overall Value: 22 count 14 
-Debug [Main]: Overall Value: 23 count 12 
-Debug [Main]: Overall Value: 24 count 8 
-Debug [Main]: Overall Value: 25 count 10 
-Debug [Main]: Overall Value: 26 count 16 
-Debug [Main]: Overall Value: 27 count 9 
-Debug [Main]: Overall Value: 28 count 15 
-Debug [Main]: Overall Value: 29 count 13 
-Debug [Main]: Overall Value: 30 count 15 
-Debug [Main]: Overall Value: 31 count 16 
-Debug [Main]: Overall Value: 32 count 11 
-Debug [Main]: Overall Value: 33 count 14 
-Debug [Main]: Overall Value: 34 count 7 
-Debug [Main]: Overall Value: 35 count 12 
-Debug [Main]: Overall Value: 36 count 15 
-Debug [Main]: Overall Value: 37 count 14 
-Debug [Main]: Overall Value: 38 count 11 
-Debug [Main]: Overall Value: 39 count 8 
-Debug [Main]: Overall Value: 40 count 15 
-Debug [Main]: Overall Value: 41 count 12 
-Debug [Main]: Overall Value: 42 count 8 
-Debug [Main]: Overall Value: 43 count 7 
-Debug [Main]: Overall Value: 44 count 9 
-Debug [Main]: Overall Value: 45 count 13 
-Debug [Main]: Overall Value: 46 count 15 
-Debug [Main]: Overall Value: 47 count 11 
-Debug [Main]: Overall Value: 48 count 14 
-Debug [Main]: Overall Value: 49 count 11 
-Debug [Main]: Overall Value: 50 count 13 
-Debug [Main]: Overall Value: 51 count 12 
-Debug [Main]: Overall Value: 52 count 12 
-Debug [Main]: Overall Value: 53 count 16 
-Debug [Main]: Overall Value: 54 count 17 
-Debug [Main]: Overall Value: 55 count 14 
-Debug [Main]: Overall Value: 56 count 8 
-Debug [Main]: Overall Value: 57 count 7 
-Debug [Main]: Overall Value: 58 count 7 
-Debug [Main]: Overall Value: 59 count 8 
-Debug [Main]: Overall Value: 60 count 5 
-Debug [Main]: Overall Value: 61 count 8 
-Debug [Main]: Overall Value: 62 count 9 
-Debug [Main]: Overall Value: 63 count 5 
-Debug [Main]: Overall Value: 64 count 4 
-Debug [Main]: Overall Value: 65 count 5 
-Debug [Main]: Overall Value: 66 count 4 
-Debug [Main]: Overall Value: 67 count 7 
-Debug [Main]: Overall Value: 68 count 5 
-Debug [Main]: Overall Value: 69 count 7 
-Debug [Main]: Overall Value: 70 count 8 
-Debug [Main]: Overall Value: 71 count 6 
-Debug [Main]: Overall Value: 72 count 5 
-Debug [Main]: Overall Value: 73 count 4 
-Debug [Main]: Overall Value: 74 count 11 
-Debug [Main]: Overall Value: 75 count 9 
-Debug [Main]: Overall Value: 76 count 7 
-Debug [Main]: Overall Value: 77 count 9 
-Debug [Main]: Overall Value: 78 count 4 
-Debug [Main]: Overall Value: 79 count 7 
-Debug [Main]: Overall Value: 80 count 10 
-Debug [Main]: Overall Value: 81 count 9 
-Debug [Main]: Overall Value: 82 count 8 
-Debug [Main]: Overall Value: 83 count 7 
-Debug [Main]: Overall Value: 84 count 12 
-Debug [Main]: Overall Value: 85 count 6 
-Debug [Main]: Overall Value: 86 count 3 
-Debug [Main]: Overall Value: 87 count 8 
-Debug [Main]: Overall Value: 88 count 8 
-Debug [Main]: Overall Value: 89 count 5 
-Debug [Main]: Overall Value: 90 count 8 
-Debug [Main]: Overall Value: 91 count 9 
-Debug [Main]: Overall Value: 92 count 8 
-Debug [Main]: Overall Value: 93 count 5 
-Debug [Main]: Overall Value: 94 count 4 
-Debug [Main]: Overall Value: 95 count 6 
-Debug [Main]: Overall Value: 96 count 5 
-Debug [Main]: Overall Value: 97 count 5 
-Debug [Main]: Overall Value: 98 count 9 
-Debug [Main]: Overall Value: 99 count 9 
-Debug [Main]: Overall Value: 100 count 6 
-Debug [Main]: Overall Value: 101 count 8 
-Debug [Main]: Overall Value: 102 count 6 
-Debug [Main]: Overall Value: 103 count 3 
-Debug [Main]: Overall Value: 104 count 3 
-Debug [Main]: Overall Value: 105 count 5 
-Debug [Main]: Overall Value: 106 count 5 
-Debug [Main]: Overall Value: 107 count 7 
-Debug [Main]: Overall Value: 108 count 9 
-Debug [Main]: Overall Value: 109 count 6 
-Debug [Main]: Overall Value: 110 count 6 
-Debug [Main]: Overall Value: 111 count 8 
-Debug [Main]: Overall Value: 112 count 8 
-Debug [Main]: Overall Value: 113 count 8 
-Debug [Main]: Overall Value: 114 count 5 
-Debug [Main]: Overall Value: 115 count 8 
-Debug [Main]: Overall Value: 116 count 10 
-Debug [Main]: Overall Value: 117 count 3 
-Debug [Main]: Overall Value: 118 count 8 
-Debug [Main]: Overall Value: 119 count 8 
-Debug [Main]: Overall Value: 120 count 4 
-Debug [Main]: Overall Value: 121 count 9 
-Debug [Main]: Overall Value: 122 count 6 
-Debug [Main]: Overall Value: 123 count 5 
-Debug [Main]: Overall Value: 124 count 6 
-Debug [Main]: Overall Value: 125 count 3 
-Debug [Main]: Overall Value: 126 count 7 
-Debug [Main]: Overall Value: 127 count 10 
-Debug [Main]: "Control 24" Value: 0 count 11 
-Debug [Main]: "Control 24" Value: 1 count 7 
-Debug [Main]: "Control 24" Value: 2 count 9 
-Debug [Main]: "Control 24" Value: 3 count 10 
-Debug [Main]: "Control 24" Value: 4 count 6 
-Debug [Main]: "Control 24" Value: 5 count 10 
-Debug [Main]: "Control 24" Value: 6 count 5 
-Debug [Main]: "Control 24" Value: 7 count 7 
-Debug [Main]: "Control 24" Value: 8 count 9 
-Debug [Main]: "Control 24" Value: 9 count 7 
-Debug [Main]: "Control 24" Value: 10 count 10 
-Debug [Main]: "Control 24" Value: 11 count 8 
-Debug [Main]: "Control 24" Value: 12 count 7 
-Debug [Main]: "Control 24" Value: 13 count 11 
-Debug [Main]: "Control 24" Value: 14 count 7 
-Debug [Main]: "Control 24" Value: 15 count 9 
-Debug [Main]: "Control 24" Value: 16 count 9 
-Debug [Main]: "Control 24" Value: 17 count 7 
-Debug [Main]: "Control 24" Value: 18 count 7 
-Debug [Main]: "Control 24" Value: 19 count 7 
-Debug [Main]: "Control 24" Value: 20 count 8 
-Debug [Main]: "Control 24" Value: 21 count 6 
-Debug [Main]: "Control 24" Value: 22 count 9 
-Debug [Main]: "Control 24" Value: 23 count 6 
-Debug [Main]: "Control 24" Value: 24 count 6 
-Debug [Main]: "Control 24" Value: 25 count 9 
-Debug [Main]: "Control 24" Value: 26 count 7 
-Debug [Main]: "Control 24" Value: 27 count 6 
-Debug [Main]: "Control 24" Value: 28 count 10 
-Debug [Main]: "Control 24" Value: 29 count 9 
-Debug [Main]: "Control 24" Value: 30 count 8 
-Debug [Main]: "Control 24" Value: 31 count 9 
-Debug [Main]: "Control 24" Value: 32 count 6 
-Debug [Main]: "Control 24" Value: 33 count 8 
-Debug [Main]: "Control 24" Value: 34 count 7 
-Debug [Main]: "Control 24" Value: 35 count 8 
-Debug [Main]: "Control 24" Value: 36 count 8 
-Debug [Main]: "Control 24" Value: 37 count 9 
-Debug [Main]: "Control 24" Value: 38 count 8 
-Debug [Main]: "Control 24" Value: 39 count 6 
-Debug [Main]: "Control 24" Value: 40 count 7 
-Debug [Main]: "Control 24" Value: 41 count 7 
-Debug [Main]: "Control 24" Value: 42 count 4 
-Debug [Main]: "Control 24" Value: 43 count 6 
-Debug [Main]: "Control 24" Value: 44 count 6 
-Debug [Main]: "Control 24" Value: 45 count 8 
-Debug [Main]: "Control 24" Value: 46 count 8 
-Debug [Main]: "Control 24" Value: 47 count 8 
-Debug [Main]: "Control 24" Value: 48 count 10 
-Debug [Main]: "Control 24" Value: 49 count 6 
-Debug [Main]: "Control 24" Value: 50 count 9 
-Debug [Main]: "Control 24" Value: 51 count 6 
-Debug [Main]: "Control 24" Value: 52 count 6 
-Debug [Main]: "Control 24" Value: 53 count 10 
-Debug [Main]: "Control 24" Value: 54 count 12 
-Debug [Main]: "Control 24" Value: 55 count 9 
-Debug [Main]: "Control 24" Value: 56 count 2 
-Debug [Main]: "Control 24" Value: 57 count 3 
-Debug [Main]: "Control 24" Value: 58 count 2 
-Debug [Main]: "Control 24" Value: 59 count 2 
-Debug [Main]: "Control 24" Value: 60 count 2 
-Debug [Main]: "Control 24" Value: 61 count 3 
-Debug [Main]: "Control 24" Value: 62 count 2 
-Debug [Main]: "Control 24" Value: 63 count 2 
-Debug [Main]: "Control 24" Value: 64 count 3 
-Debug [Main]: "Control 24" Value: 65 count 2 
-Debug [Main]: "Control 24" Value: 66 count 2 
-Debug [Main]: "Control 24" Value: 67 count 2 
-Debug [Main]: "Control 24" Value: 68 count 2 
-Debug [Main]: "Control 24" Value: 69 count 2 
-Debug [Main]: "Control 24" Value: 70 count 2 
-Debug [Main]: "Control 24" Value: 71 count 3 
-Debug [Main]: "Control 24" Value: 72 count 2 
-Debug [Main]: "Control 24" Value: 73 count 2 
-Debug [Main]: "Control 24" Value: 74 count 2 
-Debug [Main]: "Control 24" Value: 75 count 2 
-Debug [Main]: "Control 24" Value: 76 count 4 
-Debug [Main]: "Control 24" Value: 77 count 2 
-Debug [Main]: "Control 24" Value: 78 count 1 
-Debug [Main]: "Control 24" Value: 79 count 3 
-Debug [Main]: "Control 24" Value: 80 count 3 
-Debug [Main]: "Control 24" Value: 81 count 2 
-Debug [Main]: "Control 24" Value: 82 count 3 
-Debug [Main]: "Control 24" Value: 83 count 2 
-Debug [Main]: "Control 24" Value: 84 count 3 
-Debug [Main]: "Control 24" Value: 85 count 2 
-Debug [Main]: "Control 24" Value: 86 count 2 
-Debug [Main]: "Control 24" Value: 87 count 3 
-Debug [Main]: "Control 24" Value: 88 count 2 
-Debug [Main]: "Control 24" Value: 89 count 2 
-Debug [Main]: "Control 24" Value: 90 count 2 
-Debug [Main]: "Control 24" Value: 91 count 3 
-Debug [Main]: "Control 24" Value: 92 count 2 
-Debug [Main]: "Control 24" Value: 93 count 2 
-Debug [Main]: "Control 24" Value: 94 count 2 
-Debug [Main]: "Control 24" Value: 95 count 2 
-Debug [Main]: "Control 24" Value: 96 count 2 
-Debug [Main]: "Control 24" Value: 97 count 3 
-Debug [Main]: "Control 24" Value: 98 count 2 
-Debug [Main]: "Control 24" Value: 99 count 2 
-Debug [Main]: "Control 24" Value: 100 count 2 
-Debug [Main]: "Control 24" Value: 101 count 2 
-Debug [Main]: "Control 24" Value: 102 count 2 
-Debug [Main]: "Control 24" Value: 103 count 2 
-Debug [Main]: "Control 24" Value: 104 count 2 
-Debug [Main]: "Control 24" Value: 105 count 2 
-Debug [Main]: "Control 24" Value: 106 count 2 
-Debug [Main]: "Control 24" Value: 107 count 2 
-Debug [Main]: "Control 24" Value: 108 count 2 
-Debug [Main]: "Control 24" Value: 109 count 2 
-Debug [Main]: "Control 24" Value: 110 count 2 
-Debug [Main]: "Control 24" Value: 111 count 1 
-Debug [Main]: "Control 24" Value: 112 count 2 
-Debug [Main]: "Control 24" Value: 113 count 2 
-Debug [Main]: "Control 24" Value: 114 count 1 
-Debug [Main]: "Control 24" Value: 115 count 2 
-Debug [Main]: "Control 24" Value: 116 count 2 
-Debug [Main]: "Control 24" Value: 117 count 1 
-Debug [Main]: "Control 24" Value: 118 count 2 
-Debug [Main]: "Control 24" Value: 119 count 2 
-Debug [Main]: "Control 24" Value: 120 count 2 
-Debug [Main]: "Control 24" Value: 121 count 2 
-Debug [Main]: "Control 24" Value: 122 count 1 
-Debug [Main]: "Control 24" Value: 123 count 2 
-Debug [Main]: "Control 24" Value: 124 count 2 
-Debug [Main]: "Control 24" Value: 125 count 1 
-Debug [Main]: "Control 24" Value: 126 count 2 
-Debug [Main]: "Control 24" Value: 127 count 4 
-Debug [Main]: "Control 56" Value: 0 count 7 
-Debug [Main]: "Control 56" Value: 1 count 3 
-Debug [Main]: "Control 56" Value: 2 count 4 
-Debug [Main]: "Control 56" Value: 3 count 7 
-Debug [Main]: "Control 56" Value: 4 count 4 
-Debug [Main]: "Control 56" Value: 5 count 3 
-Debug [Main]: "Control 56" Value: 6 count 7 
-Debug [Main]: "Control 56" Value: 7 count 6 
-Debug [Main]: "Control 56" Value: 8 count 4 
-Debug [Main]: "Control 56" Value: 9 count 2 
-Debug [Main]: "Control 56" Value: 10 count 5 
-Debug [Main]: "Control 56" Value: 11 count 6 
-Debug [Main]: "Control 56" Value: 12 count 2 
-Debug [Main]: "Control 56" Value: 13 count 2 
-Debug [Main]: "Control 56" Value: 14 count 6 
-Debug [Main]: "Control 56" Value: 15 count 7 
-Debug [Main]: "Control 56" Value: 16 count 2 
-Debug [Main]: "Control 56" Value: 17 count 8 
-Debug [Main]: "Control 56" Value: 18 count 3 
-Debug [Main]: "Control 56" Value: 19 count 7 
-Debug [Main]: "Control 56" Value: 20 count 4 
-Debug [Main]: "Control 56" Value: 21 count 4 
-Debug [Main]: "Control 56" Value: 22 count 5 
-Debug [Main]: "Control 56" Value: 23 count 6 
-Debug [Main]: "Control 56" Value: 24 count 2 
-Debug [Main]: "Control 56" Value: 25 count 1 
-Debug [Main]: "Control 56" Value: 26 count 9 
-Debug [Main]: "Control 56" Value: 27 count 3 
-Debug [Main]: "Control 56" Value: 28 count 5 
-Debug [Main]: "Control 56" Value: 29 count 4 
-Debug [Main]: "Control 56" Value: 30 count 7 
-Debug [Main]: "Control 56" Value: 31 count 7 
-Debug [Main]: "Control 56" Value: 32 count 5 
-Debug [Main]: "Control 56" Value: 33 count 6 
-Debug [Main]: "Control 56" Value: 35 count 4 
-Debug [Main]: "Control 56" Value: 36 count 7 
-Debug [Main]: "Control 56" Value: 37 count 5 
-Debug [Main]: "Control 56" Value: 38 count 3 
-Debug [Main]: "Control 56" Value: 39 count 2 
-Debug [Main]: "Control 56" Value: 40 count 8 
-Debug [Main]: "Control 56" Value: 41 count 5 
-Debug [Main]: "Control 56" Value: 42 count 4 
-Debug [Main]: "Control 56" Value: 43 count 1 
-Debug [Main]: "Control 56" Value: 44 count 3 
-Debug [Main]: "Control 56" Value: 45 count 5 
-Debug [Main]: "Control 56" Value: 46 count 7 
-Debug [Main]: "Control 56" Value: 47 count 3 
-Debug [Main]: "Control 56" Value: 48 count 4 
-Debug [Main]: "Control 56" Value: 49 count 5 
-Debug [Main]: "Control 56" Value: 50 count 4 
-Debug [Main]: "Control 56" Value: 51 count 6 
-Debug [Main]: "Control 56" Value: 52 count 6 
-Debug [Main]: "Control 56" Value: 53 count 6 
-Debug [Main]: "Control 56" Value: 54 count 5 
-Debug [Main]: "Control 56" Value: 55 count 5 
-Debug [Main]: "Control 56" Value: 56 count 6 
-Debug [Main]: "Control 56" Value: 57 count 4 
-Debug [Main]: "Control 56" Value: 58 count 5 
-Debug [Main]: "Control 56" Value: 59 count 6 
-Debug [Main]: "Control 56" Value: 60 count 3 
-Debug [Main]: "Control 56" Value: 61 count 5 
-Debug [Main]: "Control 56" Value: 62 count 7 
-Debug [Main]: "Control 56" Value: 63 count 3 
-Debug [Main]: "Control 56" Value: 64 count 1 
-Debug [Main]: "Control 56" Value: 65 count 3 
-Debug [Main]: "Control 56" Value: 66 count 2 
-Debug [Main]: "Control 56" Value: 67 count 5 
-Debug [Main]: "Control 56" Value: 68 count 3 
-Debug [Main]: "Control 56" Value: 69 count 5 
-Debug [Main]: "Control 56" Value: 70 count 6 
-Debug [Main]: "Control 56" Value: 71 count 3 
-Debug [Main]: "Control 56" Value: 72 count 3 
-Debug [Main]: "Control 56" Value: 73 count 2 
-Debug [Main]: "Control 56" Value: 74 count 9 
-Debug [Main]: "Control 56" Value: 75 count 7 
-Debug [Main]: "Control 56" Value: 76 count 3 
-Debug [Main]: "Control 56" Value: 77 count 7 
-Debug [Main]: "Control 56" Value: 78 count 3 
-Debug [Main]: "Control 56" Value: 79 count 4 
-Debug [Main]: "Control 56" Value: 80 count 7 
-Debug [Main]: "Control 56" Value: 81 count 7 
-Debug [Main]: "Control 56" Value: 82 count 5 
-Debug [Main]: "Control 56" Value: 83 count 5 
-Debug [Main]: "Control 56" Value: 84 count 9 
-Debug [Main]: "Control 56" Value: 85 count 4 
-Debug [Main]: "Control 56" Value: 86 count 1 
-Debug [Main]: "Control 56" Value: 87 count 5 
-Debug [Main]: "Control 56" Value: 88 count 6 
-Debug [Main]: "Control 56" Value: 89 count 3 
-Debug [Main]: "Control 56" Value: 90 count 6 
-Debug [Main]: "Control 56" Value: 91 count 6 
-Debug [Main]: "Control 56" Value: 92 count 6 
-Debug [Main]: "Control 56" Value: 93 count 3 
-Debug [Main]: "Control 56" Value: 94 count 2 
-Debug [Main]: "Control 56" Value: 95 count 4 
-Debug [Main]: "Control 56" Value: 96 count 3 
-Debug [Main]: "Control 56" Value: 97 count 2 
-Debug [Main]: "Control 56" Value: 98 count 7 
-Debug [Main]: "Control 56" Value: 99 count 7 
-Debug [Main]: "Control 56" Value: 100 count 4 
-Debug [Main]: "Control 56" Value: 101 count 6 
-Debug [Main]: "Control 56" Value: 102 count 4 
-Debug [Main]: "Control 56" Value: 103 count 1 
-Debug [Main]: "Control 56" Value: 104 count 1 
-Debug [Main]: "Control 56" Value: 105 count 3 
-Debug [Main]: "Control 56" Value: 106 count 3 
-Debug [Main]: "Control 56" Value: 107 count 5 
-Debug [Main]: "Control 56" Value: 108 count 7 
-Debug [Main]: "Control 56" Value: 109 count 4 
-Debug [Main]: "Control 56" Value: 110 count 4 
-Debug [Main]: "Control 56" Value: 111 count 7 
-Debug [Main]: "Control 56" Value: 112 count 6 
-Debug [Main]: "Control 56" Value: 113 count 6 
-Debug [Main]: "Control 56" Value: 114 count 4 
-Debug [Main]: "Control 56" Value: 115 count 6 
-Debug [Main]: "Control 56" Value: 116 count 8 
-Debug [Main]: "Control 56" Value: 117 count 2 
-Debug [Main]: "Control 56" Value: 118 count 6 
-Debug [Main]: "Control 56" Value: 119 count 6 
-Debug [Main]: "Control 56" Value: 120 count 2 
-Debug [Main]: "Control 56" Value: 121 count 7 
-Debug [Main]: "Control 56" Value: 122 count 5 
-Debug [Main]: "Control 56" Value: 123 count 3 
-Debug [Main]: "Control 56" Value: 124 count 4 
-Debug [Main]: "Control 56" Value: 125 count 2 
-Debug [Main]: "Control 56" Value: 126 count 5 
-Debug [Main]: "Control 56" Value: 127 count 6 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x38 Options: 0x1000" 
-Debug [Controller]: Set mapping for "0xB1 0x38" to "[Channel1]" "pitch_adjust" 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x18 Options: 0x2000" 
-Debug [Controller]: Set mapping for "0xB1 0x18" to "[Channel1]" "pitch_adjust" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x397e4fd0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x2da49890) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x2b5c5bf0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x391bac00) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x23864960) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x23fe2ab0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x2373e480) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x23864a10) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x238a5930) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x238a4dd0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3984dd90) 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x22e42be0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3ae60f50) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3ae60cd0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x391d5190) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1fd68b10) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2555d7d0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x25919e30) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x25919fc0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x25c57930) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x25c57ac0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x234deb70) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3ac32f80) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3ac32f10) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3ac32ea0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3ac32e30) 
+Debug [Controller]: "   LEDs state set for deck D1" 
+Debug [Controller]: "   LEDs state set for deck D2" 
+Debug [Controller]: "   LEDs state set for deck D3" 
+Debug [Controller]: "   LEDs state set for deck D4" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "                 Initialize Buttons" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "                Init Soft Takeovers" 
+Debug [Controller]: "" 
+Debug [Controller]: Connection: "[Sampler1]" "play" 
+Debug [Controller]: Connection: "[Sampler2]" "play" 
+Debug [Controller]: Connection: "[Sampler3]" "play" 
+Debug [Controller]: Connection: "[Sampler4]" "play" 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControllerEngine: script connecting [ "[Sampler5]" , "play" ], which is non-existent. ignoring. 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControllerEngine: script connecting [ "[Sampler6]" , "play" ], which is non-existent. ignoring. 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControllerEngine: script connecting [ "[Sampler7]" , "play" ], which is non-existent. ignoring. 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControllerEngine: script connecting [ "[Sampler8]" , "play" ], which is non-existent. ignoring. 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "                initDeck [Channel1]" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "         Connect controls and triggers deck 1" 
+Debug [Controller]: "" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect1]" "enabled" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect2]" "enabled" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect3]" "enabled" 
+Debug [Controller]: Connection: "[Channel1]" "hotcue_1_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "hotcue_2_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "hotcue_3_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "hotcue_4_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "track_samples" 
+Debug [Controller]: Connection: "[Channel1]" "VuMeter" 
+Debug [Controller]: Connection: "[Channel1]" "playposition" 
+Debug [Controller]: Connection: "[Channel1]" "volume" 
+Debug [Controller]: Connection: "[Channel1]" "pfl" 
+Debug [Controller]: Connection: "[Channel1]" "duration" 
+Debug [Controller]: Connection: "[Channel1]" "play_indicator" 
+Debug [Controller]: Connection: "[Channel1]" "cue_indicator" 
+Debug [Controller]: Connection: "[Channel1]" "loop_start_position" 
+Debug [Controller]: Connection: "[Channel1]" "loop_end_position" 
+Debug [Controller]: Connection: "[Channel1]" "loop_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "sync_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_2_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_4_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_8_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_16_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_1_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_0.5_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_0.25_enabled" 
+Debug [Controller]: Connection: "[Channel1]" "beatloop_0.125_enabled" 
+Debug [Controller]: "" 
+Debug [Controller]: "               Initialisation completed" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "                initDeck [Channel2]" 
+Debug [Controller]: "" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "         Connect controls and triggers deck 2" 
+Debug [Controller]: "" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect1]" "enabled" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect2]" "enabled" 
+Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect3]" "enabled" 
+Debug [Controller]: Connection: "[Channel2]" "hotcue_1_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "hotcue_2_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "hotcue_3_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "hotcue_4_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "track_samples" 
+Debug [Controller]: Connection: "[Channel2]" "VuMeter" 
+Debug [Controller]: Connection: "[Channel2]" "playposition" 
+Debug [Controller]: Connection: "[Channel2]" "volume" 
+Debug [Controller]: Connection: "[Channel2]" "pfl" 
+Debug [Controller]: Connection: "[Channel2]" "duration" 
+Debug [Controller]: Connection: "[Channel2]" "play_indicator" 
+Debug [Controller]: Connection: "[Channel2]" "cue_indicator" 
+Debug [Controller]: Connection: "[Channel2]" "loop_start_position" 
+Debug [Controller]: Connection: "[Channel2]" "loop_end_position" 
+Debug [Controller]: Connection: "[Channel2]" "loop_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "sync_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_2_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_4_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_8_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_16_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_1_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_0.5_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_0.25_enabled" 
+Debug [Controller]: Connection: "[Channel2]" "beatloop_0.125_enabled" 
+Debug [Controller]: "" 
+Debug [Controller]: "               Initialisation completed" 
+Debug [Controller]: "==========================================================" 
+Debug [Controller]: "" 
+Debug [Controller]: "*********      Controller is ready      *******************" 
+Debug [Controller]: "********* End of Initialisation process *******************" 
+Debug [Controller]: Controller polling started. 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3ab9ffc0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a1710f0) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a21f470) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a21f630) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a1cecc0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3a8a1e20) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b7b01e0) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ae80cd0)  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
 Debug [AnalyserQueue 1]: Prioritizing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
 Debug [AnalyserQueue 1]: Analyzing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x30949b10, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31cab130, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
 Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1684693 bytes for track 1452 in 18 ms 
 Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 187154 visualSampleRate 441 audioVisualRatio 100 
 Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.04838 audioVisualRatio 4873.8 
@@ -726,409 +396,755 @@ Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analy
 Debug [AnalyserQueue 1]: Key calculation will not start. 
 Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x1b717f00) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1cabfdd0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x1b38ae70) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x1b30e060) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x22e38630) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1ba3cbf0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1b1e0d0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1ba3ce20) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x1ba3cf60) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x1e9902b0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x22db0500) 
-Debug [Main]: LearningUtils guessing MIDI mapping from 1142 messages. 
-Debug [Main]: Opcode: 176 
-Debug [Main]: Channel: 1 
-Debug [Main]: Control: 56 
-Debug [Main]: Control: 24 
-Debug [Main]: Overall Value: 0 count 18 
-Debug [Main]: Overall Value: 1 count 9 
-Debug [Main]: Overall Value: 2 count 11 
-Debug [Main]: Overall Value: 3 count 7 
-Debug [Main]: Overall Value: 4 count 6 
-Debug [Main]: Overall Value: 5 count 12 
-Debug [Main]: Overall Value: 6 count 7 
-Debug [Main]: Overall Value: 7 count 9 
-Debug [Main]: Overall Value: 8 count 8 
-Debug [Main]: Overall Value: 9 count 9 
-Debug [Main]: Overall Value: 10 count 7 
-Debug [Main]: Overall Value: 11 count 5 
-Debug [Main]: Overall Value: 12 count 9 
-Debug [Main]: Overall Value: 13 count 7 
-Debug [Main]: Overall Value: 14 count 7 
-Debug [Main]: Overall Value: 15 count 8 
-Debug [Main]: Overall Value: 16 count 7 
-Debug [Main]: Overall Value: 17 count 10 
-Debug [Main]: Overall Value: 18 count 10 
-Debug [Main]: Overall Value: 19 count 8 
-Debug [Main]: Overall Value: 20 count 7 
-Debug [Main]: Overall Value: 21 count 14 
-Debug [Main]: Overall Value: 22 count 10 
-Debug [Main]: Overall Value: 23 count 7 
-Debug [Main]: Overall Value: 24 count 11 
-Debug [Main]: Overall Value: 25 count 12 
-Debug [Main]: Overall Value: 26 count 9 
-Debug [Main]: Overall Value: 27 count 10 
-Debug [Main]: Overall Value: 28 count 8 
-Debug [Main]: Overall Value: 29 count 9 
-Debug [Main]: Overall Value: 30 count 8 
-Debug [Main]: Overall Value: 31 count 10 
-Debug [Main]: Overall Value: 32 count 7 
-Debug [Main]: Overall Value: 33 count 5 
-Debug [Main]: Overall Value: 34 count 10 
-Debug [Main]: Overall Value: 35 count 7 
-Debug [Main]: Overall Value: 36 count 6 
-Debug [Main]: Overall Value: 37 count 10 
-Debug [Main]: Overall Value: 38 count 4 
-Debug [Main]: Overall Value: 39 count 11 
-Debug [Main]: Overall Value: 40 count 8 
-Debug [Main]: Overall Value: 41 count 11 
-Debug [Main]: Overall Value: 42 count 8 
-Debug [Main]: Overall Value: 43 count 7 
-Debug [Main]: Overall Value: 44 count 8 
-Debug [Main]: Overall Value: 45 count 10 
-Debug [Main]: Overall Value: 46 count 6 
-Debug [Main]: Overall Value: 47 count 12 
-Debug [Main]: Overall Value: 48 count 16 
-Debug [Main]: Overall Value: 49 count 12 
-Debug [Main]: Overall Value: 50 count 14 
-Debug [Main]: Overall Value: 51 count 11 
-Debug [Main]: Overall Value: 52 count 13 
-Debug [Main]: Overall Value: 53 count 20 
-Debug [Main]: Overall Value: 54 count 11 
-Debug [Main]: Overall Value: 55 count 10 
-Debug [Main]: Overall Value: 56 count 12 
-Debug [Main]: Overall Value: 57 count 13 
-Debug [Main]: Overall Value: 58 count 11 
-Debug [Main]: Overall Value: 59 count 9 
-Debug [Main]: Overall Value: 60 count 13 
-Debug [Main]: Overall Value: 61 count 9 
-Debug [Main]: Overall Value: 62 count 12 
-Debug [Main]: Overall Value: 63 count 17 
-Debug [Main]: Overall Value: 64 count 20 
-Debug [Main]: Overall Value: 65 count 14 
-Debug [Main]: Overall Value: 66 count 15 
-Debug [Main]: Overall Value: 67 count 13 
-Debug [Main]: Overall Value: 68 count 11 
-Debug [Main]: Overall Value: 69 count 21 
-Debug [Main]: Overall Value: 70 count 13 
-Debug [Main]: Overall Value: 71 count 9 
-Debug [Main]: Overall Value: 72 count 8 
-Debug [Main]: Overall Value: 73 count 11 
-Debug [Main]: Overall Value: 74 count 9 
-Debug [Main]: Overall Value: 75 count 11 
-Debug [Main]: Overall Value: 76 count 13 
-Debug [Main]: Overall Value: 77 count 5 
-Debug [Main]: Overall Value: 78 count 7 
-Debug [Main]: Overall Value: 79 count 9 
-Debug [Main]: Overall Value: 80 count 6 
-Debug [Main]: Overall Value: 81 count 7 
-Debug [Main]: Overall Value: 82 count 10 
-Debug [Main]: Overall Value: 83 count 6 
-Debug [Main]: Overall Value: 84 count 6 
-Debug [Main]: Overall Value: 85 count 7 
-Debug [Main]: Overall Value: 86 count 9 
-Debug [Main]: Overall Value: 87 count 8 
-Debug [Main]: Overall Value: 88 count 3 
-Debug [Main]: Overall Value: 89 count 6 
-Debug [Main]: Overall Value: 90 count 4 
-Debug [Main]: Overall Value: 91 count 7 
-Debug [Main]: Overall Value: 92 count 5 
-Debug [Main]: Overall Value: 93 count 3 
-Debug [Main]: Overall Value: 94 count 4 
-Debug [Main]: Overall Value: 95 count 6 
-Debug [Main]: Overall Value: 96 count 6 
-Debug [Main]: Overall Value: 97 count 8 
-Debug [Main]: Overall Value: 98 count 6 
-Debug [Main]: Overall Value: 99 count 9 
-Debug [Main]: Overall Value: 100 count 5 
-Debug [Main]: Overall Value: 101 count 4 
-Debug [Main]: Overall Value: 102 count 7 
-Debug [Main]: Overall Value: 103 count 5 
-Debug [Main]: Overall Value: 104 count 5 
-Debug [Main]: Overall Value: 105 count 5 
-Debug [Main]: Overall Value: 106 count 6 
-Debug [Main]: Overall Value: 107 count 4 
-Debug [Main]: Overall Value: 108 count 7 
-Debug [Main]: Overall Value: 109 count 4 
-Debug [Main]: Overall Value: 110 count 6 
-Debug [Main]: Overall Value: 111 count 9 
-Debug [Main]: Overall Value: 112 count 5 
-Debug [Main]: Overall Value: 113 count 8 
-Debug [Main]: Overall Value: 114 count 10 
-Debug [Main]: Overall Value: 115 count 5 
-Debug [Main]: Overall Value: 116 count 9 
-Debug [Main]: Overall Value: 117 count 5 
-Debug [Main]: Overall Value: 118 count 9 
-Debug [Main]: Overall Value: 119 count 9 
-Debug [Main]: Overall Value: 120 count 6 
-Debug [Main]: Overall Value: 121 count 8 
-Debug [Main]: Overall Value: 122 count 16 
-Debug [Main]: Overall Value: 123 count 24 
-Debug [Main]: Overall Value: 124 count 8 
-Debug [Main]: Overall Value: 125 count 6 
-Debug [Main]: Overall Value: 126 count 8 
-Debug [Main]: Overall Value: 127 count 2 
-Debug [Main]: "Control 24" Value: 0 count 7 
-Debug [Main]: "Control 24" Value: 1 count 4 
-Debug [Main]: "Control 24" Value: 2 count 4 
-Debug [Main]: "Control 24" Value: 3 count 4 
-Debug [Main]: "Control 24" Value: 4 count 4 
-Debug [Main]: "Control 24" Value: 5 count 4 
-Debug [Main]: "Control 24" Value: 6 count 4 
-Debug [Main]: "Control 24" Value: 7 count 4 
-Debug [Main]: "Control 24" Value: 8 count 4 
-Debug [Main]: "Control 24" Value: 9 count 3 
-Debug [Main]: "Control 24" Value: 10 count 4 
-Debug [Main]: "Control 24" Value: 11 count 3 
-Debug [Main]: "Control 24" Value: 12 count 4 
-Debug [Main]: "Control 24" Value: 13 count 4 
-Debug [Main]: "Control 24" Value: 14 count 4 
-Debug [Main]: "Control 24" Value: 15 count 4 
-Debug [Main]: "Control 24" Value: 16 count 3 
-Debug [Main]: "Control 24" Value: 17 count 4 
-Debug [Main]: "Control 24" Value: 18 count 4 
-Debug [Main]: "Control 24" Value: 19 count 4 
-Debug [Main]: "Control 24" Value: 20 count 3 
-Debug [Main]: "Control 24" Value: 21 count 4 
-Debug [Main]: "Control 24" Value: 22 count 5 
-Debug [Main]: "Control 24" Value: 23 count 3 
-Debug [Main]: "Control 24" Value: 24 count 4 
-Debug [Main]: "Control 24" Value: 25 count 5 
-Debug [Main]: "Control 24" Value: 26 count 3 
-Debug [Main]: "Control 24" Value: 27 count 4 
-Debug [Main]: "Control 24" Value: 28 count 4 
-Debug [Main]: "Control 24" Value: 29 count 4 
-Debug [Main]: "Control 24" Value: 30 count 3 
-Debug [Main]: "Control 24" Value: 31 count 6 
-Debug [Main]: "Control 24" Value: 32 count 3 
-Debug [Main]: "Control 24" Value: 33 count 4 
-Debug [Main]: "Control 24" Value: 34 count 6 
-Debug [Main]: "Control 24" Value: 35 count 4 
-Debug [Main]: "Control 24" Value: 36 count 3 
-Debug [Main]: "Control 24" Value: 37 count 6 
-Debug [Main]: "Control 24" Value: 38 count 4 
-Debug [Main]: "Control 24" Value: 39 count 6 
-Debug [Main]: "Control 24" Value: 40 count 4 
-Debug [Main]: "Control 24" Value: 41 count 6 
-Debug [Main]: "Control 24" Value: 42 count 5 
-Debug [Main]: "Control 24" Value: 43 count 4 
-Debug [Main]: "Control 24" Value: 44 count 5 
-Debug [Main]: "Control 24" Value: 45 count 7 
-Debug [Main]: "Control 24" Value: 46 count 3 
-Debug [Main]: "Control 24" Value: 47 count 10 
-Debug [Main]: "Control 24" Value: 48 count 12 
-Debug [Main]: "Control 24" Value: 49 count 9 
-Debug [Main]: "Control 24" Value: 50 count 9 
-Debug [Main]: "Control 24" Value: 51 count 5 
-Debug [Main]: "Control 24" Value: 52 count 9 
-Debug [Main]: "Control 24" Value: 53 count 17 
-Debug [Main]: "Control 24" Value: 54 count 10 
-Debug [Main]: "Control 24" Value: 55 count 7 
-Debug [Main]: "Control 24" Value: 56 count 7 
-Debug [Main]: "Control 24" Value: 57 count 10 
-Debug [Main]: "Control 24" Value: 58 count 8 
-Debug [Main]: "Control 24" Value: 59 count 8 
-Debug [Main]: "Control 24" Value: 60 count 9 
-Debug [Main]: "Control 24" Value: 61 count 9 
-Debug [Main]: "Control 24" Value: 62 count 9 
-Debug [Main]: "Control 24" Value: 63 count 8 
-Debug [Main]: "Control 24" Value: 64 count 11 
-Debug [Main]: "Control 24" Value: 65 count 9 
-Debug [Main]: "Control 24" Value: 66 count 7 
-Debug [Main]: "Control 24" Value: 67 count 8 
-Debug [Main]: "Control 24" Value: 68 count 8 
-Debug [Main]: "Control 24" Value: 69 count 15 
-Debug [Main]: "Control 24" Value: 70 count 9 
-Debug [Main]: "Control 24" Value: 71 count 3 
-Debug [Main]: "Control 24" Value: 72 count 7 
-Debug [Main]: "Control 24" Value: 73 count 5 
-Debug [Main]: "Control 24" Value: 74 count 7 
-Debug [Main]: "Control 24" Value: 75 count 6 
-Debug [Main]: "Control 24" Value: 76 count 7 
-Debug [Main]: "Control 24" Value: 77 count 2 
-Debug [Main]: "Control 24" Value: 78 count 1 
-Debug [Main]: "Control 24" Value: 79 count 2 
-Debug [Main]: "Control 24" Value: 80 count 1 
-Debug [Main]: "Control 24" Value: 81 count 1 
-Debug [Main]: "Control 24" Value: 82 count 2 
-Debug [Main]: "Control 24" Value: 83 count 1 
-Debug [Main]: "Control 24" Value: 84 count 2 
-Debug [Main]: "Control 24" Value: 85 count 1 
-Debug [Main]: "Control 24" Value: 86 count 2 
-Debug [Main]: "Control 24" Value: 87 count 1 
-Debug [Main]: "Control 24" Value: 88 count 1 
-Debug [Main]: "Control 24" Value: 89 count 2 
-Debug [Main]: "Control 24" Value: 90 count 1 
-Debug [Main]: "Control 24" Value: 91 count 2 
-Debug [Main]: "Control 24" Value: 92 count 1 
-Debug [Main]: "Control 24" Value: 93 count 2 
-Debug [Main]: "Control 24" Value: 94 count 1 
-Debug [Main]: "Control 24" Value: 95 count 2 
-Debug [Main]: "Control 24" Value: 96 count 1 
-Debug [Main]: "Control 24" Value: 97 count 2 
-Debug [Main]: "Control 24" Value: 98 count 1 
-Debug [Main]: "Control 24" Value: 99 count 2 
-Debug [Main]: "Control 24" Value: 100 count 2 
-Debug [Main]: "Control 24" Value: 101 count 2 
-Debug [Main]: "Control 24" Value: 102 count 1 
-Debug [Main]: "Control 24" Value: 103 count 2 
-Debug [Main]: "Control 24" Value: 104 count 2 
-Debug [Main]: "Control 24" Value: 105 count 1 
-Debug [Main]: "Control 24" Value: 106 count 3 
-Debug [Main]: "Control 24" Value: 107 count 2 
-Debug [Main]: "Control 24" Value: 108 count 1 
-Debug [Main]: "Control 24" Value: 109 count 2 
-Debug [Main]: "Control 24" Value: 110 count 2 
-Debug [Main]: "Control 24" Value: 111 count 2 
-Debug [Main]: "Control 24" Value: 112 count 3 
-Debug [Main]: "Control 24" Value: 113 count 2 
-Debug [Main]: "Control 24" Value: 114 count 2 
-Debug [Main]: "Control 24" Value: 115 count 2 
-Debug [Main]: "Control 24" Value: 116 count 3 
-Debug [Main]: "Control 24" Value: 117 count 2 
-Debug [Main]: "Control 24" Value: 118 count 4 
-Debug [Main]: "Control 24" Value: 119 count 2 
-Debug [Main]: "Control 24" Value: 120 count 5 
-Debug [Main]: "Control 24" Value: 121 count 4 
-Debug [Main]: "Control 24" Value: 122 count 11 
-Debug [Main]: "Control 24" Value: 123 count 19 
-Debug [Main]: "Control 56" Value: 0 count 11 
-Debug [Main]: "Control 56" Value: 1 count 5 
-Debug [Main]: "Control 56" Value: 2 count 7 
-Debug [Main]: "Control 56" Value: 3 count 3 
-Debug [Main]: "Control 56" Value: 4 count 2 
-Debug [Main]: "Control 56" Value: 5 count 8 
-Debug [Main]: "Control 56" Value: 6 count 3 
-Debug [Main]: "Control 56" Value: 7 count 5 
-Debug [Main]: "Control 56" Value: 8 count 4 
-Debug [Main]: "Control 56" Value: 9 count 6 
-Debug [Main]: "Control 56" Value: 10 count 3 
-Debug [Main]: "Control 56" Value: 11 count 2 
-Debug [Main]: "Control 56" Value: 12 count 5 
-Debug [Main]: "Control 56" Value: 13 count 3 
-Debug [Main]: "Control 56" Value: 14 count 3 
-Debug [Main]: "Control 56" Value: 15 count 4 
-Debug [Main]: "Control 56" Value: 16 count 4 
-Debug [Main]: "Control 56" Value: 17 count 6 
-Debug [Main]: "Control 56" Value: 18 count 6 
-Debug [Main]: "Control 56" Value: 19 count 4 
-Debug [Main]: "Control 56" Value: 20 count 4 
-Debug [Main]: "Control 56" Value: 21 count 10 
-Debug [Main]: "Control 56" Value: 22 count 5 
-Debug [Main]: "Control 56" Value: 23 count 4 
-Debug [Main]: "Control 56" Value: 24 count 7 
-Debug [Main]: "Control 56" Value: 25 count 7 
-Debug [Main]: "Control 56" Value: 26 count 6 
-Debug [Main]: "Control 56" Value: 27 count 6 
-Debug [Main]: "Control 56" Value: 28 count 4 
-Debug [Main]: "Control 56" Value: 29 count 5 
-Debug [Main]: "Control 56" Value: 30 count 5 
-Debug [Main]: "Control 56" Value: 31 count 4 
-Debug [Main]: "Control 56" Value: 32 count 4 
-Debug [Main]: "Control 56" Value: 33 count 1 
-Debug [Main]: "Control 56" Value: 34 count 4 
-Debug [Main]: "Control 56" Value: 35 count 3 
-Debug [Main]: "Control 56" Value: 36 count 3 
-Debug [Main]: "Control 56" Value: 37 count 4 
-Debug [Main]: "Control 56" Value: 39 count 5 
-Debug [Main]: "Control 56" Value: 40 count 4 
-Debug [Main]: "Control 56" Value: 41 count 5 
-Debug [Main]: "Control 56" Value: 42 count 3 
-Debug [Main]: "Control 56" Value: 43 count 3 
-Debug [Main]: "Control 56" Value: 44 count 3 
-Debug [Main]: "Control 56" Value: 45 count 3 
-Debug [Main]: "Control 56" Value: 46 count 3 
-Debug [Main]: "Control 56" Value: 47 count 2 
-Debug [Main]: "Control 56" Value: 48 count 4 
-Debug [Main]: "Control 56" Value: 49 count 3 
-Debug [Main]: "Control 56" Value: 50 count 5 
-Debug [Main]: "Control 56" Value: 51 count 6 
-Debug [Main]: "Control 56" Value: 52 count 4 
-Debug [Main]: "Control 56" Value: 53 count 3 
-Debug [Main]: "Control 56" Value: 54 count 1 
-Debug [Main]: "Control 56" Value: 55 count 3 
-Debug [Main]: "Control 56" Value: 56 count 5 
-Debug [Main]: "Control 56" Value: 57 count 3 
-Debug [Main]: "Control 56" Value: 58 count 3 
-Debug [Main]: "Control 56" Value: 59 count 1 
-Debug [Main]: "Control 56" Value: 60 count 4 
-Debug [Main]: "Control 56" Value: 62 count 3 
-Debug [Main]: "Control 56" Value: 63 count 9 
-Debug [Main]: "Control 56" Value: 64 count 9 
-Debug [Main]: "Control 56" Value: 65 count 5 
-Debug [Main]: "Control 56" Value: 66 count 8 
-Debug [Main]: "Control 56" Value: 67 count 5 
-Debug [Main]: "Control 56" Value: 68 count 3 
-Debug [Main]: "Control 56" Value: 69 count 6 
-Debug [Main]: "Control 56" Value: 70 count 4 
-Debug [Main]: "Control 56" Value: 71 count 6 
-Debug [Main]: "Control 56" Value: 72 count 1 
-Debug [Main]: "Control 56" Value: 73 count 6 
-Debug [Main]: "Control 56" Value: 74 count 2 
-Debug [Main]: "Control 56" Value: 75 count 5 
-Debug [Main]: "Control 56" Value: 76 count 6 
-Debug [Main]: "Control 56" Value: 77 count 3 
-Debug [Main]: "Control 56" Value: 78 count 6 
-Debug [Main]: "Control 56" Value: 79 count 7 
-Debug [Main]: "Control 56" Value: 80 count 5 
-Debug [Main]: "Control 56" Value: 81 count 6 
-Debug [Main]: "Control 56" Value: 82 count 8 
-Debug [Main]: "Control 56" Value: 83 count 5 
-Debug [Main]: "Control 56" Value: 84 count 4 
-Debug [Main]: "Control 56" Value: 85 count 6 
-Debug [Main]: "Control 56" Value: 86 count 7 
-Debug [Main]: "Control 56" Value: 87 count 7 
-Debug [Main]: "Control 56" Value: 88 count 2 
-Debug [Main]: "Control 56" Value: 89 count 4 
-Debug [Main]: "Control 56" Value: 90 count 3 
-Debug [Main]: "Control 56" Value: 91 count 5 
-Debug [Main]: "Control 56" Value: 92 count 4 
-Debug [Main]: "Control 56" Value: 93 count 1 
-Debug [Main]: "Control 56" Value: 94 count 3 
-Debug [Main]: "Control 56" Value: 95 count 4 
-Debug [Main]: "Control 56" Value: 96 count 5 
-Debug [Main]: "Control 56" Value: 97 count 6 
-Debug [Main]: "Control 56" Value: 98 count 5 
-Debug [Main]: "Control 56" Value: 99 count 7 
-Debug [Main]: "Control 56" Value: 100 count 3 
-Debug [Main]: "Control 56" Value: 101 count 2 
-Debug [Main]: "Control 56" Value: 102 count 6 
-Debug [Main]: "Control 56" Value: 103 count 3 
-Debug [Main]: "Control 56" Value: 104 count 3 
-Debug [Main]: "Control 56" Value: 105 count 4 
-Debug [Main]: "Control 56" Value: 106 count 3 
-Debug [Main]: "Control 56" Value: 107 count 2 
-Debug [Main]: "Control 56" Value: 108 count 6 
-Debug [Main]: "Control 56" Value: 109 count 2 
-Debug [Main]: "Control 56" Value: 110 count 4 
-Debug [Main]: "Control 56" Value: 111 count 7 
-Debug [Main]: "Control 56" Value: 112 count 2 
-Debug [Main]: "Control 56" Value: 113 count 6 
-Debug [Main]: "Control 56" Value: 114 count 8 
-Debug [Main]: "Control 56" Value: 115 count 3 
-Debug [Main]: "Control 56" Value: 116 count 6 
-Debug [Main]: "Control 56" Value: 117 count 3 
-Debug [Main]: "Control 56" Value: 118 count 5 
-Debug [Main]: "Control 56" Value: 119 count 7 
-Debug [Main]: "Control 56" Value: 120 count 1 
-Debug [Main]: "Control 56" Value: 121 count 4 
-Debug [Main]: "Control 56" Value: 122 count 5 
-Debug [Main]: "Control 56" Value: 123 count 5 
-Debug [Main]: "Control 56" Value: 124 count 8 
-Debug [Main]: "Control 56" Value: 125 count 6 
-Debug [Main]: "Control 56" Value: 126 count 8 
-Debug [Main]: "Control 56" Value: 127 count 2 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x38 Options: 0x1000" 
-Debug [Controller]: Set mapping for "0xB1 0x38" to "[Channel1]" "rate" 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x18 Options: 0x2000" 
-Debug [Controller]: Set mapping for "0xB1 0x18" to "[Channel1]" "rate" 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 26 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,54764,/amusic/genres/urban/RAP,R&B,HIP-HOP/Onyx/SLAM/Onyx - 'SLAM (LP VERSION)' by Onyx.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3)" QSize(0, 0) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x347bd980, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "99 Problems (Produced By Rick Rubin)" "/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "99 Problems (Produced By Rick Rubin)" "/amusic/genres/urban/top500/059. Jay-Z - 99 Problems.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1019" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1020" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1960233 bytes for track 5118 in 19 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 207016 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.1803 audioVisualRatio 5391 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/01 ACHY BREAKY HEART.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,8199,/amusic/billboard/decades/80/Erasure - A Little Respect.mp3)" QSize(200, 199) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/djs/mike/Violent Femmes - Add It Up.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1967_Billboard_Top_Usa_Singles/87-Marvin_Gaye_-_Tammi_Terrell-Aint_No_Mountain_High_Enough.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/2-21 Ain't Too Proud To Beg.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/Afroman - Because I Got High-WeYsTmIzjkw.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2014/08 All About That Bass.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/idjpool/Fifth Harmony f. Fetty Wap - All In My Head (DJ Intro - DJ Outro) (Explicit) (8B).mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/12-Ja_Rule_Featuring_Ashanti-Always_On_Time.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2001_Billboard_Top_Usa_Singles/03-Janet_Jackson-All_For_You.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2014/08 All About That Bass.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "All About That Bass" "/amusic/billboard/year/2014/08 All About That Bass.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "All About That Bass" "/amusic/billboard/year/2014/08 All About That Bass.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31cab130, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2014/08 All About That Bass.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/879" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/880" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 18890 in 129 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Track has previous key detection result that is not up to date with latest settings but user preferences indicate we should not re-analyze it. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 18890 done 1.262 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Main]: "EffectParameter(Low)" WARNING: Value was outside of limits, clamped. 
+Warning [Main]: "EffectParameter(High)" WARNING: Value was outside of limits, clamped. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2001_Billboard_Top_Usa_Singles/03-Janet_Jackson-All_For_You.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2014/08 All About That Bass.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x4e3b9a0) select() took 5 ms 13 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 424 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 456 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 467 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 456 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4e3b9a0) select() took 2 ms 13 
+Debug [Main]: Already focused on playlist  105 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 25 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 29 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  105 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 27 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 10 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 27 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  105 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 34 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 10 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 101 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 89 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 9 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 159 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 34 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 131 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 65 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 68 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 65 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 131 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 34 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 159 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 8 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 89 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 101 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 10 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 28 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4e3b9a0) select() took 4 ms 13 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 452 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 430 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4e3b9a0) select() took 3 ms 13 
+Debug [Main]: Already focused on playlist  105 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 28 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 30 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4e3b9a0) select() took 5 ms 13 
+Debug [Main]: Already focused on playlist  105 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 34 ms 1851 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 9 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 8 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 101 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 89 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/wedding_dance/Aerosmith - Dude (Looks Like A Lady)-nf0oXY4nDxE.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/wedding_dance/Backstreet Boys - Everybody (Backstreet's Back) (Official Video)-6M6samPEMpM.mp3)" QSize(0, 0) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 101 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 10 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 67 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 101 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 97 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 89 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 10 ms 348 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 159 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 34 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 131 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 65 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 68 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 85 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 50 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 3 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 18 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 18 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 21 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 13 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 55 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 10 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 9 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 24 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 9 ms 200 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 70 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 3 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 30 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Already focused on playlist  254 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 23 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 19 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 18 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 16 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 3 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 7 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 39 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 48 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 31 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 6 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 82 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 7 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 11 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2004_Billboard_Top_Usa_Singles/08-Outkast-Hey_Ya.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,27288,/amusic/genres/urban/breslin/Montell Jordan - This Is How We Do It.mp3)" QSize(200, 200) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 12 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 8 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 8 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 13 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 30 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 1 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 9 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 2 ms 3 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 5 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 1 ms 0 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 20 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 29 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 18 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 4 ms 31 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 8 ms 121 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 3 ms 37 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 70 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 58 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,20464,/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-07-28/36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller" "/amusic/billboard/latest/2017-07-28/36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller" "/amusic/billboard/latest/2017-07-28/36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31cab130, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-07-28/36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5603" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5604" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 25860 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 25860 done 1.968 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
+Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,20464,/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Prioritizing "24K Magic" "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "24K Magic" "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x347bd980, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,20464,/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3)" QSize(300, 300) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3587" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3588" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4223" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4224" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22679 in 129 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 22679 done 1.759 s 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-07-28/36-DJ Khaled - Wild Thoughts ft. Rihanna, Bryson Tiller.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 165774 allSignalSize 165774 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 5761 "1533149 (753435 compressed)" bytes for track 18890 in 157 ms 
+Debug [Main]: Saved waveform analysis for trackId 18890 analysisId 5761 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 10.2154 audioVisualRatio 4317 
+Debug [Main]: AnalysisDAO saved analysis 5762 "35271 (18136 compressed)" bytes for track 18890 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 18890 analysisId 5762 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,48115,/amusic/billboard/latest/2015-05-23/26. Taylor Swift - Blank Space.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,55254,/amusic/billboard/now_thats_music/now_thats_music_96/Now That's What I Call Music! 96 [MP3]/CD1/10 Chained to the Rhythm.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Prioritizing "Chained to the Rhythm" "/amusic/billboard/now_thats_music/now_thats_music_96/Now That's What I Call Music! 96 [MP3]/CD1/10 Chained to the Rhythm.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x347bd980, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,55254,/amusic/billboard/now_thats_music/now_thats_music_96/Now That's What I Call Music! 96 [MP3]/CD1/10 Chained to the Rhythm.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Analyzing "Chained to the Rhythm" "/amusic/billboard/now_thats_music/now_thats_music_96/Now That's What I Call Music! 96 [MP3]/CD1/10 Chained to the Rhythm.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5003" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5004" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 24540 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 24540 done 1.463 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M" "/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M" "/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2edb2170, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5061" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5062" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 24578 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 24578 done 1.333 s 
+Debug [AnalyserQueue 1]: Prioritizing "Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M" "/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M" "/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31cab130, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/youtube_2017_04_13/Bruno Mars - That’s What I Like [Official Video]-PMivT7MJ41M.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-07-28/05-French Montana - Unforgettable ft. Swae Lee.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "05-French Montana - Unforgettable ft. Swae Lee" "/amusic/billboard/latest/2017-07-28/05-French Montana - Unforgettable ft. Swae Lee.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x347bd980, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/latest/2017-07-28/05-French Montana - Unforgettable ft. Swae Lee.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "05-French Montana - Unforgettable ft. Swae Lee" "/amusic/billboard/latest/2017-07-28/05-French Montana - Unforgettable ft. Swae Lee.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5657" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5658" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 25831 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 25831 done 1.795 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 253106 allSignalSize 253106 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 5763 "2243177 (1086790 compressed)" bytes for track 25831 in 213 ms 
+Debug [Main]: Saved waveform analysis for trackId 25831 analysisId 5763 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.69064 audioVisualRatio 7174.2 
+Debug [Main]: AnalysisDAO saved analysis 5764 "34110 (17382 compressed)" bytes for track 25831 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 25831 analysisId 5764 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/top_2017_02/Luis Fonsi - Despacito ft. Daddy Yankee-kJQP7kiw5Fk.mp3)" QSize(0, 0) 
+Debug [Main]: Writing waveform from byte array: dataSize 200242 allSignalSize 200242 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 5765 "1734983 (836265 compressed)" bytes for track 22679 in 159 ms 
+Debug [Main]: Saved waveform analysis for trackId 22679 analysisId 5765 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.45702 audioVisualRatio 5214.6 
+Debug [Main]: AnalysisDAO saved analysis 5766 "33359 (16623 compressed)" bytes for track 22679 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 22679 analysisId 5766 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2006_Billboard_Top_Usa_Singles/074-Daddy_Yankee-Rompe.mp3)" QSize(0, 0) 
+Debug [Main]: Writing waveform from byte array: dataSize 190090 allSignalSize 190090 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 5767 "1731214 (835341 compressed)" bytes for track 25860 in 169 ms 
+Debug [Main]: Saved waveform analysis for trackId 25860 analysisId 5767 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.90869 audioVisualRatio 5388 
+Debug [Main]: AnalysisDAO saved analysis 5768 "34974 (17705 compressed)" bytes for track 25860 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 25860 analysisId 5768 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: Writing waveform from byte array: dataSize 185898 allSignalSize 185898 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 5769 "1655279 (792957 compressed)" bytes for track 24578 in 161 ms 
+Debug [Main]: Saved waveform analysis for trackId 24578 analysisId 5769 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.10954 audioVisualRatio 5269.2 
+Debug [Main]: AnalysisDAO saved analysis 5770 "34004 (17330 compressed)" bytes for track 24578 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 24578 analysisId 5770 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,00-va-now_thats_what_i_call_music_58-2016.jpg,28854,/amusic/billboard/now_thats_music/now_thats_music_58/VA-Now Thats What I Call Music 58 (2016)/04-the_chainsmokers_feat._rozes-roses.mp3)" QSize(300, 166) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 433 ms 22570 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 474 ms 22570 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 355 ms 28 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 343 ms 6 
+Debug [Main]: LibraryTableModel(0x4e9df60) select() took 331 ms 1 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Rae Sremmurd - Swang-dmJefsOErr0" "/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rae Sremmurd - Swang-dmJefsOErr0" "/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2edb2170, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 25047 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 25047 done 1.438 s 
+Debug [AnalyserQueue 1]: Prioritizing "Rae Sremmurd - Swang-dmJefsOErr0" "/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Rae Sremmurd - Swang-dmJefsOErr0" "/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31cab130, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Rae Sremmurd - Swang-dmJefsOErr0.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 236 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 26 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/475. Various - Pop Music, Vocal - Stereo Mc`s - Connected.mp3)" QSize(200, 200) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 6 ms 108 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x4f5d380) select() took 5 ms 92 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/shake_ya_ass/Iggy Azalea - Work (Explicit)-_zR6ROjoOX0.mp3)" QSize(0, 0) 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c1d6380)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/shake_ya_ass/Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ" "/amusic/youtube/playlists/shake_ya_ass/Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x347bd980, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/shake_ya_ass/Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Analyzing "Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ" "/amusic/youtube/playlists/shake_ya_ass/Flo Rida - GDFR ft. Sage The Gemini and Lookas [Official Video]-F8Cg572dafQ.mp3" 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23349 in 0 ms 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  1024 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  512 
+Debug [AnalyserQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyserQueue 1]: Vampanalyser BlockSize:  32768 
+Debug [AnalyserQueue 1]: Vampanalyser StepSize:  32768 
+Debug [AnalyserQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [AnalyserQueue 1]: Waveform generation for track 23349 done 8.207 s 
+Debug [AnalyserQueue 1]: Beat Calculation complete 
+Debug [AnalyserQueue 1]: Key Detection complete 
+Debug [AnalyserQueue 1]: Key Histogram 
+Debug [AnalyserQueue 1]: 2 : "D♭" 327680 
+Debug [AnalyserQueue 1]: 6 : "F" 1.14688e+06 
+Debug [AnalyserQueue 1]: 11 : "B♭" 3.01466e+06 
+Debug [AnalyserQueue 1]: 12 : "B" 98304 
+Debug [AnalyserQueue 1]: 13 : "Cm" 851968 
+Debug [AnalyserQueue 1]: 15 : "Dm" 1.83501e+06 
+Debug [AnalyserQueue 1]: 16 : "D♯m/E♭m" 294912 
+Debug [AnalyserQueue 1]: 18 : "Fm" 622592 
+Debug [AnalyserQueue 1]: 20 : "Gm" 1.28026e+06 
+Debug [AnalyserQueue 1]: 23 : "B♭m" 262144 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  4 
+Debug [Main]: save config  5 
 Debug [Main]: delete soundmanager  5 
-Debug [Main]: delete view  29 
+Debug [Main]: delete view  26 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
+Debug [Main]: ~WTrackTableView() 
+Debug [Main]: ~DlgTrackInfo() 
+Debug [Main]: ~WLibraryTableView 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -1142,43 +1158,62 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: ~WTrackTableView() 
-Debug [Main]: ~DlgTrackInfo() 
-Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  795 
+Debug [Main]: delete ControllerManager  824 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
+Debug [Controller]: "********* Starting Controller Shutdown ********** " 
+Debug [Controller]: "               Turning off LEDs" 
+Debug [Controller]: "********* Controller shutdown completed********* " 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  817 
-Debug [Main]: delete library scanner  819 
+Debug [Main]: delete vinylcontrolmanager  837 
+Debug [Main]: delete library scanner  839 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  819 
+Debug [Main]: delete library  839 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
 Debug [Main]: ~TrackCollection() 
+Debug [Main]: Writing waveform from byte array: dataSize 201710 allSignalSize 201710 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 5771 "1757065 (761960 compressed)" bytes for track 25047 in 151 ms 
+Debug [Main]: Saved waveform analysis for trackId 25047 analysisId 5771 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.39542 audioVisualRatio 5717.4 
+Debug [Main]: AnalysisDAO saved analysis 5772 "33316 (15517 compressed)" bytes for track 25047 in 1 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 25047 analysisId 5772 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x3b468a0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 194690 allSignalSize 194690 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 5773 "1754005 (495022 compressed)" bytes for track 23349 in 112 ms 
+Debug [Main]: Saved waveform analysis for trackId 23349 analysisId 5773 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.69822 audioVisualRatio 5070 
+Debug [Main]: AnalysisDAO saved analysis 5774 "34456 (10848 compressed)" bytes for track 23349 in 1 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 23349 analysisId 5774 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 207362 allSignalSize 207362 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 5775 "1866126 (906265 compressed)" bytes for track 24540 in 184 ms 
+Debug [Main]: Saved waveform analysis for trackId 24540 analysisId 5775 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.16667 audioVisualRatio 5400 
+Debug [Main]: AnalysisDAO saved analysis 5776 "34429 (17242 compressed)" bytes for track 24540 in 3 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 24540 analysisId 5776 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x4e9e7b0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1165 
+Debug [Main]: delete playerManager  2083 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1166 
+Debug [Main]: delete RecordingManager  2084 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1166 
+Debug [Main]: delete ShoutcastManager  2084 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1166 
+Debug [Main]: delete m_pEngine  2085 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -1188,15 +1223,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1190 
-Debug [Main]: deleting effects manager,  1201 
+Debug [Main]: deleting preferences,  2115 
+Debug [Main]: deleting effects manager,  2122 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x21f76e0) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x354c860) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x19233c0) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x21f3380) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2c78520) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3548440) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1227 
+Debug [Main]: delete config  2148 
 Debug [Main]: Mixxx shutdown complete with code 0 
