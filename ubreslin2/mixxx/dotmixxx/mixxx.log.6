@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2a5e150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x1fe2150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2a5e150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2a5e150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2a5e150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x1fe2150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x1fe2150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x1fe2150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -113,8 +113,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x7d6ac20) true 
-Debug [Main]: Created root GL Context valid: 0x2adb0010 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x72fa750) true 
+Debug [Main]: Created root GL Context valid: 0x72f52b0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -174,10 +174,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x50d1920) updateIndexWithQuery took 294 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2cb68440) select() took 457 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2cb68440) select() took 150 ms 0 
-Debug [Main]: DlgAnalysis(0x2c74dfa0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x465b0c0) updateIndexWithQuery took 295 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2c0ecbc0) select() took 448 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2c0ecbc0) select() took 147 ms 0 
+Debug [Main]: DlgAnalysis(0x2bcd2720, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -202,9 +202,9 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2ce162c0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2c39a860, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x50d35e0) select() took 380 ms 22570 
+Debug [Main]: LibraryTableModel(0x465a960) select() took 387 ms 22570 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
@@ -214,19 +214,16 @@ Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Controller]: Scanning HID devices: 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel MID: CX20585 Analog (hw:0,0)" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Controller]: Scanning HID devices: 
 Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c3c9490, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c3c9490, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c3c9490, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c3c9490, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b94cc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b94cc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b94cc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b94cc50, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]: Found "" "" "r277" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
@@ -258,6 +255,9 @@ Debug [Main]: Opened PortAudio stream successfully... starting
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel MID: CX20585 Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
@@ -267,486 +267,443 @@ Debug [Main]: ControllerManager::getControllerList
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3ae68900) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3ae68890) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3ae68820) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3ae687b0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3add5370) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2cc42250) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a1e11c0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2efee770) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x2ce713e0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x2efee980) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b9e62b0) 
-Debug [Main]: guess the size of the window decoration 
-Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x130f5bf0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x12a01fe0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x12a4c440) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x130fb3c0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3add53d0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x1340ba20) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x1340bc20) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3add0f30) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3add1110) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3add12f0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b9e6280) 
-Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x12d04850) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x1317b7c0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x131e5ba0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x13204ce0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x1322c9e0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x12e823f0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x12f75300) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x12fe7130) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x12f75250) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x13075850) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3add3b20) 
-Debug [Main]: LearningUtils guessing MIDI mapping from 4318 messages. 
-Debug [Main]: Opcode: 176 
-Debug [Main]: Channel: 1 
-Debug [Main]: Control: 56 
-Debug [Main]: Control: 24 
-Debug [Main]: Overall Value: 0 count 57 
-Debug [Main]: Overall Value: 1 count 39 
-Debug [Main]: Overall Value: 2 count 44 
-Debug [Main]: Overall Value: 3 count 51 
-Debug [Main]: Overall Value: 4 count 35 
-Debug [Main]: Overall Value: 5 count 36 
-Debug [Main]: Overall Value: 6 count 38 
-Debug [Main]: Overall Value: 7 count 41 
-Debug [Main]: Overall Value: 8 count 30 
-Debug [Main]: Overall Value: 9 count 31 
-Debug [Main]: Overall Value: 10 count 32 
-Debug [Main]: Overall Value: 11 count 36 
-Debug [Main]: Overall Value: 12 count 23 
-Debug [Main]: Overall Value: 13 count 29 
-Debug [Main]: Overall Value: 14 count 43 
-Debug [Main]: Overall Value: 15 count 28 
-Debug [Main]: Overall Value: 16 count 35 
-Debug [Main]: Overall Value: 17 count 31 
-Debug [Main]: Overall Value: 18 count 41 
-Debug [Main]: Overall Value: 19 count 32 
-Debug [Main]: Overall Value: 20 count 35 
-Debug [Main]: Overall Value: 21 count 25 
-Debug [Main]: Overall Value: 22 count 33 
-Debug [Main]: Overall Value: 23 count 29 
-Debug [Main]: Overall Value: 24 count 29 
-Debug [Main]: Overall Value: 25 count 34 
-Debug [Main]: Overall Value: 26 count 33 
-Debug [Main]: Overall Value: 27 count 29 
-Debug [Main]: Overall Value: 28 count 24 
-Debug [Main]: Overall Value: 29 count 36 
-Debug [Main]: Overall Value: 30 count 35 
-Debug [Main]: Overall Value: 31 count 26 
-Debug [Main]: Overall Value: 32 count 30 
-Debug [Main]: Overall Value: 33 count 35 
-Debug [Main]: Overall Value: 34 count 37 
-Debug [Main]: Overall Value: 35 count 29 
-Debug [Main]: Overall Value: 36 count 33 
-Debug [Main]: Overall Value: 37 count 35 
-Debug [Main]: Overall Value: 38 count 35 
-Debug [Main]: Overall Value: 39 count 34 
-Debug [Main]: Overall Value: 40 count 31 
-Debug [Main]: Overall Value: 41 count 32 
-Debug [Main]: Overall Value: 42 count 39 
-Debug [Main]: Overall Value: 43 count 42 
-Debug [Main]: Overall Value: 44 count 39 
-Debug [Main]: Overall Value: 45 count 37 
-Debug [Main]: Overall Value: 46 count 36 
-Debug [Main]: Overall Value: 47 count 38 
-Debug [Main]: Overall Value: 48 count 42 
-Debug [Main]: Overall Value: 49 count 34 
-Debug [Main]: Overall Value: 50 count 30 
-Debug [Main]: Overall Value: 51 count 41 
-Debug [Main]: Overall Value: 52 count 32 
-Debug [Main]: Overall Value: 53 count 29 
-Debug [Main]: Overall Value: 54 count 33 
-Debug [Main]: Overall Value: 55 count 33 
-Debug [Main]: Overall Value: 56 count 35 
-Debug [Main]: Overall Value: 57 count 31 
-Debug [Main]: Overall Value: 58 count 28 
-Debug [Main]: Overall Value: 59 count 45 
-Debug [Main]: Overall Value: 60 count 36 
-Debug [Main]: Overall Value: 61 count 47 
-Debug [Main]: Overall Value: 62 count 30 
-Debug [Main]: Overall Value: 63 count 39 
-Debug [Main]: Overall Value: 64 count 45 
-Debug [Main]: Overall Value: 65 count 28 
-Debug [Main]: Overall Value: 66 count 27 
-Debug [Main]: Overall Value: 67 count 40 
-Debug [Main]: Overall Value: 68 count 32 
-Debug [Main]: Overall Value: 69 count 36 
-Debug [Main]: Overall Value: 70 count 31 
-Debug [Main]: Overall Value: 71 count 26 
-Debug [Main]: Overall Value: 72 count 29 
-Debug [Main]: Overall Value: 73 count 32 
-Debug [Main]: Overall Value: 74 count 30 
-Debug [Main]: Overall Value: 75 count 22 
-Debug [Main]: Overall Value: 76 count 30 
-Debug [Main]: Overall Value: 77 count 29 
-Debug [Main]: Overall Value: 78 count 39 
-Debug [Main]: Overall Value: 79 count 24 
-Debug [Main]: Overall Value: 80 count 30 
-Debug [Main]: Overall Value: 81 count 30 
-Debug [Main]: Overall Value: 82 count 37 
-Debug [Main]: Overall Value: 83 count 24 
-Debug [Main]: Overall Value: 84 count 32 
-Debug [Main]: Overall Value: 85 count 29 
-Debug [Main]: Overall Value: 86 count 32 
-Debug [Main]: Overall Value: 87 count 38 
-Debug [Main]: Overall Value: 88 count 26 
-Debug [Main]: Overall Value: 89 count 31 
-Debug [Main]: Overall Value: 90 count 26 
-Debug [Main]: Overall Value: 91 count 35 
-Debug [Main]: Overall Value: 92 count 33 
-Debug [Main]: Overall Value: 93 count 28 
-Debug [Main]: Overall Value: 94 count 24 
-Debug [Main]: Overall Value: 95 count 31 
-Debug [Main]: Overall Value: 96 count 25 
-Debug [Main]: Overall Value: 97 count 33 
-Debug [Main]: Overall Value: 98 count 31 
-Debug [Main]: Overall Value: 99 count 29 
-Debug [Main]: Overall Value: 100 count 25 
-Debug [Main]: Overall Value: 101 count 36 
-Debug [Main]: Overall Value: 102 count 33 
-Debug [Main]: Overall Value: 103 count 25 
-Debug [Main]: Overall Value: 104 count 34 
-Debug [Main]: Overall Value: 105 count 42 
-Debug [Main]: Overall Value: 106 count 32 
-Debug [Main]: Overall Value: 107 count 34 
-Debug [Main]: Overall Value: 108 count 42 
-Debug [Main]: Overall Value: 109 count 34 
-Debug [Main]: Overall Value: 110 count 40 
-Debug [Main]: Overall Value: 111 count 31 
-Debug [Main]: Overall Value: 112 count 37 
-Debug [Main]: Overall Value: 113 count 33 
-Debug [Main]: Overall Value: 114 count 27 
-Debug [Main]: Overall Value: 115 count 38 
-Debug [Main]: Overall Value: 116 count 35 
-Debug [Main]: Overall Value: 117 count 44 
-Debug [Main]: Overall Value: 118 count 37 
-Debug [Main]: Overall Value: 119 count 36 
-Debug [Main]: Overall Value: 120 count 31 
-Debug [Main]: Overall Value: 121 count 37 
-Debug [Main]: Overall Value: 122 count 37 
-Debug [Main]: Overall Value: 123 count 37 
-Debug [Main]: Overall Value: 124 count 30 
-Debug [Main]: Overall Value: 125 count 32 
-Debug [Main]: Overall Value: 126 count 38 
-Debug [Main]: Overall Value: 127 count 50 
-Debug [Main]: "Control 24" Value: 0 count 33 
-Debug [Main]: "Control 24" Value: 1 count 20 
-Debug [Main]: "Control 24" Value: 2 count 22 
-Debug [Main]: "Control 24" Value: 3 count 21 
-Debug [Main]: "Control 24" Value: 4 count 20 
-Debug [Main]: "Control 24" Value: 5 count 19 
-Debug [Main]: "Control 24" Value: 6 count 19 
-Debug [Main]: "Control 24" Value: 7 count 15 
-Debug [Main]: "Control 24" Value: 8 count 18 
-Debug [Main]: "Control 24" Value: 9 count 20 
-Debug [Main]: "Control 24" Value: 10 count 18 
-Debug [Main]: "Control 24" Value: 11 count 21 
-Debug [Main]: "Control 24" Value: 12 count 16 
-Debug [Main]: "Control 24" Value: 13 count 17 
-Debug [Main]: "Control 24" Value: 14 count 21 
-Debug [Main]: "Control 24" Value: 15 count 17 
-Debug [Main]: "Control 24" Value: 16 count 18 
-Debug [Main]: "Control 24" Value: 17 count 15 
-Debug [Main]: "Control 24" Value: 18 count 20 
-Debug [Main]: "Control 24" Value: 19 count 18 
-Debug [Main]: "Control 24" Value: 20 count 19 
-Debug [Main]: "Control 24" Value: 21 count 14 
-Debug [Main]: "Control 24" Value: 22 count 17 
-Debug [Main]: "Control 24" Value: 23 count 19 
-Debug [Main]: "Control 24" Value: 24 count 13 
-Debug [Main]: "Control 24" Value: 25 count 17 
-Debug [Main]: "Control 24" Value: 26 count 18 
-Debug [Main]: "Control 24" Value: 27 count 18 
-Debug [Main]: "Control 24" Value: 28 count 12 
-Debug [Main]: "Control 24" Value: 29 count 19 
-Debug [Main]: "Control 24" Value: 30 count 15 
-Debug [Main]: "Control 24" Value: 31 count 12 
-Debug [Main]: "Control 24" Value: 32 count 18 
-Debug [Main]: "Control 24" Value: 33 count 16 
-Debug [Main]: "Control 24" Value: 34 count 16 
-Debug [Main]: "Control 24" Value: 35 count 16 
-Debug [Main]: "Control 24" Value: 36 count 18 
-Debug [Main]: "Control 24" Value: 37 count 19 
-Debug [Main]: "Control 24" Value: 38 count 16 
-Debug [Main]: "Control 24" Value: 39 count 13 
-Debug [Main]: "Control 24" Value: 40 count 15 
-Debug [Main]: "Control 24" Value: 41 count 19 
-Debug [Main]: "Control 24" Value: 42 count 18 
-Debug [Main]: "Control 24" Value: 43 count 21 
-Debug [Main]: "Control 24" Value: 44 count 18 
-Debug [Main]: "Control 24" Value: 45 count 18 
-Debug [Main]: "Control 24" Value: 46 count 18 
-Debug [Main]: "Control 24" Value: 47 count 20 
-Debug [Main]: "Control 24" Value: 48 count 23 
-Debug [Main]: "Control 24" Value: 49 count 16 
-Debug [Main]: "Control 24" Value: 50 count 16 
-Debug [Main]: "Control 24" Value: 51 count 17 
-Debug [Main]: "Control 24" Value: 52 count 17 
-Debug [Main]: "Control 24" Value: 53 count 18 
-Debug [Main]: "Control 24" Value: 54 count 18 
-Debug [Main]: "Control 24" Value: 55 count 15 
-Debug [Main]: "Control 24" Value: 56 count 15 
-Debug [Main]: "Control 24" Value: 57 count 17 
-Debug [Main]: "Control 24" Value: 58 count 17 
-Debug [Main]: "Control 24" Value: 59 count 20 
-Debug [Main]: "Control 24" Value: 60 count 18 
-Debug [Main]: "Control 24" Value: 61 count 19 
-Debug [Main]: "Control 24" Value: 62 count 14 
-Debug [Main]: "Control 24" Value: 63 count 16 
-Debug [Main]: "Control 24" Value: 64 count 23 
-Debug [Main]: "Control 24" Value: 65 count 17 
-Debug [Main]: "Control 24" Value: 66 count 15 
-Debug [Main]: "Control 24" Value: 67 count 17 
-Debug [Main]: "Control 24" Value: 68 count 13 
-Debug [Main]: "Control 24" Value: 69 count 16 
-Debug [Main]: "Control 24" Value: 70 count 15 
-Debug [Main]: "Control 24" Value: 71 count 14 
-Debug [Main]: "Control 24" Value: 72 count 18 
-Debug [Main]: "Control 24" Value: 73 count 13 
-Debug [Main]: "Control 24" Value: 74 count 16 
-Debug [Main]: "Control 24" Value: 75 count 11 
-Debug [Main]: "Control 24" Value: 76 count 19 
-Debug [Main]: "Control 24" Value: 77 count 13 
-Debug [Main]: "Control 24" Value: 78 count 18 
-Debug [Main]: "Control 24" Value: 79 count 13 
-Debug [Main]: "Control 24" Value: 80 count 16 
-Debug [Main]: "Control 24" Value: 81 count 14 
-Debug [Main]: "Control 24" Value: 82 count 18 
-Debug [Main]: "Control 24" Value: 83 count 12 
-Debug [Main]: "Control 24" Value: 84 count 16 
-Debug [Main]: "Control 24" Value: 85 count 15 
-Debug [Main]: "Control 24" Value: 86 count 10 
-Debug [Main]: "Control 24" Value: 87 count 19 
-Debug [Main]: "Control 24" Value: 88 count 9 
-Debug [Main]: "Control 24" Value: 89 count 18 
-Debug [Main]: "Control 24" Value: 90 count 14 
-Debug [Main]: "Control 24" Value: 91 count 17 
-Debug [Main]: "Control 24" Value: 92 count 11 
-Debug [Main]: "Control 24" Value: 93 count 16 
-Debug [Main]: "Control 24" Value: 94 count 14 
-Debug [Main]: "Control 24" Value: 95 count 17 
-Debug [Main]: "Control 24" Value: 96 count 12 
-Debug [Main]: "Control 24" Value: 97 count 15 
-Debug [Main]: "Control 24" Value: 98 count 16 
-Debug [Main]: "Control 24" Value: 99 count 15 
-Debug [Main]: "Control 24" Value: 100 count 15 
-Debug [Main]: "Control 24" Value: 101 count 17 
-Debug [Main]: "Control 24" Value: 102 count 17 
-Debug [Main]: "Control 24" Value: 103 count 13 
-Debug [Main]: "Control 24" Value: 104 count 17 
-Debug [Main]: "Control 24" Value: 105 count 19 
-Debug [Main]: "Control 24" Value: 106 count 13 
-Debug [Main]: "Control 24" Value: 107 count 18 
-Debug [Main]: "Control 24" Value: 108 count 17 
-Debug [Main]: "Control 24" Value: 109 count 16 
-Debug [Main]: "Control 24" Value: 110 count 17 
-Debug [Main]: "Control 24" Value: 111 count 17 
-Debug [Main]: "Control 24" Value: 112 count 15 
-Debug [Main]: "Control 24" Value: 113 count 17 
-Debug [Main]: "Control 24" Value: 114 count 13 
-Debug [Main]: "Control 24" Value: 115 count 20 
-Debug [Main]: "Control 24" Value: 116 count 15 
-Debug [Main]: "Control 24" Value: 117 count 19 
-Debug [Main]: "Control 24" Value: 118 count 19 
-Debug [Main]: "Control 24" Value: 119 count 16 
-Debug [Main]: "Control 24" Value: 120 count 16 
-Debug [Main]: "Control 24" Value: 121 count 19 
-Debug [Main]: "Control 24" Value: 122 count 17 
-Debug [Main]: "Control 24" Value: 123 count 17 
-Debug [Main]: "Control 24" Value: 124 count 16 
-Debug [Main]: "Control 24" Value: 125 count 16 
-Debug [Main]: "Control 24" Value: 126 count 20 
-Debug [Main]: "Control 24" Value: 127 count 27 
-Debug [Main]: "Control 56" Value: 0 count 24 
-Debug [Main]: "Control 56" Value: 1 count 19 
-Debug [Main]: "Control 56" Value: 2 count 22 
-Debug [Main]: "Control 56" Value: 3 count 30 
-Debug [Main]: "Control 56" Value: 4 count 15 
-Debug [Main]: "Control 56" Value: 5 count 17 
-Debug [Main]: "Control 56" Value: 6 count 19 
-Debug [Main]: "Control 56" Value: 7 count 26 
-Debug [Main]: "Control 56" Value: 8 count 12 
-Debug [Main]: "Control 56" Value: 9 count 11 
-Debug [Main]: "Control 56" Value: 10 count 14 
-Debug [Main]: "Control 56" Value: 11 count 15 
-Debug [Main]: "Control 56" Value: 12 count 7 
-Debug [Main]: "Control 56" Value: 13 count 12 
-Debug [Main]: "Control 56" Value: 14 count 22 
-Debug [Main]: "Control 56" Value: 15 count 11 
-Debug [Main]: "Control 56" Value: 16 count 17 
-Debug [Main]: "Control 56" Value: 17 count 16 
-Debug [Main]: "Control 56" Value: 18 count 21 
-Debug [Main]: "Control 56" Value: 19 count 14 
-Debug [Main]: "Control 56" Value: 20 count 16 
-Debug [Main]: "Control 56" Value: 21 count 11 
-Debug [Main]: "Control 56" Value: 22 count 16 
-Debug [Main]: "Control 56" Value: 23 count 10 
-Debug [Main]: "Control 56" Value: 24 count 16 
-Debug [Main]: "Control 56" Value: 25 count 17 
-Debug [Main]: "Control 56" Value: 26 count 15 
-Debug [Main]: "Control 56" Value: 27 count 11 
-Debug [Main]: "Control 56" Value: 28 count 12 
-Debug [Main]: "Control 56" Value: 29 count 17 
-Debug [Main]: "Control 56" Value: 30 count 20 
-Debug [Main]: "Control 56" Value: 31 count 14 
-Debug [Main]: "Control 56" Value: 32 count 12 
-Debug [Main]: "Control 56" Value: 33 count 19 
-Debug [Main]: "Control 56" Value: 34 count 21 
-Debug [Main]: "Control 56" Value: 35 count 13 
-Debug [Main]: "Control 56" Value: 36 count 15 
-Debug [Main]: "Control 56" Value: 37 count 16 
-Debug [Main]: "Control 56" Value: 38 count 19 
-Debug [Main]: "Control 56" Value: 39 count 21 
-Debug [Main]: "Control 56" Value: 40 count 16 
-Debug [Main]: "Control 56" Value: 41 count 13 
-Debug [Main]: "Control 56" Value: 42 count 21 
-Debug [Main]: "Control 56" Value: 43 count 21 
-Debug [Main]: "Control 56" Value: 44 count 21 
-Debug [Main]: "Control 56" Value: 45 count 19 
-Debug [Main]: "Control 56" Value: 46 count 18 
-Debug [Main]: "Control 56" Value: 47 count 18 
-Debug [Main]: "Control 56" Value: 48 count 19 
-Debug [Main]: "Control 56" Value: 49 count 18 
-Debug [Main]: "Control 56" Value: 50 count 14 
-Debug [Main]: "Control 56" Value: 51 count 24 
-Debug [Main]: "Control 56" Value: 52 count 15 
-Debug [Main]: "Control 56" Value: 53 count 11 
-Debug [Main]: "Control 56" Value: 54 count 15 
-Debug [Main]: "Control 56" Value: 55 count 18 
-Debug [Main]: "Control 56" Value: 56 count 20 
-Debug [Main]: "Control 56" Value: 57 count 14 
-Debug [Main]: "Control 56" Value: 58 count 11 
-Debug [Main]: "Control 56" Value: 59 count 25 
-Debug [Main]: "Control 56" Value: 60 count 18 
-Debug [Main]: "Control 56" Value: 61 count 28 
-Debug [Main]: "Control 56" Value: 62 count 16 
-Debug [Main]: "Control 56" Value: 63 count 23 
-Debug [Main]: "Control 56" Value: 64 count 22 
-Debug [Main]: "Control 56" Value: 65 count 11 
-Debug [Main]: "Control 56" Value: 66 count 12 
-Debug [Main]: "Control 56" Value: 67 count 23 
-Debug [Main]: "Control 56" Value: 68 count 19 
-Debug [Main]: "Control 56" Value: 69 count 20 
-Debug [Main]: "Control 56" Value: 70 count 16 
-Debug [Main]: "Control 56" Value: 71 count 12 
-Debug [Main]: "Control 56" Value: 72 count 11 
-Debug [Main]: "Control 56" Value: 73 count 19 
-Debug [Main]: "Control 56" Value: 74 count 14 
-Debug [Main]: "Control 56" Value: 75 count 11 
-Debug [Main]: "Control 56" Value: 76 count 11 
-Debug [Main]: "Control 56" Value: 77 count 16 
-Debug [Main]: "Control 56" Value: 78 count 21 
-Debug [Main]: "Control 56" Value: 79 count 11 
-Debug [Main]: "Control 56" Value: 80 count 14 
-Debug [Main]: "Control 56" Value: 81 count 16 
-Debug [Main]: "Control 56" Value: 82 count 19 
-Debug [Main]: "Control 56" Value: 83 count 12 
-Debug [Main]: "Control 56" Value: 84 count 16 
-Debug [Main]: "Control 56" Value: 85 count 14 
-Debug [Main]: "Control 56" Value: 86 count 22 
-Debug [Main]: "Control 56" Value: 87 count 19 
-Debug [Main]: "Control 56" Value: 88 count 17 
-Debug [Main]: "Control 56" Value: 89 count 13 
-Debug [Main]: "Control 56" Value: 90 count 12 
-Debug [Main]: "Control 56" Value: 91 count 18 
-Debug [Main]: "Control 56" Value: 92 count 22 
-Debug [Main]: "Control 56" Value: 93 count 12 
-Debug [Main]: "Control 56" Value: 94 count 10 
-Debug [Main]: "Control 56" Value: 95 count 14 
-Debug [Main]: "Control 56" Value: 96 count 13 
-Debug [Main]: "Control 56" Value: 97 count 18 
-Debug [Main]: "Control 56" Value: 98 count 15 
-Debug [Main]: "Control 56" Value: 99 count 14 
-Debug [Main]: "Control 56" Value: 100 count 10 
-Debug [Main]: "Control 56" Value: 101 count 19 
-Debug [Main]: "Control 56" Value: 102 count 16 
-Debug [Main]: "Control 56" Value: 103 count 12 
-Debug [Main]: "Control 56" Value: 104 count 17 
-Debug [Main]: "Control 56" Value: 105 count 23 
-Debug [Main]: "Control 56" Value: 106 count 19 
-Debug [Main]: "Control 56" Value: 107 count 16 
-Debug [Main]: "Control 56" Value: 108 count 25 
-Debug [Main]: "Control 56" Value: 109 count 18 
-Debug [Main]: "Control 56" Value: 110 count 23 
-Debug [Main]: "Control 56" Value: 111 count 14 
-Debug [Main]: "Control 56" Value: 112 count 22 
-Debug [Main]: "Control 56" Value: 113 count 16 
-Debug [Main]: "Control 56" Value: 114 count 14 
-Debug [Main]: "Control 56" Value: 115 count 18 
-Debug [Main]: "Control 56" Value: 116 count 20 
-Debug [Main]: "Control 56" Value: 117 count 25 
-Debug [Main]: "Control 56" Value: 118 count 18 
-Debug [Main]: "Control 56" Value: 119 count 20 
-Debug [Main]: "Control 56" Value: 120 count 15 
-Debug [Main]: "Control 56" Value: 121 count 18 
-Debug [Main]: "Control 56" Value: 122 count 20 
-Debug [Main]: "Control 56" Value: 123 count 20 
-Debug [Main]: "Control 56" Value: 124 count 14 
-Debug [Main]: "Control 56" Value: 125 count 16 
-Debug [Main]: "Control 56" Value: 126 count 18 
-Debug [Main]: "Control 56" Value: 127 count 23 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x38 Options: 0x1000" 
-Debug [Controller]: Set mapping for "0xB1 0x38" to "[Channel1]" "pitch_adjust" 
-Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x18 Options: 0x2000" 
-Debug [Controller]: Set mapping for "0xB1 0x18" to "[Channel1]" "pitch_adjust" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3ae7fab0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3accd1c0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3c1ff020) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3ae71ab0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x13238520) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x18d50130) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x12cf83b0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x1324f2b0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x131d4c30) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3c3d2ae0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x1322b840) 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: writing script block for "Numark-MixTrack-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3ade5540) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x7da52b0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3bf87ec0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x25319330) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x2808eec0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x130f7b70) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x130f7b90) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2ad6ce60) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x29bc5720) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x29bc5900) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b9e2520) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a3ecc50) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a3ecbe0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a3ecb70) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a3ecb00) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3a358e50) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x2c139750) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x396d2610) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x2f651190) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x39d5ab30) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3955ba30) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3af69a80) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2c40b890)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "'03 Bonnie And Clyde" "/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "'03 Bonnie And Clyde" "/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31aa0cd0, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2003_Billboard_Top_Usa_Singles/37-Jay-Z_Feat._Beyonce-03_Bonnie_And_Clyde.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/723" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/724" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2707" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2708" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4589" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4590" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1494722 bytes for track 13365 in 16 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 179736 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 9.42187 audioVisualRatio 4680.6 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2b98fff0)  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [AnalyserQueue 1]: Prioritizing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "...Baby One More Time" "/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x3144bba0, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,50513,/amusic/genres/club/Britney Spears/Greatest Hits My Prerogative/Britney Spears - ...Baby One More Time.mp3)" QSize(200, 198) 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1684693 bytes for track 1452 in 16 ms 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 187154 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.04838 audioVisualRatio 4873.8 
 Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
 Debug [AnalyserQueue 1]: Beat calculation will not start 
 Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyserQueue 1]: Key calculation will not start. 
 Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: guess the size of the window decoration 
+Debug [Controller]: "MixTrack 3 MIDI 1" started learning 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x25b0fc20) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x25770dc0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x25806d10) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x254ea210) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3a358eb0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x25ec2410) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x25ec2610) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a354a10) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a354bf0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3a354dd0) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3af69a50) 
+Debug [Main]: LearningUtils guessing MIDI mapping from 1526 messages. 
+Debug [Main]: Opcode: 176 
+Debug [Main]: Channel: 1 
+Debug [Main]: Control: 56 
+Debug [Main]: Control: 24 
+Debug [Main]: Overall Value: 0 count 29 
+Debug [Main]: Overall Value: 1 count 14 
+Debug [Main]: Overall Value: 2 count 17 
+Debug [Main]: Overall Value: 3 count 18 
+Debug [Main]: Overall Value: 4 count 12 
+Debug [Main]: Overall Value: 5 count 10 
+Debug [Main]: Overall Value: 6 count 15 
+Debug [Main]: Overall Value: 7 count 11 
+Debug [Main]: Overall Value: 8 count 13 
+Debug [Main]: Overall Value: 9 count 10 
+Debug [Main]: Overall Value: 10 count 13 
+Debug [Main]: Overall Value: 11 count 11 
+Debug [Main]: Overall Value: 12 count 11 
+Debug [Main]: Overall Value: 13 count 13 
+Debug [Main]: Overall Value: 14 count 12 
+Debug [Main]: Overall Value: 15 count 15 
+Debug [Main]: Overall Value: 16 count 18 
+Debug [Main]: Overall Value: 17 count 14 
+Debug [Main]: Overall Value: 18 count 17 
+Debug [Main]: Overall Value: 19 count 14 
+Debug [Main]: Overall Value: 20 count 14 
+Debug [Main]: Overall Value: 21 count 21 
+Debug [Main]: Overall Value: 22 count 13 
+Debug [Main]: Overall Value: 23 count 13 
+Debug [Main]: Overall Value: 24 count 16 
+Debug [Main]: Overall Value: 25 count 13 
+Debug [Main]: Overall Value: 26 count 13 
+Debug [Main]: Overall Value: 27 count 15 
+Debug [Main]: Overall Value: 28 count 16 
+Debug [Main]: Overall Value: 29 count 13 
+Debug [Main]: Overall Value: 30 count 11 
+Debug [Main]: Overall Value: 31 count 12 
+Debug [Main]: Overall Value: 32 count 20 
+Debug [Main]: Overall Value: 33 count 14 
+Debug [Main]: Overall Value: 34 count 12 
+Debug [Main]: Overall Value: 35 count 16 
+Debug [Main]: Overall Value: 36 count 17 
+Debug [Main]: Overall Value: 37 count 16 
+Debug [Main]: Overall Value: 38 count 9 
+Debug [Main]: Overall Value: 39 count 19 
+Debug [Main]: Overall Value: 40 count 16 
+Debug [Main]: Overall Value: 41 count 10 
+Debug [Main]: Overall Value: 42 count 11 
+Debug [Main]: Overall Value: 43 count 16 
+Debug [Main]: Overall Value: 44 count 17 
+Debug [Main]: Overall Value: 45 count 11 
+Debug [Main]: Overall Value: 46 count 16 
+Debug [Main]: Overall Value: 47 count 13 
+Debug [Main]: Overall Value: 48 count 13 
+Debug [Main]: Overall Value: 49 count 14 
+Debug [Main]: Overall Value: 50 count 13 
+Debug [Main]: Overall Value: 51 count 16 
+Debug [Main]: Overall Value: 52 count 16 
+Debug [Main]: Overall Value: 53 count 12 
+Debug [Main]: Overall Value: 54 count 12 
+Debug [Main]: Overall Value: 55 count 15 
+Debug [Main]: Overall Value: 56 count 15 
+Debug [Main]: Overall Value: 57 count 17 
+Debug [Main]: Overall Value: 58 count 20 
+Debug [Main]: Overall Value: 59 count 16 
+Debug [Main]: Overall Value: 60 count 19 
+Debug [Main]: Overall Value: 61 count 12 
+Debug [Main]: Overall Value: 62 count 17 
+Debug [Main]: Overall Value: 63 count 17 
+Debug [Main]: Overall Value: 64 count 19 
+Debug [Main]: Overall Value: 65 count 35 
+Debug [Main]: Overall Value: 66 count 8 
+Debug [Main]: Overall Value: 67 count 4 
+Debug [Main]: Overall Value: 68 count 10 
+Debug [Main]: Overall Value: 69 count 9 
+Debug [Main]: Overall Value: 70 count 11 
+Debug [Main]: Overall Value: 71 count 13 
+Debug [Main]: Overall Value: 72 count 9 
+Debug [Main]: Overall Value: 73 count 8 
+Debug [Main]: Overall Value: 74 count 11 
+Debug [Main]: Overall Value: 75 count 6 
+Debug [Main]: Overall Value: 76 count 9 
+Debug [Main]: Overall Value: 77 count 11 
+Debug [Main]: Overall Value: 78 count 6 
+Debug [Main]: Overall Value: 79 count 10 
+Debug [Main]: Overall Value: 80 count 9 
+Debug [Main]: Overall Value: 81 count 10 
+Debug [Main]: Overall Value: 82 count 7 
+Debug [Main]: Overall Value: 83 count 7 
+Debug [Main]: Overall Value: 84 count 5 
+Debug [Main]: Overall Value: 85 count 8 
+Debug [Main]: Overall Value: 86 count 11 
+Debug [Main]: Overall Value: 87 count 7 
+Debug [Main]: Overall Value: 88 count 12 
+Debug [Main]: Overall Value: 89 count 7 
+Debug [Main]: Overall Value: 90 count 10 
+Debug [Main]: Overall Value: 91 count 11 
+Debug [Main]: Overall Value: 92 count 11 
+Debug [Main]: Overall Value: 93 count 14 
+Debug [Main]: Overall Value: 94 count 7 
+Debug [Main]: Overall Value: 95 count 10 
+Debug [Main]: Overall Value: 96 count 11 
+Debug [Main]: Overall Value: 97 count 10 
+Debug [Main]: Overall Value: 98 count 9 
+Debug [Main]: Overall Value: 99 count 13 
+Debug [Main]: Overall Value: 100 count 9 
+Debug [Main]: Overall Value: 101 count 10 
+Debug [Main]: Overall Value: 102 count 5 
+Debug [Main]: Overall Value: 103 count 7 
+Debug [Main]: Overall Value: 104 count 10 
+Debug [Main]: Overall Value: 105 count 5 
+Debug [Main]: Overall Value: 106 count 6 
+Debug [Main]: Overall Value: 107 count 5 
+Debug [Main]: Overall Value: 108 count 11 
+Debug [Main]: Overall Value: 109 count 6 
+Debug [Main]: Overall Value: 110 count 6 
+Debug [Main]: Overall Value: 111 count 11 
+Debug [Main]: Overall Value: 112 count 8 
+Debug [Main]: Overall Value: 113 count 10 
+Debug [Main]: Overall Value: 114 count 10 
+Debug [Main]: Overall Value: 115 count 5 
+Debug [Main]: Overall Value: 116 count 6 
+Debug [Main]: Overall Value: 117 count 8 
+Debug [Main]: Overall Value: 118 count 5 
+Debug [Main]: Overall Value: 119 count 8 
+Debug [Main]: Overall Value: 120 count 9 
+Debug [Main]: Overall Value: 121 count 10 
+Debug [Main]: Overall Value: 122 count 5 
+Debug [Main]: Overall Value: 123 count 8 
+Debug [Main]: Overall Value: 124 count 9 
+Debug [Main]: Overall Value: 125 count 13 
+Debug [Main]: Overall Value: 126 count 9 
+Debug [Main]: Overall Value: 127 count 10 
+Debug [Main]: "Control 24" Value: 0 count 16 
+Debug [Main]: "Control 24" Value: 1 count 10 
+Debug [Main]: "Control 24" Value: 2 count 7 
+Debug [Main]: "Control 24" Value: 3 count 7 
+Debug [Main]: "Control 24" Value: 4 count 10 
+Debug [Main]: "Control 24" Value: 5 count 6 
+Debug [Main]: "Control 24" Value: 6 count 11 
+Debug [Main]: "Control 24" Value: 7 count 6 
+Debug [Main]: "Control 24" Value: 8 count 8 
+Debug [Main]: "Control 24" Value: 9 count 9 
+Debug [Main]: "Control 24" Value: 10 count 7 
+Debug [Main]: "Control 24" Value: 11 count 8 
+Debug [Main]: "Control 24" Value: 12 count 7 
+Debug [Main]: "Control 24" Value: 13 count 9 
+Debug [Main]: "Control 24" Value: 14 count 7 
+Debug [Main]: "Control 24" Value: 15 count 9 
+Debug [Main]: "Control 24" Value: 16 count 9 
+Debug [Main]: "Control 24" Value: 17 count 7 
+Debug [Main]: "Control 24" Value: 18 count 8 
+Debug [Main]: "Control 24" Value: 19 count 9 
+Debug [Main]: "Control 24" Value: 20 count 7 
+Debug [Main]: "Control 24" Value: 21 count 11 
+Debug [Main]: "Control 24" Value: 22 count 9 
+Debug [Main]: "Control 24" Value: 23 count 8 
+Debug [Main]: "Control 24" Value: 24 count 8 
+Debug [Main]: "Control 24" Value: 25 count 9 
+Debug [Main]: "Control 24" Value: 26 count 9 
+Debug [Main]: "Control 24" Value: 27 count 9 
+Debug [Main]: "Control 24" Value: 28 count 9 
+Debug [Main]: "Control 24" Value: 29 count 6 
+Debug [Main]: "Control 24" Value: 30 count 9 
+Debug [Main]: "Control 24" Value: 31 count 8 
+Debug [Main]: "Control 24" Value: 32 count 9 
+Debug [Main]: "Control 24" Value: 33 count 8 
+Debug [Main]: "Control 24" Value: 34 count 6 
+Debug [Main]: "Control 24" Value: 35 count 8 
+Debug [Main]: "Control 24" Value: 36 count 9 
+Debug [Main]: "Control 24" Value: 37 count 10 
+Debug [Main]: "Control 24" Value: 38 count 5 
+Debug [Main]: "Control 24" Value: 39 count 9 
+Debug [Main]: "Control 24" Value: 40 count 9 
+Debug [Main]: "Control 24" Value: 41 count 8 
+Debug [Main]: "Control 24" Value: 42 count 8 
+Debug [Main]: "Control 24" Value: 43 count 9 
+Debug [Main]: "Control 24" Value: 44 count 9 
+Debug [Main]: "Control 24" Value: 45 count 8 
+Debug [Main]: "Control 24" Value: 46 count 10 
+Debug [Main]: "Control 24" Value: 47 count 7 
+Debug [Main]: "Control 24" Value: 48 count 10 
+Debug [Main]: "Control 24" Value: 49 count 8 
+Debug [Main]: "Control 24" Value: 50 count 9 
+Debug [Main]: "Control 24" Value: 51 count 8 
+Debug [Main]: "Control 24" Value: 52 count 12 
+Debug [Main]: "Control 24" Value: 53 count 8 
+Debug [Main]: "Control 24" Value: 54 count 9 
+Debug [Main]: "Control 24" Value: 55 count 11 
+Debug [Main]: "Control 24" Value: 56 count 8 
+Debug [Main]: "Control 24" Value: 57 count 9 
+Debug [Main]: "Control 24" Value: 58 count 9 
+Debug [Main]: "Control 24" Value: 59 count 9 
+Debug [Main]: "Control 24" Value: 60 count 9 
+Debug [Main]: "Control 24" Value: 61 count 10 
+Debug [Main]: "Control 24" Value: 62 count 12 
+Debug [Main]: "Control 24" Value: 63 count 13 
+Debug [Main]: "Control 24" Value: 64 count 13 
+Debug [Main]: "Control 24" Value: 65 count 27 
+Debug [Main]: "Control 24" Value: 66 count 2 
+Debug [Main]: "Control 24" Value: 67 count 3 
+Debug [Main]: "Control 24" Value: 68 count 2 
+Debug [Main]: "Control 24" Value: 69 count 3 
+Debug [Main]: "Control 24" Value: 70 count 2 
+Debug [Main]: "Control 24" Value: 71 count 3 
+Debug [Main]: "Control 24" Value: 72 count 2 
+Debug [Main]: "Control 24" Value: 73 count 3 
+Debug [Main]: "Control 24" Value: 74 count 2 
+Debug [Main]: "Control 24" Value: 75 count 3 
+Debug [Main]: "Control 24" Value: 76 count 1 
+Debug [Main]: "Control 24" Value: 77 count 3 
+Debug [Main]: "Control 24" Value: 78 count 2 
+Debug [Main]: "Control 24" Value: 79 count 3 
+Debug [Main]: "Control 24" Value: 80 count 2 
+Debug [Main]: "Control 24" Value: 81 count 3 
+Debug [Main]: "Control 24" Value: 82 count 2 
+Debug [Main]: "Control 24" Value: 83 count 2 
+Debug [Main]: "Control 24" Value: 84 count 3 
+Debug [Main]: "Control 24" Value: 85 count 2 
+Debug [Main]: "Control 24" Value: 86 count 3 
+Debug [Main]: "Control 24" Value: 87 count 2 
+Debug [Main]: "Control 24" Value: 88 count 3 
+Debug [Main]: "Control 24" Value: 89 count 2 
+Debug [Main]: "Control 24" Value: 90 count 3 
+Debug [Main]: "Control 24" Value: 91 count 2 
+Debug [Main]: "Control 24" Value: 92 count 3 
+Debug [Main]: "Control 24" Value: 93 count 2 
+Debug [Main]: "Control 24" Value: 94 count 2 
+Debug [Main]: "Control 24" Value: 95 count 3 
+Debug [Main]: "Control 24" Value: 96 count 2 
+Debug [Main]: "Control 24" Value: 97 count 3 
+Debug [Main]: "Control 24" Value: 98 count 2 
+Debug [Main]: "Control 24" Value: 99 count 3 
+Debug [Main]: "Control 24" Value: 100 count 2 
+Debug [Main]: "Control 24" Value: 101 count 4 
+Debug [Main]: "Control 24" Value: 102 count 2 
+Debug [Main]: "Control 24" Value: 103 count 3 
+Debug [Main]: "Control 24" Value: 104 count 2 
+Debug [Main]: "Control 24" Value: 105 count 3 
+Debug [Main]: "Control 24" Value: 106 count 3 
+Debug [Main]: "Control 24" Value: 107 count 2 
+Debug [Main]: "Control 24" Value: 108 count 3 
+Debug [Main]: "Control 24" Value: 109 count 3 
+Debug [Main]: "Control 24" Value: 110 count 3 
+Debug [Main]: "Control 24" Value: 111 count 2 
+Debug [Main]: "Control 24" Value: 112 count 3 
+Debug [Main]: "Control 24" Value: 113 count 3 
+Debug [Main]: "Control 24" Value: 114 count 3 
+Debug [Main]: "Control 24" Value: 115 count 2 
+Debug [Main]: "Control 24" Value: 116 count 4 
+Debug [Main]: "Control 24" Value: 117 count 2 
+Debug [Main]: "Control 24" Value: 118 count 3 
+Debug [Main]: "Control 24" Value: 119 count 3 
+Debug [Main]: "Control 24" Value: 120 count 3 
+Debug [Main]: "Control 24" Value: 121 count 3 
+Debug [Main]: "Control 24" Value: 122 count 2 
+Debug [Main]: "Control 24" Value: 123 count 3 
+Debug [Main]: "Control 24" Value: 124 count 4 
+Debug [Main]: "Control 24" Value: 125 count 3 
+Debug [Main]: "Control 24" Value: 126 count 2 
+Debug [Main]: "Control 24" Value: 127 count 7 
+Debug [Main]: "Control 56" Value: 0 count 13 
+Debug [Main]: "Control 56" Value: 1 count 4 
+Debug [Main]: "Control 56" Value: 2 count 10 
+Debug [Main]: "Control 56" Value: 3 count 11 
+Debug [Main]: "Control 56" Value: 4 count 2 
+Debug [Main]: "Control 56" Value: 5 count 4 
+Debug [Main]: "Control 56" Value: 6 count 4 
+Debug [Main]: "Control 56" Value: 7 count 5 
+Debug [Main]: "Control 56" Value: 8 count 5 
+Debug [Main]: "Control 56" Value: 9 count 1 
+Debug [Main]: "Control 56" Value: 10 count 6 
+Debug [Main]: "Control 56" Value: 11 count 3 
+Debug [Main]: "Control 56" Value: 12 count 4 
+Debug [Main]: "Control 56" Value: 13 count 4 
+Debug [Main]: "Control 56" Value: 14 count 5 
+Debug [Main]: "Control 56" Value: 15 count 6 
+Debug [Main]: "Control 56" Value: 16 count 9 
+Debug [Main]: "Control 56" Value: 17 count 7 
+Debug [Main]: "Control 56" Value: 18 count 9 
+Debug [Main]: "Control 56" Value: 19 count 5 
+Debug [Main]: "Control 56" Value: 20 count 7 
+Debug [Main]: "Control 56" Value: 21 count 10 
+Debug [Main]: "Control 56" Value: 22 count 4 
+Debug [Main]: "Control 56" Value: 23 count 5 
+Debug [Main]: "Control 56" Value: 24 count 8 
+Debug [Main]: "Control 56" Value: 25 count 4 
+Debug [Main]: "Control 56" Value: 26 count 4 
+Debug [Main]: "Control 56" Value: 27 count 6 
+Debug [Main]: "Control 56" Value: 28 count 7 
+Debug [Main]: "Control 56" Value: 29 count 7 
+Debug [Main]: "Control 56" Value: 30 count 2 
+Debug [Main]: "Control 56" Value: 31 count 4 
+Debug [Main]: "Control 56" Value: 32 count 11 
+Debug [Main]: "Control 56" Value: 33 count 6 
+Debug [Main]: "Control 56" Value: 34 count 6 
+Debug [Main]: "Control 56" Value: 35 count 8 
+Debug [Main]: "Control 56" Value: 36 count 8 
+Debug [Main]: "Control 56" Value: 37 count 6 
+Debug [Main]: "Control 56" Value: 38 count 4 
+Debug [Main]: "Control 56" Value: 39 count 10 
+Debug [Main]: "Control 56" Value: 40 count 7 
+Debug [Main]: "Control 56" Value: 41 count 2 
+Debug [Main]: "Control 56" Value: 42 count 3 
+Debug [Main]: "Control 56" Value: 43 count 7 
+Debug [Main]: "Control 56" Value: 44 count 8 
+Debug [Main]: "Control 56" Value: 45 count 3 
+Debug [Main]: "Control 56" Value: 46 count 6 
+Debug [Main]: "Control 56" Value: 47 count 6 
+Debug [Main]: "Control 56" Value: 48 count 3 
+Debug [Main]: "Control 56" Value: 49 count 6 
+Debug [Main]: "Control 56" Value: 50 count 4 
+Debug [Main]: "Control 56" Value: 51 count 8 
+Debug [Main]: "Control 56" Value: 52 count 4 
+Debug [Main]: "Control 56" Value: 53 count 4 
+Debug [Main]: "Control 56" Value: 54 count 3 
+Debug [Main]: "Control 56" Value: 55 count 4 
+Debug [Main]: "Control 56" Value: 56 count 7 
+Debug [Main]: "Control 56" Value: 57 count 8 
+Debug [Main]: "Control 56" Value: 58 count 11 
+Debug [Main]: "Control 56" Value: 59 count 7 
+Debug [Main]: "Control 56" Value: 60 count 10 
+Debug [Main]: "Control 56" Value: 61 count 2 
+Debug [Main]: "Control 56" Value: 62 count 5 
+Debug [Main]: "Control 56" Value: 63 count 4 
+Debug [Main]: "Control 56" Value: 64 count 6 
+Debug [Main]: "Control 56" Value: 65 count 8 
+Debug [Main]: "Control 56" Value: 66 count 6 
+Debug [Main]: "Control 56" Value: 67 count 1 
+Debug [Main]: "Control 56" Value: 68 count 8 
+Debug [Main]: "Control 56" Value: 69 count 6 
+Debug [Main]: "Control 56" Value: 70 count 9 
+Debug [Main]: "Control 56" Value: 71 count 10 
+Debug [Main]: "Control 56" Value: 72 count 7 
+Debug [Main]: "Control 56" Value: 73 count 5 
+Debug [Main]: "Control 56" Value: 74 count 9 
+Debug [Main]: "Control 56" Value: 75 count 3 
+Debug [Main]: "Control 56" Value: 76 count 8 
+Debug [Main]: "Control 56" Value: 77 count 8 
+Debug [Main]: "Control 56" Value: 78 count 4 
+Debug [Main]: "Control 56" Value: 79 count 7 
+Debug [Main]: "Control 56" Value: 80 count 7 
+Debug [Main]: "Control 56" Value: 81 count 7 
+Debug [Main]: "Control 56" Value: 82 count 5 
+Debug [Main]: "Control 56" Value: 83 count 5 
+Debug [Main]: "Control 56" Value: 84 count 2 
+Debug [Main]: "Control 56" Value: 85 count 6 
+Debug [Main]: "Control 56" Value: 86 count 8 
+Debug [Main]: "Control 56" Value: 87 count 5 
+Debug [Main]: "Control 56" Value: 88 count 9 
+Debug [Main]: "Control 56" Value: 89 count 5 
+Debug [Main]: "Control 56" Value: 90 count 7 
+Debug [Main]: "Control 56" Value: 91 count 9 
+Debug [Main]: "Control 56" Value: 92 count 8 
+Debug [Main]: "Control 56" Value: 93 count 12 
+Debug [Main]: "Control 56" Value: 94 count 5 
+Debug [Main]: "Control 56" Value: 95 count 7 
+Debug [Main]: "Control 56" Value: 96 count 9 
+Debug [Main]: "Control 56" Value: 97 count 7 
+Debug [Main]: "Control 56" Value: 98 count 7 
+Debug [Main]: "Control 56" Value: 99 count 10 
+Debug [Main]: "Control 56" Value: 100 count 7 
+Debug [Main]: "Control 56" Value: 101 count 6 
+Debug [Main]: "Control 56" Value: 102 count 3 
+Debug [Main]: "Control 56" Value: 103 count 4 
+Debug [Main]: "Control 56" Value: 104 count 8 
+Debug [Main]: "Control 56" Value: 105 count 2 
+Debug [Main]: "Control 56" Value: 106 count 3 
+Debug [Main]: "Control 56" Value: 107 count 3 
+Debug [Main]: "Control 56" Value: 108 count 8 
+Debug [Main]: "Control 56" Value: 109 count 3 
+Debug [Main]: "Control 56" Value: 110 count 3 
+Debug [Main]: "Control 56" Value: 111 count 9 
+Debug [Main]: "Control 56" Value: 112 count 5 
+Debug [Main]: "Control 56" Value: 113 count 7 
+Debug [Main]: "Control 56" Value: 114 count 7 
+Debug [Main]: "Control 56" Value: 115 count 3 
+Debug [Main]: "Control 56" Value: 116 count 2 
+Debug [Main]: "Control 56" Value: 117 count 6 
+Debug [Main]: "Control 56" Value: 118 count 2 
+Debug [Main]: "Control 56" Value: 119 count 5 
+Debug [Main]: "Control 56" Value: 120 count 6 
+Debug [Main]: "Control 56" Value: 121 count 7 
+Debug [Main]: "Control 56" Value: 122 count 3 
+Debug [Main]: "Control 56" Value: 123 count 5 
+Debug [Main]: "Control 56" Value: 124 count 5 
+Debug [Main]: "Control 56" Value: 125 count 10 
+Debug [Main]: "Control 56" Value: 126 count 7 
+Debug [Main]: "Control 56" Value: 127 count 3 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x38 Options: 0x1000" 
+Debug [Controller]: Set mapping for "0xB1 0x38" to "[Channel1]" "pitch" 
+Debug [Main]: DlgControllerLearning learned input mapping: "Status: 0xB1 Control: 0x18 Options: 0x2000" 
+Debug [Controller]: Set mapping for "0xB1 0x18" to "[Channel1]" "pitch" 
 Debug [Main]: Destroying MixxxMainWindow 
 Debug [Main]: save config  4 
-Debug [Main]: delete soundmanager  5 
-Debug [Main]: delete view  12 
+Debug [Main]: delete soundmanager  6 
+Debug [Main]: delete view  21 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -766,37 +723,37 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  837 
+Debug [Main]: delete ControllerManager  804 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  860 
-Debug [Main]: delete library scanner  862 
+Debug [Main]: delete vinylcontrolmanager  819 
+Debug [Main]: delete library scanner  821 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  862 
+Debug [Main]: delete library  821 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  338 
 Debug [Main]: ~TrackCollection() 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x465b0c0) updateIndexWithQuery took 0 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  1097 
+Debug [Main]: delete playerManager  1152 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  1098 
+Debug [Main]: delete RecordingManager  1153 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  1098 
+Debug [Main]: delete ShoutcastManager  1153 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  1098 
+Debug [Main]: delete m_pEngine  1154 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -806,15 +763,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  1121 
-Debug [Main]: deleting effects manager,  1131 
+Debug [Main]: deleting preferences,  1176 
+Debug [Main]: deleting effects manager,  1187 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x37823b0) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2d06b30) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2eae0e0) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x377df90) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2432850) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2d02710) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  1155 
+Debug [Main]: delete config  1214 
 Debug [Main]: Mixxx shutdown complete with code 0 
