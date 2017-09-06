@@ -42,7 +42,7 @@ mreilly:Password1:1264:50:Margaret Reilley:/home/v1264:/bin/bash
 mdominick:Password1:1265:50:Matthew Dominick:/home/v1265:/bin/bash
 pkaiser:Password1:1267:50:Phyllis Kaiser:/home/v1267:/bin/bash
 clongwith:Password1:1268:50:Chris Longwith:/home/v1268:/bin/bash
-jbreslin:Iggles_13:1269:50:Jim Breslin:/home/v1269:/bin/bash
+jbreslin:Iggles_13:1269:50:Jim Breslin:/home/jbreslin:/bin/bash
 aortega:Password1:1270:50:Andreia Ortega:/home/v1270:/bin/bash
 emorlock:Password1:1271:50:Elizabeth Morlock:/home/v1271:/bin/bash
 nmuzychka:Password1:1272:50:Nicole Muzychka:/home/v1272:/bin/bash
