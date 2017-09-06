@@ -54,8 +54,6 @@ else
     echo "I'm 32-bit"
 fi
 
-
-
 echo remote
 sudo apt-get -y install remmina 
 sudo apt-get -y install remmina-plugin-vnc 
@@ -69,41 +67,24 @@ echo virtualbox
 #sudo apt-get -y install virtualbox-dkms
 
 echo
+echo
 echo ---------------------------------------------
 echo UBRESLIN: PROJECTS
 echo ---------------------------------------------
 echo projects
-cd /home/$1/sandbox
 
-if [ "$1" = "jbreslin" ]; then
-echo git clone https://github.com/jbreslin33/breslinmathracer.git
-sudo chown -R $1:$2 /home/$1/sandbox/breslinmathracer/
+git clone https://github.com/jbreslin33/breslinmathracer.git /home/$1/sandbox/breslinmathracer
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_jbreslin /etc/apache2/sites-available/000-default.conf
-fi
-
-if [ "$1" = "lbreslin" ]; then
-git clone https://github.com/jbreslin33/breslinmathracer.git
-sudo chown -R lbreslin:lbreslin /home/$1/sandbox/breslinmathracer/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_lbreslin /etc/apache2/sites-available/000-default.conf
-fi
-
-if [ "$1" = "bbreslin" ]; then
-git clone https://github.com/jbreslin33/breslinmathracer.git
-sudo chown -R bbreslin:bbreslin /home/$1/sandbox/breslinmathracer/
-sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/default_bbreslin /etc/apache2/sites-available/000-default.conf
-fi
 
 echo create db jamesanthony
 sudo -u postgres createdb jamesanthonybreslin
 
 echo
 echo ---------------------------------------------
-echo UBRESLIN: COPY FILES 
+echo UBRESLIN: COPY FILES
 echo ---------------------------------------------
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/apache.conf /etc/phppgadmin
-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/config.inc.php /etc/phppgadmin
-
 sudo cp /home/$1/sandbox/breslinserver/ubreslin2/dev/postgresql.conf /etc/postgresql/9.5/main
 
 sudo service apache2 reload
@@ -122,8 +103,11 @@ echo --------------------------------------------
 echo sudo -u postgres psql postgres
 echo  backslashpassword postgres dont forget to put a backslash before password, make postgres pass mibesfat
 
-echo for adding to db 
-echo sudo chmod -R 777 web/insert/
-
-echo from src/ dir run ./src/database/build_create_tables.sh
+echo for fresh 
+echo from src/ dir run ./src/database/backup/build.sh
 echo from src/ dir run ./src/database/build_insert.sh
+echo for latest 
+echo from src/ dir run ./src/database/backup/db_restore.sh
+echo from src/ dir run ./src/database/update.sh
+
+
