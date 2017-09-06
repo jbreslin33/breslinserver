@@ -5,7 +5,10 @@ sudo apt-get -y install
 sudo apt-get -y upgrade
 
 echo viso specific files
-sudo cp hosts /etc
+cp /etc/hosts originalhosts
+sudo echo "192.168.2.166    server" >> originalhosts
+sudo cp originalhosts /etc/hosts
+
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
 if [ `getconf LONG_BIT` = "64" ]
