@@ -66,5 +66,7 @@ sudo epoptes-client -c
 fi
 
 sudo newusers ../add_student_scripts/add_viso.txt
+echo add jbreslin to root
+sudo usermod -aG sudo jbreslin
 
 echo complete you can now reboot and login 
