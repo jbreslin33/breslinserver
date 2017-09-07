@@ -358,6 +358,8 @@ v1973:bib:1973:100:Nobody Nobody:/home/v1973:/bin/bash
 v1974:bib:1974:100:New Student:/home/v1974:/bin/bash
 v1975:bib:1975:100:Johnathan Valedon:/home/v1975:/bin/bash
 v1976:bib:1976:100:Carlos Flemings:/home/v1976:/bin/bash
+v1977:abe:1977:100:MarreroTurcios Lucardo:/home/v1977:/bin/bash
+v1978:ant:1978:100:VelezLara Bertha:/home/v1978:/bin/bash
 v2001:ahh:2001:100:Yandel Alvarez:/home/v2001:/bin/bash
 v2002:abs:2002:100:Shadir Brown:/home/v2002:/bin/bash
 v2003:ace:2003:100:Eliyah Clark:/home/v2003:/bin/bash
