@@ -432,6 +432,13 @@ v2069:cat:2069:100:Jon Crespo:/home/v2069:/bin/bash
 v2070:cat:2070:100:Brian Hernandez:/home/v2070:/bin/bash
 v2071:cat:2071:100:Nobody Nobody:/home/v2071:/bin/bash
 v2072:cat:2072:100:Isaiah Wallace:/home/v2072:/bin/bash
+v2073:cat:2073:100:Alvaro Sierra:/home/v2073:/bin/bash
+v2074:cat:2074:100:Jaden Camilo:/home/v2074:/bin/bash
+v2075:cat:2075:100:Luqmaan Evans:/home/v2075:/bin/bash
+v2076:cat:2076:100:Venus Mejia:/home/v2076:/bin/bash
+v2077:cat:2077:100:Fabianny Perez:/home/v2077:/bin/bash
+v2078:cat:2078:100:Natalya Rodriquez:/home/v2078:/bin/bash
+v2079:cat:2079:100:Jayden Rodriquez:/home/v2079:/bin/bash
 v2101:ahh:2101:100:Kayla Aponte:/home/v2101:/bin/bash
 v2102:abs:2102:100:Julian Aviles:/home/v2102:/bin/bash
 v2103:ace:2103:100:Yvanna Burgos:/home/v2103:/bin/bash
