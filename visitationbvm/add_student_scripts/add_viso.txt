@@ -53,6 +53,7 @@ apost:Password1:1276:50:Amanda Post:/home/v1276:/bin/bash
 msantana:Password1:1277:50:Manuel Santana:/home/v1277:/bin/bash
 dkokat:Password1:1278:50:Denise Kokat:/home/v1278:/bin/bash
 alugo:Password1:1279:50:Ana Lugo:/home/v1279:/bin/bash
+rlaughlin:Password1:1280:50:Ryan Laughlin:/home/rlaughlin:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
@@ -531,6 +532,10 @@ v2189:cat:2189:100:Sam Whitman:/home/v2189:/bin/bash
 v2190:cat:2190:100:Nobody Nobody:/home/v2190:/bin/bash
 v2191:cat:2191:100:Natalia Graham:/home/v2191:/bin/bash
 v2192:cat:2192:100:Carisa Benitez:/home/v2192:/bin/bash
+v2193:bat:2193:100:Jorge Camilo:/home/v2193:/bin/bash
+v2194:sat:2194:100:Daniella Diaz:/home/v2194:/bin/bash
+v2195:cat:2195:100:Michael Greene:/home/v2195:/bin/bash
+v2196:mat:2196:100:Julianna Mercado:/home/v2196:/bin/bash
 v2201:ahh:2201:100:Christopher Barton:/home/v2201:/bin/bash
 v2202:abc:2202:100:Zuyanah Berdicia:/home/v2202:/bin/bash
 v2203:ace:2203:100:Albert Bobe:/home/v2203:/bin/bash
@@ -618,6 +623,11 @@ v2284:cat:2284:100:Chris Fuentez:/home/v2284:/bin/bash
 v2285:cat:2285:100:Anthony Davila:/home/v2285:/bin/bash
 v2286:bat:2286:100:Leanni Hernandez:/home/v2286:/bin/bash
 v2287:bat:2287:100:Alejandro Nicasio:/home/v2287:/bin/bash
+v2288:bat:2288:100:Alexander DejesusTejada:/home/v2288:/bin/bash
+v2289:bat:2289:100:Haille Torres:/home/v2289:/bin/bash
+v2290:bat:2290:100:Daniela Feliciano:/home/v2290:/bin/bash
+v2291:bat:2291:100:Robert Mokshefsky:/home/v2291:/bin/bash
+v2292:bat:2292:100:Royce Weldon:/home/v2292:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
@@ -693,11 +703,11 @@ v2372:cat:2372:100:Nelson Cruz:/home/v2372:/bin/bash
 v2373:cat:2373:100:Jhadiel Guzman:/home/v2373:/bin/bash
 v2374:cat:2374:100:Anaysha Vazquez:/home/v2374:/bin/bash
 v2375:cat:2375:100:Jayla Nguyen:/home/v2375:/bin/bash
-v2376:cat:2376:100:New Student:/home/v2376:/bin/bash
-v2377:cat:2377:100:New Student:/home/v2377:/bin/bash
-v2378:cat:2378:100:New Student:/home/v2378:/bin/bash
-v2379:cat:2379:100:New Student:/home/v2379:/bin/bash
-v2380:cat:2380:100:New Student:/home/v2380:/bin/bash
+v2376:cat:2376:100:Nathan Feliciano:/home/v2376:/bin/bash
+v2377:cat:2377:100:Tymir Gutzmore:/home/v2377:/bin/bash
+v2378:cat:2378:100:Nasharie Vasquez:/home/v2378:/bin/bash
+v2379:cat:2379:100:Hasson Lynch:/home/v2379:/bin/bash
+v2380:cat:2380:100:Jazzlyn Pich:/home/v2380:/bin/bash
 v2381:cat:2381:100:New Student:/home/v2381:/bin/bash
 v2382:cat:2382:100:New Student:/home/v2382:/bin/bash
 v2383:cat:2383:100:New Student:/home/v2383:/bin/bash
