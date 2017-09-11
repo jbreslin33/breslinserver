@@ -6,7 +6,7 @@ sudo apt-get -y upgrade
 
 echo viso specific files
 cp /etc/hosts originalhosts
-sudo echo "192.168.2.166    server" >> originalhosts
+sudo echo "192.168.2.105    server" >> originalhosts
 sudo cp originalhosts /etc/hosts
 
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
