@@ -45,8 +45,16 @@ sudo apt-get -y install minetest
 sudo apt-get -y install triplea 
 sudo apt-get -y install chessx
 
+echo add new users
+
+sudo newusers ../add_student_scripts/add_viso.txt
+
 if [ "$1" = "admin" ]; then
 echo admin specific setup
+
+echo add jbreslin to root
+sudo usermod -aG sudo jbreslin
+
 sudo apt-get -y remove epoptes
 sudo apt-get -y install epoptes
 sudo gpasswd -a student epoptes
@@ -56,7 +64,6 @@ sudo apt-get -y install rdesktop
 echo install clusterssh
 sudo apt-get -y install clusterssh
 
-
 else
 echo epop
 sudo apt-get -y remove epoptes-client
@@ -64,9 +71,5 @@ sudo apt-get -y install epoptes-client
 sudo epoptes-client -c
 
 fi
-
-sudo newusers ../add_student_scripts/add_viso.txt
-echo add jbreslin to root
-sudo usermod -aG sudo jbreslin
 
 echo complete you can now reboot and login 
