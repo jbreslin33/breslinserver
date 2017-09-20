@@ -54,6 +54,7 @@ msantana:Password1:1277:50:Manuel Santana:/home/v1277:/bin/bash
 dkokat:Password1:1278:50:Denise Kokat:/home/v1278:/bin/bash
 alugo:Password1:1279:50:Ana Lugo:/home/v1279:/bin/bash
 rlaughlin:Password1:1280:50:Ryan Laughlin:/home/rlaughlin:/bin/bash
+msarli:Password1:1281:50:Madeline Sarli:/home/msarli:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
@@ -628,6 +629,7 @@ v2289:bat:2289:100:Haille Torres:/home/v2289:/bin/bash
 v2290:bat:2290:100:Daniela Feliciano:/home/v2290:/bin/bash
 v2291:bat:2291:100:Robert Mokshefsky:/home/v2291:/bin/bash
 v2292:bat:2292:100:Royce Weldon:/home/v2292:/bin/bash
+v2293:bat:2293:100:Deonte Banks:/home/v2293:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
