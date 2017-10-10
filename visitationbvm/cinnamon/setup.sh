@@ -35,7 +35,6 @@ sudo apt-get -y install ssh
 echo install browsers
 sudo apt-get -y install chromium-browser
 
-
 echo install games
 sudo apt-get -y install tuxmath
 sudo apt-get -y install tuxtype
@@ -45,8 +44,10 @@ sudo apt-get -y install minetest
 sudo apt-get -y install triplea 
 sudo apt-get -y install chessx
 
-echo add new users
+echo install misc
+sudo apt-get -y install wine
 
+echo add new users
 sudo newusers ../add_student_scripts/add_viso.txt
 
 if [ "$1" = "admin" ]; then
@@ -69,7 +70,6 @@ echo epop
 sudo apt-get -y remove epoptes-client
 sudo apt-get -y install epoptes-client
 sudo epoptes-client -c
-
 fi
 
 echo complete you can now reboot and login 
