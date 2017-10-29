@@ -20,7 +20,8 @@ sudo LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 sudo apt-get -y update
 sudo apt-get -y install php
 
-sudo apt-get -y install postgresql
+sudo apt-get -y install postgresql-9.5
+
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install vlc
