@@ -631,6 +631,7 @@ v2290:bat:2290:100:Daniela Feliciano:/home/v2290:/bin/bash
 v2291:bat:2291:100:Robert Mokshefsky:/home/v2291:/bin/bash
 v2292:bat:2292:100:Royce Weldon:/home/v2292:/bin/bash
 v2293:bat:2293:100:Deonte Banks:/home/v2293:/bin/bash
+v2294:bat:2294:100:Darwin Rodriquez:/home/v2294:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
@@ -769,7 +770,7 @@ v2436:bat:2436:100:Rylee Hibib:/home/v2436:/bin/bash
 v2437:bay:2437:100:Kelvin GomezMartinez:/home/v2437:/bin/bash
 v2438:bed:2438:100:Mia Navas:/home/v2438:/bin/bash
 v2439:bee:2439:100:Diego Torres:/home/v2439:/bin/bash
-v2440:beg:2440:100:New Student:/home/v2440:/bin/bash
+v2440:beg:2440:100:Darien Bonnila:/home/v2440:/bin/bash
 v2441:ben:2441:100:New Student:/home/v2441:/bin/bash
 v2442:bet:2442:100:New Student:/home/v2442:/bin/bash
 v2443:bib:2443:100:New Student:/home/v2443:/bin/bash
