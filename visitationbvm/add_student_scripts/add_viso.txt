@@ -235,7 +235,7 @@ v1814:app:1814:100:Christopher Martinez:/home/v1814:/bin/bash
 v1815:apt:1815:100:Miguel Martinez:/home/v1815:/bin/bash
 v1816:arc:1816:100:Milagros Mejia:/home/v1816:/bin/bash
 v1817:arf:1817:100:Christina Negron:/home/v1817:/bin/bash
-v1818:ark:1818:100:Minh Nguyen:/home/v1818:/bin/bash
+v1818:ark:1818:100:Minhtai Nguyen:/home/v1818:/bin/bash
 v1819:arm:1819:100:Charil Nolasco:/home/v1819:/bin/bash
 v1820:art:1820:100:Brian Ramos:/home/v1820:/bin/bash
 v1821:ash:1821:100:Ashley Rivera:/home/v1821:/bin/bash
