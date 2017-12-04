@@ -53,7 +53,6 @@ apost:Password1:1276:50:Amanda Post:/home/v1276:/bin/bash
 msantana:Password1:1277:50:Manuel Santana:/home/v1277:/bin/bash
 dkokat:Password1:1278:50:Denise Kokat:/home/v1278:/bin/bash
 alugo:Password1:1279:50:Ana Lugo:/home/v1279:/bin/bash
-rlaughlin:Password1:1280:50:Ryan Laughlin:/home/rlaughlin:/bin/bash
 msarli:Password1:1281:50:Madeline Sarli:/home/msarli:/bin/bash
 bmcgrath:Password1:1282:50:Bridget Mcgrath:/home/bmcgrath:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
