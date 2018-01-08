@@ -67,6 +67,10 @@ echo virtualbox
 #sudo apt-get -y remove --purge virtualbox-dkms
 #sudo apt-get -y install virtualbox-dkms
 
+echo kvm
+sudo apt-get install qemu-kvm libvirt-bin bridge-utils
+sudo adduser jbreslin libvirt
+
 echo
 echo
 echo ---------------------------------------------
