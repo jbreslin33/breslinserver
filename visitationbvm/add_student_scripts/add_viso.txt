@@ -55,6 +55,7 @@ dkokat:Password1:1278:50:Denise Kokat:/home/v1278:/bin/bash
 alugo:Password1:1279:50:Ana Lugo:/home/v1279:/bin/bash
 msarli:Password1:1281:50:Madeline Sarli:/home/msarli:/bin/bash
 bmcgrath:Password1:1282:50:Bridget Mcgrath:/home/bmcgrath:/bin/bash
+vizogclass:Password1:1283:50:Vizo Classroom:/home/vizogclass:/bin/bash
 v1501:ahh:1501:100:Keaira Archie:/home/v1501:/bin/bash
 v1502:abs:1502:100:Jacin Aviles:/home/v1502:/bin/bash
 v1503:ace:1503:100:Tony Boose:/home/v1503:/bin/bash
