@@ -858,7 +858,7 @@ v2522:ask:2522:100:Daven Lin:/home/v2522:/bin/bash
 v2523:big:2523:100:Mason Mack:/home/v2523:/bin/bash
 v2524:ave:2524:100:Kaylee Martinez:/home/v2524:/bin/bash
 v2525:awe:2525:100:Kyear McCutchen:/home/v2525:/bin/bash
-v2526:axe:2526:100:Jayquan Morales:/home/v2526:/bin/bash
+v2526:axe:2526:100:Chase Morales:/home/v2526:/bin/bash
 v2527:aye:2527:100:DiAmora Navarreto:/home/v2527:/bin/bash
 v2528:ays:2528:100:Lyna Nguyen:/home/v2528:/bin/bash
 v2529:baa:2529:100:Isabella Pagan:/home/v2529:/bin/bash
