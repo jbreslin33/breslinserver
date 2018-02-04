@@ -106,8 +106,6 @@ echo
 echo --------------------------------------------
 echo UBRESLIN: POSTGRESQL
 echo --------------------------------------------
-echo sudo -u postgres psql postgres
-echo  backslashpassword postgres dont forget to put a backslash before password, make postgres pass mibesfat
 
 echo for fresh 
 echo from src/ dir run ./src/database/backup/build.sh
@@ -115,5 +113,8 @@ echo from src/ dir run ./src/database/build_insert.sh
 echo for latest 
 echo from src/ dir run ./src/database/backup/db_restore.sh
 echo from src/ dir run ./src/database/update.sh
+
+echo  backslashpassword postgres dont forget to put a backslash before password, make postgres pass mibesfat
+sudo -u postgres psql postgres
 
 
