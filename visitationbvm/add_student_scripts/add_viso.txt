@@ -776,7 +776,7 @@ v2438:bed:2438:100:Mia Navas:/home/v2438:/bin/bash
 v2439:bee:2439:100:Diego Torres:/home/v2439:/bin/bash
 v2440:beg:2440:100:Darien Bonnila:/home/v2440:/bin/bash
 v2441:ben:2441:100:Nathan Valedon:/home/v2441:/bin/bash
-v2442:bet:2442:100:New Student:/home/v2442:/bin/bash
+v2442:bet:2442:100:John Duong:/home/v2442:/bin/bash
 v2443:bib:2443:100:New Student:/home/v2443:/bin/bash
 v2444:bid:2444:100:New Student:/home/v2444:/bin/bash
 v2445:big:2445:100:New Student:/home/v2445:/bin/bash
