@@ -636,6 +636,7 @@ v2291:bat:2291:100:Robert Mokshefsky:/home/v2291:/bin/bash
 v2292:bat:2292:100:Royce Weldon:/home/v2292:/bin/bash
 v2293:bat:2293:100:Deonte Banks:/home/v2293:/bin/bash
 v2294:bat:2294:100:Darwin Rodriquez:/home/v2294:/bin/bash
+v2295:ays:2295:100:Luigi Baez:/home/v2295:/bin/bash
 v2301:ahh:2301:100:Joshua Delvalle:/home/v2301:/bin/bash
 v2302:abc:2302:100:Carlos Gomez:/home/v2302:/bin/bash
 v2303:ace:2303:100:Desiree Guevera:/home/v2303:/bin/bash
