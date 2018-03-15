@@ -8,6 +8,7 @@ echo viso specific files
 cp /etc/hosts originalhosts
 echo remove old epop server reference
 sed -i '/192.168.2.105    server/d' ./originalhosts
+sed -i '/192.168.4.10    server/d' ./originalhosts
 echo add new server reference
 sudo echo "192.168.4.10    server" >> originalhosts
 sudo cp originalhosts /etc/hosts
