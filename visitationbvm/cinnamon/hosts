@@ -1,5 +1,5 @@
 127.0.0.1	localhost
-127.0.1.1	lab00
+127.0.1.1	r2600
 
 192.168.2.117	r2601
 192.168.2.134	r2602
@@ -43,14 +43,9 @@
 #192.168.2.187	r2632
 
 
-
-
-
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-192.168.2.105    server
-192.168.2.105    server
