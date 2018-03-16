@@ -68,6 +68,12 @@ echo virtualbox
 #sudo apt-get -y install virtualbox-dkms
 #sudo apt-get -y install virtualbox-qt
 
+/echo woeusb
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt update
+sudo apt install woeusb
+
+
 echo kvm
 sudo apt-get install qemu-kvm libvirt-bin bridge-utils
 sudo adduser jbreslin libvirt
