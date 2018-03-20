@@ -164,22 +164,22 @@
             </control>
             <control>
                 <group>[Channel1]</group>
-                <key>NumarkMixtrack3.reloop_exit</key>
-                <description>Channel 1 loop on/off button</description>
+                <key>play_stutter</key>
+                <description>MIDI Learned from 2 messages.</description>
                 <status>0x91</status>
                 <midino>0x15</midino>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
                 <group>[Channel2]</group>
-                <key>NumarkMixtrack3.reloop_exit</key>
-                <description>Channel 2 loop on/off button</description>
+                <key>play_stutter</key>
+                <description>MIDI Learned from 2 messages.</description>
                 <status>0x92</status>
                 <midino>0x15</midino>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
