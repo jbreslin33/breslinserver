@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x20fe150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x27a0150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x20fe150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x20fe150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x20fe150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x27a0150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x27a0150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x27a0150, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -114,8 +114,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2a49b190) true 
-Debug [Main]: Created root GL Context valid: 0x2a49f6f0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2ab3adb0) true 
+Debug [Main]: Created root GL Context valid: 0x2ab3f500 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -175,10 +175,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 311 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2c1b5aa0) select() took 461 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2c1b5aa0) select() took 146 ms 0 
-Debug [Main]: DlgAnalysis(0x2bda06b0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x4d82a80) updateIndexWithQuery took 316 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2c855810) select() took 508 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x2c855810) select() took 153 ms 0 
+Debug [Main]: DlgAnalysis(0x2c440440, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -203,42 +203,30 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2c464180, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2cb446d0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 187 ms 22810 
+Debug [Main]: LibraryTableModel(0x4d7f8f0) select() took 197 ms 22810 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
-Debug [Main]: Starting LibraryScanner thread. 
 Debug [Controller]: Scanning PortMIDI devices: 
+Debug [Main]: Starting LibraryScanner thread. 
+Debug [Main]: SoundManager::setupDevices() 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c093840, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c093840, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c093840, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c093840, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: Opening stream with id 0 
+Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
 Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
-Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDevicePortAudio::open() "3, USB Audio CODEC: - (hw:1,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 3 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b9f3b40, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b9f3b40, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b9f3b40, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b9f3b40, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
@@ -249,32 +237,33 @@ Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
 Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
 Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Applying controller preset... 
 Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
 Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Main]: PortAudio: Started stream successfully 
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1" 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
+Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1" 
+Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
+Debug [Controller]: Applying controller preset... 
+Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Main]: ControllerManager::getControllerList 
 Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
 Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Main]: ControllerManager::getControllerList 
 Debug [Controller]: "********* Initialisation process engaged *****************" 
 Debug [Controller]: "              Mapping initialization" 
 Debug [Controller]: "" 
@@ -312,6 +301,9 @@ Debug [Controller]: ""
 Debug [Controller]: "==========================================================" 
 Debug [Controller]: "         Connect controls and triggers deck 1" 
 Debug [Controller]: "" 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
 Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect1]" "enabled" 
 Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect2]" "enabled" 
 Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect3]" "enabled" 
@@ -376,1030 +368,28 @@ Debug [Controller]: Connection: "[Channel2]" "beatloop_1_enabled"
 Debug [Controller]: Connection: "[Channel2]" "beatloop_0.5_enabled" 
 Debug [Controller]: Connection: "[Channel2]" "beatloop_0.25_enabled" 
 Debug [Controller]: Connection: "[Channel2]" "beatloop_0.125_enabled" 
-Debug []: SSE: Enabling denormals to zero mode 
 Debug [Controller]: "" 
-Debug []: SSE: Enabling flush to zero mode 
 Debug [Controller]: "               Initialisation completed" 
-Debug []: SSE: Denormals to zero mode is working 
 Debug [Controller]: "==========================================================" 
 Debug [Controller]: "" 
 Debug [Controller]: "*********      Controller is ready      *******************" 
 Debug [Controller]: "********* End of Initialisation process *******************" 
 Debug [Controller]: Controller polling started. 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a209bd0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a209b60) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a209af0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a209a80) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3a577320) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x39fa14b0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x39fa1440) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x39fa13d0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x39fa1360) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x39fa12f0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3ad9be30) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2327" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2328" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2465" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2466" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2585" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2586" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1380201 bytes for track 22639 in 16 ms 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 149.639 EntrytoDac: 24217 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 25 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/sports/eagles/FLY EAGLES FLY.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "FLY EAGLES FLY" "/amusic/sports/eagles/FLY EAGLES FLY.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "FLY EAGLES FLY" "/amusic/sports/eagles/FLY EAGLES FLY.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/sports/eagles/FLY EAGLES FLY.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1505" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1506" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3083" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3084" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 307034 bytes for track 17138 in 5 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 32994 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 51.3268 audioVisualRatio 859.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 205 ms 22810 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 265 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 337 ms 1807 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 268 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 337 ms 21 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 337 ms 18 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/disco/Kool and the Gang - Celebration.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Celebration" "/amusic/genres/disco/Kool and the Gang - Celebration.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/disco/Kool and the Gang - Celebration.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Celebration" "/amusic/genres/disco/Kool and the Gang - Celebration.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1071" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1072" length 0 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 193.687 EntrytoDac: 23492 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1662018 bytes for track 2508 in 19 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 198790 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.51878 audioVisualRatio 5176.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 18 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 341 ms 18 
-Debug [Main]: WSearchLineEdit::restoreSearch( "celebra" ) 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 272 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 336 ms 78 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 330 ms 43 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3)" QSize(200, 198) 
-Debug [AnalyserQueue 1]: Prioritizing "Purple Rain" "/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Purple Rain" "/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3)" QSize(200, 198) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 3864596 bytes for track 2135 in 39 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 459396 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 3.68624 audioVisualRatio 11963.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 329 ms 433 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 328 ms 16 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3555" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3556" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2632167 bytes for track 4970 in 28 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 292356 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 5.79242 audioVisualRatio 7613.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 5 ms 54 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 21 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 2 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [AnalyserQueue 1]: Prioritizing "This Is How We Do It" "/amusic/genres/urban/breslin/Montell Jordan - This Is How We Do It.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "This Is How We Do It" "/amusic/genres/urban/breslin/Montell Jordan - This Is How We Do It.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/393" length 0 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,27288,/amusic/genres/urban/breslin/Montell Jordan - This Is How We Do It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/394" length 0 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,27288,/amusic/genres/urban/breslin/Montell Jordan - This Is How We Do It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1608874 bytes for track 4998 in 18 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 187016 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.05507 audioVisualRatio 4870.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 5 ms 5 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 54 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 5 ms 7 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,50104,/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "Good Feeling" "/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,50104,/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Analyzing "Good Feeling" "/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1933408 bytes for track 7342 in 22 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 217914 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.7712 audioVisualRatio 5674.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 43 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "DOO DOO BROWN" "/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "DOO DOO BROWN" "/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/271" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/272" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2493559 bytes for track 17508 in 26 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 297794 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 5.68665 audioVisualRatio 7755 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/Diamond Girl (Freestyle).mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Diamond Girl (Freestyle)" "/amusic/djs/Bobby/Diamond Girl (Freestyle).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/Diamond Girl (Freestyle).mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Analyzing "Diamond Girl (Freestyle)" "/amusic/djs/Bobby/Diamond Girl (Freestyle).mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/959" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/960" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3055" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3056" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2138415 bytes for track 15602 in 24 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 239686 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.06527 audioVisualRatio 6241.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1997_Billboard_Top_Usa_Singles/08-Mark_Morrison-Return_Of_The_Mack.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/Digital Underground - Humpty Dance.mp3)" QSize(200, 200) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/aplaylist/smooth/Kwane - OWNLEE EUE.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,64701,/amusic/genres/dance/MTV Party On The Go/Blackstreet - Dr. Dre - No Diggity [Album Version].mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,38736,/amusic/genres/dance/Club Classics/Michael Jackson/HIStory Past, Present and Future, Book 1 (1 of 2)/Michael Jackson - Don't Stop 'Til You Get Enough.mp3)" QSize(200, 170) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,64701,/amusic/genres/dance/MTV Party On The Go/Blackstreet - Dr. Dre - No Diggity [Album Version].mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1986_Billboard_Top_Usa_Singles/060-Jermaine_Stewart-We_Dont_Have_To_Take_Our_Clothes_Off.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,7779,/amusic/genres/urban/RAP,R&B,HIP-HOP/Hip Hop Greats Classic Raps/Newcleus - Jam on It.mp3)" QSize(200, 195) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,30118,/amusic/genres/free_style/5 - Freestyle Greatest Beats Complete Collection, Vol. 5/Cynthia - Johnny O. - Dreamboy-Dreamgirl.mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'PARTY YOUR BODY' by Stevie B.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/Cynthia - Change on me.mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/160. Lost Boyz - Renee.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/02-Color_Me_Badd-I_Wanna_Sex_You_Up.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/top500/030. A Tribe Called Quest - Can I Kick It.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,24229,/amusic/genres/urban/RAP,R&B,HIP-HOP/Street Jams 2 Hip-Hop from the Top, Vol. 2/Rock Master Scott and the Dynamic Three - The Roof Is on Fire [Club DJ].mp3)" QSize(200, 195) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1990_Billboard_Top_Usa_Singles/055-Mc_Hammer-U_Cant_Touch_This.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/Cynthia - Change on me.mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1998_Billboard_Top_Usa_Singles/085-Big_Punisher_Featuring_Joe-Still_Not_A_Player.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3)" QSize(200, 200) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/Diamond Girl (Freestyle).mp3)" QSize(200, 200) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/aplaylist/smooth/Kwane - OWNLEE EUE.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/Cool C. - GLAMOROUS LIFE.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/08-Fat_Joe_Featuring_Ashanti-Whats_Luv.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3)" QSize(0, 0) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,38736,/amusic/genres/dance/Club Classics/Michael Jackson/HIStory Past, Present and Future, Book 1 (1 of 2)/Michael Jackson - Don't Stop 'Til You Get Enough.mp3)" QSize(200, 170) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,26416,/amusic/djs/Bobby/stevie b - spring love.mp3)" QSize(200, 200) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [AnalyserQueue 1]: Prioritizing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,53395,/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3)" QSize(200, 197) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,53395,/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3)" QSize(200, 197) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2483983 bytes for track 2651 in 35 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 281642 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 6.01276 audioVisualRatio 7334.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [AnalyserQueue 1]: Prioritizing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1819374 bytes for track 7177 in 21 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 211278 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.01527 audioVisualRatio 5502 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [AnalyserQueue 1]: Prioritizing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1149" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1150" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3313" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3314" length 0 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1976637 bytes for track 2250 in 22 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 233904 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.23995 audioVisualRatio 6091.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "DOO DOO BROWN" "/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "DOO DOO BROWN" "/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/271" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/272" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2493559 bytes for track 17508 in 23 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 297794 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 5.68665 audioVisualRatio 7755 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/2 Hype Brothers & a Dog - DOO DOO BROWN.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [AnalyserQueue 1]: Prioritizing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3)" QSize(200, 200) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Planet Rock (Original Twelve-Inch Version)" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Planet Rock (Original Twelve-Inch Version)" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/537. Afrika Bambaataa & Soulsonic Force - Planet Rock (Original Twelve-Inch Version).mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1139" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1140" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 3250521 bytes for track 3517 in 32 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 397902 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 4.25594 audioVisualRatio 10362 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "I Got It Made" "/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "I Got It Made" "/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/273" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/274" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1415788 bytes for track 826 in 17 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 170842 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.91234 audioVisualRatio 4449 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Analyzing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "I Got It Made" "/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "I Got It Made" "/amusic/various/Old School Rap - Vol. 3/I Got It Made.mp3" 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 6 ms 11 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 1 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/011-Boyz_Ii_Men-Motownphilly.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Motownphilly" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/011-Boyz_Ii_Men-Motownphilly.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/011-Boyz_Ii_Men-Motownphilly.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Motownphilly" "/amusic/billboard/year/1991_Billboard_Top_Usa_Singles/011-Boyz_Ii_Men-Motownphilly.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1459" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1460" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3387" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3388" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1707186 bytes for track 12080 in 18 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 207546 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.15941 audioVisualRatio 5404.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/002-Bobby_Brown-My_Prerogative.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "My Prerogative" "/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/002-Bobby_Brown-My_Prerogative.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "My Prerogative" "/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/002-Bobby_Brown-My_Prerogative.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2e6754f0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/002-Bobby_Brown-My_Prerogative.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1147" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1148" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3291" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3292" length 0 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 1051.91 EntrytoDac: 23492 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2085709 bytes for track 11873 in 21 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 256090 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.61269 audioVisualRatio 6669 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 54 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: Prioritizing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "It Takes Two" "/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_4/It Takes Two Rob Base & DJ E-Z Rock Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/557" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/558" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2229626 bytes for track 16373 in 30 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 264154 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.41082 audioVisualRatio 6879 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: Prioritizing "Whoomp! (There It Is)" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: Analyzing "Whoomp! (There It Is)" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/907" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/908" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1797365 bytes for track 16417 in 20 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 209342 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.08937 audioVisualRatio 5451.6 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 43 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,8644,/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Analyzing "Take Me in Your Arms" "/amusic/genres/dance/Dance Mix USA/Dance Mix USA, Vol. 2/Li'l Suzy - Take Me in Your Arms.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1149" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1150" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3313" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3314" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1976637 bytes for track 2250 in 19 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 233904 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.23995 audioVisualRatio 6091.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 54 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 7 ms 54 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 5 ms 54 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: Prioritizing "Whoomp! (There It Is)" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Whoomp! (There It Is)" "/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,55566,/amusic/djs/jim/Urban/Urban_6/Whoomp! (There It Is) Tag Team Non Stop Hip Hop.mp3)" QSize(200, 195) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 6 ms 43 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [AnalyserQueue 1]: Prioritizing "NA-Johnny O - Fantasy girl (Original Version)" "/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "NA-Johnny O - Fantasy girl (Original Version)" "/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2e6754f0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 3602514 bytes for track 26016 in 37 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 418534 visualSampleRate 441 audioVisualRatio 108.844 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 4.04613 audioVisualRatio 11863.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [AnalyserQueue 1]: Prioritizing "NA-Johnny O - Fantasy girl (Original Version)" "/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3" 
-Debug [AnalyserQueue 1]: Analyzing "NA-Johnny O - Fantasy girl (Original Version)" "/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Johnny O - Fantasy girl (Original Version).mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [AnalyserQueue 1]: Prioritizing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,52125,/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3)" QSize(200, 196) 
-Debug [AnalyserQueue 1]: Analyzing "In a Dream" "/amusic/billboard/decades/90's/Dance Party (Like It's 1998)/Rockell - In a Dream.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1819374 bytes for track 7177 in 17 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 211278 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.01527 audioVisualRatio 5502 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 330 ms 16 
-Debug [Main]: WSearchLineEdit::restoreSearch( "jami" ) 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 344 ms 43 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 336 ms 14 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1988_BillBoard_Top_USA_Singles/066-Pretty_Poison-Catch_Me_Im_Falling.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Catch Me (I'm Falling)" "/amusic/billboard/year/1988_BillBoard_Top_USA_Singles/066-Pretty_Poison-Catch_Me_Im_Falling.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1988_BillBoard_Top_USA_Singles/066-Pretty_Poison-Catch_Me_Im_Falling.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Catch Me (I'm Falling)" "/amusic/billboard/year/1988_BillBoard_Top_USA_Singles/066-Pretty_Poison-Catch_Me_Im_Falling.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 11799 in 0 ms 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Waveform generation for track 11799 done 1.786 s 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 31 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 20 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Writing waveform from byte array: dataSize 228534 allSignalSize 228534 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: AnalysisDAO saved analysis 6645 "1836851 (795007 compressed)" bytes for track 11799 in 203 ms 
-Debug [Main]: Saved waveform analysis for trackId 11799 analysisId 6645 
-Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.41002 audioVisualRatio 5951.4 
-Debug [Main]: AnalysisDAO saved analysis 6646 "30822 (14116 compressed)" bytes for track 11799 in 2 ms 
-Debug [Main]: Saved waveform summary analysis for trackId 11799 analysisId 6646 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,53395,/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3)" QSize(200, 197) 
-Debug [AnalyserQueue 1]: Prioritizing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2e6754f0, name = "SpinnySingleton3")  "CoverInfo(METADATA,GUESSED,,53395,/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3)" QSize(200, 197) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2483983 bytes for track 2651 in 25 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 281642 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 6.01276 audioVisualRatio 7334.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [AnalyserQueue 1]: Prioritizing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Louder Than Love" "/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,53395,/amusic/genres/free_style/6 - Freestyle Greatest Beats Complete Collection, Vol. 6/TKA - Louder Than Love.mp3)" QSize(200, 197) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,50125,/amusic/genres/urban/RAP,R&B,HIP-HOP/Monsters of Rap, Vol. 2/Heavy D & the Boyz - Now That We Found Love.mp3)" QSize(200, 197) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/urban/RAP,R&B,HIP-HOP/DA NORTHEAST SPREAD VOL 1/Tuff Crew - MY PART OF TOWN.mp3)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1989_Billboard_Top_Usa_Singles/002-Bobby_Brown-My_Prerogative.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 43 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 43 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Two of Hearts" "/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing "Two of Hearts" "/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3105" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3106" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 6752 in 1 ms 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Waveform generation for track 6752 done 1.786 s 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'PARTY YOUR BODY' by Stevie B.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing ""PARTY YOUR BODY" by Stevie B" "/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'PARTY YOUR BODY' by Stevie B.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'PARTY YOUR BODY' by Stevie B.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Analyzing ""PARTY YOUR BODY" by Stevie B" "/amusic/genres/dance/Stevie B/THE BEST OF STEVIE B/Stevie B - 'PARTY YOUR BODY' by Stevie B.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1988021 bytes for track 2486 in 24 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 238004 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.1152 audioVisualRatio 6198 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 350 ms 14 
-Debug [Main]: WSearchLineEdit::restoreSearch( "pretty po" ) 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 277 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 334 ms 78 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 325 ms 48 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 325 ms 43 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 362 ms 43 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3)" QSize(200, 198) 
-Debug [AnalyserQueue 1]: Prioritizing "Purple Rain" "/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3)" QSize(200, 198) 
-Debug [AnalyserQueue 1]: Analyzing "Purple Rain" "/amusic/genres/dance/Club Classics/Prince/2-18 Purple Rain.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 3864596 bytes for track 2135 in 34 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 459396 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 3.68624 audioVisualRatio 11963.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 312 ms 5477 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 331 ms 1348 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 326 ms 433 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 327 ms 16 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3555" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3556" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2632167 bytes for track 4970 in 24 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 292356 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 5.79242 audioVisualRatio 7613.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 326 ms 309 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 327 ms 101 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 331 ms 58 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 326 ms 3 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 325 ms 2 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 326 ms 32 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 328 ms 1 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 202 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 213 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 211 ms 22810 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 318 ms 5477 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 330 ms 433 
-Debug [Main]: LibraryTableModel(0x46dd930) select() took 329 ms 16 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Canned Heat" "/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,48271,/amusic/genres/urban/breslin/jamiroquai - canned heat.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 18 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/aplaylist/cool/Beastie Boys - Shake Your Rump.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/aplaylist/cool/Beastie Boys - Shake Your Rump.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "Shake Your Rump" "/amusic/aplaylist/cool/Beastie Boys - Shake Your Rump.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Shake Your Rump" "/amusic/aplaylist/cool/Beastie Boys - Shake Your Rump.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/151" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/152" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1515089 bytes for track 16798 in 19 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 175542 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.64694 audioVisualRatio 4571.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 0 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 7 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,50104,/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "Good Feeling" "/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,50104,/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Analyzing "Good Feeling" "/amusic/billboard/latest/2012-04-14/021 Flo Rida - Good Feeling.mp3" 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1933408 bytes for track 7342 in 21 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 217914 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.7712 audioVisualRatio 5674.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 25 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 6 ms 36 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "Club Can't Handle Me (feat. David Guetta)" "/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Club Can't Handle Me (feat. David Guetta)" "/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x2e6754f0, name = "SpinnySingleton3")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2044188 bytes for track 14578 in 22 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 205242 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.25101 audioVisualRatio 5344.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [AnalyserQueue 1]: Prioritizing "Club Can't Handle Me (feat. David Guetta)" "/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Club Can't Handle Me (feat. David Guetta)" "/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/2011/Flo Rida feat. David Guetta - Club Can't Handle Me.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "I Like It" "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "I Like It" "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1633" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1634" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2785" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2786" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1957007 bytes for track 14253 in 30 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 203744 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.31166 audioVisualRatio 5305.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Track has previous key detection result that is not up to date with latest settings but user preferences indicate we should not re-analyze it. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/05 Usher - OMG.mp3)" QSize(200, 200) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3)" QSize(0, 0) 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
-Debug [AnalyserQueue 1]: Prioritizing "NA-Sylvester - Do Ya Wanna Funk" "/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "NA-Sylvester - Do Ya Wanna Funk" "/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 3148237 bytes for track 26094 in 38 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 365854 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 4.62875 audioVisualRatio 9527.4 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: Prioritizing "I Like It" "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "I Like It" "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,48696,/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/12 Enrique Iglesias - I Like It.mp3)" QSize(200, 200) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Track has previous key detection result that is not up to date with latest settings but user preferences indicate we should not re-analyze it. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 36 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,24243,/amusic/billboard/year/2011/Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything Tonight.mp3)" QSize(300, 80) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(METADATA,GUESSED,,24243,/amusic/billboard/year/2011/Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything Tonight.mp3)" QSize(300, 80) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x33f4f390, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,24243,/amusic/billboard/year/2011/Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything Tonight.mp3)" QSize(300, 80) 
-Debug [AnalyserQueue 1]: Prioritizing "Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything (Tonight) [B-King Remix]" "/amusic/billboard/year/2011/Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything Tonight.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything (Tonight) [B-King Remix]" "/amusic/billboard/year/2011/Pitbull Feat. Ne-Yo, Afrojack & Nayer - Give Me Everything Tonight.mp3" 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1759" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1760" length 0 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 2067010 bytes for track 14583 in 27 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 216992 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.8042 audioVisualRatio 5650.8 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba45e70)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: Prioritizing "NA-Sylvester - Do Ya Wanna Funk" "/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "NA-Sylvester - Do Ya Wanna Funk" "/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31522820, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Sylvester - Do Ya Wanna Funk.mp3)" QSize(0, 0) 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 8 ms 59 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 2 ms 6 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 6 ms 247 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 6 ms 34 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 70 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 4 ms 31 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 59 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: PlaylistTableModel(0x479d940) select() took 3 ms 15 
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a8a9c80) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a8a9c10) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a8a9ba0) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a8a9b30) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3a8128a0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a651930) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a6518c0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a651850) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a6517e0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3a651770) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b4322a0) 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  3 
-Debug [Main]: delete soundmanager  4 
-Debug [Main]: delete view  26 
+Debug [Main]: save config  4 
+Debug [Main]: delete soundmanager  5 
+Debug [Main]: delete view  24 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -1419,7 +409,7 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  182 
+Debug [Main]: delete ControllerManager  200 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
@@ -1428,39 +418,31 @@ Debug [Controller]: "               Turning off LEDs"
 Debug [Controller]: "********* Controller shutdown completed********* " 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  200 
-Debug [Main]: delete library scanner  201 
+Debug [Main]: delete vinylcontrolmanager  218 
+Debug [Main]: delete library scanner  219 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  201 
+Debug [Main]: delete library  219 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  401 
 Debug [Main]: ~TrackCollection() 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 0 ms 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: BaseTrackCache(0x46e0ac0) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  309 
+Debug [Main]: delete playerManager  310 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  310 
+Debug [Main]: delete RecordingManager  311 
 Debug [Main]: Delete RecordingManager 
 Debug [Main]: delete ShoutcastManager  311 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  311 
+Debug [Main]: delete m_pEngine  312 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -1470,15 +452,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  332 
-Debug [Main]: deleting effects manager,  337 
+Debug [Main]: deleting preferences,  331 
+Debug [Main]: deleting effects manager,  338 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2d9ca10) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x343e9e0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2397730) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2401870) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x2a887f0) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2aa4230) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  357 
+Debug [Main]: delete config  358 
 Debug [Main]: Mixxx shutdown complete with code 0 
