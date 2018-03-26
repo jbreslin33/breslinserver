@@ -1,9 +1,7 @@
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2613
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2614 
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2615
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2616
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2617
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2618
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2619
-ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2620
-clusterssh student@r2613 student@r2614 student@r2615 student@r2616 student@r2617 student@r2618 student@r2619 student@r2620
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2621
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2622 
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2623
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2624
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2625
+ssh-keygen -f "/home/jbreslin/.ssh/known_hosts" -R r2626
+clusterssh student@r2621 student@r2622 student@r2623 student@r2624 student@r2625 student@r2626 
