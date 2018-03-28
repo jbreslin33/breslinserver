@@ -19,17 +19,27 @@ if [ `getconf LONG_BIT` = "64" ]
 then
     echo "I'm 64-bit"
 echo chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get -y update 
-sudo apt-get -y install google-chrome-stable
+
+        if [ `which google-chrome` = "/usr/bin/google-chrome" ]
+        then
+                echo "google-chrome installed already"
+        else
+                wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+                sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+                sudo apt-get -y update
+                sudo apt-get -y install google-chrome-stable
+        fi
 
 echo slack
-sudo apt-get -y install libcurl3
-sudo dpkg --install slack-desktop-2.6.3-amd64.deb
-
+        if [ `which google-chrome` = "/usr/bin/google-chrome" ]
+        then
+                echo "slack already installed"
+        else
+                sudo apt-get -y install libcurl3
+                sudo dpkg --install slack-desktop-2.6.3-amd64.deb
+        fi
 else
-    echo "I'm 32-bit"
+    echo "I'm 32-bit so I cannot install google-chrome or slack"
 fi
 
 echo install build tools for student coding
