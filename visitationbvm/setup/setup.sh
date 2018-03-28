@@ -15,12 +15,15 @@ sudo cp originalhosts /etc/hosts
 
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
+var_chrome=$(which google-chrome)
+echo "$var_chrome";
+
 if [ `getconf LONG_BIT` = "64" ]
 then
     echo "I'm 64-bit"
 echo chrome
 
-        if [ `which google-chrome` = "/usr/bin/google-chrome" ]
+        if [ "$var_chrome" = "/usr/bin/google-chrome" ]
         then
                 echo "google-chrome installed already"
         else
