@@ -10,6 +10,9 @@
 store locally use external for backups....
 currently toshiba B is master backup.
 
+--strip dups for playlist
+sort myfile.txt | uniq -u > playlist.m3u
+
 
 
 
