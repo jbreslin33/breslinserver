@@ -11,3 +11,5 @@ sudo apt-get install mixxx libportaudio2
 sudo apt-get install filezilla
 
 sudo apt-get install id3tool
+sudo apt-get install id3v2
+
