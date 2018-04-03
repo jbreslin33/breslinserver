@@ -4,14 +4,7 @@ sudo apt-get -y update
 sudo apt-get -y install 
 sudo apt-get -y upgrade
 
-echo viso specific files
-cp /etc/hosts originalhosts
-echo remove old epop server reference
-sed -i '/192.168.2.105    server/d' ./originalhosts
-sed -i '/192.168.4.10    server/d' ./originalhosts
-echo add new server reference
-sudo echo "192.168.4.10    server" >> originalhosts
-sudo cp originalhosts /etc/hosts
+sudo cp hosts /etc/hosts
 
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
@@ -68,20 +61,12 @@ echo install browsers
 sudo apt-get -y install chromium-browser
 
 echo install games
-sudo apt-get -y install tuxmath
-sudo apt-get -y install tuxtype
-sudo apt-get -y install tuxpaint
 sudo apt-get -y remove minetest
-sudo apt-get -y install triplea 
-sudo apt-get -y install chessx
-
-echo install misc
-sudo apt-get -y install wine
 
 echo add new users
 sudo newusers ../add_student_scripts/add_viso.txt
 
-if [ "$1" = "admin" ]; then
+if [ "$1" = "jbreslin" ]; then
 echo admin specific setup
 
 echo add jbreslin to root
