@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2d9f150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x2d7c260, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2d9f150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2d9f150, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2d9f150, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x2d7c260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x2d7c260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x2d7c260, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -114,8 +114,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x2b130ef0) true 
-Debug [Main]: Created root GL Context valid: 0x2b1353d0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x607b110) true 
+Debug [Main]: Created root GL Context valid: 0x60d4ba0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -175,10 +175,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x5376ad0) updateIndexWithQuery took 311 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2ce4b580) select() took 466 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x2ce4b580) select() took 151 ms 0 
-Debug [Main]: DlgAnalysis(0x2ca362a0, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 224 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x668e630) select() took 332 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x668e630) select() took 104 ms 0 
+Debug [Main]: DlgAnalysis(0x6606850, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -203,195 +203,294 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2d13a510, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x697cec0, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x5373940) select() took 194 ms 22810 
+Debug [Main]: LibraryTableModel(0x5404ad0) select() took 163 ms 22830 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
-Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
-Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
-Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
-Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
+Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Main]: SoundManager::setupDevices() 
+Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
 Debug [Controller]: Scanning HID devices: 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: SoundDevicePortAudio::open() "8, default" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
 Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2c690240, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2c690240, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2c690240, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2c690240, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [Main]: Opening stream with id 8 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x627ee80, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x627ee80, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x627ee80, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x627ee80, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
-Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2" 
+Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Controller]: Applying controller preset... 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
+Debug [Controller]: Controller polling stopped. 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork::open() "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 46.4399 ms 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: Using "default" as output sound device clock reference 
 Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
 Debug [Main]: Displaying mixxx 
 Debug [Main]: Running Mixxx 
-Debug [Controller]: ControllerEngine: Watching JS File: "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/home/jbreslin/.mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Main]: ControllerManager::getControllerList 
-Debug [Controller]: "********* Initialisation process engaged *****************" 
-Debug [Controller]: "              Mapping initialization" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "               Initialize variables" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "                  Initialize LEDs" 
-Debug [Controller]: "" 
-Debug [Controller]: "   LEDs state set for deck D1" 
-Debug [Controller]: "   LEDs state set for deck D2" 
-Debug [Controller]: "   LEDs state set for deck D3" 
-Debug [Controller]: "   LEDs state set for deck D4" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "                 Initialize Buttons" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "                Init Soft Takeovers" 
-Debug [Controller]: "" 
-Debug [Controller]: Connection: "[Sampler1]" "play" 
-Debug [Controller]: Connection: "[Sampler2]" "play" 
-Debug [Controller]: Connection: "[Sampler3]" "play" 
-Debug [Controller]: Connection: "[Sampler4]" "play" 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler5]" , "play" ) 
-Warning [Controller]: ControllerEngine: script connecting [ "[Sampler5]" , "play" ], which is non-existent. ignoring. 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler6]" , "play" ) 
-Warning [Controller]: ControllerEngine: script connecting [ "[Sampler6]" , "play" ], which is non-existent. ignoring. 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler7]" , "play" ) 
-Warning [Controller]: ControllerEngine: script connecting [ "[Sampler7]" , "play" ], which is non-existent. ignoring. 
-Warning [Controller]: ControlDoublePrivate::getControl returning NULL for ( "[Sampler8]" , "play" ) 
-Warning [Controller]: ControllerEngine: script connecting [ "[Sampler8]" , "play" ], which is non-existent. ignoring. 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "                initDeck [Channel1]" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "         Connect controls and triggers deck 1" 
-Debug [Controller]: "" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect1]" "enabled" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect2]" "enabled" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit1_Effect3]" "enabled" 
-Debug [Controller]: Connection: "[Channel1]" "hotcue_1_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "hotcue_2_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "hotcue_3_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "hotcue_4_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "track_samples" 
-Debug [Controller]: Connection: "[Channel1]" "VuMeter" 
-Debug [Controller]: Connection: "[Channel1]" "playposition" 
-Debug [Controller]: Connection: "[Channel1]" "volume" 
-Debug [Controller]: Connection: "[Channel1]" "pfl" 
-Debug [Controller]: Connection: "[Channel1]" "duration" 
-Debug [Controller]: Connection: "[Channel1]" "play_indicator" 
-Debug [Controller]: Connection: "[Channel1]" "cue_indicator" 
-Debug [Controller]: Connection: "[Channel1]" "loop_start_position" 
-Debug [Controller]: Connection: "[Channel1]" "loop_end_position" 
-Debug [Controller]: Connection: "[Channel1]" "loop_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "sync_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_2_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_4_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_8_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_16_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_1_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_0.5_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_0.25_enabled" 
-Debug [Controller]: Connection: "[Channel1]" "beatloop_0.125_enabled" 
-Debug [Controller]: "" 
-Debug [Controller]: "               Initialisation completed" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "                initDeck [Channel2]" 
-Debug [Controller]: "" 
-Debug [Controller]: "==========================================================" 
-Debug [Controller]: "         Connect controls and triggers deck 2" 
-Debug [Controller]: "" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect1]" "enabled" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect2]" "enabled" 
-Debug [Controller]: Connection: "[EffectRack1_EffectUnit2_Effect3]" "enabled" 
-Debug [Controller]: Connection: "[Channel2]" "hotcue_1_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "hotcue_2_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "hotcue_3_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "hotcue_4_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "track_samples" 
-Debug [Controller]: Connection: "[Channel2]" "VuMeter" 
-Debug [Controller]: Connection: "[Channel2]" "playposition" 
-Debug [Controller]: Connection: "[Channel2]" "volume" 
-Debug [Controller]: Connection: "[Channel2]" "pfl" 
-Debug [Controller]: Connection: "[Channel2]" "duration" 
-Debug [Controller]: Connection: "[Channel2]" "play_indicator" 
-Debug [Controller]: Connection: "[Channel2]" "cue_indicator" 
-Debug [Controller]: Connection: "[Channel2]" "loop_start_position" 
-Debug [Controller]: Connection: "[Channel2]" "loop_end_position" 
-Debug [Controller]: Connection: "[Channel2]" "loop_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "sync_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_2_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_4_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_8_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_16_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_1_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_0.5_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_0.25_enabled" 
-Debug [Controller]: Connection: "[Channel2]" "beatloop_0.125_enabled" 
-Debug [Controller]: "" 
-Debug [Controller]: "               Initialisation completed" 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug [Controller]: "==========================================================" 
-Debug []: SSE: Enabling flush to zero mode 
-Debug [Controller]: "" 
-Debug []: SSE: Denormals to zero mode is working 
-Debug [Controller]: "*********      Controller is ready      *******************" 
-Debug [Controller]: "********* End of Initialisation process *******************" 
-Debug [Controller]: Controller polling started. 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3aea0d50) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3aea0ce0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3aea0c70) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3aea0c00) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3ae07c40) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3ac491a0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3ac49130) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3ac490c0) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3ac49050) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3ac48fe0) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3ba27f00) 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 23 ms 722 
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 24 ms 722 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 21 ms 722 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,47681,/amusic/various/Boogie Nights/Brand New Key.mp3)" QSize(200, 196) 
+Debug [AnalyserQueue 1]: Prioritizing "Brand New Key" "/amusic/various/Boogie Nights/Brand New Key.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Brand New Key" "/amusic/various/Boogie Nights/Brand New Key.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8cb2280, name = "SpinnySingleton1")  "CoverInfo(FILE,GUESSED,Folder.jpg,47681,/amusic/various/Boogie Nights/Brand New Key.mp3)" QSize(200, 196) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6271" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6272" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 124 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 124 done 0.64 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/21 kNOCK THREE TIMES.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 721 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,18543,/amusic/fun/22 MIDNIGHT CONFESSIONS.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 720 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,60268,/amusic/genres/dance/Club Classics/Prince/02 Little Red Corvette.mp3)" QSize(200, 198) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,2292,/amusic/genres/modern_rock/Top 600 Modern Rock Songs/519. Arrested Development - Tennessee.mp3)" QSize(200, 200) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,14565,/amusic/genres/party/Neil Diamond/His 12 Greatest Hits/Neil Diamond - Cracklin' Rosie.mp3)" QSize(200, 196) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 719 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,8199,/amusic/billboard/decades/80/Duran Duran - Hungry Like the Wolf.mp3)" QSize(200, 199) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/1983 Sounds of the Eighties 1983/The Kinks - Come Dancing.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 718 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Late 80's Sounds of the Eighties/Rick Astley - Never gonna give you up.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/decades/80's/The Mid Eighties Sounds of the Eighties The Mid Eighties/Stacey Q - Two of Hearts.mp3)" QSize(0, 0) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,28612,/amusic/billboard/decades/80's/Funk Classics The 80's/Carl Carlton - She's a Bad Mama Jama.mp3)" QSize(200, 200) 
+Debug [AnalyserQueue 1]: Prioritizing "She's a Bad Mama Jama" "/amusic/billboard/decades/80's/Funk Classics The 80's/Carl Carlton - She's a Bad Mama Jama.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "She's a Bad Mama Jama" "/amusic/billboard/decades/80's/Funk Classics The 80's/Carl Carlton - She's a Bad Mama Jama.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8cb2280, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,28612,/amusic/billboard/decades/80's/Funk Classics The 80's/Carl Carlton - She's a Bad Mama Jama.mp3)" QSize(200, 200) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3593" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3594" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7075 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 7075 done 1.125 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 15 ms 717 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,25054,/amusic/billboard/latest/2013-07-09/073 French Montana - Aint Worried About Nothin.mp3)" QSize(300, 300) 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,1150,/amusic/billboard/latest/2013-05-19/096 Zac Brown Band - Jump Right In.mp3)" QSize(300, 300) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 716 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,25054,/amusic/billboard/latest/2013-07-09/073 French Montana - Aint Worried About Nothin.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Prioritizing "Aint Worried About Nothin" "/amusic/billboard/latest/2013-07-09/073 French Montana - Aint Worried About Nothin.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8de2e40, name = "SpinnySingleton2")  "CoverInfo(METADATA,GUESSED,,25054,/amusic/billboard/latest/2013-07-09/073 French Montana - Aint Worried About Nothin.mp3)" QSize(300, 300) 
+Debug [AnalyserQueue 1]: Analyzing "Aint Worried About Nothin" "/amusic/billboard/latest/2013-07-09/073 French Montana - Aint Worried About Nothin.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3939" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3940" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7987 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 7987 done 1.01 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/48-Bobbettes-Mr._Lee.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Mr. Lee" "/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/48-Bobbettes-Mr._Lee.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Mr. Lee" "/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/48-Bobbettes-Mr._Lee.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8cb2280, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1957_Billboard_Top_Usa_Singles/48-Bobbettes-Mr._Lee.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1347" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1348" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 9080 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 9080 done 0.58 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 715 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1958_Billboard_Top_Usa_Singles/20-Danny_And_The_Jrs-At_The_Hop.mp3)" QSize(0, 0) 
+Debug [Main]: Writing waveform from byte array: dataSize 210102 allSignalSize 210102 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 6999 "1717425 (774887 compressed)" bytes for track 7075 in 127 ms 
+Debug [Main]: Saved waveform analysis for trackId 7075 analysisId 6999 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.06009 audioVisualRatio 5471.4 
+Debug [Main]: AnalysisDAO saved analysis 7000 "31341 (15475 compressed)" bytes for track 7075 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 7075 analysisId 7000 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 714 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1983_BillBoard_Top_USA_Singles/78-Debarge-All_This_Love.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 713 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/year/1959_Billboard_Top_Usa_Singles/25-Dion_-_The_Belmonts-A_Teenager_In_Love.mp3)" QSize(0, 0) 
+Debug [Main]: Writing waveform from byte array: dataSize 117800 allSignalSize 117800 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 7001 "944472 (221868 compressed)" bytes for track 9080 in 71 ms 
+Debug [Main]: Saved waveform analysis for trackId 9080 analysisId 7001 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 14.3756 audioVisualRatio 3339 
+Debug [Main]: AnalysisDAO saved analysis 7002 "30828 (8657 compressed)" bytes for track 9080 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 9080 analysisId 7002 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 712 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(METADATA,GUESSED,,28013,/amusic/holiday/halloween/Elvira Presents Haunted House Hits/Oingo Boingo - Dead Man's Party.mp3)" QSize(200, 200) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 711 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,46829,/amusic/genres/ROCK/Guns N' Roses/Appetite for Destruction/Anything Goes.mp3)" QSize(200, 198) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 710 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/playlists/wedding_dance/Katy Perry - Dark Horse (Official) ft. Juicy J-0KSOMA3QBU0.mp3)" QSize(0, 0) 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 709 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3)" QSize(0, 0) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8de2e40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ" "/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ" "/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5307" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5308" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 25050 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 25050 done 1.846 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/oldies/oldies_golden/394-Diana Ross and The Supremes - Reflections.mp3)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 17 ms 708 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/genres/oldies/oldies_life/100-Uptight - Stevie Wonder.mp3)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(FILE,GUESSED,Folder.jpg,47681,/amusic/various/Boogie Nights/Brand New Key.mp3)" QSize(200, 196) 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: PlaylistTableModel(0x54c0f80) select() took 16 ms 707 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ" "/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ" "/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8cb2280, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/billboard/youtube/2017_05_13/Sam Davies - Cosmos [Silk Music]-Gn9iR0NeXlQ.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Kid Cudi - Just What I Am ft. King Chip.mp3)" QSize(0, 0) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8de2e40, name = "SpinnySingleton2")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Kid Cudi - Just What I Am ft. King Chip.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "NA-Kid Cudi - Just What I Am ft. King Chip" "/amusic/youtube/NA-Kid Cudi - Just What I Am ft. King Chip.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "NA-Kid Cudi - Just What I Am ft. King Chip" "/amusic/youtube/NA-Kid Cudi - Just What I Am ft. King Chip.mp3" 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6315" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6316" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 26039 in 1 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 26039 done 1.291 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x62c2260)  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Super Rich Kids.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: Prioritizing "Super Rich Kids" "/amusic/youtube/NA-Super Rich Kids.mp3" 
+Debug [AnalyserQueue 1]: Analyzing "Super Rich Kids" "/amusic/youtube/NA-Super Rich Kids.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x8cb2280, name = "SpinnySingleton1")  "CoverInfo(NONE,GUESSED,,0,/amusic/youtube/NA-Super Rich Kids.mp3)" QSize(0, 0) 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6319" length 0 
+Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6320" length 0 
+Debug [AnalyserQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 26042 in 0 ms 
+Debug [AnalyserQueue 1]: Beat calculation will not start 
+Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyserQueue 1]: Key calculation will not start. 
+Debug [AnalyserQueue 1]: Waveform generation for track 26042 done 1.446 s 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  8 
-Debug [Main]: delete soundmanager  9 
-Debug [Main]: delete view  28 
+Debug [Main]: save config  3 
+Debug [Main]: delete soundmanager  3 
+Debug [Main]: delete view  59 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -411,40 +510,74 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  556 
+Debug [Main]: delete ControllerManager  601 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
-Debug [Controller]: "********* Starting Controller Shutdown ********** " 
-Debug [Controller]: "               Turning off LEDs" 
-Debug [Controller]: "********* Controller shutdown completed********* " 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  576 
-Debug [Main]: delete library scanner  577 
+Debug [Main]: delete vinylcontrolmanager  602 
+Debug [Main]: delete library scanner  603 
 Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
 Debug [Main]: Closing database "LIBRARY_SCANNER" 
 Debug [Main]: LibraryScanner destroyed 
 Debug [Main]: ~TrackDAO() 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  578 
+Debug [Main]: delete library  603 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  401 
 Debug [Main]: ~TrackCollection() 
+Debug [Main]: Writing waveform from byte array: dataSize 126582 allSignalSize 126582 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 7003 "1063964 (496674 compressed)" bytes for track 124 in 121 ms 
+Debug [Main]: Saved waveform analysis for trackId 124 analysisId 7003 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 13.3782 audioVisualRatio 3296.4 
+Debug [Main]: AnalysisDAO saved analysis 7004 "32297 (16453 compressed)" bytes for track 124 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 124 analysisId 7004 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 365170 allSignalSize 365170 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 7005 "3263108 (1488255 compressed)" bytes for track 25050 in 319 ms 
+Debug [Main]: Saved waveform analysis for trackId 25050 analysisId 7005 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 4.63741 audioVisualRatio 10350.6 
+Debug [Main]: AnalysisDAO saved analysis 7006 "34075 (16452 compressed)" bytes for track 25050 in 1 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 25050 analysisId 7006 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 0 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 214988 allSignalSize 214988 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 7007 "1758794 (754850 compressed)" bytes for track 26039 in 193 ms 
+Debug [Main]: Saved waveform analysis for trackId 26039 analysisId 7007 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 7.87697 audioVisualRatio 5598.6 
+Debug [Main]: AnalysisDAO saved analysis 7008 "31178 (13876 compressed)" bytes for track 26039 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 26039 analysisId 7008 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 187454 allSignalSize 187454 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: AnalysisDAO saved analysis 7009 "1500792 (668300 compressed)" bytes for track 7987 in 170 ms 
+Debug [Main]: Saved waveform analysis for trackId 7987 analysisId 7009 
+Debug [Main]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 9.03392 audioVisualRatio 4881.6 
+Debug [Main]: AnalysisDAO saved analysis 7010 "30806 (14160 compressed)" bytes for track 7987 in 2 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 7987 analysisId 7010 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
+Debug [Main]: Writing waveform from byte array: dataSize 268962 allSignalSize 268962 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [Main]: AnalysisDAO saved analysis 7011 "2325868 (1079456 compressed)" bytes for track 26042 in 221 ms 
+Debug [Main]: Saved waveform analysis for trackId 26042 analysisId 7011 
+Debug [Main]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.29624 audioVisualRatio 7623.6 
+Debug [Main]: AnalysisDAO saved analysis 7012 "33298 (16720 compressed)" bytes for track 26042 in 1 ms 
+Debug [Main]: Saved waveform summary analysis for trackId 26042 analysisId 7012 
+Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
+Debug [Main]: BaseTrackCache(0x5400fa0) updateIndexWithQuery took 1 ms 
 Debug [Main]: Clearing played information for this session 
 Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
 Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  751 
+Debug [Main]: delete playerManager  2479 
 Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  752 
+Debug [Main]: delete RecordingManager  2480 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  752 
+Debug [Main]: delete ShoutcastManager  2480 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
 Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  753 
+Debug [Main]: delete m_pEngine  2481 
 Debug [Main]: in ~EngineMaster() 
 Debug [Main]: ~EngineMicrophone() 
 Debug [Main]: ~EngineMicrophone() 
@@ -454,15 +587,15 @@ Debug [Main]: ~EngineAux()
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
 Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  775 
-Debug [Main]: deleting effects manager,  780 
+Debug [Main]: deleting preferences,  2505 
+Debug [Main]: deleting effects manager,  2510 
 Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
 Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3a33680) 
+Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x3ab22a0) 
 Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x30485a0) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x30982d0) 
+Debug [Main]: "[Master]" "headEnabled" ControlObject(0x31ef350) 
+Debug [Main]: "[Master]" "num_microphones" ControlObject(0x3aae100) 
 Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
 Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  803 
+Debug [Main]: delete config  4330 
 Debug [Main]: Mixxx shutdown complete with code 0 
