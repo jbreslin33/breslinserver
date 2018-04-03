@@ -42,20 +42,6 @@ echo install build tools for student coding
 sudo apt-get -y install build-essential 
 sudo apt-get -y install ssh
 
-echo build minetest
-echo minetest dependencies
-sudo apt-get -y install build-essential cmake git libirrlicht-dev libbz2-dev libgettextpo-dev
-sudo apt-get -y install libfreetype6-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev
-sudo apt-get -y install libogg-dev libvorbis-dev libopenal-dev libhiredis-dev libcurl3-dev
-echo git minetest 
-
-git clone --depth 1 https://github.com/minetest/minetest.git /home/student/sandbox/minetest
-git clone --depth 1 https://github.com/minetest/minetest_game.git /home/student/sandbox/minetest/games/minetest_game
-
-echo cmake
-cd /home/student/sandbox/minetest
-cmake . -DRUN_IN_PLACE=TRUE
-make 
 
 echo install browsers
 sudo apt-get -y install chromium-browser
@@ -82,10 +68,27 @@ echo install clusterssh
 sudo apt-get -y install clusterssh
 
 else
+
+echo build minetest
+echo minetest dependencies
+sudo apt-get -y install build-essential cmake git libirrlicht-dev libbz2-dev libgettextpo-dev
+sudo apt-get -y install libfreetype6-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev
+sudo apt-get -y install libogg-dev libvorbis-dev libopenal-dev libhiredis-dev libcurl3-dev
+echo git minetest 
+
+git clone --depth 1 https://github.com/minetest/minetest.git /home/student/sandbox/minetest
+git clone --depth 1 https://github.com/minetest/minetest_game.git /home/student/sandbox/minetest/games/minetest_game
+
+echo cmake
+cd /home/student/sandbox/minetest
+cmake . -DRUN_IN_PLACE=TRUE
+make 
+
 echo epop
 sudo apt-get -y remove epoptes-client
 sudo apt-get -y install epoptes-client
 sudo epoptes-client -c
+
 fi
 
 echo complete you can now reboot and login 
