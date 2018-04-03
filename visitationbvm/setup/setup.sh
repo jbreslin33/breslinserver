@@ -56,11 +56,11 @@ sudo apt-get -y install libfreetype6-dev libpng12-dev libjpeg8-dev libxxf86vm-de
 sudo apt-get -y install libogg-dev libvorbis-dev libopenal-dev libhiredis-dev libcurl3-dev
 echo git minetest 
 
-git clone --depth 1 https://github.com/minetest/minetest.git /home/$1/sandbox/minetest
-git clone --depth 1 https://github.com/minetest/minetest_game.git /home/$1/sandbox/minetest/games/minetest_game
+git clone --depth 1 https://github.com/minetest/minetest.git /home/student/sandbox/minetest
+git clone --depth 1 https://github.com/minetest/minetest_game.git /home/student/sandbox/minetest/games/minetest_game
 
 echo cmake
-cd /home/$1/sandbox/minetest
+cd /home/student/sandbox/minetest
 cmake . -DRUN_IN_PLACE=TRUE
 make 
 
@@ -72,7 +72,6 @@ sudo apt-get -y install tuxmath
 sudo apt-get -y install tuxtype
 sudo apt-get -y install tuxpaint
 sudo apt-get -y remove minetest
-sudo apt-get -y install minetest
 sudo apt-get -y install triplea 
 sudo apt-get -y install chessx
 
