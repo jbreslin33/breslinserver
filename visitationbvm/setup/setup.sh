@@ -79,7 +79,7 @@ echo remove minetest
 sudo 
 
 echo git minetest 
-sudo rm -r minetest/
+sudo rm -r ~/sandbox/minetest
 
 git clone --depth 1 https://github.com/minetest/minetest.git /home/student/sandbox/minetest
 git clone --depth 1 https://github.com/minetest/minetest_game.git /home/student/sandbox/minetest/games/minetest_game
