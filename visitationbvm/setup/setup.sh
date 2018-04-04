@@ -87,7 +87,7 @@ git clone --depth 1 https://github.com/minetest/minetest_game.git /home/student/
 echo cmake
 cd /home/student/sandbox/minetest
 cmake . -DRUN_IN_PLACE=TRUE
-make 
+make -j$(grep -c processor /proc/cpuinfo) 
 
 echo epop
 sudo apt-get -y remove epoptes-client
