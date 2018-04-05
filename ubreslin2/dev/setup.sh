@@ -45,10 +45,10 @@ echo chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update
-sudo apt-get install google-chrome-stable
+sudo apt-get -y install google-chrome-stable
 
 echo slack
-sudo apt-get install libcurl3
+sudo apt-get -y install libcurl3
 sudo dpkg --install ../../visitationbvm/cinnamon/slack-desktop-2.6.3-amd64.deb
 
 else
@@ -70,9 +70,9 @@ echo virtualbox
 
 echo build minetest
 echo minetest dependencies
-sudo apt-get install build-essential cmake git libirrlicht-dev libbz2-dev libgettextpo-dev
-sudo apt-get install libfreetype6-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev
-sudo apt-get install libogg-dev libvorbis-dev libopenal-dev libhiredis-dev libcurl3-dev
+sudo apt-get -y install build-essential cmake git libirrlicht-dev libbz2-dev libgettextpo-dev
+sudo apt-get -y install libfreetype6-dev libpng12-dev libjpeg8-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev
+sudo apt-get -y install libogg-dev libvorbis-dev libopenal-dev libhiredis-dev libcurl3-dev
 echo git minetest 
 
 git clone --depth 1 https://github.com/minetest/minetest.git /home/$1/sandbox/minetest
@@ -87,7 +87,7 @@ make
 echo woeusb
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt update
-sudo apt install woeusb
+sudo apt install -y woeusb
 
 
 echo kvm
