@@ -32,8 +32,19 @@ sudo apt-get -y install php
 sudo apt-get -y install php-mbstring
 
 echo -------------------postgres------------------------
-#sudo apt-get -y install postgresql-9.5
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get -y install postgresql
+
+echo -------------------postgresql-client-----------------------
+sudo apt-get -y install postgresql-client
+
+echo -------------------postgresql-doc-----------------------
+sudo apt-get -y install postgresql-doc
+
+echo -------------------pgadmin3----------------------
+sudo apt-get -y install pgadmin3
+
+echo -------------------phppgadmin---------------------
+sudo apt-get -y install phppgadmin 
 
 echo -------------------postgres and php------------------------
 sudo apt-get -y install phppgadmin
