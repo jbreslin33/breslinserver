@@ -1,5 +1,6 @@
 echo ----------------------dist upgrade-------------------------
 sudo apt-get -y dist-upgrade
+sudo apt-get update
 
 echo -----------------------build tools---------------------
 sudo apt-get -y install build-essential
@@ -26,7 +27,8 @@ sudo apt-get -y install php
 sudo apt-get -y install php-mbstring
 
 echo -------------------postgres------------------------
-sudo apt-get -y install postgresql-9.5
+#sudo apt-get -y install postgresql-9.5
+sudo apt-get install postgresql postgresql-contrib
 
 echo -------------------postgres and php------------------------
 sudo apt-get -y install phppgadmin
