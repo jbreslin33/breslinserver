@@ -1,5 +1,5 @@
 echo -------------------------- checkout mathcore from git ----------------------------
-git clone https://github.com/jbreslin33/breslinmathracer.git /home/$1/sandbox/breslinmathracer
+git clone https://github.com/jbreslin33/breslinmathracer.git ~/sandbox/breslinmathracer
 
 echo ----------------- create mathcore db called jamesanthonybreslin
 sudo -u postgres createdb jamesanthonybreslin
