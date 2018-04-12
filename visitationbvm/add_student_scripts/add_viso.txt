@@ -542,6 +542,7 @@ v2194:sat:2194:100:Daniella Diaz:/home/v2194:/bin/bash
 v2195:mat:2195:100:Julianna Mercado:/home/v2195:/bin/bash
 v2196:cat:2196:100:Michael Greene:/home/v2196:/bin/bash
 v2197:bat:2197:100:Amaris Vargas:/home/v2197:/bin/bash
+v2198:bat:2198:100:Nick Torres:/home/v2198:/bin/bash
 v2201:ahh:2201:100:Christopher Barton:/home/v2201:/bin/bash
 v2202:abc:2202:100:Zuyanah Berdicia:/home/v2202:/bin/bash
 v2203:ace:2203:100:Albert Bobe:/home/v2203:/bin/bash
