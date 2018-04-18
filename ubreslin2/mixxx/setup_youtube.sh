@@ -11,6 +11,13 @@ sudo apt-get install ffmpeg
 sudo apt-get install lame
 sudo pip install --upgrade youtube_dl
 
+echo -------------- THIS MAKES IT WORK NOW -----------------
+sudo apt-get install curl -y
+curl -L https://yt-dl.org/latest/youtube-dl -o /usr/bin/youtube-dl
+sudo curl -L https://yt-dl.org/latest/youtube-dl -o /usr/bin/youtube-dl
+sudo chmod 755 /usr/bin/youtube-dl
+youtube-dl https://www.youtube.com/watch?v=xpVfcZ0ZcFM
+
 #download youtube video
 #youtube-dl url-of-youtube-vid
 
