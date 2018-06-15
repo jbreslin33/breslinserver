@@ -62,3 +62,6 @@ sudo apt-get -y install mplayer
 sudo apt-get -y install mpg123
 sudo apt-get -y install soundconverter
 
+echo ------------------------editing----------------------------------
+sudo apt-get install dos2unix 
+
