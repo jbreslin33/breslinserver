@@ -32,11 +32,11 @@ Debug [Main]: WARNING: AudioInput already registered!
 Debug [Main]: Available QtSQL drivers: ("QSQLITE") 
 Debug [Main]: DB status: "/home/jbreslin/.mixxx/mixxxdb.sqlite" = true 
 Debug [Main]: SchemaManager::upgradeToSchemaVersion already at version 24 
-Debug [Main]: TrackDAO::initialize QThread(0x2086260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: TrackDAO::initialize QThread(0x2207260, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: CrateDAO::initialize() 
-Debug [Main]: CueDAO::initialize QThread(0x2086260, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: DirectoryDAO::initialize QThread(0x2086260, name = "Main") "qt_sql_default_connection" 
-Debug [Main]: LibraryHashDAO::initialize QThread(0x2086260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: CueDAO::initialize QThread(0x2207260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: DirectoryDAO::initialize QThread(0x2207260, name = "Main") "qt_sql_default_connection" 
+Debug [Main]: LibraryHashDAO::initialize QThread(0x2207260, name = "Main") "qt_sql_default_connection" 
 Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
 Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
 Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
@@ -114,8 +114,8 @@ Debug [Main]: Key plugin ID: "qm-keydetector:2"
 Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
 Debug [Main]: ConfigObject: Could not read "" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x73cdd30) true 
-Debug [Main]: Created root GL Context valid: 0x2a352ae0 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x7549680) true 
+Debug [Main]: Created root GL Context valid: 0x2a4f1190 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -175,10 +175,10 @@ Debug [Main]: "Error: Unable to import svg: no such extension"
 Debug [Main]: Skin is a >=1.12.0 style skin. 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: BaseTrackCache(0x47021a0) updateIndexWithQuery took 316 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x2c170920) select() took 503 ms 3 
-Debug [Main]: AnalysisLibraryTableModel(0x2c170920) select() took 156 ms 3 
-Debug [Main]: DlgAnalysis(0x2bd56480, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: BaseTrackCache(0x4885830) updateIndexWithQuery took 318 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x2c2f1850) select() took 507 ms 3 
+Debug [Main]: AnalysisLibraryTableModel(0x2c2f1850) select() took 156 ms 3 
+Debug [Main]: DlgAnalysis(0x2bed7440, name = "DlgAnalysis") analysisActive false 
 Warning [Main]: QWidget::setMinimumSize: (TextColor1/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[VinylControl]" , "show_vinylcontrol" ) 
 Warning [Main]: Requested control does not exist: "[VinylControl],show_vinylcontrol" Creating it. 
@@ -203,22 +203,22 @@ Warning [Main]: QWidget::setMinimumSize: (TextColor2/WKey) Negative sizes (-1,0)
 Warning [Main]: QWidget::setMinimumSize: (TextColor4/WKey) Negative sizes (-1,0) are not possible
 Warning [Main]: ControlDoublePrivate::getControl returning NULL for ( "[Library]" , "show_library_tab_small" ) 
 Warning [Main]: Requested control does not exist: "[Library],show_library_tab_small" Creating it. 
-Warning [Main]: WLabel(0x2e70d650, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
+Warning [Main]: WLabel(0x2e89c080, name = "PreviewLabel")  does not have a property named  "layoutAlignment" 
 Debug [Main]: Setting visibility for "[PreviewDeck]" "show_previewdeck" true 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: LibraryTableModel(0x4735190) select() took 196 ms 22854 
+Debug [Main]: LibraryTableModel(0x4880e40) select() took 201 ms 22854 
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
 Debug [Main]: Starting LibraryScanner thread. 
 Debug [Main]: SoundManager::setupDevices() 
-Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2b9d0ae0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: LibraryHashDAO::initialize LibraryScanner(0x2bb49230, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2b9d0ae0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: CueDAO::initialize LibraryScanner(0x2bb49230, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: framesPerBuffer: 1024 
-Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2b9d0ae0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: TrackDAO::initialize LibraryScanner(0x2bb49230, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2b9d0ae0, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
+Debug [LibraryScanner 1]: DirectoryDAO::initialize LibraryScanner(0x2bb49230, name = "LibraryScanner 1") "LIBRARY_SCANNER" 
 Debug [Main]: Output channels: 2 | Input channels: 0 
 Debug [LibraryScanner 1]: LibraryScanner event loop starting. 
 Debug [Main]: Opening stream with id 0 
@@ -386,45 +386,22 @@ Debug [Controller]: Controller polling started.
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: SSE: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a6f2900) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a6f2890) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a6f2820) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a6f27b0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3ac55b60) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a477d10) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a477ca0) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a477c30) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a477bc0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3a477b50) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b286590) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x3a871740) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x3a8716d0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x3a871660) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x3a8715f0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x3add5d30) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x3a5ef030) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x3a5eefc0) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x3a5eef50) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x3a5eeee0) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x3a5eee70) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x3b404e70) 
 Debug [Main]: guess the size of the window decoration 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x2ba13cc0)  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
-Debug [AnalyserQueue 1]: Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x31615db0, name = "SpinnySingleton1")  "CoverInfo(METADATA,GUESSED,,55453,/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3)" QSize(300, 300) 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2327" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2328" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2465" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2466" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2585" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2586" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4153" length 0 
-Debug [AnalyserQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4154" length 0 
-Warning [Engine]: VisualPlayPosition: Audio API provides invalid time stamps, waveform syncing disabled. DacTime: 56.6337 EntrytoDac: 23696 
-Debug [AnalyserQueue 1]: AnalysisDAO fetched 2 analyses, 1380201 bytes for track 22639 in 18 ms 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyserQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2 
-Debug [AnalyserQueue 1]: AnalyserWaveform::loadStored - Stored waveform loaded 
-Debug [AnalyserQueue 1]: Beat calculation will not start 
-Debug [AnalyserQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyserQueue 1]: Key calculation will not start. 
-Debug [AnalyserQueue 1]: Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: save config  4 
-Debug [Main]: delete soundmanager  4 
-Debug [Main]: delete view  20 
+Debug [Main]: save config  2 
+Debug [Main]: delete soundmanager  3 
+Debug [Main]: delete view  36 
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
@@ -444,58 +421,4 @@ Debug [Main]: ~WLibraryTableView
 Debug [Main]: ~WTrackTableView() 
 Debug [Main]: ~DlgTrackInfo() 
 Debug [Main]: ~WLibraryTableView 
-Debug [Main]: delete ControllerManager  214 
-Debug [Controller]: Controller polling stopped. 
-Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
-Debug [Controller]: "********* Starting Controller Shutdown ********** " 
-Debug [Controller]: "               Turning off LEDs" 
-Debug [Controller]: "********* Controller shutdown completed********* " 
-Debug [Controller]: Deleting USB Bulk devices... 
-Debug [Controller]: Deleting HID devices... 
-Debug [Main]: delete vinylcontrolmanager  230 
-Debug [Main]: delete library scanner  231 
-Debug [LibraryScanner 1]: LibraryScanner event loop stopped. 
-Debug [Main]: Closing database "LIBRARY_SCANNER" 
-Debug [Main]: LibraryScanner destroyed 
-Debug [Main]: ~TrackDAO() 
-Debug [Main]: ~CoverArtCache() 
-Debug [Main]: delete library  231 
-Debug [Main]: Wait to finish browser background thread 
-Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  442 
-Debug [Main]: ~TrackCollection() 
-Debug [Main]: Clearing played information for this session 
-Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
-Debug [Main]: Committing transaction on "qt_sql_default_connection" result: true 
-Debug [Main]: ~TrackDAO() 
-Debug [Main]: delete playerManager  336 
-Debug [Main]: AnalyserWaveform::~AnalyserWaveform() 
-Debug [Main]: delete RecordingManager  337 
-Debug [Main]: Delete RecordingManager 
-Debug [Main]: delete ShoutcastManager  337 
-Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: DlgPrefShoutcast::shoutcastEnabledChanged() 0 
-Debug [Main]: delete m_pEngine  337 
-Debug [Main]: in ~EngineMaster() 
-Debug [Main]: ~EngineMicrophone() 
-Debug [Main]: ~EngineMicrophone() 
-Debug [Main]: ~EngineMicrophone() 
-Debug [Main]: ~EngineMicrophone() 
-Debug [Main]: ~EngineAux() 
-Debug [Main]: ~EngineAux() 
-Debug [Main]: ~EngineAux() 
-Debug [Main]: ~EngineAux() 
-Debug [Main]: deleting preferences,  357 
-Debug [Main]: deleting effects manager,  363 
-Warning [Main]: QScriptEngine::popContext() doesn't match with pushContext()
-Debug [Main]: WARNING: The following 6 controls were leaked: 
-Debug [Main]: "[Shoutcast]" "enabled" ControlPushButton(0x2db0680) 
-Debug [Main]: "[Master]" "num_samplers" QObject(0x0)  
-Debug [Main]: "[Master]" "headEnabled" ControlObject(0x24dae20) 
-Debug [Main]: "[Master]" "num_microphones" ControlObject(0x2daac90) 
-Debug [Main]: "[Master]" "num_decks" QObject(0x0)  
-Debug [Main]: "[Master]" "num_preview_decks" QObject(0x0)  
-Debug [Main]: delete config  384 
-Debug [Main]: Mixxx shutdown complete with code 0 
+Debug [Main]: delete ControllerManager  206 

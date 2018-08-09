@@ -113,8 +113,8 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker" 
 Debug [Main]: DlgPrefKey::loadSettings 
 Debug [Main]: Key plugin ID: "qm-keydetector:2" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55c300e8f2a0) true 
-Debug [Main]: Created root GL Context valid: 0x55c300e91040 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x556f91784580) true 
+Debug [Main]: Created root GL Context valid: 0x556f91784cd0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -147,20 +147,20 @@ Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3 
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55c31b97fa40) 
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55c31787fa00) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2fca71600) 
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x556fac2650d0) 
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x556fa8164e80) 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8d39c430) 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55c31b9861d8) 
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x556fac26b868) 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55c31ba03320) 
-Debug [Main]: BaseTrackCache(0x55c2fd708a40) updateIndexWithQuery took 302 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x55c31ba03320) select() took 502 ms 307 
-Debug [Main]: AnalysisLibraryTableModel(0x55c31ba03320) select() took 162 ms 307 
-Debug [Main]: DlgAnalysis(0x55c317872120, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x556fac2e8b60) 
+Debug [Main]: BaseTrackCache(0x556f8dfeb360) updateIndexWithQuery took 287 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x556fac2e8b60) select() took 476 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x556fac2e8b60) select() took 156 ms 0 
+Debug [Main]: DlgAnalysis(0x556fa815b120, name = "DlgAnalysis") analysisActive false 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55c2fefd0a00) 
-Debug [Main]: LibraryTableModel(0x55c2fefd0a00) select() took 247 ms 23170 
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x556f8e1fc920) 
+Debug [Main]: LibraryTableModel(0x556f8e1fc920) select() took 232 ms 23170 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
@@ -191,8 +191,6 @@ Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
 Debug [Main]: Using "Network stream" as output sound device clock reference 
 Debug [Main]: 1 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Warning [Main]: "3, USB Audio CODEC: - (hw:2,0)" not found 
-Warning [Main]: "12, default" not found 
 Warning []: SoundDeviceNetworkThread: Failed bumping priority 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
@@ -205,191 +203,235 @@ Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Controller polling stopped. 
-Debug [Main]: JACK client name set 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 1 "sysdefault" 
+Debug [Main]: 2 "3, sysdefault" 
+Debug [Main]: 1 "front" 
+Debug [Main]: 2 "4, front" 
+Debug [Main]: 1 "surround40" 
+Debug [Main]: 2 "5, surround40" 
+Debug [Main]: 1 "surround51" 
+Debug [Main]: 2 "6, surround51" 
+Debug [Main]: 1 "surround71" 
+Debug [Main]: 2 "7, surround71" 
+Debug [Main]: 1 "hdmi" 
+Debug [Main]: 2 "8, hdmi" 
+Debug [Main]: 1 "pulse" 
+Debug [Main]: 2 "9, pulse" 
+Debug [Main]: 1 "dmix" 
+Debug [Main]: 2 "10, dmix" 
+Debug [Main]: 1 "default" 
+Debug [Main]: 2 "11, default" 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 1 "sysdefault" 
+Debug [Main]: 2 "3, sysdefault" 
+Debug [Main]: 1 "front" 
+Debug [Main]: 2 "4, front" 
+Debug [Main]: 1 "surround40" 
+Debug [Main]: 2 "5, surround40" 
+Debug [Main]: 1 "surround51" 
+Debug [Main]: 2 "6, surround51" 
+Debug [Main]: 1 "surround71" 
+Debug [Main]: 2 "7, surround71" 
+Debug [Main]: 1 "hdmi" 
+Debug [Main]: 2 "8, hdmi" 
+Debug [Main]: 1 "pulse" 
+Debug [Main]: 2 "9, pulse" 
+Debug [Main]: 1 "dmix" 
+Debug [Main]: 2 "10, dmix" 
+Debug [Main]: 1 "default" 
+Debug [Main]: 2 "11, default" 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 1 "sysdefault" 
+Debug [Main]: 2 "3, sysdefault" 
+Debug [Main]: 1 "front" 
+Debug [Main]: 2 "4, front" 
+Debug [Main]: 1 "surround40" 
+Debug [Main]: 2 "5, surround40" 
+Debug [Main]: 1 "surround51" 
+Debug [Main]: 2 "6, surround51" 
+Debug [Main]: 1 "surround71" 
+Debug [Main]: 2 "7, surround71" 
+Debug [Main]: 1 "hdmi" 
+Debug [Main]: 2 "8, hdmi" 
+Debug [Main]: 1 "pulse" 
+Debug [Main]: 2 "9, pulse" 
+Debug [Main]: 1 "dmix" 
+Debug [Main]: 2 "10, dmix" 
+Debug [Main]: 1 "default" 
+Debug [Main]: 2 "11, default" 
 Debug [Main]: SoundManager::setupDevices() 
-Warning [Main]: Output sound device clock reference not set! Using "Network stream" 
+Debug [Main]: SoundDevicePortAudio::open() "11, default" 
+Debug [Main]: framesPerBuffer: 1024 
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
+Debug [Main]: Output channels: 2 | Input channels: 0 
+Debug [Main]: Opening stream with id 11 
+Debug [Main]: Opened PortAudio stream successfully... starting 
+Debug [Main]: Dynamically loaded PortAudio library 
+Debug [Main]: PortAudio: Started stream successfully 
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 46.4399 ms 
+Debug []: SSE: Enabling denormals to zero mode 
+Debug []: SSE: Enabling flush to zero mode 
+Debug []: Denormals to zero mode is working 
 Debug [Main]: SoundDeviceNetwork - open: "Network stream" 
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns 
-Debug [Main]: Using "Network stream" as output sound device clock reference 
-Debug [Main]: 1 output sound devices opened 
+Debug [Main]: Using "default" as output sound device clock reference 
+Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Warning []: SoundDeviceNetworkThread: Failed bumping priority 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: SSE: Denormals to zero mode is working 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
+Debug [Main]: 1 "sysdefault" 
+Debug [Main]: 2 "3, sysdefault" 
+Debug [Main]: 1 "front" 
+Debug [Main]: 2 "4, front" 
+Debug [Main]: 1 "surround40" 
+Debug [Main]: 2 "5, surround40" 
+Debug [Main]: 1 "surround51" 
+Debug [Main]: 2 "6, surround51" 
+Debug [Main]: 1 "surround71" 
+Debug [Main]: 2 "7, surround71" 
+Debug [Main]: 1 "hdmi" 
+Debug [Main]: 2 "8, hdmi" 
+Debug [Main]: 1 "pulse" 
+Debug [Main]: 2 "9, pulse" 
+Debug [Main]: 1 "dmix" 
+Debug [Main]: 2 "10, dmix" 
+Debug [Main]: 1 "default" 
+Debug [Main]: 2 "11, default" 
 Debug [Main]: DlgPrefVinyl::Apply 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
 Debug [Main]: Displaying main window 
 Debug [Main]: Running Mixxx 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 7 ms 93 
+Warning [Main]: Object::disconnect: Unexpected null parameter
+Debug [Main]: Successfully deserialized BeatGrid 
+Debug [Main]: Successfully deserialized KeyMap 
+Debug [Main]: BaseTrackCache(0x556f8dfeb360) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/A01677801677566E/amusic/billboard/decades/80/Journey - Don't Stop Believin'.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 4 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x5000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved header layer value 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 4 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x5000" 
+Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Don't Stop Believin'" "/amusic/billboard/decades/80/Journey - Don't Stop Believin'.mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/A01677801677566E/amusic/billboard/decades/80/Journey - Don't Stop Believin'.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x556fa8158100, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x2007)" QSize(200, 199) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x556f9cff4990, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x2007)" QSize(200, 199) 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 4 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x5000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved header layer value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 4 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x5000" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x556faee2c760, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x2007)" QSize(200, 199) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x556f9beddfe0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x2007)" QSize(200, 199) 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/137" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/138" length 0 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1846114 bytes for track 6309 in 20 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 220954 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.66423 audioVisualRatio 5754 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
+Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
+Debug [AnalyzerQueue 1]: Beat calculation will not start 
+Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
+Debug [AnalyzerQueue 1]: Key calculation will not start. 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8f8d5700) 
+Debug [Main]: PlaylistTableModel(0x556f8f8d5700) select() took 6 ms 93 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 6 ms 1 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8f8d5700) 
+Debug [Main]: PlaylistTableModel(0x556f8f8d5700) select() took 5 ms 1 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 6 ms 26 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8f8d5700) 
+Debug [Main]: PlaylistTableModel(0x556f8f8d5700) select() took 6 ms 26 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/003. Joy Division - Love Will Tear Us Apart.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/2-14 Uptight (Everything's Alright).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Gin and Juice Snoop Unknown Album (1-26-2006 8-04-19 AM).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Rihanna - Please Don't Stop The Music.mp3.jpg" "/amusic/genres/urban/breslin/Rihanna - Please Don't Stop The Music.mp3" 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 7 ms 93 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8f8d5700) 
+Debug [Main]: PlaylistTableModel(0x556f8f8d5700) select() took 5 ms 1 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 7 ms 26 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x556f8f8d5700) 
+Debug [Main]: PlaylistTableModel(0x556f8f8d5700) select() took 6 ms 93 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/003. Joy Division - Love Will Tear Us Apart.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/2-14 Uptight (Everything's Alright).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Gin and Juice Snoop Unknown Album (1-26-2006 8-04-19 AM).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Rihanna - Please Don't Stop The Music.mp3.jpg" "/amusic/genres/urban/breslin/Rihanna - Please Don't Stop The Music.mp3" 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55c2feff1e40) 
-Debug [Main]: PlaylistTableModel(0x55c2feff1e40) select() took 7 ms 93 
-Debug [Main]: trying to restore position
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Kanye West - Golddigger.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Kanye West - Golddigger.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Kanye West - Golddigger.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Champs - Tequila.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Sean Paul - The Trinity - 03 - Temperature.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Enur Feat. Natasja & MiMS - Calabria REMIX.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Usher - Yeah.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Panic! At The Disco  - I Write Sins Not Tragedies.mp3.jpg" "/amusic/djs/jim/new/July/Panic! At The Disco  - I Write Sins Not Tragedies.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Panic! At The Disco  - I Write Sins Not Tragedies.mp3.jpg" "/amusic/djs/jim/new/July/Panic! At The Disco  - I Write Sins Not Tragedies.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Usher - Yeah.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/185. Lou Reed - Intro , Sweet Jane.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lumidee - NEVER LEAVE .mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Sean Paul - The Trinity - 03 - Temperature.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Harry Bellafonte - Jump in the Line (Shake Senora)(1).mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/motown/Mowtown Compilation/4-01 I Want You Back.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Usher - Yeah.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/urban/breslin/Lil John feat Ying Yang Twins - Get Low.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Panic! At The Disco  - I Write Sins Not Tragedies.mp3.jpg" "/amusic/djs/jim/new/July/Panic! At The Disco  - I Write Sins Not Tragedies.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/billboard/decades/80/Dexys Midnight Runners - Come On Eileen.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Artwork.jpg" "/amusic/genres/modern_rock/Hits of Modern Rock/The Killers - Mr Brightside.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Folder.jpg" "/amusic/fun/Bobby Darin - Run Around Sue 1.mp3" 
-Debug [Thread (pooled)]: CoverArtUtils::loadCover FILE cover does not exist: "Panic! At The Disco  - I Write Sins Not Tragedies.mp3.jpg" "/amusic/djs/jim/new/July/Panic! At The Disco  - I Write Sins Not Tragedies.mp3" 
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: 6 ms saving configuration 
-Debug [Main]: 6 ms deleting skin 
+Debug [Main]: 7 ms saving configuration 
+Debug [Main]: 7 ms deleting skin 
 Debug [Main]: ~DlgAutoDJ() 
-Debug [Main]: 1375 ms deleting menubar 
-Debug [Main]: 1376 ms deleting SoundManager 
-Debug [Main]: 1392 ms deleting ControllerManager 
+Debug [Main]: 1318 ms deleting menubar 
+Debug [Main]: 1318 ms deleting SoundManager 
+Debug [Main]: 1321 ms deleting ControllerManager 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: 1393 ms deleting VinylControlManager 
+Debug [Main]: 1322 ms deleting VinylControlManager 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: 1393 ms deleting PlayerManager 
+Debug [Main]: 1322 ms deleting PlayerManager 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread 
 Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform(): 
-Debug [Main]: 1396839841 ns deactivating GlobalTrackCache 
-Debug [Main]: 1396 ms deleting Library 
+Debug [Main]: 1325389591 ns deactivating GlobalTrackCache 
+Debug [Main]: TrackDAO: Saving track 6309 "/amusic/billboard/decades/80/Journey - Don't Stop Believin'.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 6309 "/amusic/billboard/decades/80/Journey - Don't Stop Believin'.mp3" 
+Debug [Main]: BaseTrackCache(0x556f8dfeb360) updateIndexWithQuery took 0 ms 
+Debug [Main]: 1336 ms deleting Library 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  450 
 Debug [Main]: Library - Disconnecting database 
 Debug [Main]: TrackDAO::finish() 
 Debug [Main]: Clearing played information for this session 
@@ -399,14 +441,14 @@ Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
 Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
 Debug [LibraryScanner 1]: LibraryScanner - Exiting thread 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: 1501 ms closing database connection(s) 
-Debug [Main]: 1504 ms deleting RecordingManager 
+Debug [Main]: 1417 ms closing database connection(s) 
+Debug [Main]: 1419 ms deleting RecordingManager 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: 1504 ms deleting BroadcastManager 
+Debug [Main]: 1419 ms deleting BroadcastManager 
 Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0 
-Debug [Main]: 1505 ms deleting EngineMaster 
+Debug [Main]: 1420 ms deleting EngineMaster 
 Debug [Main]: in ~EngineMaster() 
-Debug [Main]: 1541 ms deleting DlgPreferences 
-Debug [Main]: 1546 ms deleting EffectsManager 
-Debug [Main]: 1568 ms deleting SettingsManager 
+Debug [Main]: 1459 ms deleting DlgPreferences 
+Debug [Main]: 1469 ms deleting EffectsManager 
+Debug [Main]: 1490 ms deleting SettingsManager 
 Debug [Main]: Mixxx shutdown complete with code 0 
