@@ -53,6 +53,9 @@ sudo apt-get -y install libpq-dev
 echo ----------------------video-------------------------
 sudo apt-get -y install vlc
 
+echo ----------------------reading-------------------------
+sudo apt-get -y install calibre
+
 echo ---------------------graphics----------------------------------
 sudo apt-get -y install graphviz
 sudo apt-get -y install dia 
