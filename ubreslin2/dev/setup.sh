@@ -66,5 +66,7 @@ sudo apt-get -y install mpg123
 sudo apt-get -y install soundconverter
 
 echo ------------------------editing----------------------------------
-sudo apt-get install dos2unix 
+sudo apt-get -y install dos2unix 
 
+echo -------------------------npm------------------------
+sudo apt-get -y install npm
