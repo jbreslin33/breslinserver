@@ -46,7 +46,7 @@
 	ServerAlias elacore.org *.elacore.org 
 	ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/breslinmathracer/src
+        DocumentRoot /home/jbreslin/sandbox/cms/src
 	<Directory />
 		Require all granted		
 		Options FollowSymLinks
