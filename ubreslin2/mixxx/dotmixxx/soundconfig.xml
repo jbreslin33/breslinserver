@@ -1,9 +1,9 @@
 <!DOCTYPE SoundManagerConfig>
 <SoundManagerConfig force_network_clock="0" latency="5" deck_count="4" api="ALSA" samplerate="44100" sync_buffers="2">
- <SoundDevice name="4, USB Audio CODEC: - (hw:1,0)">
+ <SoundDevice name="3, USB Audio CODEC: - (hw:2,0)">
   <output channel="0" type="Headphones" index="0" channel_count="2"/>
  </SoundDevice>
- <SoundDevice name="0, HDA Intel MID: CX20585 Analog (hw:0,0)">
+ <SoundDevice name="0, HDA Intel PCH: ALC269VC Analog (hw:0,0)">
   <output channel="0" type="Master" index="0" channel_count="2"/>
  </SoundDevice>
 </SoundManagerConfig>
