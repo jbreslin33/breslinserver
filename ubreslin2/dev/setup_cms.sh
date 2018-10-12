@@ -1,4 +1,4 @@
-echo -------------------------- checkout mathcore from git ----------------------------
+echo -------------------------- checkout cms from git ----------------------------
 git clone https://github.com/jbreslin33/cms.git ~/sandbox/cms
 
 echo ----------------------apache web server restart------------------------------
