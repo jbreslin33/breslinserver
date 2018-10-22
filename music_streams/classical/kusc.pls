@@ -1,0 +1,12 @@
+[playlist]
+File1=http://17953.live.streamtheworld.com:80/KUSCAAC96_SC
+File2=http://17953.live.streamtheworld.com:3690/KUSCAAC96_SC
+File3=http://16643.live.streamtheworld.com:80/KUSCAAC96_SC
+File4=http://16643.live.streamtheworld.com:3690/KUSCAAC96_SC
+File5=http://14993.live.streamtheworld.com:80/KUSCAAC96_SC
+File6=http://14993.live.streamtheworld.com:3690/KUSCAAC96_SC
+Title1=KUSCAAC96_SC
+Title2=KUSCAAC96_SC-Bak
+Length1=-1
+NumberOfEntries=6
+Version=2

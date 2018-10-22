@@ -1,1 +1,1 @@
-mpg123 -C -b 4096 http://208.80.54.91/KUSCMP128.mp3 
+mplayer -playlist ~/sandbox/breslinserver/music_streams/classical/kusc.pls
