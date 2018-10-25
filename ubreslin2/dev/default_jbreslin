@@ -109,7 +109,7 @@
         ServerAlias jamesanthonybreslin.com *.jamesanthonybreslin.com
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /home/jbreslin/sandbox/armygame/
+        DocumentRoot /home/jbreslin/sandbox/webapp/
         <Directory />
 		Require all granted		
                 Options FollowSymLinks
