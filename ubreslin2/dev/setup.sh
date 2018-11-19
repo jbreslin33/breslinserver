@@ -10,6 +10,7 @@ sudo apt-get -y dist-upgrade  # Installs updates (new ones)
 echo -----------------------build tools---------------------
 sudo apt-get -y install build-essential
 sudo apt-get -y install libtool
+sudo apt-get -y install vim
 
 echo -----------------------version control------------------------
 sudo apt-get -y install git
