@@ -14,3 +14,5 @@ sudo apt-get install id3tool
 sudo apt-get install id3v2
 sudo apt-get install easytag
 
+sudo apt-get install sqlite3
+
