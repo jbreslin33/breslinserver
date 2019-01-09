@@ -74,6 +74,10 @@ Debug [AnalyzerQueue 1]: DbConnectionPool - Cloned thread-local database connect
 Debug [Main]: Creating ControllerManager 
 Debug [Controller]: ControllerManager:slotInitialize 
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  inhibited 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
+Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
 Debug [Main]: RLimit Cur  0 
 Debug [Main]: RLimit Max  0 
 Debug [Controller]: Extension .midi.xml total 109 presets 
@@ -113,8 +117,8 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker" 
 Debug [Main]: DlgPrefKey::loadSettings 
 Debug [Main]: Key plugin ID: "qm-keydetector:2" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x563e9a403c30) true 
-Debug [Main]: Created root GL Context valid: 0x563e9a404270 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55659f33e110) true 
+Debug [Main]: Created root GL Context valid: 0x55659f33d7e0 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -146,27 +150,24 @@ Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3 
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x563eb4ee7100) 
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x563eb0de71a0) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x563e9602f630) 
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x5565b9e2c080) 
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x5565b5d2c6e0) 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55659aecbc30) 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x563eb4eed898) 
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x5565b9e32818) 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x563eb4f6aac0) 
-Debug [Main]: BaseTrackCache(0x563e96c634e0) updateIndexWithQuery took 287 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x563eb4f6aac0) select() took 448 ms 19 
-Debug [Main]: AnalysisLibraryTableModel(0x563eb4f6aac0) select() took 164 ms 19 
-Debug [Main]: DlgAnalysis(0x563eb0de2a80, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x5565b9eafd40) 
+Debug [Main]: BaseTrackCache(0x55659bba7a00) updateIndexWithQuery took 303 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x5565b9eafd40) select() took 490 ms 0 
+Debug [Main]: AnalysisLibraryTableModel(0x5565b9eafd40) select() took 160 ms 0 
+Debug [Main]: DlgAnalysis(0x5565b5d1ed20, name = "DlgAnalysis") analysisActive false 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x563e96e74320) 
-Debug [Main]: LibraryTableModel(0x563e96e74320) select() took 663 ms 23252 
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55659d477730) 
+Debug [Main]: LibraryTableModel(0x55659d477730) select() took 707 ms 23252 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
 Debug [Controller]: Scanning PortMIDI devices: 
-Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
-Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
-Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]" 
@@ -201,32 +202,10 @@ Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete. 
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete. 
-Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1" 
-Debug [Controller]: Applying controller preset... 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Controller]: Controller polling started. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDevicePortAudio::open() "3, USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 3 
+Debug [Controller]: Controller polling stopped. 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
@@ -235,66 +214,9 @@ Debug [Main]: SoundDeviceNetwork - open: "Network stream"
 Debug [Main]: framesPerBuffer: 1024 
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns 
 Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 3 output sound devices opened 
+Debug [Main]: 2 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: Displaying main window 
-Debug [Main]: Running Mixxx 
-Debug [Main]: ControllerManager::getControllerList 
+Warning [Main]: "3, USB Audio CODEC: - (hw:2,0)" not found 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x563eba369c80) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x563eba369cf0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x563eba369d60) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x563eba369dd0) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x563eba2adce0) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x563ebb59fe50) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x563ebb5a0040) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x563ebb5a0310) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x563ebb5a0650) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x563ebb5a0920) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x563ebb5a0b80) 
-Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited 
-Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: 3 ms saving configuration 
-Debug [Main]: 3 ms deleting skin 
-Debug [Main]: ~DlgAutoDJ() 
-Debug [Main]: 1345 ms deleting menubar 
-Debug [Main]: 1345 ms deleting SoundManager 
-Debug [Main]: 1375 ms deleting ControllerManager 
-Debug [Controller]: Controller polling stopped. 
-Debug [Controller]: Deleting PortMIDI devices... 
-Debug [Controller]: ControllerEngine shutting down... 
-Debug [Controller]: Deleting USB Bulk devices... 
-Debug [Controller]: Deleting HID devices... 
-Debug [Main]: 1412 ms deleting VinylControlManager 
-Debug [Main]: ~CoverArtCache() 
-Debug [Main]: 1413 ms deleting PlayerManager 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread 
-Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform(): 
-Debug [Main]: 1416700428 ns deactivating GlobalTrackCache 
-Debug [Main]: 1416 ms deleting Library 
-Debug [Main]: Wait to finish browser background thread 
-Debug [Main]: Browser background thread terminated! 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  502 
-Debug [Main]: Library - Disconnecting database 
-Debug [Main]: TrackDAO::finish() 
-Debug [Main]: Clearing played information for this session 
-Debug [Main]: Cleaning LibraryHashes/track_locations tables. 
-Debug [Main]: ~TrackDAO() 
-Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped 
-Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
-Debug [LibraryScanner 1]: LibraryScanner - Exiting thread 
-Debug [Main]: ~TrackDAO() 
-Debug [Main]: 1540 ms closing database connection(s) 
-Debug [Main]: 1544 ms deleting RecordingManager 
-Debug [Main]: Delete RecordingManager 
-Debug [Main]: 1544 ms deleting BroadcastManager 
-Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0 
-Debug [Main]: 1545 ms deleting EngineMaster 
-Debug [Main]: in ~EngineMaster() 
-Debug [Main]: 1592 ms deleting DlgPreferences 
-Debug [Main]: 1597 ms deleting EffectsManager 
-Debug [Main]: 1617 ms deleting SettingsManager 
-Debug [Main]: Mixxx shutdown complete with code 0 
