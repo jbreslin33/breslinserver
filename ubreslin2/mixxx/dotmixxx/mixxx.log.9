@@ -76,10 +76,10 @@ Debug [Controller]: ControllerManager:slotInitialize
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  inhibited 
 Debug [Main]: RLimit Cur  0 
 Debug [Main]: RLimit Max  0 
-Debug [Main]: ControllerManager::getControllerList 
 Debug [Controller]: Extension .midi.xml total 109 presets 
 Debug [Controller]: Extension .hid.xml total 10 presets 
 Debug [Controller]: Extension .bulk.xml total 1 presets 
+Debug [Main]: ControllerManager::getControllerList 
 Debug [Main]: VampPluginAdapter - Current VAMP_PATH is: "" 
 Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/home/jbreslin/.local/share/data/Mixxx" 
 Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin" 
@@ -113,8 +113,8 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker" 
 Debug [Main]: DlgPrefKey::loadSettings 
 Debug [Main]: Key plugin ID: "qm-keydetector:2" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55f5628f32a0) true 
-Debug [Main]: Created root GL Context valid: 0x55f5628f3f80 true 
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x5584bdef4670) true 
+Debug [Main]: Created root GL Context valid: 0x5584bdef5720 true 
 Debug [Main]: Root GL Context format: 
 Debug [Main]: Double Buffering: true 
 Debug [Main]: Swap interval: 0 
@@ -146,20 +146,20 @@ Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3 
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55f57d3e6080) 
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55f5792e5da0) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55f55e4d9c00) 
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x5584d89e3a60) 
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x5584d48e34f0) 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5584b9b0d400) 
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55f57d3ec818) 
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x5584d89ea1f8) 
 Debug [BrowseThread]: Append last  0 
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55f57d469d40) 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 285 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x55f57d469d40) select() took 470 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x55f57d469d40) select() took 153 ms 0 
-Debug [Main]: DlgAnalysis(0x55f5792d8110, name = "DlgAnalysis") analysisActive false 
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x5584d8a67270) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 289 ms 
+Debug [Main]: AnalysisLibraryTableModel(0x5584d8a67270) select() took 447 ms 18 
+Debug [Main]: AnalysisLibraryTableModel(0x5584d8a67270) select() took 153 ms 18 
+Debug [Main]: DlgAnalysis(0x5584d48d5ae0, name = "DlgAnalysis") analysisActive false 
 Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55f55f37cb00) 
-Debug [Main]: LibraryTableModel(0x55f55f37cb00) select() took 538 ms 23180 
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x5584ba971ab0) 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 465 ms 23251 
 Debug [Main]: trying to restore position
 Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Controller]: ControllerManager: Setting up devices 
@@ -167,9 +167,9 @@ Debug [Controller]: Scanning PortMIDI devices:
 Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1 
 Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1 
 Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1" 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]" 
 Debug [Controller]: Scanning USB Bulk devices: 
 Debug [Controller]: Scanning HID devices: 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]" 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]" 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]" 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler4]" 
@@ -201,9 +201,9 @@ Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2" 
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
+Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
 Debug [Controller]: ControllerManager::getControllerList 
 Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/" 
@@ -217,159 +217,6 @@ Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/contro
 Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js" 
 Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
 Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js" 
-Debug [Controller]: Controller polling started. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork - open: "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns 
-Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 2 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: Displaying main window 
-Debug [Main]: Running Mixxx 
-Debug [Main]: ControllerManager::getControllerList 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: Denormals to zero mode is working 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55f582819540) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55f5828195b0) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55f582819620) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55f582819690) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55f58274a330) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55f583a35850) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55f583a35a40) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55f583a35d10) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55f583a36050) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55f583a36320) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55f583a36580) 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x00d8" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x00d8" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x4000" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x4000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0058" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0058" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "My Boo" "/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x00d8" 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x00d8" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x4000" 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x4000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0058" 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0058" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2803" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2804" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4491" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4492" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7199" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7200" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7751" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7752" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8185" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8186" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 2502583 bytes for track 12672 in 44 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 305742 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 5.53881 audioVisualRatio 7962 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-10-31/The Chainsmokers f. Halsey - Closer (DJ Intro - DJ Outro) (Clean) (8B).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Closer (DJ Intro - DJ Outro) (Clean) (8B)" "/amusic/billboard/latest/2016-10-31/The Chainsmokers f. Halsey - Closer (DJ Intro - DJ Outro) (Clean) (8B).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f57111b8c0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f571154350, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-10-31/The Chainsmokers f. Halsey - Closer (DJ Intro - DJ Outro) (Clean) (8B).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f57d633d70, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3611" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3612" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4239" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4240" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7175" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7176" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7757" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7758" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7987" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7988" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1988518 bytes for track 22682 in 24 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 216162 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.83415 audioVisualRatio 5629.2 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
-Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 1 "USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 2 "3, USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 1 "USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 2 "3, USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 1 "USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 2 "3, USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
 Debug [Main]: Opened PortAudio stream successfully... starting 
 Debug [Main]: Dynamically loaded PortAudio library 
 Debug [Main]: PortAudio: Started stream successfully 
@@ -389,308 +236,310 @@ Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
 Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
 Debug [Main]: 3 output sound devices opened 
 Debug [Main]: 0 input  sound devices opened 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)" 
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)" 
-Debug [Main]: 1 "USB Audio CODEC: - (hw:2,0)" 
-Debug [Main]: 2 "3, USB Audio CODEC: - (hw:2,0)" 
+Debug [Main]: Displaying main window 
+Debug [Main]: Running Mixxx 
+Debug [Main]: ControllerManager::getControllerList 
+Debug [Controller]: Controller polling started. 
 Debug []: SSE: Enabling denormals to zero mode 
 Debug []: SSE: Enabling flush to zero mode 
 Debug []: Denormals to zero mode is working 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
-Debug [Main]: DlgPrefVinyl::Apply 
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml" 
-Debug [Controller]: writing script block for "Numark-Mixtrack-3-scripts.js" 
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55f55f4fe0b0) 
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55f580be6650) 
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55f585ed7ba0) 
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55f5826c2470) 
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55f56285ef00) 
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55f560dd24c0) 
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55f582819b60) 
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55f560dccc20) 
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55f560dd17c0) 
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55f560dd1800) 
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55f583a36630) 
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x5584dde63980) 
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x5584dde639f0) 
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x5584dde63a60) 
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x5584dde63ad0) 
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x5584dddb98a0) 
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x5584df097b50) 
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x5584df097d40) 
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x5584df098010) 
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x5584df098350) 
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x5584df098620) 
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x5584df098880) 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5584b9d0e840) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 6 ms 26 
+Debug [Main]: trying to restore position
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 6 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 26 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x8f4)" QSize(200, 200) 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xa29c)" QSize(455, 455) 
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/02. Victory.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 80000 samplerate: 44100 flags: "0x0048" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 80000 samplerate: 44100 flags: "0x0048" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  2 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0000" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0000" 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0008" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "What's My Age Again" "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Victory" "/amusic/sports/eagles/02. Victory.mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/02. Victory.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 12672 "/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 12672 "/amusic/billboard/year/1996_Billboard_Top_Usa_Singles/088-Ghost_Town_Djs-My_Boo.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 80000 samplerate: 44100 flags: "0x0048" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 80000 samplerate: 44100 flags: "0x0048" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/687" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/688" length 0 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x8f4)" QSize(200, 200) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x8f4)" QSize(200, 200) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x8f4)" QSize(200, 200) 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1190502 bytes for track 3063 in 31 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 132020 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 12.8272 audioVisualRatio 3438 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0008" 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1509" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1510" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3175" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3176" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5193" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5194" length 0 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584c9773a00, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xa29c)" QSize(455, 455) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584bdef52d0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xa29c)" QSize(455, 455) 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 2250431 bytes for track 17135 in 30 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d923e800, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xa29c)" QSize(455, 455) 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 258694 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 6.54613 audioVisualRatio 6736.8 
 Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55f560a52a20) 
-Debug [Main]: PlaylistTableModel(0x55f560a52a20) select() took 6 ms 3 
-Debug [Main]: trying to restore position
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55f560a52a20) 
-Debug [Main]: PlaylistTableModel(0x55f560a52a20) select() took 7 ms 80 
-Debug [Main]: trying to restore position
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55f560a52a20) 
-Debug [Main]: PlaylistTableModel(0x55f560a52a20) select() took 7 ms 80 
-Debug [Main]: trying to restore position
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Warning [Main]: Object::disconnect: Unexpected null parameter
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 12 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 1 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 8 ms 1 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 9 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 8 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 8 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 18 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 14 ms 26 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/03 - Going The Distance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
-Debug [CachingReaderWorker 2]: CachingReaderWorker - Cancelling read request for  19 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 1 #channels: 2 #samples: 12 bitrate: 448000 samplerate: 32000 flags: "0x4000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 1 #channels: 2 #samples: 12 bitrate: 448000 samplerate: 32000 flags: "0x4000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 18 bitrate: 80000 samplerate: 32000 flags: "0x1000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 18 bitrate: 80000 samplerate: 32000 flags: "0x1000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Going the Distance" "/amusic/sports/eagles/03 - Going The Distance.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/03 - Going The Distance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2323" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2324" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2451" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2452" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2533" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2534" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4257" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4258" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7547" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7548" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7755" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7756" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7983" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7984" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22637 in 0 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: TrackDAO: Saving track 22682 "/amusic/billboard/latest/2016-10-31/The Chainsmokers f. Halsey - Closer (DJ Intro - DJ Outro) (Clean) (8B).mp3" 
-Debug [Main]: TrackDAO: Updating track in database 22682 "/amusic/billboard/latest/2016-10-31/The Chainsmokers f. Halsey - Closer (DJ Intro - DJ Outro) (Clean) (8B).mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f57111b8c0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f571154350, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f57d633d70, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [Main]: TrackDAO: Saving track 3063 "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 3063 "/amusic/genres/modern_rock/Top 600 Modern Rock Songs/071. Blink 182 - What's My Age Again.mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 208260 allSignalSize 208260 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8603 "1913353 (933261 compressed)" bytes for track 22637 in 315 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 22637 analysisId 8603 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.13143 audioVisualRatio 5423.4 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8604 "34669 (17909 compressed)" bytes for track 22637 in 11 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 22637 analysisId 8604 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 22637 done 2 s 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Prioritizing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 1 #channels: 2 #samples: 12 bitrate: 448000 samplerate: 32000 flags: "0x4000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 1 #channels: 2 #samples: 12 bitrate: 448000 samplerate: 32000 flags: "0x4000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 18 bitrate: 80000 samplerate: 32000 flags: "0x1000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 18 bitrate: 80000 samplerate: 32000 flags: "0x1000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0088" 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1507" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1508" length 0 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1151310 bytes for track 17136 in 13 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 134692 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 12.5727 audioVisualRatio 3507.6 
 Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Reading MP3 data with different sample rate 32000 <> 44100 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 frame decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Reading MP3 data with different sample rate 32000 <> 44100 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
 Debug [Main]: Committing transaction on "MIXXX-1" result: true 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Big Sean - Bounce Back-phr1pOFK1V8" "/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: TrackDAO: Saving track 17136 "/amusic/sports/eagles/03 - Going The Distance.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 17136 "/amusic/sports/eagles/03 - Going The Distance.mp3" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5065" length 0 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5066" length 0 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6941" length 0 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6942" length 0 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8421" length 0 
 Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8422" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 23229 in 0 ms 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1667513 bytes for track 23229 in 29 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 200126 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.46189 audioVisualRatio 5211.6 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 200126 allSignalSize 200126 visualSampleRate 441 audioVisualRatio 100 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8605 "1636568 (694252 compressed)" bytes for track 23229 in 270 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 23229 analysisId 8605 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 8.46189 audioVisualRatio 5211.6 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8606 "30945 (13310 compressed)" bytes for track 23229 in 12 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 23229 analysisId 8606 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 23229 done 2 s 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: reserved sample frequency value 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad main_data_begin pointer 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/idjpool/The Chainsmokers f. Rozes - Roses (Original Radio Mix).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xd9d2)" QSize(200, 200) 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/generic/Ultimate Sports Jams/08 WHO LET THE DOGS OUT.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Roses (Original Radio Mix)" "/amusic/idjpool/The Chainsmokers f. Rozes - Roses (Original Radio Mix).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f57111b8c0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/idjpool/The Chainsmokers f. Rozes - Roses (Original Radio Mix).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f571154350, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f57d633d70, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 22637 "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 22637 "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2387" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2388" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2567" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2568" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5827" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5828" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8427" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8428" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 22652 in 18 ms 
-Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug []: CachingReader - Prepending 745 frames of silence 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 163148 allSignalSize 163148 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8607 "1454215 (717874 compressed)" bytes for track 22652 in 399 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 22652 analysisId 8607 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 10.3799 audioVisualRatio 4248.6 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8608 "34164 (17552 compressed)" bytes for track 22652 in 11 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 22652 analysisId 8608 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 22652 done 4 s 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x6a98)" QSize(200, 200) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/Urban/Urban_7/Wycleff Jean - Stayin Alive Hip Hop.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  3 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Stayin Alive Hip Hop" "/amusic/djs/jim/Urban/Urban_7/Wycleff Jean - Stayin Alive Hip Hop.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/Urban/Urban_7/Wycleff Jean - Stayin Alive Hip Hop.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: TrackDAO: Saving track 23229 "/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 23229 "/amusic/youtube/playlists/red_hiphop/Big Sean - Bounce Back-phr1pOFK1V8.mp3" 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "WHO LET THE DOGS OUT" "/amusic/sports/generic/Ultimate Sports Jams/08 WHO LET THE DOGS OUT.mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/generic/Ultimate Sports Jams/08 WHO LET THE DOGS OUT.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4691" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4692" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6837" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6838" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8391" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8392" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 16441 in 8 ms 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x5000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 0 samplerate: 12000 flags: "0x4000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 8000 samplerate: 12000 flags: "0x1000" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: reserved sample frequency value 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 2 mode: 3 #channels: 2 #samples: 36 bitrate: 48000 samplerate: 12000 flags: "0x0000" 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5463" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5464" length 0 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 17218 in 0 ms 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x6a98)" QSize(200, 200) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x6a98)" QSize(200, 200) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0x6a98)" QSize(200, 200) 
-Debug []: CachingReader - Prepending 877 frames of silence 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 176948 allSignalSize 176948 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8609 "1476094 (622911 compressed)" bytes for track 16441 in 272 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 16441 analysisId 8609 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.57031 audioVisualRatio 4608 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8610 "32047 (14542 compressed)" bytes for track 16441 in 19 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 16441 analysisId 8610 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 16441 done 4 s 
-Debug []: CachingReader - Prepending 3926 frames of silence 
-Debug []: CachingReader - Prepending 119 frames of silence 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xd9d2)" QSize(200, 200) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xd9d2)" QSize(200, 200) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xd9d2)" QSize(200, 200) 
+Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 175704 allSignalSize 175704 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 10127 "1618116 (777891 compressed)" bytes for track 17218 in 430 ms 
+Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 17218 analysisId 10127 
+Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.63808 audioVisualRatio 4575.6 
+Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 10128 "34870 (18190 compressed)" bytes for track 17218 in 14 ms 
+Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 17218 analysisId 10128 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 17218 done 3 s 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio].mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/FLY EAGLES FLY.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio]" "/amusic/youtube/NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio].mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio].mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "FLY EAGLES FLY" "/amusic/sports/eagles/FLY EAGLES FLY.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/sports/eagles/FLY EAGLES FLY.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 16441 "/amusic/djs/jim/Urban/Urban_7/Wycleff Jean - Stayin Alive Hip Hop.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 16441 "/amusic/djs/jim/Urban/Urban_7/Wycleff Jean - Stayin Alive Hip Hop.mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7489" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7490" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7893" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7894" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8089" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8090" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 26133 in 18 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
+Debug [Main]: TrackDAO: Saving track 17218 "/amusic/sports/generic/Ultimate Sports Jams/08 WHO LET THE DOGS OUT.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 17218 "/amusic/sports/generic/Ultimate Sports Jams/08 WHO LET THE DOGS OUT.mp3" 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1505" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/1506" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3083" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3084" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5189" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5190" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6741" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6742" length 0 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 307046 bytes for track 17138 in 5 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 32994 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 51.3268 audioVisualRatio 859.2 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
+Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 223578 allSignalSize 223578 visualSampleRate 441 audioVisualRatio 108.844 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8611 "2003540 (960182 compressed)" bytes for track 26133 in 433 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 26133 analysisId 8611 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.57432 audioVisualRatio 6337.2 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8612 "34454 (17390 compressed)" bytes for track 26133 in 10 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 26133 analysisId 8612 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 26133 done 5 s 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Engine]: CachingReader - Prepending 578 frames of silence 
 Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 8 ms 2 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xb927)" QSize(200, 198) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/reggae/Bob Marley & The Wailers/Legend/Bob Marley & the Wailers - Three Little Birds.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xfb1e)" QSize(200, 197) 
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/Urban/Urban_5/DMX - Party Up (Up in Here).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
 Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
@@ -909,8 +758,8 @@ Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode
 Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
 Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Three Little Birds" "/amusic/genres/reggae/Bob Marley & The Wailers/Legend/Bob Marley & the Wailers - Three Little Birds.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/reggae/Bob Marley & The Wailers/Legend/Bob Marley & the Wailers - Three Little Birds.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Party Up (Up in Here)" "/amusic/djs/jim/Urban/Urban_5/DMX - Party Up (Up in Here).mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/Urban/Urban_5/DMX - Party Up (Up in Here).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088" 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
@@ -1128,473 +977,246 @@ Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000" 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
 Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/403" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/404" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3619" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3620" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4229" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4230" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8379" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8380" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 4610 in 0 ms 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/411" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/412" length 0 
+Debug [Main]: TrackDAO: Saving track 17135 "/amusic/sports/eagles/02. Victory.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 17135 "/amusic/sports/eagles/02. Victory.mp3" 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 2171535 bytes for track 16391 in 47 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 237174 visualSampleRate 441 audioVisualRatio 100 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.14008 audioVisualRatio 6176.4 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it. 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: TrackDAO: Saving track 26133 "/amusic/youtube/NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio].mp3" 
-Debug [Main]: TrackDAO: Updating track in database 26133 "/amusic/youtube/NA-Cardi B, Bad Bunny & J Balvin - I Like It [Official Audio].mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xb927)" QSize(200, 198) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xb927)" QSize(200, 198) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xb927)" QSize(200, 198) 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584c9773a00, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xfb1e)" QSize(200, 197) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584bdef52d0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xfb1e)" QSize(200, 197) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d923e800, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xfb1e)" QSize(200, 197) 
+Debug [Engine]: CachingReader - Prepending 677 frames of silence 
 Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 158884 allSignalSize 158884 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8613 "1288767 (569012 compressed)" bytes for track 4610 in 197 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 4610 analysisId 8613 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 10.6584 audioVisualRatio 4137.6 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8614 "31060 (15283 compressed)" bytes for track 4610 in 8 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 4610 analysisId 8614 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 4610 done 1 s 
+Debug [Engine]: CachingReader - Prepending 392 frames of silence 
+Debug [Engine]: CachingReader - Prepending 680 frames of silence 
+Debug [Engine]: CachingReader - Prepending 398 frames of silence 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 8 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 9 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 13 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 14 ms 26 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 7 ms 26 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/039-estelle_ft._kanye_west-american_boy.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  41 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
+Debug [CachingReaderWorker 2]: CachingReaderWorker - Cancelling read request for  1 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "American Boy (Promo Only Clean Edit)" "/amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/039-estelle_ft._kanye_west-american_boy.mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/039-estelle_ft._kanye_west-american_boy.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: TrackDAO: Saving track 4610 "/amusic/genres/reggae/Bob Marley & The Wailers/Legend/Bob Marley & the Wailers - Three Little Birds.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 4610 "/amusic/genres/reggae/Bob Marley & The Wailers/Legend/Bob Marley & the Wailers - Three Little Birds.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048" 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/527" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/528" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2637" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2638" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4883" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4884" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7253" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7254" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8407" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8408" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 14048 in 18 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 209550 allSignalSize 209550 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8615 "1902318 (896623 compressed)" bytes for track 14048 in 272 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 14048 analysisId 8615 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.08136 audioVisualRatio 5457 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8616 "34893 (17501 compressed)" bytes for track 14048 in 8 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 14048 analysisId 8616 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 14048 done 2 s 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xbe38)" QSize(200, 200) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x0098" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "BedRock" "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: TrackDAO: Saving track 14048 "/amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/039-estelle_ft._kanye_west-american_boy.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 14048 "/amusic/billboard/year/2008/VA_-_Billboard_Hot_100_Songs-2008-DRL/039-estelle_ft._kanye_west-american_boy.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x0098" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 1 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3913" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3914" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6585" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6586" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7639" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7640" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8459" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8460" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 14254 in 9 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xbe38)" QSize(200, 200) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xbe38)" QSize(200, 200) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xbe38)" QSize(200, 200) 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 254224 allSignalSize 254224 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8617 "2232582 (1114292 compressed)" bytes for track 14254 in 592 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 14254 analysisId 8617 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 6.66123 audioVisualRatio 6620.4 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8618 "33909 (17565 compressed)" bytes for track 14254 in 13 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 14254 analysisId 8618 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 14254 done 5 s 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "041-Zedd, Maren Morris, Grey - The Middle (Official Music Video)" "/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 14254 "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 14254 "/amusic/billboard/year/2010/Billboard Year End Charts 2010 (Hot 100 Songs) [Top Hits]/13 Young Money - BedRock.mp3" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6683" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6684" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6739" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6740" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7263" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7264" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7899" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7900" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8083" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8084" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 26113 in 0 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 167778 allSignalSize 167778 visualSampleRate 441 audioVisualRatio 108.844 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8619 "1387776 (635359 compressed)" bytes for track 26113 in 305 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 26113 analysisId 8619 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3840 allSignalSize 3840 visualSampleRate 10.0934 audioVisualRatio 4755.6 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8620 "31782 (15256 compressed)" bytes for track 26113 in 9 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 26113 analysisId 8620 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 26113 done 2 s 
-Warning [Main]: Object::disconnect: Unexpected null parameter
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  19 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Can't Stop The Feeling!" "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "My House" "/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2323" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2324" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2451" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2452" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2533" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2534" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4257" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4258" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7547" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7548" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7755" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7756" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7983" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7984" length 0 
-Debug [Main]: TrackDAO: Saving track 26113 "/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" 
-Debug [Main]: TrackDAO: Updating track in database 26113 "/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1948022 bytes for track 22637 in 45 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 208260 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.13143 audioVisualRatio 5423.4 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2343" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2344" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2469" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2470" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2553" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2554" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4625" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4626" length 0 
+Debug [Main]: TrackDAO: Saving track 17138 "/amusic/sports/eagles/FLY EAGLES FLY.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 17138 "/amusic/sports/eagles/FLY EAGLES FLY.mp3" 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1595965 bytes for track 22643 in 34 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 169576 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 9.98641 audioVisualRatio 4416 
 Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 1 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "041-Zedd, Maren Morris, Grey - The Middle (Official Music Video)" "/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: TrackDAO: Saving track 22637 "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 22637 "/amusic/billboard/latest/2016-06-01/003. Justin Timberlake - Can't Stop The Feeling!.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6683" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6684" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6739" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6740" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7263" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7264" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7899" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7900" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8083" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8084" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1419558 bytes for track 26113 in 28 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 167778 visualSampleRate 441 audioVisualRatio 108.844 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 10.0934 audioVisualRatio 4755.6 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xad4f)" QSize(600, 600) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2012-04-14/018 Rihanna ft. Calvin Harris - We Found Love.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x0078" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  31 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "We Found Love (Feat. Calvin Harris)" "/amusic/billboard/latest/2012-04-14/018 Rihanna ft. Calvin Harris - We Found Love.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2012-04-14/018 Rihanna ft. Calvin Harris - We Found Love.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 1 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x0078" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4613" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4614" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7411" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7412" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7945" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7946" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8103" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8104" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 7339 in 0 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xad4f)" QSize(600, 600) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xad4f)" QSize(600, 600) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xad4f)" QSize(600, 600) 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 190380 allSignalSize 190380 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8621 "1657188 (785914 compressed)" bytes for track 7339 in 404 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 7339 analysisId 8621 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.89507 audioVisualRatio 4957.8 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8622 "33562 (16986 compressed)" bytes for track 7339 in 12 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 7339 analysisId 8622 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 7339 done 4 s 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200) 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Candy Shop" "/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 7339 "/amusic/billboard/latest/2012-04-14/018 Rihanna ft. Calvin Harris - We Found Love.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 7339 "/amusic/billboard/latest/2012-04-14/018 Rihanna ft. Calvin Harris - We Found Love.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 160000 samplerate: 44100 flags: "0x0008" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/637" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/638" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3715" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3716" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4485" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4486" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7101" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7102" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7897" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7898" length 0 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8095" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8096" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 4874 in 2 ms 
-Debug [AnalyzerQueue 1]: Beat calculation will not start 
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
-Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200) 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 185796 allSignalSize 185796 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8623 "1662064 (803888 compressed)" bytes for track 4874 in 370 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 4874 analysisId 8623 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 9.11458 audioVisualRatio 4838.4 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8624 "34696 (17952 compressed)" bytes for track 4874 in 14 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 4874 analysisId 8624 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 4874 done 3 s 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
-Debug [Main]: PlaylistTableModel(0x55f560a52a20) select() took 8 ms 14 
-Debug [Main]: Successfully deserialized BeatGrid 
-Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/NA-Meek Mill -Dreams And Nightmares (Intro).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "041-Zedd, Maren Morris, Grey - The Middle (Official Music Video)" "/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f57111b8c0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2018-02-22/041-Zedd, Maren Morris, Grey - The Middle (Official Music Video).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f571154350, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f57d633d70, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "NA-Meek Mill -Dreams And Nightmares (Intro)" "/amusic/youtube/NA-Meek Mill -Dreams And Nightmares (Intro).mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/youtube/NA-Meek Mill -Dreams And Nightmares (Intro).mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 22652 "/amusic/idjpool/The Chainsmokers f. Rozes - Roses (Original Radio Mix).mp3" 
-Debug [Main]: TrackDAO: Updating track in database 22652 "/amusic/idjpool/The Chainsmokers f. Rozes - Roses (Original Radio Mix).mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6683" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6684" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6739" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/6740" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7263" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7264" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7899" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7900" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8083" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8084" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1419558 bytes for track 26113 in 36 ms 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 167778 visualSampleRate 441 audioVisualRatio 108.844 
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 10.0934 audioVisualRatio 4755.6 
+Debug [Main]: TrackDAO: Saving track 22643 "/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 22643 "/amusic/billboard/latest/2016-06-01/019. Flo Rida - My House.mp3" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1952615 bytes for track 26506 in 38 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 206854 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 8.18666 audioVisualRatio 5863.2 
 Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 frame decoding error: bad scalefactor selection info 
+Debug [Engine]: CachingReader - Prepending 600 frames of silence 
+Debug [Engine]: CachingReader - Prepending 571 frames of silence 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 9 ms 26 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xfb1e)" QSize(200, 197) 
+Debug [Main]: MixxxLibraryFeature::activate() 
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x5584ba971ab0) 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 822 ms 23251 
+Debug [Main]: trying to restore position
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 553 ms 12 
+Debug [Main]: BeatFactory::loadBeatsFromByteArray could not parse serialized beats. 
+Debug [Main]: Reloading value for 'tracktotal' once-only from file to replace the default value introduced with a previous schema upgrade 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]" 
+Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Big Sean - Bounce Back-3 mHVgHwWYw" "/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc719ba0, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584cc7515b0, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584db93c110, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
+Debug [Main]: TrackDAO: Saving track 26506 "/amusic/youtube/NA-Meek Mill -Dreams And Nightmares (Intro).mp3" 
+Debug [Main]: TrackDAO: Updating track in database 26506 "/amusic/youtube/NA-Meek Mill -Dreams And Nightmares (Intro).mp3" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 24948 in 18 ms 
+Debug [AnalyzerQueue 1]: VampAnalyzer BlockSize:  1114 
+Debug [AnalyzerQueue 1]: VampAnalyzer StepSize:  557 
+Debug [AnalyzerQueue 1]: Beat calculation started with plugin "qm-tempotracker:0" 
+Debug [AnalyzerQueue 1]: VampAnalyzer BlockSize:  32768 
+Debug [AnalyzerQueue 1]: VampAnalyzer StepSize:  32768 
+Debug [AnalyzerQueue 1]: Key calculation started with plugin "qm-keydetector:2" 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 196398 allSignalSize 196398 visualSampleRate 441 audioVisualRatio 108.844 
+Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 10129 "1780906 (854879 compressed)" bytes for track 24948 in 327 ms 
+Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 24948 analysisId 10129 
+Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 8.62255 audioVisualRatio 5566.8 
+Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 10130 "35103 (16929 compressed)" bytes for track 24948 in 10 ms 
+Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 24948 analysisId 10130 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 24948 done 44 s 
+Debug [AnalyzerQueue 1]: ReplayGain 2.0 (libebur128) result is -8.82474 dB for "/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" 
+Debug [AnalyzerQueue 1]: Beat Calculation complete 
+Debug [AnalyzerQueue 1]: Key Detection complete 
+Debug [AnalyzerQueue 1]: Key Histogram 
+Debug [AnalyzerQueue 1]: 2 : "D♭" 262144 
+Debug [AnalyzerQueue 1]: 3 : "D" 1.01581e+06 
+Debug [AnalyzerQueue 1]: 7 : "F♯/G♭" 262144 
+Debug [AnalyzerQueue 1]: 9 : "A♭" 163840 
+Debug [AnalyzerQueue 1]: 10 : "A" 622592 
+Debug [AnalyzerQueue 1]: 12 : "B" 262144 
+Debug [AnalyzerQueue 1]: 14 : "C♯m" 6.59226e+06 
+Debug [AnalyzerQueue 1]: 15 : "Dm" 294912 
+Debug [AnalyzerQueue 1]: 19 : "F♯m" 1.21242e+06 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 881 ms 23251 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 812 ms 23251 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 757 ms 23251 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 754 ms 23251 
+Debug [Main]: LibraryTableModel(0x5584ba971ab0) select() took 735 ms 23251 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 10 ms 26 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5584b9d0e840) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 39 ms 1857 
+Debug [Main]: trying to restore position
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 45 ms 1857 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 42 ms 1857 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5584b9d0e840) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 42 ms 2277 
+Debug [Main]: trying to restore position
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 46 ms 2277 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 48 ms 2277 
+Debug [Main]: Committing transaction on "MIXXX-1" result: true 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 58 ms 2277 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 51 ms 2277 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 56 ms 2277 
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5584b9d0e840) 
+Debug [Main]: PlaylistTableModel(0x5584b9d0e840) select() took 12 ms 26 
+Debug [Main]: trying to restore position
+Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
 Debug [Main]: Successfully deserialized BeatGrid 
 Debug [Main]: Successfully deserialized KeyMap 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f5792d8b80, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0x3993)" QSize(500, 500) 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d48d6240, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]" 
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/New Music/38 Trey Songz ft. Nicki Minaj - Bottoms Up.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/21-Eminem-Without_Me.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
 Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 256000 samplerate: 44100 flags: "0x0088" 
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  4 
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 192000 samplerate: 44100 flags: "0x0088" 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 192000 samplerate: 44100 flags: "0x0088" 
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Bottoms Up" "/amusic/djs/jim/New Music/38 Trey Songz ft. Nicki Minaj - Bottoms Up.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/djs/jim/New Music/38 Trey Songz ft. Nicki Minaj - Bottoms Up.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Without Me" "/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/21-Eminem-Without_Me.mp3" 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584bdef52d0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///media/jbreslin/F832304632300BDE/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/21-Eminem-Without_Me.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict 
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5584c9773a00, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5584d923e800, name = "DeckCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0) 
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000" 
-Debug [Main]: TrackDAO: Saving track 4874 "/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 4874 "/amusic/genres/urban/breslin/50 Cent - Candy Shop.mp3" 
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 256000 samplerate: 44100 flags: "0x0088" 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3509" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3510" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4247" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4248" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7393" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7394" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8061" length 0 
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8062" length 0 
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 0 analyses, 0 bytes for track 16253 in 0 ms 
+Debug [Main]: TrackDAO: Saving track 16391 "/amusic/djs/jim/Urban/Urban_5/DMX - Party Up (Up in Here).mp3" 
+Debug [Main]: TrackDAO: Updating track in database 16391 "/amusic/djs/jim/Urban/Urban_5/DMX - Party Up (Up in Here).mp3" 
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 192000 samplerate: 44100 flags: "0x0088" 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization 
+Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 192000 samplerate: 44100 flags: "0x0088" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/101" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/102" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2461" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2462" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2757" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2758" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4259" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4260" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7939" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7940" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8347" length 0 
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8348" length 0 
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 2089625 bytes for track 13291 in 35 ms 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 256136 visualSampleRate 441 audioVisualRatio 100 
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 6.6115 audioVisualRatio 6670.2 
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded 
 Debug [AnalyzerQueue 1]: Beat calculation will not start 
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing. 
 Debug [AnalyzerQueue 1]: Key calculation will not start. 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56d05e0a0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0x3993)" QSize(500, 500) 
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55f56e174a50, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0x3993)" QSize(500, 500) 
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55f580086b40, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0x3993)" QSize(500, 500) 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 217200 allSignalSize 217200 visualSampleRate 441 audioVisualRatio 100 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8625 "2037172 (996384 compressed)" bytes for track 16253 in 418 ms 
-Debug [AnalyzerQueue 1]: Saved waveform analysis for trackId 16253 analysisId 8625 
-Debug [AnalyzerQueue 1]: Writing waveform from byte array: dataSize 3842 allSignalSize 3842 visualSampleRate 7.79675 audioVisualRatio 5656.2 
-Debug [AnalyzerQueue 1]: AnalysisDAO saved analysis 8626 "35945 (18591 compressed)" bytes for track 16253 in 9 ms 
-Debug [AnalyzerQueue 1]: Saved waveform summary analysis for trackId 16253 analysisId 8626 
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - Waveform generation for track 16253 done 3 s 
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized. 
 Debug [Main]: Committing transaction on "MIXXX-1" result: true 
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited 
 Debug [Main]: Destroying MixxxMainWindow 
-Debug [Main]: 3 ms saving configuration 
-Debug [Main]: 3 ms deleting skin 
+Debug [Main]: 5 ms saving configuration 
+Debug [Main]: 5 ms deleting skin 
 Debug [Main]: ~DlgAutoDJ() 
-Debug [Main]: 1693 ms deleting menubar 
-Debug [Main]: 1693 ms deleting SoundManager 
-Debug [Main]: 1714 ms deleting ControllerManager 
+Debug [Main]: 1578 ms deleting menubar 
+Debug [Main]: 1578 ms deleting SoundManager 
+Debug [Main]: 1617 ms deleting ControllerManager 
 Debug [Controller]: Controller polling stopped. 
 Debug [Controller]: Deleting PortMIDI devices... 
 Debug [Controller]: ControllerEngine shutting down... 
 Debug [Controller]: Deleting USB Bulk devices... 
 Debug [Controller]: Deleting HID devices... 
-Debug [Main]: 1739 ms deleting VinylControlManager 
+Debug [Main]: 1652 ms deleting VinylControlManager 
 Debug [Main]: ~CoverArtCache() 
-Debug [Main]: 1739 ms deleting PlayerManager 
+Debug [Main]: 1653 ms deleting PlayerManager 
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread 
 Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform(): 
-Debug [Main]: 1743052760 ns deactivating GlobalTrackCache 
-Debug [Main]: TrackDAO: Saving track 16253 "/amusic/djs/jim/New Music/38 Trey Songz ft. Nicki Minaj - Bottoms Up.mp3" 
-Debug [Main]: TrackDAO: Updating track in database 16253 "/amusic/djs/jim/New Music/38 Trey Songz ft. Nicki Minaj - Bottoms Up.mp3" 
-Debug [Main]: BaseTrackCache(0x55f55e418910) updateIndexWithQuery took 0 ms 
-Debug [Main]: 1751 ms deleting Library 
+Debug [Main]: 1658130720 ns deactivating GlobalTrackCache 
+Debug [Main]: TrackDAO: Saving track 13291 "/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/21-Eminem-Without_Me.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 13291 "/amusic/billboard/year/2002_Billboard_Top_Usa_Singles/21-Eminem-Without_Me.mp3" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: TrackDAO: Saving track 24948 "/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" 
+Debug [Main]: TrackDAO: Updating track in database 24948 "/amusic/billboard/latest/2017-04-13/Big Sean - Bounce Back-3_mHVgHwWYw.mp3" 
+Debug [Main]: BaseTrackCache(0x5584ba760920) updateIndexWithQuery took 0 ms 
+Debug [Main]: 1678 ms deleting Library 
 Debug [Main]: Wait to finish browser background thread 
 Debug [Main]: Browser background thread terminated! 
 Debug [Main]: Library - Disconnecting database 
@@ -1606,14 +1228,14 @@ Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
 Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
 Debug [LibraryScanner 1]: LibraryScanner - Exiting thread 
 Debug [Main]: ~TrackDAO() 
-Debug [Main]: 1851 ms closing database connection(s) 
-Debug [Main]: 1854 ms deleting RecordingManager 
+Debug [Main]: 1769 ms closing database connection(s) 
+Debug [Main]: 1772 ms deleting RecordingManager 
 Debug [Main]: Delete RecordingManager 
-Debug [Main]: 1854 ms deleting BroadcastManager 
+Debug [Main]: 1772 ms deleting BroadcastManager 
 Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0 
-Debug [Main]: 1856 ms deleting EngineMaster 
+Debug [Main]: 1774 ms deleting EngineMaster 
 Debug [Main]: in ~EngineMaster() 
-Debug [Main]: 1901 ms deleting DlgPreferences 
-Debug [Main]: 1907 ms deleting EffectsManager 
-Debug [Main]: 1929 ms deleting SettingsManager 
+Debug [Main]: 1820 ms deleting DlgPreferences 
+Debug [Main]: 1825 ms deleting EffectsManager 
+Debug [Main]: 1849 ms deleting SettingsManager 
 Debug [Main]: Mixxx shutdown complete with code 0 

@@ -1,7 +1,7 @@
 echo -------------------------- checkout cmswebapp from git ----------------------------
 git clone https://github.com/jbreslin33/cmswebapp.git ~/sandbox/cmswebapp
 
-echo -------------------create db --------------
+echo ----------------- create cms db called cms
 sudo -u postgres createdb cms
 
 echo ----------------------apache web server restart------------------------------
