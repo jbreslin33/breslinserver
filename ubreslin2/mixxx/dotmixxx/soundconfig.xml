@@ -1,6 +1,6 @@
 <!DOCTYPE SoundManagerConfig>
-<SoundManagerConfig deck_count="4" latency="5" force_network_clock="0" samplerate="44100" sync_buffers="2" api="ALSA">
- <SoundDevice name="11, default">
-  <output type="Master" channel="0" index="0" channel_count="2"/>
+<SoundManagerConfig force_network_clock="0" samplerate="44100" sync_buffers="2" api="ALSA" latency="5" deck_count="4">
+ <SoundDevice name="0, HDA Intel PCH: ALC269VB Analog (hw:0,0)">
+  <output type="Master" index="0" channel="0" channel_count="2"/>
  </SoundDevice>
 </SoundManagerConfig>
