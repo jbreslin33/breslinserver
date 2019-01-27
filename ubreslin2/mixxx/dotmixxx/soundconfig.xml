@@ -1,6 +1,6 @@
 <!DOCTYPE SoundManagerConfig>
-<SoundManagerConfig samplerate="44100" force_network_clock="0" deck_count="4" api="ALSA" sync_buffers="2" latency="5">
+<SoundManagerConfig latency="5" samplerate="44100" deck_count="4" force_network_clock="0" api="ALSA" sync_buffers="2">
  <SoundDevice name="1, HDA Intel PCH: HDMI 0 (hw:0,3)">
-  <output index="0" channel_count="2" channel="0" type="Master"/>
+  <output type="Master" channel_count="2" channel="0" index="0"/>
  </SoundDevice>
 </SoundManagerConfig>
