@@ -16,8 +16,7 @@ Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.
 Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin"
 Debug [Main]: Loading resources from  "/usr/share/mixxx/"
 Warning [Main]: Configuration file is at version "2.1.1" instead of the current 2.2.0
-Info [Main]: BroadcastSettings - Profiles folder doesn't exist. Creating it.
-Info [Main]: BroadcastSettings - No profiles found. Creating default profile.
+Info [Main]: BroadcastSettings - Found 1 profile(s)
 Debug [Main]: Loading resources from  "/usr/share/mixxx/"
 Debug [Main]: Loading resources from  "/usr/share/mixxx/"
 Debug [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : success
@@ -77,9 +76,6 @@ Info [AnalyzerQueue 1]: DbConnectionPool - Cloned thread-local database connecti
 Debug [Main]: Creating ControllerManager
 Debug [Controller]: ControllerManager:slotInitialize
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  inhibited
-Debug [Controller]: Extension .midi.xml total 111 presets
-Debug [Controller]: Extension .hid.xml total 10 presets
-Debug [Controller]: Extension .bulk.xml total 1 presets
 Debug [Main]: RLimit Cur  0
 Debug [Main]: RLimit Max  0
 Debug [Main]: ControllerManager::getControllerList
@@ -116,8 +112,11 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
 Debug [Main]: DlgPrefKey::loadSettings
 Debug [Main]: Key plugin ID: "qm-keydetector:2"
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55edea9e9fb0) true
-Debug [Main]: Created root GL Context valid: 0x55edeaa87ce0 true
+Debug [Controller]: Extension .midi.xml total 111 presets
+Debug [Controller]: Extension .hid.xml total 10 presets
+Debug [Controller]: Extension .bulk.xml total 1 presets
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55fa3d7294f0) true
+Debug [Main]: Created root GL Context valid: 0x55fa3d7c7db0 true
 Debug [Main]: Root GL Context format:
 Debug [Main]: Double Buffering: true
 Debug [Main]: Swap interval: 0
@@ -151,56 +150,49 @@ Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3
 Debug [Main]: WSearchLineEdit - Background color: QColor(ARGB 1, 1, 1, 1)
 Debug [Main]: WSearchLineEdit - Foreground color: QColor(ARGB 1, 0, 0, 0)
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55edef983800)
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55edef9835c0)
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55ede65b8290)
-Debug [Main]: Created folder "/home/jbreslin/Music/Mixxx/Recordings" for recordings
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55fa426c3350)
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55fa426c3110)
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa39ae89f0)
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings"
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55edf04b7100)
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55fa431f7600)
 Debug [BrowseThread]: Append last  0
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55edef983380)
-Debug [Main]: BaseTrackCache(0x55ede848f5e0) updateIndexWithQuery took 179 ms
-Debug [Main]: AnalysisLibraryTableModel(0x55edef983380) select() took 278 ms 12
-Debug [Main]: AnalysisLibraryTableModel(0x55edef983380) select() took 94 ms 12
-Debug [Main]: DlgAnalysis(0x55edf063ae10, name="DlgAnalysis") analysisActive false
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55fa426c2ed0)
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 181 ms
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 282 ms 12
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 94 ms 12
+Debug [Main]: DlgAnalysis(0x55fa4337bf40, name="DlgAnalysis") analysisActive false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:tool_bar.xml:344 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:skin_settings.xml:40 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Debug [Main]: MixxxLibraryFeature::activate()
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55ede84b4400)
-Debug [Main]: LibraryTableModel(0x55ede84b4400) select() took 218 ms 23264
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 197 ms 23264
 Debug [Main]: trying to restore position
 Debug [Controller]: ControllerManager: Setting up devices
 Debug [Controller]: Scanning PortMIDI devices:
 Debug [Controller]: Scanning USB Bulk devices:
-Warning [Main]: Could not read sampler bank file "/home/jbreslin/.mixxx/samplers.xml"
-Debug [Main]: SoundManager::setupDevices()
 Debug [Controller]: Scanning HID devices:
-Warning [Main]: Output sound device clock reference not set! Using "Network stream"
-Debug [Main]: SoundDeviceNetwork - open: "Network stream"
-Debug [Main]: framesPerBuffer: 1024
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
-Debug [Main]: Using "Network stream" as output sound device clock reference
-Debug [Main]: 1 output sound devices opened
-Debug [Main]: 0 input sound devices opened
-Warning [Main]: "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" not found
-Warning [Main]: "3, USB Audio CODEC: - (hw:1,0)" not found
-Warning []: SoundDeviceNetworkThread: Failed bumping priority
-Debug []: SSE: Enabling denormals to zero mode
-Debug []: SSE: Enabling flush to zero mode
-Debug []: SSE: Denormals to zero mode is working
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler4]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler5]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler6]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler7]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler8]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler9]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler10]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler11]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler12]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler13]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]"
 Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
 Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0"
 Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
 Debug [Controller]: ControllerManager::getControllerList
 Debug [Controller]: Controller polling stopped.
-Debug [Main]: JACK client name set
-Debug [Main]: 1 "HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]"
 Debug [Main]: SoundManager::setupDevices()
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
 Debug [Main]: framesPerBuffer: 1024
@@ -217,58 +209,253 @@ Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
 Debug [Main]: Using "HDA Intel PCH: ALC269VB Analog (hw:0,0)" as output sound device clock reference
 Debug [Main]: 2 output sound devices opened
 Debug [Main]: 0 input sound devices opened
-Debug [Main]: 1 "HDA Intel PCH: ALC269VB Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
+Debug [Main]: Displaying main window
+Debug [Main]: Running Mixxx
 Debug []: SSE: Enabling denormals to zero mode
 Debug []: SSE: Enabling flush to zero mode
 Debug []: Denormals to zero mode is working
-Debug [Main]: DlgPrefVinyl::Apply
-Debug [Controller]: ControllerManager::getControllerList
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB
-Debug [Main]: DlgPrefLV2::slotApply 0x0
-Debug [Main]: Displaying main window
-Debug [Main]: Running Mixxx
-Warning [Main]: QXcbConnection: XCB error: 8 (BadMatch), sequence: 5141, resource id: 96469087, major code: 156 (Unknown), minor code: 11
-Debug [Main]: Committing transaction on "MIXXX-1" result: true
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55ede622de30)
-Debug [Main]: PlaylistTableModel(0x55ede622de30) select() took 4 ms 81
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 201 ms 23264
 Debug [Main]: trying to restore position
 Debug [Main]: MixxxLibraryFeature::activate()
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55ede84b4400)
-Debug [Main]: LibraryTableModel(0x55ede84b4400) select() took 201 ms 23264
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 198 ms 23264
 Debug [Main]: trying to restore position
-Debug [Main]: LibraryTableModel(0x55ede84b4400) select() took 200 ms 23264
-Debug [Main]: LibraryTableModel(0x55ede84b4400) select() took 201 ms 23264
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 201 ms 23264
 Debug [Main]: Successfully deserialized BeatGrid
 Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x55ede848f5e0) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55ede61b4490, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
-Debug [CachingReaderWorker 1]: CachingReaderWorker - "[Channel1]" loadTrack() load failed for" "/amusic/billboard/year/2010 Dance/Don Omar - Danza Kuduro (www.musicabarrial.net).mp3" ", unlocked reader lock
-Debug [Main]: Failed to load track "/amusic/billboard/year/2010 Dance/Don Omar - Danza Kuduro (www.musicabarrial.net).mp3" "The file '/amusic/billboard/year/2010 Dance/Don Omar - Danza Kuduro (www.musicabarrial.net).mp3' could not be found."
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 200 ms 23264
+Debug [Main]: trying to restore position
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 16 ms
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 18 ms 2096
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xf3c7)" QSize(0, 0)
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 81
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 81
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 81
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 19 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 104 ms 12
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 6 ms 131
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 20
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 89
+Debug [Main]: trying to restore position
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited
 Debug [Main]: Destroying MixxxMainWindow
 Debug [Main]: 3 ms saving configuration
 Debug [Main]: 4 ms deleting skin
 Debug [Main]: ~DlgAutoDJ()
-Debug [Main]: 527 ms deleting menubar
-Debug [Main]: 527 ms deleting SoundManager
-Debug [Main]: 540 ms deleting ControllerManager
+Debug [Main]: 564 ms deleting menubar
+Debug [Main]: 565 ms deleting SoundManager
+Debug [Main]: 568 ms deleting ControllerManager
 Debug [Controller]: Controller polling stopped.
 Debug [Controller]: Deleting PortMIDI devices...
 Debug [Controller]: Deleting USB Bulk devices...
 Debug [Controller]: Deleting HID devices...
-Debug [Main]: 541 ms deleting VinylControlManager
+Debug [Main]: 568 ms deleting VinylControlManager
 Debug [Main]: ~CoverArtCache()
-Debug [Main]: 542 ms deleting PlayerManager
+Debug [Main]: 569 ms deleting PlayerManager
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread
 Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform():
-Debug [Main]: 544646438 ns deactivating GlobalTrackCache
-Debug [Main]: TrackDAO: Saving track 14453 "/amusic/billboard/year/2010 Dance/Don Omar - Danza Kuduro (www.musicabarrial.net).mp3"
-Debug [Main]: TrackDAO: Updating track in database 14453 "/amusic/billboard/year/2010 Dance/Don Omar - Danza Kuduro (www.musicabarrial.net).mp3"
-Debug [Main]: BaseTrackCache(0x55ede848f5e0) updateIndexWithQuery took 0 ms
-Debug [Main]: 703 ms deleting Library
+Debug [Main]: 571334933 ns deactivating GlobalTrackCache
+Debug [Main]: 571 ms deleting Library
 Debug [Main]: Wait to finish browser background thread
 Debug [Main]: Browser background thread terminated!
 Debug [Main]: Committing transaction on "MIXXX-1" result: true
@@ -282,14 +469,14 @@ Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
 Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
 Debug [LibraryScanner 1]: LibraryScanner - Exiting thread
 Debug [Main]: ~TrackDAO()
-Debug [Main]: 874 ms closing database connection(s)
-Debug [Main]: 875 ms deleting RecordingManager
+Debug [Main]: 728 ms closing database connection(s)
+Debug [Main]: 731 ms deleting RecordingManager
 Debug [Main]: Delete RecordingManager
-Debug [Main]: 875 ms deleting BroadcastManager
+Debug [Main]: 731 ms deleting BroadcastManager
 Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0
-Debug [Main]: 895 ms deleting EngineMaster
+Debug [Main]: 748 ms deleting EngineMaster
 Debug [Main]: in ~EngineMaster()
-Debug [Main]: 919 ms deleting DlgPreferences
-Debug [Main]: 924 ms deleting EffectsManager
-Debug [Main]: 936 ms deleting SettingsManager
+Debug [Main]: 772 ms deleting DlgPreferences
+Debug [Main]: 775 ms deleting EffectsManager
+Debug [Main]: 787 ms deleting SettingsManager
 Debug [Main]: Mixxx shutdown complete with code 0
