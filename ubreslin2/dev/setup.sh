@@ -33,7 +33,21 @@ sudo apt-get -y install php
 sudo apt-get -y install php-mbstring
 
 echo -------------------postgres------------------------
-sudo apt-get -y install postgresql
+echo old not needed hopefully sudo apt-get -y install postgresql
+# add the repository
+sudo tee /etc/apt/sources.list.d/pgdg.list <<END
+deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+END
+
+# get the signing key and import it
+wget https://www.postgresql.org/media/keys/ACCC4CF8.asc
+sudo apt-key add ACCC4CF8.asc
+
+# fetch the metadata from the new repo
+sudo apt-get update
+
+sudo apt-get install postgresql-11
+
 
 echo -------------------postgresql-client-----------------------
 sudo apt-get -y install postgresql-client
