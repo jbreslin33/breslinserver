@@ -1,222 +1,482 @@
-Debug [Main]: "Mixxx" "2.1.4" "(git 2.1 r6765; built on: Sep 10 2018 @ 03:06:07; flags: asan=0 asmlib=0 battery=1 buildtime=1 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qdebug=1 qt_sqlite_plugin=0 qtkeychain=0 shoutcast=1 test=False tsan=0 ubsan=0 vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting... 
-Debug [Main]: Compile time library versions: 
-Debug [Main]: Qt: 4.8.7 
-Debug [Main]: libshout: 2.4.1 
-Debug [Main]: PortAudio: 1246720 PortAudio V19.6.0-devel, revision 396fe4b6699ae929d3a685b3ef8a7e97396139a4 
-Debug [Main]: RubberBand: 1.8.1 
-Debug [Main]: SoundTouch: 2.0.0 
-Debug [Main]: TagLib: 1.11.1 
-Debug [Main]: ChromaPrint: 1.4.3 
-Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.5 
-Debug [Main]: libsndfile: libsndfile-1.0.28 
-Debug [Main]: FLAC: 1.3.2 
-Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/jbreslin" 
-Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.local/share/data//Mixxx" 
-Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin" 
-Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
-Warning [Main]: Configuration file is at version "2.1.1" instead of the current 2.1.4 
-Debug [Main]: BroadcastSettings - Found 1 profile(s) 
-Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : fail 
-Debug [Main]: "Error: Unable to import console: no such extension" 
-Debug [Main]: "Error: Unable to import svg: no such extension" 
-Debug [Main]: Loading resources from  "/usr/share/mixxx/" 
-Debug [Main]: Compressor attack per frame:  0.000408163 decay per frame:  4.08163e-05 
-Debug [Main]: JACK client name set 
-Debug [Main]: EngineNetworkStream - addWorker: worker added 
-Debug [Main]: EngineNetworkStream - worker slots used: "1 out of 16" 
-Debug [Main]: BroadcastManager - addConnection: created connection for profile "Connection 1" 
-Debug [Main]: WARNING: AudioInput already registered! 
-Debug [Main]: WARNING: AudioInput already registered! 
-Debug [Main]: WARNING: AudioInput already registered! 
-Debug [Main]: WARNING: AudioInput already registered! 
-Debug [Main]: DbConnection - Available drivers for database connections: ("QSQLITE") 
-Debug [Main]: DbConnectionPool - Cloned thread-local database connection "MIXXX-1" QSqlDatabase(driver=""QSQLITE"", database=""/home/jbreslin/.mixxx/mixxxdb.sqlite"", host=""localhost"", port=-1, user=""mixxx"", open=true) 
-Debug [Main]: MixxxMainWindow - Connecting to database 
-Debug [Main]: MixxxMainWindow - Initializing or upgrading database schema 
-Debug [Main]: SchemaManager - Database schema is up-to-date at version 28 
-Debug [Main]: LibraryScanner - Starting thread 
-Debug [Main]: Library - Connecting database 
-Debug [LibraryScanner 1]: LibraryScanner - Entering thread 
-Debug [LibraryScanner 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-2" QSqlDatabase(driver=""QSQLITE"", database=""/home/jbreslin/.mixxx/mixxxdb.sqlite"", host=""localhost"", port=-1, user=""mixxx"", open=true) 
-Debug [LibraryScanner 1]: LibraryScanner - Event loop starting 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: CrateFeature::rebuildChildModel() -1 
-Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/" 
-Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/" 
-Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/" 
-Debug [Main]: Appending Quick Link:  "electronic" --- "/amusic/youtube/playlists/electronic/" 
-Debug [Main]: Appending Quick Link:  "girl_motivational" --- "/amusic/youtube/playlists/girl_motivational/" 
-Debug [Main]: Appending Quick Link:  "girl_power_1" --- "/amusic/youtube/playlists/girl_power_1/" 
-Debug [Main]: Appending Quick Link:  "red_dance_2017" --- "/amusic/youtube/playlists/red_dance_2017/" 
-Debug [Main]: Appending Quick Link:  "red_hiphop" --- "/amusic/youtube/playlists/red_hiphop/" 
-Debug [Main]: Appending Quick Link:  "shake_ya_ass" --- "/amusic/youtube/playlists/shake_ya_ass/" 
-Debug [Main]: Appending Quick Link:  "top_2017_02" --- "/amusic/youtube/playlists/top_2017_02/" 
-Debug [Main]: Appending Quick Link:  "wedding_dance" --- "/amusic/youtube/playlists/wedding_dance/" 
-Debug [Main]: Appending Quick Link:  "worldwide" --- "/amusic/youtube/playlists/worldwide/" 
-Debug [Main]: Appending Quick Link:  "youtube_2017_04_13" --- "/amusic/billboard/youtube/youtube_2017_04_13/" 
-Debug [Main]: Appending Quick Link:  "2017-07-28" --- "/amusic/billboard/latest/2017-07-28/" 
-Debug [Main]: Appending Quick Link:  "oldies_golden" --- "/amusic/genres/oldies/oldies_golden/" 
-Debug [Main]: Committing transaction on "MIXXX-1" result: true 
-Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ] 
-Debug [Main]: Checking for access to user's library directories: 
-Debug [Main]: Checking for access to "/media/jbreslin/F6D289DBD289A08B/amusic" : true 
-Debug [Main]: Checking for access to "/amusic/fun/" : true 
-Debug [Main]: Checking for access to "/amusic/youtube/playlists/" : true 
-Debug [Main]: Checking for access to "/amusic/billboard/dance_wave/" : true 
-Debug [Main]: Checking for access to "/amusic/billboard/now_thats_music/" : true 
-Debug [Main]: Checking for access to "/amusic/billboard/youtube/" : true 
-Debug [Main]: Checking for access to "/amusic/billboard/now/" : true 
-Debug [Main]: Checking for access to "/amusic/billboard/latest/" : true 
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Entering thread 
-Debug [AnalyzerQueue 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-3" QSqlDatabase(driver=""QSQLITE"", database=""/home/jbreslin/.mixxx/mixxxdb.sqlite"", host=""localhost"", port=-1, user=""mixxx"", open=true) 
-Debug [Main]: Creating ControllerManager 
-Debug [Controller]: ControllerManager:slotInitialize 
-Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  inhibited 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 1 "HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: 2 "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: RLimit Cur  0 
-Debug [Main]: RLimit Max  0 
-Debug [Controller]: Extension .midi.xml total 109 presets 
-Debug [Controller]: Extension .hid.xml total 10 presets 
-Debug [Controller]: Extension .bulk.xml total 1 presets 
-Debug [Main]: ControllerManager::getControllerList 
-Debug [Main]: VampPluginAdapter - Current VAMP_PATH is: "" 
-Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/home/jbreslin/.local/share/data/Mixxx" 
-Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin" 
-Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin" 
-Debug [Main]: VampPluginAdapter - Setting VAMP_PATH to: "/usr/lib/mixxx/plugins/vamp" 
-Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins 
-Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker" 
-Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins 
-Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker" 
-Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker" 
-Debug [Main]: DlgPrefKey::loadSettings 
-Debug [Main]: Key plugin ID: "qm-keydetector:2" 
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55659f33e110) true 
-Debug [Main]: Created root GL Context valid: 0x55659f33d7e0 true 
-Debug [Main]: Root GL Context format: 
-Debug [Main]: Double Buffering: true 
-Debug [Main]: Swap interval: 0 
-Debug [Main]: Depth buffer: true 
-Debug [Main]: Direct rendering: true 
-Debug [Main]: Has overlay: false 
-Debug [Main]: RGBA: true 
-Debug [Main]: Sample buffers: false 
-Debug [Main]: Samples: -1 
-Debug [Main]: Stencil buffers: true 
-Debug [Main]: Stereo: false 
-Debug [Main]: LegacySkinParser loading skin: "/usr/share/mixxx/skins/Deere" 
-Debug [Main]: "Error: Unable to import console: no such extension" 
-Debug [Main]: "Error: Unable to import svg: no such extension" 
-Debug [Main]: Skin is a >=1.12.0 style skin. 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
-Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
-Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 1 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
-Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 2 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true 
-Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true 
-Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3 
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x5565b9e2c080) 
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x5565b5d2c6e0) 
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55659aecbc30) 
-Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings" 
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x5565b9e32818) 
-Debug [BrowseThread]: Append last  0 
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x5565b9eafd40) 
-Debug [Main]: BaseTrackCache(0x55659bba7a00) updateIndexWithQuery took 303 ms 
-Debug [Main]: AnalysisLibraryTableModel(0x5565b9eafd40) select() took 490 ms 0 
-Debug [Main]: AnalysisLibraryTableModel(0x5565b9eafd40) select() took 160 ms 0 
-Debug [Main]: DlgAnalysis(0x5565b5d1ed20, name = "DlgAnalysis") analysisActive false 
-Debug [Main]: MixxxLibraryFeature::activate() 
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55659d477730) 
-Debug [Main]: LibraryTableModel(0x55659d477730) select() took 707 ms 23252 
+Debug [Main]: using qt5ct plugin
+Debug [Main]: "Mixxx" "2.2.0" "(git 2.2 r6659; built on: Dec 24 2018 @ 17:00:25; flags: asan=0 asmlib=0 battery=1 buildtime=1 bulk=1 color=0 coreaudio=0 faad=0 ffmpeg=0 hid=1 hss1394=0 ipod=0 lilv=1 localecompare=1 macappstore=0 mad=1 mediafoundation=0 modplug=0 opengles=0 optimize=portable opus=1 perftools=0 perftools_profiler=0 profiling=0 qt_sqlite_plugin=0 qtkeychain=0 shoutcast=1 test=False tsan=0 ubsan=0 vamp=1 verbose=1 vinylcontrol=1 wv=0)" is starting...
+Debug [Main]: Compile time library versions:
+Debug [Main]: Qt: 5.9.5
+Debug [Main]: libshout: 2.4.1
+Debug [Main]: PortAudio: 1246720 PortAudio V19.6.0-devel, revision 396fe4b6699ae929d3a685b3ef8a7e97396139a4
+Debug [Main]: RubberBand: 1.8.1
+Debug [Main]: SoundTouch: 2.0.0
+Debug [Main]: TagLib: 1.11.1
+Debug [Main]: ChromaPrint: 1.4.3
+Debug [Main]: Vorbis: Xiph.Org libVorbis 1.3.5
+Debug [Main]: libsndfile: libsndfile-1.0.28
+Debug [Main]: FLAC: 1.3.2
+Debug [Main]: QDesktopServices::storageLocation(HomeLocation): "/home/jbreslin"
+Debug [Main]: QDesktopServices::storageLocation(DataLocation): "/home/jbreslin/.local/share/data//Mixxx"
+Debug [Main]: QCoreApplication::applicationDirPath() "/usr/bin"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Warning [Main]: Configuration file is at version "2.1.1" instead of the current 2.2.0
+Info [Main]: BroadcastSettings - Found 1 profile(s)
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Loading translations for locale "en_US" from translations folder "/usr/share/mixxx/translations/" : success
+Debug [Main]: D-Bus global menu: no
+Debug [Main]: "Error: Unable to import console: no such extension"
+Debug [Main]: "Error: Unable to import svg: no such extension"
+Debug [Main]: Loading resources from  "/usr/share/mixxx/"
+Debug [Main]: Compressor attack per frame:  0.000408163 decay per frame:  4.08163e-05
+Debug [Main]: JACK client name set
+Debug [Main]: EngineNetworkStream - addWorker: worker added
+Debug [Main]: EngineNetworkStream - worker slots used: "1 out of 16"
+Debug [Main]: BroadcastManager - addConnection: created connection for profile "Connection 1"
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Debug [Main]: WARNING: AudioInput already registered!
+Info [Main]: DbConnection - Available drivers for database connections: ("QSQLITE")
+Info [Main]: DbConnectionPool - Cloned thread-local database connection "MIXXX-1" QSqlDatabase(driver="QSQLITE", database="/home/jbreslin/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Info [Main]: MixxxMainWindow - Connecting to database
+Info [Main]: MixxxMainWindow - Initializing or upgrading database schema
+Info [Main]: SchemaManager - Database schema is up-to-date at version 28
+Debug [Main]: LibraryScanner - Starting thread
+Info [Main]: Library - Connecting database
+Debug [LibraryScanner 1]: LibraryScanner - Entering thread
+Info [LibraryScanner 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-2" QSqlDatabase(driver="QSQLITE", database="/home/jbreslin/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Debug [LibraryScanner 1]: LibraryScanner - Event loop starting
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: CrateFeature::rebuildChildModel() -1
+Debug [Main]: Appending Quick Link:  "2016-06-01" --- "/amusic/billboard/latest/2016-06-01/"
+Debug [Main]: Appending Quick Link:  "youtube" --- "/amusic/youtube/"
+Debug [Main]: Appending Quick Link:  "idjpool" --- "/amusic/idjpool/"
+Debug [Main]: Appending Quick Link:  "electronic" --- "/amusic/youtube/playlists/electronic/"
+Debug [Main]: Appending Quick Link:  "girl_motivational" --- "/amusic/youtube/playlists/girl_motivational/"
+Debug [Main]: Appending Quick Link:  "girl_power_1" --- "/amusic/youtube/playlists/girl_power_1/"
+Debug [Main]: Appending Quick Link:  "red_dance_2017" --- "/amusic/youtube/playlists/red_dance_2017/"
+Debug [Main]: Appending Quick Link:  "red_hiphop" --- "/amusic/youtube/playlists/red_hiphop/"
+Debug [Main]: Appending Quick Link:  "shake_ya_ass" --- "/amusic/youtube/playlists/shake_ya_ass/"
+Debug [Main]: Appending Quick Link:  "top_2017_02" --- "/amusic/youtube/playlists/top_2017_02/"
+Debug [Main]: Appending Quick Link:  "wedding_dance" --- "/amusic/youtube/playlists/wedding_dance/"
+Debug [Main]: Appending Quick Link:  "worldwide" --- "/amusic/youtube/playlists/worldwide/"
+Debug [Main]: Appending Quick Link:  "youtube_2017_04_13" --- "/amusic/billboard/youtube/youtube_2017_04_13/"
+Debug [Main]: Appending Quick Link:  "2017-07-28" --- "/amusic/billboard/latest/2017-07-28/"
+Debug [Main]: Appending Quick Link:  "oldies_golden" --- "/amusic/genres/oldies/oldies_golden/"
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: Traktor Library Location=[ "/home/jbreslin/collection.nml" ]
+Debug [Main]: Checking for access to user's library directories:
+Debug [Main]: Checking for access to "/media/jbreslin/F6D289DBD289A08B/amusic" : true
+Debug [Main]: Checking for access to "/amusic/fun/" : true
+Debug [Main]: Checking for access to "/amusic/youtube/playlists/" : true
+Debug [Main]: Checking for access to "/amusic/billboard/dance_wave/" : true
+Debug [Main]: Checking for access to "/amusic/billboard/now_thats_music/" : true
+Debug [Main]: Checking for access to "/amusic/billboard/youtube/" : true
+Debug [Main]: Checking for access to "/amusic/billboard/now/" : true
+Debug [Main]: Checking for access to "/amusic/billboard/latest/" : true
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Entering thread
+Info [AnalyzerQueue 1]: DbConnectionPool - Cloned thread-local database connection "MIXXX-3" QSqlDatabase(driver="QSQLITE", database="/home/jbreslin/.mixxx/mixxxdb.sqlite", host="localhost", port=-1, user="mixxx", open=true)
+Debug [Main]: Creating ControllerManager
+Debug [Controller]: ControllerManager:slotInitialize
+Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  inhibited
+Debug [Main]: RLimit Cur  0
+Debug [Main]: RLimit Max  0
+Debug [Main]: ControllerManager::getControllerList
+Info [Main]: VampPluginAdapter - Current VAMP_PATH is: ""
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/home/jbreslin/.local/share/data/Mixxx"
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin"
+Debug [Main]: VampPluginAdapter - Ignoring non-existent path: "/usr/bin"
+Info [Main]: VampPluginAdapter - Setting VAMP_PATH to: "/usr/lib/mixxx/plugins/vampqt5"
+Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins
+Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
+Debug [Main]: VampPluginLoader::listPlugins() returned 4 plugins
+Debug [Main]: Plugin output displayname: "mixxxbpmdetection:0" "SoundTouch BPM Detector (Legacy)"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:0" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:1" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:2" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-barbeattracker:3" "Bar and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-keydetector:0" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:1" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:2" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-keydetector:3" "Key Detector"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:0" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tracker"
+Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
+Debug [Main]: DlgPrefKey::loadSettings
+Debug [Main]: Key plugin ID: "qm-keydetector:2"
+Debug [Controller]: Extension .midi.xml total 111 presets
+Debug [Controller]: Extension .hid.xml total 10 presets
+Debug [Controller]: Extension .bulk.xml total 1 presets
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55fa3d7294f0) true
+Debug [Main]: Created root GL Context valid: 0x55fa3d7c7db0 true
+Debug [Main]: Root GL Context format:
+Debug [Main]: Double Buffering: true
+Debug [Main]: Swap interval: 0
+Debug [Main]: Depth buffer: true
+Debug [Main]: Direct rendering: true
+Debug [Main]: Has overlay: false
+Debug [Main]: RGBA: true
+Debug [Main]: Sample buffers: false
+Debug [Main]: Samples: -1
+Debug [Main]: Stencil buffers: true
+Debug [Main]: Stereo: false
+Debug [Main]: LegacySkinParser loading skin: "/usr/share/mixxx/skins/Deere"
+Debug [Main]: "Error: Unable to import console: no such extension"
+Debug [Main]: "Error: Unable to import svg: no such extension"
+Debug [Main]: Skin is a >=1.12.0 style skin.
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 1
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 2
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
+Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
+Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3
+Debug [Main]: WSearchLineEdit - Background color: QColor(ARGB 1, 1, 1, 1)
+Debug [Main]: WSearchLineEdit - Foreground color: QColor(ARGB 1, 0, 0, 0)
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55fa426c3350)
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55fa426c3110)
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa39ae89f0)
+Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings"
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55fa431f7600)
+Debug [BrowseThread]: Append last  0
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55fa426c2ed0)
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 181 ms
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 282 ms 12
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 94 ms 12
+Debug [Main]: DlgAnalysis(0x55fa4337bf40, name="DlgAnalysis") analysisActive false
+Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:tool_bar.xml:344 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
+Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:skin_settings.xml:40 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 197 ms 23264
 Debug [Main]: trying to restore position
-Debug [Main]: WSearchLineEdit::restoreSearch( "" ) 
-Debug [Controller]: ControllerManager: Setting up devices 
-Debug [Controller]: Scanning PortMIDI devices: 
-Debug [Controller]: Scanning USB Bulk devices: 
-Debug [Controller]: Scanning HID devices: 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler4]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler5]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler6]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler7]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler8]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler9]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler10]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler11]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler12]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler13]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]" 
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]" 
-Debug [Main]: SoundManager::setupDevices() 
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VC Analog (hw:0,0)" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: Output channels: 2 | Input channels: 0 
-Debug [Main]: Opening stream with id 0 
-Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r4402" S/N "" "Interface 1" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r4370" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r1" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3" 
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers. 
-Debug [Controller]: ControllerManager::getControllerList 
-Debug [Controller]: Controller polling stopped. 
-Debug [Main]: Opened PortAudio stream successfully... starting 
-Debug [Main]: Dynamically loaded PortAudio library 
-Debug [Main]: PortAudio: Started stream successfully 
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms 
-Debug [Main]: SoundDeviceNetwork - open: "Network stream" 
-Debug [Main]: framesPerBuffer: 1024 
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns 
-Debug [Main]: Using "HDA Intel PCH: ALC269VC Analog (hw:0,0)" as output sound device clock reference 
-Debug [Main]: 2 output sound devices opened 
-Debug [Main]: 0 input  sound devices opened 
-Warning [Main]: "3, USB Audio CODEC: - (hw:2,0)" not found 
-Debug []: SSE: Enabling denormals to zero mode 
-Debug []: SSE: Enabling flush to zero mode 
-Debug []: Denormals to zero mode is working 
+Debug [Controller]: ControllerManager: Setting up devices
+Debug [Controller]: Scanning PortMIDI devices:
+Debug [Controller]: Scanning USB Bulk devices:
+Debug [Controller]: Scanning HID devices:
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler4]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler5]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler6]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler7]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler8]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler9]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler10]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler11]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler12]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler13]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]"
+Debug [Controller]: Found "" "" "r512" S/N "" "Interface 0"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: Found "" "" "r850" S/N "" "Interface 0"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Controller]: Controller polling stopped.
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]"
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]"
+Debug [Main]: SoundManager::setupDevices()
+Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: ALC269VB Analog (hw:0,0)"
+Debug [Main]: framesPerBuffer: 1024
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
+Debug [Main]: Output channels: 2 | Input channels: 0
+Debug [Main]: Opening stream with id 0
+Debug [Main]: Opened PortAudio stream successfully... starting
+Debug [Main]: Dynamically loaded PortAudio library
+Debug [Main]: PortAudio: Started stream successfully
+Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms
+Debug [Main]: SoundDeviceNetwork - open: "Network stream"
+Debug [Main]: framesPerBuffer: 1024
+Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
+Debug [Main]: Using "HDA Intel PCH: ALC269VB Analog (hw:0,0)" as output sound device clock reference
+Debug [Main]: 2 output sound devices opened
+Debug [Main]: 0 input sound devices opened
+Debug [Main]: Displaying main window
+Debug [Main]: Running Mixxx
+Debug []: SSE: Enabling denormals to zero mode
+Debug []: SSE: Enabling flush to zero mode
+Debug []: Denormals to zero mode is working
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 201 ms 23264
+Debug [Main]: trying to restore position
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 198 ms 23264
+Debug [Main]: trying to restore position
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 201 ms 23264
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: MixxxLibraryFeature::activate()
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fa39f40cc0)
+Debug [Main]: LibraryTableModel(0x55fa39f40cc0) select() took 200 ms 23264
+Debug [Main]: trying to restore position
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 16 ms
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 18 ms 2096
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: Successfully deserialized BeatGrid
+Debug [Main]: Successfully deserialized KeyMap
+Debug [Main]: BaseTrackCache(0x55fa3b145220) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fa38f96e90, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xf3c7)" QSize(0, 0)
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 81
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 81
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 81
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 19 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: AnalysisLibraryTableModel(0x55fa426c2ed0) select() took 104 ms 12
+Debug [Main]: Already focused on playlist  507
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 21 ms 2096
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 20 ms 2096
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 6 ms 131
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 131
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 65
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 68
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 85
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 54
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 0
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 5
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 20
+Debug [Main]: trying to restore position
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 3 ms 20
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: trying to restore position
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 5 ms 362
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fa38fb6800)
+Debug [Main]: PlaylistTableModel(0x55fa38fb6800) select() took 4 ms 89
+Debug [Main]: trying to restore position
+Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited
+Debug [Main]: Destroying MixxxMainWindow
+Debug [Main]: 3 ms saving configuration
+Debug [Main]: 4 ms deleting skin
+Debug [Main]: ~DlgAutoDJ()
+Debug [Main]: 564 ms deleting menubar
+Debug [Main]: 565 ms deleting SoundManager
+Debug [Main]: 568 ms deleting ControllerManager
+Debug [Controller]: Controller polling stopped.
+Debug [Controller]: Deleting PortMIDI devices...
+Debug [Controller]: Deleting USB Bulk devices...
+Debug [Controller]: Deleting HID devices...
+Debug [Main]: 568 ms deleting VinylControlManager
+Debug [Main]: ~CoverArtCache()
+Debug [Main]: 569 ms deleting PlayerManager
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread
+Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform():
+Debug [Main]: 571334933 ns deactivating GlobalTrackCache
+Debug [Main]: 571 ms deleting Library
+Debug [Main]: Wait to finish browser background thread
+Debug [Main]: Browser background thread terminated!
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  506
+Info [Main]: Library - Disconnecting database
+Debug [Main]: TrackDAO::finish()
+Debug [Main]: Clearing played information for this session
+Debug [Main]: Cleaning LibraryHashes/track_locations tables.
+Debug [Main]: ~TrackDAO()
+Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
+Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
+Debug [LibraryScanner 1]: LibraryScanner - Exiting thread
+Debug [Main]: ~TrackDAO()
+Debug [Main]: 728 ms closing database connection(s)
+Debug [Main]: 731 ms deleting RecordingManager
+Debug [Main]: Delete RecordingManager
+Debug [Main]: 731 ms deleting BroadcastManager
+Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0
+Debug [Main]: 748 ms deleting EngineMaster
+Debug [Main]: in ~EngineMaster()
+Debug [Main]: 772 ms deleting DlgPreferences
+Debug [Main]: 775 ms deleting EffectsManager
+Debug [Main]: 787 ms deleting SettingsManager
+Debug [Main]: Mixxx shutdown complete with code 0
