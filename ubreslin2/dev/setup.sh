@@ -32,6 +32,7 @@ sudo apt-get -y update
 sudo apt-get -y install php
 sudo apt-get -y install php-mbstring
 sudo apt-get -y install composer
+sudo apt-get install libphp-phpmailer
 
 
 echo -------------------postgres------------------------
