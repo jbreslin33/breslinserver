@@ -10,6 +10,11 @@ sudo apt-get -y update        # Fetches the list of available updates
 echo ----------------------upgrade-------------------------
 sudo apt-get -y upgrade       # Strictly upgrades the current packages
 
+echo ----------------------bug fix-------------------------
+sudo dpkg --configure -a
+sudo apt-get install -f
+sudo apt autoremove
+
 echo ----------------------dist upgrade-------------------------
 sudo apt-get -y dist-upgrade  # Installs updates (new ones)
 
