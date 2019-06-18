@@ -1,4 +1,10 @@
+
+echo ----------------------bug fix-------------------------
+sudo dpkg --configure -a
+sudo apt-get install -f
+sudo apt autoremove
 echo ----------------------update-------------------------
+
 sudo apt-get -y update        # Fetches the list of available updates
 
 echo ----------------------upgrade-------------------------
