@@ -1,22 +1,22 @@
 
 echo ----------------------bug fix-------------------------
-sudo dpkg --configure -a
-sudo apt-get install -f
-sudo apt autoremove
+echo sudo dpkg --configure -a
+echo sudo apt-get install -f
+echo sudo apt autoremove
 echo ----------------------update-------------------------
 
 sudo apt-get -y update        # Fetches the list of available updates
 
 echo ----------------------upgrade-------------------------
-sudo apt-get -y upgrade       # Strictly upgrades the current packages
+echo sudo apt-get -y upgrade       # Strictly upgrades the current packages
 
 echo ----------------------bug fix-------------------------
-sudo dpkg --configure -a
-sudo apt-get install -f
-sudo apt autoremove
+echo sudo dpkg --configure -a
+echo sudo apt-get install -f
+echo sudo apt autoremove
 
 echo ----------------------dist upgrade-------------------------
-sudo apt-get -y dist-upgrade  # Installs updates (new ones)
+echo sudo apt-get -y dist-upgrade  # Installs updates (new ones)
 
 echo -----------------------build tools---------------------
 sudo apt-get -y install build-essential
