@@ -1,3 +1,4 @@
+
 var_chrome=$(which google-chrome)
 echo "$var_chrome";
 
