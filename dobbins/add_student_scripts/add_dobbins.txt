@@ -2,3 +2,4 @@ jbreslin:student:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
 sdouglass:student:1202:50:Sadir Douglass:/home/sdouglass:/bin/bash
 lgates:student:1203:50:Laifae Gates:/home/lgates:/bin/bash
 nmurray:student:1204:50:Nijayah Murray:/home/nmurray:/bin/bash
+aknuckles:student:1205:50:Aaliyah Knuckles:/home/aknuckles:/bin/bash
