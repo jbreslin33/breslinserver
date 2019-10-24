@@ -31,5 +31,3 @@ lstanton:student:1230:50:Louis Stanton:/home/lstanton:/bin/bash
 nthrones:student:1231:50:Nasir Thrones:/home/nthrones:/bin/bash
 ttribble:student:1232:50:Tahjanay Tribble:/home/ttribble:/bin/bash
 mward:student:1233:50:Mario Ward:/home/mward:/bin/bash
-
-
