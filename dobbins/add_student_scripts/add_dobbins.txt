@@ -28,8 +28,8 @@ aknuckles:student:1227:50:Aaliyah Knuckles:/home/aknuckles:/bin/bash
 nmurray:student:1228:50:Nijayah Murray:/home/nmurray:/bin/bash
 arankin:student:1229:50:Ayesha Rankin:/home/arankin:/bin/bash
 lstanton:student:1230:50:Louis Stanton:/home/lstanton:/bin/bash
-nthrones:student:1231:50:Nasir Thrones:/home/nthrones/bin/bash
-ttribble:student:1232:50:Tahjanay Tribble:/home/ttribble/bin/bash
-mward:student:1233:50:Mario Ward:/home/mward/bin/bash
+nthrones:student:1231:50:Nasir Thrones:/home/nthrones:/bin/bash
+ttribble:student:1232:50:Tahjanay Tribble:/home/ttribble:/bin/bash
+mward:student:1233:50:Mario Ward:/home/mward:/bin/bash
 
 
