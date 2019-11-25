@@ -10,7 +10,7 @@ jlong:student:1209:50:Joseph Long:/home/jlong:/bin/bash
 bmay:student:1210:50:Basil May:/home/bmay:/bin/bash
 smyrick:student:1211:50:Shaolin Myrick:/home/smyrick:/bin/bash
 jross:student:1212:50:Jamil Ross:/home/jross:/bin/bash
-sshields:student:1213:50:Sabrina Shields:/home/shields:/bin/bash
+sshields:student:1213:50:Sabrina Shields:/home/sshields:/bin/bash
 nthomas:student:1214:50:Niyanna Thomas:/home/nthomas:/bin/bash
 wwhitaker:student:1215:50:Wilmer Whitaker:/home/wwhitaker:/bin/bash
 cwilliams:student:1216:50:Corilynn Williams:/home/cwilliams:/bin/bash
