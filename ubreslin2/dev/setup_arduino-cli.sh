@@ -8,4 +8,26 @@ sudo mv bin/arduino-cli /usr/local/bin
 echo rm original
 sudo rm -r bin
 
+echo create a blank sketch
+arduino-cli sketch new MyFirstSketch
 
+echo cp blink code to new sketch
+cp code.ino MyFirstSketch.ino
+
+echo update core
+arduino-cli core update-index
+
+echo get board list
+arduino-cli board list
+
+echo install correct core
+arduino-cli core install arduino:avr
+
+echo list current cores
+arduino-cli core list
+
+echo compile sketch
+arduino-cli compile --fqbn arduino:avr:uno MyFirstSketch
+
+echo upload to arduino
+sudo arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno MyFirstSketch
