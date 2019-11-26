@@ -12,4 +12,10 @@ sudo newusers ../add_student_scripts/add_dobbins.txt
 
 sudo apt-get upgrade
 
+echo add users to root
+sudo usermod -aG sudo kkeels
+sudo usermod -aG sudo kwright
+
 echo complete you can now reboot and login 
+
+
