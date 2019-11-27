@@ -17,6 +17,7 @@ sudo usermod -aG sudo kkeels
 sudo usermod -aG sudo kwright
 sudo usermod -aG sudo sdouglass
 sudo usermod -aG sudo efulton
+sudo usermod -aG sudo jbreslin
 
 echo complete you can now reboot and login 
 
