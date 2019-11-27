@@ -15,6 +15,8 @@ sudo apt-get upgrade
 echo add users to root
 sudo usermod -aG sudo kkeels
 sudo usermod -aG sudo kwright
+sudo usermod -aG sudo sdouglass
+sudo usermod -aG sudo efulton
 
 echo complete you can now reboot and login 
 
