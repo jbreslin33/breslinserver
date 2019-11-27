@@ -5,5 +5,5 @@ ant dist
 ant run
 cd ~/sandbox/arduino/build/linux/work
 echo install arduino system wide
-./install.sh
+sudo ./install.sh
 
