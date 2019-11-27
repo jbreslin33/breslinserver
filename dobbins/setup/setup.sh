@@ -4,6 +4,9 @@ echo run regular setup
 echo run browser setup
 /home/student/sandbox/breslinserver/ubreslin2/dev/setup_browsers.sh
 
+echo setup arduino
+/home/student/sandbox/breslinserver/ubreslin2/dev/setup_arduino.sh
+
 echo fix lightdm login 
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
