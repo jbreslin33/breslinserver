@@ -21,6 +21,10 @@ sudo usermod -aG sudo kwright
 sudo usermod -aG sudo sdouglass
 sudo usermod -aG sudo efulton
 sudo usermod -aG sudo jbreslin
+sudo usermod -aG sudo lgates 
+sudo usermod -aG sudo smyrick  
+sudo usermod -aG sudo sjones  
+sudo usermod -aG sudo dwooten  
 
 echo complete you can now reboot and login 
 
