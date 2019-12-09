@@ -1,4 +1,3 @@
-jbreslin:student:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
 sdouglass:student:1202:50:Sadir Douglass:/home/sdouglas:/bin/bash
 lgates:student:1203:50:Laifae Gates:/home/lgates:/bin/bash
 tepps:student:1204:50:Tayvon ChoiceEpps:/home/tepps:/bin/bash
@@ -31,3 +30,4 @@ lstanton:student:1230:50:Louis Stanton:/home/lstanton:/bin/bash
 nthrones:student:1231:50:Nasir Thrones:/home/nthrones:/bin/bash
 ttribble:student:1232:50:Tahjanay Tribble:/home/ttribble:/bin/bash
 mward:student:1233:50:Mario Ward:/home/mward:/bin/bash
+jbreslin:Iggles_13:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
