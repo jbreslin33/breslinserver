@@ -32,11 +32,10 @@ sudo apt-get -y install remmina
 sudo apt-get -y install remmina-plugin-vnc 
 
 echo -----------------------web server------------------------------
-echo sudo apt-get -y install apache2 
-echo sudo service apache2 reload
-echo sudo /etc/init.d/apache2 restart
-wget http://apache.spinellicreations.com//httpd/httpd-2.4.41.tar.gz
-gunzip -c httpd-2.4.25.tar.gz | tar xvf -
+sudo apt-get -y install apache2 
+sudo service apache2 reload
+sudo /etc/init.d/apache2 restart
+echo ./setup_apache.sh
 
 echo -------------------php------------------------
 sudo apt-get -y install python-software-properties software-properties-common
