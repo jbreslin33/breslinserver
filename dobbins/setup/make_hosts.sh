@@ -14,5 +14,5 @@ echo "ff00::0 ip6-mcastprefix" >> hosts
 echo "ff02::1 ip6-allnodes" >> hosts
 echo "ff02::2 ip6-allrouters" >> hosts
 
-#sudo cp hosts /etc/hosts
+sudo cp hosts /etc/hosts
 
