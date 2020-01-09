@@ -48,4 +48,5 @@ sudo usermod -aG sudo tfleming
 sudo usermod -aG sudo ttribble
 sudo usermod -aG sudo wwhitaker
 
-
+echo make the hosts file and copy it
+sudo ./make_hosts.sh
