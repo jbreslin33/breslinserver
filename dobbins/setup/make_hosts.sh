@@ -1,5 +1,5 @@
-touch hosts
-rm -r hosts
+
+cat hosts_list > hosts
 
 echo "127.0.0.1       localhost" >> hosts
 #127.0.1.1       r431f01
