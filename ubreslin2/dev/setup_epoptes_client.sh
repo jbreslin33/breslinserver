@@ -1,3 +1,3 @@
-#setup epoptes server
-sudo apt-get install --install-recommends epoptes
-sudo gpasswd -a jbreslin epoptes
+#setup epoptes client
+sudo apt-get install --install-recommends epoptes-client
+sudo epoptes-client -c    # Fetches the OpenSSL certificate from the server

@@ -13,6 +13,7 @@ sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 echo add new users
 sudo newusers ../add_student_scripts/add_dobbins.txt
 
+
 sudo apt-get upgrade
 
 echo add users to root
@@ -50,3 +51,9 @@ sudo usermod -aG sudo wwhitaker
 
 echo make the hosts file and copy it
 sudo ./make_hosts.sh
+
+echo run setup for epoptes client, need a reboot after this
+/home/student/sandbox/breslinserver/ubreslin2/dev/setup_epoptes_client.sh
+
+echo reboot watch out!
+sudo reboot
