@@ -39,7 +39,6 @@ sudo usermod -aG sudo nhollowman
 sudo usermod -aG sudo nmurray
 sudo usermod -aG sudo nthomas
 sudo usermod -aG sudo nthrones
-sudo usermod -aG sudo sdouglas
 sudo usermod -aG sudo sdouglass
 sudo usermod -aG sudo sjones
 sudo usermod -aG sudo smyrick
@@ -55,5 +54,8 @@ sudo ./make_hosts.sh
 echo run setup for epoptes client, need a reboot after this
 /home/student/sandbox/breslinserver/ubreslin2/dev/setup_epoptes_client.sh
 
-echo reboot watch out!
-sudo reboot
+echo run setup youtube-dl
+/home/student/sandbox/breslinserver/ubreslin2/mixxx/setup_youtube.sh
+
+echo keep in mind if this is the first time installing epoptes you must manually reboot in order for it to work
+
