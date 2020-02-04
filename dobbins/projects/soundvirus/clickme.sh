@@ -1,5 +1,5 @@
-sudo export DISPLAY=:0
-rm *.mp3
+export DISPLAY=:0
+sudo rm *.mp3
 if [ -z "$1" ]
 then
 	echo No Song passed so download Bieber 
@@ -10,4 +10,4 @@ else
 fi
 
 mv *.mp3 bieber.mp3
-mplayer bieber.mp3
+sudo mplayer bieber.mp3
