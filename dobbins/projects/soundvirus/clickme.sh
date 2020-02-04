@@ -1,4 +1,4 @@
-export DISPLAY=:0
+sudo export DISPLAY=:0
 rm *.mp3
 if [ -z "$1" ]
 then
