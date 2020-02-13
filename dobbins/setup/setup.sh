@@ -56,6 +56,9 @@ echo run setup for epoptes client, need a reboot after this
 
 echo run setup youtube-dl
 /home/student/sandbox/breslinserver/ubreslin2/mixxx/setup_youtube.sh
+ 
+echo install wakeonlan
+sudo apt install wakeonlan
 
 echo keep in mind if this is the first time installing epoptes you must manually reboot in order for it to work
 
