@@ -22,5 +22,5 @@ else
     echo "I'm 32-bit so I cannot install google-chrome"
 fi
 
-sudo apt-get install chromium-browser
+sudo apt-get -y install chromium-browser
 
