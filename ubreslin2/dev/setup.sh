@@ -33,7 +33,7 @@ sudo apt-get -y install libphp-phpmailer
 
 echo -------------------postgres------------------------
 sudo apt-get -y update
-sudo apt-get -y install postgresql-11
+sudo apt-get -y install postgresql
 
 echo -------------------postgresql-client-----------------------
 sudo apt-get -y install postgresql-client
