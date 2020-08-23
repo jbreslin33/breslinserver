@@ -4,14 +4,15 @@ echo run regular setup
 echo run browser setup
 /home/student/sandbox/breslinserver/ubreslin2/dev/setup_browsers.sh
 
-echo setup arduino
-/home/student/sandbox/breslinserver/ubreslin2/dev/setup_arduino.sh
+#echo setup arduino
+#/home/student/sandbox/breslinserver/ubreslin2/dev/setup_arduino.sh
 
 echo fix lightdm login 
 sudo cp 50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/
 
 echo add new users
 sudo newusers ../add_student_scripts/add_dobbins.txt
+
 
 sudo apt-get upgrade
 
@@ -38,7 +39,6 @@ sudo usermod -aG sudo nhollowman
 sudo usermod -aG sudo nmurray
 sudo usermod -aG sudo nthomas
 sudo usermod -aG sudo nthrones
-sudo usermod -aG sudo sdouglas
 sudo usermod -aG sudo sdouglass
 sudo usermod -aG sudo sjones
 sudo usermod -aG sudo smyrick
@@ -48,4 +48,17 @@ sudo usermod -aG sudo tfleming
 sudo usermod -aG sudo ttribble
 sudo usermod -aG sudo wwhitaker
 
+echo make the hosts file and copy it
+sudo ./make_hosts.sh
+
+echo run setup for epoptes client, need a reboot after this
+/home/student/sandbox/breslinserver/ubreslin2/dev/setup_epoptes_client.sh
+
+echo run setup youtube-dl
+/home/student/sandbox/breslinserver/ubreslin2/mixxx/setup_youtube.sh
+ 
+echo install wakeonlan
+sudo apt install wakeonlan
+
+echo keep in mind if this is the first time installing epoptes you must manually reboot in order for it to work
 

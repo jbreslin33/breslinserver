@@ -1,22 +1,8 @@
 
-echo ----------------------bug fix-------------------------
-echo sudo dpkg --configure -a
-echo sudo apt-get install -f
-echo sudo apt autoremove
 echo ----------------------update-------------------------
-
 sudo apt-get -y update        # Fetches the list of available updates
 
 echo ----------------------upgrade-------------------------
-echo sudo apt-get -y upgrade       # Strictly upgrades the current packages
-
-echo ----------------------bug fix-------------------------
-echo sudo dpkg --configure -a
-echo sudo apt-get install -f
-echo sudo apt autoremove
-
-echo ----------------------dist upgrade-------------------------
-echo sudo apt-get -y dist-upgrade  # Installs updates (new ones)
 
 echo -----------------------build tools---------------------
 sudo apt-get -y install build-essential
@@ -43,11 +29,10 @@ sudo apt-get -y update
 sudo apt-get -y install php
 sudo apt-get -y install php-mbstring
 sudo apt-get -y install composer
-sudo apt-get install libphp-phpmailer
-
+sudo apt-get -y install libphp-phpmailer
 
 echo -------------------postgres------------------------
-echo old not needed hopefully sudo apt-get -y install postgresql
+
 # add the repository
 sudo tee /etc/apt/sources.list.d/pgdg.list <<END
 deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
@@ -58,10 +43,9 @@ wget https://www.postgresql.org/media/keys/ACCC4CF8.asc
 sudo apt-key add ACCC4CF8.asc
 
 # fetch the metadata from the new repo
-sudo apt-get -y update
+sudo apt-get update
 
 sudo apt-get -y install postgresql-11
-
 
 echo -------------------postgresql-client-----------------------
 sudo apt-get -y install postgresql-client
