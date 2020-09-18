@@ -23,7 +23,7 @@ sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
 echo -------------------php------------------------
-sudo apt-get -y install python-software-properties software-properties-common
+sudo apt-get -y install software-properties-common
 sudo LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 sudo apt-get -y update
 sudo apt-get -y install php
@@ -32,20 +32,9 @@ sudo apt-get -y install composer
 sudo apt-get -y install libphp-phpmailer
 
 echo -------------------postgres------------------------
-
-# add the repository
-sudo tee /etc/apt/sources.list.d/pgdg.list <<END
-deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
-END
-
-# get the signing key and import it
-wget https://www.postgresql.org/media/keys/ACCC4CF8.asc
-sudo apt-key add ACCC4CF8.asc
-
-# fetch the metadata from the new repo
 sudo apt-get update
 
-sudo apt-get -y install postgresql-11
+sudo apt install postgresql postgresql-contrib
 
 echo -------------------postgresql-client-----------------------
 sudo apt-get -y install postgresql-client
