@@ -2,8 +2,6 @@
 echo ----------------------update-------------------------
 sudo apt-get -y update        # Fetches the list of available updates
 
-echo ----------------------upgrade-------------------------
-
 echo -----------------------build tools---------------------
 sudo apt-get -y install build-essential
 sudo apt-get -y install libtool
@@ -11,11 +9,6 @@ sudo apt-get -y install vim
 
 echo -----------------------version control------------------------
 sudo apt-get -y install git
-
-echo -----------------------remote control---------------------------------
-sudo apt-get -y install ssh 
-sudo apt-get -y install remmina 
-sudo apt-get -y install remmina-plugin-vnc 
 
 echo -----------------------web server------------------------------
 sudo apt-get -y install apache2 
@@ -51,24 +44,6 @@ sudo apt-get -y install phppgadmin
 echo -------------------postgres and php------------------------
 sudo apt-get -y install phppgadmin
 sudo apt-get -y install libpq-dev
-
-echo ----------------------video-------------------------
-sudo apt-get -y install vlc
-
-echo ----------------------reading-------------------------
-sudo apt-get -y install calibre
-
-echo ---------------------graphics----------------------------------
-sudo apt-get -y install graphviz
-sudo apt-get -y install dia 
-
-echo ------------------------sound----------------------------------
-sudo apt-get -y install mplayer
-sudo apt-get -y install mpg123
-sudo apt-get -y install soundconverter
-
-echo ------------------------editing----------------------------------
-sudo apt-get -y install dos2unix 
 
 echo -------------------------npm------------------------
 sudo apt-get -y install npm
