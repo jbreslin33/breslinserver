@@ -8,10 +8,6 @@ echo ----------------------apache web server restart----------------------------
 sudo service apache2 reload
 sudo /etc/init.d/apache2 restart
 
-echo ------------------------restore db and update to latest saved-----------------
-echo from src/ dir run ./src/database/backup/db_restore.sh
-echo from src/ dir run ./src/database/update.sh
-
 echo  -------------------------------- set password to mibesfat ----------------
 sudo -u postgres psql postgres
 
