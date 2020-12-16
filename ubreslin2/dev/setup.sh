@@ -19,7 +19,7 @@ echo -------------------install php------------------------
 sudo apt-get update
 
 echo -------------------install postgres------------------------
-./install_postgresql
+./install_postgresql.sh
 
 echo -------------------------install npm------------------------
 sudo apt-get -y install npm
