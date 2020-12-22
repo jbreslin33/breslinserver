@@ -1,6 +1,7 @@
 
 echo ----------------------update-------------------------
 sudo apt-get -y update        # Fetches the list of available updates
+sudo apt-get -y dist-upgrade  
 
 echo -----------------------install build tools---------------------
 sudo apt-get -y install build-essential
