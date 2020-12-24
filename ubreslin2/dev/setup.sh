@@ -7,6 +7,8 @@ echo -----------------------install build tools---------------------
 sudo apt-get -y install build-essential
 sudo apt-get -y install libtool
 sudo apt-get -y install vim
+sudo apt-get -y install graphviz
+
 
 echo -----------------------version control------------------------
 sudo apt-get -y install git
