@@ -1,9 +1,9 @@
 <!DOCTYPE SoundManagerConfig>
-<SoundManagerConfig sync_buffers="2" deck_count="4" samplerate="44100" force_network_clock="0" latency="5" api="ALSA">
- <SoundDevice name="4, USB AUDIO  CODEC: Audio (hw:1,0)">
-  <output type="Headphones" channel_count="2" channel="0" index="0"/>
- </SoundDevice>
+<SoundManagerConfig force_network_clock="0" deck_count="4" api="ALSA" samplerate="44100" latency="5" sync_buffers="2">
  <SoundDevice name="0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)">
-  <output type="Master" channel_count="2" channel="0" index="0"/>
+  <output index="0" type="Master" channel="0" channel_count="2"/>
+ </SoundDevice>
+ <SoundDevice name="4, USB AUDIO  CODEC: Audio (hw:1,0)">
+  <output index="0" type="Headphones" channel="0" channel_count="2"/>
  </SoundDevice>
 </SoundManagerConfig>
