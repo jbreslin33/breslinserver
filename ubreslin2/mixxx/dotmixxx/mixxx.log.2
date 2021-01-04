@@ -109,8 +109,11 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
 Debug [Main]: DlgPrefKey::loadSettings
 Debug [Main]: Key plugin ID: "qm-keydetector:2"
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x5637db243fb0) true
-Debug [Main]: Created root GL Context valid: 0x5637db2dcfe0 true
+Debug [Controller]: Extension .midi.xml total 111 presets
+Debug [Controller]: Extension .hid.xml total 10 presets
+Debug [Controller]: Extension .bulk.xml total 1 presets
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55fd52b9cfa0) true
+Debug [Main]: Created root GL Context valid: 0x55fd52c3bc50 true
 Debug [Main]: Root GL Context format:
 Debug [Main]: Double Buffering: true
 Debug [Main]: Swap interval: 0
@@ -130,9 +133,6 @@ Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0
-Debug [Controller]: Extension .midi.xml total 111 presets
-Debug [Controller]: Extension .hid.xml total 10 presets
-Debug [Controller]: Extension .bulk.xml total 1 presets
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
@@ -147,42 +147,30 @@ Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3
 Debug [Main]: WSearchLineEdit - Background color: QColor(ARGB 1, 1, 1, 1)
 Debug [Main]: WSearchLineEdit - Foreground color: QColor(ARGB 1, 0, 0, 0)
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x5637e52c4770)
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x5637e52c4530)
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x5637d6da92d0)
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55fd5cc1d750)
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55fd5cc1d510)
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fd4e6a09d0)
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings"
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x5637f58b7970)
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x5637e52c42f0)
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55fd6d210e50)
 Debug [BrowseThread]: Append last  0
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 243 ms
-Debug [Main]: AnalysisLibraryTableModel(0x5637e52c42f0) select() took 763 ms 0
-Debug [Main]: AnalysisLibraryTableModel(0x5637e52c42f0) select() took 132 ms 0
-Debug [Main]: DlgAnalysis(0x5637f5a3cc40, name="DlgAnalysis") analysisActive false
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55fd5cc1d2d0)
+Debug [Main]: BaseTrackCache(0x55fd505d1670) updateIndexWithQuery took 239 ms
+Debug [Main]: AnalysisLibraryTableModel(0x55fd5cc1d2d0) select() took 378 ms 0
+Debug [Main]: AnalysisLibraryTableModel(0x55fd5cc1d2d0) select() took 135 ms 0
+Debug [Main]: DlgAnalysis(0x55fd6d393e40, name="DlgAnalysis") analysisActive false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:tool_bar.xml:344 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:skin_settings.xml:40 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Debug [Main]: MixxxLibraryFeature::activate()
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x5637d79ec9c0)
-Debug [Main]: LibraryTableModel(0x5637d79ec9c0) select() took 306 ms 23762
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fd4f345d80)
+Debug [Main]: LibraryTableModel(0x55fd4f345d80) select() took 310 ms 23762
 Debug [Main]: trying to restore position
 Debug [Controller]: ControllerManager: Setting up devices
 Debug [Controller]: Scanning PortMIDI devices:
-Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1
-Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1
-Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1"
+Debug [Controller]:  Found output device # 2 Party Mix MIDI 1
+Debug [Controller]:  Found input device # 3 Party Mix MIDI 1
+Debug [Controller]:     Linking to output device # 2 "Party Mix MIDI 1"
 Debug [Controller]: Scanning USB Bulk devices:
 Debug [Controller]: Scanning HID devices:
-Debug [Controller]: Found "" "" "r26368" S/N "" "Interface 0"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: ControllerManager::getControllerList
-Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/"
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml"
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete.
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete.
-Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]"
@@ -200,94 +188,14 @@ Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]"
 Debug [Main]: SoundManager::setupDevices()
-Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: framesPerBuffer: 1024
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
-Debug [Main]: Output channels: 2 | Input channels: 0
-Debug [Main]: Opening stream with id 0
-Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1"
-Debug [Controller]: Applying controller preset...
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js"
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js"
-Debug [Main]: Opened PortAudio stream successfully... starting
-Debug [Main]: Dynamically loaded PortAudio library
-Debug [Main]: PortAudio: Started stream successfully
-Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms
-Debug [Main]: SoundDeviceNetwork - open: "Network stream"
-Debug [Main]: framesPerBuffer: 1024
-Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
-Debug [Main]: Using "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)" as output sound device clock reference
-Debug [Main]: 2 output sound devices opened
-Debug [Main]: 0 input sound devices opened
-Warning [Main]: "4, USB AUDIO  CODEC: Audio (hw:2,0)" not found
-Debug []: SSE: Enabling denormals to zero mode
-Debug []: SSE: Enabling flush to zero mode
-Debug []: Denormals to zero mode is working
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js"
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js"
-Debug [Controller]: Controller polling started.
-Debug [Main]: ControllerManager::getControllerList
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x5637fac08cb0)
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x5637fac08310)
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x5637fac09030)
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x5637fac08690)
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x5637fb3abfc0)
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x5637fc232440)
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x5637fc232dd0)
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x5637fc233860)
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x5637fc233c80)
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x5637fc2340a0)
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x5637fbe2c980)
-Debug [Main]: JACK client name set
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: SoundManager::setupDevices()
+Debug [Controller]: Found "" "" "r26368" S/N "" "Interface 0"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Controller]: Searching for controller preset "Party_Mix_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/"
+Debug [Controller]: Could not find "Party_Mix_MIDI_1.midi.xml" in any preset path.
+Debug [Controller]: Controller polling stopped.
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
 Debug [Main]: framesPerBuffer: 1024
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
@@ -312,632 +220,46 @@ Debug [Main]: Requested sample rate:  44100 Hz, latency: 23219954 ns
 Debug [Main]: Using "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)" as output sound device clock reference
 Debug [Main]: 3 output sound devices opened
 Debug [Main]: 0 input sound devices opened
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
-Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
-Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
-Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
-Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: Displaying main window
+Debug [Main]: Running Mixxx
+Debug [Main]: ControllerManager::getControllerList
 Debug []: SSE: Enabling denormals to zero mode
 Debug []: SSE: Enabling flush to zero mode
 Debug []: Denormals to zero mode is working
-Debug [Main]: DlgPrefVinyl::Apply
-Debug [Main]: in VinylGainSlotApply() with gain: 0 dB
-Debug [Controller]: ControllerManager::getControllerList
-Debug [Controller]: Saving preset for "MixTrack 3 MIDI 1" to "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml"
-Debug [Controller]: writing script block for "Numark-Mixtrack-3-scripts.js"
-Debug [Main]: DlgPrefLV2::slotApply 0x0
-Debug [Main]: Displaying main window
-Debug [Main]: Running Mixxx
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x5637faca5cd0)
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x5637faca5b80)
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x5637f9a87c80)
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x5637faca5e90)
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x5637f9e0c410)
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x5637fe2a09c0)
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x5637fe2a0c50)
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x5637fe2a12d0)
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x5637fe2a1660)
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x5637fe2a1a40)
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x5637fb3aaa60)
-Debug [Main]: Successfully deserialized BeatGrid
-Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637db2f87c0, name = "LibraryCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200)
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/genres/urban/breslin/Usher - Yeah.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000"
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization
-Warning [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000"
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Yeah" "/amusic/genres/urban/breslin/Usher - Yeah.mp3"
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/genres/urban/breslin/Usher - Yeah.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 128000 samplerate: 44100 flags: "0x0088"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: forbidden bitrate value
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 2 #channels: 2 #samples: 12 bitrate: 128000 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000"
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - Recoverable MP3 header decoding error: lost synchronization
-Warning [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 1 mode: 3 #channels: 2 #samples: 12 bitrate: 0 samplerate: 44100 flags: "0x0000"
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/27" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/28" length 0
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637e52c5230, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d6899000, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200)
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637f858c9c0, name = "DeckCoverArt")  "CoverInfoRelative(FILE,GUESSED,Folder.jpg,0xbc8f)" QSize(200, 200)
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 2088523 bytes for track 5051 in 79 ms
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 221830 visualSampleRate 441 audioVisualRatio 100
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3842 visualSampleRate 7.63398 audioVisualRatio 5776.8
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
-Debug [AnalyzerQueue 1]: Beat calculation skips analyzing because the track has a BPM computed by a previous Mixxx version and user preferences indicate we should not change it.
-Debug [AnalyzerQueue 1]: Beat calculation will not start
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
-Debug [AnalyzerQueue 1]: Key calculation will not start.
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
-Debug [Main]: Committing transaction on "MIXXX-1" result: true
-Debug [Main]: Successfully deserialized BeatGrid
-Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637db2f87c0, name = "LibraryCoverArt")  "CoverInfoRelative(NONE,GUESSED,,0x0)" QSize(0, 0)
-Debug [Main]: Successfully deserialized BeatGrid
-Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637db2f87c0, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
-Debug [CachingReaderWorker 1]: CachingReaderWorker - Cancelling read request for  25
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2327" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2328" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2465" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2466" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2585" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2586" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4153" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4154" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7223" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7224" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8219" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8220" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8811" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8812" length 0
-Debug [Main]: TrackDAO: Saving track 5051 "/amusic/genres/urban/breslin/Usher - Yeah.mp3"
-Debug [Main]: TrackDAO: Updating track in database 5051 "/amusic/genres/urban/breslin/Usher - Yeah.mp3"
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1380359 bytes for track 22639 in 55 ms
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
-Debug [AnalyzerQueue 1]: Beat calculation will not start
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
-Debug [AnalyzerQueue 1]: Key calculation will not start.
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637e52c5230, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d6899000, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637f858c9c0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]"
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
-Debug [AnalyzerQueue 1]: Beat calculation will not start
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
-Debug [AnalyzerQueue 1]: Key calculation will not start.
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d687e980, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d6880950, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637f8d3b0d0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
-Debug [Main]: Committing transaction on "MIXXX-1" result: true
-Debug [Main]: Successfully deserialized BeatGrid
-Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637db2f87c0, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0x4ff0)" QSize(600, 600)
-Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel2]"
-Debug [CachingReaderWorker 2]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [CachingReaderWorker 2]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048"
-Debug [CachingReaderWorker 2]: CachingReaderWorker - Cancelling read request for  126
-Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Prioritizing "24K Magic" "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3"
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "24K Magic" "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3"
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 3 #channels: 2 #samples: 36 bitrate: 32000 samplerate: 44100 flags: "0x0048"
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3587" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/3588" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4223" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4224" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5765" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5766" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7421" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7422" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7749" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7750" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7989" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7990" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8753" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8754" length 0
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x5637f8d3b0d0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0x4ff0)" QSize(600, 600)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d687e980, name = "SpinnySingletonWithCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0x4ff0)" QSize(600, 600)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x5637d6880950, name = "SpinnySingletonNoCover[Channel2]")  "CoverInfoRelative(METADATA,GUESSED,,0x4ff0)" QSize(600, 600)
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1768286 bytes for track 22679 in 94 ms
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 200242 visualSampleRate 441 audioVisualRatio 100
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 8.45702 audioVisualRatio 5214.6
-Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
-Debug [AnalyzerQueue 1]: Beat calculation will not start
-Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
-Debug [AnalyzerQueue 1]: Key calculation will not start.
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
-Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55fd71a51270)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55fd71a50f70)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55fd71a53d40)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55fd71a51230)
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55fd7276c250)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55fd70d5eec0)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55fd70d50960)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55fd70d4fa30)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55fd70d5a010)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55fd70d49ef0)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55fd73677bb0)
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited
 Debug [Main]: Destroying MixxxMainWindow
-Debug [Main]: 11 ms saving configuration
-Debug [Main]: 11 ms deleting skin
+Debug [Main]: 5 ms saving configuration
+Debug [Main]: 5 ms deleting skin
 Debug [Main]: ~DlgAutoDJ()
-Debug [Main]: 738 ms deleting menubar
-Debug [Main]: 738 ms deleting SoundManager
-Debug [Main]: 779 ms deleting ControllerManager
+Debug [Main]: 639 ms deleting menubar
+Debug [Main]: 642 ms deleting SoundManager
+Debug [Main]: 684 ms deleting ControllerManager
 Debug [Controller]: Controller polling stopped.
 Debug [Controller]: Deleting PortMIDI devices...
-Debug [Controller]: ControllerEngine shutting down...
 Debug [Controller]: Deleting USB Bulk devices...
 Debug [Controller]: Deleting HID devices...
-Debug [Main]: 819 ms deleting VinylControlManager
+Debug [Main]: 685 ms deleting VinylControlManager
 Debug [Main]: ~CoverArtCache()
-Debug [Main]: 820 ms deleting PlayerManager
+Debug [Main]: 686 ms deleting PlayerManager
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread
 Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform():
-Debug [Main]: 823540529 ns deactivating GlobalTrackCache
-Debug [Main]: TrackDAO: Saving track 22679 "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3"
-Debug [Main]: TrackDAO: Updating track in database 22679 "/amusic/billboard/latest/2016-10-31/10 Bruno Mars - 24K Magic.mp3"
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: TrackDAO: Saving track 22639 "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
-Debug [Main]: TrackDAO: Updating track in database 22639 "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
-Debug [Main]: BaseTrackCache(0x5637d8c79240) updateIndexWithQuery took 0 ms
-Debug [Main]: 997 ms deleting Library
+Debug [Main]: 691875270 ns deactivating GlobalTrackCache
+Debug [Main]: 691 ms deleting Library
 Debug [Main]: Wait to finish browser background thread
 Debug [Main]: Browser background thread terminated!
+Debug [Main]: Committing transaction on "MIXXX-1" result: true
+Debug [Main]: PlaylistDAO::getHiddenType returns PLHT_UNKNOWN for playlistId  590
 Info [Main]: Library - Disconnecting database
 Debug [Main]: TrackDAO::finish()
 Debug [Main]: Clearing played information for this session
@@ -947,14 +269,14 @@ Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
 Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
 Debug [LibraryScanner 1]: LibraryScanner - Exiting thread
 Debug [Main]: ~TrackDAO()
-Debug [Main]: 1155 ms closing database connection(s)
-Debug [Main]: 1158 ms deleting RecordingManager
+Debug [Main]: 896 ms closing database connection(s)
+Debug [Main]: 899 ms deleting RecordingManager
 Debug [Main]: Delete RecordingManager
-Debug [Main]: 1158 ms deleting BroadcastManager
+Debug [Main]: 899 ms deleting BroadcastManager
 Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0
-Debug [Main]: 1159 ms deleting EngineMaster
+Debug [Main]: 949 ms deleting EngineMaster
 Debug [Main]: in ~EngineMaster()
-Debug [Main]: 1189 ms deleting DlgPreferences
-Debug [Main]: 1198 ms deleting EffectsManager
-Debug [Main]: 1227 ms deleting SettingsManager
+Debug [Main]: 989 ms deleting DlgPreferences
+Debug [Main]: 995 ms deleting EffectsManager
+Debug [Main]: 1012 ms deleting SettingsManager
 Debug [Main]: Mixxx shutdown complete with code 0
