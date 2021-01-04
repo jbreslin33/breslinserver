@@ -27,4 +27,5 @@ sudo usermod -aG sudo tepps
 sudo usermod -aG sudo tfleming
 sudo usermod -aG sudo ttribble
 sudo usermod -aG sudo wwhitaker
+sudo usermod -aG sudo ireyes
 
