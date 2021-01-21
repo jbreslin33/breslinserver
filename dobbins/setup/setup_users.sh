@@ -28,4 +28,15 @@ sudo usermod -aG sudo tfleming
 sudo usermod -aG sudo ttribble
 sudo usermod -aG sudo wwhitaker
 sudo usermod -aG sudo ireyes
-
+sudo usermod -aG sudo abecoat
+sudo usermod -aG sudo naustin 
+sudo usermod -aG sudo qbaukman 
+sudo usermod -aG sudo sgregory 
+sudo usermod -aG sudo dhang 
+sudo usermod -aG sudo yjabbar 
+sudo usermod -aG sudo cportilla 
+sudo usermod -aG sudo lreyes 
+sudo usermod -aG sudo tscales 
+sudo usermod -aG sudo rsmith 
+sudo usermod -aG sudo ithomas 
+sudo usermod -aG sudo mthompson 

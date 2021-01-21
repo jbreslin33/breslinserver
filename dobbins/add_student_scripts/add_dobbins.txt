@@ -28,3 +28,16 @@ ttribble:student:1232:50:Tahjanay Tribble:/home/ttribble:/bin/bash
 mward:student:1233:50:Mario Ward:/home/mward:/bin/bash
 ireyes:student:1234:50:Isaac Reyes:/home/ireyes:/bin/bash
 jbreslin:Iggles_13:1201:50:Jim Breslin:/home/jbreslin:/bin/bash
+naustin:student:1235:50:Naim Austin:/home/naustin:/bin/bash
+qbaukman:student:1236:50:Quasim Baukman:/home/qbaukman:/bin/bash
+abecoat:student:1237:50:Alonni Becoat:/home/abecoat:/bin/bash
+sgregory:student:1238:50:Spike Gregory:/home/sgregory:/bin/bash
+dhang:student:1239:50:David Hang:/home/dhang:/bin/bash
+yjabbar:student:1240:50:Yasir Jabbar:/home/yjabbar:/bin/bash
+cportilla:student:1241:50:Carlos Portilla:/home/cportilla:/bin/bash
+lreyes:student:1242:50:Leonel Reyes:/home/lreyes:/bin/bash
+tscales:student:1243:50:Tahir Scales:/home/tscales:/bin/bash
+rsmith:student:1244:50:Rashon Smith:/home/rsmith:/bin/bash
+ithomas:student:1245:50:Izanya Thomas:/home/ithomas:/bin/bash
+mthompson:student:1246:50:Mekhi Thompson:/home/mthompson:/bin/bash
+student:student:1247:50:Student Student:/home/student:/bin/bash
