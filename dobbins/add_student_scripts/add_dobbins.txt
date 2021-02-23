@@ -14,7 +14,7 @@ dwooten:student:1217:50:Derrius Wooten:/home/dwooten:/bin/bash
 sdouglass:student:1218:50:Sadir Douglass:/home/sdouglass:/bin/bash
 tfleming:student:1219:50:Tymeir Fleming:/home/tfleming:/bin/bash
 efulton:student:1220:50:Elijah Fulton:/home/efulton:/bin/bash
-nhollowman:student:1221:50:Nasir Hollowman:/home/nhollowman:/bin/bash
+nholloman:student:1221:50:Nasir Holloman:/home/nholloman:/bin/bash
 jhughes:student:1222:50:Jordan Hughes:/home/jhughes:/bin/bash
 kkeels:student:1223:50:Kyree Keels:/home/kkeels:/bin/bash
 jwarfield:student:1224:50:Jeremiah Warfield:/home/jwarfield:/bin/bash
