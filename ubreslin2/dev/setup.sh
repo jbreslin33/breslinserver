@@ -9,6 +9,8 @@ sudo apt-get -y install libtool
 sudo apt-get -y install vim
 sudo apt-get -y install graphviz
 
+echo -----------------------ssh------------------------
+sudo apt-get -y install ssh
 
 echo -----------------------version control------------------------
 sudo apt-get -y install git
