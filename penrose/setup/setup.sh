@@ -22,6 +22,9 @@ sudo apt-get -y install minetest
 sudo apt-get -y install tuxtype
 sudo apt-get -y install tuxpaint
 
+echo game_developement
+sudo apt-get install -y godot3
+
 echo remote system tech
 sudo apt-get -y install rdesktop
 sudo apt-get -y install clusterssh
