@@ -109,8 +109,11 @@ Debug [Main]: Plugin output displayname: "qm-tempotracker:1" "Tempo and Beat Tra
 Debug [Main]: Plugin output displayname: "qm-tempotracker:2" "Tempo and Beat Tracker"
 Debug [Main]: DlgPrefKey::loadSettings
 Debug [Main]: Key plugin ID: "qm-keydetector:2"
-Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55fb57481ca0) true
-Debug [Main]: Created root GL Context valid: 0x55fb5751c000 true
+Debug [Controller]: Extension .midi.xml total 112 presets
+Debug [Controller]: Extension .hid.xml total 10 presets
+Debug [Controller]: Extension .bulk.xml total 1 presets
+Debug [Main]: Set root GL Context widget valid: QGLWidget(0x55bb94ee5d70) true
+Debug [Main]: Created root GL Context valid: 0x55bb92ecbb90 true
 Debug [Main]: Root GL Context format:
 Debug [Main]: Double Buffering: true
 Debug [Main]: Swap interval: 0
@@ -130,9 +133,6 @@ Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 0
-Debug [Controller]: Extension .midi.xml total 111 presets
-Debug [Controller]: Extension .hid.xml total 10 presets
-Debug [Controller]: Extension .bulk.xml total 1 presets
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: WSpinny(): Created QGLWidget, Context Valid: true Sharing: true
 Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
@@ -147,42 +147,30 @@ Debug [Main]: Created QGLWidget. Context Valid: true Sharing: true
 Debug [Main]: WaveformWidgetFactory::setWaveformWidget - waveform widget added in factory, index 3
 Debug [Main]: WSearchLineEdit - Background color: QColor(ARGB 1, 1, 1, 1)
 Debug [Main]: WSearchLineEdit - Foreground color: QColor(ARGB 1, 0, 0, 0)
-Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55fb61501800)
-Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55fb615015c0)
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fb5302b0e0)
+Debug [Main]: WTrackTableView::loadTrackModel() HiddenTableModel(0x55bb9ef66f80)
+Debug [Main]: WTrackTableView::loadTrackModel() MissingTableModel(0x55bb9ef66d40)
+Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55bb90a488a0)
 Debug [Main]: Recordings folder set to "/home/jbreslin/Music/Mixxx/Recordings"
-Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55fb71af6150)
-Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55fb61501380)
+Debug [Main]: WTrackTableView::loadTrackModel() QSortFilterProxyModel(0x55bbaf55aa70)
 Debug [BrowseThread]: Append last  0
-Debug [Main]: BaseTrackCache(0x55fb54ea3200) updateIndexWithQuery took 240 ms
-Debug [Main]: AnalysisLibraryTableModel(0x55fb61501380) select() took 765 ms 0
-Debug [Main]: AnalysisLibraryTableModel(0x55fb61501380) select() took 130 ms 0
-Debug [Main]: DlgAnalysis(0x55fb71c7ae80, name="DlgAnalysis") analysisActive false
+Debug [Main]: WTrackTableView::loadTrackModel() AnalysisLibraryTableModel(0x55bb9ef66b00)
+Debug [Main]: BaseTrackCache(0x55bb92866820) updateIndexWithQuery took 246 ms
+Debug [Main]: AnalysisLibraryTableModel(0x55bb9ef66b00) select() took 402 ms 0
+Debug [Main]: AnalysisLibraryTableModel(0x55bb9ef66b00) select() took 154 ms 0
+Debug [Main]: DlgAnalysis(0x55bbaf6df580, name="DlgAnalysis") analysisActive false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:tool_bar.xml:344 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Warning [Main]: src/skin/legacyskinparser.cpp:2108 SKIN ERROR at skin:skin_settings.xml:40 <Connection>: LegacySkinParser::setupConnections(): EmitOnPressAndRelease must not set false
 Debug [Main]: MixxxLibraryFeature::activate()
-Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55fb54f5ef30)
-Debug [Main]: LibraryTableModel(0x55fb54f5ef30) select() took 310 ms 23762
+Debug [Main]: WTrackTableView::loadTrackModel() LibraryTableModel(0x55bb9168bf50)
+Debug [Main]: LibraryTableModel(0x55bb9168bf50) select() took 281 ms 23762
 Debug [Main]: trying to restore position
 Debug [Controller]: ControllerManager: Setting up devices
 Debug [Controller]: Scanning PortMIDI devices:
-Debug [Controller]:  Found output device # 2 MixTrack 3 MIDI 1
-Debug [Controller]:  Found input device # 3 MixTrack 3 MIDI 1
-Debug [Controller]:     Linking to output device # 2 "MixTrack 3 MIDI 1"
+Debug [Controller]:  Found output device # 2 Party Mix MIDI 1
+Debug [Controller]:  Found input device # 3 Party Mix MIDI 1
+Debug [Controller]:     Linking to output device # 2 "Party Mix MIDI 1"
 Debug [Controller]: Scanning USB Bulk devices:
 Debug [Controller]: Scanning HID devices:
-Debug [Controller]: Found "" "" "r29184" S/N "" "Interface 0"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: Found "" "" "r512" S/N "" "Interface 2"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3"
-Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
-Debug [Controller]: ControllerManager::getControllerList
-Debug [Controller]: Searching for controller preset "MixTrack_3_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/"
-Debug [Controller]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/MixTrack_3_MIDI_1.midi.xml"
-Debug [Controller]: MidiControllerPresetFileHandler: Input mapping parsing complete.
-Debug [Controller]: MidiPresetFileHandler: Output mapping parsing complete.
-Debug [Controller]: Opening controller: "MixTrack 3 MIDI 1"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler1]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler2]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler3]"
@@ -200,20 +188,24 @@ Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler14]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler15]"
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Sampler16]"
 Debug [Main]: SoundManager::setupDevices()
+Debug [Controller]: Found "" "" "r26368" S/N "" "Interface 0"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: Found "" "" "r256" S/N "" "Interface 3"
+Warning [Controller]: USB permissions problem (or device error.) Your account needs write access to USB HID controllers.
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Controller]: Searching for controller preset "Party_Mix_MIDI_1.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/"
+Debug [Controller]: Could not find "Party_Mix_MIDI_1.midi.xml" in any preset path.
+Debug [Controller]: Controller polling stopped.
 Debug [Main]: SoundDevicePortAudio::open() "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
 Debug [Main]: framesPerBuffer: 1024
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
 Debug [Main]: Output channels: 2 | Input channels: 0
 Debug [Main]: Opening stream with id 0
-Debug [Controller]: Controller in script engine is: "MixTrack 3 MIDI 1"
-Debug [Controller]: Applying controller preset...
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/common-controller-scripts.js"
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/common-controller-scripts.js"
 Debug [Main]: Opened PortAudio stream successfully... starting
 Debug [Main]: Dynamically loaded PortAudio library
 Debug [Main]: PortAudio: Started stream successfully
 Debug [Main]:    Actual sample rate:  44100 Hz, latency: 23.22 ms
-Debug [Main]: SoundDevicePortAudio::open() "4, USB Audio CODEC: - (hw:1,0)"
+Debug [Main]: SoundDevicePortAudio::open() "4, USB AUDIO  CODEC: Audio (hw:1,0)"
 Debug [Main]: framesPerBuffer: 1024
 Debug [Main]: Requested sample rate:  44100 Hz, latency: 23.22 ms
 Debug [Main]: Output channels: 2 | Input channels: 0
@@ -231,83 +223,201 @@ Debug [Main]: 0 input sound devices opened
 Debug [Main]: Displaying main window
 Debug [Main]: Running Mixxx
 Debug [Main]: ControllerManager::getControllerList
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55bbb4afd120)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55bbb4afd200)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55bbb4afd0b0)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55bbb4afdc10)
 Debug []: SSE: Enabling denormals to zero mode
 Debug []: SSE: Enabling flush to zero mode
 Debug []: Denormals to zero mode is working
-Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55fb77099d60)
-Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55fb7709a230)
-Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55fb77097de0)
-Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55fb77099eb0)
-Debug [Controller]: ControllerEngine: Watching JS File: "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js"
-Debug [Controller]: ControllerEngine: Loading "/usr/share/mixxx/controllers/Numark-Mixtrack-3-scripts.js"
-Debug [Controller]: Controller polling started.
-Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55fb7704ff70)
-Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55fb7600af40)
-Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55fb7601b8a0)
-Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55fb75fae070)
-Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55fb75fbf4b0)
-Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55fb760014c0)
-Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55fb77f5bb70)
-Debug [Main]: Committing transaction on "MIXXX-1" result: true
-Debug [Main]: WTrackTableView::loadTrackModel() PlaylistTableModel(0x55fb52a3ba30)
-Debug [Main]: PlaylistTableModel(0x55fb52a3ba30) select() took 8 ms 17
-Debug [Main]: trying to restore position
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55bbb4ab4e20)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55bbb48da1a0)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55bbb48da750)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55bbb48d98e0)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55bbb48da4b0)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55bbb48da360)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55bbb59c08c0)
 Debug [Main]: Successfully deserialized BeatGrid
 Debug [Main]: Successfully deserialized KeyMap
-Debug [Main]: BaseTrackCache(0x55fb54ea3200) updateIndexWithQuery took 0 ms
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fb575391a0, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xa05c)" QSize(1040, 1040)
+Debug [Main]: BaseTrackCache(0x55bb92866820) updateIndexWithQuery took 0 ms
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x7ff8f400a150, name = "LibraryCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
 Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
-Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2015-05-23/47. OMI - Cheerleader.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
 Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 48000 flags: "0x0048"
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
 Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
-Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "Cheerleader" "/amusic/billboard/latest/2015-05-23/47. OMI - Cheerleader.mp3"
-Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2015-05-23/47. OMI - Cheerleader.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
 Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
-Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 48000 flags: "0x0048"
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5205" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/5206" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7419" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7420" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7967" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7968" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8667" length 0
-Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8668" length 0
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55fb52bc2000, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xa05c)" QSize(1040, 1040)
-Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55fb747caaf0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xa05c)" QSize(1040, 1040)
-Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55fb615022c0, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xa05c)" QSize(1040, 1040)
-Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1430063 bytes for track 19402 in 73 ms
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 160074 visualSampleRate 441 audioVisualRatio 108.844
-Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 10.5792 audioVisualRatio 4537.2
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2327" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2328" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2465" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2466" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2585" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/2586" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4153" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/4154" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7223" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/7224" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8219" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8220" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8811" length 0
+Debug [AnalyzerQueue 1]: WARNING: Corrupt analysis loaded from "/home/jbreslin/.mixxx/analysis/8812" length 0
+Debug [AnalyzerQueue 1]: AnalysisDAO fetched 2 analyses, 1380359 bytes for track 22639 in 18 ms
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55bb9ef67a40, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 153494 visualSampleRate 441 audioVisualRatio 100
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55bb905d4c00, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
+Debug [AnalyzerQueue 1]: Reading waveform from byte array: allSignalSize 3840 visualSampleRate 11.0327 audioVisualRatio 3997.2
 Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
 Debug [AnalyzerQueue 1]: Beat calculation will not start
 Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
 Debug [AnalyzerQueue 1]: Key calculation will not start.
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55bbb222f4e0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Controller]: Controller in script engine is: "Party Mix MIDI 1"
+Debug [Controller]: Controller polling started.
+Debug [Controller]: Applying controller preset...
+Warning [Controller]: No script functions available! Did the XML file(s) load successfully? See above for any errors.
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55bbb750d920)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55bbb750e420)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55bbb750ec40)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55bbb750eea0)
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55bbb7573850)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55bbb848de10)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55bbb848e0a0)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55bbb848e7c0)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55bbb848eba0)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55bbb848ef80)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55bbb8065d00)
+Debug [Main]: DlgPrefVinyl::Apply
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB
+Debug [Controller]: Saving preset for "Party Mix MIDI 1" to "/home/jbreslin/.mixxx/controllers/Party_Mix_MIDI_1.midi.xml"
+Debug [Main]: DlgPrefLV2::slotApply 0x0
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 2 "0, HDA Intel PCH: 92HD90BXX Analog (hw:0,0)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 2 "1, HDA Intel PCH: HDMI 0 (hw:0,3)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 2 "2, HDA Intel PCH: HDMI 1 (hw:0,7)"
+Debug [Main]: 1 "HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 2 "3, HDA Intel PCH: HDMI 2 (hw:0,8)"
+Debug [Main]: 1 "USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Main]: 2 "4, USB AUDIO  CODEC: Audio (hw:1,0)"
+Debug [Main]: Searching for controller preset "/home/jbreslin/.mixxx/controllers/Numark Party Mix.midi.xml" in paths: "/home/jbreslin/.mixxx/controllers/,/usr/share/mixxx/controllers/"
+Debug [Main]: Loading controller preset from "/home/jbreslin/.mixxx/controllers/Numark Party Mix.midi.xml"
+Debug [Main]: MidiControllerPresetFileHandler: Input mapping parsing complete.
+Debug [Main]: MidiPresetFileHandler: Output mapping parsing complete.
+Debug [Main]: ControllerManager::importScript importing script "/home/jbreslin/.mixxx/controllers/Numark-Party-Mix-scripts.js" to "/home/jbreslin/.mixxx/controllers"
+Debug [Main]: ControllerManager::importScript "Numark-Party-Mix-scripts.js" had identical checksum to a file of the same name. Skipping import.
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55bbb817fdb0)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55bbb8187720)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55bbb81b40f0)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55bbb81954c0)
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55bbb941c970)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55bbba2fde60)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55bbba2fe030)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55bbba2fe9b0)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55bbba2fed90)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55bbba2ff170)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55bbb9ed5660)
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55bbbb0e3a30)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55bbbb1120a0)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55bbbb0bdfc0)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55bbbb0c58b0)
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55bbbb236b40)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55bbbc144b20)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55bbbc144c60)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55bbbc145540)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55bbbc145920)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55bbbc145d00)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55bbb9425a50)
+Debug [Main]: DlgPrefVinyl::Apply
+Debug [Controller]: ControllerManager::getControllerList
+Debug [Main]: in VinylGainSlotApply() with gain: 0 dB
+Debug [Controller]: Saving preset for "Party Mix MIDI 1" to "/home/jbreslin/.mixxx/controllers/Party_Mix_MIDI_1.midi.xml"
+Debug [Controller]: writing script block for "Numark-Party-Mix-scripts.js"
+Debug [Main]: DlgPrefLV2::slotApply 0x0
+Debug [Main]: Setting input delegate for column 0 QStyledItemDelegate(0x55bbbcc65310)
+Debug [Main]: Setting input delegate for column 1 QStyledItemDelegate(0x55bbbcc6b580)
+Debug [Main]: Setting input delegate for column 2 QStyledItemDelegate(0x55bbbcc7dc00)
+Debug [Main]: Setting input delegate for column 3 MidiOptionsDelegate(0x55bbbcc54a90)
+Debug [Main]: Setting input delegate for column 4 ControlDelegate(0x55bbba2fddf0)
+Debug [Main]: Setting output delegate for column 0 QStyledItemDelegate(0x55bbb4ab42a0)
+Debug [Main]: Setting output delegate for column 1 QStyledItemDelegate(0x55bbb4ab4300)
+Debug [Main]: Setting output delegate for column 2 QStyledItemDelegate(0x55bbbdf5d8f0)
+Debug [Main]: Setting output delegate for column 3 QStyledItemDelegate(0x55bbbdf5dcd0)
+Debug [Main]: Setting output delegate for column 4 QStyledItemDelegate(0x55bbbdf5e0b0)
+Debug [Main]: Setting output delegate for column 5 ControlDelegate(0x55bb91522500)
+Debug [Main]: BaseTrackPlayerImpl::slotLoadTrack "[Channel1]"
+Debug [CachingReaderWorker 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
+Debug [CachingReaderWorker 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
+Debug [Main]: BaseTrackPlayerImpl::slotTrackLoaded
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Prioritizing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Analyzing "One Dance" "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
+Debug [AnalyzerQueue 1]: SoundSourceProxy - Opening file "file:///home/jbreslin/Music/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3" with provider "MAD: MPEG Audio Decoder" using mode Strict
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 0 mode: 0 #channels: 1 #samples: 36 bitrate: 0 samplerate: 0 flags: "0x0000"
+Debug [AnalyzerQueue 1]: SoundSourceMP3 - MP3 frame header | layer: 3 mode: 2 #channels: 2 #samples: 36 bitrate: 320000 samplerate: 44100 flags: "0x00c8"
+Debug [AnalyzerQueue 1]: AnalyzerWaveform - loadStored - Stored waveform loaded
+Debug [AnalyzerQueue 1]: Beat calculation will not start
+Debug [AnalyzerQueue 1]: Keys version/sub-version unchanged since previous analysis. Not analyzing.
+Debug [AnalyzerQueue 1]: Key calculation will not start.
+Debug [AnalyzerQueue 1]: AnalyzerQueue - Skipping track analysis because no analyzer initialized.
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55bb9ef67a40, name = "SpinnySingletonWithCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
+Debug [Main]: WSpinny::slotCoverFound WSpinny(0x55bb905d4c00, name = "SpinnySingletonNoCover[Channel1]")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
+Debug [Main]: WCoverArt::slotCoverFound WCoverArt(0x55bbb222f4e0, name = "DeckCoverArt")  "CoverInfoRelative(METADATA,GUESSED,,0xd89d)" QSize(500, 500)
 Debug [Main]: Committing transaction on "MIXXX-1" result: true
 Debug [Main]: DBus screensaver  org.freedesktop.ScreenSaver  uninhibited
 Debug [Main]: Destroying MixxxMainWindow
-Debug [Main]: 10 ms saving configuration
-Debug [Main]: 10 ms deleting skin
+Debug [Main]: 9 ms saving configuration
+Debug [Main]: 11 ms deleting skin
 Debug [Main]: ~DlgAutoDJ()
-Debug [Main]: 694 ms deleting menubar
-Debug [Main]: 695 ms deleting SoundManager
-Debug [Main]: 753 ms deleting ControllerManager
+Debug [Main]: 636 ms deleting menubar
+Debug [Main]: 638 ms deleting SoundManager
+Debug [Main]: 685 ms deleting ControllerManager
 Debug [Controller]: Controller polling stopped.
 Debug [Controller]: Deleting PortMIDI devices...
 Debug [Controller]: ControllerEngine shutting down...
 Debug [Controller]: Deleting USB Bulk devices...
 Debug [Controller]: Deleting HID devices...
-Debug [Main]: 774 ms deleting VinylControlManager
+Debug [Main]: 697 ms deleting VinylControlManager
 Debug [Main]: ~CoverArtCache()
-Debug [Main]: 774 ms deleting PlayerManager
+Debug [Main]: 698 ms deleting PlayerManager
 Debug [AnalyzerQueue 1]: AnalyzerQueue - Exiting thread
 Debug [Main]: AnalyzerWaveform - ~AnalyzerWaveform():
-Debug [Main]: 779597418 ns deactivating GlobalTrackCache
-Debug [Main]: TrackDAO: Saving track 19402 "/amusic/billboard/latest/2015-05-23/47. OMI - Cheerleader.mp3"
-Debug [Main]: TrackDAO: Updating track in database 19402 "/amusic/billboard/latest/2015-05-23/47. OMI - Cheerleader.mp3"
-Debug [Main]: BaseTrackCache(0x55fb54ea3200) updateIndexWithQuery took 0 ms
-Debug [Main]: 858 ms deleting Library
+Debug [Main]: 701824838 ns deactivating GlobalTrackCache
+Debug [Main]: TrackDAO: Saving track 22639 "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
+Debug [Main]: TrackDAO: Updating track in database 22639 "/amusic/billboard/latest/2016-06-01/001. Drake feat. Wizkid & Kyla - One Dance.mp3"
+Debug [Main]: BaseTrackCache(0x55bb92866820) updateIndexWithQuery took 0 ms
+Debug [Main]: 788 ms deleting Library
 Debug [Main]: Wait to finish browser background thread
 Debug [Main]: Browser background thread terminated!
 Info [Main]: Library - Disconnecting database
@@ -319,14 +429,14 @@ Debug [LibraryScanner 1]: LibraryScanner - Event loop stopped
 Warning [LibraryScanner 1]: QSqlDatabasePrivate::removeDatabase: connection 'MIXXX-2' is still in use, all queries will cease to work.
 Debug [LibraryScanner 1]: LibraryScanner - Exiting thread
 Debug [Main]: ~TrackDAO()
-Debug [Main]: 1019 ms closing database connection(s)
-Debug [Main]: 1027 ms deleting RecordingManager
+Debug [Main]: 948 ms closing database connection(s)
+Debug [Main]: 955 ms deleting RecordingManager
 Debug [Main]: Delete RecordingManager
-Debug [Main]: 1027 ms deleting BroadcastManager
+Debug [Main]: 955 ms deleting BroadcastManager
 Debug [Main]: DlgPrefBroadcast - broadcastEnabledChanged() 0
-Debug [Main]: 1028 ms deleting EngineMaster
+Debug [Main]: 956 ms deleting EngineMaster
 Debug [Main]: in ~EngineMaster()
-Debug [Main]: 1059 ms deleting DlgPreferences
-Debug [Main]: 1065 ms deleting EffectsManager
-Debug [Main]: 1081 ms deleting SettingsManager
+Debug [Main]: 988 ms deleting DlgPreferences
+Debug [Main]: 1003 ms deleting EffectsManager
+Debug [Main]: 1027 ms deleting SettingsManager
 Debug [Main]: Mixxx shutdown complete with code 0
