@@ -1,25 +1,26 @@
 echo -------------------------- checkout mathcore from git ----------------------------
-git clone https://github.com/jbreslin33/breslinmathracer.git ~/sandbox/breslinmathracer
+sudo rm -r /var/www/breslinmathracer/
+sudo git clone https://github.com/jbreslin33/breslinmathracer.git /var/www/breslinmathracer
+
+echo -----------------------copy files ------------------------------------
+
+sudo cp mathcore.conf /etc/apache2/sites-available/
+cd /etc/apache2/sites-available/
+sudo a2ensite mathcore.conf
+sudo cp apache.conf /etc/phppgadmin
+
+
+echo -----------------------web server restart------------------------------
+sudo service apache2 reload
 
 echo ----------------- create mathcore db called jamesanthonybreslin
 sudo -u postgres createdb jamesanthonybreslin
 
-echo ----------------------apache web server restart------------------------------
-sudo service apache2 reload
-sudo /etc/init.d/apache2 restart
-
-echo ------------------------restore db and update to latest saved-----------------
-echo from src/ dir run ./src/database/backup/db_restore.sh
-echo from src/ dir run ./src/database/update.sh
-
 echo  -------------------------------- set password to mibesfat ----------------
 sudo -u postgres psql postgres
 
-echo -----------------------copy files ------------------------------------
-sudo cp default_jbreslin /etc/apache2/sites-available/000-default.conf
-sudo cp apache.conf /etc/phppgadmin
+echo -------------------install php------------------------
+cd /home/jbreslin/sandbox/breslinserver/ubreslin2/dev
+./install_php.sh
 
-echo -----------------------web server restart------------------------------
-sudo service apache2 reload
-sudo /etc/init.d/apache2 restart
 
