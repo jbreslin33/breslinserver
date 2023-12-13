@@ -1,3 +1,5 @@
+sudo apt-get install python-pip
+
 sudo apt-get install youtube-dl
 
 sudo apt-get install python-setuptools
