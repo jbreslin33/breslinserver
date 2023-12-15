@@ -1,6 +1,6 @@
 <!DOCTYPE SoundManagerConfig>
-<SoundManagerConfig latency="5" sync_buffers="2" force_network_clock="0" deck_count="4" samplerate="44100" api="ALSA">
- <SoundDevice portAudioIndex="0" alsaHwDevice="hw:0,0" name="HDA Intel PCH: 92HD90BXX Analog">
-  <output index="0" channel="0" type="Master" channel_count="2"/>
+<SoundManagerConfig samplerate="44100" force_network_clock="0" latency="5" deck_count="4" api="ALSA" sync_buffers="2">
+ <SoundDevice name="HDA Intel PCH: 92HD90BXX Analog" portAudioIndex="0" alsaHwDevice="hw:0,0">
+  <output type="Master" channel_count="2" index="0" channel="0"/>
  </SoundDevice>
 </SoundManagerConfig>
