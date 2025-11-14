@@ -113,7 +113,50 @@ echo "  • USB drive with at least 8GB capacity"
 echo "  • All data on USB will be ERASED"
 echo ""
 
-read -p "Create bootable USB now? (yes/no): " CREATE_USB
+# Auto-detect USB drives under 20GB
+echo "Scanning for USB drives..."
+USB_DEVICES=$(lsblk -d -b -o NAME,SIZE,TYPE,TRAN | grep "disk" | grep "usb" | awk '{if ($2 < 20*1024*1024*1024) print $1":"$2}')
+
+if [ -z "$USB_DEVICES" ]; then
+    echo "No USB drives under 20GB detected."
+    echo ""
+    echo "Available drives:"
+    lsblk -d -o NAME,SIZE,TYPE,VENDOR,MODEL,TRAN | grep -E "(disk|NAME)"
+    echo ""
+    read -p "Enter USB device name manually (e.g., sda, sdb): " DEVICE
+    DEVICE="/dev/${DEVICE}"
+else
+    # Count USB devices found
+    USB_COUNT=$(echo "$USB_DEVICES" | wc -l)
+    
+    if [ "$USB_COUNT" -eq 1 ]; then
+        # Only one USB drive found - auto-select it
+        USB_NAME=$(echo "$USB_DEVICES" | cut -d':' -f1)
+        USB_SIZE_BYTES=$(echo "$USB_DEVICES" | cut -d':' -f2)
+        USB_SIZE_GB=$(echo "scale=1; $USB_SIZE_BYTES / 1024 / 1024 / 1024" | bc)
+        
+        DEVICE="/dev/${USB_NAME}"
+        
+        echo ""
+        echo "✓ Auto-detected USB drive:"
+        lsblk -o NAME,SIZE,TYPE,VENDOR,MODEL,TRAN "$DEVICE"
+        echo ""
+        echo "Device: $DEVICE"
+        echo "Size: ${USB_SIZE_GB}GB"
+        echo ""
+    else
+        # Multiple USB drives found
+        echo ""
+        echo "Multiple USB drives detected:"
+        echo ""
+        lsblk -d -o NAME,SIZE,TYPE,VENDOR,MODEL,TRAN | grep "usb"
+        echo ""
+        read -p "Enter USB device name (e.g., sda, sdb): " DEVICE
+        DEVICE="/dev/${DEVICE}"
+    fi
+fi
+
+read -p "Create bootable USB now on $DEVICE? (yes/no): " CREATE_USB
 
 if [ "$CREATE_USB" != "yes" ]; then
     echo ""
@@ -126,26 +169,45 @@ if [ "$CREATE_USB" != "yes" ]; then
     exit 0
 fi
 
-echo ""
-echo "Available drives:"
-lsblk -d -o NAME,SIZE,TYPE,VENDOR,MODEL | grep -E "(disk|NAME)"
-
-echo ""
-echo "⚠️  WARNING: Double-check the device name!"
-echo "    Writing to wrong device will destroy your data!"
-echo ""
-read -p "Enter USB device name (e.g., sdb, sdc): " DEVICE
-
-DEVICE="/dev/${DEVICE}"
-
 if [ ! -b "$DEVICE" ]; then
     echo "Error: $DEVICE is not a valid block device"
     exit 1
 fi
 
+# Verify it's a USB device and under 20GB for safety
+DEVICE_SIZE=$(lsblk -b -d -n -o SIZE "$DEVICE")
+DEVICE_TRAN=$(lsblk -d -n -o TRAN "$DEVICE")
+DEVICE_SIZE_GB=$(echo "scale=1; $DEVICE_SIZE / 1024 / 1024 / 1024" | bc)
+
 echo ""
 echo "Selected device: $DEVICE"
 lsblk "$DEVICE"
+echo ""
+echo "Size: ${DEVICE_SIZE_GB}GB"
+echo "Transport: $DEVICE_TRAN"
+
+# Safety check
+if [ "$DEVICE_TRAN" != "usb" ]; then
+    echo ""
+    echo "⚠️  WARNING: $DEVICE does not appear to be a USB drive!"
+    echo "    Transport type: $DEVICE_TRAN (expected: usb)"
+    read -p "Are you absolutely sure you want to continue? (type 'OVERRIDE' to proceed): " OVERRIDE
+    if [ "$OVERRIDE" != "OVERRIDE" ]; then
+        echo "Aborted for safety"
+        exit 1
+    fi
+fi
+
+if [ $(echo "$DEVICE_SIZE > 20*1024*1024*1024" | bc) -eq 1 ]; then
+    echo ""
+    echo "⚠️  WARNING: $DEVICE is larger than 20GB (${DEVICE_SIZE_GB}GB)!"
+    echo "    This might be your internal drive!"
+    read -p "Are you absolutely sure you want to continue? (type 'OVERRIDE' to proceed): " OVERRIDE
+    if [ "$OVERRIDE" != "OVERRIDE" ]; then
+        echo "Aborted for safety"
+        exit 1
+    fi
+fi
 
 echo ""
 read -p "This will ERASE ALL DATA on $DEVICE. Continue? (type 'YES' to confirm): " FINAL_CONFIRM
